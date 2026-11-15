@@ -1,0 +1,38 @@
+{
+  "purpose": "Transport and isolation validation, not benchmark accuracy",
+  "protocol": "factory-sdk-v2",
+  "sdk_version": "0.5.0",
+  "droid_version": "1.12.1",
+  "model": "minimax-m3.1-flash",
+  "effort": "medium",
+  "allowed_tools_per_request": 0,
+  "policy": {
+    "restrict_tools": ["Read"],
+    "disabled_tools": ["Read"],
+    "catalog_verified_before_inference": true
+  },
+  "cases": ["t0", "t1", "t2", "t3", "t4", "t5", "t176"],
+  "concurrency": 6,
+  "minimum_interval_s": 0.5,
+  "fresh_process_seconds": 16.10576528800084,
+  "child_peak_rss_kib": 263616,
+  "largest_schema_prompt": {
+    "key": "t176",
+    "database": "european_football_2",
+    "prompt_chars": 16917,
+    "completion_elapsed_seconds": 14.182010013999388,
+    "input_tokens": 7068,
+    "output_tokens": 1134
+  },
+  "completed_usage": {
+    "input_tokens": 36802,
+    "output_tokens": 4755,
+    "calls": 7
+  },
+  "cache": "Fresh temporary cache; not reused by r4",
+  "sql_validation": "Nonempty extracted SQL only; no accuracy claim",
+  "limitations": [
+    "Peak RSS is the maximum individual child measurement, not summed concurrent RSS",
+    "These checks do not establish full benchmark gains or hosted-app performance"
+  ]
+}

@@ -41,7 +41,8 @@ from lore.graphdb import GraphReader, open_graph
 from lore.ground import ground
 from lore.ids import example_id, table_id
 from lore.learn import learn
-from lore.llm import LLM, request_guard
+from lore.llm import request_guard
+from lore.providers import create_llm
 from lore.schema_ingest import ingest_schema
 from lore.seeds import import_seeds
 from lore.sqlexec import execute_table
@@ -290,7 +291,7 @@ class Service:
         state_dir = Path(state_dir or os.getenv("LORE_STATE_DIR", str(settings.data_dir)))
         self.run = run or os.getenv("LORE_RESULTS_RUN", "r2")
         self.state = AppState(state_dir / "app.sqlite")
-        self.llm = llm or LLM("app", cfg=replace(settings, data_dir=state_dir))
+        self.llm = llm or create_llm("app", cfg=replace(settings, data_dir=state_dir))
         self.contexts, self.create_lock = {}, asyncio.Lock()
         manifest = ROOT / "results" / self.run / "demo.json"
         if manifest.exists():

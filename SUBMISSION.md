@@ -4,12 +4,15 @@
 
 **Not ready to submit yet.** Full learned comparisons, the measured teaching
 demo, trained load and the final local image check remain unfinished.
-The benchmark is paused on MiniMax's 2056 usage quota. Saved progress is
-resumable; no model retry is running.
+Fresh Factory-only `r4` measurements are running with MiniMax M3.1 Flash at
+medium effort. Raw-provider `r2` remains paused on quota, with saved progress.
+SDK and raw-provider answers are not combined; failed `r3` preflight answers
+are excluded.
 
 The owner approved free Hugging Face hosting, superseding the local-only
-preference. The local native/Gradio prototype passes, but credentials and
-eligible free Gradio/ZeroGPU access remain unverified. No paid plan, other
+preference. The native/Gradio and pinned SDK prototypes pass. Hosting account
+access and write scope are verified; eligible free Space creation and the real
+deployment remain pending. No paid plan, other
 provider or tunnel is approved. A loopback address is not a hosted judge link.
 Public repository creation and push are approved after final checks.
 
@@ -21,7 +24,7 @@ Public repository creation and push are approved after final checks.
 | Loom | Owner recording and link still needed |
 | Social posts | Drafts only; not authorized to send |
 
-## Safe measured summary
+## Historical measured summary, not the pending r4 headline
 
 On the full BIRD Mini-Dev test set, MiniMax-M3.1-Flash at medium effort scored
 227/500 (45.4%) without evidence and 258/500 (51.6%) with supplied evidence.
@@ -29,6 +32,11 @@ The 6.2-point gap is a baseline headroom measurement, **not a Lore gain**.
 
 Sources: [`results/r2/baseline.json`](results/r2/baseline.json) and
 [`results/r2/summary.json`](results/r2/summary.json).
+
+The separate SDK protocol is recorded in
+[`results/r4/learning_configuration.json`](results/r4/learning_configuration.json).
+The latest full integration run passed 78 tests. Tests do not substitute for
+the accuracy, independent teaching-replay, trained-load or hosted-app gates.
 
 Do not use the exploratory small-run scores as the final headline. All three
 audits, including failures and remaining noisy rules, are preserved in

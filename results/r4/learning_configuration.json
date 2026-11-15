@@ -1,0 +1,41 @@
+{
+  "protocol": "factory-sdk-v2",
+  "model": "minimax-m3.1-flash",
+  "effort": "medium",
+  "max_tokens": null,
+  "max_tokens_metadata_sentinel": 0,
+  "output_limit": "Managed by Droid; no explicit output-token control exposed by SDK",
+  "system_prompt": "Respond directly to the user's request. Return only the requested SQL or JSON. Do not use tools.",
+  "system_prompt_sha256": "b7e5c367b80b19b51f538e489bb171f37d5e979bbf20423aa94efd4f403f9cb0",
+  "tools": [],
+  "tool_policy": "restrict_tools={Read}, disabled_tools={Read}; verify zero allowed before every turn",
+  "sessions": "Fresh session, empty HOME and working directory for every completion",
+  "sdk_version": "0.5.0",
+  "droid_version": "1.12.1",
+  "file_sha256": {
+    "lore/learn.py": "c5ed43c182e1ae25cf7cf801e62e640f0beab87ed9d04a499fa74a394dce8cae",
+    "lore/ground.py": "d7be63b098c2f16fb2caf2c5f94c9640f814589a3bfb648756351559a6668aab",
+    "lore/sqlparse.py": "8f8c57fdee07d97725a93ceb5260542f20452cb7ef6d3ff9b3c0efba9807459f",
+    "lore/systems.py": "e8f2d9184664529d0221cddcb5b42dd5e3ae144b6e92f66c742f12e808c20d8a",
+    "lore/bird.py": "cf7ab56cc94664527e9d2c324cb0d50bff6cb58147574c7d46189b2ef10f94e8",
+    "lore/graphdb.py": "7fefd568891120b60173176ec9ae573e9a7b80660a83b273534835f047765142",
+    "lore/schema_ingest.py": "63f83f934d91bcfa914cd28b39fcb3932f96a2b9ffe064a6adde63678ad31087",
+    "lore/llm.py": "b1b500cab5f70715ce0b29a2fd7f35cae85cee03d96eb1668d3a9ac33062aed6",
+    "lore/sqlexec.py": "cd6a082e748ee06968a53e7880f028a8735ecad370d01fc776220642db4f4d82",
+    "lore/embeddings.py": "a87dbd5ae96ad388fd3084602cd40cbd92a865222c18446bef0fe9d40fee1d2f",
+    "lore/factory_llm.py": "692bf0c1de0eb958aff366785943e3f6c7fbb9bc9b3e527ed0910b5fec73a23d",
+    "lore/providers.py": "a9bf7f1c790eb199a3c92446fbeaa8fdb8f5ad910d3d2ebb659cc1811f3c55f0",
+    "lore/bench/run.py": "7a71044205d23db3082df1bb2e5fd3361e8d6113c61e343e21daa0878da2e7dc",
+    "lore/bench/factory.py": "3552e4ab3c0adda02aa398d052dfdfd1e8bbbc2eae7df4a0e32471bf9a179499"
+  },
+  "seed": 0,
+  "stream_cap": 80,
+  "checkpoints": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "usage_accounting": "Input plus cache-read plus cache-creation components; output plus thinking components. Native SDK components retained separately; SDK-internal retries may be unreported.",
+  "r2_policy": "No r2 answers, learned graphs, or completion cache reused",
+  "captured_at": "2026-11-15T17:18:30.441588+00:00"
+}

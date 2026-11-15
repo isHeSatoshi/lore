@@ -3,8 +3,9 @@
 A text-to-SQL semantic layer that learns reusable database knowledge from verified corrections, built on HydraDB and SelfGraph.
 
 **Live demo:** local preview only so far. Free Hugging Face hosting is approved;
-the native Gradio adapter passes local compatibility checks, but account access
-and free-tier eligibility are still unverified. No public app exists yet.
+the native Gradio and pinned SDK adapters pass local compatibility checks.
+Hosting account access and write scope are verified; actual free Space
+creation and public checks remain pending. No public app exists yet.
 See [hosting status and release steps](deploy/hf/README.md).
 
 ## The problem
@@ -18,11 +19,17 @@ knowledge block for the next question. It does not fine-tune the model.
 
 ## Results, still in progress
 
-No learned-system improvement claim is established yet. Both baselines have
-completed; learning checkpoints and ablations must finish before conclusions.
-The run is paused on MiniMax's 2056 usage quota. Progress is saved: the first
-two Lore checkpoints cover 500/500 questions; the final checkpoint is 258/500.
-Vector and flat have not started. No automatic model retry is running.
+No full-test learned-system improvement claim is established yet. A fresh
+Factory-only run, **`r4`**, is running every matching baseline, learning
+checkpoint and ablation with **MiniMax M3.1 Flash, medium effort**.
+Its [frozen protocol](results/r4/learning_configuration.json) records the SDK,
+CLI, system prompt, zero-tool policy and source hashes.
+
+The table below is historical **raw-provider `r2`**, not the new SDK result.
+That run remains paused on MiniMax's 2056 usage quota: the first two Lore
+checkpoints cover 500/500 questions; the final checkpoint covers 258/500.
+No raw-provider retry is running. SDK and raw-provider answers are never mixed.
+The failed [`r3` preflight](results/r3/README.md) is excluded from comparisons.
 
 | System | Strict execution accuracy | 95% Wilson interval | Evaluated |
 |---|---:|---:|---:|
@@ -97,7 +104,13 @@ does not pretend these mechanisms are enabled.
 
 ## Benchmark protocol and limits
 
-- Fixed model and effort: MiniMax-M3.1-Flash, medium.
+- Fixed model and effort: MiniMax M3.1 Flash, medium. `r4` uses the official
+  Factory SDK with the exact `minimax-m3.1-flash` catalog ID.
+- Each SDK completion starts a fresh session in an empty home and working
+  directory. An explicit deny/allow intersection disables all tools; the
+  transport verifies zero allowed tools before every inference request.
+  Droid manages the output-token limit. This differs from `r2`'s raw API
+  contract, so all matching comparisons are rerun rather than combined.
 - Held-out BIRD Mini-Dev SQLite questions; published prompts are reproduced
   exactly. Floor removes only the supplied evidence, not the schema.
 - Learning uses the public BIRD dev stream after same-database question/SQL
@@ -110,7 +123,7 @@ does not pretend these mechanisms are enabled.
 - Model/network failures retry or stop the run rather than silently becoming
   wrong answers. SQL timeouts remain execution failures.
 - Frozen learning sources and runtime adjustments are recorded in
-  [`learning_configuration.json`](results/r2/learning_configuration.json).
+  [`learning_configuration.json`](results/r4/learning_configuration.json).
 - Wilson intervals describe accuracy; paired bootstrap intervals compare the
   same completed test questions. Partial runs are not evidence of a gain.
 
@@ -129,9 +142,9 @@ connectivity smoke, not the required trained result.
 
 The final test exercises `ground()` without an LLM, with unfrozen readers so
 requests actually read HydraDB. It reports latency percentiles, throughput,
-errors and graph size in `results/r2/load.json`.
+errors and graph size in `results/r4/load.json`.
 
-## Run locally in five commands
+## Run locally with the raw MiniMax transport
 
 Requires Python 3.11+, Node 24, Docker with Compose, and MiniMax credentials.
 Run these from the repository root. After command 2, edit the private `.env`:
@@ -155,11 +168,46 @@ the analyst confirms it. Execution checking does not prove semantic correctness:
 the person confirming SQL is responsible for its meaning. Sandbox state is
 separate from shared trained facts and all benchmark namespaces.
 
-## Reproduce the benchmark
+## Reproduce the Factory benchmark
+
+Install the project with `.[bench,dev,factory]` and the reviewed, pinned
+Droid CLI described in [the runtime instructions](deploy/hf/README.md).
+Keep `FACTORY_API_KEY` in the ignored private `.env`. Use a fresh run ID;
+`r4` is the recorded run and must not be overwritten.
+
+```sh
+export LORE_LLM_CONCURRENCY=6 LORE_LLM_MIN_INTERVAL_S=0.5
+.venv/bin/python -m lore.bench.check_data --run reproduction
+.venv/bin/python -m lore.bench.factory --run reproduction --systems floor,ceiling
+.venv/bin/python -m lore.bench.review_baselines --run reproduction
+.venv/bin/python -m lore.bench.factory --run reproduction --systems lore --stream-cap 80 --checkpoints 0.25,0.5,1.0
+.venv/bin/python -m lore.bench.factory --run reproduction --systems vector --stream-cap 80 --checkpoints 0.25,0.5,1.0
+.venv/bin/python -m lore.bench.factory --run reproduction --systems flat --from-run reproduction
+.venv/bin/python -m lore.bench.report --run reproduction
+.venv/bin/python -m lore.seeds export --run reproduction --out seeds/
+.venv/bin/python -m lore.bench.load --run reproduction --concurrency 10,50,100 --requests 1000
+```
+
+The Factory entry point fixes the model and effort, captures source hashes,
+uses a separate completion cache, and refuses historical raw/preflight run IDs.
+The original runner still enforces the full 500-question floor/ceiling gate
+before learning. A failed request stops rather than becoming a wrong answer.
+
+To run the interactive app or teaching replays with this same protocol, set:
+
+```sh
+export LORE_LLM_TRANSPORT=factory LORE_LLM_MODEL=minimax-m3.1-flash
+export LORE_LLM_EFFORT=medium LORE_LLM_MAX_TOKENS=0 LORE_RESULTS_RUN=r4
+```
+
+Here `max_tokens=0` explicitly means SDK-managed, not a zero-token generation.
+For tests use `.venv/bin/pytest -q`; add `LORE_INTEGRATION=1` for real HydraDB.
+
+### Historical raw-provider reproduction
 
 Use a new run ID if changing the model, effort, split, database selection or
-learning protocol. The measured run ID is `r2`; do not mix it with the earlier
-incomplete maximum-effort `r1`.
+learning protocol. The paused raw-provider run is `r2`; do not mix it with
+Factory `r4`, failed preflight `r3`, or maximum-effort `r1`.
 
 ```sh
 export LORE_LLM_EFFORT=medium LORE_LLM_CONCURRENCY=2 LORE_LLM_MIN_INTERVAL_S=2

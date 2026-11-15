@@ -1,4 +1,7 @@
+import json
 import sqlite3
+from contextlib import asynccontextmanager
+from dataclasses import replace
 from types import SimpleNamespace
 from unittest.mock import AsyncMock
 
@@ -77,3 +80,51 @@ async def test_replay_never_teaches_followup_and_requires_rule_provenance(tmp_pa
         GoldCache(tmp_path / "gold.sqlite"),
     )
     assert not rejected["passed"] and rejected["reason"] == "new_rule_not_used"
+
+
+@pytest.mark.asyncio
+async def test_runner_uses_a_fresh_completion_cache_for_every_trial(tmp_path, monkeypatch):
+    from lore.bench import replay_demo as replay
+
+    run = "fixture-replay"
+    cfg = replace(replay.settings, data_dir=tmp_path / "data")
+    directory = cfg.data_dir / "runs" / run
+    directory.mkdir(parents=True)
+    target = tmp_path / "results" / run
+    target.mkdir(parents=True)
+    (directory / "metadata.json").write_text(
+        json.dumps({"model": cfg.model, "effort": cfg.effort, "max_tokens": cfg.max_tokens,
+                    "seed": 0, "stream_cap": 80})
+    )
+    pairs = [{"db": "fixture", "a": f"s{i}", "b": f"t{i}"} for i in range(3)]
+    (directory / "demo_candidates.json").write_text(json.dumps({"fixture": pairs}))
+    caches = []
+
+    def llm(label, *, cache_path):
+        assert label == run + "-demo-replay"
+        assert cache_path.parent.is_dir()
+        caches.append(cache_path)
+        return object()
+
+    @asynccontextmanager
+    async def lifespan(app):
+        yield
+
+    async def passed(client, service, scope, pair, questions, gold):
+        return {**pair, "passed": True, "reason": "fixture"}
+
+    monkeypatch.setattr(replay, "settings", cfg)
+    monkeypatch.setattr(replay, "ROOT", tmp_path)
+    monkeypatch.setattr(replay, "build", AsyncMock())
+    monkeypatch.setattr(replay, "create_llm", llm)
+    monkeypatch.setattr(replay, "SandboxReplay", lambda *args, **kwargs: object())
+    monkeypatch.setattr(
+        replay, "create_app",
+        lambda service: SimpleNamespace(router=SimpleNamespace(lifespan_context=lifespan)),
+    )
+    monkeypatch.setattr(replay, "load_stream", lambda *args: {"fixture": []})
+    monkeypatch.setattr(replay, "load_test", lambda: [])
+    monkeypatch.setattr(replay, "replay_pair", passed)
+    await replay.run(run, 3)
+    assert len(caches) == len(set(caches)) == 3
+    assert all(path.name == "completions.sqlite" and not path.parent.exists() for path in caches)

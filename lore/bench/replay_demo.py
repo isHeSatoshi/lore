@@ -15,7 +15,7 @@ from lore.api import Service, create_app
 from lore.bench.demo import build
 from lore.bird import load_stream, load_test
 from lore.config import ROOT, settings
-from lore.llm import LLM
+from lore.providers import create_llm
 from lore.sqlexec import GoldCache, ex_match, execute
 
 
@@ -131,7 +131,15 @@ async def run(run, attempts_per_db):
                 continue
             # Each trial starts with schema only. Never reuse a benchmark/trained namespace.
             with tempfile.TemporaryDirectory(prefix="demo-replay-") as state:
-                service = SandboxReplay(Path(state), run=run, llm=LLM(run + "-demo-replay"))
+                service = SandboxReplay(
+                    Path(state),
+                    run=run,
+                    # Independent generation, not a benchmark/cache replay. Every candidate
+                    # starts with both a fresh graph and a fresh completion cache.
+                    llm=create_llm(
+                        run + "-demo-replay", cache_path=Path(state) / "completions.sqlite"
+                    ),
+                )
                 app = create_app(service)
                 scope = {"db": db, "mode": "sandbox", "session": uuid4().hex}
                 async with (

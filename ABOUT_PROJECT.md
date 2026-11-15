@@ -12,13 +12,17 @@ This is the original proposal, not a list of proven capabilities. The
 
 - Full `r2` floor and ceiling are complete. Learned comparisons are paused on
   MiniMax's 2056 usage quota, with resumable progress saved.
+- A separately measured Factory SDK run, `r4`, is now running all comparisons
+  with the same MiniMax M3.1 Flash model and medium effort. It does not reuse
+  `r2` answers or learned graphs. SDK and raw-provider results are not combined.
 - Grounding uses stored direct joins. Native path search, path compression and
   synonym merging are not implemented.
 - Corrections require explicit confirmation before learning. Rule confidence is
   feedback history, not proof that a meaning is correct.
 - The owner approved free Hugging Face hosting, superseding local-only hosting.
-  The native/Gradio adapter passes local checks; account eligibility and public
-  deployment remain pending. No paid plan or other provider is approved.
+  The native/Gradio adapter and pinned SDK runtime pass local checks. A hosting
+  credential is supplied; free eligibility and public deployment remain pending.
+  No paid plan or other provider is approved.
   Public repository creation and push are approved only after final checks.
 - The current working target is 01:00 IST if feasible, with 03:00 IST the latest
   target. The event cutoff remains 09:00 IST.
@@ -287,7 +291,12 @@ Fill the blanks from `results/<run>/summary.json`. Do not post numbers that are 
 >
 > If you run a data team, I would like to know: would you let something like this write your semantic layer?
 
-## 14. Owner checklist
+## 14. Historical proposal checklist, superseded
+
+This original checklist is not authorization or current deployment guidance.
+Only free Hugging Face hosting is approved; the paid-VM suggestion below is
+superseded. Social posts still require approval. See [SUBMISSION.md](SUBMISSION.md)
+for the current release checklist.
 
 | When (IST) | Task |
 |---|---|
