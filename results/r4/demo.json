@@ -1,0 +1,126 @@
+{
+  "run": "r4",
+  "selection_status": "measured Lore-minus-floor gain; database size under limit",
+  "databases": [
+    {
+      "id": "superhero",
+      "tables": 10,
+      "rules": 49,
+      "database_bytes": 237568,
+      "gain_points": 20.0,
+      "suggestions": [
+        {
+          "question": "Calculate the average height for each superhero.",
+          "hint": "In this database, average height means CAST(SUM(superhero.height_cm) AS REAL) / COUNT(superhero.id).",
+          "followup": "I'm comparing Marvel and DC rosters and want to quantify how tall Marvel's roster is for characters whose abilities DC cannot match. What is the average height, in centimetres, of Marvel Comics characters who have at least one power that no DC Comics character has? Only characters with a measured height count.",
+          "verified": true
+        },
+        {
+          "question": "Calculate the average height for each superhero.",
+          "hint": "In this database, average height means CAST(SUM(superhero.height_cm) AS REAL) / COUNT(superhero.id). Average height here is a single overall average across all superhero rows, computed as total height divided by the number of superheroes, so it must not be split by superhero_name.",
+          "followup": "I'm profiling publisher rosters and now want to look at the physical build of George Lucas's heroes. What is the average height of the heroes he created, in centimetres, and their average weight, in kilograms? Please round each average to one decimal place, and only include heroes whose height (for the height average) or weight (for the weight average) is actually known.",
+          "verified": true
+        },
+        {
+          "question": "What is the average of superheroes with no skin colour?",
+          "hint": "In this database, average of superheroes with no skin colour means CAST(COUNT(*) AS REAL) / SUM(CASE WHEN superhero.skin_colour_id = 1 THEN 1 ELSE 0 END). This 'average' is a count-based ratio: total superheroes divided by the number of superheroes in the specified skin-colour group, not an average of an attribute such as height_cm.",
+          "followup": "I'm putting together a trivia fact box on tiny heroes. Could you tell me the hair colour of the shortest human superhero? Please treat heroes with no recorded height as unmeasured rather than as being the shortest. I just need the colour, nothing else.",
+          "verified": true
+        }
+      ],
+      "verified_pair_count": 3,
+      "replay_attempts": 38,
+      "suggestion_status": "replayed pairs"
+    },
+    {
+      "id": "thrombosis_prediction",
+      "tables": 3,
+      "rules": 135,
+      "database_bytes": 7327744,
+      "gain_points": 16.27906976744186,
+      "suggestions": [
+        {
+          "question": "Which is the youngest patient with an abnormal anti-ribonuclear protein level? Please list his or her date of birth.",
+          "hint": "In this database, patient laboratory result means Patient.ID = Laboratory.ID. Laboratory rows carry the patient identification in Laboratory.ID, which matches Patient.ID.",
+          "followup": "As part of our clinical audit I'm profiling patients born between 1936 and 1956 inclusive who never had a creatinine phosphokinase (CPK) result above the normal range. A CPK of 250 or higher counts as above the normal range, and patients with no CPK results on record count as never having exceeded it. For that group, please give me the women's percentage of the group's men and women, rounded to one decimal place.",
+          "verified": true
+        },
+        {
+          "question": "For the year that concluded on December 31, 1998, how many male patients on average were tested in the lab each month?",
+          "hint": "In this database, average per month over a year means CAST(COUNT(Patient.ID) AS REAL) / 12. An average-per-month figure for a full calendar year is the year's total count divided by 12, not the average of the non-empty monthly group counts (which silently drops months with zero activity).",
+          "followup": "Among the patients who have laboratory test records on file, how many are female and how many are male? Please give me one line for the female patients and one line for the male patients, each showing the sex and the number of patients of that sex.",
+          "verified": true
+        },
+        {
+          "question": "For the year that concluded on December 31, 1998, how many male patients on average were tested in the lab each month?",
+          "hint": "In this database, average per month over a year means CAST(COUNT(Patient.ID) AS REAL) / 12. An average-per-month figure for a full calendar year is the year's total count divided by 12, not the average of the non-empty monthly group counts (which silently drops months with zero activity).",
+          "followup": "I'm putting together a demographic summary of our low-albumin patients. Could you tell me how many patients with an albumin measurement below 3.5 are female and how many are male? I'd like one row per sex group showing the sex (F or M) and the number of patients in that group.",
+          "verified": true
+        }
+      ],
+      "verified_pair_count": 3,
+      "replay_attempts": 53,
+      "suggestion_status": "replayed pairs"
+    },
+    {
+      "id": "toxicology",
+      "tables": 4,
+      "rules": 72,
+      "database_bytes": 2678784,
+      "gain_points": 12.5,
+      "suggestions": [
+        {
+          "question": "What is the least common element of all carcinogenic molecules?",
+          "hint": "In this database, least common element means ORDER BY COUNT(DISTINCT atom.molecule_id) ASC.",
+          "followup": "I'd like a ranked inventory of every molecule in the toxicology database that contains at least one carbon atom. For each qualifying molecule, give me its molecule id, carcinogenicity label, number of atoms, number of bonds, number of carbon atoms, number of chlorine atoms, number of carbon-touching bonds, and number of multiple bonds - one row per molecule, including molecules where some of these counts are zero. Rank the rows from the most carbon-touching bonds to the fewest; break ties by larger total atom count, then by molecule id ascending. Give consecutive rank positions 1, 2, 3, ... with no gaps after ties.",
+          "verified": true
+        },
+        {
+          "question": "Calculate the percentage of molecules containing carcinogenic compounds that element is hydrogen.",
+          "hint": "In this database, percentage of atoms in carcinogenic molecules means CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id).",
+          "followup": "Among molecules containing at least one single bond, what is the average number of oxygen atoms per molecule? Include molecules with no oxygen and round to four decimal places.",
+          "verified": true
+        },
+        {
+          "question": "Calculate the percentage of molecules containing carcinogenic compounds that element is hydrogen.",
+          "hint": "In this database, percentage of atoms in carcinogenic molecules means CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id). Compute this share over atom rows (no DISTINCT on molecule ids): numerator is hydrogen atoms in carcinogenic molecules, denominator is all joined atom rows, and the label filter belongs inside the numerator case rather than in a WHERE clause that also shrinks the denominator.",
+          "followup": "Among the molecules labeled '+' (carcinogenic), which chemical element is the most common among the atoms that take part in at least one bond? Also give the percentage of all atoms in those '+' molecules that this element accounts for, rounded to two decimal places. Count the percentage over every atom of the '+' molecules, whether or not it takes part in a bond. If several elements tie for most common, report each of them.",
+          "verified": true
+        }
+      ],
+      "verified_pair_count": 3,
+      "replay_attempts": 16,
+      "suggestion_status": "replayed pairs"
+    },
+    {
+      "id": "california_schools",
+      "tables": 3,
+      "rules": 89,
+      "database_bytes": 11116544,
+      "gain_points": 8.163265306122451,
+      "suggestions": [
+        {
+          "question": "Which county reported the most number of school closure in the 1980s with school wonership code belonging to Youth Authority Facilities (CEA)?",
+          "hint": "In this database, school ownership code means schools.SOC.",
+          "followup": "For the five schools with ownership code 66 and the largest K-12 free-or-reduced-price meal counts, give each school's K-12 eligible meal rate rounded to six decimal places.",
+          "verified": true
+        },
+        {
+          "question": "Please list the codes of the schools with a total enrollment of over 500.",
+          "hint": "In this database, total enrollment means frpm.\"Enrollment (K-12)\" + frpm.\"Enrollment (Ages 5-17)\". Total enrollment for a school is the sum of its K-12 enrollment and its Ages 5-17 enrollment as stored in the frpm table.",
+          "followup": "For locally funded schools whose K-12 minus ages-5-17 enrollment difference exceeds the average such difference among locally funded schools, list each school's directory-listed name and DOC type.",
+          "verified": true
+        },
+        {
+          "question": "Consider the average difference between K-12 enrollment and 15-17 enrollment of schools that are locally funded, list the names and DOC type of schools which has a difference above this average.",
+          "hint": "In this database, doc type means schools.DOC. The district ownership code is stored in schools.DOC as numeric codes (e.g. 00, 02, 52, 54, 56); there is no schools.DOCType column.",
+          "followup": "I'm preparing a mailing campaign and need a list of public high schools in Los Angeles County that have more than 500 free or reduced-price meal recipients ages 5-17. By public high schools I mean every public high-school category in the meal program report - regular high schools, continuation high schools, and high schools in single-school districts - not just regular ones; middle and junior high schools don't count. For each school, please give me the school name exactly as listed in the school directory, plus the campus (physical) street address - not a mailing or post-office address - along with the city, state and ZIP code, each as a separate field. Schools sharing a name are separate schools, so one row per school. Please sort the list by school name.",
+          "verified": true
+        }
+      ],
+      "verified_pair_count": 3,
+      "replay_attempts": 54,
+      "suggestion_status": "replayed pairs"
+    }
+  ]
+}

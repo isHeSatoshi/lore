@@ -93,7 +93,12 @@ def test_finished_release_is_allowlisted_and_rejects_smoke_load(tmp_path):
         summary["systems"][name] = [{"checkpoint": cp, "n": 500, "complete": True} for cp in points]
     (results / "summary.json").write_text(json.dumps(summary))
     databases = [f"fixture{i}" for i in range(4)]
-    (results / "demo.json").write_text(json.dumps({"databases": [{"id": d} for d in databases]}))
+    suggestions = [
+        {"question": f"q{i}", "hint": f"h{i}", "followup": f"f{i}"} for i in range(3)
+    ]
+    (results / "demo.json").write_text(json.dumps({
+        "databases": [{"id": d, "suggestions": suggestions} for d in databases],
+    }))
     (results / "demo_replays.json").write_text(
         json.dumps(
             [
@@ -104,6 +109,7 @@ def test_finished_release_is_allowlisted_and_rejects_smoke_load(tmp_path):
                     "passed": True,
                     "model": "fixture",
                     "effort": "medium",
+                    "suggestion": suggestions[i],
                 }
                 for db in databases
                 for i in range(3)

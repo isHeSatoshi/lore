@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "all_four_have_three_strict_pairs": true,
+  "single_question_fallback_used": false,
+  "databases": {
+    "superhero": {
+      "trials": 38,
+      "passed": 3,
+      "outcomes": {
+        "teaching_question_already_correct": 6,
+        "hint_proposal_not_correct": 9,
+        "followup_still_wrong": 10,
+        "wrong_before_correct_after_with_new_rule_used": 3,
+        "followup_already_correct": 10
+      }
+    },
+    "thrombosis_prediction": {
+      "trials": 53,
+      "passed": 3,
+      "outcomes": {
+        "teaching_question_already_correct": 3,
+        "hint_proposal_not_correct": 31,
+        "followup_still_wrong": 5,
+        "followup_already_correct": 11,
+        "wrong_before_correct_after_with_new_rule_used": 3
+      }
+    },
+    "toxicology": {
+      "trials": 16,
+      "passed": 3,
+      "outcomes": {
+        "hint_proposal_not_correct": 5,
+        "teaching_question_already_correct": 2,
+        "wrong_before_correct_after_with_new_rule_used": 3,
+        "followup_still_wrong": 2,
+        "followup_already_correct": 4
+      }
+    },
+    "california_schools": {
+      "trials": 54,
+      "passed": 3,
+      "outcomes": {
+        "followup_already_correct": 18,
+        "wrong_before_correct_after_with_new_rule_used": 3,
+        "hint_proposal_not_correct": 20,
+        "followup_still_wrong": 6,
+        "teaching_question_already_correct": 7
+      }
+    }
+  },
+  "recorded_later_trial_usage": {
+    "input_tokens": 1220513,
+    "output_tokens": 259108,
+    "calls": 315
+  },
+  "usage_limitation": "First 48 trials did not retain metering before deleting private completion caches; no estimate substituted",
+  "model": "minimax-m3.1-flash",
+  "effort": "medium",
+  "benchmark_changed": false,
+  "at": "2026-11-15T21:39:44.824314+00:00"
+}

@@ -49,6 +49,8 @@ type Database = {
   rules: number | null;
   trained: boolean;
   suggestions: Suggestion[];
+  suggestion_status?: string;
+  verified_pair_count?: number;
 };
 type Answer = {
   ask_id: string;
@@ -777,6 +779,13 @@ function App() {
             </div>
             <div className="starters">
               <span className="eyebrow">A place to start</span>
+              {active?.suggestion_status && (
+                <p className="muted small">
+                  {active.suggestion_status}.
+                  {active.verified_pair_count !== undefined &&
+                    ` ${active.verified_pair_count} pairs passed a fresh correction-and-transfer replay. A replay is not a guarantee on future model calls.`}
+                </p>
+              )}
               {active?.suggestions.length ? (
                 active.suggestions.map((s, i) => (
                   <button

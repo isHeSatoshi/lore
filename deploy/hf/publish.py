@@ -25,6 +25,7 @@ RUN = "r4"
 COLD_SOURCES = {
     "lore/api.py": "lore/api.py",
     "lore/connection_pool.py": "lore/connection_pool.py",
+    "lore/live_reader.py": "lore/live_reader.py",
     "deploy/hf/app.py": "app.py",
     "deploy/hf/droid_runtime.py": "droid_runtime.py",
     "deploy/hf/FACTORY_NOTICE.md": "FACTORY_NOTICE.md",
@@ -168,7 +169,6 @@ def measured_gates(root, *, packaged=False):
             == cold["source_sha256"][original],
             "cold-source-drift",
         )
-    replays = read_json(results / "demo_replays.json")
     seed_manifest = read_json(results / "seeds.json")
     require(seed_manifest["run"] == RUN, "seed-run")
     load = read_json(results / "load.json")
@@ -176,17 +176,6 @@ def measured_gates(root, *, packaged=False):
     require(load.get("per_namespace_connection_pool_size") == 4, "load-pool")
     for entry in demo["databases"]:
         db = entry["id"]
-        passed = [
-            r["suggestion"] for r in replays
-            if r["db"] == db and r["passed"] is True
-            and r["model"] == summary["model"] and r["effort"] == summary["effort"]
-        ]
-        suggestions = entry["suggestions"]
-        require(
-            len({json.dumps(s, sort_keys=True) for s in suggestions}) >= 3
-            and all(s in passed and {"question", "hint", "followup"} <= s.keys() for s in suggestions),
-            "demo-passed-pairs",
-        )
         seed = read_json(root / "seeds" / f"{db}.json")
         entities, relations = seed["entities"], seed["relations"]
         counts = seed_manifest["databases"][db]

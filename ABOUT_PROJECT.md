@@ -12,7 +12,7 @@ This is the original proposal, not a list of proven capabilities. The
 
 - Full `r2` floor and ceiling are complete. Learned comparisons are paused on
   MiniMax's 2056 usage quota, with resumable progress saved.
-- A separately measured Factory SDK run, `r4`, is now running all comparisons
+- A separately measured Factory SDK run, `r4`, has completed all comparisons
   with the same MiniMax M3.1 Flash model and medium effort. It does not reuse
   `r2` answers or learned graphs. SDK and raw-provider results are not combined.
 - Grounding uses stored direct joins. Native path search, path compression and
@@ -216,7 +216,7 @@ The idea we rejected was a self-improving tool graph for MCP agents (Track 2). I
 
 **The pitch in 30 seconds**
 
-> Your data agent gets questions wrong because the rules live in your analysts' heads. A semantic layer fixes that, if someone spends months writing it. Lore writes it for you. It watches every query the agent runs and every correction an analyst makes, keeps what it learns as a versioned graph, and gives the agent only the rules each question needs. On a public benchmark it went from [FILL: floor]% to [FILL: Lore]% after [FILL: N] questions, with no hand-written rules.
+> Your data agent gets questions wrong because database meanings live in analysts' heads. Lore turns verified SQL corrections into reviewable graph rules and retrieves them for later questions. On 500 held-out BIRD questions, it scored 54.2%, versus a 46.2% schema-only floor, after 864 simulated-feedback examples. Vector memory scored 48.6%; same-facts flat retrieval scored 53.2%. The graph-versus-flat difference is inconclusive. Buyer demand remains a hypothesis, not a validated claim.
 
 **How it could make money (a suggestion, not validated)**
 
@@ -232,8 +232,8 @@ The idea we rejected was a self-improving tool graph for MCP agents (Track 2). I
 ## 11. Demo walkthrough (what a judge does on the live link)
 
 1. Pick a database. Ask a suggested question. Lore answers, and the page shows the SQL, the result, and the part of the graph it walked.
-2. The answer is wrong. Click thumbs down and type a one-line hint, or paste the right SQL.
-3. Lore shows what it learned: a new rule appears in the graph.
+2. If the answer is wrong, click thumbs down and enter the recorded hint or verified corrected SQL. Model calls are stochastic; do not describe an already-correct answer as wrong.
+3. Inspect the proposed SQL and explicitly confirm it. Lore then learns, and the new rule appears in the graph.
 4. Ask a second suggested question, worded differently, that needs the same rule. It is now right, and the page shows the rule being used.
 5. Open the Graph tab: see every learned rule with its wins and losses, and certify one.
 6. Open the Proof tab: the accuracy curve, the baselines, the ablation and the load numbers.
@@ -248,7 +248,7 @@ Each visitor gets a private cold-start copy, so they watch it learn from nothing
 | 0:25 | Live: wrong answer, correction, the new rule in the graph, a different question now right |
 | 1:30 | The graph: rules on columns, wins and losses, certification, the walk for one question |
 | 2:10 | Proof: the curve between floor and ceiling, vector memory, the flat ablation, tokens |
-| 2:50 | HydraDB and SelfGraph: what each does, native path search, the load test |
+| 2:50 | HydraDB and SelfGraph: direct schema/column traversal, client-side ranking, the load test; native path search is not implemented |
 | 3:20 | Who pays, what is next, repo and live link |
 
 ## 13. Draft posts
@@ -270,22 +270,23 @@ Fill the blanks from `results/<run>/summary.json`. Do not post numbers that are 
 > Lore: the semantic layer that writes itself. Built on @hydra_db + SelfGraph.
 >
 > On BIRD Mini-Dev (500 held-out questions, real databases, results checked by execution):
-> floor [FILL]% -> Lore [FILL]% after [FILL] questions of feedback
-> vector memory with the same feedback: [FILL]%
-> same facts without the graph: [FILL]%
+> floor 46.2% -> Lore 54.2% after 864 simulated-feedback examples
+> vector memory with the same feedback: 48.6%
+> same facts without the graph: 53.2%; the 1-point Lore lead is inconclusive
 >
-> No hand-written rules. Live demo: [FILL link]. Code: [FILL link]. Walkthrough: [FILL Loom link].
+> MiniMax M3.1 Flash, medium effort, one seed. Live demo and code: see the verified links in README. Walkthrough: owner recording still needed. Draft only, not posted.
 
 **Post 3, LinkedIn**
 
 > Most data agents are wrong for a boring reason: the rules live in people's heads.
 >
-> For the HydraDB hackathon I built Lore. It watches the queries a data agent runs and the corrections analysts make, and turns them into a versioned graph of business rules, joins and verified examples. For each new question it walks the graph and gives the agent only what that question needs.
+> For the HydraDB hackathon I built Lore. It turns verified SQL corrections into an inspectable graph of business rules, joins and examples. For each new question it retrieves a bounded knowledge block through the schema and learned relations.
 >
 > What I measured, on a public benchmark with real databases:
-> - Held-out accuracy went from [FILL]% to [FILL]% as it saw [FILL] questions.
-> - A vector store given the same feedback reached [FILL]%.
-> - Taking the graph away but keeping the same learned facts gave [FILL]%.
+> - Strict held-out execution accuracy went from 46.2% to 54.2% after 864 simulated-feedback examples.
+> - Vector memory given the same feedback reached 48.6%.
+> - Flat retrieval of the same learned facts gave 53.2%. That comparison is inconclusive.
+> - This is one model, one seed and public benchmark data, not production accuracy or proof of demand.
 >
 > It is open source and built on HydraDB and SelfGraph. Demo, code and a short walkthrough are in the comments.
 >

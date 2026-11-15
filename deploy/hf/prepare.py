@@ -10,6 +10,41 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 
+def validate_demo_suggestions(entry, replays, model, effort):
+    """Allow the spec's explicit single-question fallback, never label it a pair."""
+    records = [
+        r for r in replays
+        if r["db"] == entry["id"] and r["model"] == model and r["effort"] == effort
+    ]
+    passed = {(r["a"], r["b"]) for r in records if r["passed"] is True}
+    suggestions = entry["suggestions"]
+    if len(passed) >= 3:
+        verified = [r["suggestion"] for r in records if r["passed"] is True]
+        if len({json.dumps(s, sort_keys=True) for s in suggestions}) < 3 or not all(
+            s in verified and {"question", "hint", "followup"} <= s.keys() for s in suggestions
+        ):
+            raise ValueError("Only independently verified pairs may be labelled teaching suggestions")
+    else:
+        attempts = {(r["a"], r["b"]) for r in records}
+        semantic_outcomes = {
+            "teaching_question_already_correct", "followup_already_correct",
+            "hint_proposal_not_correct", "no_reusable_rule", "followup_still_wrong",
+            "new_rule_not_used", "wrong_before_correct_after_with_new_rule_used",
+        }
+        if not (
+            len(attempts) >= 48
+            and all(r.get("reason") in semantic_outcomes for r in records)
+            and entry.get("suggestion_status") == "single questions; three-pair teaching not established"
+            and entry.get("verified_pair_count") == len(passed)
+            and entry.get("replay_attempts") == len(records)
+            and len(suggestions) == 3
+            and len({s.get("question", "") for s in suggestions}) == 3
+            and all(set(s) == {"question"} and isinstance(s["question"], str) and s["question"].strip() for s in suggestions)
+        ):
+            raise ValueError("Single-question fallback needs measured failed discovery and explicit disclosure")
+    return len(passed)
+
+
 def release_databases(root, run):
     if run == "r3":
         raise ValueError("r3 is a failed tool-policy preflight, not a public release")
@@ -29,17 +64,13 @@ def release_databases(root, run):
     if len(set(databases)) != 4:
         raise ValueError("The measured demo needs four different databases")
     replays = json.loads((results / "demo_replays.json").read_text())
-    for db in databases:
-        passed = {
-            (r["a"], r["b"])
-            for r in replays
-            if r["db"] == db
-            and r["passed"]
-            and r["model"] == summary["model"]
-            and r["effort"] == summary["effort"]
-        }
-        if len(passed) < 3 or not (root / "seeds" / f"{db}.json").exists():
-            raise ValueError("Finished seeds and three measured replays per database are required")
+    verified_databases = 0
+    for entry in demo["databases"]:
+        verified_databases += validate_demo_suggestions(entry, replays, summary["model"], summary["effort"]) >= 3
+        if not (root / "seeds" / f"{entry['id']}.json").exists():
+            raise ValueError("Finished seeds are required for every demo database")
+    if not verified_databases:
+        raise ValueError("At least one database must demonstrate the complete fresh teaching round")
     load = json.loads((results / "load.json").read_text())
     if load["trained"] is not True or load["frozen"] is not False or load["llm_calls"] != 0:
         raise ValueError("The load report must exercise real unfrozen trained graphs")
@@ -104,6 +135,10 @@ def prepare(root, run, data_bundle, parent):
     result_destination.mkdir(parents=True)
     for name in (
         "summary.json",
+        "measurement_audit.json",
+        "live_reader_validation.json",
+        "load.failed1.json",
+        "demo_discovery.json",
         "counts.json",
         "per_db.json",
         "per_db.md",

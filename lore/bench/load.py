@@ -2,6 +2,7 @@
 
 import argparse
 import asyncio
+import hashlib
 import json
 import random
 import time
@@ -13,8 +14,8 @@ from lore.bench.stats import graph_counts
 from lore.bird import db_path, load_test
 from lore.config import ROOT, settings
 from lore.connection_pool import GRAPH_POOL_SIZE, configure_graph_pool
-from lore.graphdb import GraphReader, open_graph
-from lore.ground import ground
+from lore.graphdb import open_graph
+from lore.live_reader import LiveGraphReader, ground
 from lore.schema_ingest import read_schema
 
 
@@ -34,9 +35,9 @@ async def load(args):
     try:
         for db in dbs:
             graphs[db] = await open_graph(f"{args.run}.lore.{db}")
-            readers[db] = GraphReader(graphs[db], frozen=False)
             schemas[db], _ = await asyncio.to_thread(read_schema, db_path(db))
-        counts = await graph_counts(args.run, dbs)
+            readers[db] = LiveGraphReader(graphs[db], schemas[db])
+        print("Opened all trained namespaces; starting measured grounding", flush=True)
         results = []
         for concurrency in args.concurrency:
             rng = random.Random(0)
@@ -76,14 +77,35 @@ async def load(args):
             }
             results.append(row)
             print(json.dumps(row), flush=True)
+        count_path = ROOT / "results" / args.run / "counts.json"
+        if count_path.exists() and not args.allow_untrained:
+            # Completed benchmark namespaces are immutable. Reuse their full audit,
+            # not hundreds of untimed pagination queries before every load run.
+            raw_counts = count_path.read_bytes()
+            counts = json.loads(raw_counts)
+            if set(counts["per_db"]) != set(dbs):
+                raise ValueError("Completed graph audit does not cover the load namespaces")
+            counts_source = {
+                "kind": "completed-run graph audit, not recounted during load",
+                "path": f"results/{args.run}/counts.json",
+                "sha256": hashlib.sha256(raw_counts).hexdigest(),
+            }
+        else:
+            print("Grounding complete; collecting live graph counts", flush=True)
+            counts = await graph_counts(args.run, dbs)
+            counts_source = {"kind": "live recount after measured grounding"}
         report = {
             "run": args.run,
             "date": datetime.now(UTC).isoformat(),
             "seed": 0,
             "frozen": False,
+            "reader": "request-scoped-anchored-JOINS; no cross-request graph cache",
+            "per_namespace_grounding_concurrency": 1,
+            "latency_includes_admission_queue": True,
             "llm_calls": 0,
             "per_namespace_connection_pool_size": GRAPH_POOL_SIZE,
             "counts": counts,
+            "counts_source": counts_source,
             "levels": results,
             "trained": not args.allow_untrained,
         }

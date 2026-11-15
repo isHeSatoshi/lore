@@ -1,0 +1,2538 @@
+[
+  {
+    "db": "superhero",
+    "a": "s788",
+    "b": "t378",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:07:13.178815+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s743",
+    "b": "t378",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:07:46.095351+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s747",
+    "b": "t378",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:08:01.702719+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s791",
+    "b": "t378",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:08:20.448858+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t378",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:09:09.388011+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s728",
+    "b": "t378",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:09:51.619499+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s791",
+    "b": "t343",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "93ddbaad632044668bb11ba7101fd0a5ac5b09653bd56f87b4f8aa16d6170367",
+      "e582651fd85814f9dda85d5c8c8aa9acf6d540c071d65bbbf35bd8b97b128281"
+    ],
+    "suggestion": {
+      "question": "Calculate the average height for each superhero.",
+      "hint": "In this database, average height means CAST(SUM(superhero.height_cm) AS REAL) / COUNT(superhero.id).",
+      "followup": "I'm comparing Marvel and DC rosters and want to quantify how tall Marvel's roster is for characters whose abilities DC cannot match. What is the average height, in centimetres, of Marvel Comics characters who have at least one power that no DC Comics character has? Only characters with a measured height count.",
+      "verified": true
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:10:25.651062+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s743",
+    "b": "t343",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:11:14.095527+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s788",
+    "b": "t343",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:11:28.553610+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s767",
+    "b": "t343",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:12:23.853445+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s728",
+    "b": "t343",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:12:32.946363+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t343",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:12:52.015674+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1266",
+    "b": "t449",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:13:17.105161+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1170",
+    "b": "t449",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:13:53.970584+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1251",
+    "b": "t449",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:14:37.616879+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1271",
+    "b": "t449",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:15:13.864538+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1155",
+    "b": "t449",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:16:11.092017+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t449",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:17:13.954717+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1205",
+    "b": "t449",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:17:54.510900+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1167",
+    "b": "t395",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:18:07.676557+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1152",
+    "b": "t395",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:18:40.925973+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1251",
+    "b": "t395",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:19:29.258537+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1256",
+    "b": "t395",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:20:21.391955+00:00"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t395",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:21:02.749641+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s264",
+    "b": "t491",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:21:33.453974+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s197",
+    "b": "t491",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:22:09.694118+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s273",
+    "b": "t491",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:22:24.597806+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s251",
+    "b": "t491",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "357ffedd3674f7f5481eb523877872118da68690372d04495a255d9dedfa9f24",
+      "ae6f3fcf195ce2cddba1c9c360efa95a518f4f98500ec47a43166679ae7e492f"
+    ],
+    "suggestion": {
+      "question": "What is the least common element of all carcinogenic molecules?",
+      "hint": "In this database, least common element means ORDER BY COUNT(DISTINCT atom.molecule_id) ASC.",
+      "followup": "I'd like a ranked inventory of every molecule in the toxicology database that contains at least one carbon atom. For each qualifying molecule, give me its molecule id, carcinogenicity label, number of atoms, number of bonds, number of carbon atoms, number of chlorine atoms, number of carbon-touching bonds, and number of multiple bonds - one row per molecule, including molecules where some of these counts are zero. Rank the rows from the most carbon-touching bonds to the fewest; break ties by larger total atom count, then by molecule id ascending. Give consecutive rank positions 1, 2, 3, ... with no gaps after ties.",
+      "verified": true
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:23:22.767540+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s218",
+    "b": "t491",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:24:31.058773+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s298",
+    "b": "t491",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:24:40.458672+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s234",
+    "b": "t491",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:25:21.198824+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s197",
+    "b": "t468",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:25:44.679977+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s298",
+    "b": "t468",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "357ffedd3674f7f5481eb523877872118da68690372d04495a255d9dedfa9f24",
+      "61e2bdd594b1c3d96f5c8e72501244f6121cf27968a70e3f8f1cffe546fe3c6c",
+      "bae7111d5a056f57838b8fcb6aab55da50feee71f8a29868eebc753f5b37d51e"
+    ],
+    "suggestion": {
+      "question": "Calculate the percentage of molecules containing carcinogenic compounds that element is hydrogen.",
+      "hint": "In this database, percentage of atoms in carcinogenic molecules means CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id).",
+      "followup": "Among molecules containing at least one single bond, what is the average number of oxygen atoms per molecule? Include molecules with no oxygen and round to four decimal places.",
+      "verified": true
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:26:29.840361+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s324",
+    "b": "t468",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:26:36.201020+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s309",
+    "b": "t468",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:27:14.583367+00:00"
+  },
+  {
+    "db": "toxicology",
+    "a": "s273",
+    "b": "t468",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:27:28.028238+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s26",
+    "b": "t2",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:27:40.418836+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s87",
+    "b": "t2",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:28:12.305327+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s68",
+    "b": "t2",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "3f5e65862b31e8b4e623a59f3206d773406d52de8ea9c3d22fd2d33d2dcbb130"
+    ],
+    "suggestion": {
+      "question": "Which county reported the most number of school closure in the 1980s with school wonership code belonging to Youth Authority Facilities (CEA)?",
+      "hint": "In this database, school ownership code means schools.SOC.",
+      "followup": "For the five schools with ownership code 66 and the largest K-12 free-or-reduced-price meal counts, give each school's K-12 eligible meal rate rounded to six decimal places.",
+      "verified": true
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:29:29.213085+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s28",
+    "b": "t2",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:29:41.187805+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s70",
+    "b": "t2",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:30:26.430092+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s55",
+    "b": "t12",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:30:39.063996+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s25",
+    "b": "t12",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:31:28.586530+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s15",
+    "b": "t12",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:32:52.475161+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s23",
+    "b": "t12",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:33:31.569852+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s84",
+    "b": "t12",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:34:18.518910+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s86",
+    "b": "t12",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:34:57.683724+00:00"
+  },
+  {
+    "db": "california_schools",
+    "a": "s66",
+    "b": "t12",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:35:20.696902+00:00"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t370",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 16869,
+      "output_tokens": 2360,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:40:44.060584+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c3efa45905a60f72d2d8c35f9e5681ecad9a0fe3fcdd49c257f5d22d7dd4e528"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t381",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 16737,
+      "output_tokens": 2769,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:41:14.301739+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c3efa45905a60f72d2d8c35f9e5681ecad9a0fe3fcdd49c257f5d22d7dd4e528"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t380",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 16752,
+      "output_tokens": 3258,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:41:52.959374+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c3efa45905a60f72d2d8c35f9e5681ecad9a0fe3fcdd49c257f5d22d7dd4e528"
+  },
+  {
+    "db": "superhero",
+    "a": "s741",
+    "b": "t372",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 10156,
+      "output_tokens": 959,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:42:08.450634+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "706869c9b7118bc5e298133bccf6b1efbf58d6be9fc006af4c47e86df06f73a2"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t355",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 16883,
+      "output_tokens": 3326,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:42:40.653886+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c3efa45905a60f72d2d8c35f9e5681ecad9a0fe3fcdd49c257f5d22d7dd4e528"
+  },
+  {
+    "db": "superhero",
+    "a": "s791",
+    "b": "t367",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "46534231dd8121e6809e68b4f4c7a9435c3bdf6300bf283766f5d318eb687bd7",
+      "46af2857cfec1436cbf86cdf474b1e3d2905dc7038928eb498e32de2694741f9",
+      "93ddbaad632044668bb11ba7101fd0a5ac5b09653bd56f87b4f8aa16d6170367"
+    ],
+    "suggestion": {
+      "question": "Calculate the average height for each superhero.",
+      "hint": "In this database, average height means CAST(SUM(superhero.height_cm) AS REAL) / COUNT(superhero.id). Average height here is a single overall average across all superhero rows, computed as total height divided by the number of superheroes, so it must not be split by superhero_name.",
+      "followup": "I'm profiling publisher rosters and now want to look at the physical build of George Lucas's heroes. What is the average height of the heroes he created, in centimetres, and their average weight, in kilograms? Please round each average to one decimal place, and only include heroes whose height (for the height average) or weight (for the weight average) is actually known.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 16542,
+      "output_tokens": 3014,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:43:13.296588+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f5711a8ee59af1d50f93320a0d658ddafd316b4747cdf6458b730d377d2baea5"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t345",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 12041,
+      "output_tokens": 2696,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:43:47.030104+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c3efa45905a60f72d2d8c35f9e5681ecad9a0fe3fcdd49c257f5d22d7dd4e528"
+  },
+  {
+    "db": "superhero",
+    "a": "s805",
+    "b": "t357",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 7012,
+      "output_tokens": 761,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:44:02.526948+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "599b5ec2c446cd84a93773b3a33c1c331fc8a0c4f283200eef3314f466da6752"
+  },
+  {
+    "db": "superhero",
+    "a": "s799",
+    "b": "t346",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3389,
+      "output_tokens": 891,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:44:12.483884+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9422cee57f0d0ad7414cc67e773166dc9de1fb6cdcf7cabf02d405b93020ed75"
+  },
+  {
+    "db": "superhero",
+    "a": "s720",
+    "b": "t375",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 12233,
+      "output_tokens": 1284,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:44:39.836113+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "566e8ed387926edeb520773c6ecb095e0fbe5bf32babaf60778f76072296fef6"
+  },
+  {
+    "db": "superhero",
+    "a": "s767",
+    "b": "t350",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3420,
+      "output_tokens": 1436,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:44:52.574440+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "0bbea73c3baefa0fbaed8f0c2e2e85f4f4f3daf8e093d016dcc7c1a43726941a"
+  },
+  {
+    "db": "superhero",
+    "a": "s791",
+    "b": "t373",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3388,
+      "output_tokens": 262,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:45:00.155878+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e0e2ad15a80acde0a547bb7617c960694756deb8b39c4d0e5fc481828f42ac38"
+  },
+  {
+    "db": "superhero",
+    "a": "s720",
+    "b": "t376",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3414,
+      "output_tokens": 731,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:45:08.421557+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "566e8ed387926edeb520773c6ecb095e0fbe5bf32babaf60778f76072296fef6"
+  },
+  {
+    "db": "superhero",
+    "a": "s837",
+    "b": "t338",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3354,
+      "output_tokens": 393,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:45:16.404030+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d784352fc3d08a07d556ab3d674aaaeeaea1daddd09d899646ee2ff4584535df"
+  },
+  {
+    "db": "superhero",
+    "a": "s788",
+    "b": "t370",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 3628,
+      "output_tokens": 314,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:45:28.064357+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "a8b5397f290b9dce633b07a361319f5378201215194563dbcb8b6b0f5292ff7f"
+  },
+  {
+    "db": "superhero",
+    "a": "s799",
+    "b": "t381",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 8578,
+      "output_tokens": 1604,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:45:48.227194+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9422cee57f0d0ad7414cc67e773166dc9de1fb6cdcf7cabf02d405b93020ed75"
+  },
+  {
+    "db": "superhero",
+    "a": "s767",
+    "b": "t380",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 13444,
+      "output_tokens": 1861,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:46:18.269639+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "0bbea73c3baefa0fbaed8f0c2e2e85f4f4f3daf8e093d016dcc7c1a43726941a"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t372",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 13632,
+      "output_tokens": 1801,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:46:48.730769+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c3efa45905a60f72d2d8c35f9e5681ecad9a0fe3fcdd49c257f5d22d7dd4e528"
+  },
+  {
+    "db": "superhero",
+    "a": "s788",
+    "b": "t355",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 5195,
+      "output_tokens": 621,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:47:01.418417+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "a8b5397f290b9dce633b07a361319f5378201215194563dbcb8b6b0f5292ff7f"
+  },
+  {
+    "db": "superhero",
+    "a": "s829",
+    "b": "t367",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 10197,
+      "output_tokens": 1364,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:47:19.387901+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e662207dd5f09ff491716060b20dfca82fc3a4ab8fb767dac71eb6ac1e59bd1d"
+  },
+  {
+    "db": "superhero",
+    "a": "s799",
+    "b": "t345",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 6992,
+      "output_tokens": 1004,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:47:38.216245+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9422cee57f0d0ad7414cc67e773166dc9de1fb6cdcf7cabf02d405b93020ed75"
+  },
+  {
+    "db": "superhero",
+    "a": "s788",
+    "b": "t357",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 6732,
+      "output_tokens": 1698,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:47:57.526307+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "fee651f222c4b62dbbebb3526d69e3364f96495c311b17dca4724d3f114c943c"
+  },
+  {
+    "db": "superhero",
+    "a": "s743",
+    "b": "t346",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3387,
+      "output_tokens": 639,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:48:08.983074+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "4be3d6901a05c8476a531548617a66bf4d12956c04e28e039aba05e5da305541"
+  },
+  {
+    "db": "superhero",
+    "a": "s799",
+    "b": "t375",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 1806,
+      "output_tokens": 161,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:48:15.736635+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9422cee57f0d0ad7414cc67e773166dc9de1fb6cdcf7cabf02d405b93020ed75"
+  },
+  {
+    "db": "superhero",
+    "a": "s747",
+    "b": "t350",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3420,
+      "output_tokens": 1382,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:48:25.467028+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d7c7a187f789d5462fadabef223d169cb1cca455ce20e9ba94de9b8fc4426882"
+  },
+  {
+    "db": "superhero",
+    "a": "s767",
+    "b": "t373",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "638e359c16ffcc6f6bec5e11fcdfd55cde72404511d238b6c7b99e73f1d8de8c",
+      "b48dd8863e60e5ceacd856c4e4517ed4840e56420fb297a0ecc62f44ba81dc15"
+    ],
+    "suggestion": {
+      "question": "What is the average of superheroes with no skin colour?",
+      "hint": "In this database, average of superheroes with no skin colour means CAST(COUNT(*) AS REAL) / SUM(CASE WHEN superhero.skin_colour_id = 1 THEN 1 ELSE 0 END). This 'average' is a count-based ratio: total superheroes divided by the number of superheroes in the specified skin-colour group, not an average of an attribute such as height_cm.",
+      "followup": "I'm putting together a trivia fact box on tiny heroes. Could you tell me the hair colour of the shortest human superhero? Please treat heroes with no recorded height as unmeasured rather than as being the shortest. I just need the colour, nothing else.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 14993,
+      "output_tokens": 2724,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:49:00.127227+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "0bbea73c3baefa0fbaed8f0c2e2e85f4f4f3daf8e093d016dcc7c1a43726941a"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1170",
+    "b": "t460",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3950,
+      "output_tokens": 635,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:49:16.236482+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e85f1e0a10e1fb3977bcc90302b88739d873916fff6c12cbe045e6e0a2963a05"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1177",
+    "b": "t427",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 10054,
+      "output_tokens": 1340,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:50:00.806001+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "7e89c4c86686d6107dc6c7c82fda515b197f6729e507f86b272f2cb4bb53859a"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1219",
+    "b": "t435",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3959,
+      "output_tokens": 793,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:50:21.779482+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "b8e84abb8156252b486c476990d62799eff34d10b0564ee0168c64e4e4c376b0"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1280",
+    "b": "t413",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11851,
+      "output_tokens": 2427,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:51:10.710803+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f86feddaf44f3864d1cb6269e571b4a8cf44e5785ad175de4459e98897f2abf8"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1280",
+    "b": "t428",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3995,
+      "output_tokens": 491,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:51:27.369100+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f1687f115e0ed115481e4d3d3f4089c22426d5a473658a399402d3b6d0af56c3"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1251",
+    "b": "t389",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11777,
+      "output_tokens": 5480,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:52:35.543907+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "fb8da57fe100956f246de0df4c6b307064eb6da0f7c847754c0fffe2e8b1f4a3"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t467",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 17377,
+      "output_tokens": 4527,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:54:08.215239+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1219",
+    "b": "t443",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11862,
+      "output_tokens": 1759,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:54:41.804706+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "b8e84abb8156252b486c476990d62799eff34d10b0564ee0168c64e4e4c376b0"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1152",
+    "b": "t433",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11888,
+      "output_tokens": 2031,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:55:13.805778+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "1ca57e8ae725b271b850c45866771cf0a0f3dff548df41b5b0ef342a582d4def"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1152",
+    "b": "t420",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11842,
+      "output_tokens": 1817,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:55:46.415171+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "1ca57e8ae725b271b850c45866771cf0a0f3dff548df41b5b0ef342a582d4def"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t458",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 8281,
+      "output_tokens": 1463,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:56:18.064709+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1205",
+    "b": "t382",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 10076,
+      "output_tokens": 2415,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:57:06.907499+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "cbd6af8ae37ae796646fc5ef9130fe85ec473cf6f395d2c05a7f6a0764f1350a"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t409",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 18891,
+      "output_tokens": 3932,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:58:09.508976+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1152",
+    "b": "t445",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11896,
+      "output_tokens": 3555,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:58:49.567330+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "1ca57e8ae725b271b850c45866771cf0a0f3dff548df41b5b0ef342a582d4def"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1152",
+    "b": "t421",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11856,
+      "output_tokens": 2454,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T19:59:31.701746+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "1ca57e8ae725b271b850c45866771cf0a0f3dff548df41b5b0ef342a582d4def"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1266",
+    "b": "t466",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "0b3f8f0db77ff028260fbe573d00beac8e26fc318ae114207d51a9817322c691",
+      "231c7c7b3573c051357403171154c3143c4ee4b3f456bb57754d91f5080619ee",
+      "24a6b5693a6efeabd9316cc8b765c29a981d8b60dd1e2f61c6113acbdddb3009"
+    ],
+    "suggestion": {
+      "question": "Which is the youngest patient with an abnormal anti-ribonuclear protein level? Please list his or her date of birth.",
+      "hint": "In this database, patient laboratory result means Patient.ID = Laboratory.ID. Laboratory rows carry the patient identification in Laboratory.ID, which matches Patient.ID.",
+      "followup": "As part of our clinical audit I'm profiling patients born between 1936 and 1956 inclusive who never had a creatinine phosphokinase (CPK) result above the normal range. A CPK of 250 or higher counts as above the normal range, and patients with no CPK results on record count as never having exceeded it. For that group, please give me the women's percentage of the group's men and women, rounded to one decimal place.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 18970,
+      "output_tokens": 3017,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:00:31.516103+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "03fa12830964ec5b9e0e66470c92c3b376860ff48957ec8e9b3195b2d56bba10"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t403",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11837,
+      "output_tokens": 1925,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:01:06.809668+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2b36871c24fa2b81355cb72ae81411512bed8c87a02b28e5a6bdc5d6a6cd4ed"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t460",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3948,
+      "output_tokens": 605,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:01:18.851870+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t427",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11831,
+      "output_tokens": 2813,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:02:00.298040+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2b36871c24fa2b81355cb72ae81411512bed8c87a02b28e5a6bdc5d6a6cd4ed"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1266",
+    "b": "t435",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3959,
+      "output_tokens": 841,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:02:14.596820+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "188a8be8ad2efa8b38c9956660a4e71b45b08fc3ccea7649658b6132e24cc4de"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t413",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11871,
+      "output_tokens": 2142,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:02:53.022529+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2b36871c24fa2b81355cb72ae81411512bed8c87a02b28e5a6bdc5d6a6cd4ed"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1279",
+    "b": "t428",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3995,
+      "output_tokens": 640,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:03:06.560761+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "bb873bf7862db0a86cf23737c33daf06bd1d520e9bedd4b5e4d3ae19021c5bdb"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t389",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11799,
+      "output_tokens": 2438,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:03:49.447523+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2b36871c24fa2b81355cb72ae81411512bed8c87a02b28e5a6bdc5d6a6cd4ed"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1156",
+    "b": "t467",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11863,
+      "output_tokens": 2797,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:04:33.466293+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "bcfa793b6fc7214f8fc2485dea057f442b076af9e206308b0d500d06a557d691"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1266",
+    "b": "t443",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 7886,
+      "output_tokens": 1189,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:04:58.605801+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "03fa12830964ec5b9e0e66470c92c3b376860ff48957ec8e9b3195b2d56bba10"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1300",
+    "b": "t433",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 4012,
+      "output_tokens": 990,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:05:13.759598+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "66f58f10beaec2d0b6cf3070990c8f3855ee3a57f0c535cfabf3707eaf2fe93f"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t420",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11827,
+      "output_tokens": 2940,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:05:56.527186+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t458",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 10063,
+      "output_tokens": 3894,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:06:44.298023+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2b36871c24fa2b81355cb72ae81411512bed8c87a02b28e5a6bdc5d6a6cd4ed"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1247",
+    "b": "t382",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11804,
+      "output_tokens": 2575,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:07:25.551120+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2b36871c24fa2b81355cb72ae81411512bed8c87a02b28e5a6bdc5d6a6cd4ed"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1204",
+    "b": "t409",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 17271,
+      "output_tokens": 2767,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:08:28.225439+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "16343cf7e667bab490abcd644fc78cb0e9ff09e3b6184cfe96d85284906c5933"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1266",
+    "b": "t445",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 7936,
+      "output_tokens": 5587,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:09:19.828581+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "188a8be8ad2efa8b38c9956660a4e71b45b08fc3ccea7649658b6132e24cc4de"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1302",
+    "b": "t421",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 4003,
+      "output_tokens": 1044,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:09:36.474745+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "df799d25dfe97721fa0eb64d9e2ffdde9b29990516f567e21d7adc93573d77e6"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1177",
+    "b": "t466",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11860,
+      "output_tokens": 2315,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:10:14.793118+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "beb487a265ca107226e6e3b59fef56c54be20b32018e060a1397d4b763b84cbe"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1205",
+    "b": "t403",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11877,
+      "output_tokens": 2151,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:10:51.186171+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "cbd6af8ae37ae796646fc5ef9130fe85ec473cf6f395d2c05a7f6a0764f1350a"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1256",
+    "b": "t460",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 3947,
+      "output_tokens": 765,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:11:05.482740+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "5b0e2effbdac1bd0c533e0bc1e674b139e6a16cdb8f70f12dba203601d29e141"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1167",
+    "b": "t427",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 19447,
+      "output_tokens": 4764,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:12:11.673739+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e667f6f519ba8db1d0b2197e1c39cd615cce0a4e6f7eeea9792355e9bfd6566e"
+  },
+  {
+    "db": "toxicology",
+    "a": "s309",
+    "b": "t484",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 2463,
+      "output_tokens": 600,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:12:19.483719+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "82f12835491f887f31828b4c82e24277feec52287a78f8840093dae47508d237"
+  },
+  {
+    "db": "toxicology",
+    "a": "s286",
+    "b": "t496",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 2502,
+      "output_tokens": 1851,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:12:32.653245+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "50c36897f74f9f92dd1eff14bf348f0e9bd9160959cc7995dd83ab0a57c66ea3"
+  },
+  {
+    "db": "toxicology",
+    "a": "s247",
+    "b": "t494",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 14186,
+      "output_tokens": 4976,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:13:14.974876+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f77337d3bac363dbd26cb913974c309b86f0cee22a5ea1814bed75ca8112268a"
+  },
+  {
+    "db": "toxicology",
+    "a": "s298",
+    "b": "t481",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "357ffedd3674f7f5481eb523877872118da68690372d04495a255d9dedfa9f24",
+      "988fa9c2f6fe51d7b8f3873e9bc7d41940964ab446f6be5909035db92b598fec",
+      "bae7111d5a056f57838b8fcb6aab55da50feee71f8a29868eebc753f5b37d51e"
+    ],
+    "suggestion": {
+      "question": "Calculate the percentage of molecules containing carcinogenic compounds that element is hydrogen.",
+      "hint": "In this database, percentage of atoms in carcinogenic molecules means CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id). Compute this share over atom rows (no DISTINCT on molecule ids): numerator is hydrogen atoms in carcinogenic molecules, denominator is all joined atom rows, and the label filter belongs inside the numerator case rather than in a WHERE clause that also shrinks the denominator.",
+      "followup": "Among the molecules labeled '+' (carcinogenic), which chemical element is the most common among the atoms that take part in at least one bond? Also give the percentage of all atoms in those '+' molecules that this element accounts for, rounded to two decimal places. Count the percentage over every atom of the '+' molecules, whether or not it takes part in a bond. If several elements tie for most common, report each of them.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 13735,
+      "output_tokens": 4655,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:13:55.739923+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "cf18c8df3428d0f3060d399014904ed0ed60ff0c820bc3cb988c2feadd204344"
+  },
+  {
+    "db": "california_schools",
+    "a": "s25",
+    "b": "t38",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 13338,
+      "output_tokens": 2998,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:14:39.542377+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "734e8a06f86927416db28623fa69d8403eb745ac1229cd1dc856242aed4da82c"
+  },
+  {
+    "db": "california_schools",
+    "a": "s41",
+    "b": "t11",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15053,
+      "output_tokens": 3070,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:15:26.610859+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "db90a72421a2460c1e59ab35954704c19cb13d55610d17bff99602b861fdf757"
+  },
+  {
+    "db": "california_schools",
+    "a": "s84",
+    "b": "t27",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5099,
+      "output_tokens": 1663,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:15:45.653977+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2c1b52a1315461c6b3d7501b1ab5b7bb3306077cd6c0236c0e5b39b6cab115b"
+  },
+  {
+    "db": "california_schools",
+    "a": "s37",
+    "b": "t0",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 14948,
+      "output_tokens": 2076,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:16:23.901290+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "67d0b819055b40a09c1025f6925912004443ec970bf3a41bf9959169525570ff"
+  },
+  {
+    "db": "california_schools",
+    "a": "s23",
+    "b": "t1",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 4963,
+      "output_tokens": 628,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:16:36.766049+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "710318475e62d97cb1065fc21b0a681ba5c3b40d49da44d4bbfef7f4a73808b9"
+  },
+  {
+    "db": "california_schools",
+    "a": "s11",
+    "b": "t41",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 21698,
+      "output_tokens": 2247,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:17:36.073177+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "887659fb1ba66fe83e2d634ce7228958dd944ad51ecd353ea31f2b3388362bbf"
+  },
+  {
+    "db": "california_schools",
+    "a": "s26",
+    "b": "t47",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 24329,
+      "output_tokens": 5414,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:18:56.161851+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "8e84b9c0036579e986fdc6cf8ad23c1be1ffa03bb4d110020104ed15c04e142f"
+  },
+  {
+    "db": "california_schools",
+    "a": "s25",
+    "b": "t25",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5048,
+      "output_tokens": 2538,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:19:21.408748+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "734e8a06f86927416db28623fa69d8403eb745ac1229cd1dc856242aed4da82c"
+  },
+  {
+    "db": "california_schools",
+    "a": "s41",
+    "b": "t38",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15010,
+      "output_tokens": 2730,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:20:00.899349+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "db90a72421a2460c1e59ab35954704c19cb13d55610d17bff99602b861fdf757"
+  },
+  {
+    "db": "california_schools",
+    "a": "s36",
+    "b": "t11",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5085,
+      "output_tokens": 1493,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:20:18.727095+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9e380a26f8bc27a2aa9a26e51bb54ee4bec9e7ad0aaab39e58c3a26cb0bcf67c"
+  },
+  {
+    "db": "california_schools",
+    "a": "s37",
+    "b": "t27",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5100,
+      "output_tokens": 2923,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:20:45.845762+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "78eaef20f476355df2243f9a218fa62b275e05669b1260b1f74ff9a8c90a12ac"
+  },
+  {
+    "db": "california_schools",
+    "a": "s26",
+    "b": "t0",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 14946,
+      "output_tokens": 1536,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:21:18.643920+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "8e84b9c0036579e986fdc6cf8ad23c1be1ffa03bb4d110020104ed15c04e142f"
+  },
+  {
+    "db": "california_schools",
+    "a": "s65",
+    "b": "t1",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 14920,
+      "output_tokens": 2534,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:21:59.001479+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "bba38b30d03ee54061cee1045cbd0b89445783c0784c673f59fd7d9fb1293d19"
+  },
+  {
+    "db": "california_schools",
+    "a": "s23",
+    "b": "t41",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 9971,
+      "output_tokens": 2757,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:22:32.976736+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "710318475e62d97cb1065fc21b0a681ba5c3b40d49da44d4bbfef7f4a73808b9"
+  },
+  {
+    "db": "california_schools",
+    "a": "s87",
+    "b": "t47",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5080,
+      "output_tokens": 1180,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:22:49.068297+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "aa371ec0050b434b1ed6946189e5c3eed5a924ff41442c11f5ad61fee76da9dc"
+  },
+  {
+    "db": "california_schools",
+    "a": "s37",
+    "b": "t25",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15012,
+      "output_tokens": 6490,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:23:53.967188+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "78eaef20f476355df2243f9a218fa62b275e05669b1260b1f74ff9a8c90a12ac"
+  },
+  {
+    "db": "california_schools",
+    "a": "s15",
+    "b": "t38",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 14968,
+      "output_tokens": 2824,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:24:37.544488+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f6fdad77102b86d547ab218f867c2e6fcfd48a7e56511ced3a33a1c84a98b7b0"
+  },
+  {
+    "db": "california_schools",
+    "a": "s84",
+    "b": "t11",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 10036,
+      "output_tokens": 2125,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:25:06.542698+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "f2c1b52a1315461c6b3d7501b1ab5b7bb3306077cd6c0236c0e5b39b6cab115b"
+  },
+  {
+    "db": "california_schools",
+    "a": "s41",
+    "b": "t27",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5101,
+      "output_tokens": 1533,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:25:24.469785+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "db90a72421a2460c1e59ab35954704c19cb13d55610d17bff99602b861fdf757"
+  },
+  {
+    "db": "california_schools",
+    "a": "s23",
+    "b": "t0",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 8224,
+      "output_tokens": 587,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:25:48.311227+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "710318475e62d97cb1065fc21b0a681ba5c3b40d49da44d4bbfef7f4a73808b9"
+  },
+  {
+    "db": "california_schools",
+    "a": "s66",
+    "b": "t1",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 8225,
+      "output_tokens": 1187,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:26:13.985204+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "bc5f9620274764a155c6f543a5882ce0c8fc7b8a7bed437536de8cbc033cf844"
+  },
+  {
+    "db": "california_schools",
+    "a": "s55",
+    "b": "t41",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 8275,
+      "output_tokens": 1000,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:26:39.386753+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "c9ffbebe619f89492a92cb091917f959c78bdf8b99846c58eec7abe434861ec8"
+  },
+  {
+    "db": "california_schools",
+    "a": "s70",
+    "b": "t47",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5080,
+      "output_tokens": 865,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:26:54.491495+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "aa759e9ba9bf481e31b01de0cd3c8e94f32dee303d497347cc7a6c31f92578af"
+  },
+  {
+    "db": "california_schools",
+    "a": "s27",
+    "b": "t25",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5047,
+      "output_tokens": 7472,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:27:51.691827+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "703af8a788af921c0672bcfab3fd6eabf9399ecc448cc58e5570a5e65ab14660"
+  },
+  {
+    "db": "california_schools",
+    "a": "s36",
+    "b": "t38",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15001,
+      "output_tokens": 2771,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:28:37.767760+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d7282dc9956d93bce1bce1c9b44df77b95d1e5666deb7a32d9a147a3c5c4c627"
+  },
+  {
+    "db": "california_schools",
+    "a": "s70",
+    "b": "t11",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15021,
+      "output_tokens": 4036,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:29:27.185585+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9facc2c18e7447d8d8b4bc1af4216bcdde5594e9d5a78e2385787b10f2e80f37"
+  },
+  {
+    "db": "california_schools",
+    "a": "s36",
+    "b": "t27",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15060,
+      "output_tokens": 3293,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:30:11.256309+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d7282dc9956d93bce1bce1c9b44df77b95d1e5666deb7a32d9a147a3c5c4c627"
+  },
+  {
+    "db": "california_schools",
+    "a": "s36",
+    "b": "t0",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 13219,
+      "output_tokens": 1424,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:30:47.265095+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d7282dc9956d93bce1bce1c9b44df77b95d1e5666deb7a32d9a147a3c5c4c627"
+  },
+  {
+    "db": "california_schools",
+    "a": "s41",
+    "b": "t1",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 4963,
+      "output_tokens": 561,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:31:01.345465+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "db90a72421a2460c1e59ab35954704c19cb13d55610d17bff99602b861fdf757"
+  },
+  {
+    "db": "california_schools",
+    "a": "s36",
+    "b": "t41",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 14969,
+      "output_tokens": 2593,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:31:44.918374+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d7282dc9956d93bce1bce1c9b44df77b95d1e5666deb7a32d9a147a3c5c4c627"
+  },
+  {
+    "db": "california_schools",
+    "a": "s41",
+    "b": "t47",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15052,
+      "output_tokens": 3886,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:32:35.153936+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "db90a72421a2460c1e59ab35954704c19cb13d55610d17bff99602b861fdf757"
+  },
+  {
+    "db": "california_schools",
+    "a": "s66",
+    "b": "t25",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 8307,
+      "output_tokens": 2591,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:33:13.496830+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "bba785b32d24fb6f77e37c4eee36c9a2504fd7947cf8b365e9d54179a05fd112"
+  },
+  {
+    "db": "california_schools",
+    "a": "s60",
+    "b": "t38",
+    "passed": false,
+    "reason": "teaching_question_already_correct",
+    "llm_usage": {
+      "input_tokens": 8288,
+      "output_tokens": 1659,
+      "calls": 2
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:33:43.924125+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "6ae26aeddee8b8e81ea309f20c9dadf26b9a637fdeda837dee9d8be77ad27a09"
+  },
+  {
+    "db": "california_schools",
+    "a": "s82",
+    "b": "t11",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15021,
+      "output_tokens": 3631,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:34:36.137725+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "cf32fd2dcbd92c7050e3bb2ce22b0d07962dfb502234875730480efe946ebc30"
+  },
+  {
+    "db": "california_schools",
+    "a": "s60",
+    "b": "t27",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5100,
+      "output_tokens": 1055,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:34:54.755310+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "6ae26aeddee8b8e81ea309f20c9dadf26b9a637fdeda837dee9d8be77ad27a09"
+  },
+  {
+    "db": "california_schools",
+    "a": "s76",
+    "b": "t0",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 24015,
+      "output_tokens": 3375,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:36:06.679503+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "af05dd9f25ed5392852c27c55e0be3844f54af4599350ed099e9a41cf5b94521"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1167",
+    "b": "t458",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "56223500f064546fd6b6d302acc429673d28cbc00215976a4cd2caffbd0cf502",
+      "9ddd865cb7d9ad033a552aa1fa6954f6c75b0547a1bd6750a70150437c42482e",
+      "a5d0e4d58679893e4e0ece3f82288cad66db8a749f3dd3f5d595f163e5758092"
+    ],
+    "suggestion": {
+      "question": "For the year that concluded on December 31, 1998, how many male patients on average were tested in the lab each month?",
+      "hint": "In this database, average per month over a year means CAST(COUNT(Patient.ID) AS REAL) / 12. An average-per-month figure for a full calendar year is the year's total count divided by 12, not the average of the non-empty monthly group counts (which silently drops months with zero activity).",
+      "followup": "Among the patients who have laboratory test records on file, how many are female and how many are male? Please give me one line for the female patients and one line for the male patients, each showing the sex and the number of patients of that sex.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 17773,
+      "output_tokens": 5087,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:39:21.910206+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e667f6f519ba8db1d0b2197e1c39cd615cce0a4e6f7eeea9792355e9bfd6566e",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t421",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 4003,
+      "output_tokens": 865,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:39:39.277631+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1167",
+    "b": "t413",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 11898,
+      "output_tokens": 2110,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:40:27.905806+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e667f6f519ba8db1d0b2197e1c39cd615cce0a4e6f7eeea9792355e9bfd6566e",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1258",
+    "b": "t403",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 10056,
+      "output_tokens": 2796,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:41:20.160637+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "d2e6c3c68e3c6be7441a66c1f8513acde372a0b54bb315fb9973921fd72d28f8",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "thrombosis_prediction",
+    "a": "s1167",
+    "b": "t403",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "56223500f064546fd6b6d302acc429673d28cbc00215976a4cd2caffbd0cf502",
+      "9ddd865cb7d9ad033a552aa1fa6954f6c75b0547a1bd6750a70150437c42482e",
+      "cde0520ae66ec2e689deed762cb251d7b71f2414a153136d5881467d1a91eebc"
+    ],
+    "suggestion": {
+      "question": "For the year that concluded on December 31, 1998, how many male patients on average were tested in the lab each month?",
+      "hint": "In this database, average per month over a year means CAST(COUNT(Patient.ID) AS REAL) / 12. An average-per-month figure for a full calendar year is the year's total count divided by 12, not the average of the non-empty monthly group counts (which silently drops months with zero activity).",
+      "followup": "I'm putting together a demographic summary of our low-albumin patients. Could you tell me how many patients with an albumin measurement below 3.5 are female and how many are male? I'd like one row per sex group showing the sex (F or M) and the number of patients in that group.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 17636,
+      "output_tokens": 2882,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:42:30.586331+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "e667f6f519ba8db1d0b2197e1c39cd615cce0a4e6f7eeea9792355e9bfd6566e",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "california_schools",
+    "a": "s11",
+    "b": "t1",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "4eab0ac5fe576ceb7e80998fea74709cc9040724e7dae468af565d929ed2199e",
+      "fa0aeb2148d0c42f226190a0c63654007b0a9aa302bf836cd037e2bedff1f70d"
+    ],
+    "suggestion": {
+      "question": "Please list the codes of the schools with a total enrollment of over 500.",
+      "hint": "In this database, total enrollment means frpm.\"Enrollment (K-12)\" + frpm.\"Enrollment (Ages 5-17)\". Total enrollment for a school is the sum of its K-12 enrollment and its Ages 5-17 enrollment as stored in the frpm table.",
+      "followup": "For locally funded schools whose K-12 minus ages-5-17 enrollment difference exceeds the average such difference among locally funded schools, list each school's directory-listed name and DOC type.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 23349,
+      "output_tokens": 2733,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:43:45.982051+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "eb97f0cf8968f6eecf0e57611950b25ebaf62d64768871b42d5973a4f2276b70",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "california_schools",
+    "a": "s26",
+    "b": "t41",
+    "passed": false,
+    "reason": "followup_already_correct",
+    "llm_usage": {
+      "input_tokens": 5011,
+      "output_tokens": 1031,
+      "calls": 1
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:44:06.953273+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "dbb924ee955a50e55a2513d8c6aa427730e8c61379f1eae59bdf65ba85019590",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "california_schools",
+    "a": "s11",
+    "b": "t0",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 21596,
+      "output_tokens": 2438,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:45:17.063356+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "eb97f0cf8968f6eecf0e57611950b25ebaf62d64768871b42d5973a4f2276b70",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "california_schools",
+    "a": "s68",
+    "b": "t47",
+    "passed": false,
+    "reason": "followup_still_wrong",
+    "llm_usage": {
+      "input_tokens": 22117,
+      "output_tokens": 2607,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:46:23.001222+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "98248e25402956ce0c530012520260895bdf6c142ce146bba689dda8b323fa2a",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "california_schools",
+    "a": "s15",
+    "b": "t47",
+    "passed": false,
+    "reason": "hint_proposal_not_correct",
+    "llm_usage": {
+      "input_tokens": 15001,
+      "output_tokens": 2215,
+      "calls": 3
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:47:05.010233+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "11d14e5e0f68b83d44afad0c5d4ff0434db5a8cd696558feaab308273bc847a4",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  },
+  {
+    "db": "california_schools",
+    "a": "s28",
+    "b": "t47",
+    "passed": true,
+    "reason": "wrong_before_correct_after_with_new_rule_used",
+    "used_rule_sql_hashes": [
+      "3229bef5193e2dd07b84b0090d1062a6cbb5372e25f038397ff45e912aede916"
+    ],
+    "suggestion": {
+      "question": "Consider the average difference between K-12 enrollment and 15-17 enrollment of schools that are locally funded, list the names and DOC type of schools which has a difference above this average.",
+      "hint": "In this database, doc type means schools.DOC. The district ownership code is stored in schools.DOC as numeric codes (e.g. 00, 02, 52, 54, 56); there is no schools.DOCType column.",
+      "followup": "I'm preparing a mailing campaign and need a list of public high schools in Los Angeles County that have more than 500 free or reduced-price meal recipients ages 5-17. By public high schools I mean every public high-school category in the meal program report - regular high schools, continuation high schools, and high schools in single-school districts - not just regular ones; middle and junior high schools don't count. For each school, please give me the school name exactly as listed in the school directory, plus the campus (physical) street address - not a mailing or post-office address - along with the city, state and ZIP code, each as a separate field. Schools sharing a name are separate schools, so one row per school. Please sort the list by school name.",
+      "verified": true
+    },
+    "llm_usage": {
+      "input_tokens": 24860,
+      "output_tokens": 8886,
+      "calls": 5
+    },
+    "model": "minimax-m3.1-flash",
+    "effort": "medium",
+    "at": "2026-11-15T20:48:44.952690+00:00",
+    "hint_protocol": "rule-sql-and-note-v2",
+    "hint_sha256": "9fb0a75aafafc39238c2913313b659e06b0b388c73721ea0b183de578911b00c",
+    "search_strategy": "teachable A/hint first; diverse B; never repeat a tried pair"
+  }
+]

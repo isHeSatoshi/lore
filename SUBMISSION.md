@@ -3,7 +3,8 @@
 ## Readiness
 
 **Not ready to submit yet.** Full comparisons, final-source validation and
-the seeded native cold start pass. Teaching discovery, trained load and the
+the seeded native cold start pass. All twelve teaching pairs and all 3,000
+trained-load requests now pass; final live-reader cold/integration refresh and
 public hosted checks remain open. Factory-only `r4` is complete with MiniMax
 M3.1 Flash at medium effort. Raw-provider `r2` remains paused on quota.
 SDK and raw-provider answers are not combined; failed `r3` preflight answers
@@ -59,10 +60,18 @@ Do not use the exploratory small-run scores as the final headline. All three
 audits, including failures and remaining noisy rules, are preserved in
 `results/s1/`, `results/s2/` and `results/s3/`.
 
-Trained-load measurements and public URLs must still be added before submission.
+Public URLs and final live-reader validation must still be added before submission.
 All first-round teaching outcomes are retained: four passes across 48 attempts
 did not meet the three-per-database release gate. Bounded further discovery
 uses the existing rule explanation and more diverse follow-ups.
+
+Final discovery establishes three strict pairs in each selected database
+(38/53/16/54 trials, 3 passes each), with all failures retained. No single-question
+fallback was used. The trained load report has zero errors at 10/50/100 offered
+clients, 1,000 requests each. Queue-inclusive p99 is 4.74/26.08/42.75 seconds.
+The earlier failed pool stress remains in `results/r4/load.failed1.json`.
+The anchored uncached live reader matches original full blocks and traces on
+all 500 held-out inputs. None of the frozen accuracy sources changed.
 
 ## Recording outline
 
@@ -110,7 +119,7 @@ from generated results and real links. The owner must approve any posting.
 - [x] Export finished seeds and select the measured demo databases.
 - [ ] Complete the real teaching replays and browser walkthrough.
 - [x] Run the real seeded native launcher cold-start and restoration check.
-- [ ] Run trained grounding load.
+- [x] Run trained grounding load.
 - [ ] Recheck clean-source reproduction, secrets, Git history and staged scope.
 - [ ] Update the README and this handoff with final results and limitations.
 - [ ] Create and push the public repository using the owner's approval.

@@ -180,13 +180,32 @@ despite an irrelevant retrieved rule, and source labels can encode quirks.
 
 ## Load test
 
-The trained-graph load test is pending. The existing
-[`load.smoke.json`](results/r2/load.smoke.json) is explicitly a schema-only
-connectivity smoke, not the required trained result.
+The [trained load report](results/r4/load.json) exercises all eleven completed
+namespaces without an LLM or cross-request graph cache. One fresh process sends
+1,000 requests per level, with 10, 50 or 100 offered clients.
 
-The final test exercises `ground()` without an LLM, with unfrozen readers so
-requests actually read HydraDB. It reports latency percentiles, throughput,
-errors and graph size in `results/r4/load.json`.
+| Clients | p50 | p95 | p99 | Requests/sec | Errors |
+|---:|---:|---:|---:|---:|---:|
+| 10 | 0.95 s | 3.92 s | 4.74 s | 6.84 | 0/1000 |
+| 50 | 1.95 s | 24.13 s | 26.08 s | 6.96 | 0/1000 |
+| 100 | 6.66 s | 41.23 s | 42.75 s | 6.79 | 0/1000 |
+
+These are local 4-CPU observations, not hosted latency guarantees. One active
+grounding request per namespace protects its four driver connections; all
+admission waiting is included in latency. This passes the zero-error gate,
+not a low-latency scaling claim. Graph size comes from the completed immutable
+run's full audit, identified by hash in the load report, not a fresh recount.
+
+The first [complete stress attempt](results/r4/load.failed1.json) had pool
+timeouts. The live reader now anchors join reads at every column of reached
+tables and queues whole requests rather than flooding the pool. Its full
+blocks and traces match the original reader on [all 500 held-out inputs](results/r4/live_reader_validation.json).
+All sixteen frozen benchmark/runtime source hashes remain unchanged.
+
+[Teaching discovery](results/r4/demo_discovery.json) establishes three strict
+fresh correction-and-transfer pairs per selected database, 12 passes across
+161 retained trials. This is selected demonstration evidence, not a 12/12
+future-success guarantee. No single-question fallback was needed.
 
 ## Run locally with the measured Factory transport
 

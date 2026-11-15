@@ -132,10 +132,13 @@ state="$(mktemp -d /tmp/lore-hf-check-XXXXXX)"
 docker run --rm --read-only --cap-drop ALL \
   --security-opt no-new-privileges --tmpfs /tmp:rw,noexec,nosuid,size=64m \
   -v "$state:/state:rw" -v "$PWD/data:/app/data:ro" \
+  -v "$PWD/web/dist:/app/web/dist:ro" \
   -v "$PWD/results/r4:/app/results/r4:ro" lore:hf-check
 ```
 
 The validator supplies a dummy model credential; no real key is needed.
+It explicitly imports the checked source via `PYTHONPATH`, not an older
+installed wheel. The live reader is included in the pinned cold-proof sources.
 `publish.py` now refuses publication when this proof is missing, its checks
 fail, its four rule counts differ, or its application/launcher/notice hashes
 do not match the source and reconstructed package. It still requires every
@@ -227,8 +230,15 @@ the current source results and the snapshot **before any remote write**:
 - All full 500-question systems/checkpoints, consistent accuracy counts,
   complete r4 summary, exact model/effort and frozen v2 source hashes.
 - r4 `seeds.json` provenance/counts, nonempty seed payloads without held-out
-  examples/rules, three distinct passed replay pairs per database, three
-  replay-backed demo suggestions per database, and trained unfrozen zero-call
+  examples/rules, and honest teaching suggestions. Databases with three passed
+  independent pairs show those pairs. Otherwise the specification's M7.4
+  single-question fallback requires at least 48 distinct measured semantic
+  trials, retained failures, an explicit unestablished-teaching label, exact
+  passed/attempt counts and three question-only suggestions. Infrastructure
+  failures cannot qualify. At least one database must have three real passing
+  pairs; this is not a way to avoid demonstrating the full learning loop.
+  The 48-trial threshold is a conservative release policy, not a claim that
+  untested or future pairs cannot work. Also require trained unfrozen zero-call
   10/50/100-concurrency load reports with 1000 requests and zero errors each.
 - Exact reconstruction through `prepare.py`'s allowlist, byte-for-byte current
   source/results/frontend/seeds and original selected data/descriptions.

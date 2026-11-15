@@ -10,5 +10,6 @@ RUN apt-get update \
     && useradd --uid ${LORE_CHECK_UID} --gid check --create-home check
 COPY deploy/hf/app.py deploy/hf/droid_runtime.py deploy/hf/FACTORY_NOTICE.md /app/deploy/hf/
 COPY deploy/hf/check_release.py /check_release.py
+COPY lore/api.py lore/live_reader.py /app/lore/
 USER ${LORE_CHECK_UID}:${LORE_CHECK_UID}
 ENTRYPOINT ["python", "/check_release.py"]

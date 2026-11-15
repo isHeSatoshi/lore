@@ -94,7 +94,9 @@ async def build(run):
         candidates[db] = pairs
         verified = [r["suggestion"] for r in replays if r.get("passed") and r.get("db") == db]
         # Only independently replayed pairs can be suggested. Otherwise offer honest single questions.
-        suggestions = verified[:3] or [{"question": q.question} for q in streams[db][:3]]
+        paired = len(verified) >= 3
+        attempts = sum(r.get("db") == db for r in replays)
+        suggestions = verified[:3] if paired else [{"question": q.question} for q in streams[db][:3]]
         schema, _ = read_schema(db_path(db))
         demo["databases"].append(
             {
@@ -104,9 +106,11 @@ async def build(run):
                 "database_bytes": sizes[db],
                 "gain_points": row["lore"] - row["floor"],
                 "suggestions": suggestions,
+                "verified_pair_count": len(verified),
+                "replay_attempts": attempts,
                 "suggestion_status": "replayed pairs"
-                if verified
-                else "single questions; no verified pair yet",
+                if paired
+                else "single questions; three-pair teaching not established",
             }
         )
     (directory / "demo_candidates.json").write_text(json.dumps(candidates, indent=2) + "\n")

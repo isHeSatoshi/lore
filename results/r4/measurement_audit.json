@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "published_test_ids_from_frozen_loader": 500,
+  "all_nine_full_points_match_durable_answers": true,
+  "all_test_blocks_at_most_3600_characters": true,
+  "frozen_source_hashes_match": true,
+  "points": {
+    "floor@0": {
+      "n": 500,
+      "correct": 231,
+      "max_block_chars": 0
+    },
+    "ceiling@0": {
+      "n": 500,
+      "correct": 261,
+      "max_block_chars": 0
+    },
+    "lore@0.25": {
+      "n": 500,
+      "correct": 247,
+      "max_block_chars": 3163
+    },
+    "lore@0.5": {
+      "n": 500,
+      "correct": 256,
+      "max_block_chars": 3552
+    },
+    "lore@1.0": {
+      "n": 500,
+      "correct": 271,
+      "max_block_chars": 3592
+    },
+    "vector@0.25": {
+      "n": 500,
+      "correct": 224,
+      "max_block_chars": 1739
+    },
+    "vector@0.5": {
+      "n": 500,
+      "correct": 245,
+      "max_block_chars": 2311
+    },
+    "vector@1.0": {
+      "n": 500,
+      "correct": 243,
+      "max_block_chars": 2172
+    },
+    "flat@1.0": {
+      "n": 500,
+      "correct": 266,
+      "max_block_chars": 3600
+    }
+  },
+  "journal_rows": 6228,
+  "model_calls": 0,
+  "scope": "Independent aggregation of durable correctness flags and block lengths, not an independent rerun of SQL correctness"
+}

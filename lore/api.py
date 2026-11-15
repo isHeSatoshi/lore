@@ -39,9 +39,9 @@ from lore.bird import (
 from lore.config import ROOT, settings
 from lore.connection_pool import configure_graph_pool
 from lore.graphdb import GraphReader, open_graph
-from lore.ground import ground
 from lore.ids import example_id, table_id
 from lore.learn import learn
+from lore.live_reader import LiveGraphReader, ground
 from lore.llm import request_guard
 from lore.providers import create_llm
 from lore.schema_ingest import ingest_schema
@@ -373,7 +373,7 @@ class Service:
                     schema, _ = await asyncio.to_thread(read_schema, db_path(db))
                 else:
                     schema = await ingest_schema(graph, db_path(db), description_dir(db))
-                context = Context(db, namespace, graph, schema, GraphReader(graph))
+                context = Context(db, namespace, graph, schema, LiveGraphReader(graph, schema))
                 self.contexts[namespace] = context
                 self.state.register_namespace(namespace)
                 return context

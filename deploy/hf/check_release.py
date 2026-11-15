@@ -74,6 +74,7 @@ def check(args):
         "HOME": str(args.state / "home"),
         "XDG_CONFIG_HOME": str(args.state / "config"),
         "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": str(args.source),
         "LORE_ROOT": str(args.source),
         "LORE_DATA_DIR": str(args.source / "data"),
         "LORE_HOST_STATE": str(args.state),
@@ -150,7 +151,7 @@ def check(args):
         "source_sha256": {
             name: hashlib.sha256((args.source / name).read_bytes()).hexdigest()
             for name in (
-                "lore/api.py", "lore/connection_pool.py",
+                "lore/api.py", "lore/connection_pool.py", "lore/live_reader.py",
                 "deploy/hf/app.py", "deploy/hf/droid_runtime.py",
                 "deploy/hf/FACTORY_NOTICE.md",
             )

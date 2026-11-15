@@ -8,7 +8,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from deploy.hf.prepare import ROOT, prepare
+from deploy.hf.prepare import ROOT, prepare, validate_demo_suggestions
 from deploy.hf.publish import (
     COLD_FLAGS,
     COLD_SOURCES,
@@ -22,6 +22,41 @@ from deploy.hf.publish import (
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value))
+
+
+def fallback_case():
+    records = [
+        {"db": "db", "a": f"s{i}", "b": f"t{i}", "passed": False,
+         "model": "minimax-m3.1-flash", "effort": "medium", "reason": "followup_still_wrong"}
+        for i in range(48)
+    ]
+    entry = {
+        "id": "db", "suggestions": [{"question": f"Question {i}"} for i in range(3)],
+        "verified_pair_count": 0, "replay_attempts": 48,
+        "suggestion_status": "single questions; three-pair teaching not established",
+    }
+    return entry, records
+
+
+def test_explicit_single_question_fallback_retains_negative_teaching_evidence():
+    entry, records = fallback_case()
+    assert validate_demo_suggestions(entry, records, "minimax-m3.1-flash", "medium") == 0
+
+
+@pytest.mark.parametrize("damage", [
+    lambda e, r: r.pop(),
+    lambda e, r: e.update(suggestion_status="replayed pairs"),
+    lambda e, r: e["suggestions"][0].update(hint="not a verified pair"),
+    lambda e, r: r[0].update(reason="infrastructure_error"),
+    lambda e, r: e.update(verified_pair_count=3),
+    lambda e, r: r[0].update(model="another-model"),
+    lambda e, r: r[0].update(a=r[1]["a"], b=r[1]["b"]),
+])
+def test_fallback_cannot_hide_unmeasured_or_infrastructure_failures(damage):
+    entry, records = fallback_case()
+    damage(entry, records)
+    with pytest.raises(ValueError, match="fallback"):
+        validate_demo_suggestions(entry, records, "minimax-m3.1-flash", "medium")
 
 
 @pytest.fixture
@@ -54,6 +89,7 @@ def release(tmp_path, monkeypatch):
         "file_sha256": runtime_hashes,
     })
     (root / "lore/api.py").write_text("# public API fixture\n")
+    (root / "lore/live_reader.py").write_text("# request-local reader fixture\n")
     systems = {}
     for name in ("floor", "ceiling", "lore", "vector", "flat"):
         checkpoints = [0.25, 0.5, 1] if name in ("lore", "vector") else [1] if name == "flat" else [0]
