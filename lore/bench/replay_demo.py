@@ -25,6 +25,19 @@ class SandboxReplay(Service):
         pass
 
 
+def diverse_pairs(pairs):
+    """Try different follow-ups before exhausting one question's possible teachers."""
+    groups = {}
+    for pair in pairs:
+        groups.setdefault(pair["b"], []).append(pair)
+    return [
+        group[index]
+        for index in range(max(map(len, groups.values()), default=0))
+        for group in groups.values()
+        if index < len(group)
+    ]
+
+
 async def matches_answer(answer, question, gold):
     if answer.get("error"):
         return False
@@ -123,7 +136,7 @@ async def run(run, attempts_per_db):
     attempted = {(r["db"], r["a"], r["b"]) for r in records}
     gold = GoldCache()
     for db, pairs in candidates.items():
-        for pair in pairs:
+        for pair in diverse_pairs(pairs):
             existing = [r for r in records if r["db"] == db]
             if sum(r["passed"] for r in existing) >= 3 or len(existing) >= attempts_per_db:
                 break
@@ -131,14 +144,15 @@ async def run(run, attempts_per_db):
                 continue
             # Each trial starts with schema only. Never reuse a benchmark/trained namespace.
             with tempfile.TemporaryDirectory(prefix="demo-replay-") as state:
+                completion = create_llm(
+                    run + "-demo-replay", cache_path=Path(state) / "completions.sqlite"
+                )
                 service = SandboxReplay(
                     Path(state),
                     run=run,
                     # Independent generation, not a benchmark/cache replay. Every candidate
                     # starts with both a fresh graph and a fresh completion cache.
-                    llm=create_llm(
-                        run + "-demo-replay", cache_path=Path(state) / "completions.sqlite"
-                    ),
+                    llm=completion,
                 )
                 app = create_app(service)
                 scope = {"db": db, "mode": "sandbox", "session": uuid4().hex}
@@ -149,8 +163,12 @@ async def run(run, attempts_per_db):
                     ) as client,
                 ):
                     record = await replay_pair(client, service, scope, pair, questions, gold)
+                # Retain metering, not private prompts, answers or capability-bearing state.
+                record["llm_usage"] = completion.usage()
             record.update(
-                model=settings.model, effort=settings.effort, at=datetime.now(UTC).isoformat()
+                model=settings.model, effort=settings.effort, at=datetime.now(UTC).isoformat(),
+                hint_protocol=pair.get("hint_protocol", "rule-fragment-v1"),
+                hint_sha256=hashlib.sha256(pair.get("hint", "").encode()).hexdigest(),
             )
             records.append(record)
             attempted.add((db, pair["a"], pair["b"]))

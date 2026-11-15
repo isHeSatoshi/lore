@@ -100,8 +100,46 @@ across comparisons, teaching replays, demo and app. Do not relabel or overwrite
 the frozen r2 results, silently use the direct MiniMax transport, or use `auto`.
 The protocol is **factory-sdk-v2**, with a separate cache. r3 is retained as a
 failed tool-policy preflight, not a valid comparison or release. The isolated
-v2 tool-policy smoke passed; a full trained application cold start with the
-completed r4 data remains a release gate.
+v2 tool-policy smoke and the completed four-database local trained cold start
+passed. Actual HF creation, public teaching and hosted restoration remain unproven.
+
+### Seeded local cold-start proof
+
+[`hosting_cold.json`](../../results/r4/hosting_cold.json) records the real launcher,
+not a fixture: non-root uid 1002, read-only root, no Docker socket or published
+port, and zero model-consuming routes or metered model calls. Fresh setup
+(including pinned binary provisioning and seed import) took **41.65 seconds**;
+restart took **5.42 seconds**. All **345 MEANS rules** across the measured four
+databases were restored, and exact node/edge records survived restart. Trained
+certification returned 403 without modifying the graph; private Gradio file
+requests were denied and the React JavaScript and Gradio mount were served.
+These are local observations, not an HF startup-time guarantee.
+
+The first two check-harness attempts stopped before engine startup because of
+private mount uid mismatch and a missing copied attribution notice. Both
+records remain under `results/smoke/hf_seeded_cold.*_failure.json`. Neither
+required an application change.
+
+After the normal data setup and frontend build, reproduce from the repository
+root as a non-root user:
+
+```sh
+docker build --build-arg LORE_LLM_TRANSPORT=factory \
+  -f deploy/Dockerfile.app -t lore:factory-release .
+docker build --build-arg LORE_CHECK_UID="$(id -u)" \
+  -f deploy/hf/Dockerfile.check -t lore:hf-check .
+state="$(mktemp -d /tmp/lore-hf-check-XXXXXX)"
+docker run --rm --read-only --cap-drop ALL \
+  --security-opt no-new-privileges --tmpfs /tmp:rw,noexec,nosuid,size=64m \
+  -v "$state:/state:rw" -v "$PWD/data:/app/data:ro" \
+  -v "$PWD/results/r4:/app/results/r4:ro" lore:hf-check
+```
+
+The validator supplies a dummy model credential; no real key is needed.
+`publish.py` now refuses publication when this proof is missing, its checks
+fail, its four rule counts differ, or its application/launcher/notice hashes
+do not match the source and reconstructed package. It still requires every
+benchmark, replay and trained-load gate separately.
 
 The official [Python SDK](https://docs.factory.com/sdk/python.md), found via
 [`llms.txt`](https://docs.factory.ai/llms.txt), requires Python 3.10+, the

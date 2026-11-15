@@ -7,9 +7,17 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from lore.bench.replay_demo import matches_answer, replay_pair
+from lore.bench.replay_demo import diverse_pairs, matches_answer, replay_pair
 from lore.bird import Question
 from lore.sqlexec import GoldCache
+
+
+def test_replay_explores_different_followups_without_dropping_pairs():
+    pairs = [{"a": str(i), "b": b} for i, b in enumerate(["t1", "t1", "t2", "t2", "t3"])]
+    diverse = diverse_pairs(pairs)
+    assert [p["b"] for p in diverse] == ["t1", "t2", "t3", "t1", "t2"]
+    assert sorted(p["a"] for p in diverse) == sorted(p["a"] for p in pairs)
+    assert diverse_pairs([]) == []
 
 
 @pytest.mark.asyncio
@@ -104,7 +112,7 @@ async def test_runner_uses_a_fresh_completion_cache_for_every_trial(tmp_path, mo
         assert label == run + "-demo-replay"
         assert cache_path.parent.is_dir()
         caches.append(cache_path)
-        return object()
+        return SimpleNamespace(usage=lambda: {"input_tokens": 13, "output_tokens": 7, "calls": 2})
 
     @asynccontextmanager
     async def lifespan(app):
@@ -128,3 +136,5 @@ async def test_runner_uses_a_fresh_completion_cache_for_every_trial(tmp_path, mo
     await replay.run(run, 3)
     assert len(caches) == len(set(caches)) == 3
     assert all(path.name == "completions.sqlite" and not path.parent.exists() for path in caches)
+    records = json.loads((target / "demo_replays.json").read_text())
+    assert all(r["llm_usage"] == {"input_tokens": 13, "output_tokens": 7, "calls": 2} for r in records)

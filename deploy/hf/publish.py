@@ -22,6 +22,19 @@ except ImportError:
 
 OWNER = "isHeSatoshi"
 RUN = "r4"
+COLD_SOURCES = {
+    "lore/api.py": "lore/api.py",
+    "lore/connection_pool.py": "lore/connection_pool.py",
+    "deploy/hf/app.py": "app.py",
+    "deploy/hf/droid_runtime.py": "droid_runtime.py",
+    "deploy/hf/FACTORY_NOTICE.md": "FACTORY_NOTICE.md",
+}
+COLD_FLAGS = (
+    "passed", "read_only_root", "real_launcher", "frontend_javascript_served",
+    "gradio_mount", "trained_certification_forbidden",
+    "trained_graph_unchanged_after_forbidden_write", "private_file_requests_denied",
+    "engine_restart_restored_identical_graphs",
+)
 VARIABLES = {
     "LORE_LLM_TRANSPORT": "factory",
     "LORE_LLM_MODEL": "minimax-m3.1-flash",
@@ -86,7 +99,7 @@ def scan_credentials(root, credentials):
                 previous = chunk[-overlap:] if overlap else b""
 
 
-def measured_gates(root):
+def measured_gates(root, *, packaged=False):
     databases = release_databases(root, RUN)
     results = root / "results" / RUN
     summary = read_json(results / "summary.json")
@@ -133,6 +146,28 @@ def measured_gates(root):
         require(fingerprint(root / name) == expected, "runtime-source-drift")
     demo = read_json(results / "demo.json")
     require(demo["run"] == RUN and len(demo["databases"]) == 4, "demo-run")
+    cold = read_json(results / "hosting_cold.json")
+    require(
+        all(cold.get(flag) is True for flag in COLD_FLAGS)
+        and cold.get("docker_socket") is False
+        and type(cold.get("uid")) is int and cold["uid"] > 0
+        and cold.get("trained_databases") == 4
+        and set(cold.get("databases", [])) == set(databases)
+        and cold.get("expected_and_restored_rules") == {
+            entry["id"]: entry["rules"] for entry in demo["databases"]
+        }
+        and all(type(cold.get(key)) is int and cold[key] == 0 for key in (
+            "metered_model_calls", "model_consuming_routes_called", "public_ports",
+        )),
+        "seeded-cold-start",
+    )
+    require(set(cold.get("source_sha256", {})) == set(COLD_SOURCES), "cold-source-hashes")
+    for original, flat in COLD_SOURCES.items():
+        require(
+            fingerprint(root / (flat if packaged else original))
+            == cold["source_sha256"][original],
+            "cold-source-drift",
+        )
     replays = read_json(results / "demo_replays.json")
     seed_manifest = read_json(results / "seeds.json")
     require(seed_manifest["run"] == RUN, "seed-run")
@@ -169,7 +204,7 @@ def validate_snapshot(package, root, temporary, credentials):
     observed = inventory(package)
     scan_credentials(package, credentials)
     databases = measured_gates(root)
-    require(measured_gates(package) == databases, "package-databases")
+    require(measured_gates(package, packaged=True) == databases, "package-databases")
     bird = package / "data/bird"
     original = root / "data/bird"
     source_layout = read_json(original / "paths.json")

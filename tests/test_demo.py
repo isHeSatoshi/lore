@@ -4,7 +4,7 @@ import sqlite3
 import pytest
 
 from lore.bench import demo
-from lore.bench.demo import select_databases
+from lore.bench.demo import select_databases, teaching_hint
 from lore.config import ROOT
 
 
@@ -16,6 +16,27 @@ def test_demo_selection_uses_measured_gains_and_strict_size_limit():
     summary["per_db"][0]["lore"] = None
     with pytest.raises(ValueError):
         select_databases(summary, sizes)
+
+
+def test_teaching_hint_keeps_the_rule_explanation():
+    note = "Use the lab test date, not the patient's first hospital visit."
+    hint = teaching_hint("hospital visit date for a lab test", {
+        "sql": "Laboratory.Date", "note": note,
+    })
+    assert "Laboratory.Date" in hint and note in hint
+    assert teaching_hint("male", {"sql": "Patient.SEX = 'M'"}) == (
+        "In this database, male means Patient.SEX = 'M'."
+    )
+
+
+def test_teaching_hint_checks_the_exact_api_limit_without_truncation():
+    properties = {"sql": "t.c", "note": ""}
+    prefix = teaching_hint("term", properties)
+    properties["note"] = "x" * (2000 - len(prefix) - 1)
+    assert len(teaching_hint("term", properties)) == 2000
+    properties["note"] += "x"
+    with pytest.raises(ValueError, match="API hint limit"):
+        teaching_hint("term", properties)
 
 
 def test_portable_bundle_keeps_data_attribution_and_database_bytes(tmp_path, monkeypatch):

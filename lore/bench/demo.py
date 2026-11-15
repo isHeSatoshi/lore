@@ -24,6 +24,15 @@ def select_databases(summary, sizes):
     return eligible[:4]
 
 
+def teaching_hint(term, properties):
+    hint = f"In this database, {term} means {properties['sql']}."
+    if note := properties.get("note", "").strip():
+        hint += " " + note
+    if len(hint) > 2000:
+        raise ValueError("Rule explanation exceeds the API hint limit")
+    return hint
+
+
 async def build(run):
     result_dir = ROOT / "results" / run
     summary = json.loads((result_dir / "summary.json").read_text())
@@ -77,7 +86,8 @@ async def build(run):
                         "b": answer["key"],
                         "relation_id": rid,
                         "question": stream[origin].question,
-                        "hint": f"In this database, {term} means {relation.properties['sql']}.",
+                        "hint": teaching_hint(term, relation.properties),
+                        "hint_protocol": "rule-sql-and-note-v2",
                         "followup": test[answer["key"]].question,
                     }
                 )

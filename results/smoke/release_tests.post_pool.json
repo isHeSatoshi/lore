@@ -1,0 +1,11 @@
+{
+  "command": "LORE_INTEGRATION=1 .venv/bin/pytest -q",
+  "passed": 139,
+  "failed": 0,
+  "skipped": 0,
+  "seconds": 270.3,
+  "source_head": "e380f03",
+  "includes_uncommitted_release_changes": true,
+  "scope": "Post-pool application, hosting publisher and real graph integration; before subsequent replay-hint/discovery-only changes",
+  "completed_utc": "2026-11-15T19:38:39.542883+00:00"
+}

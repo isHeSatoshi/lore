@@ -1,0 +1,27 @@
+{
+  "commands": [
+    ".venv/bin/ruff check lore tests deploy",
+    "cd web && npm run build",
+    "LORE_INTEGRATION=1 .venv/bin/pytest -q"
+  ],
+  "ruff_passed": true,
+  "typed_frontend_build_passed": true,
+  "passed": 142,
+  "failed": 0,
+  "skipped": 0,
+  "test_seconds": 336.02,
+  "source_head_before_commit": "e380f03",
+  "includes_uncommitted_release_changes": true,
+  "source_sha256": {
+    "lore/api.py": "2a960252425f95ebd2b3e0dcd1127b234be33ccc8caef979b7e7e98078a333d6",
+    "lore/connection_pool.py": "171e352941015148d08183261c08662e775e979e3acdf6229e1958c319347735",
+    "deploy/hf/app.py": "2a69b13bf5c0cb9baf4fea4308f0129ec6e3184bc8cc96e3afe4210ee78a7f2b",
+    "deploy/hf/droid_runtime.py": "3e19b7d41d89f6ac574e6a572ef3313c73caf365c049983d7f809416c1bc227a",
+    "deploy/hf/check_release.py": "5e5ad832313d835ad49839b98eea0306fb9cdc3c8da26d4d80305620ae9eeb07",
+    "deploy/hf/publish.py": "f027449c270b370f65ebeaf85ed73d223f952147c11dd060a5edaef1443aab96",
+    "deploy/hf/prepare.py": "4cbb6a4a1022c7083ff506a5e19e4765b51ee8970c8cbfcaad7a8a509d798cc6",
+    "lore/bench/demo.py": "2fb47b0f2b4ace26a169ea3af4223aa0d925c590eaecf5ec2cf96171750c2c7c",
+    "lore/bench/replay_demo.py": "a5a26910527143f26a5c1d578725c3b57d0a2a2654e0dbafb037913c30cd0e83"
+  },
+  "completed_utc": "2026-11-15T19:50:45.186793+00:00"
+}

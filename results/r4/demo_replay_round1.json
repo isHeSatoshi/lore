@@ -1,0 +1,25 @@
+{
+  "attempts_per_db": 12,
+  "total_trials": 48,
+  "hint_protocol": "rule SQL fragment only; existing explanatory note omitted",
+  "passed_per_db": {
+    "california_schools": 1,
+    "superhero": 1,
+    "thrombosis_prediction": 0,
+    "toxicology": 2
+  },
+  "outcomes": {
+    "teaching_question_already_correct": 6,
+    "hint_proposal_not_correct": 22,
+    "followup_still_wrong": 5,
+    "wrong_before_correct_after_with_new_rule_used": 4,
+    "followup_already_correct": 11
+  },
+  "source_sha256": {
+    "lore/bench/demo.py": "2cdcd47336f66f3bcdce79eb20b87b160cb5b2eb46d5d4385f956d9392a43ae4",
+    "lore/bench/replay_demo.py": "089fa7d108d08282c505f2bdea7946416c7f3545558e25d6eb6335dbdb5cfa4a"
+  },
+  "correction": "Include existing rule note in short hints and round-robin different follow-ups; preserve every outcome and skip previously attempted pairs",
+  "usage_limitation": "The first 48 private completion caches were deleted without retaining per-trial usage totals. Subsequent trials retain aggregate metering, never response caches.",
+  "recorded_at": "2026-11-15T19:38:39.542721+00:00"
+}

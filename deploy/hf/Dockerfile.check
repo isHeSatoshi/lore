@@ -1,0 +1,14 @@
+ARG LORE_BASE_IMAGE=lore:factory-release
+FROM ${LORE_BASE_IMAGE}
+USER root
+ARG LORE_CHECK_UID=1000
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends skopeo umoci \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install --no-cache-dir gradio==6.32.0 \
+    && groupadd --gid ${LORE_CHECK_UID} check \
+    && useradd --uid ${LORE_CHECK_UID} --gid check --create-home check
+COPY deploy/hf/app.py deploy/hf/droid_runtime.py deploy/hf/FACTORY_NOTICE.md /app/deploy/hf/
+COPY deploy/hf/check_release.py /check_release.py
+USER ${LORE_CHECK_UID}:${LORE_CHECK_UID}
+ENTRYPOINT ["python", "/check_release.py"]

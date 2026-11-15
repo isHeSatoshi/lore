@@ -115,6 +115,7 @@ def prepare(root, run, data_bundle, parent):
         "baseline.json",
         "learning_configuration.json",
         "runtime_configuration.json",
+        "hosting_cold.json",
         "connection_pool_validation.json",
         "interruption.hydra.1.json",
         "interruption.hydra.2.json",

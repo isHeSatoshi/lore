@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "phase": "before launcher startup",
+  "error_type": "PermissionError",
+  "cause": "Private test mount owner uid 1002 differed from isolated test user uid 1000",
+  "state_directory_remained_empty": true,
+  "correction": "Make the check image uid configurable to match private host bind mounts; retain non-root execution and mode 0700",
+  "application_source_changed": false,
+  "model_calls": 0
+}

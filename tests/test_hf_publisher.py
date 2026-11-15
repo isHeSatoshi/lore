@@ -9,7 +9,14 @@ from types import SimpleNamespace
 import pytest
 
 from deploy.hf.prepare import ROOT, prepare
-from deploy.hf.publish import VARIABLES, Blocked, publish, scan_credentials
+from deploy.hf.publish import (
+    COLD_FLAGS,
+    COLD_SOURCES,
+    VARIABLES,
+    Blocked,
+    publish,
+    scan_credentials,
+)
 
 
 def write_json(path, value):
@@ -46,6 +53,7 @@ def release(tmp_path, monkeypatch):
         "per_namespace_connection_pool_size": 4,
         "file_sha256": runtime_hashes,
     })
+    (root / "lore/api.py").write_text("# public API fixture\n")
     systems = {}
     for name in ("floor", "ceiling", "lore", "vector", "flat"):
         checkpoints = [0.25, 0.5, 1] if name in ("lore", "vector") else [1] if name == "flat" else [0]
@@ -69,7 +77,7 @@ def release(tmp_path, monkeypatch):
         suggestions = [
             {"question": f"q{i}", "hint": f"h{i}", "followup": f"f{i}"} for i in range(3)
         ]
-        databases.append({"id": db, "suggestions": suggestions})
+        databases.append({"id": db, "rules": 1, "suggestions": suggestions})
         replays.extend({
             "db": db, "a": f"s{i}", "b": f"t{i}", "passed": True,
             "model": "minimax-m3.1-flash", "effort": "medium", "suggestion": s,
@@ -86,6 +94,17 @@ def release(tmp_path, monkeypatch):
         (desc / "table.csv").write_text("column,description\nid,identifier\n")
         (bird / f"{db}.sqlite").write_bytes(b"fixture database")
     write_json(results / "demo.json", {"run": "r4", "databases": databases})
+    write_json(results / "hosting_cold.json", {
+        **{flag: True for flag in COLD_FLAGS},
+        "docker_socket": False, "uid": 1000, "trained_databases": 4,
+        "databases": [d["id"] for d in databases],
+        "expected_and_restored_rules": {d["id"]: 1 for d in databases},
+        "metered_model_calls": 0, "model_consuming_routes_called": 0, "public_ports": 0,
+        "source_sha256": {
+            name: hashlib.sha256((root / name).read_bytes()).hexdigest()
+            for name in COLD_SOURCES
+        },
+    })
     write_json(results / "demo_replays.json", replays)
     write_json(results / "seeds.json", {"run": "r4", "databases": seeds})
     write_json(results / "load.json", {
@@ -171,6 +190,13 @@ def test_default_is_read_only(release, api):
     assert not api.writes
 
 
+@pytest.mark.parametrize("location", [0, 1])
+def test_cold_proof_pins_api_in_source_and_package_before_api_construction(release, location):
+    (release[location] / "lore/api.py").write_text("# changed since cold validation\n")
+    with pytest.raises(Blocked, match="cold-source-drift"):
+        invoke(release, None)
+
+
 @pytest.mark.parametrize("attribute,value", [
     ("owner", "another-owner"), ("exists", True), ("writable", False), ("zero_count", 2),
 ])
@@ -213,6 +239,14 @@ def test_symlinks_and_known_credential_bytes_block_before_api(release):
     ("learning_configuration.json", lambda d: d.update(protocol="factory-sdk-v1")),
     ("runtime_configuration.json", lambda d: d.update(per_namespace_connection_pool_size=100)),
     ("runtime_configuration.json", lambda d: d.update(file_sha256={})),
+    ("hosting_cold.json", lambda d: d.update(passed=False)),
+    ("hosting_cold.json", lambda d: d.update(read_only_root=False)),
+    ("hosting_cold.json", lambda d: d.update(trained_databases=0)),
+    ("hosting_cold.json", lambda d: d.update(uid=0)),
+    ("hosting_cold.json", lambda d: d.update(metered_model_calls=1)),
+    ("hosting_cold.json", lambda d: d.update(engine_restart_restored_identical_graphs=False)),
+    ("hosting_cold.json", lambda d: d.update(expected_and_restored_rules={})),
+    ("hosting_cold.json", lambda d: d.update(source_sha256={})),
     ("seeds.json", lambda d: d.update(run="r2")),
     ("demo.json", lambda d: d["databases"][0].update(suggestions=[])),
     ("demo_replays.json", lambda d: d[0].update(passed=False)),
