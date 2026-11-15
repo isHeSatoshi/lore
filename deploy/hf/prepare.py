@@ -11,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def release_databases(root, run):
+    if run == "r3":
+        raise ValueError("r3 is a failed tool-policy preflight, not a public release")
     results = root / "results" / run
     summary = json.loads((results / "summary.json").read_text())
     for system in ("floor", "ceiling", "lore", "vector", "flat"):
@@ -71,6 +73,8 @@ def prepare(root, run, data_bundle, parent):
     for source, dest in (
         ("space.md", "README.md"),
         ("app.py", "app.py"),
+        ("droid_runtime.py", "droid_runtime.py"),
+        ("FACTORY_NOTICE.md", "FACTORY_NOTICE.md"),
         ("packages.txt", "packages.txt"),
         ("requirements.txt", "requirements.txt"),
     ):
@@ -107,6 +111,7 @@ def prepare(root, run, data_bundle, parent):
         "demo.json",
         "demo_replays.json",
         "load.json",
+        "seeds.json",
         "baseline.json",
         "learning_configuration.json",
         "ceiling_review.json",
@@ -123,7 +128,7 @@ def prepare(root, run, data_bundle, parent):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--run", default="r2")
+    parser.add_argument("--run", default="r4")
     parser.add_argument("--data-bundle", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()

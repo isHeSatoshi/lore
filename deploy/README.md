@@ -3,7 +3,11 @@
 Nothing here is permission to expose this machine or publish the repository.
 Obtain the owner's hosting approval first.
 
-## Approved VM
+The current approved release uses only [free Hugging Face hosting](hf/README.md).
+The VM and tunnel sections below are reference instructions, not authorization
+to create paid infrastructure or expose the benchmark machine.
+
+## Reference VM, not approved for the current release
 
 Use a Linux VM with Docker/Compose already installed, SSH access, a domain
 pointing at the VM, and inbound HTTP/HTTPS permitted. The script does not use
@@ -29,7 +33,11 @@ sh deploy/deploy.sh r2 your-approved-host.example
 ```
 
 The app image builds the frontend and installs Python without embedding or
-benchmark extras. It runs as a non-root user, with a read-only root filesystem
+benchmark extras. When `LORE_LLM_TRANSPORT=factory`, Compose also selects the
+pinned SDK/CLI image layer. Set the matching model to `minimax-m3.1-flash`,
+effort to `medium`, and max tokens to `0` (SDK-managed); keep `FACTORY_API_KEY`
+private. Raw MiniMax remains the default for historical setups.
+The image runs as a non-root user, with a read-only root filesystem
 and read-only SQLite data. Mutable app/cache/rate-limit state lives in its own
 volume. Caddy terminates TLS and overwrites the forwarded client address.
 

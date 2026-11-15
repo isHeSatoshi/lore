@@ -1,10 +1,12 @@
 """Run inside the production image, without publishing ports or calling the model."""
 
 import asyncio
+import importlib.metadata
 import importlib.util
 import json
 import logging
 import os
+import subprocess
 from types import SimpleNamespace
 
 import httpx
@@ -17,6 +19,10 @@ async def main():
     assert os.getuid() == 10002
     assert str(ROOT) == "/app"
     assert importlib.util.find_spec("fastembed") is None
+    factory = os.getenv("LORE_LLM_TRANSPORT") == "factory"
+    if factory:
+        assert importlib.metadata.version("droid-sdk") == "0.5.0"
+        assert subprocess.check_output(["droid", "--version"], text=True).strip() == "1.12.1"
     assert not os.access("/app/data", os.W_OK)
     probe = ROOT / "state/.image-check"
     probe.write_text("writable")
@@ -28,6 +34,9 @@ async def main():
             assert (await client.get("/healthz")).status_code == 200
             databases = await client.get("/api/dbs")
             assert databases.status_code == 200 and databases.json()["databases"]
+            trained = sum(db["trained"] for db in databases.json()["databases"])
+            if os.getenv("LORE_IMAGE_REQUIRE_TRAINED") == "1":
+                assert len(databases.json()["databases"]) == trained == 4
             frontend = await client.get("/")
             assert frontend.status_code == 200 and "<html" in frontend.text
             invalid = await client.post(
@@ -79,7 +88,8 @@ async def main():
                 "invalid_unicode_rejected": True,
                 "unexpected_service_error_sanitized": True,
                 "bench_dependencies_absent": True,
-                "trained_databases": sum(db["trained"] for db in databases.json()["databases"]),
+                "trained_databases": trained,
+                "factory_runtime_verified": factory,
                 "model_calls": 0,
                 "public_ports": 0,
             },

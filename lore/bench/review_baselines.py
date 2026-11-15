@@ -12,6 +12,16 @@ from lore.config import ROOT, settings
 from lore.sqlexec import GoldCache, ex_match, execute
 
 
+def completion_cache(run):
+    path = ROOT / "results" / run / "learning_configuration.json"
+    protocol = json.loads(path.read_text()).get("protocol", "") if path.exists() else ""
+    if protocol.startswith("factory-sdk-"):
+        if "/" in protocol or "\\" in protocol:
+            raise ValueError("Invalid recorded cache protocol")
+        return settings.data_dir / "cache" / f"{protocol}.sqlite"
+    return settings.data_dir / "cache/llm.sqlite"
+
+
 async def review(run, count=10):
     directory = settings.data_dir / "runs" / run
     meta = json.loads((directory / "metadata.json").read_text())
@@ -28,6 +38,7 @@ async def review(run, count=10):
     if len(wrong) < count:
         raise SystemExit("Not enough completed, non-error wrong ceiling answers to review yet")
     gold = GoldCache()
+    cache_path = completion_cache(run)
     report = []
     for row in wrong:
         q = questions[(row["db_id"], row["key"])]
@@ -35,8 +46,10 @@ async def review(run, count=10):
         key = hashlib.sha256(
             json.dumps([meta["model"], meta["effort"], prompt], ensure_ascii=False).encode()
         ).hexdigest()
-        with sqlite3.connect(settings.data_dir / "cache/llm.sqlite") as cache:
-            cached = cache.execute("SELECT result FROM cache WHERE key=?", (key,)).fetchone()
+        cached = None
+        if cache_path.exists():
+            with sqlite3.connect(f"file:{cache_path}?mode=ro", uri=True) as cache:
+                cached = cache.execute("SELECT result FROM cache WHERE key=?", (key,)).fetchone()
         model_text = json.loads(cached[0])["text"] if cached else None
         extracted = extract_sql(model_text) if model_text is not None else None
         pred_rows, error, ms = await execute(q.db_path, row["sql"])
@@ -48,7 +61,8 @@ async def review(run, count=10):
             gold_sql=q.gold_sql,
             predicted_sql=row["sql"],
             model_text=model_text,
-            extraction_matches_cache=extracted == row["sql"],
+            cache_source=str(cache_path.relative_to(settings.data_dir)),
+            extraction_matches_cache=extracted == row["sql"] if cached else None,
             execution_error=error,
             gold_error=gold_error,
             sql_ms=ms,

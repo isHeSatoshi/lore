@@ -20,7 +20,7 @@ Public repository creation and push are approved after final checks.
 |---|---|
 | Local app | `http://127.0.0.1:8000`, development preview |
 | Public repository | Not created or pushed yet |
-| Hosted judge link | Free Hugging Face approved; access and deployment pending |
+| Hosted judge link | Free Hugging Face approved; access verified, deployment pending |
 | Loom | Owner recording and link still needed |
 | Social posts | Drafts only; not authorized to send |
 
@@ -35,7 +35,7 @@ Sources: [`results/r2/baseline.json`](results/r2/baseline.json) and
 
 The separate SDK protocol is recorded in
 [`results/r4/learning_configuration.json`](results/r4/learning_configuration.json).
-The latest full integration run passed 78 tests. Tests do not substitute for
+The latest full integration run passed 120 tests. Tests do not substitute for
 the accuracy, independent teaching-replay, trained-load or hosted-app gates.
 
 Do not use the exploratory small-run scores as the final headline. All three

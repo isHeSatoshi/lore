@@ -1,9 +1,14 @@
+import asyncio
+import hashlib
 import json
+import os
 import shutil
+from types import SimpleNamespace
 
 import pytest
 
-from deploy.hf.app import configure, image_path
+from deploy.hf import droid_runtime
+from deploy.hf.app import PublicDeadline, configure, image_path
 from deploy.hf.prepare import ROOT, prepare, release_databases
 
 
@@ -40,9 +45,13 @@ def test_incomplete_or_changed_checkpoints_block_space_preparation(tmp_path):
 
 
 def test_engine_does_not_inherit_model_or_hosting_credentials(tmp_path, monkeypatch):
+    monkeypatch.setattr(os, "environ", os.environ.copy())
     monkeypatch.setenv("LORE_LLM_API_KEY", "offline-fixture")
     monkeypatch.setenv("SPACE_SIGNING_SECRET", "offline-signing-fixture")
     monkeypatch.setenv("HUGGING_FACE", "offline-hosting-fixture")
+    monkeypatch.setenv("FACTORY_API_KEY", "offline-factory-fixture")
+    monkeypatch.setenv("HF_TOKEN", "offline-hf-fixture")
+    monkeypatch.setenv("HUGGING_FACE_HUB_TOKEN", "offline-hub-fixture")
     with monkeypatch.context() as patch:
         for key in (
             "HYDRA_TOKEN",
@@ -58,7 +67,18 @@ def test_engine_does_not_inherit_model_or_hosting_credentials(tmp_path, monkeypa
         ):
             patch.setenv(key, "")
         env = configure(tmp_path)
-        assert not {"LORE_LLM_API_KEY", "SPACE_SIGNING_SECRET", "HUGGING_FACE"} & env.keys()
+        assert not {
+            "LORE_LLM_API_KEY", "SPACE_SIGNING_SECRET", "HUGGING_FACE",
+            "HF_TOKEN", "HUGGING_FACE_HUB_TOKEN", "FACTORY_API_KEY",
+        } & env.keys()
+        assert os.environ["LORE_LLM_TRANSPORT"] == "factory"
+        assert os.environ["LORE_LLM_MODEL"] == "minimax-m3.1-flash"
+        assert os.environ["LORE_LLM_EFFORT"] == "medium"
+        assert os.environ["LORE_LLM_MAX_TOKENS"] == "0"
+        assert os.environ["LORE_RESULTS_RUN"] == "r4"
+        assert os.environ["LORE_RUN"] == "r4"
+        assert os.environ["FACTORY_DROID_AUTO_UPDATE_ENABLED"] == "false"
+        assert os.environ["TMPDIR"] == str(tmp_path / "tmp")
         assert env["GRAPH_BOLT_ADDR"] == "127.0.0.1:7687"
         assert (tmp_path / "auth-token").stat().st_mode & 0o777 == 0o600
 
@@ -131,3 +151,128 @@ def test_finished_release_is_allowlisted_and_rejects_smoke_load(tmp_path):
     assert not list(target.rglob("private-owner-note"))
     assert (target / "data/bird/fixture0.sqlite").read_bytes() == b"fixture data"
     assert (target / "data/bird/DATA_LICENSE.md").read_text() == "data notice"
+    assert (target / "droid_runtime.py").exists()
+    assert (target / "FACTORY_NOTICE.md").exists()
+    assert (target / "requirements.txt").read_text().splitlines()[0] == ".[factory]"
+
+
+def test_droid_download_is_verified_atomic_and_cached(tmp_path, monkeypatch):
+    payload, calls = b"offline CLI fixture", []
+    monkeypatch.setattr(droid_runtime, "architecture", lambda: "x64")
+    monkeypatch.setitem(droid_runtime.HASHES, "x64", hashlib.sha256(payload).hexdigest())
+
+    def download(url, dest):
+        calls.append(url)
+        assert not dest.exists()
+        dest.write_bytes(payload)
+
+    def version(argv, **kwargs):
+        assert argv[1:] == ["--version"]
+        assert kwargs["timeout"] == 15
+        assert kwargs["env"]["FACTORY_DROID_AUTO_UPDATE_ENABLED"] == "false"
+        assert "FACTORY_API_KEY" not in kwargs["env"]
+        return SimpleNamespace(stdout="1.12.1\n")
+
+    monkeypatch.setattr(droid_runtime, "download", download)
+    monkeypatch.setattr(droid_runtime.subprocess, "run", version)
+    binary = droid_runtime.provision_droid(tmp_path)
+    assert binary.stat().st_mode & 0o777 == 0o500
+    assert (binary.parent / "FACTORY_NOTICE.md").exists()
+    assert "version=1.12.1" in (binary.parent / "provenance.txt").read_text()
+    assert droid_runtime.provision_droid(tmp_path) == binary
+    assert calls == [droid_runtime.BASE_URL + "/x64/droid"]
+    binary.chmod(0o600)
+    binary.write_bytes(b"corrupt")
+    with pytest.raises(RuntimeError, match="checksum"):
+        droid_runtime.provision_droid(tmp_path)
+    assert len(calls) == 1
+
+
+@pytest.mark.parametrize("bad_hash", [True, False])
+def test_unverified_or_wrong_version_droid_is_never_installed(tmp_path, monkeypatch, bad_hash):
+    monkeypatch.setattr(droid_runtime, "architecture", lambda: "x64")
+    monkeypatch.setattr(droid_runtime, "download", lambda url, dest: dest.write_bytes(b"fixture"))
+    if not bad_hash:
+        monkeypatch.setitem(droid_runtime.HASHES, "x64", hashlib.sha256(b"fixture").hexdigest())
+
+    def version(*args, **kwargs):
+        assert not bad_hash, "Unverified binary was executed"
+        return SimpleNamespace(stdout="newer-unreviewed-version")
+
+    monkeypatch.setattr(droid_runtime.subprocess, "run", version)
+    with pytest.raises(RuntimeError, match="checksum|version"):
+        droid_runtime.provision_droid(tmp_path)
+    assert not (tmp_path / "droid/1.12.1/x64").exists()
+    assert not list(tmp_path.rglob(".provision-*"))
+
+
+@pytest.mark.asyncio
+async def test_public_deadline_cancels_work_before_returning_safe_error():
+    cleaned, sent = [], []
+
+    async def slow(scope, receive, send):
+        try:
+            await asyncio.sleep(10)
+        finally:
+            cleaned.append(True)
+
+    async def send(message):
+        sent.append(message)
+
+    await PublicDeadline(slow, seconds=0.01)(
+        {"type": "http", "path": "/api/ask"}, None, send
+    )
+    assert cleaned == [True]
+    assert sent[0]["status"] == 504
+    assert b"timed out" in sent[1]["body"]
+
+
+def test_failed_r3_preflight_cannot_be_prepared(tmp_path):
+    with pytest.raises(ValueError, match="failed tool-policy preflight"):
+        release_databases(tmp_path, "r3")
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("allowed", [[], [False, False], [True]])
+async def test_hosting_smoke_checks_actual_tool_catalog_and_cleans_up(tmp_path, monkeypatch, allowed):
+    sdk = pytest.importorskip("droid_sdk")
+    from deploy.hf.smoke_droid import verify_tool_policy
+
+    monkeypatch.setenv("FACTORY_API_KEY", "offline-factory-fixture")
+    monkeypatch.setenv("HF_TOKEN", "offline-hosting-fixture")
+    (tmp_path / "tmp").mkdir()
+    closed = []
+
+    class Session:
+        def __init__(self, **kwargs):
+            config = kwargs["config"]
+            assert set(config.disabled_tools) == {"Read"}
+            assert set(config.restrict_tools) == {"Read"}
+            assert not config.enabled_tools
+            assert config.auto_reject_permission_requests
+            assert kwargs["runtime"].env["HF_TOKEN"] == ""
+            self.settings = SimpleNamespace(
+                model=kwargs["model"], reasoning_effort=kwargs["reasoning_effort"]
+            )
+
+        async def open(self):
+            pass
+
+        async def list_tools(self):
+            return [SimpleNamespace(allowed=value) for value in allowed]
+
+        def stream(self, *args, **kwargs):
+            raise AssertionError("Tool-policy smoke must never perform inference")
+
+        async def close(self):
+            closed.append(True)
+
+    monkeypatch.setattr(sdk, "Session", Session)
+    if not allowed or any(allowed):
+        with pytest.raises(RuntimeError, match="zero allowed tools"):
+            await verify_tool_policy(tmp_path)
+    else:
+        result = await verify_tool_policy(tmp_path)
+        assert result == {"protocol": "factory-sdk-v2", "catalog_tools": 2, "allowed_tools": 0}
+    assert closed == [True]
+    assert not list((tmp_path / "tmp").iterdir())

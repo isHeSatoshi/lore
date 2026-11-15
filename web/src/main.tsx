@@ -1188,7 +1188,10 @@ function App() {
         <span>
           lore. <span className="muted">Make every correction count.</span>
         </span>
-        <span>Open-source HydraDB · SelfGraph · BIRD</span>
+        <span>
+          HydraDB · SelfGraph · BIRD. Demo state may reset; do not enter
+          secrets.
+        </span>
       </footer>
     </div>
   );

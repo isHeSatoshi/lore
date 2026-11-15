@@ -1,0 +1,21 @@
+{
+  "nonroot_uid": 1002,
+  "readonly_code": true,
+  "executable_private_state": true,
+  "sdk_version": "0.5.0",
+  "gradio_version": "6.32.0",
+  "cli_version": "1.12.1",
+  "cli_architecture": "x64",
+  "cli_sha256": "ffd1196837f680327258094bc12dc993ff9232036c964bf8354ffb7ed1fdcf00",
+  "download_and_cached_verification_passed": true,
+  "provision_seconds": 1.59,
+  "hydra_started": false,
+  "published": false,
+  "completion_requested": false,
+  "release_run": "r4",
+  "tool_policy_checked": true,
+  "protocol": "factory-sdk-v2",
+  "catalog_tools": 42,
+  "allowed_tools": 0,
+  "child_peak_rss_kib": 239412
+}

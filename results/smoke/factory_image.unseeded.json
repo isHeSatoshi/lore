@@ -1,0 +1,19 @@
+{
+  "non_root": true,
+  "read_only_database_mount": true,
+  "writable_state": true,
+  "health": true,
+  "database_listing": true,
+  "frontend": true,
+  "invalid_unicode_rejected": true,
+  "unexpected_service_error_sanitized": true,
+  "bench_dependencies_absent": true,
+  "trained_databases": 0,
+  "factory_runtime_verified": true,
+  "model_calls": 0,
+  "public_ports": 0,
+  "image": "lore:factory-unseeded",
+  "network": "none",
+  "state_dir": "/app/state",
+  "initial_probe_failure": "State-directory environment setting omitted; corrected to match Compose"
+}

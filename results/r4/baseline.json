@@ -1,0 +1,21 @@
+{
+  "model": "minimax-m3.1-flash",
+  "effort": "medium",
+  "systems": {
+    "floor": {
+      "n": 500,
+      "correct": 231,
+      "accuracy": 46.2,
+      "mean_prompt_tokens": 4478.242
+    },
+    "ceiling": {
+      "n": 500,
+      "correct": 261,
+      "accuracy": 52.2,
+      "mean_prompt_tokens": 4508.82
+    }
+  },
+  "gap_points": 6.0,
+  "gap_gate_pass": true,
+  "ceiling_debug_required": false
+}

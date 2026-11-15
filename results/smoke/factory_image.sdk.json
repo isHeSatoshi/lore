@@ -1,0 +1,19 @@
+{
+  "uid": 10002,
+  "read_only_root": true,
+  "tmp_bytes_limit": 33554432,
+  "sdk_completion_succeeded": true,
+  "result_verified": true,
+  "zero_allowed_tools_checked_by_transport": true,
+  "model": "minimax-m3.1-flash",
+  "effort": "medium",
+  "usage": {
+    "input_tokens": 1038,
+    "output_tokens": 68,
+    "calls": 1
+  },
+  "model_ms": 4506,
+  "individual_child_peak_rss_kib": 260496,
+  "public_ports": 0,
+  "trained": false
+}

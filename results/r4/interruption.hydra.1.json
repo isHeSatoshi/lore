@@ -1,0 +1,21 @@
+{
+  "phase": "lore",
+  "reason": "HydraDB Bolt handshake exceeded its ten-second connection deadline",
+  "saved_stream_answers": 307,
+  "saved_test_answers": {
+    "0.25": 414
+  },
+  "recorded_usage": {
+    "input_tokens": 7774490,
+    "output_tokens": 1300664,
+    "calls": 1712
+  },
+  "health_after_stop": {
+    "readyz": 200,
+    "healthz": 200,
+    "fresh_bolt_connectivity": true
+  },
+  "recovery": "One manual unchanged-protocol journal resume after verifying database health; no HydraDB restart or score changes",
+  "source_hashes_match": true,
+  "checked_utc": "2026-11-15T18:03:38.372066+00:00"
+}

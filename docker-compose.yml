@@ -51,6 +51,8 @@ services:
     build:
       context: .
       dockerfile: deploy/Dockerfile.app
+      args:
+        LORE_LLM_TRANSPORT: ${LORE_LLM_TRANSPORT:-anthropic}
     depends_on:
       hydradb:
         condition: service_started
@@ -61,6 +63,10 @@ services:
       LORE_DATA_DIR: /app/data
       LORE_STATE_DIR: /app/state
       LORE_RESULTS_RUN: ${LORE_RESULTS_RUN:-r2}
+      LORE_LLM_TRANSPORT: ${LORE_LLM_TRANSPORT:-anthropic}
+      LORE_LLM_MODEL: ${LORE_LLM_MODEL:-MiniMax-M3.1-Flash}
+      LORE_LLM_EFFORT: ${LORE_LLM_EFFORT:-medium}
+      LORE_LLM_MAX_TOKENS: ${LORE_LLM_MAX_TOKENS:-8192}
       LORE_LLM_CONCURRENCY: "2"
       LORE_LLM_MIN_INTERVAL_S: "2"
       LORE_BEHIND_CLOUDFLARE: ${LORE_BEHIND_CLOUDFLARE:-0}

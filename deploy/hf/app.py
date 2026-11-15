@@ -8,7 +8,13 @@ import platform
 import secrets
 import subprocess
 import tempfile
+from importlib.metadata import version
 from pathlib import Path
+
+try:  # Uploaded release is flat; repository imports use the namespace package.
+    from .droid_runtime import SDK_VERSION, provision_droid
+except ImportError:
+    from droid_runtime import SDK_VERSION, provision_droid
 
 IMAGE = "ghcr.io/hydra-db/hydradb@sha256:ab71d651fefee13ebb23eb56d72316065bdca563ff7587442e07be663f2bf880"
 BINARY_SHA256 = "821533e10c13228809ca62e16cc6f9c791f2c94a3a7f155394c002080a6cc979"
@@ -108,7 +114,7 @@ def configure(state):
     auth = state / "auth-token"
     auth.write_text(token)
     auth.chmod(0o600)
-    for directory in ("store", "cache", "app"):
+    for directory in ("store", "cache", "app", "tmp"):
         (state / directory).mkdir(exist_ok=True)
     os.environ.update(
         HYDRA_TOKEN=token,
@@ -116,6 +122,14 @@ def configure(state):
         HYDRA_HTTP_URL="http://127.0.0.1:8443",
         HYDRA_ADMIN_URL="http://127.0.0.1:9090",
         LORE_STATE_DIR=str(state / "app"),
+        TMPDIR=str(state / "tmp"),
+        LORE_LLM_TRANSPORT="factory",
+        LORE_LLM_MODEL="minimax-m3.1-flash",
+        LORE_LLM_EFFORT="medium",
+        LORE_LLM_MAX_TOKENS="0",
+        LORE_RUN="r4",
+        LORE_RESULTS_RUN="r4",
+        FACTORY_DROID_AUTO_UPDATE_ENABLED="false",
         LORE_BEHIND_CLOUDFLARE="0",
         LORE_LLM_CONCURRENCY="2",
         LORE_LLM_MIN_INTERVAL_S="2",
@@ -147,6 +161,35 @@ def configure(state):
     }
 
 
+class PublicDeadline:
+    """Bound model-facing requests; cancellation reaches SDK session cleanup."""
+
+    def __init__(self, app, seconds=60):
+        self.app, self.seconds = app, seconds
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] != "http" or scope["path"] not in ("/api/ask", "/api/feedback"):
+            return await self.app(scope, receive, send)
+        started = False
+
+        async def tracked_send(message):
+            nonlocal started
+            if message["type"] == "http.response.start":
+                started = True
+            await send(message)
+
+        try:
+            async with asyncio.timeout(self.seconds):
+                await self.app(scope, receive, tracked_send)
+        except TimeoutError:
+            if not started:
+                from starlette.responses import JSONResponse
+
+                await JSONResponse(
+                    {"detail": "The model request timed out. Please retry shortly."}, status_code=504
+                )(scope, receive, send)
+
+
 async def ready(process):
     async with asyncio.timeout(60):
         while process.returncode is None:
@@ -165,6 +208,15 @@ async def main():
     state = Path(os.getenv("LORE_HOST_STATE", str(Path.home() / ".cache/lore-space")))
     state.mkdir(mode=0o700, parents=True, exist_ok=True)
     environment = configure(state)
+    if version("droid-sdk") != SDK_VERSION or version("gradio") != "6.32.0":
+        raise RuntimeError("Space runtime dependency versions differ")
+    if not os.getenv("FACTORY_API_KEY"):
+        raise RuntimeError("FACTORY_API_KEY runtime Secret is required")
+    droid = await asyncio.to_thread(provision_droid, state)
+    os.environ["PATH"] = str(droid.parent) + os.pathsep + os.environ.get("PATH", "/usr/bin:/bin")
+    # FactoryLLM makes a fresh temporary HOME/cwd per completion. tempfile caches
+    # its directory, so set it explicitly before any Lore/SDK imports.
+    tempfile.tempdir = str(state / "tmp")
     loader, libraries, binary = await asyncio.to_thread(engine_files, state)
     process = await asyncio.create_subprocess_exec(
         str(loader),
@@ -189,8 +241,10 @@ async def main():
                 "HydraDB runs privately on this Space. Trained seeds restore on startup. "
                 "Visitor state can reset when free hosting sleeps or restarts."
             )
+        api = create_app()
+        api.add_middleware(PublicDeadline)
         app = gr.mount_gradio_app(
-            create_app(),
+            api,
             panel,
             path="/hosting",
             show_error=False,

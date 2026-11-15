@@ -1,0 +1,40 @@
+{
+  "seed": 0,
+  "stream_cap": 80,
+  "raw_stream": 1534,
+  "test_count": 500,
+  "removed": {
+    "question_equal": 13,
+    "sql_equal": 17,
+    "question_jaccard": 1,
+    "sql_jaccard": 6
+  },
+  "remaining": 1497,
+  "eligible_per_db": {
+    "california_schools": 85,
+    "financial": 102,
+    "toxicology": 142,
+    "card_games": 184,
+    "codebase_community": 183,
+    "superhero": 127,
+    "formula_1": 171,
+    "european_football_2": 126,
+    "thrombosis_prediction": 160,
+    "student_club": 153,
+    "debit_card_specializing": 64
+  },
+  "stream_per_db": {
+    "california_schools": 80,
+    "card_games": 80,
+    "codebase_community": 80,
+    "debit_card_specializing": 64,
+    "european_football_2": 80,
+    "financial": 80,
+    "formula_1": 80,
+    "student_club": 80,
+    "superhero": 80,
+    "thrombosis_prediction": 80,
+    "toxicology": 80
+  },
+  "tokenization": "lowercase Unicode word tokens; each removal attributed to the first matching rule"
+}

@@ -1,2 +1,2 @@
-.
+.[factory]
 gradio==6.32.0

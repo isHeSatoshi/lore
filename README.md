@@ -25,7 +25,23 @@ checkpoint and ablation with **MiniMax M3.1 Flash, medium effort**.
 Its [frozen protocol](results/r4/learning_configuration.json) records the SDK,
 CLI, system prompt, zero-tool policy and source hashes.
 
-The table below is historical **raw-provider `r2`**, not the new SDK result.
+The matching SDK baselines are complete:
+
+| System | Strict execution accuracy | Evaluated |
+|---|---:|---:|
+| Floor, schema and question only | 46.2% | 500/500 |
+| Ceiling, supplied per-question evidence | 52.2% | 500/500 |
+| Lore, vector and flat | Pending | Not complete |
+
+Source: [`results/r4/baseline.json`](results/r4/baseline.json).
+The 6.0-point headroom passes the baseline gate. It measures supplied evidence,
+not a Lore improvement. The [manual ceiling review](results/r4/ceiling_review.md)
+found no extraction or execution fault in its ten reviewed mistakes.
+
+<details>
+<summary>Preserved raw-provider run and exploratory validation</summary>
+
+The following table is historical **raw-provider `r2`**, not the SDK result.
 That run remains paused on MiniMax's 2056 usage quota: the first two Lore
 checkpoints cover 500/500 questions; the final checkpoint covers 258/500.
 No raw-provider retry is running. SDK and raw-provider answers are never mixed.
@@ -60,7 +76,9 @@ noisy meanings/aliases. These exploratory results are not a full-test gain.
 The recorded `s3` score predates its final post-review validator guards and was
 not rescored afterward.
 
-![Current, incomplete benchmark snapshot](results/r2/curve.png)
+![Historical, incomplete raw-provider snapshot](results/r2/curve.png)
+
+</details>
 
 ## How it works
 
@@ -234,6 +252,8 @@ export LORE_LLM_CONCURRENCY=4
 
 Run `.venv/bin/pytest -q` for local tests. For real HydraDB integration checks,
 run `LORE_INTEGRATION=1 .venv/bin/pytest -q`.
+The latest [integration-enabled release check](results/smoke/release_tests.json)
+passes all 120 tests.
 Use an unused validation run ID. The recorded `s1`–`s3` runs are historical
 calibrations, not results to overwrite with the final code.
 

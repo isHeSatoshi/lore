@@ -1,0 +1,24 @@
+{
+  "phase": "floor,ceiling",
+  "status": "resumed under the same frozen protocol",
+  "failed_request": "ceiling/test/0/card_games/t113",
+  "reason": "SDK returned an unsuccessful, empty, unmetered, or tool-using turn",
+  "saved_answers_at_stop": {
+    "floor": 500,
+    "ceiling": 233
+  },
+  "recorded_usage_at_stop": {
+    "input_tokens": 2800273,
+    "output_tokens": 491018,
+    "calls": 600
+  },
+  "diagnostic": "A separate unchanged-policy t113 turn succeeded with zero allowed tools and no tool messages",
+  "diagnostic_usage": {
+    "input_tokens": 6058,
+    "output_tokens": 1404,
+    "calls": 1
+  },
+  "recovery": "Resume journal; retain completed answers and cache; no prompt, model, effort, learning, or metric changes",
+  "later_phase_retry_policy": "At most two journal resumes per phase for the same unusable-SDK-turn error; all other failures stop",
+  "usage_limitations": "SDK-internal or canceled in-flight requests may have unreported usage"
+}

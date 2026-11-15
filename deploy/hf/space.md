@@ -17,8 +17,18 @@ This deployment is intended for eligible free Gradio/ZeroGPU hosting. It does
 not request GPU work. CPU Basic Docker Space creation is not available to a
 free account under the current hosting rules.
 
-The application uses the owner's configured MiniMax API. Free hosting does
-not make those model calls free. Only runtime Secrets should contain API keys.
+The intended r4 release uses the owner's Factory Droid SDK access to
+`minimax-m3.1-flash`, reasoning effort `medium`, matching its measured results.
+Factory-backed runtime validation is a release gate, not established by the
+earlier native-engine smoke test. Free hosting does not make model calls free.
+Only runtime Secrets should contain API keys.
+The `factory-sdk-v2` policy explicitly denies/restricts `Read` and checks that
+every discovered tool is disallowed before inference. The failed r3 preflight
+is not a valid comparison or deployment evidence.
+The runtime installs the unchanged official Droid CLI 1.12.1 into private
+ephemeral executable storage, verifies its pinned SHA256 and version, and
+disables automatic updates. See `FACTORY_NOTICE.md` for distribution and
+licensing attribution; the CLI is not relicensed under Lore's MIT license.
 
 HydraDB 0.4.0 is downloaded unchanged from its pinned public OCI image and is
 accessible only inside the Space. Its original filesystem and notices are

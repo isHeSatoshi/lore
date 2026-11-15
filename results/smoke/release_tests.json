@@ -1,0 +1,10 @@
+{
+  "command": "LORE_INTEGRATION=1 .venv/bin/pytest -q",
+  "passed": 120,
+  "failed": 0,
+  "skipped": 0,
+  "seconds": 149.85,
+  "completed_utc": "2026-11-15T18:01:08.789885+00:00",
+  "source_head": "1db780f92df7d2fd1f5d7ed162b7209f595369ff",
+  "includes_uncommitted_release_changes": true
+}
