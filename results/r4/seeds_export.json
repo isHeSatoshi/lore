@@ -1,0 +1,21 @@
+{
+  "initial_command_timeout_s": 300,
+  "completed_before_timeout": 10,
+  "resumed_database": "toxicology",
+  "same_original_export_graph_function": true,
+  "all_files_newer_than_final_lore_states": true,
+  "model_calls": 0,
+  "file_sha256": {
+    "california_schools": "f60e728b453d94abcc2f4ba01289043b54f60718a1d55405390406bed2b158f1",
+    "card_games": "86df9a64da54edc0930daad25d19df7b6c2201c73558387b60edda6d81161bae",
+    "codebase_community": "a7a380cfaba66f3613c5ff1ba115822341967e796f53a9d13f57eee531039009",
+    "debit_card_specializing": "80355f83bf739d594e98b7125aeca66e4fd78dccfb7df094c7feb7e2bf14ebe3",
+    "european_football_2": "661f2fe6e16e494aeb755e6fc6042b2f88f41eb530690a37086ed9c9caa87fef",
+    "financial": "6ed5e9f464bb00c355e46101795d4b2ca3c6f3c4bb90772ca6117faa304c9b7c",
+    "formula_1": "a98b47f7fd83d2f5a74087114ac10f1715522d951eaf12dcf30c80d92126378a",
+    "student_club": "13f5c804ba549e530d99b94f155cad3d87a73b9c4ca78328f09da46e6fce30f3",
+    "superhero": "0d71855a05bba2b8b8aada71e8094cf423b2e2732820115eb8325b1d99c4ec97",
+    "thrombosis_prediction": "a9cd8b8d909072d1796666addf2f757320c609ba42f986e0b0e3736c59d47dbb",
+    "toxicology": "4146312b00590b9f5bf1c60573d549d2a34670be98f3d440829f8c68cfe0fb85"
+  }
+}

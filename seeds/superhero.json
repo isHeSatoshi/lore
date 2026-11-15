@@ -1,0 +1,5138 @@
+{
+  "entities": [
+    {
+      "id": "column:alignment.alignment-3b4c93",
+      "type": "Column",
+      "name": "alignment.alignment",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [\"Neutral\", \"N/A\", \"Good\", \"Bad\"]}"
+      }
+    },
+    {
+      "id": "column:attribute.attribute-name-3bc801",
+      "type": "Column",
+      "name": "attribute.attribute_name",
+      "properties": {
+        "profile": "{\"distinct\": 6, \"nulls\": 0, \"top\": [\"Strength\", \"Speed\", \"Power\", \"Intelligence\", \"Durability\", \"Combat\"]}"
+      }
+    },
+    {
+      "id": "column:colour.colour-be4618",
+      "type": "Column",
+      "name": "colour.colour",
+      "properties": {
+        "profile": "{\"distinct\": 35, \"nulls\": 0, \"top\": [\"Yellow/Red\", \"Yellow/Blue\", \"Yellow\", \"White/Red\", \"White\", \"Violet\", \"Strawberry Blond\", \"Silver\", \"Red/White\", \"Red/Orange\", \"Red/Grey\", \"Red/Black\", \"Red\", \"Purple\", \"Pink\", \"Orange/White\", \"Orange\", \"No Colour\", \"Magenta\", \"Indigo\", \"Hazel\", \"Grey\", \"Green/Blue\", \"Green\", \"Gold\"]}"
+      }
+    },
+    {
+      "id": "column:gender.gender-1380b3",
+      "type": "Column",
+      "name": "gender.gender",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 0, \"top\": [\"N/A\", \"Male\", \"Female\"]}"
+      }
+    },
+    {
+      "id": "column:hero-attribute.attribute-value-dcb41c",
+      "type": "Column",
+      "name": "hero_attribute.attribute_value",
+      "properties": {
+        "profile": "{\"distinct\": 20, \"nulls\": 0, \"top\": [35, 25, 85, 100, 50, 15, 10, 80, 30, 45, 75, 95, 60, 90, 20, 55, 70, 65, 40, 5]}"
+      }
+    },
+    {
+      "id": "column:hero-power.power-id-a74595",
+      "type": "Column",
+      "name": "hero_power.power_id",
+      "properties": {
+        "profile": "{\"distinct\": 167, \"nulls\": 0, \"top\": [18, 26, 6, 31, 1, 9, 2, 60, 17, 22, 7, 61, 12, 16, 13, 20, 39, 63, 8, 81, 50, 38, 48, 44, 40]}"
+      }
+    },
+    {
+      "id": "column:publisher.id-7ca59a",
+      "type": "Column",
+      "name": "publisher.id",
+      "properties": {
+        "profile": "{\"distinct\": 25, \"nulls\": 0, \"top\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}"
+      }
+    },
+    {
+      "id": "column:publisher.publisher-name-01ff6d",
+      "type": "Column",
+      "name": "publisher.publisher_name",
+      "properties": {
+        "profile": "{\"distinct\": 25, \"nulls\": 0, \"top\": [\"Wildstorm\", \"Universal Studios\", \"Titan Books\", \"Team Epic TV\", \"SyFy\", \"Star Trek\", \"South Park\", \"Sony Pictures\", \"Shueisha\", \"Rebellion\", \"NBC - Heroes\", \"Microsoft\", \"Marvel Comics\", \"J. R. R. Tolkien\", \"J. K. Rowling\", \"Image Comics\", \"Icon Comics\", \"IDW Publishing\", \"HarperCollins\", \"Hanna-Barbera\", \"George Lucas\", \"Dark Horse Comics\", \"DC Comics\", \"ABC Studios\", \"\"]}"
+      }
+    },
+    {
+      "id": "column:superhero.full-name-8409ed",
+      "type": "Column",
+      "name": "superhero.full_name",
+      "properties": {
+        "profile": "{\"distinct\": 483, \"nulls\": 122, \"top\": [\"-\", null, \"Richard John Grayson\", \"Bartholomew Allen II\", \"Wallace Rudolph West\", \"Timothy Jackson Drake\", \"Tabitha Smith\", \"Sharon Ventura\", \"Nathaniel Christopher Adam\", \"MacDonald Gargan\", \"Liam\", \"Jean Grey-Summers\", \"Jason Peter Todd\", \"Henry Jonathan Pym\", \"Helena Rosa Bertinelli\", \"Erik Stephan Josten\", \"Edward Charles Allan Brock\", \"Dmitri Anatoly Nikolayevich Smerdyakov\", \"Benjamin Reilly\", \"Barbara Gordon\", \"Angel Salvadore Bohusk\", \"Zebediah Killgrave\", \"Yurrd the Unknown\", \"Yuriko Oyama\", \"Yoda\"]}"
+      }
+    },
+    {
+      "id": "column:superhero.weight-kg-4bcc1b",
+      "type": "Column",
+      "name": "superhero.weight_kg",
+      "properties": {
+        "profile": "{\"distinct\": 140, \"nulls\": 64, \"top\": [0, null, 79, 54, 90, 81, 52, 86, 59, 101, 61, 77, 63, 56, 50, 95, 88, 83, 74, 68, 65, 135, 104, 72, 57]}"
+      }
+    },
+    {
+      "id": "column:superpower.power-name-4e9121",
+      "type": "Column",
+      "name": "superpower.power_name",
+      "properties": {
+        "profile": "{\"distinct\": 167, \"nulls\": 0, \"top\": [\"Wind Control\", \"Web Creation\", \"Weather Control\", \"Weapons Master\", \"Weapon-based Powers\", \"Water Control\", \"Wallcrawling\", \"Vitakinesis\", \"Vision - X-Ray\", \"Vision - Thermal\", \"Vision - Telescopic\", \"Vision - Night\", \"Vision - Microscopic\", \"Vision - Infrared\", \"Vision - Heat\", \"Vision - Cryo\", \"Underwater breathing\", \"Toxin and Disease Resistance\", \"Toxin and Disease Control\", \"Time Travel\", \"Time Manipulation\", \"Thirstokinesis\", \"The Force\", \"Terrakinesis\", \"Teleportation\"]}"
+      }
+    },
+    {
+      "id": "example:s717",
+      "type": "Example",
+      "name": "Please list all the superpowers of 3-D Man.",
+      "aliases": [],
+      "properties": {
+        "key": "s717",
+        "learning_complete": true,
+        "sql": "SELECT sp.power_name\nFROM superhero AS s\nJOIN hero_power AS hp ON s.id = hp.hero_id\nJOIN superpower AS sp ON hp.power_id = sp.id\nWHERE s.superhero_name = '3-D Man'"
+      }
+    },
+    {
+      "id": "example:s718",
+      "type": "Example",
+      "name": "How many superheroes have the super power of \"Super Strength\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s718",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT hp.hero_id)\nFROM hero_power AS hp\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE sp.power_name = 'Super Strength'"
+      }
+    },
+    {
+      "id": "example:s719",
+      "type": "Example",
+      "name": "Among the superheroes with the super power of \"Super Strength\", how many of them have a height of over 200cm?",
+      "aliases": [],
+      "properties": {
+        "key": "s719",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT s.id)\nFROM superhero AS s\nINNER JOIN hero_power AS hp ON s.id = hp.hero_id\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE sp.power_name = 'Super Strength' AND s.height_cm > 200"
+      }
+    },
+    {
+      "id": "example:s720",
+      "type": "Example",
+      "name": "Please list the full names of all the superheroes with over 15 super powers.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "hero_power",
+            "power_id"
+          ]
+        ],
+        "key": "s720",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.full_name FROM superhero AS T1 INNER JOIN hero_power AS T2 ON T1.id = T2.hero_id GROUP BY T1.full_name HAVING COUNT(T2.power_id) > 15"
+      }
+    },
+    {
+      "id": "example:s721",
+      "type": "Example",
+      "name": "How many superheroes have blue eyes?",
+      "aliases": [],
+      "properties": {
+        "key": "s721",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM superhero AS T1\nINNER JOIN colour AS T2 ON T1.eye_colour_id = T2.id\nWHERE T2.colour = 'Blue'"
+      }
+    },
+    {
+      "id": "example:s723",
+      "type": "Example",
+      "name": "Among the superheroes with blue eyes, how many of them have the super power of \"Agility\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s723",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT s.id)\nFROM superhero AS s\nINNER JOIN colour AS c ON s.eye_colour_id = c.id\nINNER JOIN hero_power AS hp ON s.id = hp.hero_id\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE c.colour = 'Blue' AND sp.power_name = 'Agility'"
+      }
+    },
+    {
+      "id": "example:s724",
+      "type": "Example",
+      "name": "Please list the superhero names of all the superheroes that have blue eyes and blond hair.",
+      "aliases": [],
+      "properties": {
+        "key": "s724",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.superhero_name\nFROM superhero AS s\nJOIN colour AS ec ON s.eye_colour_id = ec.id\nJOIN colour AS hc ON s.hair_colour_id = hc.id\nWHERE ec.colour = 'Blue' AND hc.colour = 'Blond'"
+      }
+    },
+    {
+      "id": "example:s725",
+      "type": "Example",
+      "name": "How many superheroes are published by Marvel Comics?",
+      "aliases": [],
+      "properties": {
+        "key": "s725",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id)\nFROM superhero AS T1\nINNER JOIN publisher AS T2 ON T1.publisher_id = T2.id\nWHERE T2.publisher_name = 'Marvel Comics'"
+      }
+    },
+    {
+      "id": "example:s727",
+      "type": "Example",
+      "name": "Who is the publisher of Sauron?",
+      "aliases": [],
+      "properties": {
+        "key": "s727",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT p.publisher_name\nFROM superhero AS s\nINNER JOIN publisher AS p ON s.publisher_id = p.id\nWHERE s.superhero_name = 'Sauron' OR s.full_name = 'Sauron'"
+      }
+    },
+    {
+      "id": "example:s728",
+      "type": "Example",
+      "name": "Rank superheroes from Marvel Comics by their eye color popularity, starting with the most common color.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "publisher",
+            "publisher_name"
+          ]
+        ],
+        "key": "s728",
+        "learning_complete": true,
+        "sql": "SELECT colour.colour AS EyeColor, COUNT(superhero.id) AS Count, RANK() OVER (ORDER BY COUNT(superhero.id) DESC) AS PopularityRank FROM superhero INNER JOIN colour ON superhero.eye_colour_id = colour.id INNER JOIN publisher ON superhero.publisher_id = publisher.id WHERE publisher.publisher_name = 'Marvel Comics' GROUP BY colour.colour"
+      }
+    },
+    {
+      "id": "example:s731",
+      "type": "Example",
+      "name": "How many superheroes did DC Comics publish?",
+      "aliases": [],
+      "properties": {
+        "key": "s731",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*)\nFROM superhero AS T1\nINNER JOIN publisher AS T2 ON T1.publisher_id = T2.id\nWHERE T2.publisher_name = 'DC Comics'"
+      }
+    },
+    {
+      "id": "example:s732",
+      "type": "Example",
+      "name": "Which publisher published the slowest superhero?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "attribute",
+            "attribute_name"
+          ]
+        ],
+        "key": "s732",
+        "learning_complete": true,
+        "sql": "SELECT T2.publisher_name FROM superhero AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.id INNER JOIN hero_attribute AS T3 ON T1.id = T3.hero_id INNER JOIN attribute AS T4 ON T3.attribute_id = T4.id WHERE T4.attribute_name = 'Speed' ORDER BY T3.attribute_value LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s733",
+      "type": "Example",
+      "name": "How many gold-eyed superheroes did Marvel Comics publish?",
+      "aliases": [],
+      "properties": {
+        "key": "s733",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*)\nFROM superhero AS T1\nINNER JOIN publisher AS T2 ON T1.publisher_id = T2.id\nINNER JOIN colour AS T3 ON T1.eye_colour_id = T3.id\nWHERE T3.colour = 'Gold'\n  AND T2.publisher_name = 'Marvel Comics'"
+      }
+    },
+    {
+      "id": "example:s734",
+      "type": "Example",
+      "name": "What is the publisher's name of Blue Beetle II?",
+      "aliases": [],
+      "properties": {
+        "key": "s734",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT p.publisher_name\nFROM superhero AS s\nINNER JOIN publisher AS p ON s.publisher_id = p.id\nWHERE s.superhero_name = 'Blue Beetle II'"
+      }
+    },
+    {
+      "id": "example:s737",
+      "type": "Example",
+      "name": "What is Copycat's race?",
+      "aliases": [],
+      "properties": {
+        "key": "s737",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT r.race\nFROM superhero AS s\nJOIN race AS r ON s.race_id = r.id\nWHERE s.superhero_name = 'Copycat'"
+      }
+    },
+    {
+      "id": "example:s738",
+      "type": "Example",
+      "name": "Which superheroes have a durability attribute value of less than 50?",
+      "aliases": [],
+      "properties": {
+        "key": "s738",
+        "learning_complete": true,
+        "sql": "SELECT T1.superhero_name\nFROM superhero AS T1\nINNER JOIN hero_attribute AS T2 ON T1.id = T2.hero_id\nINNER JOIN attribute AS T3 ON T2.attribute_id = T3.id\nWHERE T3.attribute_name = 'Durability' AND T2.attribute_value < 50"
+      }
+    },
+    {
+      "id": "example:s739",
+      "type": "Example",
+      "name": "What are the names of the superheroes with the power of death touch?",
+      "aliases": [],
+      "properties": {
+        "key": "s739",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT s.superhero_name\nFROM superhero AS s\nJOIN hero_power AS hp ON s.id = hp.hero_id\nJOIN superpower AS sp ON hp.power_id = sp.id\nWHERE sp.power_name LIKE '%Death Touch%'\nORDER BY s.superhero_name"
+      }
+    },
+    {
+      "id": "example:s740",
+      "type": "Example",
+      "name": "How many female superheroes have a strength value of 100?",
+      "aliases": [],
+      "properties": {
+        "key": "s740",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) \nFROM superhero AS T1 \nINNER JOIN gender AS T2 ON T1.gender_id = T2.id \nINNER JOIN hero_attribute AS T3 ON T1.id = T3.hero_id \nINNER JOIN attribute AS T4 ON T3.attribute_id = T4.id \nWHERE T2.gender = 'Female' AND T4.attribute_name = 'Strength' AND T3.attribute_value = 100"
+      }
+    },
+    {
+      "id": "example:s741",
+      "type": "Example",
+      "name": "What is the name of the superhero that has the most powers?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s741",
+        "learning_complete": true,
+        "sql": "SELECT T1.superhero_name FROM superhero AS T1 INNER JOIN hero_power AS T2 ON T1.id = T2.hero_id GROUP BY T1.superhero_name ORDER BY COUNT(T2.hero_id) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s742",
+      "type": "Example",
+      "name": "How many vampire superheroes are there?",
+      "aliases": [],
+      "properties": {
+        "key": "s742",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT s.id) AS vampire_superheroes\nFROM superhero AS s\nINNER JOIN race AS r ON s.race_id = r.id\nWHERE r.race = 'Vampire'"
+      }
+    },
+    {
+      "id": "example:s743",
+      "type": "Example",
+      "name": "What is the percentage of superheroes who act in their own self-interest or make decisions based on their own moral code? Indicate how many of the said superheroes were published by Marvel Comics.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "alignment",
+            "alignment"
+          ]
+        ],
+        "key": "s743",
+        "learning_complete": true,
+        "sql": "SELECT (CAST(COUNT(*) AS REAL) * 100 / (SELECT COUNT(*) FROM superhero)), CAST(SUM(CASE WHEN T2.publisher_name = 'Marvel Comics' THEN 1 ELSE 0 END) AS REAL) FROM superhero AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.id INNER JOIN alignment AS T3 ON T3.id = T1.alignment_id WHERE T3.alignment = 'Bad'"
+      }
+    },
+    {
+      "id": "example:s746",
+      "type": "Example",
+      "name": "Calculate the average attribute value of all superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s746",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT AVG(attribute_value)\nFROM hero_attribute"
+      }
+    },
+    {
+      "id": "example:s747",
+      "type": "Example",
+      "name": "What is the total number of superheroes without full name?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "superhero",
+            "full_name"
+          ]
+        ],
+        "key": "s747",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM superhero WHERE full_name IS NULL"
+      }
+    },
+    {
+      "id": "example:s748",
+      "type": "Example",
+      "name": "What is the eye colour of superhero with superhero ID 75?",
+      "aliases": [],
+      "properties": {
+        "key": "s748",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT c.colour\nFROM superhero AS s\nJOIN colour AS c ON s.eye_colour_id = c.id\nWHERE s.id = 75"
+      }
+    },
+    {
+      "id": "example:s749",
+      "type": "Example",
+      "name": "Provide the superpowers of the superhero called Deathlok.",
+      "aliases": [],
+      "properties": {
+        "key": "s749",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT sp.power_name\nFROM superhero AS s\nINNER JOIN hero_power AS hp ON s.id = hp.hero_id\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE s.superhero_name = 'Deathlok'"
+      }
+    },
+    {
+      "id": "example:s752",
+      "type": "Example",
+      "name": "Give the name of the alien superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s752",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.superhero_name\nFROM superhero AS s\nJOIN race AS r ON s.race_id = r.id\nWHERE r.race = 'Alien'"
+      }
+    },
+    {
+      "id": "example:s754",
+      "type": "Example",
+      "name": "What is the superpower of hero ID 56?",
+      "aliases": [],
+      "properties": {
+        "key": "s754",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT sp.power_name\nFROM superhero AS s\nINNER JOIN hero_power AS hp ON s.id = hp.hero_id\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE s.id = 56"
+      }
+    },
+    {
+      "id": "example:s756",
+      "type": "Example",
+      "name": "How many bad superheroes are there?",
+      "aliases": [],
+      "properties": {
+        "key": "s756",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*)\nFROM superhero AS T1\nINNER JOIN alignment AS T2 ON T1.alignment_id = T2.id\nWHERE T2.alignment = 'Bad'"
+      }
+    },
+    {
+      "id": "example:s760",
+      "type": "Example",
+      "name": "In superheroes with height between 150 to 180, what is the percentage of heroes published by Marvel Comics?",
+      "aliases": [],
+      "properties": {
+        "key": "s760",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN T2.publisher_name = 'Marvel Comics' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.id)\nFROM superhero AS T1\nINNER JOIN publisher AS T2 ON T1.publisher_id = T2.id\nWHERE T1.height_cm BETWEEN 150 AND 180"
+      }
+    },
+    {
+      "id": "example:s762",
+      "type": "Example",
+      "name": "Which power do superheroes have the most of?",
+      "aliases": [],
+      "properties": {
+        "key": "s762",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT sp.power_name\nFROM hero_power AS hp\nJOIN superpower AS sp ON hp.power_id = sp.id\nGROUP BY sp.id, sp.power_name\nORDER BY COUNT(DISTINCT hp.hero_id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s763",
+      "type": "Example",
+      "name": "Indicate the attribute value of superhero Abomination.",
+      "aliases": [],
+      "properties": {
+        "key": "s763",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.attribute_value\nFROM superhero AS T1\nINNER JOIN hero_attribute AS T2 ON T1.id = T2.hero_id\nWHERE T1.superhero_name = 'Abomination'"
+      }
+    },
+    {
+      "id": "example:s765",
+      "type": "Example",
+      "name": "How many heroes have stealth power?",
+      "aliases": [],
+      "properties": {
+        "key": "s765",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT hp.hero_id)\nFROM hero_power AS hp\nJOIN superpower AS sp ON hp.power_id = sp.id\nWHERE sp.power_name = 'Stealth'"
+      }
+    },
+    {
+      "id": "example:s766",
+      "type": "Example",
+      "name": "What is the hero's full name with the highest attribute in strength?",
+      "aliases": [],
+      "properties": {
+        "key": "s766",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.full_name\nFROM superhero AS T1\nINNER JOIN hero_attribute AS T2 ON T1.id = T2.hero_id\nINNER JOIN attribute AS T3 ON T2.attribute_id = T3.id\nWHERE T3.attribute_name = 'Strength'\n  AND T1.full_name IS NOT NULL\n  AND T1.full_name <> '-'\nORDER BY T2.attribute_value DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s767",
+      "type": "Example",
+      "name": "What is the average of superheroes with no skin colour?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s767",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(*) AS REAL) / SUM(CASE WHEN T2.id = 1 THEN 1 ELSE 0 END) FROM superhero AS T1 INNER JOIN colour AS T2 ON T1.skin_colour_id = T2.id"
+      }
+    },
+    {
+      "id": "example:s769",
+      "type": "Example",
+      "name": "Which superhero has the most durability published by Dark Horse Comics?",
+      "aliases": [],
+      "properties": {
+        "key": "s769",
+        "learning_complete": true,
+        "sql": "SELECT T1.superhero_name\nFROM superhero AS T1\nINNER JOIN publisher AS T2 ON T1.publisher_id = T2.id\nINNER JOIN hero_attribute AS T3 ON T1.id = T3.hero_id\nINNER JOIN attribute AS T4 ON T3.attribute_id = T4.id\nWHERE T4.attribute_name = 'Durability'\n  AND T2.publisher_name = 'Dark Horse Comics'\nORDER BY T3.attribute_value DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s771",
+      "type": "Example",
+      "name": "List the name of superheroes with flight power.",
+      "aliases": [],
+      "properties": {
+        "key": "s771",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT s.superhero_name\nFROM superhero AS s\nJOIN hero_power AS hp ON s.id = hp.hero_id\nJOIN superpower AS sp ON hp.power_id = sp.id\nWHERE sp.power_name = 'Flight'\nORDER BY s.superhero_name"
+      }
+    },
+    {
+      "id": "example:s773",
+      "type": "Example",
+      "name": "Which superhero has the same eyes, hair and skin colour? Indicate the publisher of the superhero.",
+      "aliases": [],
+      "properties": {
+        "key": "s773",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.superhero_name, p.publisher_name\nFROM superhero AS s\nJOIN publisher AS p ON s.publisher_id = p.id\nJOIN colour AS ec ON s.eye_colour_id = ec.id\nJOIN colour AS hc ON s.hair_colour_id = hc.id\nJOIN colour AS sc ON s.skin_colour_id = sc.id\nWHERE ec.colour = hc.colour AND hc.colour = sc.colour"
+      }
+    },
+    {
+      "id": "example:s775",
+      "type": "Example",
+      "name": "What is the percentage of blue female superheroes among all female superheroes?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s775",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN T3.colour = 'Blue' THEN T1.id ELSE NULL END) AS REAL) * 100 / COUNT(T1.id) FROM superhero AS T1 INNER JOIN gender AS T2 ON T1.gender_id = T2.id INNER JOIN colour AS T3 ON T1.skin_colour_id = T3.id WHERE T2.gender = 'Female'"
+      }
+    },
+    {
+      "id": "example:s776",
+      "type": "Example",
+      "name": "Provide the hero name and race of Charles Chandler.",
+      "aliases": [],
+      "properties": {
+        "key": "s776",
+        "learning_complete": true,
+        "sql": "SELECT s.superhero_name, r.race\nFROM superhero AS s\nJOIN race AS r ON s.race_id = r.id\nWHERE s.full_name = 'Charles Chandler'"
+      }
+    },
+    {
+      "id": "example:s777",
+      "type": "Example",
+      "name": "What is the gender of Agent 13 hero?",
+      "aliases": [],
+      "properties": {
+        "key": "s777",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT g.gender\nFROM superhero AS s\nJOIN gender AS g ON s.gender_id = g.id\nWHERE s.superhero_name = 'Agent 13'"
+      }
+    },
+    {
+      "id": "example:s778",
+      "type": "Example",
+      "name": "Provide superheroes' names who have the adaptation power.",
+      "aliases": [],
+      "properties": {
+        "key": "s778",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT s.superhero_name\nFROM superhero AS s\nJOIN hero_power AS hp ON s.id = hp.hero_id\nJOIN superpower AS sp ON hp.power_id = sp.id\nWHERE sp.power_name = 'Adaptation'\nORDER BY s.superhero_name"
+      }
+    },
+    {
+      "id": "example:s782",
+      "type": "Example",
+      "name": "List the heroes' names whose eyes and hair colours are both black.",
+      "aliases": [],
+      "properties": {
+        "key": "s782",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.superhero_name\nFROM superhero AS s\nJOIN colour AS ec ON s.eye_colour_id = ec.id\nJOIN colour AS hc ON s.hair_colour_id = hc.id\nWHERE ec.colour = 'Black' AND hc.colour = 'Black'"
+      }
+    },
+    {
+      "id": "example:s785",
+      "type": "Example",
+      "name": "Describe the names of neutral alignment superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s785",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.superhero_name\nFROM superhero AS T1\nINNER JOIN alignment AS T2 ON T1.alignment_id = T2.id\nWHERE T2.alignment = 'Neutral'"
+      }
+    },
+    {
+      "id": "example:s786",
+      "type": "Example",
+      "name": "How many heroes have the highest attribute value in strength?",
+      "aliases": [],
+      "properties": {
+        "key": "s786",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*)\nFROM hero_attribute AS T1\nINNER JOIN attribute AS T2 ON T1.attribute_id = T2.id\nWHERE T2.attribute_name = 'Strength'\n  AND T1.attribute_value = (\n      SELECT MAX(T3.attribute_value)\n      FROM hero_attribute AS T3\n      INNER JOIN attribute AS T4 ON T3.attribute_id = T4.id\n      WHERE T4.attribute_name = 'Strength'\n  )"
+      }
+    },
+    {
+      "id": "example:s788",
+      "type": "Example",
+      "name": "How many percent of female heroes were published by Marvel Comics?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "gender",
+            "gender"
+          ]
+        ],
+        "key": "s788",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN T2.publisher_name = 'Marvel Comics' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T1.id) FROM superhero AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.id INNER JOIN gender AS T3 ON T1.gender_id = T3.id WHERE T3.gender = 'Female'"
+      }
+    },
+    {
+      "id": "example:s791",
+      "type": "Example",
+      "name": "Calculate the average height for each superhero.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s791",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(height_cm) AS REAL) / COUNT(id) FROM superhero"
+      }
+    },
+    {
+      "id": "example:s792",
+      "type": "Example",
+      "name": "What is Abomination's superpower?",
+      "aliases": [],
+      "properties": {
+        "key": "s792",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT sp.power_name\nFROM superhero AS s\nINNER JOIN hero_power AS hp ON s.id = hp.hero_id\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE s.superhero_name = 'Abomination'"
+      }
+    },
+    {
+      "id": "example:s794",
+      "type": "Example",
+      "name": "Which hero was the fastest?",
+      "aliases": [],
+      "properties": {
+        "key": "s794",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.superhero_name\nFROM superhero AS T1\nINNER JOIN hero_attribute AS T2 ON T1.id = T2.hero_id\nINNER JOIN attribute AS T3 ON T2.attribute_id = T3.id\nWHERE T3.attribute_name = 'Speed'\nORDER BY T2.attribute_value DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s795",
+      "type": "Example",
+      "name": "How many superheroes have a neutral alignment?",
+      "aliases": [],
+      "properties": {
+        "key": "s795",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM superhero AS T1\nINNER JOIN alignment AS T2 ON T1.alignment_id = T2.id\nWHERE T2.alignment = 'Neutral'"
+      }
+    },
+    {
+      "id": "example:s799",
+      "type": "Example",
+      "name": "How many superheroes didn't have any publisher?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "publisher",
+            "id"
+          ]
+        ],
+        "key": "s799",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id) FROM superhero AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.id WHERE T2.id = 1"
+      }
+    },
+    {
+      "id": "example:s801",
+      "type": "Example",
+      "name": "Find the ratio between male superheroes and female superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s801",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT CAST(COUNT(CASE WHEN T2.gender = 'Male' THEN 1 END) AS REAL) / COUNT(CASE WHEN T2.gender = 'Female' THEN 1 END) AS male_to_female_ratio\nFROM superhero AS T1\nINNER JOIN gender AS T2 ON T1.gender_id = T2.id"
+      }
+    },
+    {
+      "id": "example:s802",
+      "type": "Example",
+      "name": "Who is the tallest superhero?",
+      "aliases": [],
+      "properties": {
+        "key": "s802",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.superhero_name\nFROM superhero AS s\nORDER BY s.height_cm DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s803",
+      "type": "Example",
+      "name": "What is the power ID of cryokinesis?",
+      "aliases": [],
+      "properties": {
+        "key": "s803",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT id\nFROM superpower\nWHERE power_name = 'Cryokinesis'"
+      }
+    },
+    {
+      "id": "example:s804",
+      "type": "Example",
+      "name": "Provide the name of superhero with superhero ID 294.",
+      "aliases": [],
+      "properties": {
+        "key": "s804",
+        "learning_complete": true,
+        "sql": "SELECT superhero_name\nFROM superhero\nWHERE id = 294"
+      }
+    },
+    {
+      "id": "example:s805",
+      "type": "Example",
+      "name": "List the full names of superheroes with missing weight.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "superhero",
+            "weight_kg"
+          ]
+        ],
+        "key": "s805",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT full_name FROM superhero WHERE full_name IS NOT NULL AND (weight_kg IS NULL OR weight_kg = 0)"
+      }
+    },
+    {
+      "id": "example:s807",
+      "type": "Example",
+      "name": "What is the superpowers of the superhero has Helen Parr as their full name?",
+      "aliases": [],
+      "properties": {
+        "key": "s807",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT sp.power_name\nFROM superhero AS s\nINNER JOIN hero_power AS hp ON s.id = hp.hero_id\nINNER JOIN superpower AS sp ON hp.power_id = sp.id\nWHERE s.full_name = 'Helen Parr'"
+      }
+    },
+    {
+      "id": "example:s808",
+      "type": "Example",
+      "name": "Find the race of the superhero who weighs 108kg and is 188cm tall.",
+      "aliases": [],
+      "properties": {
+        "key": "s808",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT r.race\nFROM superhero AS s\nJOIN race AS r ON s.race_id = r.id\nWHERE s.weight_kg = 108 AND s.height_cm = 188"
+      }
+    },
+    {
+      "id": "example:s810",
+      "type": "Example",
+      "name": "What is the race of the superhero with maximum attribute value?",
+      "aliases": [],
+      "properties": {
+        "key": "s810",
+        "learning_complete": true,
+        "sql": "SELECT r.race\nFROM superhero AS s\nJOIN hero_attribute AS ha ON ha.hero_id = s.id\nJOIN race AS r ON r.id = s.race_id\nORDER BY ha.attribute_value DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s811",
+      "type": "Example",
+      "name": "Give the alignment and superpowers of the superhero named Atom IV.",
+      "aliases": [],
+      "properties": {
+        "key": "s811",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT a.alignment, sp.power_name\nFROM superhero AS s\nJOIN alignment AS a ON s.alignment_id = a.id\nJOIN hero_power AS hp ON s.id = hp.hero_id\nJOIN superpower AS sp ON hp.power_id = sp.id\nWHERE s.superhero_name = 'Atom IV'"
+      }
+    },
+    {
+      "id": "example:s813",
+      "type": "Example",
+      "name": "Calculate the average attribute value of all neutral superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s813",
+        "learning_complete": true,
+        "sql": "SELECT AVG(T3.attribute_value)\nFROM superhero AS T1\nINNER JOIN alignment AS T2 ON T1.alignment_id = T2.id\nINNER JOIN hero_attribute AS T3 ON T1.id = T3.hero_id\nWHERE T2.alignment = 'Neutral'"
+      }
+    },
+    {
+      "id": "example:s817",
+      "type": "Example",
+      "name": "Give the race of the blue-haired male superhero.",
+      "aliases": [],
+      "properties": {
+        "key": "s817",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT r.race\nFROM superhero AS s\nJOIN gender AS g ON s.gender_id = g.id\nJOIN colour AS c ON s.hair_colour_id = c.id\nJOIN race AS r ON s.race_id = r.id\nWHERE g.gender = 'Male' AND c.colour = 'Blue'"
+      }
+    },
+    {
+      "id": "example:s818",
+      "type": "Example",
+      "name": "Among the bad superheroes, what is the percentage of female superheroes?",
+      "aliases": [],
+      "properties": {
+        "key": "s818",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT 100.0 * SUM(CASE WHEN g.gender = 'Female' THEN 1 ELSE 0 END) / COUNT(*) AS percentage_female\nFROM superhero AS s\nJOIN alignment AS a ON s.alignment_id = a.id\nJOIN gender AS g ON s.gender_id = g.id\nWHERE a.alignment = 'Bad'"
+      }
+    },
+    {
+      "id": "example:s820",
+      "type": "Example",
+      "name": "How strong is the Hulk?",
+      "aliases": [],
+      "properties": {
+        "key": "s820",
+        "learning_complete": true,
+        "sql": "SELECT ha.attribute_value\nFROM superhero AS s\nJOIN hero_attribute AS ha ON ha.hero_id = s.id\nJOIN attribute AS a ON a.id = ha.attribute_id\nWHERE s.superhero_name = 'Hulk'\n  AND a.attribute_name = 'Strength'"
+      }
+    },
+    {
+      "id": "example:s822",
+      "type": "Example",
+      "name": "How many green-skinned villains are there in the superhero universe?",
+      "aliases": [],
+      "properties": {
+        "key": "s822",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM superhero AS s\nINNER JOIN colour AS c ON s.skin_colour_id = c.id\nINNER JOIN alignment AS a ON s.alignment_id = a.id\nWHERE c.colour = 'Green' AND a.alignment = 'Bad'"
+      }
+    },
+    {
+      "id": "example:s824",
+      "type": "Example",
+      "name": "Identify superheroes who can control wind and list their names in alphabetical order.",
+      "aliases": [],
+      "properties": {
+        "key": "s824",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT s.superhero_name\nFROM superhero s\nJOIN hero_power hp ON s.id = hp.hero_id\nJOIN superpower sp ON hp.power_id = sp.id\nWHERE sp.power_name LIKE '%Wind%'\nORDER BY s.superhero_name"
+      }
+    },
+    {
+      "id": "example:s826",
+      "type": "Example",
+      "name": "Identify the heaviest superhero in DC Comics.",
+      "aliases": [],
+      "properties": {
+        "key": "s826",
+        "learning_complete": true,
+        "sql": "SELECT T1.superhero_name\nFROM superhero AS T1\nINNER JOIN publisher AS T2 ON T1.publisher_id = T2.id\nWHERE T2.publisher_name = 'DC Comics'\nORDER BY T1.weight_kg DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s828",
+      "type": "Example",
+      "name": "Count the fastest superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s828",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*) AS fastest_superhero_count\nFROM hero_attribute AS ha\nJOIN attribute AS a ON ha.attribute_id = a.id\nWHERE a.attribute_name = 'Speed'\n  AND ha.attribute_value = (\n      SELECT MAX(ha2.attribute_value)\n      FROM hero_attribute AS ha2\n      JOIN attribute AS a2 ON ha2.attribute_id = a2.id\n      WHERE a2.attribute_name = 'Speed'\n  )"
+      }
+    },
+    {
+      "id": "example:s829",
+      "type": "Example",
+      "name": "Which publisher created more superheroes: DC or Marvel Comics? Find the difference in the number of superheroes.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s829",
+        "learning_complete": true,
+        "sql": "SELECT SUM(CASE WHEN T2.publisher_name = 'DC Comics' THEN 1 ELSE 0 END) - SUM(CASE WHEN T2.publisher_name = 'Marvel Comics' THEN 1 ELSE 0 END) FROM superhero AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.id"
+      }
+    },
+    {
+      "id": "example:s830",
+      "type": "Example",
+      "name": "Identify the weakest attribute of the Black Panther.",
+      "aliases": [],
+      "properties": {
+        "key": "s830",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T3.attribute_name\nFROM superhero AS T1\nINNER JOIN hero_attribute AS T2 ON T1.id = T2.hero_id\nINNER JOIN attribute AS T3 ON T2.attribute_id = T3.id\nWHERE T1.superhero_name = 'Black Panther'\nORDER BY T2.attribute_value ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s833",
+      "type": "Example",
+      "name": "Name the superhero, otherwise known as Charles Chandler.",
+      "aliases": [],
+      "properties": {
+        "key": "s833",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.superhero_name\nFROM superhero AS s\nWHERE s.full_name = 'Charles Chandler'"
+      }
+    },
+    {
+      "id": "example:s834",
+      "type": "Example",
+      "name": "Among all superheroes created by George Lucas, identify the percentage of female superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s834",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT 100.0 * SUM(CASE WHEN g.gender = 'Female' THEN 1 ELSE 0 END) / COUNT(*) AS percentage_female\nFROM superhero AS s\nJOIN publisher AS p ON s.publisher_id = p.id\nJOIN gender AS g ON s.gender_id = g.id\nWHERE p.publisher_name = 'George Lucas'"
+      }
+    },
+    {
+      "id": "example:s835",
+      "type": "Example",
+      "name": "Among all superheroes in Marvel Comics, identify the percentage of 'good' superheroes.",
+      "aliases": [],
+      "properties": {
+        "key": "s835",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT 100.0 * SUM(CASE WHEN a.alignment = 'Good' THEN 1 ELSE 0 END) / COUNT(*) AS percentage_good\nFROM superhero AS s\nJOIN publisher AS p ON s.publisher_id = p.id\nJOIN alignment AS a ON s.alignment_id = a.id\nWHERE p.publisher_name = 'Marvel Comics'"
+      }
+    },
+    {
+      "id": "example:s836",
+      "type": "Example",
+      "name": "What is the total number of superheroes that have John as their first name?",
+      "aliases": [],
+      "properties": {
+        "key": "s836",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM superhero WHERE full_name LIKE 'John%'"
+      }
+    },
+    {
+      "id": "example:s837",
+      "type": "Example",
+      "name": "Give the hero ID of superhero with the lowest attribute value.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "hero_attribute",
+            "attribute_value"
+          ]
+        ],
+        "key": "s837",
+        "learning_complete": true,
+        "sql": "SELECT hero_id FROM hero_attribute WHERE attribute_value = ( SELECT MIN(attribute_value) FROM hero_attribute )"
+      }
+    },
+    {
+      "id": "example:s838",
+      "type": "Example",
+      "name": "Provide the full name of the superhero named Alien.",
+      "aliases": [],
+      "properties": {
+        "key": "s838",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT s.full_name\nFROM superhero AS s\nWHERE s.superhero_name = 'Alien' OR s.full_name = 'Alien'"
+      }
+    },
+    {
+      "id": "example:s839",
+      "type": "Example",
+      "name": "In superheroes with weight less than 100, list the full name of the superheroes with brown eyes.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "colour",
+            "colour"
+          ]
+        ],
+        "key": "s839",
+        "learning_complete": true,
+        "sql": "SELECT T1.full_name FROM superhero AS T1 INNER JOIN colour AS T2 ON T1.eye_colour_id = T2.id WHERE T1.weight_kg < 100 AND T2.colour = 'Brown'"
+      }
+    },
+    {
+      "id": "example:s840",
+      "type": "Example",
+      "name": "List the attribute value of the superhero named Aquababy.",
+      "aliases": [],
+      "properties": {
+        "key": "s840",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ha.attribute_value\nFROM superhero AS s\nJOIN hero_attribute AS ha ON ha.hero_id = s.id\nWHERE s.superhero_name = 'Aquababy'"
+      }
+    },
+    {
+      "id": "example:s841",
+      "type": "Example",
+      "name": "Provide the weight and race of the superhero with superhero ID 40.",
+      "aliases": [],
+      "properties": {
+        "key": "s841",
+        "learning_complete": true,
+        "sql": "SELECT s.weight_kg, r.race\nFROM superhero s\nJOIN race r ON s.race_id = r.id\nWHERE s.id = 40"
+      }
+    },
+    {
+      "id": "example:s843",
+      "type": "Example",
+      "name": "List the hero ID of superheroes have intellegence as their power.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "superpower",
+            "power_name"
+          ]
+        ],
+        "key": "s843",
+        "learning_complete": true,
+        "sql": "SELECT T1.hero_id FROM hero_power AS T1 INNER JOIN superpower AS T2 ON T1.power_id = T2.id WHERE T2.power_name = 'Intelligence'"
+      }
+    },
+    {
+      "id": "example:s844",
+      "type": "Example",
+      "name": "Give the eye colour of Blackwulf.",
+      "aliases": [],
+      "properties": {
+        "key": "s844",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT c.colour\nFROM superhero AS s\nJOIN colour AS c ON s.eye_colour_id = c.id\nWHERE s.superhero_name = 'Blackwulf'"
+      }
+    },
+    {
+      "id": "term:act-in-own-self-interest",
+      "type": "Term",
+      "name": "act in own self-interest",
+      "aliases": [
+        "based on their own moral code",
+        "self-interested superheroes",
+        "morally neutral villainous hero"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:as-their-power",
+      "type": "Term",
+      "name": "as their power",
+      "aliases": [
+        "has the power",
+        "power is",
+        "superpower name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attribute-value",
+      "type": "Term",
+      "name": "attribute value",
+      "aliases": [
+        "attribute score",
+        "attribute rating"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:average-height",
+      "type": "Term",
+      "name": "average height",
+      "aliases": [
+        "average height in cm",
+        "mean height of superheroes"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:average-of-superheroes-with-no-skin-colour",
+      "type": "Term",
+      "name": "average of superheroes with no skin colour",
+      "aliases": [
+        "average superheroes per colour category",
+        "share of superheroes without skin colour"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:blue-superhero",
+      "type": "Term",
+      "name": "blue superhero",
+      "aliases": [
+        "blue skin colour",
+        "blue coloured superhero"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:brown-eyes",
+      "type": "Term",
+      "name": "brown eyes",
+      "aliases": [
+        "eye color brown",
+        "brown eye colour"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:color-popularity-rank",
+      "type": "Term",
+      "name": "color popularity rank",
+      "aliases": [
+        "rank colors by popularity",
+        "most common eye color",
+        "eye color count ranking"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:difference-in-number-of-superheroes",
+      "type": "Term",
+      "name": "difference in number of superheroes",
+      "aliases": [
+        "how many more superheroes one publisher has",
+        "gap between two publishers' superhero counts"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:each-superhero",
+      "type": "Term",
+      "name": "each superhero",
+      "aliases": [
+        "per superhero",
+        "individual superhero"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:eye-color",
+      "type": "Term",
+      "name": "eye color",
+      "aliases": [
+        "eye colour",
+        "eye color of superhero",
+        "color of eyes"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:female-superhero",
+      "type": "Term",
+      "name": "female superhero",
+      "aliases": [
+        "female heroes",
+        "superheroes that are female"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:female-superheroes",
+      "type": "Term",
+      "name": "female superheroes",
+      "aliases": [
+        "female heroes",
+        "women superheroes",
+        "heroes who are female"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:full-name",
+      "type": "Term",
+      "name": "full name",
+      "aliases": [
+        "superhero name",
+        "hero's name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hero-s-publisher",
+      "type": "Term",
+      "name": "hero's publisher",
+      "aliases": [
+        "published by",
+        "which publisher",
+        "publisher",
+        "comic publisher",
+        "publishing company",
+        "publisher reference",
+        "publishing house"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:how-many-powers-a-superhero-has",
+      "type": "Term",
+      "name": "how many powers a superhero has",
+      "aliases": [
+        "most powers",
+        "number of powers",
+        "count of powers",
+        "power count"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:missing-height",
+      "type": "Term",
+      "name": "missing height",
+      "aliases": [
+        "unknown height",
+        "height not recorded"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:missing-weight",
+      "type": "Term",
+      "name": "missing weight",
+      "aliases": [
+        "unknown weight",
+        "weight not recorded",
+        "no weight"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:no-publisher",
+      "type": "Term",
+      "name": "no publisher",
+      "aliases": [
+        "didn't have any publisher",
+        "without a publisher",
+        "missing publisher",
+        "unpublished superhero"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:no-skin-colour",
+      "type": "Term",
+      "name": "no skin colour",
+      "aliases": [
+        "no skin color",
+        "colourless superheroes",
+        "skin colour is none"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:number-of-super-powers",
+      "type": "Term",
+      "name": "number of super powers",
+      "aliases": [
+        "count of super powers",
+        "how many powers",
+        "super power count"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:number-of-superheroes",
+      "type": "Term",
+      "name": "number of superheroes",
+      "aliases": [
+        "count superheroes",
+        "how many superheroes",
+        "superhero count"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:per-superhero-aggregation",
+      "type": "Term",
+      "name": "per superhero aggregation",
+      "aliases": [
+        "grouped by superhero",
+        "for each superhero",
+        "by hero"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percent-of-female-heroes-published-by-marvel-comics",
+      "type": "Term",
+      "name": "percent of female heroes published by marvel comics",
+      "aliases": [
+        "percentage of female superheroes from Marvel",
+        "share of female heroes at Marvel Comics"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-a-subset-within-a-group",
+      "type": "Term",
+      "name": "percentage of a subset within a group",
+      "aliases": [
+        "percent of heroes that are X",
+        "share of group with attribute"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:placeholder-dash-name",
+      "type": "Term",
+      "name": "placeholder dash name",
+      "aliases": [
+        "dash placeholder name",
+        "unnamed placeholder"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:published-by-a-publisher",
+      "type": "Term",
+      "name": "published by a publisher",
+      "aliases": [
+        "publisher of the superhero",
+        "Marvel Comics superheroes",
+        "published by Marvel Comics"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:slowest-superhero",
+      "type": "Term",
+      "name": "slowest superhero",
+      "aliases": [
+        "lowest speed",
+        "slowest by speed"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:speed-attribute",
+      "type": "Term",
+      "name": "speed attribute",
+      "aliases": [
+        "the attribute speed",
+        "Speed"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superhero-full-name",
+      "type": "Term",
+      "name": "superhero full name",
+      "aliases": [
+        "name of superhero",
+        "hero name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superhero-id",
+      "type": "Term",
+      "name": "superhero id",
+      "aliases": [
+        "hero id",
+        "id of the superhero"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superhero-identity-for-grouping",
+      "type": "Term",
+      "name": "superhero identity for grouping",
+      "aliases": [
+        "same superhero",
+        "group superheroes by name",
+        "distinct person"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superhero-publisher",
+      "type": "Term",
+      "name": "superhero publisher",
+      "aliases": [
+        "Marvel Comics superheroes",
+        "published by",
+        "comic publisher"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superhero-weight",
+      "type": "Term",
+      "name": "superhero weight",
+      "aliases": [
+        "weight in kg",
+        "weight_kg"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superhero-without-full-name",
+      "type": "Term",
+      "name": "superhero without full name",
+      "aliases": [
+        "missing full name",
+        "no full name",
+        "null full name",
+        "unknown name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:superheroes-created-by-a-publisher",
+      "type": "Term",
+      "name": "superheroes created by a publisher",
+      "aliases": [
+        "superhero count per publisher",
+        "number of superheroes by publisher"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:slowest-superhero",
+      "type": "MEANS",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {
+        "_feedback_sources": [
+          "s771",
+          "s747",
+          "s794",
+          "s818",
+          "s788",
+          "s720",
+          "s743",
+          "s829",
+          "s762",
+          "s740",
+          "s719",
+          "s803",
+          "s763",
+          "s830",
+          "s826",
+          "s801",
+          "s786",
+          "s766",
+          "s777",
+          "s843",
+          "s723",
+          "s738",
+          "s840",
+          "s791",
+          "s748"
+        ],
+        "losses": 7,
+        "note": "Speed is stored as a named attribute, so the slowest hero is the one whose hero_attribute.attribute_value for attribute.attribute_name = 'Speed' is lowest.",
+        "origin": "s732",
+        "sql": "hero_attribute.attribute_value",
+        "wins": 18
+      }
+    },
+    {
+      "from_entity": "term:missing-weight",
+      "type": "MEANS",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {
+        "_feedback_sources": [
+          "s767",
+          "s754"
+        ],
+        "losses": 1,
+        "note": "In this database a superhero's weight is considered missing when weight_kg is NULL or stored as 0, so both cases must be filtered.",
+        "origin": "s805",
+        "sql": "superhero.weight_kg IS NULL OR superhero.weight_kg = 0",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:brown-eyes",
+      "type": "MEANS",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {
+        "losses": 0,
+        "note": "Eye color is stored as a foreign key superhero.eye_colour_id into the colour lookup table, whose colour.colour holds the literal color name.",
+        "origin": "s839",
+        "sql": "superhero.eye_colour_id = colour.id AND colour.colour = 'Brown'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:superhero-identity-for-grouping",
+      "type": "MEANS",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {
+        "_feedback_sources": [
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s743",
+          "s829",
+          "s762",
+          "s721",
+          "s817",
+          "s801",
+          "s778",
+          "s733",
+          "s773",
+          "s838",
+          "s776",
+          "s767",
+          "s756",
+          "s766",
+          "s833",
+          "s731",
+          "s739",
+          "s844",
+          "s795",
+          "s811",
+          "s835",
+          "s738",
+          "s828",
+          "s752",
+          "s742",
+          "s717",
+          "s836"
+        ],
+        "losses": 4,
+        "note": "Superheroes sharing an identical full_name are treated as one person when aggregating, so counts are grouped by superhero.full_name rather than by superhero.id, and the output list uses DISTINCT superhero.full_name.",
+        "origin": "s720",
+        "sql": "superhero.full_name",
+        "wins": 27
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-a-subset-within-a-group",
+      "type": "MEANS",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {
+        "losses": 0,
+        "note": "Compute a percentage as the conditional count of the subset multiplied by 100 divided by the total row count of the same filtered population, counting superhero.id in both numerator and denominator so the denominator is unaffected by the case expression.",
+        "origin": "s775",
+        "sql": "CAST(COUNT(CASE WHEN colour.colour = 'Blue' THEN superhero.id ELSE NULL END) AS REAL) * 100 / COUNT(superhero.id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:female-superhero",
+      "type": "MEANS",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {
+        "losses": 0,
+        "note": "Gender is stored as a lookup label in gender.gender ('Female', 'Male', 'N/A'), reached via superhero.gender_id.",
+        "origin": "s775",
+        "sql": "superhero.gender_id = gender.id AND gender.gender = 'Female'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:blue-superhero",
+      "type": "MEANS",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {
+        "losses": 0,
+        "note": "When a question states a superhero's colour without specifying eye/hair, it refers to the skin colour attribute, so join colour through superhero.skin_colour_id, not superhero.eye_colour_id.",
+        "origin": "s775",
+        "sql": "superhero.skin_colour_id = colour.id AND colour.colour = 'Blue'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:missing-height",
+      "type": "MEANS",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {
+        "_feedback_sources": [
+          "s760"
+        ],
+        "losses": 0,
+        "note": "Height is stored in centimeters and a height of NULL or 0 means the superhero's height is unknown rather than zero tall.",
+        "origin": "s791",
+        "sql": "superhero.height_cm IS NULL OR superhero.height_cm = 0",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:per-superhero-aggregation",
+      "type": "MEANS",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {
+        "_feedback_sources": [
+          "s804",
+          "s807",
+          "s817",
+          "s763",
+          "s769",
+          "s826",
+          "s773",
+          "s838",
+          "s776",
+          "s766",
+          "s833",
+          "s777",
+          "s811",
+          "s754",
+          "s822",
+          "s840",
+          "s752",
+          "s791",
+          "s749",
+          "s802"
+        ],
+        "losses": 1,
+        "note": "When aggregating per superhero (e.g. ranking heroes by a count), group by superhero.superhero_name so the grouping unit matches the named superhero entity.",
+        "origin": "s741",
+        "sql": "superhero.superhero_name",
+        "wins": 19
+      }
+    },
+    {
+      "from_entity": "term:speed-attribute",
+      "type": "MEANS",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {
+        "_feedback_sources": [
+          "s771",
+          "s747",
+          "s794",
+          "s720",
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s719",
+          "s803",
+          "s763",
+          "s769",
+          "s830",
+          "s792",
+          "s786",
+          "s766",
+          "s843",
+          "s738",
+          "s840",
+          "s837",
+          "s813",
+          "s746",
+          "s810",
+          "s718"
+        ],
+        "losses": 5,
+        "note": "The superhero trait 'Speed' is a row in attribute with attribute_name = 'Speed', whose per-hero value lives in hero_attribute.attribute_value.",
+        "origin": "s732",
+        "sql": "attribute.attribute_name = 'Speed'",
+        "wins": 19
+      }
+    },
+    {
+      "from_entity": "term:each-superhero",
+      "type": "MEANS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "losses": 0,
+        "note": "An individual superhero is identified by superhero.id, so grouping or joining per superhero keys off that id rather than the (possibly non-unique) superhero_name.",
+        "origin": "s791",
+        "sql": "superhero.id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:average-height",
+      "type": "MEANS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "_feedback_sources": [
+          "s746",
+          "s760",
+          "s785"
+        ],
+        "losses": 0,
+        "note": "Average height here is a single overall average across all superhero rows, computed as total height divided by the number of superheroes, so it must not be split by superhero_name.",
+        "origin": "s791",
+        "sql": "CAST(SUM(superhero.height_cm) AS REAL) / COUNT(superhero.id)",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:hero-s-publisher",
+      "type": "MEANS",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {
+        "_feedback_sources": [
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s769",
+          "s792",
+          "s773",
+          "s838",
+          "s833",
+          "s777",
+          "s737",
+          "s752",
+          "s799",
+          "s725",
+          "s760"
+        ],
+        "losses": 2,
+        "note": "The publisher of a hero is stored as an id in superhero.publisher_id that resolves to the name in publisher.publisher_name.",
+        "origin": "s788",
+        "sql": "publisher.publisher_name",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:full-name",
+      "type": "MEANS",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {
+        "_feedback_sources": [
+          "s776",
+          "s766",
+          "s833",
+          "s777",
+          "s844",
+          "s811",
+          "s754",
+          "s737",
+          "s752",
+          "s837",
+          "s791",
+          "s749",
+          "s836",
+          "s802"
+        ],
+        "losses": 2,
+        "note": "superhero.full_name can be NULL, so name listings should exclude NULL names.",
+        "origin": "s805",
+        "sql": "superhero.full_name IS NOT NULL",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:brown-eyes",
+      "type": "MEANS",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {
+        "losses": 0,
+        "note": "Eye color is stored as a foreign key superhero.eye_colour_id into the colour lookup table, whose colour.colour holds the literal color name.",
+        "origin": "s839",
+        "sql": "superhero.eye_colour_id = colour.id AND colour.colour = 'Brown'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:superhero-weight",
+      "type": "MEANS",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {
+        "losses": 0,
+        "note": "Weight is stored in kilograms in superhero.weight_kg, where 0 or NULL means the weight is unknown rather than an actual measurement.",
+        "origin": "s839",
+        "sql": "superhero.weight_kg",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:superhero-id",
+      "type": "MEANS",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {
+        "_feedback_sources": [
+          "s813",
+          "s748",
+          "s746",
+          "s749",
+          "s810",
+          "s802"
+        ],
+        "losses": 0,
+        "note": "The id of the superhero owning an attribute row is hero_attribute.hero_id, which maps to superhero(id).",
+        "origin": "s837",
+        "sql": "hero_attribute.hero_id",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:blue-superhero",
+      "type": "MEANS",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {
+        "losses": 0,
+        "note": "When a question states a superhero's colour without specifying eye/hair, it refers to the skin colour attribute, so join colour through superhero.skin_colour_id, not superhero.eye_colour_id.",
+        "origin": "s775",
+        "sql": "superhero.skin_colour_id = colour.id AND colour.colour = 'Blue'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:hero-s-publisher",
+      "type": "MEANS",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {
+        "_feedback_sources": [
+          "s794",
+          "s727",
+          "s720",
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s817",
+          "s803",
+          "s763",
+          "s769",
+          "s826",
+          "s792",
+          "s773",
+          "s777",
+          "s754",
+          "s737",
+          "s822",
+          "s840",
+          "s837",
+          "s791",
+          "s748",
+          "s725",
+          "s749",
+          "s802"
+        ],
+        "losses": 4,
+        "note": "A hero's publisher is found by joining superhero.publisher_id to publisher.id and returning publisher.publisher_name.",
+        "origin": "s732",
+        "sql": "superhero.publisher_id",
+        "wins": 21
+      }
+    },
+    {
+      "from_entity": "term:placeholder-dash-name",
+      "type": "MEANS",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {
+        "_feedback_sources": [
+          "s794",
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s817",
+          "s838",
+          "s776",
+          "s766",
+          "s833",
+          "s844",
+          "s811",
+          "s717",
+          "s836"
+        ],
+        "losses": 1,
+        "note": "The literal '-' stored in superhero.full_name is a real stored value and is counted as having a name, so it must be excluded explicitly only when counting superheroes that do have a full name.",
+        "origin": "s747",
+        "sql": "superhero.full_name <> '-'",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:superheroes-created-by-a-publisher",
+      "type": "MEANS",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {
+        "_feedback_sources": [
+          "s762",
+          "s721",
+          "s740",
+          "s719",
+          "s801",
+          "s778",
+          "s733",
+          "s773",
+          "s838",
+          "s805",
+          "s767"
+        ],
+        "losses": 2,
+        "note": "A superhero belongs to a publisher through superhero.publisher_id -> publisher.id, and the publisher's business name is publisher.publisher_name (values like 'DC Comics' and 'Marvel Comics').",
+        "origin": "s829",
+        "sql": "superhero.publisher_id = publisher.id AND publisher.publisher_name = 'DC Comics'",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:as-their-power",
+      "type": "MEANS",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {
+        "_feedback_sources": [
+          "s754",
+          "s723",
+          "s717",
+          "s718"
+        ],
+        "losses": 0,
+        "note": "When a question phrases a capability as the hero's \"power\", the name is stored in superpower.power_name and linked to heroes through hero_power.power_id = superpower.id.",
+        "origin": "s843",
+        "sql": "superpower.power_name",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-a-subset-within-a-group",
+      "type": "MEANS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "losses": 0,
+        "note": "Compute a percentage as the conditional count of the subset multiplied by 100 divided by the total row count of the same filtered population, counting superhero.id in both numerator and denominator so the denominator is unaffected by the case expression.",
+        "origin": "s775",
+        "sql": "CAST(COUNT(CASE WHEN colour.colour = 'Blue' THEN superhero.id ELSE NULL END) AS REAL) * 100 / COUNT(superhero.id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percent-of-female-heroes-published-by-marvel-comics",
+      "type": "MEANS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "_feedback_sources": [
+          "s803",
+          "s763",
+          "s822",
+          "s748",
+          "s749",
+          "s782",
+          "s802",
+          "s785"
+        ],
+        "losses": 0,
+        "note": "For a 'percentage of group A that are B' question, the population (female heroes) goes in WHERE while the subset of interest (Marvel Comics) is tested inside the conditional count divided by the full population count.",
+        "origin": "s788",
+        "sql": "CAST(COUNT(CASE WHEN publisher.publisher_name = 'Marvel Comics' THEN 1 END) AS REAL) * 100 / COUNT(superhero.id)",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:published-by-a-publisher",
+      "type": "MEANS",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {
+        "_feedback_sources": [
+          "s762",
+          "s721",
+          "s740",
+          "s719",
+          "s817",
+          "s803",
+          "s763",
+          "s769",
+          "s826",
+          "s801",
+          "s778",
+          "s733",
+          "s773",
+          "s805",
+          "s767",
+          "s756",
+          "s731",
+          "s739",
+          "s795",
+          "s811",
+          "s843",
+          "s754",
+          "s835",
+          "s738",
+          "s822",
+          "s840",
+          "s828",
+          "s752",
+          "s837",
+          "s791",
+          "s748",
+          "s742",
+          "s725",
+          "s760",
+          "s749",
+          "s802",
+          "s724",
+          "s785",
+          "s775"
+        ],
+        "losses": 6,
+        "note": "A superhero's publishing company is found by matching superhero.publisher_id to publisher.id and reading publisher.publisher_name.",
+        "origin": "s743",
+        "sql": "superhero.publisher_id = publisher.id",
+        "wins": 33
+      }
+    },
+    {
+      "from_entity": "term:no-skin-colour",
+      "type": "MEANS",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {
+        "_feedback_sources": [
+          "s844",
+          "s843",
+          "s737",
+          "s738",
+          "s748",
+          "s728"
+        ],
+        "losses": 2,
+        "note": "In the colour table the 'No Colour' row has id = 1, so superheroes whose skin_colour_id is 1 are the ones with no skin colour.",
+        "origin": "s767",
+        "sql": "superhero.skin_colour_id = 1",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:superhero-full-name",
+      "type": "MEANS",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {
+        "losses": 0,
+        "note": "superhero.full_name holds the person's full name but may be NULL or the placeholder '-'; when listing superheroes by name, return the stored value as-is rather than filtering out NULLs/placeholders or de-duplicating names.",
+        "origin": "s839",
+        "sql": "superhero.full_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:female-superhero",
+      "type": "MEANS",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {
+        "losses": 0,
+        "note": "Gender is stored as a lookup label in gender.gender ('Female', 'Male', 'N/A'), reached via superhero.gender_id.",
+        "origin": "s775",
+        "sql": "superhero.gender_id = gender.id AND gender.gender = 'Female'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:brown-eyes",
+      "type": "MEANS",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {
+        "losses": 0,
+        "note": "Eye color is stored as a foreign key superhero.eye_colour_id into the colour lookup table, whose colour.colour holds the literal color name.",
+        "origin": "s839",
+        "sql": "superhero.eye_colour_id = colour.id AND colour.colour = 'Brown'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:superheroes-created-by-a-publisher",
+      "type": "MEANS",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {
+        "_feedback_sources": [
+          "s803",
+          "s763",
+          "s769",
+          "s826",
+          "s756",
+          "s731",
+          "s739",
+          "s795",
+          "s811",
+          "s754",
+          "s835",
+          "s738",
+          "s822",
+          "s840",
+          "s828",
+          "s837",
+          "s791",
+          "s748",
+          "s742",
+          "s725",
+          "s760",
+          "s749",
+          "s836",
+          "s802",
+          "s724",
+          "s785",
+          "s775"
+        ],
+        "losses": 3,
+        "note": "A superhero belongs to a publisher through superhero.publisher_id -> publisher.id, and the publisher's business name is publisher.publisher_name (values like 'DC Comics' and 'Marvel Comics').",
+        "origin": "s829",
+        "sql": "superhero.publisher_id = publisher.id AND publisher.publisher_name = 'DC Comics'",
+        "wins": 24
+      }
+    },
+    {
+      "from_entity": "term:superheroes-created-by-a-publisher",
+      "type": "MEANS",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {
+        "_feedback_sources": [
+          "s717"
+        ],
+        "losses": 0,
+        "note": "A superhero belongs to a publisher through superhero.publisher_id -> publisher.id, and the publisher's business name is publisher.publisher_name (values like 'DC Comics' and 'Marvel Comics').",
+        "origin": "s829",
+        "sql": "superhero.publisher_id = publisher.id AND publisher.publisher_name = 'DC Comics'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:average-of-superheroes-with-no-skin-colour",
+      "type": "MEANS",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {
+        "_feedback_sources": [
+          "s844",
+          "s737",
+          "s835",
+          "s822",
+          "s828",
+          "s813",
+          "s791",
+          "s748",
+          "s746",
+          "s728",
+          "s785"
+        ],
+        "losses": 2,
+        "note": "This 'average' is a count-based ratio: total superheroes divided by the number of superheroes in the specified skin-colour group, not an average of an attribute such as height_cm.",
+        "origin": "s767",
+        "sql": "CAST(COUNT(*) AS REAL) / SUM(CASE WHEN superhero.skin_colour_id = 1 THEN 1 ELSE 0 END)",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:female-superheroes",
+      "type": "MEANS",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {
+        "_feedback_sources": [
+          "s720",
+          "s743",
+          "s721",
+          "s740",
+          "s817",
+          "s826",
+          "s801",
+          "s778",
+          "s786",
+          "s733",
+          "s805",
+          "s767",
+          "s756",
+          "s731",
+          "s777",
+          "s739",
+          "s795",
+          "s843",
+          "s723",
+          "s835",
+          "s738",
+          "s828",
+          "s752",
+          "s813",
+          "s799",
+          "s742",
+          "s760",
+          "s782",
+          "s717",
+          "s728",
+          "s724",
+          "s785"
+        ],
+        "losses": 7,
+        "note": "Gender is stored as a text label in gender.gender ('Female', 'Male', 'N/A') and must be looked up through superhero.gender_id = gender.id.",
+        "origin": "s788",
+        "sql": "gender.gender = 'Female'",
+        "wins": 25
+      }
+    },
+    {
+      "from_entity": "term:how-many-powers-a-superhero-has",
+      "type": "MEANS",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {
+        "_feedback_sources": [
+          "s743",
+          "s829",
+          "s762",
+          "s721",
+          "s740",
+          "s719",
+          "s803",
+          "s763",
+          "s769",
+          "s826",
+          "s778",
+          "s786",
+          "s733",
+          "s776",
+          "s756",
+          "s731",
+          "s777",
+          "s739",
+          "s795",
+          "s754",
+          "s723",
+          "s822",
+          "s828",
+          "s837",
+          "s799",
+          "s791",
+          "s742",
+          "s725",
+          "s836",
+          "s728",
+          "s718"
+        ],
+        "losses": 6,
+        "note": "The number of powers held by a superhero is the number of hero_power association rows for that hero, so count hero_power.hero_id (always populated on a matched row) rather than hero_power.power_id, which can be NULL on some rows and undercount.",
+        "origin": "s741",
+        "sql": "COUNT(hero_power.hero_id)",
+        "wins": 25
+      }
+    },
+    {
+      "from_entity": "term:attribute-value",
+      "type": "MEANS",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {
+        "_feedback_sources": [
+          "s813",
+          "s746",
+          "s810",
+          "s782",
+          "s728",
+          "s718",
+          "s839"
+        ],
+        "losses": 2,
+        "note": "A superhero's numeric skill/power rating for one attribute is stored in hero_attribute.attribute_value, where larger numbers mean more skilled or powerful in that area.",
+        "origin": "s837",
+        "sql": "hero_attribute.attribute_value",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:percent-of-female-heroes-published-by-marvel-comics",
+      "type": "MEANS",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {
+        "_feedback_sources": [
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s762",
+          "s721",
+          "s740",
+          "s719",
+          "s817",
+          "s769",
+          "s826",
+          "s801",
+          "s778",
+          "s786",
+          "s733",
+          "s773",
+          "s838",
+          "s805",
+          "s776",
+          "s767",
+          "s756",
+          "s833",
+          "s731",
+          "s739",
+          "s795",
+          "s835",
+          "s738",
+          "s828",
+          "s752",
+          "s799",
+          "s742",
+          "s725",
+          "s760"
+        ],
+        "losses": 4,
+        "note": "For a 'percentage of group A that are B' question, the population (female heroes) goes in WHERE while the subset of interest (Marvel Comics) is tested inside the conditional count divided by the full population count.",
+        "origin": "s788",
+        "sql": "CAST(COUNT(CASE WHEN publisher.publisher_name = 'Marvel Comics' THEN 1 END) AS REAL) * 100 / COUNT(superhero.id)",
+        "wins": 29
+      }
+    },
+    {
+      "from_entity": "term:eye-color",
+      "type": "MEANS",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {
+        "_feedback_sources": [
+          "s724"
+        ],
+        "losses": 0,
+        "note": "Eye color is stored in the shared colour table and reached from a superhero via superhero.eye_colour_id = colour.id, so the text value is colour.colour.",
+        "origin": "s728",
+        "sql": "colour.colour",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:act-in-own-self-interest",
+      "type": "MEANS",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {
+        "_feedback_sources": [
+          "s762",
+          "s721",
+          "s740",
+          "s719",
+          "s801",
+          "s778",
+          "s786",
+          "s733",
+          "s805",
+          "s756",
+          "s731",
+          "s777",
+          "s739",
+          "s795",
+          "s811",
+          "s843",
+          "s835",
+          "s813",
+          "s746",
+          "s782",
+          "s717",
+          "s728",
+          "s724",
+          "s785",
+          "s775"
+        ],
+        "losses": 4,
+        "note": "In this database the phrase describing heroes who act for their own benefit or by their own moral code is stored as the alignment category 'Bad', not 'Neutral'.",
+        "origin": "s743",
+        "sql": "alignment.alignment = 'Bad'",
+        "wins": 21
+      }
+    },
+    {
+      "from_entity": "term:superhero-publisher",
+      "type": "MEANS",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {
+        "_feedback_sources": [
+          "s724"
+        ],
+        "losses": 0,
+        "note": "A superhero's publisher is identified by publisher.publisher_name (full names such as 'Marvel Comics') joined through superhero.publisher_id = publisher.id.",
+        "origin": "s728",
+        "sql": "publisher.publisher_name",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:blue-superhero",
+      "type": "MEANS",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {
+        "losses": 0,
+        "note": "When a question states a superhero's colour without specifying eye/hair, it refers to the skin colour attribute, so join colour through superhero.skin_colour_id, not superhero.eye_colour_id.",
+        "origin": "s775",
+        "sql": "superhero.skin_colour_id = colour.id AND colour.colour = 'Blue'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:color-popularity-rank",
+      "type": "MEANS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "losses": 0,
+        "note": "Popularity of a color is the number of superheroes having that color, so aggregate COUNT(superhero.id) grouped by colour.colour and rank in descending count order.",
+        "origin": "s728",
+        "sql": "RANK() OVER (ORDER BY COUNT(superhero.id) DESC)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:superhero-without-full-name",
+      "type": "MEANS",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {
+        "_feedback_sources": [
+          "s794",
+          "s734",
+          "s741",
+          "s804",
+          "s807",
+          "s817",
+          "s838",
+          "s776",
+          "s767",
+          "s766",
+          "s833",
+          "s844",
+          "s811",
+          "s717",
+          "s836"
+        ],
+        "losses": 2,
+        "note": "A superhero 'without a full name' is a row whose superhero.full_name is SQL NULL; no trimming or other value checks are applied.",
+        "origin": "s747",
+        "sql": "superhero.full_name IS NULL",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:number-of-super-powers",
+      "type": "MEANS",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {
+        "_feedback_sources": [
+          "s741",
+          "s743",
+          "s829"
+        ],
+        "losses": 3,
+        "note": "A hero's powers are the rows in hero_power linked by hero_power.hero_id, so the count of a hero's powers is COUNT(hero_power.power_id) over that hero's rows.",
+        "origin": "s720",
+        "sql": "COUNT(hero_power.power_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:female-superhero",
+      "type": "MEANS",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {
+        "losses": 0,
+        "note": "Gender is stored as a lookup label in gender.gender ('Female', 'Male', 'N/A'), reached via superhero.gender_id.",
+        "origin": "s775",
+        "sql": "superhero.gender_id = gender.id AND gender.gender = 'Female'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:no-publisher",
+      "type": "MEANS",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {
+        "losses": 0,
+        "note": "Heroes with no publisher are stored with publisher_id = 1, the placeholder entry in the publisher table, rather than with a NULL publisher_id.",
+        "origin": "s799",
+        "sql": "superhero.publisher_id = 1",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:number-of-superheroes",
+      "type": "MEANS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "_feedback_sources": [
+          "s742",
+          "s725",
+          "s749",
+          "s836",
+          "s718",
+          "s802",
+          "s724",
+          "s785"
+        ],
+        "losses": 0,
+        "note": "Counting superheroes means counting superhero.id values (one row per hero), not publisher rows.",
+        "origin": "s799",
+        "sql": "COUNT(superhero.id)",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:published-by-a-publisher",
+      "type": "MEANS",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {
+        "_feedback_sources": [
+          "s717"
+        ],
+        "losses": 0,
+        "note": "A superhero's publishing company is found by matching superhero.publisher_id to publisher.id and reading publisher.publisher_name.",
+        "origin": "s743",
+        "sql": "superhero.publisher_id = publisher.id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:average-height",
+      "type": "MEANS",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {
+        "losses": 0,
+        "note": "Average height here is a single overall average across all superhero rows, computed as total height divided by the number of superheroes, so it must not be split by superhero_name.",
+        "origin": "s791",
+        "sql": "CAST(SUM(superhero.height_cm) AS REAL) / COUNT(superhero.id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:difference-in-number-of-superheroes",
+      "type": "MEANS",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {
+        "_feedback_sources": [
+          "s762",
+          "s721",
+          "s740",
+          "s719",
+          "s801",
+          "s778",
+          "s786",
+          "s733",
+          "s773",
+          "s838",
+          "s805",
+          "s776",
+          "s767",
+          "s756",
+          "s833",
+          "s731",
+          "s739",
+          "s795",
+          "s723",
+          "s835",
+          "s822",
+          "s828",
+          "s752",
+          "s799",
+          "s742",
+          "s725",
+          "s760",
+          "s836",
+          "s718"
+        ],
+        "losses": 3,
+        "note": "A difference in counts is a signed subtraction of the two category counts (first minus second), not the absolute value, and it must not be returned alongside a separately picked 'top' publisher name.",
+        "origin": "s829",
+        "sql": "SUM(CASE WHEN publisher.publisher_name = 'DC Comics' THEN 1 ELSE 0 END) - SUM(CASE WHEN publisher.publisher_name = 'Marvel Comics' THEN 1 ELSE 0 END)",
+        "wins": 26
+      }
+    },
+    {
+      "from_entity": "example:s841",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s785",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s725",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s843",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s727",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s749",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s826",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s810",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s720",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s839",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s839",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s717",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s752",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.hair-colour-id-78c18f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s795",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s741",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s731",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s824",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s777",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s828",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s803",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s749",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s802",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s826",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s752",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s777",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s795",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s834",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s742",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s778",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s786",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s754",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s782",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s727",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s829",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s733",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s782",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s717",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s739",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s822",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s754",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s748",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s818",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s754",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s843",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s721",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s836",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s826",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s719",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s824",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s840",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s785",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s743",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s805",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s824",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s734",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s727",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s720",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s771",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s844",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s839",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s733",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s843",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s724",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s826",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s734",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s799",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s833",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s778",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s778",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s801",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s718",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s791",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s743",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s835",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s835",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s822",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s813",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s786",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s760",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s743",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s748",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s731",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s763",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s840",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s765",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s807",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s742",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s778",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s810",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s808",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s724",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s733",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s840",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s760",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s771",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s837",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s785",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s731",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s834",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s824",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s739",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s725",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s718",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s717",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s762",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s776",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s741",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s765",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s752",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s737",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s760",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s754",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s810",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s801",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s749",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s791",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.hair-colour-id-78c18f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s833",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s818",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s776",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s739",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s786",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s782",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.hair-colour-id-78c18f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s743",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s739",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s771",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s813",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s719",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s743",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s765",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s721",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s752",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s803",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s844",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s792",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s720",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s737",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s733",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s810",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s739",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s756",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s727",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s807",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s746",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s805",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s808",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s839",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s727",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s782",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s762",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s749",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s807",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s822",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s834",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s826",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s756",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s742",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s776",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s763",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s762",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s737",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s824",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s719",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s767",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s724",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.hair-colour-id-78c18f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s841",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s802",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s792",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s792",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s843",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s767",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s813",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s747",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s841",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s724",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s771",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s742",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s824",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s792",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s844",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s813",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s786",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s807",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s719",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s777",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s776",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s725",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s820",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s808",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s839",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.weight-kg-4bcc1b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s834",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s723",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s829",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s719",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s795",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s829",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s835",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s828",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s801",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s771",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s739",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s818",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s838",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s743",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s718",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s794",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s741",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s792",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s822",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s763",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s747",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s749",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s844",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s763",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s785",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s837",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s756",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s810",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-value-dcb41c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s737",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s808",
+      "type": "TOUCHES",
+      "to_entity": "column:race.race-b2c041",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s807",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.full-name-8409ed",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s834",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s834",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s771",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s782",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s792",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s799",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s835",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s828",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.attribute-name-3bc801",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s733",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s754",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s732",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s766",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s748",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s717",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s840",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s734",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s721",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s748",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s818",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s777",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s818",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s807",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s808",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s719",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.power-name-4e9121",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s804",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s776",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s762",
+      "type": "TOUCHES",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.id-4d0ce9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s734",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s841",
+      "type": "TOUCHES",
+      "to_entity": "column:race.id-e925b2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s728",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s778",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s828",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s813",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s760",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.height-cm-f0fd09",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s778",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s822",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s720",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s769",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s773",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s738",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s811",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s724",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.colour-be4618",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s760",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s818",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s725",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s836",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s717",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s830",
+      "type": "TOUCHES",
+      "to_entity": "column:attribute.id-ae095c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s817",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s788",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s749",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s765",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.hero-id-926094",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s835",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.id-e3fd44",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s740",
+      "type": "TOUCHES",
+      "to_entity": "column:gender.gender-1380b3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s810",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s813",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-attribute.hero-id-b9a375",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s841",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s718",
+      "type": "TOUCHES",
+      "to_entity": "column:hero-power.power-id-a74595",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s838",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s717",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s804",
+      "type": "TOUCHES",
+      "to_entity": "column:superhero.superhero-name-bd5387",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s799",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.id-7ca59a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s733",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s775",
+      "type": "TOUCHES",
+      "to_entity": "column:colour.id-8138a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s835",
+      "type": "TOUCHES",
+      "to_entity": "column:publisher.publisher-name-01ff6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s822",
+      "type": "TOUCHES",
+      "to_entity": "column:alignment.alignment-3b4c93",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:hero-attribute.hero-id-b9a375",
+      "type": "JOINS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "_win_sources": [
+          "s732",
+          "s794",
+          "s740",
+          "s763",
+          "s769",
+          "s830",
+          "s766",
+          "s820",
+          "s738",
+          "s840",
+          "s813",
+          "s810"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "column:colour.id-8138a5",
+      "type": "JOINS",
+      "to_entity": "column:superhero.skin-colour-id-55f4e5",
+      "properties": {
+        "_win_sources": [
+          "s773",
+          "s767",
+          "s822",
+          "s775"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "column:publisher.id-7ca59a",
+      "type": "JOINS",
+      "to_entity": "column:superhero.publisher-id-67afd9",
+      "properties": {
+        "_win_sources": [
+          "s834",
+          "s732",
+          "s727",
+          "s788",
+          "s734",
+          "s743",
+          "s829",
+          "s769",
+          "s826",
+          "s733",
+          "s773",
+          "s731",
+          "s835",
+          "s799",
+          "s725",
+          "s760",
+          "s728"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 17
+      }
+    },
+    {
+      "from_entity": "column:hero-power.power-id-a74595",
+      "type": "JOINS",
+      "to_entity": "column:superpower.id-2cf6d8",
+      "properties": {
+        "_win_sources": [
+          "s765",
+          "s824",
+          "s771",
+          "s807",
+          "s762",
+          "s719",
+          "s778",
+          "s792",
+          "s739",
+          "s811",
+          "s843",
+          "s754",
+          "s723",
+          "s749",
+          "s717",
+          "s718"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 16
+      }
+    },
+    {
+      "from_entity": "column:alignment.id-e3fd44",
+      "type": "JOINS",
+      "to_entity": "column:superhero.alignment-id-11b772",
+      "properties": {
+        "_win_sources": [
+          "s818",
+          "s743",
+          "s756",
+          "s795",
+          "s811",
+          "s835",
+          "s822",
+          "s813",
+          "s785"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "column:colour.id-8138a5",
+      "type": "JOINS",
+      "to_entity": "column:superhero.eye-colour-id-b31b3d",
+      "properties": {
+        "_win_sources": [
+          "s721",
+          "s733",
+          "s773",
+          "s844",
+          "s723",
+          "s748",
+          "s782",
+          "s728",
+          "s724",
+          "s839"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "column:race.id-e925b2",
+      "type": "JOINS",
+      "to_entity": "column:superhero.race-id-e00d30",
+      "properties": {
+        "_win_sources": [
+          "s841",
+          "s808",
+          "s817",
+          "s776",
+          "s737",
+          "s752",
+          "s742",
+          "s810"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "column:gender.id-4d0ce9",
+      "type": "JOINS",
+      "to_entity": "column:superhero.gender-id-36bf15",
+      "properties": {
+        "_win_sources": [
+          "s834",
+          "s818",
+          "s788",
+          "s740",
+          "s817",
+          "s801",
+          "s777",
+          "s775"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "column:hero-power.hero-id-926094",
+      "type": "JOINS",
+      "to_entity": "column:superhero.id-ca667c",
+      "properties": {
+        "_win_sources": [
+          "s824",
+          "s771",
+          "s720",
+          "s741",
+          "s807",
+          "s719",
+          "s778",
+          "s792",
+          "s739",
+          "s811",
+          "s754",
+          "s723",
+          "s749",
+          "s717"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 14
+      }
+    },
+    {
+      "from_entity": "column:attribute.id-ae095c",
+      "type": "JOINS",
+      "to_entity": "column:hero-attribute.attribute-id-b5ed58",
+      "properties": {
+        "_win_sources": [
+          "s732",
+          "s794",
+          "s740",
+          "s769",
+          "s830",
+          "s786",
+          "s766",
+          "s820",
+          "s738",
+          "s828"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "column:colour.id-8138a5",
+      "type": "JOINS",
+      "to_entity": "column:superhero.hair-colour-id-78c18f",
+      "properties": {
+        "_win_sources": [
+          "s817",
+          "s773",
+          "s782",
+          "s724"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 4
+      }
+    }
+  ]
+}

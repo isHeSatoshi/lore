@@ -1,0 +1,6117 @@
+{
+  "entities": [
+    {
+      "id": "column:budget.category-f6a427",
+      "type": "Column",
+      "name": "budget.category",
+      "properties": {
+        "profile": "{\"distinct\": 5, \"nulls\": 0, \"top\": [\"Food\", \"Advertisement\", \"Speaker Gifts\", \"Parking\", \"Club T-Shirts\"]}"
+      }
+    },
+    {
+      "id": "column:event.event-date-495dc4",
+      "type": "Column",
+      "name": "event.event_date",
+      "properties": {
+        "profile": "{\"distinct\": 41, \"nulls\": 0, \"top\": [\"2020-03-10T12:00:00\", \"2020-05-05T12:00:00\", \"2020-04-26T09:00:00\", \"2020-04-23T13:00:00\", \"2020-04-21T12:00:00\", \"2020-04-07T12:00:00\", \"2020-04-07T09:30:00\", \"2020-03-25T12:00:00\", \"2020-03-24T12:00:00\", \"2020-03-19T01:00:00\", \"2020-03-12T06:00:00\", \"2020-03-10T09:30:00\", \"2020-02-26T12:00:00\", \"2020-02-20T02:00:00\", \"2020-02-15T06:00:00\", \"2020-02-11T12:00:00\", \"2020-02-11T09:30:00\", \"2020-01-28T12:00:00\", \"2020-01-14T12:00:00\", \"2020-01-14T09:30:00\", \"2020-01-12T03:00:00\", \"2019-11-24T09:00:00\", \"2019-11-21T02:00:00\", \"2019-11-19T12:00:00\", \"2019-11-05T12:00:00\"]}"
+      }
+    },
+    {
+      "id": "column:event.event-id-863432",
+      "type": "Column",
+      "name": "event.event_id",
+      "properties": {
+        "profile": "{\"distinct\": 42, \"nulls\": 0, \"top\": [\"rec0Si5cQ4rJRVzd6\", \"rec0akZnLLpGUloLH\", \"rec0dZPcWXF0QjNnE\", \"rec180D2MI4EpckHy\", \"rec2N69DMcrqN9PJC\", \"rec2mJrCofveboaz6\", \"rec5XDvJLyxDsGZWc\", \"recAlAwtBZ0Fqbr5K\", \"recEVTik3MlqbvLFi\", \"recGxVCwaLW3mDIa3\", \"recHaMmaKyfktt5fW\", \"recI43CzsZ0Q625ma\", \"recIuIXdbLe5j5vCA\", \"recJ4Witp9tpjaugn\", \"recJcyZUsdhK2ukaY\", \"recLKj8BbTNqxFbTb\", \"recLePFQvYN36qANI\", \"recLrY8kyOR1PcZeF\", \"recMKjJbWRgSQqf4Y\", \"recQym2V7XkIEFFnr\", \"recSdU7jGu57676tT\", \"recWJFyajeK4jCNYz\", \"recY3Yesu24bRK7tr\", \"recc8dizaKrSz3GmH\", \"receBpqENOUMQYsIP\"]}"
+      }
+    },
+    {
+      "id": "column:event.event-name-2af5b8",
+      "type": "Column",
+      "name": "event.event_name",
+      "properties": {
+        "profile": "{\"distinct\": 39, \"nulls\": 0, \"top\": [\"Laugh Out Loud\", \"Football game\", \"Community Theater\", \"Yearly Wrap-up\", \"Yearly Kickoff\", \"Women's Soccer\", \"Women's Lacrosse\", \"Spring Elections\", \"Spring Budget Review\", \"September Speaker\", \"September Meeting\", \"Registration\", \"Officers meeting - September\", \"Officers meeting - October\", \"Officers meeting - November\", \"Officers meeting - March\", \"Officers meeting - January\", \"Officers meeting - February\", \"Officers meeting - April\", \"October Speaker\", \"October Meeting\", \"November Speaker\", \"November Meeting\", \"March Speaker\", \"March Meeting\"]}"
+      }
+    },
+    {
+      "id": "column:event.location-9808fd",
+      "type": "Column",
+      "name": "event.location",
+      "properties": {
+        "profile": "{\"distinct\": 12, \"nulls\": 6, \"top\": [\"MU 215\", null, \"Campus Soccer/Lacrosse stadium\", \"Conference Room BA 452\", \"Campus Football stadium\", \"900 E. Washington St.\", \"100 W. Main Street\", \"Various locations\", \"Campus Common\", \"Campus Baseball Stadium\", \"45 N. Smith St.\", \"258 S. Maple St.\", \"1308 106th Ave.\"]}"
+      }
+    },
+    {
+      "id": "column:expense.expense-description-23341a",
+      "type": "Column",
+      "name": "expense.expense_description",
+      "properties": {
+        "profile": "{\"distinct\": 12, \"nulls\": 0, \"top\": [\"Pizza\", \"Posters\", \"Water, chips, cookies\", \"Water, Cookies\", \"Parking\", \"Travel Mug\", \"Water, cookies, chips\", \"Water, Veggie tray, supplies\", \"Post Cards, Posters\", \"Club shirts\", \"Bakery - Donuts, muffins\", \"Alumni Glass\"]}"
+      }
+    },
+    {
+      "id": "column:income.amount-2677aa",
+      "type": "Column",
+      "name": "income.amount",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [50, 3000, 1000, 200]}"
+      }
+    },
+    {
+      "id": "column:income.date-received-71c87d",
+      "type": "Column",
+      "name": "income.date_received",
+      "properties": {
+        "profile": "{\"distinct\": 29, \"nulls\": 0, \"top\": [\"2019-09-25\", \"2019-10-31\", \"2019-09-18\", \"2019-09-09\", \"2019-10-24\", \"2019-10-17\", \"2019-10-14\", \"2019-10-13\", \"2019-10-10\", \"2019-10-08\", \"2019-10-05\", \"2019-10-04\", \"2019-10-02\", \"2019-09-29\", \"2019-09-28\", \"2019-09-27\", \"2019-09-24\", \"2019-09-23\", \"2019-09-22\", \"2019-09-21\", \"2019-09-16\", \"2019-09-14\", \"2019-09-13\", \"2019-09-12\", \"2019-09-11\"]}"
+      }
+    },
+    {
+      "id": "column:income.source-79b16f",
+      "type": "Column",
+      "name": "income.source",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [\"Dues\", \"Sponsorship\", \"School Appropration\", \"Fundraising\"]}"
+      }
+    },
+    {
+      "id": "column:major.college-f61fb0",
+      "type": "Column",
+      "name": "major.college",
+      "properties": {
+        "profile": "{\"distinct\": 8, \"nulls\": 0, \"top\": [\"College of Agriculture and Applied Scien\", \"College of Humanities and Social Science\", \"College of Education & Human Services\", \"College of Science\", \"College of Natural Resources\", \"School of Business\", \"College of the Arts\", \"College of Engineering\"]}"
+      }
+    },
+    {
+      "id": "column:major.major-name-3ad672",
+      "type": "Column",
+      "name": "major.major_name",
+      "properties": {
+        "profile": "{\"distinct\": 113, \"nulls\": 0, \"top\": [\"Wildlife Ecology and Management\", \"Welding Technology\", \"Theatre Arts\", \"Technology and Engineering Education\", \"Technology Systems\", \"Surgical Technician\", \"Statistics\", \"Special Education\", \"Spanish\", \"Soils and Sustainable Land Systems\", \"Sociology\", \"Social Work\", \"Secondary Education\", \"Residential Landscape Design and Constru\", \"Religious Studies\", \"Recreation Resource Management\", \"Recreation Administration\", \"Rangeland Ecology and Management\", \"RN to BSN Completion Program\", \"Public Health\", \"Psychology\", \"Portuguese\", \"Political Science\", \"Plant Science\", \"Physics Teaching\"]}"
+      }
+    },
+    {
+      "id": "column:member.first-name-cdd2a8",
+      "type": "Column",
+      "name": "member.first_name",
+      "properties": {
+        "profile": "{\"distinct\": 33, \"nulls\": 0, \"top\": [\"Vincent\", \"Tyler\", \"Trent\", \"Sherri\", \"Sacha\", \"Randy\", \"Rafi\", \"Phillip\", \"Mccauley\", \"Maya\", \"Matthew\", \"Madelyn\", \"Luisa\", \"Kevin\", \"Keith\", \"Keaton\", \"Katy\", \"Grant\", \"Garrett\", \"Emily\", \"Elijah\", \"Edwardo\", \"Dean\", \"Connor\", \"Christof\"]}"
+      }
+    },
+    {
+      "id": "column:member.last-name-e2f129",
+      "type": "Column",
+      "name": "member.last_name",
+      "properties": {
+        "profile": "{\"distinct\": 33, \"nulls\": 0, \"top\": [\"Woodard\", \"Warren\", \"Thomason\", \"Snay\", \"Smith\", \"Sanders\", \"Ratcliffe\", \"Ramsey\", \"Pierce\", \"O'Reilly\", \"O'Gallagher\", \"Nielson\", \"Nicholson\", \"Nash\", \"Mclean\", \"Mckee\", \"Mccray\", \"Mason\", \"Jaquith\", \"Jacobs\", \"Ing\", \"Hilton\", \"Hewitt\", \"Harrison\", \"Guidi\"]}"
+      }
+    },
+    {
+      "id": "column:member.member-id-8133db",
+      "type": "Column",
+      "name": "member.member_id",
+      "properties": {
+        "profile": "{\"distinct\": 33, \"nulls\": 0, \"top\": [\"rec1x5zBFIqoOuPW8\", \"rec280Sk7o31iG0Tx\", \"rec28ORZgcm1dtqBZ\", \"rec2a03QXbFQAUZ7X\", \"rec3pH4DxMcWHMRB7\", \"rec4BLdZHS2Blfp4v\", \"rec4O9rmGnLx3j8vt\", \"rec75vvFxgYtHmqxY\", \"recD078PnS3x2doBe\", \"recEFd8s6pkrTt4Pz\", \"recEymrwCUKxiiosI\", \"recJMazpPVexyFYTc\", \"recL4aEZBZoPk9NYx\", \"recL94zpn6Xh6kQii\", \"recP6DJPyi5donvXL\", \"recQaxyXBQG5BBtD0\", \"recT92PyyZCGq1R68\", \"recTjHY5xXhvkCdVT\", \"recUdRhbhcEO1Hk5r\", \"recVsoJJHFI8bgtfw\", \"recWh2lJVOT6HjChK\", \"recZ4PkGERzl9ziHO\", \"recZN8afUWlE5fZHG\", \"reccSUPwy30AeZLEb\", \"reccW7q1KkhSKZsea\"]}"
+      }
+    },
+    {
+      "id": "column:member.position-1064c7",
+      "type": "Column",
+      "name": "member.position",
+      "properties": {
+        "profile": "{\"distinct\": 6, \"nulls\": 0, \"top\": [\"Member\", \"Inactive\", \"Vice President\", \"Treasurer\", \"Secretary\", \"President\"]}"
+      }
+    },
+    {
+      "id": "column:member.t-shirt-size-e7e1ce",
+      "type": "Column",
+      "name": "member.t_shirt_size",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [\"Large\", \"Medium\", \"X-Large\", \"Small\"]}"
+      }
+    },
+    {
+      "id": "column:zip-code.city-37b769",
+      "type": "Column",
+      "name": "zip_code.city",
+      "properties": {
+        "profile": "{\"distinct\": 18729, \"nulls\": 0, \"top\": [\"Washington\", \"Houston\", \"New York\", \"El Paso\", \"Dallas\", \"Atlanta\", \"Springfield\", \"Miami\", \"Sacramento\", \"Los Angeles\", \"Kansas City\", \"San Antonio\", \"Philadelphia\", \"Austin\", \"Chicago\", \"Portland\", \"Phoenix\", \"Columbus\", \"San Diego\", \"Pittsburgh\", \"Charlotte\", \"Birmingham\", \"Oklahoma City\", \"Las Vegas\", \"Louisville\"]}"
+      }
+    },
+    {
+      "id": "column:zip-code.county-a2f180",
+      "type": "Column",
+      "name": "zip_code.county",
+      "properties": {
+        "profile": "{\"distinct\": 2010, \"nulls\": 88, \"top\": [\"Los Angeles County\", \"Jefferson County\", \"Washington County\", \"Montgomery County\", \"Orange County\", \"Franklin County\", \"Jackson County\", \"District of Columbia\", \"Wayne County\", \"Harris County\", \"Marion County\", \"Monroe County\", \"Clark County\", \"Cook County\", \"Madison County\", \"Polk County\", \"El Paso County\", \"Dallas County\", \"Fayette County\", \"Maricopa County\", \"Lincoln County\", \"Middlesex County\", \"San Diego County\", \"Suffolk County\", \"Fulton County\"]}"
+      }
+    },
+    {
+      "id": "column:zip-code.state-691f17",
+      "type": "Column",
+      "name": "zip_code.state",
+      "properties": {
+        "profile": "{\"distinct\": 52, \"nulls\": 0, \"top\": [\"Texas\", \"California\", \"Pennsylvania\", \"New York\", \"Illinois\", \"Florida\", \"Ohio\", \"Virginia\", \"Missouri\", \"Michigan\", \"North Carolina\", \"Iowa\", \"Minnesota\", \"Indiana\", \"Georgia\", \"Kentucky\", \"Wisconsin\", \"West Virginia\", \"Alabama\", \"Tennessee\", \"Oklahoma\", \"Kansas\", \"Washington\", \"New Jersey\", \"Louisiana\"]}"
+      }
+    },
+    {
+      "id": "column:zip-code.type-e02339",
+      "type": "Column",
+      "name": "zip_code.type",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 0, \"top\": [\"Standard\", \"PO Box\", \"Unique\"]}"
+      }
+    },
+    {
+      "id": "column:zip-code.zip-code-162b6e",
+      "type": "Column",
+      "name": "zip_code.zip_code",
+      "properties": {
+        "profile": "{\"distinct\": 41877, \"nulls\": 0, \"top\": [501, 544, 601, 602, 603, 604, 605, 606, 610, 611, 612, 613, 614, 616, 617, 622, 623, 624, 627, 631, 636, 637, 638, 641, 646]}"
+      }
+    },
+    {
+      "id": "example:s1314",
+      "type": "Example",
+      "name": "Please list the full names of the students in the Student_Club that come from the Art and Design Department.",
+      "aliases": [],
+      "properties": {
+        "key": "s1314",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name\nFROM member AS T1\nINNER JOIN major AS T2 ON T2.major_id = T1.link_to_major\nWHERE T2.department = 'Art and Design Department'"
+      }
+    },
+    {
+      "id": "example:s1315",
+      "type": "Example",
+      "name": "How many students of the Student_Club have attended the event \"Women's Soccer\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s1315",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.link_to_member)\nFROM attendance AS T1\nINNER JOIN event AS T2 ON T2.event_id = T1.link_to_event\nWHERE T2.event_name = 'Women''s Soccer'"
+      }
+    },
+    {
+      "id": "example:s1316",
+      "type": "Example",
+      "name": "Please list the phone numbers of the students from the Student_Club that has attended the event \"Women's Soccer\".",
+      "aliases": [],
+      "properties": {
+        "key": "s1316",
+        "learning_complete": true,
+        "sql": "-- Phone numbers of members who attended the \"Women's Soccer\" event\nSELECT DISTINCT T3.phone\nFROM attendance AS T1\nINNER JOIN event AS T2 ON T2.event_id = T1.link_to_event\nINNER JOIN member AS T3 ON T3.member_id = T1.link_to_member\nWHERE T2.event_name = 'Women''s Soccer'"
+      }
+    },
+    {
+      "id": "example:s1317",
+      "type": "Example",
+      "name": "Among the students from the Student_Club who attended the event \"Women's Soccer\", how many of them want a T-shirt that's in medium size?",
+      "aliases": [],
+      "properties": {
+        "key": "s1317",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.link_to_member)\nFROM attendance AS T1\nINNER JOIN event AS T2 ON T2.event_id = T1.link_to_event\nINNER JOIN member AS T3 ON T3.member_id = T1.link_to_member\nWHERE T2.event_name = 'Women''s Soccer'\n  AND T3.t_shirt_size = 'Medium'"
+      }
+    },
+    {
+      "id": "example:s1318",
+      "type": "Example",
+      "name": "What is the event that has the highest attendance of the students from the Student_Club?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1318",
+        "learning_complete": true,
+        "sql": "SELECT T1.event_name FROM event AS T1 INNER JOIN attendance AS T2 ON T1.event_id = T2.link_to_event GROUP BY T1.event_name ORDER BY COUNT(T2.link_to_event) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1321",
+      "type": "Example",
+      "name": "How many events of the Student_Club did Sacha Harrison attend in 2019?",
+      "aliases": [],
+      "properties": {
+        "key": "s1321",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT a.link_to_event) AS event_count\nFROM attendance AS a\nINNER JOIN member AS m ON a.link_to_member = m.member_id\nINNER JOIN event AS e ON e.event_id = a.link_to_event\nWHERE m.first_name = 'Sacha'\n  AND m.last_name = 'Harrison'\n  AND e.event_date LIKE '2019%'"
+      }
+    },
+    {
+      "id": "example:s1324",
+      "type": "Example",
+      "name": "What is the average attendance of meetings in 2020?",
+      "aliases": [],
+      "properties": {
+        "key": "s1324",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT AVG(t.attendee_count) AS average_attendance\nFROM (\n    SELECT a.link_to_event AS event_id, COUNT(*) AS attendee_count\n    FROM attendance a\n    JOIN event e ON a.link_to_event = e.event_id\n    WHERE e.type = 'Meeting'\n      AND strftime('%Y', e.event_date) = '2020'\n    GROUP BY a.link_to_event\n) t"
+      }
+    },
+    {
+      "id": "example:s1326",
+      "type": "Example",
+      "name": "How many members of the Student_Club have majored Environmental Engineering?",
+      "aliases": [],
+      "properties": {
+        "key": "s1326",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM member AS m\nINNER JOIN major AS ma ON m.link_to_major = ma.major_id\nWHERE ma.major_name = 'Environmental Engineering'"
+      }
+    },
+    {
+      "id": "example:s1327",
+      "type": "Example",
+      "name": "List the full name of all the members of the Student_Club who attended the \"Laugh Out Loud\" event.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1327",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name FROM member AS T1 INNER JOIN attendance AS T2 ON T1.member_id = T2.link_to_member INNER JOIN event AS T3 ON T2.link_to_event = T3.event_id WHERE T3.event_name = 'Laugh Out Loud'"
+      }
+    },
+    {
+      "id": "example:s1328",
+      "type": "Example",
+      "name": "List the last name of all the students who majored Law and Constitutional Studies.",
+      "aliases": [],
+      "properties": {
+        "key": "s1328",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.last_name\nFROM member AS T1\nINNER JOIN major AS T2 ON T1.link_to_major = T2.major_id\nWHERE T2.major_name = 'Law and Constitutional Studies'"
+      }
+    },
+    {
+      "id": "example:s1329",
+      "type": "Example",
+      "name": "What county did Sherri Ramsey grew up?",
+      "aliases": [],
+      "properties": {
+        "key": "s1329",
+        "learning_complete": true,
+        "sql": "-- What county did Sherri Ramsey grew up?\nSELECT T2.county\nFROM member AS T1\nINNER JOIN zip_code AS T2 ON T1.zip = T2.zip_code\nWHERE T1.first_name = 'Sherri' AND T1.last_name = 'Ramsey'"
+      }
+    },
+    {
+      "id": "example:s1331",
+      "type": "Example",
+      "name": "What is the amount of the funds that the Vice President received?",
+      "aliases": [],
+      "properties": {
+        "key": "s1331",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.amount\nFROM member AS T1\nINNER JOIN income AS T2 ON T1.member_id = T2.link_to_member\nWHERE T1.position = 'Vice President'"
+      }
+    },
+    {
+      "id": "example:s1332",
+      "type": "Example",
+      "name": "How much did the Student_Club members spend on food in September Meeting?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "budget",
+            "category"
+          ],
+          [
+            "event",
+            "event_date"
+          ]
+        ],
+        "key": "s1332",
+        "learning_complete": true,
+        "sql": "SELECT T2.spent FROM event AS T1 INNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event WHERE T1.event_name = 'September Meeting' AND T2.category = 'Food' AND SUBSTR(T1.event_date, 6, 2) = '09'"
+      }
+    },
+    {
+      "id": "example:s1333",
+      "type": "Example",
+      "name": "What city and state did the President of the Student_Club grow up?",
+      "aliases": [],
+      "properties": {
+        "key": "s1333",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT z.city, z.state\nFROM member AS m\nINNER JOIN zip_code AS z ON m.zip = z.zip_code\nWHERE m.position = 'President'"
+      }
+    },
+    {
+      "id": "example:s1334",
+      "type": "Example",
+      "name": "List the full name of the Student_Club members that grew up in Illinois state.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1334",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name FROM member AS T1 INNER JOIN zip_code AS T2 ON T1.zip = T2.zip_code WHERE T2.state = 'Illinois'"
+      }
+    },
+    {
+      "id": "example:s1335",
+      "type": "Example",
+      "name": "How much did the Student_Club members spend on advertisement in September Meeting?",
+      "aliases": [],
+      "properties": {
+        "key": "s1335",
+        "learning_complete": true,
+        "sql": "-- Amount spent on advertisement for the September Meeting\nSELECT T2.spent\nFROM event AS T1\nINNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event\nWHERE T1.event_name = 'September Meeting'\n  AND T2.category = 'Advertisement'\n  AND SUBSTR(T1.event_date, 6, 2) = '09'"
+      }
+    },
+    {
+      "id": "example:s1339",
+      "type": "Example",
+      "name": "Calculate the total average cost that Elijah Allen spent in the events on September and October.",
+      "aliases": [],
+      "properties": {
+        "key": "s1339",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT AVG(e.cost) AS total_average_cost\nFROM expense e\nJOIN member m ON e.link_to_member = m.member_id\nJOIN budget b ON e.link_to_budget = b.budget_id\nJOIN event ev ON b.link_to_event = ev.event_id\nWHERE m.first_name = 'Elijah'\n  AND m.last_name = 'Allen'\n  AND strftime('%m', e.expense_date) IN ('09', '10')"
+      }
+    },
+    {
+      "id": "example:s1342",
+      "type": "Example",
+      "name": "What was the cost for the \"Posters\" on 2019/9/4?",
+      "aliases": [],
+      "properties": {
+        "key": "s1342",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT SUM(e.cost) AS cost\nFROM expense AS e\nWHERE e.expense_description LIKE '%Posters%'\n  AND e.expense_date = '2019-09-04'"
+      }
+    },
+    {
+      "id": "example:s1346",
+      "type": "Example",
+      "name": "Tell the phone number of \"Carlo Jacobs\".",
+      "aliases": [],
+      "properties": {
+        "key": "s1346",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT phone\nFROM member\nWHERE first_name = 'Carlo' AND last_name = 'Jacobs'"
+      }
+    },
+    {
+      "id": "example:s1348",
+      "type": "Example",
+      "name": "For all the budgets for \"November Meeting\", how many of them had exceeded the budget?",
+      "aliases": [],
+      "properties": {
+        "key": "s1348",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*) AS num_budgets_over_budget\nFROM budget AS b\nJOIN event AS e ON e.event_id = b.link_to_event\nWHERE e.event_name = 'November Meeting'\n  AND b.spent > b.amount"
+      }
+    },
+    {
+      "id": "example:s1350",
+      "type": "Example",
+      "name": "What is the status of the event which bought \"Post Cards, Posters\" on 2019/8/20?",
+      "aliases": [],
+      "properties": {
+        "key": "s1350",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT ev.status\nFROM event AS ev\nJOIN budget AS b ON b.link_to_event = ev.event_id\nJOIN expense AS e ON e.link_to_budget = b.budget_id\nWHERE e.expense_description = 'Post Cards, Posters'\n  AND e.expense_date = '2019-08-20'"
+      }
+    },
+    {
+      "id": "example:s1353",
+      "type": "Example",
+      "name": "What's Christof Nielson's zip code type?",
+      "aliases": [],
+      "properties": {
+        "key": "s1353",
+        "learning_complete": true,
+        "sql": "-- What is Christof Nielson's zip code type?\nSELECT T2.type\nFROM member AS T1\nINNER JOIN zip_code AS T2 ON T1.zip = T2.zip_code\nWHERE T1.first_name = 'Christof' AND T1.last_name = 'Nielson'"
+      }
+    },
+    {
+      "id": "example:s1357",
+      "type": "Example",
+      "name": "State the date Connor Hilton paid his/her dues.",
+      "aliases": [],
+      "properties": {
+        "key": "s1357",
+        "learning_complete": true,
+        "sql": "SELECT T2.date_received\nFROM member AS T1\nINNER JOIN income AS T2 ON T1.member_id = T2.link_to_member\nWHERE T1.first_name = 'Connor' AND T1.last_name = 'Hilton' AND T2.source = 'Dues'"
+      }
+    },
+    {
+      "id": "example:s1358",
+      "type": "Example",
+      "name": "Who was the first one paid his/her dues? Tell the full name.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "income",
+            "source"
+          ]
+        ],
+        "key": "s1358",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name FROM member AS T1 INNER JOIN income AS T2 ON T1.member_id = T2.link_to_member WHERE T2.source = 'Dues' ORDER BY T2.date_received LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1360",
+      "type": "Example",
+      "name": "What percentage was the budget for Parking to the total budget for the \"November Speaker\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s1360",
+        "learning_complete": true,
+        "sql": "SELECT (\n         SELECT SUM(b2.amount)\n         FROM budget AS b2\n         JOIN event AS e2 ON b2.link_to_event = e2.event_id\n         WHERE e2.event_name = 'November Speaker'\n           AND b2.category = 'Parking'\n       ) * 100.0 /\n       (\n         SELECT SUM(b1.amount)\n         FROM budget AS b1\n         JOIN event AS e1 ON b1.link_to_event = e1.event_id\n         WHERE e1.event_name = 'November Speaker'\n       ) AS parking_percentage_of_total_budget"
+      }
+    },
+    {
+      "id": "example:s1361",
+      "type": "Example",
+      "name": "What is the total cost of the pizzas for all the events?",
+      "aliases": [],
+      "properties": {
+        "key": "s1361",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT SUM(e.cost) AS total_cost_of_pizzas\nFROM expense e\nWHERE LOWER(e.expense_description) LIKE '%pizza%'"
+      }
+    },
+    {
+      "id": "example:s1362",
+      "type": "Example",
+      "name": "How many cities are there in Orange County, Virginia?",
+      "aliases": [],
+      "properties": {
+        "key": "s1362",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT city)\nFROM zip_code\nWHERE county = 'Orange County' AND state = 'Virginia'"
+      }
+    },
+    {
+      "id": "example:s1363",
+      "type": "Example",
+      "name": "List all of the College of Humanities and Social Sciences' departments.",
+      "aliases": [],
+      "properties": {
+        "key": "s1363",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT major.department\nFROM major\nWHERE major.college LIKE 'College of Humanities and Social Science%'"
+      }
+    },
+    {
+      "id": "example:s1364",
+      "type": "Example",
+      "name": "Where is Amy Firth's hometown?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1364",
+        "learning_complete": true,
+        "sql": "SELECT T2.city, T2.county, T2.state FROM member AS T1 INNER JOIN zip_code AS T2 ON T1.zip = T2.zip_code WHERE T1.first_name = 'Amy' AND T1.last_name = 'Firth'"
+      }
+    },
+    {
+      "id": "example:s1365",
+      "type": "Example",
+      "name": "What are the expenses of the budget with the lowest remaining?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1365",
+        "learning_complete": true,
+        "sql": "SELECT T2.expense_description FROM budget AS T1 INNER JOIN expense AS T2 ON T1.budget_id = T2.link_to_budget ORDER BY T1.remaining LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1367",
+      "type": "Example",
+      "name": "Which college do most of the members go to?",
+      "aliases": [],
+      "properties": {
+        "key": "s1367",
+        "learning_complete": true,
+        "sql": "SELECT T2.college\nFROM member AS T1\nINNER JOIN major AS T2 ON T2.major_id = T1.link_to_major\nGROUP BY T2.college\nORDER BY COUNT(T1.member_id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1368",
+      "type": "Example",
+      "name": "What does the person with the phone number \"809-555-3360\" major in?",
+      "aliases": [],
+      "properties": {
+        "key": "s1368",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT m.major_name\nFROM member AS mem\nJOIN major AS m ON mem.link_to_major = m.major_id\nWHERE mem.phone = '809-555-3360'"
+      }
+    },
+    {
+      "id": "example:s1369",
+      "type": "Example",
+      "name": "Which event has the highest budget amount?",
+      "aliases": [],
+      "properties": {
+        "key": "s1369",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT e.event_name\nFROM event AS e\nJOIN budget AS b ON e.event_id = b.link_to_event\nGROUP BY e.event_id, e.event_name\nORDER BY SUM(b.amount) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1373",
+      "type": "Example",
+      "name": "How many of the members' hometowns are from Maryland state?",
+      "aliases": [],
+      "properties": {
+        "key": "s1373",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*) AS num_members\nFROM member AS m\nINNER JOIN zip_code AS z ON m.zip = z.zip_code\nWHERE z.state = 'Maryland'"
+      }
+    },
+    {
+      "id": "example:s1374",
+      "type": "Example",
+      "name": "How many events did the member with the phone number \"954-555-6240\" attend?",
+      "aliases": [],
+      "properties": {
+        "key": "s1374",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*) AS event_count\nFROM attendance AS a\nINNER JOIN member AS m ON a.link_to_member = m.member_id\nWHERE m.phone = '954-555-6240'"
+      }
+    },
+    {
+      "id": "example:s1375",
+      "type": "Example",
+      "name": "List all the members of the \"School of Applied Sciences, Technology and Education\" department.",
+      "aliases": [],
+      "properties": {
+        "key": "s1375",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT mem.first_name, mem.last_name\nFROM member AS mem\nINNER JOIN major AS ma ON mem.link_to_major = ma.major_id\nWHERE ma.department = 'School of Applied Sciences, Technology and Education'"
+      }
+    },
+    {
+      "id": "example:s1383",
+      "type": "Example",
+      "name": "State the name of students from Georgetown, South Carolina.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "zip_code",
+            "city"
+          ]
+        ],
+        "key": "s1383",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name FROM member AS T1 INNER JOIN zip_code AS T2 ON T1.zip = T2.zip_code WHERE T2.city = 'Georgetown' AND T2.state = 'South Carolina'"
+      }
+    },
+    {
+      "id": "example:s1384",
+      "type": "Example",
+      "name": "How many income generated by Grant Gilmour?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "member",
+            "first_name"
+          ],
+          [
+            "member",
+            "last_name"
+          ]
+        ],
+        "key": "s1384",
+        "learning_complete": true,
+        "sql": "SELECT T2.amount FROM member AS T1 INNER JOIN income AS T2 ON T1.member_id = T2.link_to_member WHERE T1.first_name = 'Grant' AND T1.last_name = 'Gilmour'"
+      }
+    },
+    {
+      "id": "example:s1387",
+      "type": "Example",
+      "name": "Which student has been entrusted to manage the budget for the Yearly Kickoff?",
+      "aliases": [],
+      "properties": {
+        "key": "s1387",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT m.first_name, m.last_name\nFROM event ev\nJOIN budget b ON b.link_to_event = ev.event_id\nJOIN expense e ON e.link_to_budget = b.budget_id\nJOIN member m ON m.member_id = e.link_to_member\nWHERE ev.event_name = 'Yearly Kickoff'"
+      }
+    },
+    {
+      "id": "example:s1389",
+      "type": "Example",
+      "name": "Which event has the lowest cost?",
+      "aliases": [],
+      "properties": {
+        "key": "s1389",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ev.event_name\nFROM expense e\nJOIN budget b ON e.link_to_budget = b.budget_id\nJOIN event ev ON b.link_to_event = ev.event_id\nORDER BY e.cost ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1390",
+      "type": "Example",
+      "name": "Based on the total cost for all event, what is the percentage of cost for Yearly Kickoff event?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1390",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN T1.event_name = 'Yearly Kickoff' THEN T3.cost ELSE 0 END) AS REAL) * 100 / SUM(T3.cost) FROM event AS T1 INNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event INNER JOIN expense AS T3 ON T2.budget_id = T3.link_to_budget"
+      }
+    },
+    {
+      "id": "example:s1391",
+      "type": "Example",
+      "name": "What is the ratio between students majored in finance and physics?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1391",
+        "learning_complete": true,
+        "sql": "SELECT SUM(CASE WHEN major_name = 'Finance' THEN 1 ELSE 0 END) / SUM(CASE WHEN major_name = 'Physics' THEN 1 ELSE 0 END) AS ratio FROM major"
+      }
+    },
+    {
+      "id": "example:s1392",
+      "type": "Example",
+      "name": "Indicate the top source of funds received in September 2019 based on their amount.",
+      "aliases": [],
+      "properties": {
+        "key": "s1392",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT source\nFROM income\nWHERE date_received LIKE '2019-09%'\nGROUP BY source\nORDER BY SUM(amount) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1398",
+      "type": "Example",
+      "name": "Name the event with the highest amount spent on advertisement.",
+      "aliases": [],
+      "properties": {
+        "key": "s1398",
+        "learning_complete": true,
+        "sql": "SELECT T1.event_name\nFROM event AS T1\nINNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event\nWHERE T2.category = 'Advertisement'\nORDER BY T2.spent DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1399",
+      "type": "Example",
+      "name": "Did Maya Mclean attend the 'Women's Soccer' event?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1399",
+        "learning_complete": true,
+        "sql": "SELECT CASE WHEN T3.event_name = 'Women''s Soccer' THEN 'YES' END AS result FROM member AS T1 INNER JOIN attendance AS T2 ON T1.member_id = T2.link_to_member INNER JOIN event AS T3 ON T2.link_to_event = T3.event_id WHERE T1.first_name = 'Maya' AND T1.last_name = 'Mclean'"
+      }
+    },
+    {
+      "id": "example:s1402",
+      "type": "Example",
+      "name": "What is the most popular size of t-shirt ordered by the club members?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1402",
+        "learning_complete": true,
+        "sql": "SELECT t_shirt_size FROM member GROUP BY t_shirt_size ORDER BY COUNT(t_shirt_size) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1403",
+      "type": "Example",
+      "name": "Indicate the name of the closed event whose cost has exceeded the budget the most.",
+      "aliases": [],
+      "properties": {
+        "key": "s1403",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nWITH event_spend AS (\n  SELECT b.link_to_event AS event_id, SUM(e.cost) AS total_cost\n  FROM budget b\n  JOIN expense e ON e.link_to_budget = b.budget_id\n  GROUP BY b.link_to_event\n),\nevent_budget AS (\n  SELECT link_to_event AS event_id, SUM(amount) AS total_budget\n  FROM budget\n  GROUP BY link_to_event\n)\nSELECT ev.event_name\nFROM event ev\nJOIN event_spend s ON s.event_id = ev.event_id\nJOIN event_budget eb ON eb.event_id = ev.event_id\nWHERE ev.status = 'Closed'\nORDER BY (s.total_cost - eb.total_budget) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1404",
+      "type": "Example",
+      "name": "Identify the type of expenses and their total value approved for 'October Meeting' event.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1404",
+        "learning_complete": true,
+        "sql": "SELECT T1.type, SUM(T3.cost) FROM event AS T1 INNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event INNER JOIN expense AS T3 ON T2.budget_id = T3.link_to_budget WHERE T1.event_name = 'October Meeting'"
+      }
+    },
+    {
+      "id": "example:s1405",
+      "type": "Example",
+      "name": "Calculate the amount budgeted for 'April Speaker' event. List all the budgeted categories for said event in an ascending order based on their amount budgeted.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1405",
+        "learning_complete": true,
+        "sql": "SELECT T2.category, SUM(T2.amount) FROM event AS T1 JOIN budget AS T2 ON T1.event_id = T2.link_to_event WHERE T1.event_name = 'April Speaker' GROUP BY T2.category ORDER BY SUM(T2.amount) ASC"
+      }
+    },
+    {
+      "id": "example:s1410",
+      "type": "Example",
+      "name": "List out the full name and total cost that member id \"rec4BLdZHS2Blfp4v\" incurred?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "member",
+            "member_id"
+          ]
+        ],
+        "key": "s1410",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name, SUM(T2.cost) FROM member AS T1 INNER JOIN expense AS T2 ON T1.member_id = T2.link_to_member WHERE T1.member_id = 'rec4BLdZHS2Blfp4v'"
+      }
+    },
+    {
+      "id": "example:s1411",
+      "type": "Example",
+      "name": "State what kind of expenses that Sacha Harrison incurred?",
+      "aliases": [],
+      "properties": {
+        "key": "s1411",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT e.expense_description\nFROM expense AS e\nJOIN member AS m ON e.link_to_member = m.member_id\nWHERE m.first_name = 'Sacha' AND m.last_name = 'Harrison'"
+      }
+    },
+    {
+      "id": "example:s1412",
+      "type": "Example",
+      "name": "What kind of expenses incurred by members who have X-Large in size of tee shirt?",
+      "aliases": [],
+      "properties": {
+        "key": "s1412",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT e.expense_description\nFROM expense AS e\nJOIN member AS m ON e.link_to_member = m.member_id\nWHERE m.t_shirt_size = 'X-Large'"
+      }
+    },
+    {
+      "id": "example:s1413",
+      "type": "Example",
+      "name": "Mention the zip code of member who incurred less than 50USD.",
+      "aliases": [],
+      "properties": {
+        "key": "s1413",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT z.zip_code\nFROM member AS m\nINNER JOIN expense AS e ON e.link_to_member = m.member_id\nINNER JOIN zip_code AS z ON z.zip_code = m.zip\nWHERE e.cost < 50"
+      }
+    },
+    {
+      "id": "example:s1415",
+      "type": "Example",
+      "name": "List out the position of members who joined major of Business.",
+      "aliases": [],
+      "properties": {
+        "key": "s1415",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.position\nFROM member AS T1\nINNER JOIN major AS T2 ON T2.major_id = T1.link_to_major\nWHERE T2.major_name = 'Business'"
+      }
+    },
+    {
+      "id": "example:s1417",
+      "type": "Example",
+      "name": "List out the type of events which have remaining budget more than 30 USD.",
+      "aliases": [],
+      "properties": {
+        "key": "s1417",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.type\nFROM event AS T1\nJOIN budget AS T2 ON T1.event_id = T2.link_to_event\nWHERE T2.remaining > 30"
+      }
+    },
+    {
+      "id": "example:s1418",
+      "type": "Example",
+      "name": "Mention the category of events which were held at MU 215.",
+      "aliases": [],
+      "properties": {
+        "key": "s1418",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT T2.category\nFROM event AS T1\nINNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event\nWHERE T1.location = 'MU 215'"
+      }
+    },
+    {
+      "id": "example:s1420",
+      "type": "Example",
+      "name": "State the name of major that Vice President has joined.",
+      "aliases": [],
+      "properties": {
+        "key": "s1420",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ma.major_name\nFROM member AS mem\nINNER JOIN major AS ma ON mem.link_to_major = ma.major_id\nWHERE mem.position = 'Vice President'"
+      }
+    },
+    {
+      "id": "example:s1422",
+      "type": "Example",
+      "name": "State the category of events were held at MU 215.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "event",
+            "location"
+          ]
+        ],
+        "key": "s1422",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.category FROM event AS T1 INNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event WHERE T1.location = 'MU 215'"
+      }
+    },
+    {
+      "id": "example:s1424",
+      "type": "Example",
+      "name": "Among the members, how many of them have an extra large t-shirt size?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "member",
+            "position"
+          ],
+          [
+            "member",
+            "t_shirt_size"
+          ]
+        ],
+        "key": "s1424",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(member_id) FROM member WHERE position = 'Member' AND t_shirt_size = 'X-Large'"
+      }
+    },
+    {
+      "id": "example:s1428",
+      "type": "Example",
+      "name": "List the city and state of members enrolled under electrical and computer engineering department.",
+      "aliases": [],
+      "properties": {
+        "key": "s1428",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT z.city, z.state\nFROM member AS mem\nINNER JOIN major AS ma ON mem.link_to_major = ma.major_id\nINNER JOIN zip_code AS z ON mem.zip = z.zip_code\nWHERE ma.department LIKE '%Electrical and Computer Engineering%'\n   OR ma.major_name LIKE '%Electrical and Computer Engineering%'"
+      }
+    },
+    {
+      "id": "example:s1429",
+      "type": "Example",
+      "name": "What is the name of the social event that was attended by the vice president of the Student_Club located at 900 E. Washington St.?",
+      "aliases": [],
+      "properties": {
+        "key": "s1429",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT e.event_name\nFROM event AS e\nINNER JOIN attendance AS a ON e.event_id = a.link_to_event\nINNER JOIN member AS m ON m.member_id = a.link_to_member\nWHERE e.type = 'Social'\n  AND e.location = '900 E. Washington St.'\n  AND m.position = 'Vice President'"
+      }
+    },
+    {
+      "id": "example:s1430",
+      "type": "Example",
+      "name": "What is the last name and position of the student that bought pizza on 09/10/2019?",
+      "aliases": [],
+      "properties": {
+        "key": "s1430",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT m.last_name, m.position\nFROM expense AS e\nJOIN member AS m ON e.link_to_member = m.member_id\nWHERE LOWER(e.expense_description) LIKE '%pizza%'\n  AND (e.expense_date LIKE '%2019-10-09%'\n       OR e.expense_date LIKE '%2019-09-10%'\n       OR e.expense_date LIKE '%10/09/2019%'\n       OR e.expense_date LIKE '%09/10/2019%')"
+      }
+    },
+    {
+      "id": "example:s1431",
+      "type": "Example",
+      "name": "List the last name of the members of the club that attended the women's soccer event.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "event",
+            "event_name"
+          ]
+        ],
+        "key": "s1431",
+        "learning_complete": true,
+        "sql": "SELECT T3.last_name FROM attendance AS T1 INNER JOIN event AS T2 ON T2.event_id = T1.link_to_event INNER JOIN member AS T3 ON T1.link_to_member = T3.member_id WHERE T2.event_name = 'Women''s Soccer' AND T3.position = 'Member'"
+      }
+    },
+    {
+      "id": "example:s1433",
+      "type": "Example",
+      "name": "Which countries have zip codes with post office boxes?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1433",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT county FROM zip_code WHERE type = 'PO Box' AND county IS NOT NULL"
+      }
+    },
+    {
+      "id": "example:s1434",
+      "type": "Example",
+      "name": "What are the zip codes that have post office boxes in the country of the country of San Juan Municipio whose state is Puerto Rico?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "zip_code",
+            "county"
+          ],
+          [
+            "zip_code",
+            "state"
+          ],
+          [
+            "zip_code",
+            "type"
+          ]
+        ],
+        "key": "s1434",
+        "learning_complete": true,
+        "sql": "SELECT zip_code FROM zip_code WHERE type = 'PO Box' AND county = 'San Juan Municipio' AND state = 'Puerto Rico'"
+      }
+    },
+    {
+      "id": "example:s1435",
+      "type": "Example",
+      "name": "List the names of closed event as \"game\" that was closed from 3/15/2019 to 3/20/2020.",
+      "aliases": [],
+      "properties": {
+        "key": "s1435",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT event_name\nFROM event\nWHERE type = 'Game'\n  AND status = 'Closed'\n  AND SUBSTR(event_date, 1, 10) BETWEEN '2019-03-15' AND '2020-03-20'"
+      }
+    },
+    {
+      "id": "example:s1439",
+      "type": "Example",
+      "name": "Please list the phone numbers of the members who majored in business at the College of Agriculture and Applied Sciences.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "major",
+            "college"
+          ],
+          [
+            "major",
+            "major_name"
+          ]
+        ],
+        "key": "s1439",
+        "learning_complete": true,
+        "sql": "SELECT T1.phone FROM member AS T1 INNER JOIN major AS T2 ON T2.major_id = T1.link_to_major WHERE T2.major_name = 'Business' AND T2.college = 'College of Agriculture and Applied Sciences'"
+      }
+    },
+    {
+      "id": "example:s1447",
+      "type": "Example",
+      "name": "List the name and location of events that underspend its budget.",
+      "aliases": [],
+      "properties": {
+        "key": "s1447",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.event_name, T1.location\nFROM event AS T1\nINNER JOIN budget AS T2 ON T1.event_id = T2.link_to_event\nWHERE T2.spent < T2.amount"
+      }
+    },
+    {
+      "id": "example:s1450",
+      "type": "Example",
+      "name": "In the events with more than forty incomes, list the city and country in which the event is happening.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "income",
+            "amount"
+          ]
+        ],
+        "key": "s1450",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T3.city, T3.county FROM income AS T1 INNER JOIN member AS T2 ON T1.link_to_member = T2.member_id INNER JOIN zip_code AS T3 ON T3.zip_code = T2.zip WHERE T1.amount > 40"
+      }
+    },
+    {
+      "id": "example:s1451",
+      "type": "Example",
+      "name": "Among the members who incurred expenses in more than one event, who paid the most amount?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "event",
+            "event_id"
+          ]
+        ],
+        "key": "s1451",
+        "learning_complete": true,
+        "sql": "SELECT T2.member_id FROM expense AS T1 INNER JOIN member AS T2 ON T1.link_to_member = T2.member_id INNER JOIN budget AS T3 ON T1.link_to_budget = T3.budget_id INNER JOIN event AS T4 ON T3.link_to_event = T4.event_id GROUP BY T2.member_id HAVING COUNT(DISTINCT T4.event_id) > 1 ORDER BY SUM(T1.cost) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1452",
+      "type": "Example",
+      "name": "What is the average amount paid by students in a position other than a member?",
+      "aliases": [],
+      "properties": {
+        "key": "s1452",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT AVG(e.cost) AS average_amount_paid\nFROM expense AS e\nJOIN member AS m ON e.link_to_member = m.member_id\nWHERE m.position <> 'Member'"
+      }
+    },
+    {
+      "id": "example:s1454",
+      "type": "Example",
+      "name": "What is the percentage of the cost for the meeting events?",
+      "aliases": [],
+      "properties": {
+        "key": "s1454",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT\n  (SELECT SUM(e.cost)\n   FROM expense e\n   JOIN budget b ON e.link_to_budget = b.budget_id\n   JOIN event ev ON b.link_to_event = ev.event_id\n   WHERE ev.type = 'Meeting') * 100.0\n  / (SELECT SUM(cost) FROM expense) AS percentage_of_cost_for_meeting_events"
+      }
+    },
+    {
+      "id": "example:s1458",
+      "type": "Example",
+      "name": "Calculate the difference in the percentage of members in New Jersey and Vermont.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1458",
+        "learning_complete": true,
+        "sql": "SELECT CAST((SUM(CASE WHEN T2.state = 'New Jersey' THEN 1 ELSE 0 END) - SUM(CASE WHEN T2.state = 'Vermont' THEN 1 ELSE 0 END)) AS REAL) * 100 / COUNT(T1.member_id) AS diff FROM member AS T1 INNER JOIN zip_code AS T2 ON T2.zip_code = T1.zip"
+      }
+    },
+    {
+      "id": "example:s1459",
+      "type": "Example",
+      "name": "What is the major of Garrett Gerke and which department does it belong to?",
+      "aliases": [],
+      "properties": {
+        "key": "s1459",
+        "learning_complete": true,
+        "sql": "SELECT m.major_name, m.department\nFROM member AS mem\nJOIN major AS m ON mem.link_to_major = m.major_id\nWHERE mem.first_name = 'Garrett' AND mem.last_name = 'Gerke'"
+      }
+    },
+    {
+      "id": "example:s1460",
+      "type": "Example",
+      "name": "Write the full name of the member who spent money for water, veggie tray and supplies and include the cost of it.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "expense",
+            "expense_description"
+          ]
+        ],
+        "key": "s1460",
+        "learning_complete": true,
+        "sql": "SELECT T2.first_name, T2.last_name, T1.cost FROM expense AS T1 INNER JOIN member AS T2 ON T1.link_to_member = T2.member_id WHERE T1.expense_description = 'Water, Veggie tray, supplies'"
+      }
+    },
+    {
+      "id": "example:s1461",
+      "type": "Example",
+      "name": "List the last names of students under the Elementary Education major and include their phone numbers.",
+      "aliases": [],
+      "properties": {
+        "key": "s1461",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.last_name, T1.phone\nFROM member AS T1\nINNER JOIN major AS T2 ON T2.major_id = T1.link_to_major\nWHERE T2.major_name = 'Elementary Education'"
+      }
+    },
+    {
+      "id": "example:s1462",
+      "type": "Example",
+      "name": "What category was budgeted for the 'January Speaker' event and how much was the amount budgeted for that category?",
+      "aliases": [],
+      "properties": {
+        "key": "s1462",
+        "learning_complete": true,
+        "sql": "SELECT T2.category, SUM(T2.amount)\nFROM event AS T1\nJOIN budget AS T2 ON T1.event_id = T2.link_to_event\nWHERE T1.event_name = 'January Speaker'\nGROUP BY T2.category"
+      }
+    },
+    {
+      "id": "example:s1464",
+      "type": "Example",
+      "name": "Write the full names of students who received funds on the date of 9/9/2019 and include the amount received.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "income",
+            "date_received"
+          ]
+        ],
+        "key": "s1464",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T3.first_name, T3.last_name, T4.amount FROM event AS T1 INNER JOIN attendance AS T2 ON T1.event_id = T2.link_to_event INNER JOIN member AS T3 ON T3.member_id = T2.link_to_member INNER JOIN income AS T4 ON T4.link_to_member = T3.member_id WHERE T4.date_received = '2019-09-09'"
+      }
+    },
+    {
+      "id": "example:s1465",
+      "type": "Example",
+      "name": "Which budget category does the expense 'Posters' fall to?",
+      "aliases": [],
+      "properties": {
+        "key": "s1465",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT b.category\nFROM budget AS b\nINNER JOIN expense AS e ON b.budget_id = e.link_to_budget\nWHERE e.expense_description LIKE '%Posters%'"
+      }
+    },
+    {
+      "id": "example:s1469",
+      "type": "Example",
+      "name": "Which student has the hometown of Lincolnton, North Carolina with the zip code of 28092? List their full name and position.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "zip_code",
+            "zip_code"
+          ]
+        ],
+        "key": "s1469",
+        "learning_complete": true,
+        "sql": "SELECT T1.first_name, T1.last_name, T1.position FROM member AS T1 INNER JOIN zip_code AS T2 ON T2.zip_code = T1.zip WHERE T2.city = 'Lincolnton' AND T2.state = 'North Carolina' AND T2.zip_code = 28092"
+      }
+    },
+    {
+      "id": "term:all-members-in-the-member-table",
+      "type": "Term",
+      "name": "all members in the member table",
+      "aliases": [
+        "every member",
+        "total members",
+        "member population"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:amount-budgeted",
+      "type": "Term",
+      "name": "amount budgeted",
+      "aliases": [
+        "budgeted amount",
+        "budget amount",
+        "amount budgeted for category"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:amount-spent-for-a-budget-category",
+      "type": "Term",
+      "name": "amount spent for a budget category",
+      "aliases": [
+        "spent on food",
+        "how much was spent",
+        "budget spent amount"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:approved-for-an-event",
+      "type": "Term",
+      "name": "approved for an event",
+      "aliases": [
+        "expenses approved for",
+        "event's approved expenses",
+        "authorized for event"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attendance-link",
+      "type": "Term",
+      "name": "attendance link",
+      "aliases": [
+        "attended event",
+        "event participation",
+        "member attendance record"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attended-an-event",
+      "type": "Term",
+      "name": "attended an event",
+      "aliases": [
+        "event attendance",
+        "who attended",
+        "event participants"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:budget-line-s-event",
+      "type": "Term",
+      "name": "budget line's event",
+      "aliases": [
+        "event a budget belongs to",
+        "budget to event link"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:budget-lines-of-an-event",
+      "type": "Term",
+      "name": "budget lines of an event",
+      "aliases": [
+        "event budget category",
+        "budget of a meeting"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:budgeted-categories-for-an-event",
+      "type": "Term",
+      "name": "budgeted categories for an event",
+      "aliases": [
+        "budget categories",
+        "categories budgeted",
+        "list budgeted categories"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:category-of-an-event",
+      "type": "Term",
+      "name": "category of an event",
+      "aliases": [
+        "event category",
+        "budget category of event",
+        "spending category for event"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:college-housing-a-major",
+      "type": "Term",
+      "name": "college housing a major",
+      "aliases": [
+        "college of",
+        "school",
+        "college"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:cost-linked-to-event",
+      "type": "Term",
+      "name": "cost linked to event",
+      "aliases": [
+        "event expenses",
+        "expenses of an event"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:cost-of-the-expense",
+      "type": "Term",
+      "name": "cost of the expense",
+      "aliases": [
+        "how much the member spent",
+        "expense amount",
+        "cost of it"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:country",
+      "type": "Term",
+      "name": "country",
+      "aliases": [
+        "county"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:country-of-a-zip-code",
+      "type": "Term",
+      "name": "country of a zip code",
+      "aliases": [
+        "county of zip code",
+        "which country",
+        "state county of zip"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:county-of-a-zip-code",
+      "type": "Term",
+      "name": "county of a zip code",
+      "aliases": [
+        "county",
+        "country name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:date-funds-received",
+      "type": "Term",
+      "name": "date funds received",
+      "aliases": [
+        "received date",
+        "date of payment",
+        "income date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:event-by-name",
+      "type": "Term",
+      "name": "event by name",
+      "aliases": [
+        "named event",
+        "event title"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:event-location",
+      "type": "Term",
+      "name": "event location",
+      "aliases": [
+        "venue",
+        "where an event was held",
+        "address of event"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:event-name",
+      "type": "Term",
+      "name": "event name",
+      "aliases": [
+        "name of the event",
+        "event title"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:expense-description",
+      "type": "Term",
+      "name": "expense description",
+      "aliases": [
+        "what the money was spent for",
+        "expense label",
+        "purpose of expense"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:expense-for-water-veggie-tray-supplies",
+      "type": "Term",
+      "name": "expense for water veggie tray supplies",
+      "aliases": [
+        "spent money for water, veggie tray and supplies",
+        "expense description for water, veggie tray, supplies"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:expense-incurred-by-member",
+      "type": "Term",
+      "name": "expense incurred by member",
+      "aliases": [
+        "member's expenses",
+        "cost incurred by"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:expenses-in-more-than-one-event",
+      "type": "Term",
+      "name": "expenses in more than one event",
+      "aliases": [
+        "incurred expenses in multiple events",
+        "spent in more than one event"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:expenses-of-a-budget",
+      "type": "Term",
+      "name": "expenses of a budget",
+      "aliases": [
+        "expenses for a budget",
+        "budget's expenses",
+        "spending records of a budget"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:extra-large-t-shirt-size",
+      "type": "Term",
+      "name": "extra large t-shirt size",
+      "aliases": [
+        "XL shirt",
+        "X-Large tee shirt size"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:first-earliest-date",
+      "type": "Term",
+      "name": "first / earliest date",
+      "aliases": [
+        "earliest payment",
+        "most recent",
+        "latest",
+        "first one paid"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:full-name",
+      "type": "Term",
+      "name": "full name",
+      "aliases": [
+        "member's full name",
+        "member name",
+        "student name",
+        "first and last name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:grew-up-in-a-state",
+      "type": "Term",
+      "name": "grew up in a state",
+      "aliases": [
+        "hometown state",
+        "state of residence",
+        "member's state"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-attendance-event",
+      "type": "Term",
+      "name": "highest attendance event",
+      "aliases": [
+        "most attended event",
+        "top event by attendance"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hometown",
+      "type": "Term",
+      "name": "hometown",
+      "aliases": [
+        "city, county and state of a member's town",
+        "where a member lives",
+        "home address area"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hometown-city",
+      "type": "Term",
+      "name": "hometown city",
+      "aliases": [
+        "city",
+        "students from a city",
+        "town"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hometown-city-and-state",
+      "type": "Term",
+      "name": "hometown city and state",
+      "aliases": [
+        "city of hometown",
+        "hometown location"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hometown-zip-code",
+      "type": "Term",
+      "name": "hometown zip code",
+      "aliases": [
+        "home zip code",
+        "zip of hometown"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:income-amount",
+      "type": "Term",
+      "name": "income amount",
+      "aliases": [
+        "money earned",
+        "income value",
+        "funds received",
+        "how much income"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:income-of-a-member",
+      "type": "Term",
+      "name": "income of a member",
+      "aliases": [
+        "member's income",
+        "earnings linked to member",
+        "income records for member"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:incomes",
+      "type": "Term",
+      "name": "incomes",
+      "aliases": [
+        "income",
+        "amount of funds",
+        "funds received"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:lowest-remaining-budget",
+      "type": "Term",
+      "name": "lowest remaining budget",
+      "aliases": [
+        "budget with the least remaining",
+        "smallest remaining amount",
+        "worst remaining budget"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:major-in-a-field",
+      "type": "Term",
+      "name": "major in a field",
+      "aliases": [
+        "majored in",
+        "major name",
+        "degree program",
+        "major"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:member-full-name",
+      "type": "Term",
+      "name": "member full name",
+      "aliases": [
+        "person name",
+        "member name",
+        "who earned the income",
+        "full name of the member"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:members",
+      "type": "Term",
+      "name": "members",
+      "aliases": [
+        "club members",
+        "rank and file members"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:members-of-the-club",
+      "type": "Term",
+      "name": "members of the club",
+      "aliases": [
+        "club members",
+        "regular members",
+        "ordinary members",
+        "members",
+        "all members"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:most-popular-size",
+      "type": "Term",
+      "name": "most popular size",
+      "aliases": [
+        "most ordered size",
+        "top t-shirt size",
+        "most common t-shirt size"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:named-event",
+      "type": "Term",
+      "name": "named event",
+      "aliases": [
+        "specific event",
+        "event title",
+        "which event"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:no-rounding-unless-requested",
+      "type": "Term",
+      "name": "no rounding unless requested",
+      "aliases": [
+        "unrounded percentage",
+        "exact percentage"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:paid-dues",
+      "type": "Term",
+      "name": "paid dues",
+      "aliases": [
+        "dues payment",
+        "membership dues",
+        "dues income"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:paid-the-most-amount",
+      "type": "Term",
+      "name": "paid the most amount",
+      "aliases": [
+        "highest total expense",
+        "spent the most"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-difference-between-two-states",
+      "type": "Term",
+      "name": "percentage difference between two states",
+      "aliases": [
+        "difference in percentage of members by state",
+        "percent share difference between states"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-total-cost",
+      "type": "Term",
+      "name": "percentage of total cost",
+      "aliases": [
+        "percent of overall cost",
+        "share of total cost",
+        "cost percentage"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-office-box-zip-code",
+      "type": "Term",
+      "name": "post office box zip code",
+      "aliases": [
+        "PO Box zip",
+        "zip codes with post office boxes",
+        "post office box only"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-office-boxes",
+      "type": "Term",
+      "name": "post office boxes",
+      "aliases": [
+        "PO boxes",
+        "PO Box zip codes"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:ratio-between-two-majors",
+      "type": "Term",
+      "name": "ratio between two majors",
+      "aliases": [
+        "finance to physics ratio",
+        "ratio of counts for two categories"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:received-funds",
+      "type": "Term",
+      "name": "received funds",
+      "aliases": [
+        "amount of funds",
+        "funds received",
+        "money received"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:september-event-date",
+      "type": "Term",
+      "name": "september event date",
+      "aliases": [
+        "in September",
+        "September of the event",
+        "month is September"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:state-name",
+      "type": "Term",
+      "name": "state name",
+      "aliases": [
+        "state",
+        "which state"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:student-attendance",
+      "type": "Term",
+      "name": "student attendance",
+      "aliases": [
+        "attendance record",
+        "attendance of members"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:student-full-name",
+      "type": "Term",
+      "name": "student full name",
+      "aliases": [
+        "full name",
+        "student name",
+        "member name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:student-name",
+      "type": "Term",
+      "name": "student name",
+      "aliases": [
+        "member name",
+        "student's full name",
+        "name of students"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:students-majored-in-a-subject",
+      "type": "Term",
+      "name": "students majored in a subject",
+      "aliases": [
+        "students majoring in X",
+        "number of students in a major",
+        "majors offered"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:t-shirt-size",
+      "type": "Term",
+      "name": "t-shirt size",
+      "aliases": [
+        "tee shirt size",
+        "shirt size",
+        "t-shirt size ordered"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-cost",
+      "type": "Term",
+      "name": "total cost",
+      "aliases": [
+        "sum of cost",
+        "total expense amount"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-value-of-expenses",
+      "type": "Term",
+      "name": "total value of expenses",
+      "aliases": [
+        "total cost of expenses",
+        "sum of expense amounts",
+        "total expense value"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:unique-organization-zip-code",
+      "type": "Term",
+      "name": "unique organization zip code",
+      "aliases": [
+        "zip code assigned to an organization",
+        "single organization zip"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:which-member",
+      "type": "Term",
+      "name": "which member",
+      "aliases": [
+        "member identity",
+        "who paid"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:women-s-event",
+      "type": "Term",
+      "name": "women's event",
+      "aliases": [
+        "women's sports event",
+        "ladies event"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:cost-of-the-expense",
+      "type": "MEANS",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {
+        "_feedback_sources": [
+          "s1389",
+          "s1464",
+          "s1462",
+          "s1335"
+        ],
+        "losses": 1,
+        "note": "expense.cost is the dollar amount of the expense and is the value reported for \"cost\".",
+        "origin": "s1460",
+        "sql": "expense.cost",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:cost-linked-to-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "_feedback_sources": [
+          "s1411",
+          "s1450"
+        ],
+        "losses": 1,
+        "note": "Expense amounts reach an event only through the budget row: budget.link_to_event points to event.event_id and expense.link_to_budget points to budget.budget_id.",
+        "origin": "s1390",
+        "sql": "event.event_id = budget.link_to_event AND budget.budget_id = expense.link_to_budget",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:event-name",
+      "type": "MEANS",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {
+        "_feedback_sources": [
+          "s1420",
+          "s1361",
+          "s1383",
+          "s1315",
+          "s1398",
+          "s1334",
+          "s1389",
+          "s1462",
+          "s1360",
+          "s1329",
+          "s1348",
+          "s1358",
+          "s1410",
+          "s1317",
+          "s1316",
+          "s1391",
+          "s1417",
+          "s1447",
+          "s1435",
+          "s1350",
+          "s1429"
+        ],
+        "losses": 5,
+        "note": "The human-readable event label is event.event_name, while event.event_id is the identifier that attendance.link_to_event references.",
+        "origin": "s1318",
+        "sql": "event.event_name",
+        "wins": 16
+      }
+    },
+    {
+      "from_entity": "term:expenses-of-a-budget",
+      "type": "MEANS",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {
+        "_feedback_sources": [
+          "s1412",
+          "s1315",
+          "s1399",
+          "s1447"
+        ],
+        "losses": 1,
+        "note": "Expense rows belong to a budget through expense.link_to_budget, which references budget.budget_id.",
+        "origin": "s1365",
+        "sql": "expense.link_to_budget = budget.budget_id",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:ratio-between-two-majors",
+      "type": "MEANS",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {
+        "_feedback_sources": [
+          "s1461"
+        ],
+        "losses": 0,
+        "note": "A ratio between two major categories is computed by counting rows of major for each category and dividing the first count by the second.",
+        "origin": "s1391",
+        "sql": "SUM(CASE WHEN major.major_name = 'Finance' THEN 1 ELSE 0 END) / SUM(CASE WHEN major.major_name = 'Physics' THEN 1 ELSE 0 END)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:category-of-an-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {
+        "_feedback_sources": [
+          "s1365",
+          "s1465",
+          "s1452",
+          "s1418",
+          "s1318",
+          "s1331",
+          "s1398",
+          "s1389",
+          "s1462",
+          "s1360",
+          "s1348",
+          "s1369",
+          "s1321",
+          "s1317",
+          "s1335",
+          "s1417",
+          "s1402",
+          "s1435",
+          "s1350",
+          "s1392"
+        ],
+        "losses": 3,
+        "note": "An event's category is stored in budget.category and reached by matching budget.link_to_event to event.event_id, not in event.type.",
+        "origin": "s1422",
+        "sql": "budget.category",
+        "wins": 17
+      }
+    },
+    {
+      "from_entity": "term:highest-attendance-event",
+      "type": "MEANS",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {
+        "_feedback_sources": [
+          "s1405",
+          "s1315",
+          "s1398",
+          "s1389",
+          "s1369",
+          "s1317",
+          "s1316",
+          "s1367",
+          "s1402",
+          "s1451",
+          "s1429"
+        ],
+        "losses": 3,
+        "note": "Event popularity is measured by counting attendance rows linked to each event, not by joining member and filtering on a role.",
+        "origin": "s1318",
+        "sql": "ORDER BY COUNT(attendance.link_to_event) DESC",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:college-housing-a-major",
+      "type": "MEANS",
+      "to_entity": "column:major.college-f61fb0",
+      "properties": {
+        "_feedback_sources": [
+          "s1368",
+          "s1375",
+          "s1363",
+          "s1314",
+          "s1367",
+          "s1350",
+          "s1461",
+          "s1415",
+          "s1429"
+        ],
+        "losses": 0,
+        "note": "The college that offers a major is recorded on major.college, not on the member row.",
+        "origin": "s1439",
+        "sql": "major.college = 'College of Agriculture and Applied Sciences'",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:percentage-difference-between-two-states",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {
+        "_feedback_sources": [
+          "s1375",
+          "s1391",
+          "s1367"
+        ],
+        "losses": 1,
+        "note": "Compute the difference as the difference of state member counts (via SUM of CASE) scaled by 100 and divided by the total member count, using one shared denominator.",
+        "origin": "s1458",
+        "sql": "CAST((SUM(CASE WHEN zip_code.state = 'New Jersey' THEN 1 ELSE 0 END) - SUM(CASE WHEN zip_code.state = 'Vermont' THEN 1 ELSE 0 END)) AS REAL) * 100 / COUNT(member.member_id)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:income-of-a-member",
+      "type": "MEANS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "_feedback_sources": [
+          "s1374",
+          "s1452",
+          "s1364"
+        ],
+        "losses": 1,
+        "note": "Income rows are tied to members by matching income.link_to_member to member.member_id.",
+        "origin": "s1384",
+        "sql": "income.link_to_member = member.member_id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:hometown-zip-code",
+      "type": "MEANS",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {
+        "_feedback_sources": [
+          "s1353",
+          "s1413"
+        ],
+        "losses": 0,
+        "note": "A member's hometown zip is stored in member.zip and matches zip_code.zip_code.",
+        "origin": "s1469",
+        "sql": "member.zip = zip_code.zip_code",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:budget-line-s-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {
+        "_feedback_sources": [
+          "s1315",
+          "s1389",
+          "s1399",
+          "s1447"
+        ],
+        "losses": 1,
+        "note": "Budget rows reference their event through the text column budget.link_to_event matching event.event_id.",
+        "origin": "s1405",
+        "sql": "budget.link_to_event = event.event_id",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:t-shirt-size",
+      "type": "MEANS",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {
+        "losses": 0,
+        "note": "The ordered shirt size is stored on the member row as member.t_shirt_size with values such as Small, Medium, Large, X-Large.",
+        "origin": "s1402",
+        "sql": "member.t_shirt_size",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:paid-dues",
+      "type": "MEANS",
+      "to_entity": "column:income.source-79b16f",
+      "properties": {
+        "_feedback_sources": [
+          "s1375",
+          "s1357",
+          "s1391",
+          "s1392",
+          "s1451"
+        ],
+        "losses": 2,
+        "note": "Dues payments are recorded in the income table with source = 'Dues' and linked to the payer via income.link_to_member = member.member_id.",
+        "origin": "s1358",
+        "sql": "income.source = 'Dues'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:budget-lines-of-an-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "_feedback_sources": [
+          "s1348",
+          "s1369",
+          "s1335",
+          "s1417",
+          "s1435",
+          "s1350",
+          "s1450"
+        ],
+        "losses": 1,
+        "note": "Each budget row (category) belongs to one event through link_to_event, and the event is identified by its event_name such as 'September Meeting'.",
+        "origin": "s1332",
+        "sql": "budget.link_to_event = event.event_id",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:attendance-link",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "_feedback_sources": [
+          "s1450"
+        ],
+        "losses": 1,
+        "note": "Participation is recorded in attendance, whose link_to_member and link_to_event point to member.member_id and event.event_id respectively.",
+        "origin": "s1399",
+        "sql": "attendance.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:total-cost",
+      "type": "MEANS",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {
+        "losses": 0,
+        "note": "expense.cost is the dollar amount per expense row, so total cost for a member is the sum of cost over that member's expense rows.",
+        "origin": "s1410",
+        "sql": "SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:approved-for-an-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {
+        "losses": 0,
+        "note": "'Approved for an event' means the expense is attached to that event's budget via the budget link, not the expense.approved flag, which should only be filtered when the question explicitly asks for approved expenses.",
+        "origin": "s1404",
+        "sql": "expense.link_to_budget = budget.budget_id AND budget.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:which-member",
+      "type": "MEANS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "losses": 0,
+        "note": "A member is identified by member.member_id, which is the value to output or group by when the question asks which member.",
+        "origin": "s1451",
+        "sql": "member.member_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:grew-up-in-a-state",
+      "type": "MEANS",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {
+        "_feedback_sources": [
+          "s1373",
+          "s1329",
+          "s1357",
+          "s1353",
+          "s1413",
+          "s1411"
+        ],
+        "losses": 0,
+        "note": "A member's hometown is member.zip, which joins to zip_code.zip_code, and the state name is stored in zip_code.state as a full state name such as 'Illinois'.",
+        "origin": "s1334",
+        "sql": "member.zip = zip_code.zip_code AND zip_code.state = 'Illinois'",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-total-cost",
+      "type": "MEANS",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {
+        "losses": 0,
+        "note": "A percentage-of-total formula divides the conditionally summed expense.cost by the sum of all expense.cost, with a CAST to REAL so the division is not integer-truncated.",
+        "origin": "s1390",
+        "sql": "CAST(SUM(CASE WHEN event.event_name = 'Yearly Kickoff' THEN expense.cost ELSE 0 END) AS REAL) * 100 / SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:amount-budgeted",
+      "type": "MEANS",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {
+        "_feedback_sources": [
+          "s1331",
+          "s1398",
+          "s1460",
+          "s1464",
+          "s1462",
+          "s1369",
+          "s1417"
+        ],
+        "losses": 2,
+        "note": "The budgeted dollars for a category are stored in budget.amount, and when a category has several budget lines for the same event the total is the sum of those rows.",
+        "origin": "s1405",
+        "sql": "SUM(budget.amount)",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:named-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {
+        "losses": 0,
+        "note": "The event's identity is its title in event.event_name (e.g. 'Women's Soccer'); keyword-matching on event.notes can pull in unrelated events, so match on the name column.",
+        "origin": "s1431",
+        "sql": "event.event_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:student-name",
+      "type": "MEANS",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {
+        "_feedback_sources": [
+          "s1315",
+          "s1329",
+          "s1321",
+          "s1363",
+          "s1357",
+          "s1317",
+          "s1316",
+          "s1328",
+          "s1391",
+          "s1353",
+          "s1314",
+          "s1335",
+          "s1461",
+          "s1429"
+        ],
+        "losses": 1,
+        "note": "A student's name is returned as the separate member.first_name and member.last_name columns rather than one concatenated string.",
+        "origin": "s1383",
+        "sql": "member.first_name, member.last_name",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:budget-line-s-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "losses": 0,
+        "note": "Budget rows reference their event through the text column budget.link_to_event matching event.event_id.",
+        "origin": "s1405",
+        "sql": "budget.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:country-of-a-zip-code",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {
+        "losses": 0,
+        "note": "zip_code.county holds the county/state-level area name (e.g. 'Los Angeles County', 'District of Columbia') and may be NULL, so exclude NULL when listing areas.",
+        "origin": "s1433",
+        "sql": "zip_code.county",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:hometown-zip-code",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {
+        "_feedback_sources": [
+          "s1368",
+          "s1433"
+        ],
+        "losses": 1,
+        "note": "A member's hometown zip is stored in member.zip and matches zip_code.zip_code.",
+        "origin": "s1469",
+        "sql": "member.zip = zip_code.zip_code",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:country",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {
+        "losses": 0,
+        "note": "When a question asks for the country of a location in this database, the intended column is zip_code.county (the county of the ZIP), not zip_code.state.",
+        "origin": "s1450",
+        "sql": "zip_code.county",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:all-members-in-the-member-table",
+      "type": "MEANS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "_feedback_sources": [
+          "s1348",
+          "s1375",
+          "s1363",
+          "s1328",
+          "s1390",
+          "s1367",
+          "s1402",
+          "s1415"
+        ],
+        "losses": 2,
+        "note": "Every row of the member table is a member, so no extra filter such as member.position = 'Member' should be applied when counting members.",
+        "origin": "s1458",
+        "sql": "COUNT(member.member_id)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:grew-up-in-a-state",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {
+        "_feedback_sources": [
+          "s1368",
+          "s1433"
+        ],
+        "losses": 1,
+        "note": "A member's hometown is member.zip, which joins to zip_code.zip_code, and the state name is stored in zip_code.state as a full state name such as 'Illinois'.",
+        "origin": "s1334",
+        "sql": "member.zip = zip_code.zip_code AND zip_code.state = 'Illinois'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:hometown",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {
+        "losses": 0,
+        "note": "A member's hometown is the city, county, and state of the ZIP stored in member.zip, so all three geographic fields belong in the hometown answer.",
+        "origin": "s1364",
+        "sql": "zip_code.city, zip_code.county, zip_code.state",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:cost-linked-to-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {
+        "losses": 0,
+        "note": "Expense amounts reach an event only through the budget row: budget.link_to_event points to event.event_id and expense.link_to_budget points to budget.budget_id.",
+        "origin": "s1390",
+        "sql": "event.event_id = budget.link_to_event AND budget.budget_id = expense.link_to_budget",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:no-rounding-unless-requested",
+      "type": "MEANS",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {
+        "losses": 0,
+        "note": "When the question does not ask for rounding, return the raw computed percentage instead of wrapping it in ROUND(..., 2).",
+        "origin": "s1390",
+        "sql": "CAST(SUM(CASE WHEN event.event_name = 'Yearly Kickoff' THEN expense.cost ELSE 0 END) AS REAL) * 100 / SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:expense-for-water-veggie-tray-supplies",
+      "type": "MEANS",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {
+        "_feedback_sources": [
+          "s1433",
+          "s1350"
+        ],
+        "losses": 1,
+        "note": "expense_description stores one comma-separated item list per expense, so the requested item set is matched as the exact stored description rather than by ANDing separate keyword LIKE patterns.",
+        "origin": "s1460",
+        "sql": "expense.expense_description = 'Water, Veggie tray, supplies'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-difference-between-two-states",
+      "type": "MEANS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "losses": 0,
+        "note": "Compute the difference as the difference of state member counts (via SUM of CASE) scaled by 100 and divided by the total member count, using one shared denominator.",
+        "origin": "s1458",
+        "sql": "CAST((SUM(CASE WHEN zip_code.state = 'New Jersey' THEN 1 ELSE 0 END) - SUM(CASE WHEN zip_code.state = 'Vermont' THEN 1 ELSE 0 END)) AS REAL) * 100 / COUNT(member.member_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:incomes",
+      "type": "MEANS",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {
+        "losses": 0,
+        "note": "Each income record holds a single dollar amount of funds, so income-related amounts come from income.amount rather than from a count of income rows.",
+        "origin": "s1450",
+        "sql": "income.amount",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:students-majored-in-a-subject",
+      "type": "MEANS",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {
+        "_feedback_sources": [
+          "s1314",
+          "s1461"
+        ],
+        "losses": 0,
+        "note": "The major name/subject text is stored in major.major_name, and for these ratio questions the population is the list of majors in the major table, so no join to the member roster is needed.",
+        "origin": "s1391",
+        "sql": "major.major_name",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:september-event-date",
+      "type": "MEANS",
+      "to_entity": "column:event.event-date-495dc4",
+      "properties": {
+        "_feedback_sources": [
+          "s1389",
+          "s1464",
+          "s1435",
+          "s1392"
+        ],
+        "losses": 1,
+        "note": "event_date is stored as ISO text like 2020-09-10T12:00:00, so the month is the 2-digit substring starting at position 6.",
+        "origin": "s1332",
+        "sql": "SUBSTR(event.event_date, 6, 2) = '09'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:expenses-in-more-than-one-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "losses": 0,
+        "note": "An expense reaches an event through expense.link_to_budget -> budget.budget_id -> budget.link_to_event -> event.event_id, so distinct events must be counted on event.event_id with the event table joined.",
+        "origin": "s1451",
+        "sql": "COUNT(DISTINCT event.event_id) > 1",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:approved-for-an-event",
+      "type": "MEANS",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {
+        "losses": 0,
+        "note": "'Approved for an event' means the expense is attached to that event's budget via the budget link, not the expense.approved flag, which should only be filtered when the question explicitly asks for approved expenses.",
+        "origin": "s1404",
+        "sql": "expense.link_to_budget = budget.budget_id AND budget.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:total-value-of-expenses",
+      "type": "MEANS",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {
+        "losses": 0,
+        "note": "Total value of expenses is the sum of expense.cost, which is stored in dollars.",
+        "origin": "s1404",
+        "sql": "SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:attended-an-event",
+      "type": "MEANS",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {
+        "_feedback_sources": [
+          "s1429"
+        ],
+        "losses": 0,
+        "note": "The attendance table links people and events via link_to_member and link_to_event, so attendance questions must join member and event on those key columns instead of matching names directly.",
+        "origin": "s1327",
+        "sql": "attendance.link_to_member = member.member_id AND attendance.link_to_event = event.event_id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:hometown-city-and-state",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {
+        "_feedback_sources": [
+          "s1373",
+          "s1357",
+          "s1413",
+          "s1411",
+          "s1447",
+          "s1450"
+        ],
+        "losses": 1,
+        "note": "Hometown city and state live in the zip_code table and are filtered with = on their stored text values.",
+        "origin": "s1469",
+        "sql": "zip_code.city, zip_code.state",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:budgeted-categories-for-an-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {
+        "_feedback_sources": [
+          "s1331",
+          "s1398",
+          "s1334",
+          "s1469",
+          "s1462",
+          "s1360",
+          "s1439",
+          "s1369",
+          "s1375",
+          "s1321",
+          "s1410",
+          "s1363",
+          "s1316",
+          "s1328",
+          "s1314",
+          "s1335",
+          "s1417",
+          "s1447",
+          "s1402",
+          "s1435",
+          "s1392",
+          "s1461",
+          "s1415",
+          "s1450"
+        ],
+        "losses": 6,
+        "note": "The budget area/category label lives in budget.category (e.g. advertisement, food, parking), while the event name lives in event.event_name, so the categories are the distinct budget.category values of the matching event's budget lines.",
+        "origin": "s1405",
+        "sql": "budget.category, SUM(budget.amount)",
+        "wins": 18
+      }
+    },
+    {
+      "from_entity": "term:members-of-the-club",
+      "type": "MEANS",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {
+        "_feedback_sources": [
+          "s1318",
+          "s1375",
+          "s1363",
+          "s1328",
+          "s1327"
+        ],
+        "losses": 2,
+        "note": "Ordinary club membership is the member.position value 'Member', distinct from 'President', 'Vice President', 'Secretary', 'Treasurer', and 'Inactive'.",
+        "origin": "s1431",
+        "sql": "member.position = 'Member'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:members",
+      "type": "MEANS",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {
+        "_feedback_sources": [
+          "s1420",
+          "s1315",
+          "s1331",
+          "s1332",
+          "s1334",
+          "s1373",
+          "s1439",
+          "s1458",
+          "s1321",
+          "s1314",
+          "s1367",
+          "s1335",
+          "s1402",
+          "s1415",
+          "s1429"
+        ],
+        "losses": 5,
+        "note": "The member table holds all club roles (Member, Inactive, President, Vice President, Treasurer, Secretary), so 'members' must be filtered to position = 'Member'.",
+        "origin": "s1424",
+        "sql": "member.position = 'Member'",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:paid-the-most-amount",
+      "type": "MEANS",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {
+        "losses": 0,
+        "note": "Total amount spent by a member is the SUM of expense.cost in dollars, used with ORDER BY ... DESC to rank the top spender.",
+        "origin": "s1451",
+        "sql": "SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:cost-linked-to-event",
+      "type": "MEANS",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {
+        "losses": 0,
+        "note": "Expense amounts reach an event only through the budget row: budget.link_to_event points to event.event_id and expense.link_to_budget points to budget.budget_id.",
+        "origin": "s1390",
+        "sql": "event.event_id = budget.link_to_event AND budget.budget_id = expense.link_to_budget",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:amount-spent-for-a-budget-category",
+      "type": "MEANS",
+      "to_entity": "column:budget.spent-09ff4b",
+      "properties": {
+        "_feedback_sources": [
+          "s1398",
+          "s1460",
+          "s1462",
+          "s1360",
+          "s1369",
+          "s1390",
+          "s1335",
+          "s1404"
+        ],
+        "losses": 3,
+        "note": "budget.spent is the pre-computed total spent for a category of an event, so it should be read directly instead of summing expense.cost rows.",
+        "origin": "s1332",
+        "sql": "budget.spent",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:most-popular-size",
+      "type": "MEANS",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {
+        "losses": 0,
+        "note": "Popularity is measured by counting the non-null t-shirt size values per distinct member.t_shirt_size value, not by counting a key column like member.member_id.",
+        "origin": "s1402",
+        "sql": "COUNT(member.t_shirt_size)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:lowest-remaining-budget",
+      "type": "MEANS",
+      "to_entity": "column:budget.remaining-3172eb",
+      "properties": {
+        "_feedback_sources": [
+          "s1454",
+          "s1465",
+          "s1452",
+          "s1342",
+          "s1361",
+          "s1405",
+          "s1331",
+          "s1398",
+          "s1460",
+          "s1389",
+          "s1464",
+          "s1360",
+          "s1458",
+          "s1348",
+          "s1369",
+          "s1363",
+          "s1417"
+        ],
+        "losses": 4,
+        "note": "\"Remaining\" is the stored budget.remaining value (dollars, may be negative when overspent); the lowest-remaining budget is the one with the smallest remaining.",
+        "origin": "s1365",
+        "sql": "ORDER BY budget.remaining ASC",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:attendance-link",
+      "type": "MEANS",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {
+        "_feedback_sources": [
+          "s1429"
+        ],
+        "losses": 0,
+        "note": "Participation is recorded in attendance, whose link_to_member and link_to_event point to member.member_id and event.event_id respectively.",
+        "origin": "s1399",
+        "sql": "attendance.link_to_event = event.event_id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:hometown-city-and-state",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {
+        "losses": 0,
+        "note": "Hometown city and state live in the zip_code table and are filtered with = on their stored text values.",
+        "origin": "s1469",
+        "sql": "zip_code.city, zip_code.state",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:grew-up-in-a-state",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {
+        "losses": 0,
+        "note": "A member's hometown is member.zip, which joins to zip_code.zip_code, and the state name is stored in zip_code.state as a full state name such as 'Illinois'.",
+        "origin": "s1334",
+        "sql": "member.zip = zip_code.zip_code AND zip_code.state = 'Illinois'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:student-attendance",
+      "type": "MEANS",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {
+        "_feedback_sources": [
+          "s1405",
+          "s1332",
+          "s1334"
+        ],
+        "losses": 3,
+        "note": "Attendance by club members is stored as rows in the attendance table, each linking one attendee to one event via attendance.link_to_event; no member.position filter is required to represent 'students from the Student_Club'.",
+        "origin": "s1318",
+        "sql": "attendance.link_to_event",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:student-name",
+      "type": "MEANS",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {
+        "losses": 0,
+        "note": "A student's name is returned as the separate member.first_name and member.last_name columns rather than one concatenated string.",
+        "origin": "s1383",
+        "sql": "member.first_name, member.last_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:attended-an-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "losses": 0,
+        "note": "The attendance table links people and events via link_to_member and link_to_event, so attendance questions must join member and event on those key columns instead of matching names directly.",
+        "origin": "s1327",
+        "sql": "attendance.link_to_member = member.member_id AND attendance.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:budgeted-categories-for-an-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {
+        "losses": 0,
+        "note": "The budget area/category label lives in budget.category (e.g. advertisement, food, parking), while the event name lives in event.event_name, so the categories are the distinct budget.category values of the matching event's budget lines.",
+        "origin": "s1405",
+        "sql": "budget.category, SUM(budget.amount)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:hometown-city",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {
+        "_feedback_sources": [
+          "s1315",
+          "s1464",
+          "s1368",
+          "s1317",
+          "s1316",
+          "s1433",
+          "s1328",
+          "s1391"
+        ],
+        "losses": 3,
+        "note": "A member's hometown city and state are looked up by joining member.zip to zip_code.zip_code and filtering zip_code.city.",
+        "origin": "s1383",
+        "sql": "member.zip = zip_code.zip_code AND zip_code.city",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:received-funds",
+      "type": "MEANS",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {
+        "_feedback_sources": [
+          "s1392",
+          "s1451"
+        ],
+        "losses": 1,
+        "note": "Funds received by a member are recorded in the income table, with the amount in dollars in income.amount and the recipient linked by income.link_to_member = member.member_id.",
+        "origin": "s1464",
+        "sql": "income.amount",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:no-rounding-unless-requested",
+      "type": "MEANS",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {
+        "losses": 0,
+        "note": "When the question does not ask for rounding, return the raw computed percentage instead of wrapping it in ROUND(..., 2).",
+        "origin": "s1390",
+        "sql": "CAST(SUM(CASE WHEN event.event_name = 'Yearly Kickoff' THEN expense.cost ELSE 0 END) AS REAL) * 100 / SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:event-location",
+      "type": "MEANS",
+      "to_entity": "column:event.location-9808fd",
+      "properties": {
+        "_feedback_sources": [
+          "s1430",
+          "s1418",
+          "s1431",
+          "s1318",
+          "s1420",
+          "s1361",
+          "s1405",
+          "s1383",
+          "s1358",
+          "s1447",
+          "s1429"
+        ],
+        "losses": 5,
+        "note": "The place an event is or was held is stored in event.location as free-text venue text.",
+        "origin": "s1422",
+        "sql": "event.location",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:income-of-a-member",
+      "type": "MEANS",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {
+        "losses": 0,
+        "note": "Income rows are tied to members by matching income.link_to_member to member.member_id.",
+        "origin": "s1384",
+        "sql": "income.link_to_member = member.member_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:members-of-the-club",
+      "type": "MEANS",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {
+        "_feedback_sources": [
+          "s1458",
+          "s1368",
+          "s1348",
+          "s1375",
+          "s1321",
+          "s1363",
+          "s1316",
+          "s1328",
+          "s1390",
+          "s1367",
+          "s1335",
+          "s1402",
+          "s1461",
+          "s1415",
+          "s1327"
+        ],
+        "losses": 4,
+        "note": "Every row in the member table is a member of the club, and member.position denotes the member's office or role rather than membership status, so it must not be used as a 'Member' filter.",
+        "origin": "s1439",
+        "sql": "member.phone",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:hometown",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {
+        "losses": 0,
+        "note": "A member's hometown is the city, county, and state of the ZIP stored in member.zip, so all three geographic fields belong in the hometown answer.",
+        "origin": "s1364",
+        "sql": "zip_code.city, zip_code.county, zip_code.state",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:expense-incurred-by-member",
+      "type": "MEANS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "_feedback_sources": [
+          "s1413",
+          "s1411",
+          "s1364",
+          "s1404"
+        ],
+        "losses": 2,
+        "note": "expense.link_to_member holds the member_id of the member who incurred the expense, so it is the join key to member.",
+        "origin": "s1410",
+        "sql": "expense.link_to_member = member.member_id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:unique-organization-zip-code",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.type-e02339",
+      "properties": {
+        "_feedback_sources": [
+          "s1412",
+          "s1469",
+          "s1353",
+          "s1413"
+        ],
+        "losses": 1,
+        "note": "The 'Unique' type is reserved for ZIP codes assigned to individual organizations and is not the category for post office boxes.",
+        "origin": "s1434",
+        "sql": "zip_code.type = 'Unique'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:student-full-name",
+      "type": "MEANS",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {
+        "losses": 0,
+        "note": "A member's full name is returned as the two separate columns member.first_name and member.last_name, not as a concatenated string.",
+        "origin": "s1469",
+        "sql": "member.first_name, member.last_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:full-name",
+      "type": "MEANS",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {
+        "_feedback_sources": [
+          "s1314"
+        ],
+        "losses": 0,
+        "note": "A member's full name is their first_name and last_name stored in the member table, combined with a single space.",
+        "origin": "s1334",
+        "sql": "member.first_name || ' ' || member.last_name",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-total-cost",
+      "type": "MEANS",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {
+        "losses": 0,
+        "note": "A percentage-of-total formula divides the conditionally summed expense.cost by the sum of all expense.cost, with a CAST to REAL so the division is not integer-truncated.",
+        "origin": "s1390",
+        "sql": "CAST(SUM(CASE WHEN event.event_name = 'Yearly Kickoff' THEN expense.cost ELSE 0 END) AS REAL) * 100 / SUM(expense.cost)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:first-earliest-date",
+      "type": "MEANS",
+      "to_entity": "column:income.date-received-71c87d",
+      "properties": {
+        "_feedback_sources": [
+          "s1321",
+          "s1357",
+          "s1367",
+          "s1402",
+          "s1392",
+          "s1451"
+        ],
+        "losses": 2,
+        "note": "income.date_received holds ISO 'YYYY-MM-DD' text, so ascending/descending ordering on it gives the earliest/latest payment.",
+        "origin": "s1358",
+        "sql": "ORDER BY income.date_received ASC",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:expense-description",
+      "type": "MEANS",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {
+        "_feedback_sources": [
+          "s1465",
+          "s1332",
+          "s1398",
+          "s1433",
+          "s1350"
+        ],
+        "losses": 2,
+        "note": "The textual description of what an expense was for is expense.expense_description, while expense.cost is the dollar amount of the expense.",
+        "origin": "s1365",
+        "sql": "expense.expense_description",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:state-name",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {
+        "_feedback_sources": [
+          "s1373",
+          "s1358",
+          "s1357",
+          "s1411"
+        ],
+        "losses": 1,
+        "note": "zip_code.state stores full state names such as 'South Carolina', so state filters use the full spelled-out name rather than a two-letter abbreviation.",
+        "origin": "s1383",
+        "sql": "zip_code.state",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:attended-an-event",
+      "type": "MEANS",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {
+        "losses": 0,
+        "note": "The attendance table links people and events via link_to_member and link_to_event, so attendance questions must join member and event on those key columns instead of matching names directly.",
+        "origin": "s1327",
+        "sql": "attendance.link_to_member = member.member_id AND attendance.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:budget-lines-of-an-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {
+        "losses": 0,
+        "note": "Each budget row (category) belongs to one event through link_to_event, and the event is identified by its event_name such as 'September Meeting'.",
+        "origin": "s1332",
+        "sql": "budget.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:date-funds-received",
+      "type": "MEANS",
+      "to_entity": "column:income.date-received-71c87d",
+      "properties": {
+        "_feedback_sources": [
+          "s1321",
+          "s1357",
+          "s1392"
+        ],
+        "losses": 0,
+        "note": "income.date_received stores dates as text in 'YYYY-MM-DD' format, so a date phrase like 9/9/2019 matches the text '2019-09-09'.",
+        "origin": "s1464",
+        "sql": "income.date_received",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:women-s-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {
+        "_feedback_sources": [
+          "s1420",
+          "s1361",
+          "s1383",
+          "s1315",
+          "s1334",
+          "s1389",
+          "s1462",
+          "s1360",
+          "s1329",
+          "s1348",
+          "s1410",
+          "s1317",
+          "s1316",
+          "s1391",
+          "s1417",
+          "s1447",
+          "s1364",
+          "s1435"
+        ],
+        "losses": 5,
+        "note": "Women's events are stored with the title pattern 'Women's <Sport>' (e.g. 'Women's Soccer', 'Women's Lacrosse').",
+        "origin": "s1431",
+        "sql": "event.event_name LIKE 'Women''s %'",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:hometown",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {
+        "losses": 0,
+        "note": "A member's hometown is the city, county, and state of the ZIP stored in member.zip, so all three geographic fields belong in the hometown answer.",
+        "origin": "s1364",
+        "sql": "zip_code.city, zip_code.county, zip_code.state",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:approved-for-an-event",
+      "type": "MEANS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "losses": 0,
+        "note": "'Approved for an event' means the expense is attached to that event's budget via the budget link, not the expense.approved flag, which should only be filtered when the question explicitly asks for approved expenses.",
+        "origin": "s1404",
+        "sql": "expense.link_to_budget = budget.budget_id AND budget.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:event-by-name",
+      "type": "MEANS",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {
+        "_feedback_sources": [
+          "s1360",
+          "s1329",
+          "s1348",
+          "s1358",
+          "s1317",
+          "s1316",
+          "s1391",
+          "s1417",
+          "s1447",
+          "s1435",
+          "s1350",
+          "s1392"
+        ],
+        "losses": 2,
+        "note": "An event named in a question is matched against the event.event_name column, which holds names such as 'Women's Soccer' (escape an internal apostrophe by doubling it).",
+        "origin": "s1399",
+        "sql": "event.event_name = 'Women''s Soccer'",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:extra-large-t-shirt-size",
+      "type": "MEANS",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {
+        "_feedback_sources": [
+          "s1318",
+          "s1361",
+          "s1317"
+        ],
+        "losses": 1,
+        "note": "T-shirt sizes are stored in member.t_shirt_size with values Small, Medium, Large, and X-Large, where the extra large size is the code 'X-Large'.",
+        "origin": "s1424",
+        "sql": "member.t_shirt_size = 'X-Large'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:hometown-city",
+      "type": "MEANS",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {
+        "_feedback_sources": [
+          "s1353",
+          "s1314",
+          "s1413",
+          "s1461"
+        ],
+        "losses": 0,
+        "note": "A member's hometown city and state are looked up by joining member.zip to zip_code.zip_code and filtering zip_code.city.",
+        "origin": "s1383",
+        "sql": "member.zip = zip_code.zip_code AND zip_code.city",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:expense-incurred-by-member",
+      "type": "MEANS",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {
+        "losses": 0,
+        "note": "expense.link_to_member holds the member_id of the member who incurred the expense, so it is the join key to member.",
+        "origin": "s1410",
+        "sql": "expense.link_to_member = member.member_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:member-full-name",
+      "type": "MEANS",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {
+        "_feedback_sources": [
+          "s1374",
+          "s1452",
+          "s1420",
+          "s1329",
+          "s1368",
+          "s1321",
+          "s1353",
+          "s1411"
+        ],
+        "losses": 0,
+        "note": "A member's full name is the concatenation of member.first_name and member.last_name, which are stored as separate columns.",
+        "origin": "s1384",
+        "sql": "member.first_name || ' ' || member.last_name",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:hometown-city",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {
+        "_feedback_sources": [
+          "s1458"
+        ],
+        "losses": 0,
+        "note": "A member's city comes from zip_code.city, reached by matching member.zip to zip_code.zip_code.",
+        "origin": "s1450",
+        "sql": "zip_code.city",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:cost-linked-to-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {
+        "losses": 0,
+        "note": "Expense amounts reach an event only through the budget row: budget.link_to_event points to event.event_id and expense.link_to_budget points to budget.budget_id.",
+        "origin": "s1390",
+        "sql": "event.event_id = budget.link_to_event AND budget.budget_id = expense.link_to_budget",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:expenses-of-a-budget",
+      "type": "MEANS",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {
+        "_feedback_sources": [
+          "s1465",
+          "s1418",
+          "s1431",
+          "s1318",
+          "s1361",
+          "s1360",
+          "s1369",
+          "s1411"
+        ],
+        "losses": 2,
+        "note": "Expense rows belong to a budget through expense.link_to_budget, which references budget.budget_id.",
+        "origin": "s1365",
+        "sql": "expense.link_to_budget = budget.budget_id",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:major-in-a-field",
+      "type": "MEANS",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {
+        "_feedback_sources": [
+          "s1368",
+          "s1375",
+          "s1363",
+          "s1328",
+          "s1314",
+          "s1461",
+          "s1415"
+        ],
+        "losses": 0,
+        "note": "A major is stored as an exact full program name in major.major_name, so use equality rather than a LIKE pattern that could match other programs.",
+        "origin": "s1439",
+        "sql": "major.major_name = 'Business'",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:member-full-name",
+      "type": "MEANS",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {
+        "_feedback_sources": [
+          "s1346",
+          "s1361",
+          "s1357",
+          "s1328"
+        ],
+        "losses": 0,
+        "note": "A member's full name is the concatenation of member.first_name and member.last_name, which are stored as separate columns.",
+        "origin": "s1384",
+        "sql": "member.first_name || ' ' || member.last_name",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:income-amount",
+      "type": "MEANS",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {
+        "_feedback_sources": [
+          "s1452",
+          "s1405",
+          "s1331",
+          "s1332",
+          "s1460",
+          "s1462"
+        ],
+        "losses": 3,
+        "note": "Questions asking how much income a member generated want the income.amount value (stored in dollars), not a count of income rows.",
+        "origin": "s1384",
+        "sql": "income.amount",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:county-of-a-zip-code",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {
+        "_feedback_sources": [
+          "s1430",
+          "s1362",
+          "s1431",
+          "s1420",
+          "s1361",
+          "s1383",
+          "s1469",
+          "s1329",
+          "s1358",
+          "s1353",
+          "s1413"
+        ],
+        "losses": 4,
+        "note": "The county a ZIP pertains to is stored in zip_code.county, even when phrased as \"country\" in the request.",
+        "origin": "s1434",
+        "sql": "zip_code.county",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:post-office-boxes",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.type-e02339",
+      "properties": {
+        "_feedback_sources": [
+          "s1412",
+          "s1353",
+          "s1367",
+          "s1411",
+          "s1435",
+          "s1350"
+        ],
+        "losses": 0,
+        "note": "In the zip_code table, type = 'PO Box' marks ZIP codes that serve post office boxes, distinct from 'Standard' and 'Unique'.",
+        "origin": "s1434",
+        "sql": "zip_code.type = 'PO Box'",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:student-full-name",
+      "type": "MEANS",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {
+        "losses": 0,
+        "note": "A member's full name is returned as the two separate columns member.first_name and member.last_name, not as a concatenated string.",
+        "origin": "s1469",
+        "sql": "member.first_name, member.last_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:approved-for-an-event",
+      "type": "MEANS",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {
+        "losses": 0,
+        "note": "'Approved for an event' means the expense is attached to that event's budget via the budget link, not the expense.approved flag, which should only be filtered when the question explicitly asks for approved expenses.",
+        "origin": "s1404",
+        "sql": "expense.link_to_budget = budget.budget_id AND budget.link_to_event = event.event_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:post-office-box-zip-code",
+      "type": "MEANS",
+      "to_entity": "column:zip-code.type-e02339",
+      "properties": {
+        "_feedback_sources": [
+          "s1413"
+        ],
+        "losses": 0,
+        "note": "zip_code.type stores the kind of ZIP code with the fixed value 'PO Box' meaning the ZIP serves post office boxes (other values: 'Standard', 'Unique').",
+        "origin": "s1433",
+        "sql": "zip_code.type = 'PO Box'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:full-name",
+      "type": "MEANS",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {
+        "losses": 0,
+        "note": "A member's full name is their first_name and last_name stored in the member table, combined with a single space.",
+        "origin": "s1334",
+        "sql": "member.first_name || ' ' || member.last_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1430",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1331",
+      "type": "TOUCHES",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1389",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1462",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1317",
+      "type": "TOUCHES",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1420",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1454",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1439",
+      "type": "TOUCHES",
+      "to_entity": "column:major.college-f61fb0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1434",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.type-e02339",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1317",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1430",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1389",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1460",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1367",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1331",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1358",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1384",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1360",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1362",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1459",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1328",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1324",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-date-495dc4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1365",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1318",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1417",
+      "type": "TOUCHES",
+      "to_entity": "column:event.type-3597e3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1412",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1454",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1454",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1358",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1420",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1410",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1314",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1369",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1375",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1333",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1329",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:event.status-342ba5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1461",
+      "type": "TOUCHES",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1454",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1334",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1398",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1315",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1358",
+      "type": "TOUCHES",
+      "to_entity": "column:income.source-79b16f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1357",
+      "type": "TOUCHES",
+      "to_entity": "column:income.date-received-71c87d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1454",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1390",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1384",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1333",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1458",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-date-bd251e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1411",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1430",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1332",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1454",
+      "type": "TOUCHES",
+      "to_entity": "column:event.type-3597e3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1353",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.type-e02339",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1458",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:major.department-65d405",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1410",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1384",
+      "type": "TOUCHES",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1369",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1459",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1348",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1365",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-date-495dc4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1424",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1316",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1375",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1375",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1405",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1328",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1342",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1390",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1316",
+      "type": "TOUCHES",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1362",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1335",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.spent-09ff4b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1360",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1434",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1390",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1447",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1447",
+      "type": "TOUCHES",
+      "to_entity": "column:event.location-9808fd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1375",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1317",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1383",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1329",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1318",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1318",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1412",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1374",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1410",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1335",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-date-495dc4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1357",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1392",
+      "type": "TOUCHES",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1415",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1413",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1465",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1422",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1331",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1420",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1315",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1326",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1460",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1374",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1316",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1373",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1368",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1363",
+      "type": "TOUCHES",
+      "to_entity": "column:major.college-f61fb0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1390",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1415",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1392",
+      "type": "TOUCHES",
+      "to_entity": "column:income.date-received-71c87d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1389",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1334",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1422",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1417",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1452",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1332",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.spent-09ff4b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1346",
+      "type": "TOUCHES",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1375",
+      "type": "TOUCHES",
+      "to_entity": "column:major.department-65d405",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1374",
+      "type": "TOUCHES",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1460",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1461",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1439",
+      "type": "TOUCHES",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1398",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.spent-09ff4b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1329",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1465",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1459",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1430",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-date-bd251e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1383",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1383",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1315",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1383",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1365",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.remaining-3172eb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1361",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1316",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1357",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1412",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1317",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1314",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1462",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:event.type-3597e3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1335",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1353",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1461",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1328",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1348",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1411",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1334",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1447",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1360",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1447",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.spent-09ff4b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1362",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1435",
+      "type": "TOUCHES",
+      "to_entity": "column:event.status-342ba5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1390",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1367",
+      "type": "TOUCHES",
+      "to_entity": "column:major.college-f61fb0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1367",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1462",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1389",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1460",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1459",
+      "type": "TOUCHES",
+      "to_entity": "column:major.department-65d405",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1413",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1447",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1346",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:event.status-342ba5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1314",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1415",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1398",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1314",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1439",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1418",
+      "type": "TOUCHES",
+      "to_entity": "column:event.location-9808fd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:event.type-3597e3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1335",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-date-bd251e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1368",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1439",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1462",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1430",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1411",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1413",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1424",
+      "type": "TOUCHES",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1405",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1332",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-date-495dc4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1417",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.remaining-3172eb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1367",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1357",
+      "type": "TOUCHES",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1452",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1391",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1398",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1335",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1348",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1411",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1324",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1435",
+      "type": "TOUCHES",
+      "to_entity": "column:event.type-3597e3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1314",
+      "type": "TOUCHES",
+      "to_entity": "column:major.department-65d405",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1439",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1348",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1433",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1422",
+      "type": "TOUCHES",
+      "to_entity": "column:event.location-9808fd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1433",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.type-e02339",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1334",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1435",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1384",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1458",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1324",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1418",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1334",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1424",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1402",
+      "type": "TOUCHES",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1369",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1430",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1358",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1361",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1410",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1447",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-event-235b50",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1333",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1459",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1434",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1458",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1357",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1358",
+      "type": "TOUCHES",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1328",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-member-2e0b0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1413",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1389",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1329",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1329",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1452",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1435",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-date-495dc4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1335",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1326",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1434",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1331",
+      "type": "TOUCHES",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1411",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.county-a2f180",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1460",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1369",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1404",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1405",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1465",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1417",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1389",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1326",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1357",
+      "type": "TOUCHES",
+      "to_entity": "column:income.source-79b16f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1342",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-date-bd251e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1346",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1373",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1465",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.budget-id-860623",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1422",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1462",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1353",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1348",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.spent-09ff4b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.city-37b769",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1459",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1332",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1324",
+      "type": "TOUCHES",
+      "to_entity": "column:event.type-3597e3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1412",
+      "type": "TOUCHES",
+      "to_entity": "column:member.t-shirt-size-e7e1ce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1387",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1353",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1317",
+      "type": "TOUCHES",
+      "to_entity": "column:attendance.link-to-member-96f79b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1451",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1360",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1339",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1368",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:income.date-received-71c87d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1383",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.state-691f17",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1317",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1353",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1410",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1464",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1405",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1363",
+      "type": "TOUCHES",
+      "to_entity": "column:major.department-65d405",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1360",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1460",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1390",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1405",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1418",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1431",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1333",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1333",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1332",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1418",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.category-f6a427",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1373",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1452",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.cost-317259",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1332",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.link-to-event-33edbe",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1420",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1342",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1428",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-name-3ad672",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1321",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1368",
+      "type": "TOUCHES",
+      "to_entity": "column:member.phone-e01d58",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1461",
+      "type": "TOUCHES",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1429",
+      "type": "TOUCHES",
+      "to_entity": "column:event.location-9808fd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1469",
+      "type": "TOUCHES",
+      "to_entity": "column:member.last-name-e2f129",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1316",
+      "type": "TOUCHES",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1384",
+      "type": "TOUCHES",
+      "to_entity": "column:income.link-to-member-4aab19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1450",
+      "type": "TOUCHES",
+      "to_entity": "column:income.amount-2677aa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1365",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1316",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1358",
+      "type": "TOUCHES",
+      "to_entity": "column:income.date-received-71c87d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1398",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1315",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-name-2af5b8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1327",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1413",
+      "type": "TOUCHES",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1364",
+      "type": "TOUCHES",
+      "to_entity": "column:member.first-name-cdd2a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1461",
+      "type": "TOUCHES",
+      "to_entity": "column:major.major-id-8ab686",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:expense.expense-description-23341a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1383",
+      "type": "TOUCHES",
+      "to_entity": "column:member.zip-f21460",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1399",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1392",
+      "type": "TOUCHES",
+      "to_entity": "column:income.source-79b16f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1415",
+      "type": "TOUCHES",
+      "to_entity": "column:member.position-1064c7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1403",
+      "type": "TOUCHES",
+      "to_entity": "column:budget.amount-c6d358",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1350",
+      "type": "TOUCHES",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:major.major-id-8ab686",
+      "type": "JOINS",
+      "to_entity": "column:member.link-to-major-7ab1ac",
+      "properties": {
+        "_win_sources": [
+          "s1459",
+          "s1326",
+          "s1428",
+          "s1420",
+          "s1439",
+          "s1368",
+          "s1375",
+          "s1328",
+          "s1314",
+          "s1367",
+          "s1461",
+          "s1415"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "column:budget.budget-id-860623",
+      "type": "JOINS",
+      "to_entity": "column:expense.link-to-budget-2f18f3",
+      "properties": {
+        "_win_sources": [
+          "s1339",
+          "s1403",
+          "s1387",
+          "s1365",
+          "s1454",
+          "s1465",
+          "s1389",
+          "s1390",
+          "s1350",
+          "s1404",
+          "s1451"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "column:income.link-to-member-4aab19",
+      "type": "JOINS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "_win_sources": [
+          "s1384",
+          "s1331",
+          "s1464",
+          "s1358",
+          "s1357",
+          "s1450"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "column:member.zip-f21460",
+      "type": "JOINS",
+      "to_entity": "column:zip-code.zip-code-162b6e",
+      "properties": {
+        "_win_sources": [
+          "s1333",
+          "s1428",
+          "s1383",
+          "s1334",
+          "s1469",
+          "s1373",
+          "s1329",
+          "s1458",
+          "s1353",
+          "s1413",
+          "s1364",
+          "s1450"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "column:budget.link-to-event-33edbe",
+      "type": "JOINS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "_win_sources": [
+          "s1339",
+          "s1387",
+          "s1422",
+          "s1454",
+          "s1418",
+          "s1405",
+          "s1332",
+          "s1398",
+          "s1389",
+          "s1462",
+          "s1360",
+          "s1348",
+          "s1369",
+          "s1390",
+          "s1335",
+          "s1417",
+          "s1447",
+          "s1350",
+          "s1404",
+          "s1451"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "column:expense.link-to-member-2e0b0d",
+      "type": "JOINS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "_win_sources": [
+          "s1339",
+          "s1387",
+          "s1430",
+          "s1412",
+          "s1452",
+          "s1460",
+          "s1410",
+          "s1413",
+          "s1411",
+          "s1451"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "column:attendance.link-to-event-235b50",
+      "type": "JOINS",
+      "to_entity": "column:event.event-id-863432",
+      "properties": {
+        "_win_sources": [
+          "s1324",
+          "s1431",
+          "s1318",
+          "s1315",
+          "s1399",
+          "s1464",
+          "s1321",
+          "s1317",
+          "s1316",
+          "s1327",
+          "s1429"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "column:attendance.link-to-member-96f79b",
+      "type": "JOINS",
+      "to_entity": "column:member.member-id-8133db",
+      "properties": {
+        "_win_sources": [
+          "s1374",
+          "s1431",
+          "s1399",
+          "s1464",
+          "s1321",
+          "s1317",
+          "s1316",
+          "s1327",
+          "s1429"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 9
+      }
+    }
+  ]
+}

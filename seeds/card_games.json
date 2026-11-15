@@ -1,0 +1,6002 @@
+{
+  "entities": [
+    {
+      "id": "column:cards.artist-400780",
+      "type": "Column",
+      "name": "cards.artist",
+      "properties": {
+        "profile": "{\"distinct\": 991, \"nulls\": 3, \"top\": [\"John Avon\", \"Kev Walker\", \"Dan Frazier\", \"Mark Tedin\", \"Greg Staples\", \"Mark Poole\", \"Anson Maddocks\", \"Rob Alexander\", \"Douglas Shuler\", \"Pete Venters\", \"Dan Scott\", \"Svetlin Velinov\", \"Christopher Moeller\", \"Daarken\", \"Carl Critchlow\", \"Ron Spencer\", \"Adam Paquette\", \"Terese Nielsen\", \"Chris Rahn\", \"Christopher Rush\", \"Mark Zug\", \"Steven Belledin\", \"Jesper Myrfors\", \"Heather Hudson\", \"Matt Cavotta\"]}"
+      }
+    },
+    {
+      "id": "column:cards.availability-9ee9a1",
+      "type": "Column",
+      "name": "cards.availability",
+      "properties": {
+        "profile": "{\"distinct\": 9, \"nulls\": 1, \"top\": [\"mtgo,paper\", \"paper\", \"arena,mtgo,paper\", \"mtgo\", \"arena\", \"arena,paper\", \"arena,mtgo\", \"shandalar\", \"dreamcast\", null]}"
+      }
+    },
+    {
+      "id": "column:cards.bordercolor-46ea80",
+      "type": "Column",
+      "name": "cards.borderColor",
+      "properties": {
+        "profile": "{\"distinct\": 5, \"nulls\": 0, \"top\": [\"black\", \"white\", \"gold\", \"silver\", \"borderless\"]}"
+      }
+    },
+    {
+      "id": "column:cards.cardkingdomfoilid-7e05d4",
+      "type": "Column",
+      "name": "cards.cardKingdomFoilId",
+      "properties": {
+        "profile": "{\"distinct\": 28912, \"nulls\": 27910, \"top\": [null, \"73290\", \"73289\", \"73288\", \"73287\", \"73286\", \"73285\", \"73284\", \"73283\", \"73282\", \"73281\", \"73280\", \"73279\", \"73278\", \"73277\", \"73276\", \"73275\", \"73274\", \"73273\", \"73272\", \"73271\", \"73270\", \"73269\", \"73268\", \"73267\"]}"
+      }
+    },
+    {
+      "id": "column:cards.cardkingdomid-397af7",
+      "type": "Column",
+      "name": "cards.cardKingdomId",
+      "properties": {
+        "profile": "{\"distinct\": 43200, \"nulls\": 13622, \"top\": [null, \"72285\", \"72284\", \"72283\", \"72282\", \"72281\", \"72280\", \"72279\", \"72278\", \"72277\", \"72276\", \"72275\", \"72274\", \"72273\", \"72272\", \"72271\", \"72270\", \"72269\", \"72268\", \"72267\", \"72266\", \"72265\", \"72264\", \"72263\", \"72262\"]}"
+      }
+    },
+    {
+      "id": "column:cards.convertedmanacost-8f35d0",
+      "type": "Column",
+      "name": "cards.convertedManaCost",
+      "properties": {
+        "profile": "{\"distinct\": 19, \"nulls\": 0, \"top\": [3.0, 2.0, 4.0, 0.0, 1.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 15.0, 13.0, 16.0, 1000000.0, 14.0, 0.5]}"
+      }
+    },
+    {
+      "id": "column:cards.dueldeck-beeb1c",
+      "type": "Column",
+      "name": "cards.duelDeck",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 55228, \"top\": [null, \"a\", \"b\"]}"
+      }
+    },
+    {
+      "id": "column:cards.edhrecrank-8e65fb",
+      "type": "Column",
+      "name": "cards.edhrecRank",
+      "properties": {
+        "profile": "{\"distinct\": 20660, \"nulls\": 4761, \"top\": [null, 808, 5084, 17, 6228, 47, 14, 172, 138, 8, 2659, 624, 12, 6221, 11649, 3194, 58, 1, 10157, 9965, 2732, 11181, 8101, 2956, 2091]}"
+      }
+    },
+    {
+      "id": "column:cards.frameeffects-d02a7b",
+      "type": "Column",
+      "name": "cards.frameEffects",
+      "properties": {
+        "profile": "{\"distinct\": 36, \"nulls\": 53864, \"top\": [null, \"legendary\", \"extendedart\", \"nyxtouched\", \"sunmoondfc\", \"showcase\", \"devoid\", \"tombstone\", \"compasslanddfc\", \"legendary,etched\", \"legendary,extendedart\", \"showcase,legendary\", \"nyxtouched,legendary\", \"inverted\", \"colorshifted\", \"snow\", \"originpwdfc\", \"etched,legendary\", \"mooneldrazidfc\", \"miracle\", \"draft\", \"nyxtouched,showcase,legendary\", \"extendedart,legendary\", \"companion,legendary\", \"companion,legendary,extendedart\"]}"
+      }
+    },
+    {
+      "id": "column:cards.frameversion-9b04da",
+      "type": "Column",
+      "name": "cards.frameVersion",
+      "properties": {
+        "profile": "{\"distinct\": 5, \"nulls\": 0, \"top\": [\"2015\", \"2003\", \"1997\", \"1993\", \"future\"]}"
+      }
+    },
+    {
+      "id": "column:cards.hasfoil-e9cf5f",
+      "type": "Column",
+      "name": "cards.hasFoil",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [1, 0]}"
+      }
+    },
+    {
+      "id": "column:cards.id-14a69d",
+      "type": "Column",
+      "name": "cards.id",
+      "properties": {
+        "profile": "{\"distinct\": 56822, \"nulls\": 0, \"top\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}"
+      }
+    },
+    {
+      "id": "column:cards.isfullart-8976d7",
+      "type": "Column",
+      "name": "cards.isFullArt",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [0, 1]}"
+      }
+    },
+    {
+      "id": "column:cards.isstarter-80b749",
+      "type": "Column",
+      "name": "cards.isStarter",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [0, 1]}"
+      }
+    },
+    {
+      "id": "column:cards.name-92f925",
+      "type": "Column",
+      "name": "cards.name",
+      "properties": {
+        "profile": "{\"distinct\": 21738, \"nulls\": 0, \"top\": [\"Forest\", \"Swamp\", \"Island\", \"Mountain\", \"Plains\", \"Disenchant\", \"Giant Growth\", \"Counterspell\", \"Serra Angel\", \"Llanowar Elves\", \"Swords to Plowshares\", \"Wrath of God\", \"Evolving Wilds\", \"Dark Ritual\", \"Terramorphic Expanse\", \"Lightning Bolt\", \"Fireball\", \"Shivan Dragon\", \"Sol Ring\", \"Pacifism\", \"Birds of Paradise\", \"Air Elemental\", \"Unsummon\", \"Sengir Vampire\", \"Giant Spider\"]}"
+      }
+    },
+    {
+      "id": "column:cards.number-380393",
+      "type": "Column",
+      "name": "cards.number",
+      "properties": {
+        "profile": "{\"distinct\": 6621, \"nulls\": 0, \"top\": [\"1\", \"2\", \"3\", \"5\", \"4\", \"6\", \"7\", \"8\", \"9\", \"11\", \"10\", \"12\", \"14\", \"13\", \"15\", \"19\", \"16\", \"18\", \"20\", \"17\", \"26\", \"29\", \"25\", \"24\", \"23\"]}"
+      }
+    },
+    {
+      "id": "column:cards.originalreleasedate-aae401",
+      "type": "Column",
+      "name": "cards.originalReleaseDate",
+      "properties": {
+        "profile": "{\"distinct\": 383, \"nulls\": 54757, \"top\": [null, \"2014/10/17\", \"2013/1/11\", \"2018/12/6\", \"2017/5/31\", \"2010/11/4\", \"2017/6/17\", \"2021/2/5\", \"2015/12/29\", \"2015/3/30\", \"2003/12/31\", \"2019/5/10\", \"2019/10/6\", \"2016/11/23\", \"2020/11/30\", \"2020/7/4\", \"2020/2/18\", \"2021/2/12\", \"2020/2/14\", \"2020/3/12\", \"2018/7/11\", \"2019/7/13\", \"2013/4/9\", \"2018/9/28\", \"2021/3/5\"]}"
+      }
+    },
+    {
+      "id": "column:cards.originaltype-05c20b",
+      "type": "Column",
+      "name": "cards.originalType",
+      "properties": {
+        "profile": "{\"distinct\": 2992, \"nulls\": 14766, \"top\": [null, \"Instant\", \"Sorcery\", \"Land\", \"Enchantment\", \"Artifact\", \"Enchantment — Aura\", \"Enchant Creature\", \"Artifact — Equipment\", \"Creature — Elemental\", \"Creature — Human Wizard\", \"Creature — Human Soldier\", \"Basic Land — Forest\", \"Basic Land — Swamp\", \"Basic Land — Mountain\", \"Basic Land — Plains\", \"Basic Land — Island\", \"Creature — Beast\", \"Artifact Creature\", \"Enchantment - Aura\", \"Creature - Beast\", \"Creature — Angel\", \"Creature — Dragon\", \"Creature — Spirit\", \"Creature — Human Warrior\"]}"
+      }
+    },
+    {
+      "id": "column:cards.rarity-855cf2",
+      "type": "Column",
+      "name": "cards.rarity",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [\"common\", \"rare\", \"uncommon\", \"mythic\"]}"
+      }
+    },
+    {
+      "id": "column:cards.setcode-ff4a6d",
+      "type": "Column",
+      "name": "cards.setCode",
+      "properties": {
+        "profile": "{\"distinct\": 536, \"nulls\": 0, \"top\": [\"MB1\", \"PRM\", \"PSAL\", \"CMR\", \"10E\", \"JMP\", \"5ED\", \"ELD\", \"ZNR\", \"KHM\", \"M21\", \"IKO\", \"2XM\", \"ICE\", \"4ED\", \"4BB\", \"AKR\", \"8ED\", \"9ED\", \"THB\", \"C13\", \"USG\", \"PLIST\", \"INV\", \"7ED\"]}"
+      }
+    },
+    {
+      "id": "column:cards.subtypes-597bb4",
+      "type": "Column",
+      "name": "cards.subtypes",
+      "properties": {
+        "profile": "{\"distinct\": 1505, \"nulls\": 22228, \"top\": [null, \"Aura\", \"Human,Wizard\", \"Elemental\", \"Human,Soldier\", \"Forest\", \"Swamp\", \"Island\", \"Mountain\", \"Spirit\", \"Equipment\", \"Plains\", \"Beast\", \"Dragon\", \"Angel\", \"Human,Cleric\", \"Human,Knight\", \"Zombie\", \"Human,Warrior\", \"Construct\", \"Bird\", \"Wall\", \"Goblin\", \"Golem\", \"Shapeshifter\"]}"
+      }
+    },
+    {
+      "id": "column:cards.supertypes-b9225a",
+      "type": "Column",
+      "name": "cards.supertypes",
+      "properties": {
+        "profile": "{\"distinct\": 8, \"nulls\": 48982, \"top\": [null, \"Legendary\", \"Basic\", \"Snow\", \"World\", \"Basic,Snow\", \"Host\", \"Legendary,Snow\", \"Ongoing\"]}"
+      }
+    },
+    {
+      "id": "column:cards.watermark-67f11d",
+      "type": "Column",
+      "name": "cards.watermark",
+      "properties": {
+        "profile": "{\"distinct\": 161, \"nulls\": 52373, \"top\": [null, \"mirran\", \"phyrexian\", \"golgari\", \"dimir\", \"izzet\", \"set\", \"selesnya\", \"boros\", \"simic\", \"wotc\", \"rakdos\", \"azorius\", \"gruul\", \"orzhov\", \"planeswalker\", \"fnm\", \"sultai\", \"abzan\", \"temur\", \"dci\", \"jeskai\", \"mardu\", \"foretell\", \"dromoka\"]}"
+      }
+    },
+    {
+      "id": "column:foreign-data.language-0ebbb8",
+      "type": "Column",
+      "name": "foreign_data.language",
+      "properties": {
+        "profile": "{\"distinct\": 16, \"nulls\": 0, \"top\": [\"Japanese\", \"French\", \"German\", \"Italian\", \"Spanish\", \"Portuguese (Brazil)\", \"Chinese Simplified\", \"Russian\", \"Chinese Traditional\", \"Korean\", \"Phyrexian\", \"Sanskrit\", \"Latin\", \"Hebrew\", \"Arabic\", \"Ancient Greek\"]}"
+      }
+    },
+    {
+      "id": "column:legalities.status-cab6b4",
+      "type": "Column",
+      "name": "legalities.status",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 0, \"top\": [\"Legal\", \"Banned\", \"Restricted\"]}"
+      }
+    },
+    {
+      "id": "column:set-translations.id-72f7cb",
+      "type": "Column",
+      "name": "set_translations.id",
+      "properties": {
+        "profile": "{\"distinct\": 1210, \"nulls\": 0, \"top\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}"
+      }
+    },
+    {
+      "id": "column:set-translations.language-e5b31a",
+      "type": "Column",
+      "name": "set_translations.language",
+      "properties": {
+        "profile": "{\"distinct\": 10, \"nulls\": 0, \"top\": [\"Spanish\", \"Russian\", \"Portuguese (Brazil)\", \"Korean\", \"Japanese\", \"Italian\", \"German\", \"French\", \"Chinese Traditional\", \"Chinese Simplified\"]}"
+      }
+    },
+    {
+      "id": "column:set-translations.setcode-514e40",
+      "type": "Column",
+      "name": "set_translations.setCode",
+      "properties": {
+        "profile": "{\"distinct\": 121, \"nulls\": 0, \"top\": [\"WTH\", \"WAR\", \"V16\", \"V15\", \"V14\", \"V13\", \"V12\", \"V11\", \"V10\", \"V09\", \"USG\", \"ULG\", \"UDS\", \"TSP\", \"TPR\", \"TOR\", \"TMP\", \"THS\", \"THB\", \"STH\", \"SOK\", \"SOI\", \"SHM\", \"SCG\", \"RTR\"]}"
+      }
+    },
+    {
+      "id": "column:set-translations.translation-5a4169",
+      "type": "Column",
+      "name": "set_translations.translation",
+      "properties": {
+        "profile": "{\"distinct\": 504, \"nulls\": 231, \"top\": [null, \"Venser vs. Koth\", \"Tempest Remastered\", \"Speed vs. Cunning\", \"Sorin vs. Tibalt\", \"Premium Deck Series: Fire & Lightning\", \"Planechase Anthology\", \"Planechase (2012 Edition)\", \"Phyrexia vs. The Coalition\", \"Modern Masters 2015 Edition\", \"Modern Masters\", \"Magic: the Gathering Commander\", \"Knights vs. Dragons\", \"Jace vs. Vraska\", \"Jace vs. Chandra\", \"Izzet vs. Golgari\", \"Heroes vs. Monsters\", \"Garruk vs. Liliana\", \"From the Vault: Angels\", \"From The Vault: Twenty\", \"From The Vault: Relics\", \"From The Vault: Realms\", \"From The Vault: Lore\", \"From The Vault: Legends\", \"From The Vault: Exiled\"]}"
+      }
+    },
+    {
+      "id": "column:sets.code-aa5863",
+      "type": "Column",
+      "name": "sets.code",
+      "properties": {
+        "profile": "{\"distinct\": 551, \"nulls\": 0, \"top\": [\"10E\", \"2ED\", \"2XM\", \"3ED\", \"4BB\", \"4ED\", \"5DN\", \"5ED\", \"6ED\", \"7ED\", \"8ED\", \"9ED\", \"A25\", \"AER\", \"AJMP\", \"AKH\", \"AKR\", \"ALA\", \"ALL\", \"AMH1\", \"ANA\", \"ANB\", \"APC\", \"ARB\", \"ARC\"]}"
+      }
+    },
+    {
+      "id": "column:sets.id-8db305",
+      "type": "Column",
+      "name": "sets.id",
+      "properties": {
+        "profile": "{\"distinct\": 551, \"nulls\": 0, \"top\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}"
+      }
+    },
+    {
+      "id": "column:sets.name-5b30f7",
+      "type": "Column",
+      "name": "sets.name",
+      "properties": {
+        "profile": "{\"distinct\": 551, \"nulls\": 0, \"top\": [\"Zendikar Rising Substitute Cards\", \"Zendikar Rising Promos\", \"Zendikar Rising Minigames\", \"Zendikar Rising Expeditions\", \"Zendikar Rising Commander\", \"Zendikar Rising Art Series\", \"Zendikar Rising\", \"Zendikar Promos\", \"Zendikar Expeditions\", \"Zendikar\", \"XLN Treasure Chest\", \"XLN Standard Showdown\", \"Worldwake Promos\", \"Worldwake\", \"World Magic Cup Qualifiers\", \"World Championship Promos\", \"World Championship Decks 2004\", \"World Championship Decks 2003\", \"World Championship Decks 2002\", \"World Championship Decks 2001\", \"World Championship Decks 2000\", \"World Championship Decks 1999\", \"World Championship Decks 1998\", \"World Championship Decks 1997\", \"Wizards of the Coast Online Store\"]}"
+      }
+    },
+    {
+      "id": "example:s342",
+      "type": "Example",
+      "name": "List the card names with value that cost more converted mana for the face.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s342",
+        "learning_complete": true,
+        "sql": "SELECT name FROM cards ORDER BY faceConvertedManaCost LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s343",
+      "type": "Example",
+      "name": "Name all cards with 2015 frame style ranking below 100 on EDHRec.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "edhrecRank"
+          ],
+          [
+            "cards",
+            "frameVersion"
+          ]
+        ],
+        "key": "s343",
+        "learning_complete": true,
+        "sql": "SELECT id FROM cards WHERE edhrecRank < 100 AND frameVersion = 2015"
+      }
+    },
+    {
+      "id": "example:s346",
+      "type": "Example",
+      "name": "List all the card id and artist with unknown power which are legal for commander play format.",
+      "aliases": [],
+      "properties": {
+        "key": "s346",
+        "learning_complete": true,
+        "sql": "SELECT T1.id, T1.artist\nFROM cards AS T1\nINNER JOIN legalities AS T2 ON T2.uuid = T1.uuid\nWHERE (T1.power = '*' OR T1.power IS NULL)\n  AND T2.format = 'commander'\n  AND T2.status = 'Legal'"
+      }
+    },
+    {
+      "id": "example:s347",
+      "type": "Example",
+      "name": "Find all cards illustrated by Stephen Daniel and describe the text of the ruling of these cards. State if these cards have missing or degraded properties and values.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s347",
+        "learning_complete": true,
+        "sql": "SELECT T1.id, T2.text, T1.hasContentWarning FROM cards AS T1 INNER JOIN rulings AS T2 ON T1.uuid = T2.uuid WHERE T1.artist = 'Stephen Daniele'"
+      }
+    },
+    {
+      "id": "example:s348",
+      "type": "Example",
+      "name": "Describe the information about rulings for card named 'Sublime Epiphany' with number 74s.",
+      "aliases": [],
+      "properties": {
+        "key": "s348",
+        "learning_complete": true,
+        "sql": "-- The ruling text for the card 'Sublime Epiphany' (card number 74...)\nSELECT r.text\nFROM rulings AS r\nINNER JOIN cards AS c ON c.uuid = r.uuid\nWHERE c.name = 'Sublime Epiphany' AND c.number LIKE '74%'"
+      }
+    },
+    {
+      "id": "example:s350",
+      "type": "Example",
+      "name": "State the alternative languages available for card named Annul numbered 29.",
+      "aliases": [],
+      "properties": {
+        "key": "s350",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.language\nFROM cards AS T1\nINNER JOIN foreign_data AS T2\n    ON T1.uuid = T2.uuid\nWHERE T1.name = 'Annul'\n  AND T1.number = '29'"
+      }
+    },
+    {
+      "id": "example:s353",
+      "type": "Example",
+      "name": "List all the sets available in Italian translation. State the total number of cards per set.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s353",
+        "learning_complete": true,
+        "sql": "SELECT T1.name, T1.totalSetSize FROM sets AS T1 INNER JOIN set_translations AS T2 ON T1.code = T2.setCode WHERE T2.language = 'Italian'"
+      }
+    },
+    {
+      "id": "example:s355",
+      "type": "Example",
+      "name": "What is the keyword found on card 'Angel of Mercy'?",
+      "aliases": [],
+      "properties": {
+        "key": "s355",
+        "learning_complete": true,
+        "sql": "SELECT keywords FROM cards WHERE name = 'Angel of Mercy'"
+      }
+    },
+    {
+      "id": "example:s358",
+      "type": "Example",
+      "name": "What is the border color of card \"Ancestor's Chosen\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s358",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT borderColor\nFROM cards\nWHERE name = 'Ancestor''s Chosen'"
+      }
+    },
+    {
+      "id": "example:s362",
+      "type": "Example",
+      "name": "What is the description about the ruling of card \"Condemn\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s362",
+        "learning_complete": true,
+        "sql": "-- The ruling text for the card 'Condemn'\nSELECT r.text\nFROM rulings AS r\nINNER JOIN cards AS c ON c.uuid = r.uuid\nWHERE c.name = 'Condemn'"
+      }
+    },
+    {
+      "id": "example:s363",
+      "type": "Example",
+      "name": "How many cards of legalities whose status is restricted are found in a starter deck?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "isStarter"
+          ],
+          [
+            "legalities",
+            "status"
+          ]
+        ],
+        "key": "s363",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.id) FROM cards AS T1 INNER JOIN legalities AS T2 ON T1.uuid = T2.uuid WHERE T2.status = 'Restricted' AND T1.isStarter = 1"
+      }
+    },
+    {
+      "id": "example:s368",
+      "type": "Example",
+      "name": "What is the percentage of borderless cards?",
+      "aliases": [],
+      "properties": {
+        "key": "s368",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN borderColor = 'borderless' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(id) AS percentage_borderless\nFROM cards"
+      }
+    },
+    {
+      "id": "example:s369",
+      "type": "Example",
+      "name": "How many cards that illusrtated in German have been reprinted?",
+      "aliases": [],
+      "properties": {
+        "key": "s369",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.id) AS num_cards\nFROM cards AS T1\nINNER JOIN foreign_data AS T2 ON T1.uuid = T2.uuid\nWHERE T2.language = 'German' AND T1.isReprint = 1"
+      }
+    },
+    {
+      "id": "example:s370",
+      "type": "Example",
+      "name": "How many borderless cards are illustrated in Russian?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "borderColor"
+          ],
+          [
+            "foreign_data",
+            "language"
+          ]
+        ],
+        "key": "s370",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id) FROM cards AS T1 INNER JOIN foreign_data AS T2 ON T1.uuid = T2.uuid WHERE T1.borderColor = 'borderless' AND T2.language = 'Russian'"
+      }
+    },
+    {
+      "id": "example:s372",
+      "type": "Example",
+      "name": "How many cards are there with toughness of 99?",
+      "aliases": [],
+      "properties": {
+        "key": "s372",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(cards.id) FROM cards WHERE cards.toughness = '99'"
+      }
+    },
+    {
+      "id": "example:s373",
+      "type": "Example",
+      "name": "Name the cards that were illustrated by Aaron Boyd.",
+      "aliases": [],
+      "properties": {
+        "key": "s373",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT name\nFROM cards\nWHERE artist = 'Aaron Boyd'"
+      }
+    },
+    {
+      "id": "example:s375",
+      "type": "Example",
+      "name": "List down all the card IDs with converted mana cost of 0.",
+      "aliases": [],
+      "properties": {
+        "key": "s375",
+        "learning_complete": true,
+        "sql": "SELECT id\nFROM cards\nWHERE convertedManaCost = 0"
+      }
+    },
+    {
+      "id": "example:s381",
+      "type": "Example",
+      "name": "List down the name of artists for cards in Chinese Simplified.",
+      "aliases": [],
+      "properties": {
+        "key": "s381",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.artist\nFROM cards AS T1\nINNER JOIN foreign_data AS T2 ON T1.uuid = T2.uuid\nWHERE T2.language = 'Chinese Simplified'"
+      }
+    },
+    {
+      "id": "example:s383",
+      "type": "Example",
+      "name": "How many of the banned cards are white border?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s383",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id) FROM cards AS T1 INNER JOIN legalities AS T2 ON T1.uuid = T2.uuid WHERE T2.status = 'Banned' AND T1.borderColor = 'white'"
+      }
+    },
+    {
+      "id": "example:s385",
+      "type": "Example",
+      "name": "Write down the ruling of Beacon of Immortality.",
+      "aliases": [],
+      "properties": {
+        "key": "s385",
+        "learning_complete": true,
+        "sql": "-- The ruling text for the card 'Beacon of Immortality'\nSELECT r.text\nFROM rulings AS r\nINNER JOIN cards AS c ON c.uuid = r.uuid\nWHERE c.name = 'Beacon of Immortality'"
+      }
+    },
+    {
+      "id": "example:s386",
+      "type": "Example",
+      "name": "How many cards are having future frame version and what are the legality status of these cards?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s386",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id) FROM cards AS T1 INNER JOIN legalities AS T2 ON T1.uuid = T2.uuid WHERE T1.frameVersion = 'future'"
+      }
+    },
+    {
+      "id": "example:s387",
+      "type": "Example",
+      "name": "What are the cards for set OGW? State the colour for these cards.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s387",
+        "learning_complete": true,
+        "sql": "SELECT id, colors FROM cards WHERE id IN ( SELECT id FROM set_translations WHERE setCode = 'OGW' )"
+      }
+    },
+    {
+      "id": "example:s388",
+      "type": "Example",
+      "name": "What are the cards in set 10E with converted mana of 5 have translation and what are the languages?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "convertedManaCost"
+          ],
+          [
+            "cards",
+            "id"
+          ]
+        ],
+        "key": "s388",
+        "learning_complete": true,
+        "sql": "SELECT id, language FROM set_translations WHERE id = ( SELECT id FROM cards WHERE convertedManaCost = 5 ) AND setCode = '10E'"
+      }
+    },
+    {
+      "id": "example:s389",
+      "type": "Example",
+      "name": "List down the name of cards with original types of Creature - Elf and the date of rulings for these cards.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "originalType"
+          ]
+        ],
+        "key": "s389",
+        "learning_complete": true,
+        "sql": "SELECT T1.id, T2.date FROM cards AS T1 INNER JOIN rulings AS T2 ON T1.uuid = T2.uuid WHERE T1.originalType = 'Creature - Elf'"
+      }
+    },
+    {
+      "id": "example:s393",
+      "type": "Example",
+      "name": "On how many cards designed by John Avon is its foil non-powerful?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "cardKingdomFoilId"
+          ],
+          [
+            "cards",
+            "cardKingdomId"
+          ]
+        ],
+        "key": "s393",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM cards WHERE (cardKingdomId IS NULL OR cardKingdomFoilId IS NULL) AND artist = 'John Avon'"
+      }
+    },
+    {
+      "id": "example:s395",
+      "type": "Example",
+      "name": "How many cards designed by UDON and available in mtgo print type has a starting maximum hand size of -1?",
+      "aliases": [],
+      "properties": {
+        "key": "s395",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(cards.id) AS card_count\nFROM cards\nWHERE cards.artist = 'UDON'\n  AND cards.availability = 'mtgo'\n  AND cards.hand = '-1'"
+      }
+    },
+    {
+      "id": "example:s396",
+      "type": "Example",
+      "name": "How many cards with a 1993 frame version and available on paper have a sensitive content warning?",
+      "aliases": [],
+      "properties": {
+        "key": "s396",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS card_count\nFROM cards\nWHERE frameVersion = '1993'\n  AND availability LIKE '%paper%'\n  AND hasContentWarning = 1"
+      }
+    },
+    {
+      "id": "example:s399",
+      "type": "Example",
+      "name": "Lists all types of cards available in arena.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "availability"
+          ],
+          [
+            "cards",
+            "subtypes"
+          ],
+          [
+            "cards",
+            "supertypes"
+          ]
+        ],
+        "key": "s399",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT subtypes, supertypes FROM cards WHERE availability = 'arena' AND subtypes IS NOT NULL AND supertypes IS NOT NULL"
+      }
+    },
+    {
+      "id": "example:s400",
+      "type": "Example",
+      "name": "Lists the set code of all cards translated into Spanish.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s400",
+        "learning_complete": true,
+        "sql": "SELECT setCode FROM set_translations WHERE language = 'Spanish'"
+      }
+    },
+    {
+      "id": "example:s401",
+      "type": "Example",
+      "name": "What percentage of legendary frame effect cards that are only available in online game variations?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "frameEffects"
+          ]
+        ],
+        "key": "s401",
+        "learning_complete": true,
+        "sql": "SELECT SUM(CASE WHEN isOnlineOnly = 1 THEN 1.0 ELSE 0 END) / COUNT(id) * 100 FROM cards WHERE frameEffects = 'legendary'"
+      }
+    },
+    {
+      "id": "example:s405",
+      "type": "Example",
+      "name": "How many Brazilian Portuguese translated sets are inside the Commander block?",
+      "aliases": [],
+      "properties": {
+        "key": "s405",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT s.code) AS num_sets\nFROM sets AS s\nINNER JOIN set_translations AS st\n    ON st.setCode = s.code\nWHERE s.block = 'Commander'\n  AND st.language = 'Portuguese (Brazil)'"
+      }
+    },
+    {
+      "id": "example:s411",
+      "type": "Example",
+      "name": "To which artist does the card with the text \"Das perfekte Gegenmittel zu einer dichten Formation\" belong?",
+      "aliases": [],
+      "properties": {
+        "key": "s411",
+        "learning_complete": true,
+        "sql": "-- Artist of the card whose (English or foreign) flavor text is \"Das perfekte Gegenmittel zu einer dichten Formation\"\nSELECT DISTINCT artist\nFROM (\n    SELECT c.artist AS artist, c.flavorText AS txt\n    FROM cards AS c\n    UNION ALL\n    SELECT c.artist AS artist, f.flavorText AS txt\n    FROM cards AS c\n    JOIN foreign_data AS f ON f.uuid = c.uuid\n)\nWHERE txt LIKE '%perfekte Gegenmittel zu einer dichten Formation%'"
+      }
+    },
+    {
+      "id": "example:s414",
+      "type": "Example",
+      "name": "What language is the set of 180 cards that belongs to the Ravnica block translated into?",
+      "aliases": [],
+      "properties": {
+        "key": "s414",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT st.language\nFROM sets AS s\nINNER JOIN set_translations AS st\n    ON st.setCode = s.code\nWHERE s.baseSetSize = 180\n  AND s.block = 'Ravnica'"
+      }
+    },
+    {
+      "id": "example:s418",
+      "type": "Example",
+      "name": "What kind of printing is on the card that Daren Bader created?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "artist"
+          ]
+        ],
+        "key": "s418",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT availability FROM cards WHERE artist = 'Daren Bader'"
+      }
+    },
+    {
+      "id": "example:s427",
+      "type": "Example",
+      "name": "What languages are available in the set known as Archenemy on the magic card market and having the code ARC?",
+      "aliases": [],
+      "properties": {
+        "key": "s427",
+        "learning_complete": true,
+        "sql": "-- Languages available for the set Archenemy (code ARC) on the Magic Card Market\nSELECT DISTINCT t.language\nFROM sets AS s\nINNER JOIN set_translations AS t\n    ON t.setCode = s.code\nWHERE s.code = 'ARC'\n  AND s.mcmName = 'Archenemy'\n  AND s.name = 'Archenemy'"
+      }
+    },
+    {
+      "id": "example:s432",
+      "type": "Example",
+      "name": "Which Russian set of cards contains the most cards overall?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "set_translations",
+            "language"
+          ]
+        ],
+        "key": "s432",
+        "learning_complete": true,
+        "sql": "SELECT T1.id FROM sets AS T1 INNER JOIN set_translations AS T2 ON T1.code = T2.setCode WHERE T2.language = 'Russian' GROUP BY T1.baseSetSize ORDER BY T1.baseSetSize DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s433",
+      "type": "Example",
+      "name": "What is the percentage of the set of cards that have Chinese Simplified as the language and are only available for online games?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s433",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN T2.language = 'Chinese Simplified' AND T1.isOnlineOnly = 1 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM sets AS T1 INNER JOIN set_translations AS T2 ON T1.code = T2.setCode"
+      }
+    },
+    {
+      "id": "example:s434",
+      "type": "Example",
+      "name": "How many sets are available just in Japanese and not in Magic: The Gathering Online?",
+      "aliases": [],
+      "properties": {
+        "key": "s434",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT s.code) AS num_sets\nFROM sets AS s\nINNER JOIN set_translations AS t\n    ON s.code = t.setCode\nWHERE t.language = 'Japanese'\n  AND (s.mtgoCode IS NULL OR s.mtgoCode = '')"
+      }
+    },
+    {
+      "id": "example:s437",
+      "type": "Example",
+      "name": "Among black card borders, which card has full artwork?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "isFullArt"
+          ]
+        ],
+        "key": "s437",
+        "learning_complete": true,
+        "sql": "SELECT id FROM cards WHERE borderColor = 'black' AND isFullArt = 1"
+      }
+    },
+    {
+      "id": "example:s438",
+      "type": "Example",
+      "name": "Point out the language of set id \"174\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s438",
+        "learning_complete": true,
+        "sql": "SELECT language FROM set_translations WHERE id IN ( SELECT id FROM sets WHERE id = 174 )"
+      }
+    },
+    {
+      "id": "example:s440",
+      "type": "Example",
+      "name": "Which foreign language used by \"A Pedra Fellwar\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s440",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.language\nFROM cards AS T1\nINNER JOIN foreign_data AS T2 ON T1.uuid = T2.uuid\nWHERE T2.name = 'A Pedra Fellwar'"
+      }
+    },
+    {
+      "id": "example:s441",
+      "type": "Example",
+      "name": "State the set code of the set with release date of 07/13/2007?",
+      "aliases": [],
+      "properties": {
+        "key": "s441",
+        "learning_complete": true,
+        "sql": "SELECT st.setCode\nFROM sets AS s\nINNER JOIN set_translations AS st ON st.setCode = s.code\nWHERE s.releaseDate = '2007-07-13'"
+      }
+    },
+    {
+      "id": "example:s444",
+      "type": "Example",
+      "name": "Name the foreign name of the card that has boros watermark? List out the type of this card.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s444",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.name, T1.type FROM cards AS T1 INNER JOIN foreign_data AS T2 ON T2.uuid = T1.uuid WHERE T1.watermark = 'boros'"
+      }
+    },
+    {
+      "id": "example:s445",
+      "type": "Example",
+      "name": "What is the language and flavor text of the card that has colorpie watermark? List out the type of this card.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "watermark"
+          ]
+        ],
+        "key": "s445",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.language, T2.flavorText FROM cards AS T1 INNER JOIN foreign_data AS T2 ON T2.uuid = T1.uuid WHERE T1.watermark = 'colorpie'"
+      }
+    },
+    {
+      "id": "example:s446",
+      "type": "Example",
+      "name": "What is percentage of the cards with a converted Mana Cost of 10 in set of Abyssal Horror?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s446",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN T1.convertedManaCost = 10 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.id), T1.name FROM cards AS T1 INNER JOIN sets AS T2 ON T2.code = T1.setCode WHERE T1.name = 'Abyssal Horror'"
+      }
+    },
+    {
+      "id": "example:s451",
+      "type": "Example",
+      "name": "How many cards available in paper have a positive starting maximum hand size?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s451",
+        "learning_complete": true,
+        "sql": "SELECT SUM(CASE WHEN availability = 'paper' AND hAND = '3' THEN 1 ELSE 0 END) FROM cards"
+      }
+    },
+    {
+      "id": "example:s453",
+      "type": "Example",
+      "name": "What's the unconverted mana cost of the card \"Ancestor's Chosen\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s453",
+        "learning_complete": true,
+        "sql": "SELECT manaCost\nFROM cards\nWHERE name = 'Ancestor''s Chosen'"
+      }
+    },
+    {
+      "id": "example:s454",
+      "type": "Example",
+      "name": "Among the cards with a white border color, how many of them have unknown power?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s454",
+        "learning_complete": true,
+        "sql": "SELECT SUM(CASE WHEN power LIKE '%*%' OR power IS NULL THEN 1 ELSE 0 END) FROM cards WHERE borderColor = 'white'"
+      }
+    },
+    {
+      "id": "example:s455",
+      "type": "Example",
+      "name": "Which of the cards that are a promotional painting have multiple faces on the same card? Please list their names.",
+      "aliases": [],
+      "properties": {
+        "key": "s455",
+        "learning_complete": true,
+        "sql": "-- Promotional printings (isPromo = 1) that have more than one face on the card\nSELECT name\nFROM cards\nWHERE isPromo = 1\n  AND otherFaceIds IS NOT NULL\n  AND TRIM(otherFaceIds) NOT IN ('', '[]')"
+      }
+    },
+    {
+      "id": "example:s460",
+      "type": "Example",
+      "name": "Which artist designed the card whose promotional name is \"Battra, Dark Destroyer\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s460",
+        "learning_complete": true,
+        "sql": "SELECT artist FROM cards WHERE flavorName = 'Battra, Dark Destroyer'"
+      }
+    },
+    {
+      "id": "example:s462",
+      "type": "Example",
+      "name": "What's the Italian name of the set of cards with \"Ancestor's Chosen\" is in?",
+      "aliases": [],
+      "properties": {
+        "key": "s462",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT st.translation\nFROM cards AS c\nINNER JOIN sets AS s\n    ON s.code = c.setCode\nINNER JOIN set_translations AS st\n    ON st.setCode = s.code\nWHERE c.name = 'Ancestor''s Chosen'\n  AND st.language = 'Italian'"
+      }
+    },
+    {
+      "id": "example:s463",
+      "type": "Example",
+      "name": "How many translations are there for the set of cards with \"Angel of Mercy\" in it?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "setCode"
+          ],
+          [
+            "set_translations",
+            "setCode"
+          ],
+          [
+            "set_translations",
+            "translation"
+          ]
+        ],
+        "key": "s463",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT translation) FROM set_translations WHERE setCode IN ( SELECT setCode FROM cards WHERE name = 'Angel of Mercy' ) AND translation IS NOT NULL"
+      }
+    },
+    {
+      "id": "example:s466",
+      "type": "Example",
+      "name": "Among the cards in the set \"Hauptset Zehnte Edition\", how many of them are designed by Adam Rex?",
+      "aliases": [],
+      "properties": {
+        "key": "s466",
+        "learning_complete": true,
+        "sql": "-- Count cards illustrated by Adam Rex in the set whose (German) name is \"Hauptset Zehnte Edition\"\nSELECT COUNT(*) AS num_cards\nFROM cards AS c\nINNER JOIN sets AS s\n    ON c.setCode = s.code\nINNER JOIN set_translations AS t\n    ON t.setCode = s.code\nWHERE t.translation = 'Hauptset Zehnte Edition'\n  AND c.artist = 'Adam Rex'"
+      }
+    },
+    {
+      "id": "example:s468",
+      "type": "Example",
+      "name": "What is the Simplified Chinese translation of the name of the set \"Eighth Edition\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s468",
+        "learning_complete": true,
+        "sql": "SELECT st.translation\nFROM sets AS s\nINNER JOIN set_translations AS st ON st.setCode = s.code\nWHERE s.name = 'Eighth Edition'\n  AND st.language = 'Chinese Simplified'"
+      }
+    },
+    {
+      "id": "example:s470",
+      "type": "Example",
+      "name": "When was the set of cards with \"Ancestor's Chosen\" released?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "name"
+          ]
+        ],
+        "key": "s470",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.releaseDate FROM cards AS T1 INNER JOIN sets AS T2 ON T2.code = T1.setCode WHERE T1.name = 'Ancestor''s Chosen'"
+      }
+    },
+    {
+      "id": "example:s473",
+      "type": "Example",
+      "name": "Is the set of cards with Adarkar Valkyrie only available outside the United States?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s473",
+        "learning_complete": true,
+        "sql": "SELECT IIF(isForeignOnly = 1, 'YES', 'NO') FROM cards AS T1 INNER JOIN sets AS T2 ON T2.code = T1.setCode WHERE T1.name = 'Adarkar Valkyrie'"
+      }
+    },
+    {
+      "id": "example:s474",
+      "type": "Example",
+      "name": "Among the sets of cards that have an Italian translation, how many of them have a base set number of under 100?",
+      "aliases": [],
+      "properties": {
+        "key": "s474",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_sets\nFROM sets AS s\nINNER JOIN (\n    SELECT DISTINCT setCode\n    FROM set_translations\n    WHERE language = 'Italian'\n) AS t ON t.setCode = s.code\nWHERE s.baseSetSize < 100"
+      }
+    },
+    {
+      "id": "example:s478",
+      "type": "Example",
+      "name": "What is card number 4 in the set Coldsnap?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "number"
+          ]
+        ],
+        "key": "s478",
+        "learning_complete": true,
+        "sql": "SELECT T1.name FROM cards AS T1 INNER JOIN sets AS T2 ON T2.code = T1.setCode WHERE T2.name = 'Coldsnap' AND T1.number = 4"
+      }
+    },
+    {
+      "id": "example:s480",
+      "type": "Example",
+      "name": "What is the Italian flavor text of the card \"Ancestor's Chosen\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s480",
+        "learning_complete": true,
+        "sql": "SELECT T2.flavorText\nFROM cards AS T1\nINNER JOIN foreign_data AS T2 ON T1.uuid = T2.uuid\nWHERE T1.name = 'Ancestor''s Chosen' AND T2.language = 'Italian'"
+      }
+    },
+    {
+      "id": "example:s484",
+      "type": "Example",
+      "name": "Please list the Italian names of the cards in the set Coldsnap with the highest converted mana cost.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s484",
+        "learning_complete": true,
+        "sql": "SELECT T2.name FROM foreign_data AS T1 INNER JOIN cards AS T2 ON T2.uuid = T1.uuid INNER JOIN sets AS T3 ON T3.code = T2.setCode WHERE T3.name = 'Coldsnap' AND T1.language = 'Italian' ORDER BY T2.convertedManaCost DESC"
+      }
+    },
+    {
+      "id": "example:s485",
+      "type": "Example",
+      "name": "When was the ruling for the card 'Reminisce' created?",
+      "aliases": [],
+      "properties": {
+        "key": "s485",
+        "learning_complete": true,
+        "sql": "-- The date of the ruling(s) for the card 'Reminisce'\nSELECT DISTINCT r.date\nFROM rulings AS r\nINNER JOIN cards AS c ON c.uuid = r.uuid\nWHERE c.name = 'Reminisce'"
+      }
+    },
+    {
+      "id": "example:s491",
+      "type": "Example",
+      "name": "What's the magic card market name for the set which was released on 2017/6/9?",
+      "aliases": [],
+      "properties": {
+        "key": "s491",
+        "learning_complete": true,
+        "sql": "SELECT mcmName\nFROM sets\nWHERE releaseDate = '2017-06-09'"
+      }
+    },
+    {
+      "id": "example:s493",
+      "type": "Example",
+      "name": "For the set \"Commander 2014 Oversized\" , give its parent code.",
+      "aliases": [],
+      "properties": {
+        "key": "s493",
+        "learning_complete": true,
+        "sql": "SELECT parentCode\nFROM sets\nWHERE name = 'Commander 2014 Oversized'"
+      }
+    },
+    {
+      "id": "example:s498",
+      "type": "Example",
+      "name": "What's the French name of the set of cards with \"Tendo Ice Bridge\" is in?",
+      "aliases": [],
+      "properties": {
+        "key": "s498",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT st.translation\nFROM cards AS c\nINNER JOIN set_translations AS st\n    ON st.setCode = c.setCode\nWHERE c.name = 'Tendo Ice Bridge'\n  AND st.language = 'French'"
+      }
+    },
+    {
+      "id": "example:s499",
+      "type": "Example",
+      "name": "How many translations of the name of the set \"Tenth Edition\"?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s499",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T2.translation) FROM sets AS T1 INNER JOIN set_translations AS T2 ON T2.setCode = T1.code WHERE T1.name = 'Tenth Edition' AND T2.translation IS NOT NULL"
+      }
+    },
+    {
+      "id": "example:s502",
+      "type": "Example",
+      "name": "What is the release date for the set \"Ola de frío\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s502",
+        "learning_complete": true,
+        "sql": "SELECT s.releaseDate\nFROM sets AS s\nINNER JOIN set_translations AS st ON st.setCode = s.code\nWHERE st.translation = 'Ola de frío' AND st.language = 'Spanish'"
+      }
+    },
+    {
+      "id": "example:s503",
+      "type": "Example",
+      "name": "What was the expansion type for the set which card \"Samite Pilgrim\" in it?",
+      "aliases": [],
+      "properties": {
+        "key": "s503",
+        "learning_complete": true,
+        "sql": "SELECT T2.type\nFROM cards AS T1\nINNER JOIN sets AS T2 ON T2.code = T1.setCode\nWHERE T1.name = 'Samite Pilgrim'"
+      }
+    },
+    {
+      "id": "example:s506",
+      "type": "Example",
+      "name": "For all the set of cards that has Japanese translation, what is the percentage of them are only available in non-foil?",
+      "aliases": [],
+      "properties": {
+        "key": "s506",
+        "learning_complete": true,
+        "sql": "-- Sets that have a Japanese translation; percentage of those that are only available in non-foil\nSELECT 100.0 * COUNT(CASE WHEN s.isNonFoilOnly = 1 THEN 1 END) / COUNT(*) AS pct_non_foil_only\nFROM sets AS s\nINNER JOIN (\n    SELECT DISTINCT setCode\n    FROM set_translations\n    WHERE language = 'Japanese'\n) AS t ON t.setCode = s.code"
+      }
+    },
+    {
+      "id": "example:s508",
+      "type": "Example",
+      "name": "What are the available printing types of the cards that doesn't have a text box created by Aleksi Briclot?",
+      "aliases": [],
+      "properties": {
+        "key": "s508",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT availability\nFROM cards\nWHERE artist = 'Aleksi Briclot'\n  AND isTextless = 1"
+      }
+    },
+    {
+      "id": "example:s511",
+      "type": "Example",
+      "name": "What is the most common visual frame effects among the incredibly powerful foils?",
+      "aliases": [],
+      "properties": {
+        "key": "s511",
+        "learning_complete": true,
+        "sql": "SELECT frameEffects\nFROM cards\nWHERE cardKingdomId IS NOT NULL\n  AND cardKingdomFoilId IS NOT NULL\n  AND frameEffects IS NOT NULL\n  AND frameEffects <> ''\nGROUP BY frameEffects\nORDER BY COUNT(*) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s512",
+      "type": "Example",
+      "name": "How many cards with unknown power that can't be found in foil is in duel deck A?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "duelDeck"
+          ],
+          [
+            "cards",
+            "hasFoil"
+          ]
+        ],
+        "key": "s512",
+        "learning_complete": true,
+        "sql": "SELECT SUM(CASE WHEN power = '*' OR power IS NULL THEN 1 ELSE 0 END) FROM cards WHERE hasFoil = 0 AND duelDeck = 'a'"
+      }
+    },
+    {
+      "id": "example:s515",
+      "type": "Example",
+      "name": "When was the oldest mythic card released and what are its legal play formats?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "cards",
+            "originalReleaseDate"
+          ],
+          [
+            "cards",
+            "rarity"
+          ]
+        ],
+        "key": "s515",
+        "learning_complete": true,
+        "sql": "SELECT T1.originalReleaseDate, T2.format FROM cards AS T1 INNER JOIN legalities AS T2 ON T1.uuid = T2.uuid WHERE T1.rarity = 'mythic' AND T1.originalReleaseDate IS NOT NULL AND T2.status = 'Legal' ORDER BY T1.originalReleaseDate LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s516",
+      "type": "Example",
+      "name": "How many cards did Volkan BaÇµa illustrated whose foreign language is in French?",
+      "aliases": [],
+      "properties": {
+        "key": "s516",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id)\nFROM cards AS T1\nINNER JOIN foreign_data AS T2 ON T1.uuid = T2.uuid\nWHERE T1.artist = 'Volkan Baǵa' AND T2.language = 'French'"
+      }
+    },
+    {
+      "id": "example:s519",
+      "type": "Example",
+      "name": "What is the language of the \"Battlebond\" set?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "set_translations",
+            "id"
+          ],
+          [
+            "sets",
+            "id"
+          ],
+          [
+            "sets",
+            "name"
+          ]
+        ],
+        "key": "s519",
+        "learning_complete": true,
+        "sql": "SELECT language FROM set_translations WHERE id IN ( SELECT id FROM sets WHERE name = 'Battlebond' )"
+      }
+    },
+    {
+      "id": "example:s520",
+      "type": "Example",
+      "name": "Who is the illustrator that illustrated the least amount of cards? List the format of play of the cards that he/she illustrated.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s520",
+        "learning_complete": true,
+        "sql": "SELECT T1.artist, T2.format FROM cards AS T1 INNER JOIN legalities AS T2 ON T2.uuid = T1.uuid GROUP BY T1.artist ORDER BY COUNT(T1.id) ASC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s521",
+      "type": "Example",
+      "name": "Among the cards whose version of frame style is 1997, what is the status of the card illustrated by D. Alexander Gregory in legacy play format that has sensitive content or Wizards of the Coast?",
+      "aliases": [],
+      "properties": {
+        "key": "s521",
+        "learning_complete": true,
+        "sql": "SELECT T2.status\nFROM cards AS T1\nINNER JOIN legalities AS T2 ON T2.uuid = T1.uuid\nWHERE T1.frameVersion = '1997'\n  AND T1.artist = 'D. Alexander Gregory'\n  AND T1.hasContentWarning = 1\n  AND T2.format = 'legacy'"
+      }
+    },
+    {
+      "id": "example:s524",
+      "type": "Example",
+      "name": "List the artists who illustrated cards with black borders which are available only in arena.",
+      "aliases": [],
+      "properties": {
+        "key": "s524",
+        "learning_complete": true,
+        "sql": "-- Artists who illustrated black-bordered cards that are available only in Arena\nSELECT DISTINCT artist\nFROM cards\nWHERE borderColor = 'black'\n  AND availability = 'arena'"
+      }
+    },
+    {
+      "id": "example:s526",
+      "type": "Example",
+      "name": "Among the card designed by Matthew D. Wilson, how many are available only in the paper?",
+      "aliases": [],
+      "properties": {
+        "key": "s526",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(cards.id) AS card_count\nFROM cards\nWHERE cards.artist = 'Matthew D. Wilson'\n  AND cards.availability = 'paper'"
+      }
+    },
+    {
+      "id": "example:s529",
+      "type": "Example",
+      "name": "Find and list the names of sets which doesn't have Japanese translation but have Korean translation.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "sets",
+            "code"
+          ]
+        ],
+        "key": "s529",
+        "learning_complete": true,
+        "sql": "SELECT name FROM sets WHERE code IN ( SELECT setCode FROM set_translations WHERE language = 'Korean' AND language NOT LIKE '%Japanese%' )"
+      }
+    },
+    {
+      "id": "example:s530",
+      "type": "Example",
+      "name": "List all the frame styles and cards Allen Williams worked on and find any banned cards if there are any.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s530",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.frameVersion, T1.name , IIF(T2.status = 'Banned', T1.name, 'NO') FROM cards AS T1 INNER JOIN legalities AS T2 ON T1.uuid = T2.uuid WHERE T1.artist = 'Allen Williams'"
+      }
+    },
+    {
+      "id": "term:available-in-a-translation-language",
+      "type": "Term",
+      "name": "available in a translation language",
+      "aliases": [
+        "set translation language",
+        "localized set name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:available-in-arena",
+      "type": "Term",
+      "name": "available in arena",
+      "aliases": [
+        "arena printing",
+        "in arena",
+        "arena availability"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:available-in-paper",
+      "type": "Term",
+      "name": "available in paper",
+      "aliases": [
+        "paper printing",
+        "paper availability",
+        "print type paper"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:banned-card-flag",
+      "type": "Term",
+      "name": "banned card flag",
+      "aliases": [
+        "is banned flag",
+        "banned if any",
+        "show banned cards if there are any"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:banned-status",
+      "type": "Term",
+      "name": "banned status",
+      "aliases": [
+        "banned cards",
+        "banned legality",
+        "cards banned in a format",
+        "cards that are banned"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:black-border",
+      "type": "Term",
+      "name": "black border",
+      "aliases": [
+        "black card border",
+        "border color black"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:borderless-card",
+      "type": "Term",
+      "name": "borderless card",
+      "aliases": [
+        "no border",
+        "borderless artwork"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:cannot-be-found-in-foil",
+      "type": "Term",
+      "name": "cannot be found in foil",
+      "aliases": [
+        "no foil version",
+        "non-foil card",
+        "not available in foil"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-artist-and-frame-style",
+      "type": "Term",
+      "name": "card artist and frame style",
+      "aliases": [
+        "cards by artist",
+        "frame styles worked on",
+        "artist's card frames"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-artist-name",
+      "type": "Term",
+      "name": "card artist name",
+      "aliases": [
+        "illustrated by",
+        "artist of the card",
+        "who drew the card"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-colour",
+      "type": "Term",
+      "name": "card colour",
+      "aliases": [
+        "colors of a card",
+        "card colors",
+        "colour indicator"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-illustrated-in-a-language",
+      "type": "Term",
+      "name": "card illustrated in a language",
+      "aliases": [
+        "illustrated in Russian",
+        "card foreign language",
+        "translated flavor text language"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-name",
+      "type": "Term",
+      "name": "card name",
+      "aliases": [
+        "name of the card",
+        "what is the card",
+        "card title",
+        "card called"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-name-in-a-set",
+      "type": "Term",
+      "name": "card name in a set",
+      "aliases": [
+        "cards belonging to a set",
+        "set's cards"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-name-to-report",
+      "type": "Term",
+      "name": "card name to report",
+      "aliases": [
+        "name of the card",
+        "card identifier shown"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-name-with-apostrophe",
+      "type": "Term",
+      "name": "card name with apostrophe",
+      "aliases": [
+        "card title filter",
+        "name lookup"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-number",
+      "type": "Term",
+      "name": "card number",
+      "aliases": [
+        "collector number",
+        "card number in set"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-release-date",
+      "type": "Term",
+      "name": "card release date",
+      "aliases": [
+        "when was the card released",
+        "card printing release date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-set-translation-language",
+      "type": "Term",
+      "name": "card set translation language",
+      "aliases": [
+        "set translated into Spanish",
+        "set language",
+        "translated set"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-type",
+      "type": "Term",
+      "name": "card type",
+      "aliases": [
+        "type of the card",
+        "card's type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-types",
+      "type": "Term",
+      "name": "card types",
+      "aliases": [
+        "types of cards",
+        "card type names",
+        "what type of card is it"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:card-watermark",
+      "type": "Term",
+      "name": "card watermark",
+      "aliases": [
+        "watermark on the card",
+        "has watermark",
+        "watermark name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:cards-belonging-to-a-set",
+      "type": "Term",
+      "name": "cards belonging to a set",
+      "aliases": [
+        "set of a card",
+        "cards in the set",
+        "sets containing the card",
+        "set printing",
+        "cards in a set",
+        "set code",
+        "card's set",
+        "which set a card belongs to",
+        "set of the card"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:cards-in-a-legality-state",
+      "type": "Term",
+      "name": "cards in a legality state",
+      "aliases": [
+        "cards by legality",
+        "legality category of a card"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:chinese-simplified-language",
+      "type": "Term",
+      "name": "chinese simplified language",
+      "aliases": [
+        "set translated into Chinese Simplified",
+        "language of card set"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:converted-mana-cost",
+      "type": "Term",
+      "name": "converted mana cost",
+      "aliases": [
+        "cmc",
+        "mana value",
+        "converted mana value",
+        "converted mana"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:converted-mana-cost-for-the-face",
+      "type": "Term",
+      "name": "converted mana cost for the face",
+      "aliases": [
+        "face converted mana cost",
+        "face mana value",
+        "mana value for the face",
+        "cost more converted mana for the face"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:count-of-cards",
+      "type": "Term",
+      "name": "count of cards",
+      "aliases": [
+        "how many cards",
+        "number of cards",
+        "card total"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:duel-deck-code",
+      "type": "Term",
+      "name": "duel deck code",
+      "aliases": [
+        "duel deck",
+        "duel deck A",
+        "deck type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:edhrec-rank",
+      "type": "Term",
+      "name": "edhrec rank",
+      "aliases": [
+        "EDHRec ranking",
+        "EDH rec rank"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:foreign-name-of-a-card",
+      "type": "Term",
+      "name": "foreign name of a card",
+      "aliases": [
+        "card's foreign name",
+        "foreign card name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:format-of-play",
+      "type": "Term",
+      "name": "format of play",
+      "aliases": [
+        "play format",
+        "legality format",
+        "legalities format"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:found-in-a-starter-deck",
+      "type": "Term",
+      "name": "found in a starter deck",
+      "aliases": [
+        "in a starter deck",
+        "starter deck card",
+        "isStarter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:frame-style-version",
+      "type": "Term",
+      "name": "frame style version",
+      "aliases": [
+        "frame version",
+        "card frame style",
+        "frame style"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:full-artwork",
+      "type": "Term",
+      "name": "full artwork",
+      "aliases": [
+        "full art card",
+        "has full artwork",
+        "full-art"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:future-frame-version",
+      "type": "Term",
+      "name": "future frame version",
+      "aliases": [
+        "future frame style",
+        "future frame cards"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-converted-mana-cost",
+      "type": "Term",
+      "name": "highest converted mana cost",
+      "aliases": [
+        "most expensive card",
+        "highest mana cost",
+        "max converted mana cost"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hyphen-vs-em-dash-in-type-names",
+      "type": "Term",
+      "name": "hyphen vs em dash in type names",
+      "aliases": [
+        "type separator hyphen",
+        "em dash type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:illustrator",
+      "type": "Term",
+      "name": "illustrator",
+      "aliases": [
+        "artist",
+        "card artist",
+        "who illustrated",
+        "illustrated by",
+        "created the art for",
+        "artist name",
+        "designed by"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:italian-language-card-data",
+      "type": "Term",
+      "name": "italian language card data",
+      "aliases": [
+        "Italian card text",
+        "cards in Italian"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:kind-of-printing",
+      "type": "Term",
+      "name": "kind of printing",
+      "aliases": [
+        "printing type",
+        "printing kinds",
+        "available printing",
+        "printing"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:language-and-flavor-text",
+      "type": "Term",
+      "name": "language and flavor text",
+      "aliases": [
+        "foreign language",
+        "flavor text",
+        "translated flavor text"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:language-of-a-set",
+      "type": "Term",
+      "name": "language of a set",
+      "aliases": [
+        "set language",
+        "translated language of a set"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:legal-play-format",
+      "type": "Term",
+      "name": "legal play format",
+      "aliases": [
+        "legal formats",
+        "legalities where playable",
+        "formats where card is legal"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:legendary-frame-effect",
+      "type": "Term",
+      "name": "legendary frame effect",
+      "aliases": [
+        "legendary frame",
+        "legendary frames"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:listed-card-types-only",
+      "type": "Term",
+      "name": "listed card types only",
+      "aliases": [
+        "types with values",
+        "non-empty subtypes and supertypes"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:lowest-face-mana-cost-card",
+      "type": "Term",
+      "name": "lowest face mana cost card",
+      "aliases": [
+        "card with smallest face mana value",
+        "cheapest face mana value"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:missing-or-degraded-properties",
+      "type": "Term",
+      "name": "missing or degraded properties",
+      "aliases": [
+        "has content warning",
+        "content warning flag",
+        "sensitive content flag"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:mythic-card",
+      "type": "Term",
+      "name": "mythic card",
+      "aliases": [
+        "mythic rarity",
+        "cards of mythic rarity"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:non-japanese-translation-row",
+      "type": "Term",
+      "name": "non-japanese translation row",
+      "aliases": [
+        "translation excluding Japanese",
+        "not Japanese translation"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:non-powerful-foil",
+      "type": "Term",
+      "name": "non-powerful foil",
+      "aliases": [
+        "foil not powerful",
+        "weak foil",
+        "no powerful foil"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:number-of-cards-in-the-set",
+      "type": "Term",
+      "name": "number of cards in the set",
+      "aliases": [
+        "set size",
+        "base set size",
+        "cards in a set"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:number-of-translations",
+      "type": "Term",
+      "name": "number of translations",
+      "aliases": [
+        "how many translations",
+        "count of translations",
+        "translation count",
+        "count of translated names"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:oldest-release-date",
+      "type": "Term",
+      "name": "oldest release date",
+      "aliases": [
+        "earliest release date",
+        "first released",
+        "oldest card"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:only-available-in-online-variations",
+      "type": "Term",
+      "name": "only available in online variations",
+      "aliases": [
+        "online only",
+        "online-only cards"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:only-available-online",
+      "type": "Term",
+      "name": "only available online",
+      "aliases": [
+        "online-only set",
+        "only online games"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:only-available-outside-the-united-states",
+      "type": "Term",
+      "name": "only available outside the united states",
+      "aliases": [
+        "foreign only set",
+        "not sold in the US",
+        "only sold outside the US"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:original-type-is-creature-elf",
+      "type": "Term",
+      "name": "original type is creature - elf",
+      "aliases": [
+        "original type Elf creature",
+        "originally printed as Creature - Elf"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-qualifying-sets",
+      "type": "Term",
+      "name": "percentage of qualifying sets",
+      "aliases": [
+        "percent of sets",
+        "share of sets"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-rows-matching-a-condition",
+      "type": "Term",
+      "name": "percentage of rows matching a condition",
+      "aliases": [
+        "percent of cards",
+        "share of rows"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:positive-hand-size-modifier",
+      "type": "Term",
+      "name": "positive hand size modifier",
+      "aliases": [
+        "positive starting maximum hand size",
+        "positive hand size"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:powerful-foil",
+      "type": "Term",
+      "name": "powerful foil",
+      "aliases": [
+        "foil is powerful",
+        "has powerful foil"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:restricted-legality-status",
+      "type": "Term",
+      "name": "restricted legality status",
+      "aliases": [
+        "restricted status",
+        "status is restricted"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:ruling-text",
+      "type": "Term",
+      "name": "ruling text",
+      "aliases": [
+        "rulings description",
+        "official ruling",
+        "ruling of a card"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:russian-set",
+      "type": "Term",
+      "name": "russian set",
+      "aliases": [
+        "set in Russian",
+        "Russian translation"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:set-code",
+      "type": "Term",
+      "name": "set code",
+      "aliases": [
+        "code of the set",
+        "set identifier",
+        "set code abbreviation",
+        "expansion code"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:set-code-of-a-set",
+      "type": "Term",
+      "name": "set code of a set",
+      "aliases": [
+        "set code",
+        "code of the set",
+        "set 10E"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:set-name",
+      "type": "Term",
+      "name": "set name",
+      "aliases": [
+        "name of a set",
+        "set title",
+        "set the card is from",
+        "set printing",
+        "named set",
+        "set titled"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:set-translation-by-set-id",
+      "type": "Term",
+      "name": "set translation by set id",
+      "aliases": [
+        "translation rows for a set",
+        "set_translations for a set"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:set-with-the-most-cards",
+      "type": "Term",
+      "name": "set with the most cards",
+      "aliases": [
+        "largest set",
+        "biggest set by card count",
+        "max base set size"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:sets-table-name",
+      "type": "Term",
+      "name": "sets table name",
+      "aliases": [
+        "set release table",
+        "expansions table"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:starting-maximum-hand-size",
+      "type": "Term",
+      "name": "starting maximum hand size",
+      "aliases": [
+        "hand size modifier",
+        "starting hand size",
+        "maximum hand size modifier"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-number-of-cards-in-set",
+      "type": "Term",
+      "name": "total number of cards in set",
+      "aliases": [
+        "total set size",
+        "number of cards per set",
+        "set card count"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:translation-language-value",
+      "type": "Term",
+      "name": "translation language value",
+      "aliases": [
+        "language of translation",
+        "card set language"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:unknown-power",
+      "type": "Term",
+      "name": "unknown power",
+      "aliases": [
+        "power unknown",
+        "no power",
+        "unknown power value"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:watermark",
+      "type": "Term",
+      "name": "watermark",
+      "aliases": [
+        "watermark name",
+        "set symbol watermark"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:which-card",
+      "type": "Term",
+      "name": "which card",
+      "aliases": [
+        "card identifier",
+        "the card in question",
+        "card id",
+        "name of card",
+        "list cards",
+        "cards listed"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:white-border",
+      "type": "Term",
+      "name": "white border",
+      "aliases": [
+        "border color white",
+        "white bordered cards",
+        "white border color"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:yes-or-no-question",
+      "type": "Term",
+      "name": "yes or no question",
+      "aliases": [
+        "is it true",
+        "true or false answer",
+        "answer yes or no"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:ruling-text",
+      "type": "MEANS",
+      "to_entity": "column:rulings.text-0d329a",
+      "properties": {
+        "_feedback_sources": [
+          "s362",
+          "s348",
+          "s444"
+        ],
+        "losses": 1,
+        "note": "The ruling description text lives in rulings.text and is linked to the card by the shared uuid value (cards.uuid = rulings.uuid).",
+        "origin": "s347",
+        "sql": "rulings.text",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:listed-card-types-only",
+      "type": "MEANS",
+      "to_entity": "column:cards.subtypes-597bb4",
+      "properties": {
+        "losses": 0,
+        "note": "Both subtype and supertype lists are frequently NULL, so type listings should exclude rows where either is missing.",
+        "origin": "s399",
+        "sql": "cards.subtypes IS NOT NULL AND cards.supertypes IS NOT NULL",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:borderless-card",
+      "type": "MEANS",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {
+        "_feedback_sources": [
+          "s358",
+          "s368"
+        ],
+        "losses": 0,
+        "note": "Border style is stored as a lowercase color code in cards.borderColor, whose values include 'borderless'.",
+        "origin": "s370",
+        "sql": "cards.borderColor = 'borderless'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:set-translation-by-set-id",
+      "type": "MEANS",
+      "to_entity": "column:sets.id-8db305",
+      "properties": {
+        "_feedback_sources": [
+          "s491",
+          "s478",
+          "s502",
+          "s353",
+          "s438",
+          "s499",
+          "s388"
+        ],
+        "losses": 4,
+        "note": "set_translations rows are keyed to the parent set by the shared set id column, so a set's translation rows are found with sets.id = set_translations.id rather than any setCode/code pairing.",
+        "origin": "s519",
+        "sql": "sets.id = set_translations.id",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:positive-hand-size-modifier",
+      "type": "MEANS",
+      "to_entity": "column:cards.hand-6d1db2",
+      "properties": {
+        "_feedback_sources": [
+          "s395"
+        ],
+        "losses": 0,
+        "note": "A positive hand-size modifier is a cards.hand value that has no leading minus sign and is not the neutral '0', since the stored text carries the sign as part of the value.",
+        "origin": "s451",
+        "sql": "cards.hand NOT LIKE '-%' AND cards.hand <> '0'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-type",
+      "type": "MEANS",
+      "to_entity": "column:cards.type-b50fc9",
+      "properties": {
+        "losses": 0,
+        "note": "cards.type holds the visible type with supertypes and subtypes (e.g. Artifact, Creature, Instant).",
+        "origin": "s444",
+        "sql": "cards.type",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:cards-belonging-to-a-set",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.id-72f7cb",
+      "properties": {
+        "_feedback_sources": [
+          "s441",
+          "s453",
+          "s493"
+        ],
+        "losses": 0,
+        "note": "In this database a card links to the set's translation rows through set_translations.id, which identifies the set rather than by joining on the set code.",
+        "origin": "s388",
+        "sql": "cards.id = set_translations.id",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:only-available-outside-the-united-states",
+      "type": "MEANS",
+      "to_entity": "column:sets.isforeignonly-35385b",
+      "properties": {
+        "_feedback_sources": [
+          "s440",
+          "s387",
+          "s399"
+        ],
+        "losses": 2,
+        "note": "Sets that are available only outside the US are flagged with sets.isForeignOnly = 1 (an integer boolean flag).",
+        "origin": "s473",
+        "sql": "sets.isForeignOnly = 1",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-name",
+      "type": "MEANS",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {
+        "_feedback_sources": [
+          "s437",
+          "s343",
+          "s355"
+        ],
+        "losses": 2,
+        "note": "When a question asks which card/what the card is, the answer is the card's name from cards.name, not its internal id.",
+        "origin": "s478",
+        "sql": "cards.name",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-rows-matching-a-condition",
+      "type": "MEANS",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {
+        "_feedback_sources": [
+          "s348",
+          "s368"
+        ],
+        "losses": 0,
+        "note": "Compute a row percentage by counting matching rows with a conditional SUM divided by the total row count, multiplying by 100.",
+        "origin": "s401",
+        "sql": "100.0 * SUM(CASE WHEN cards.isOnlineOnly = 1 THEN 1 ELSE 0 END) / COUNT(cards.id)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:converted-mana-cost",
+      "type": "MEANS",
+      "to_entity": "column:cards.convertedmanacost-8f35d0",
+      "properties": {
+        "_feedback_sources": [
+          "s342",
+          "s453"
+        ],
+        "losses": 1,
+        "note": "The phrase 'converted Mana Cost' refers to cards.convertedManaCost, a numeric mana value per card.",
+        "origin": "s446",
+        "sql": "cards.convertedManaCost",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:oldest-release-date",
+      "type": "MEANS",
+      "to_entity": "column:cards.originalreleasedate-aae401",
+      "properties": {
+        "losses": 0,
+        "note": "cards.originalReleaseDate is ISO 8601 text (e.g. 2014/10/17) and may be NULL, so 'oldest' means ordering ascending on that column after excluding NULLs rather than relying on a MIN() over text comparison.",
+        "origin": "s515",
+        "sql": "ORDER BY cards.originalReleaseDate ASC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:card-name-in-a-set",
+      "type": "MEANS",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {
+        "_feedback_sources": [
+          "s502",
+          "s381",
+          "s400",
+          "s466",
+          "s343",
+          "s503",
+          "s427",
+          "s358",
+          "s388",
+          "s441",
+          "s460",
+          "s468",
+          "s387",
+          "s453",
+          "s493"
+        ],
+        "losses": 4,
+        "note": "A card's set is identified by the printing code cards.setCode, which joins to sets.code while the human-readable set label is sets.name.",
+        "origin": "s484",
+        "sql": "cards.setCode = sets.code AND sets.name = 'Coldsnap'",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:set-with-the-most-cards",
+      "type": "MEANS",
+      "to_entity": "column:sets.basesetsize-e81a7b",
+      "properties": {
+        "_feedback_sources": [
+          "s433",
+          "s474",
+          "s498",
+          "s414",
+          "s463",
+          "s462",
+          "s519",
+          "s478",
+          "s451",
+          "s353",
+          "s466",
+          "s511",
+          "s387",
+          "s368"
+        ],
+        "losses": 7,
+        "note": "To rank sets by card count, order by sets.baseSetSize descending instead of aggregating joined card rows.",
+        "origin": "s432",
+        "sql": "ORDER BY sets.baseSetSize DESC",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:cannot-be-found-in-foil",
+      "type": "MEANS",
+      "to_entity": "column:cards.hasfoil-e9cf5f",
+      "properties": {
+        "_feedback_sources": [
+          "s521",
+          "s396",
+          "s434",
+          "s393",
+          "s363",
+          "s451",
+          "s386",
+          "s350",
+          "s355"
+        ],
+        "losses": 4,
+        "note": "cards.hasFoil is 0 when the card cannot be found in foil and 1 when it can.",
+        "origin": "s512",
+        "sql": "cards.hasFoil = 0",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:russian-set",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s474",
+          "s498",
+          "s414",
+          "s445",
+          "s463",
+          "s370",
+          "s480",
+          "s369",
+          "s462",
+          "s484",
+          "s478",
+          "s502",
+          "s381",
+          "s438",
+          "s446",
+          "s516",
+          "s468"
+        ],
+        "losses": 6,
+        "note": "The set's display language lives in set_translations.language with the literal value 'Russian'.",
+        "origin": "s432",
+        "sql": "set_translations.language = 'Russian'",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:card-illustrated-in-a-language",
+      "type": "MEANS",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {
+        "_feedback_sources": [
+          "s480",
+          "s519",
+          "s516",
+          "s347",
+          "s440",
+          "s405"
+        ],
+        "losses": 2,
+        "note": "Per-card translation text lives in foreign_data, keyed to cards by the shared uuid; foreign_data.language holds fixed language names such as 'Russian'.",
+        "origin": "s370",
+        "sql": "cards.uuid = foreign_data.uuid AND foreign_data.language = 'Russian'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:card-illustrated-in-a-language",
+      "type": "MEANS",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {
+        "_feedback_sources": [
+          "s369",
+          "s381",
+          "s400",
+          "s529"
+        ],
+        "losses": 2,
+        "note": "Per-card translation text lives in foreign_data, keyed to cards by the shared uuid; foreign_data.language holds fixed language names such as 'Russian'.",
+        "origin": "s370",
+        "sql": "cards.uuid = foreign_data.uuid AND foreign_data.language = 'Russian'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:number-of-translations",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {
+        "_feedback_sources": [
+          "s370",
+          "s369",
+          "s393",
+          "s363"
+        ],
+        "losses": 3,
+        "note": "Translations are the set_translations.translation values; count them distinctly and ignore NULL translation rows.",
+        "origin": "s463",
+        "sql": "COUNT(DISTINCT set_translations.translation)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-name-to-report",
+      "type": "MEANS",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {
+        "_feedback_sources": [
+          "s474",
+          "s498",
+          "s369",
+          "s491",
+          "s478",
+          "s348",
+          "s460"
+        ],
+        "losses": 1,
+        "note": "When a card's name/identifier is requested for output together with its rulings, the verified projection used cards.id rather than cards.name.",
+        "origin": "s389",
+        "sql": "cards.id",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:sets-table-name",
+      "type": "MEANS",
+      "to_entity": "column:sets.releasedate-711619",
+      "properties": {
+        "_feedback_sources": [
+          "s506",
+          "s432",
+          "s373",
+          "s389",
+          "s433",
+          "s474",
+          "s521",
+          "s498",
+          "s414",
+          "s520",
+          "s463",
+          "s462",
+          "s491",
+          "s346",
+          "s502",
+          "s499",
+          "s441"
+        ],
+        "losses": 6,
+        "note": "The table `sets` is a reserved SQLite keyword, so it must be double-quoted (\"sets\") whenever referenced.",
+        "origin": "s470",
+        "sql": "\"sets\".releaseDate",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:cards-belonging-to-a-set",
+      "type": "MEANS",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {
+        "_feedback_sources": [
+          "s418",
+          "s427",
+          "s388",
+          "s441",
+          "s508",
+          "s453",
+          "s493"
+        ],
+        "losses": 1,
+        "note": "Card rows are linked to a set through cards.setCode = sets.code, and setCode is per printing so a card can appear in several rows.",
+        "origin": "s446",
+        "sql": "cards.setCode = sets.code",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:illustrator",
+      "type": "MEANS",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {
+        "_feedback_sources": [
+          "s370",
+          "s466",
+          "s526",
+          "s460"
+        ],
+        "losses": 1,
+        "note": "The person who drew the card art is stored in cards.artist as a free-text name.",
+        "origin": "s520",
+        "sql": "cards.artist",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-rows-matching-a-condition",
+      "type": "MEANS",
+      "to_entity": "column:cards.isonlineonly-629eb6",
+      "properties": {
+        "_feedback_sources": [
+          "s350",
+          "s526",
+          "s427",
+          "s473",
+          "s399"
+        ],
+        "losses": 2,
+        "note": "Compute a row percentage by counting matching rows with a conditional SUM divided by the total row count, multiplying by 100.",
+        "origin": "s401",
+        "sql": "100.0 * SUM(CASE WHEN cards.isOnlineOnly = 1 THEN 1 ELSE 0 END) / COUNT(cards.id)",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:language-and-flavor-text",
+      "type": "MEANS",
+      "to_entity": "column:foreign-data.flavortext-e895db",
+      "properties": {
+        "_feedback_sources": [
+          "s418",
+          "s437",
+          "s362",
+          "s355",
+          "s444",
+          "s515"
+        ],
+        "losses": 4,
+        "note": "A card's language and its flavor text live in the foreign_data table, keyed by the card's uuid.",
+        "origin": "s445",
+        "sql": "foreign_data.language, foreign_data.flavorText",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:found-in-a-starter-deck",
+      "type": "MEANS",
+      "to_entity": "column:cards.isstarter-80b749",
+      "properties": {
+        "_feedback_sources": [
+          "s355"
+        ],
+        "losses": 0,
+        "note": "cards.isStarter is a 0/1 flag where 1 means the card appears in a starter deck such as Planeswalker/Brawl decks.",
+        "origin": "s363",
+        "sql": "cards.isStarter = 1",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:converted-mana-cost-for-the-face",
+      "type": "MEANS",
+      "to_entity": "column:cards.faceconvertedmanacost-f26919",
+      "properties": {
+        "_feedback_sources": [
+          "s453"
+        ],
+        "losses": 0,
+        "note": "The per-face (half/card face) converted mana cost is stored in cards.faceConvertedManaCost, where a higher stored value means that card cost more converted mana for the face.",
+        "origin": "s342",
+        "sql": "cards.faceConvertedManaCost",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:unknown-power",
+      "type": "MEANS",
+      "to_entity": "column:cards.power-a7f9d2",
+      "properties": {
+        "_feedback_sources": [
+          "s411",
+          "s346",
+          "s362",
+          "s342",
+          "s511"
+        ],
+        "losses": 1,
+        "note": "Unknown power is stored as the literal '*' or as NULL in cards.power; blank strings are not part of the encoding.",
+        "origin": "s512",
+        "sql": "cards.power = '*' OR cards.power IS NULL",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:card-watermark",
+      "type": "MEANS",
+      "to_entity": "column:cards.watermark-67f11d",
+      "properties": {
+        "_feedback_sources": [
+          "s418",
+          "s491",
+          "s437",
+          "s362",
+          "s460"
+        ],
+        "losses": 2,
+        "note": "The watermark printed on a card is stored as a lowercase set/artist-style name in cards.watermark.",
+        "origin": "s445",
+        "sql": "cards.watermark = 'colorpie'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:count-of-cards",
+      "type": "MEANS",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {
+        "_feedback_sources": [
+          "s526",
+          "s499",
+          "s454",
+          "s348",
+          "s372",
+          "s405",
+          "s395"
+        ],
+        "losses": 2,
+        "note": "A request for how many cards wants one total over all matching cards, so it should not be split into per-group rows by a status breakdown.",
+        "origin": "s386",
+        "sql": "COUNT(cards.id)",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:edhrec-rank",
+      "type": "MEANS",
+      "to_entity": "column:cards.edhrecrank-8e65fb",
+      "properties": {
+        "losses": 0,
+        "note": "The card's rank on EDHRec is stored in the column cards.edhrecRank (integer, often NULL for unranked cards), not 'edhRank'.",
+        "origin": "s343",
+        "sql": "cards.edhrecRank",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:cards-belonging-to-a-set",
+      "type": "MEANS",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {
+        "losses": 0,
+        "note": "In this database a card links to the set's translation rows through set_translations.id, which identifies the set rather than by joining on the set code.",
+        "origin": "s388",
+        "sql": "cards.id = set_translations.id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:italian-language-card-data",
+      "type": "MEANS",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {
+        "losses": 0,
+        "note": "Per-language card data lives in foreign_data keyed by the card's uuid, and the language is stored as the full label such as 'Italian'.",
+        "origin": "s484",
+        "sql": "foreign_data.language = 'Italian' AND foreign_data.uuid = cards.uuid",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:hyphen-vs-em-dash-in-type-names",
+      "type": "MEANS",
+      "to_entity": "column:cards.originaltype-05c20b",
+      "properties": {
+        "_feedback_sources": [
+          "s455",
+          "s445",
+          "s463",
+          "s484"
+        ],
+        "losses": 3,
+        "note": "Type strings are stored with both '-' and '—' separators in the same column, so pattern matching like LIKE 'Creature%Elf' wrongly mixes em-dash variants and any longer type lines.",
+        "origin": "s389",
+        "sql": "cards.originalType = 'Creature - Beast'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:watermark",
+      "type": "MEANS",
+      "to_entity": "column:cards.watermark-67f11d",
+      "properties": {
+        "losses": 0,
+        "note": "cards.watermark stores the watermark label as a lowercase color-pair/set code such as boros, mirran, phyrexian, and is NULL for cards without a watermark.",
+        "origin": "s444",
+        "sql": "cards.watermark",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:highest-converted-mana-cost",
+      "type": "MEANS",
+      "to_entity": "column:cards.convertedmanacost-8f35d0",
+      "properties": {
+        "_feedback_sources": [
+          "s375",
+          "s342",
+          "s511",
+          "s453"
+        ],
+        "losses": 1,
+        "note": "Converted mana cost is a numeric value on cards, so the costiest card is found by ordering on cards.convertedManaCost descending rather than by a correlated MAX subquery.",
+        "origin": "s484",
+        "sql": "ORDER BY cards.convertedManaCost DESC",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:language-of-a-set",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s484",
+          "s438",
+          "s516",
+          "s440",
+          "s499",
+          "s468",
+          "s405"
+        ],
+        "losses": 2,
+        "note": "The language a set is printed in is stored per translation row in set_translations.language, which holds names like 'French', 'German', 'Japanese'.",
+        "origin": "s519",
+        "sql": "set_translations.language",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:card-illustrated-in-a-language",
+      "type": "MEANS",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {
+        "losses": 0,
+        "note": "Per-card translation text lives in foreign_data, keyed to cards by the shared uuid; foreign_data.language holds fixed language names such as 'Russian'.",
+        "origin": "s370",
+        "sql": "cards.uuid = foreign_data.uuid AND foreign_data.language = 'Russian'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:starting-maximum-hand-size",
+      "type": "MEANS",
+      "to_entity": "column:cards.hand-6d1db2",
+      "properties": {
+        "_feedback_sources": [
+          "s395"
+        ],
+        "losses": 0,
+        "note": "The starting maximum hand size is the text column cards.hand, whose values are an integer optionally preceded by a sign character ('+3', '-1', '0').",
+        "origin": "s451",
+        "sql": "cards.hand",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:set-translation-by-set-id",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.id-72f7cb",
+      "properties": {
+        "_feedback_sources": [
+          "s441",
+          "s468"
+        ],
+        "losses": 0,
+        "note": "set_translations rows are keyed to the parent set by the shared set id column, so a set's translation rows are found with sets.id = set_translations.id rather than any setCode/code pairing.",
+        "origin": "s519",
+        "sql": "sets.id = set_translations.id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:set-code",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {
+        "_feedback_sources": [
+          "s427",
+          "s441",
+          "s493"
+        ],
+        "losses": 0,
+        "note": "The set code of a translated card set is the setCode column of set_translations.",
+        "origin": "s400",
+        "sql": "set_translations.setCode",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:card-types",
+      "type": "MEANS",
+      "to_entity": "column:cards.supertypes-b9225a",
+      "properties": {
+        "_feedback_sources": [
+          "s508",
+          "s395",
+          "s444"
+        ],
+        "losses": 1,
+        "note": "A card's types are described by both its subtypes (after the em-dash) and its supertypes (before the em-dash), so a type listing must project both columns.",
+        "origin": "s399",
+        "sql": "cards.subtypes, cards.supertypes",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:set-code-of-a-set",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {
+        "losses": 0,
+        "note": "The set code is stored on the set_translations rows, one row per set per language, so the code appears repeated for every translation language of that set.",
+        "origin": "s388",
+        "sql": "set_translations.setCode",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:only-available-in-online-variations",
+      "type": "MEANS",
+      "to_entity": "column:cards.isonlineonly-629eb6",
+      "properties": {
+        "_feedback_sources": [
+          "s350",
+          "s526",
+          "s427",
+          "s473",
+          "s399",
+          "s508"
+        ],
+        "losses": 2,
+        "note": "cards.isOnlineOnly is a 0/1 flag where 1 means the card exists only in online game variations.",
+        "origin": "s401",
+        "sql": "cards.isOnlineOnly = 1",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:full-artwork",
+      "type": "MEANS",
+      "to_entity": "column:cards.isfullart-8976d7",
+      "properties": {
+        "_feedback_sources": [
+          "s508"
+        ],
+        "losses": 0,
+        "note": "Full artwork is a 0/1 flag in cards.isFullArt, where 1 means the card has full artwork.",
+        "origin": "s437",
+        "sql": "cards.isFullArt = 1",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:banned-card-flag",
+      "type": "MEANS",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {
+        "_feedback_sources": [
+          "s343",
+          "s460",
+          "s355",
+          "s383"
+        ],
+        "losses": 2,
+        "note": "When the question asks to find banned cards \"if there are any\", report a per-card flag column instead of filtering rows out in WHERE, so non-banned cards still appear with 'NO'.",
+        "origin": "s530",
+        "sql": "IIF(legalities.status = 'Banned', cards.name, 'NO')",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:translation-language-value",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s503",
+          "s342"
+        ],
+        "losses": 1,
+        "note": "The language is stored as a plain English name such as 'Korean', 'Japanese', 'French'.",
+        "origin": "s529",
+        "sql": "set_translations.language",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-artist-and-frame-style",
+      "type": "MEANS",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {
+        "_feedback_sources": [
+          "s346",
+          "s401",
+          "s358",
+          "s460",
+          "s511",
+          "s453"
+        ],
+        "losses": 1,
+        "note": "The illustrator of a card is cards.artist and its frame style/version is cards.frameVersion.",
+        "origin": "s530",
+        "sql": "cards.artist, cards.frameVersion",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:card-artist-name",
+      "type": "MEANS",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {
+        "losses": 0,
+        "note": "The illustrator is stored verbatim in cards.artist, so filter with the exact stored spelling of the name (some artist names are stored with a trailing 'e' that is absent in the common spelling).",
+        "origin": "s347",
+        "sql": "cards.artist",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:non-powerful-foil",
+      "type": "MEANS",
+      "to_entity": "column:cards.cardkingdomfoilid-7e05d4",
+      "properties": {
+        "_feedback_sources": [
+          "s511"
+        ],
+        "losses": 0,
+        "note": "A card's foil counts as powerful only when both cardKingdomId and cardKingdomFoilId are present, so a foil is non-powerful when either is NULL; the separate hasFoil flag does not express this.",
+        "origin": "s393",
+        "sql": "(cards.cardKingdomId IS NULL OR cards.cardKingdomFoilId IS NULL)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:only-available-online",
+      "type": "MEANS",
+      "to_entity": "column:sets.isonlineonly-99332b",
+      "properties": {
+        "_feedback_sources": [
+          "s474",
+          "s396",
+          "s414",
+          "s434",
+          "s519",
+          "s451",
+          "s502",
+          "s353",
+          "s401",
+          "s350",
+          "s526",
+          "s427",
+          "s473",
+          "s399"
+        ],
+        "losses": 6,
+        "note": "The sets.isOnlineOnly flag is 1 when a set exists only in online game variations.",
+        "origin": "s433",
+        "sql": "sets.isOnlineOnly = 1",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:kind-of-printing",
+      "type": "MEANS",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {
+        "_feedback_sources": [
+          "s480",
+          "s462",
+          "s484",
+          "s530",
+          "s346",
+          "s381",
+          "s353",
+          "s401",
+          "s375",
+          "s350",
+          "s503",
+          "s526",
+          "s473",
+          "s358",
+          "s342",
+          "s508",
+          "s395",
+          "s444"
+        ],
+        "losses": 7,
+        "note": "The printing type of a card is stored as a list in cards.availability (values like paper, mtgo, arena, dreamcast, shandalar), not in cards.rarity.",
+        "origin": "s418",
+        "sql": "cards.availability",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:mythic-card",
+      "type": "MEANS",
+      "to_entity": "column:cards.rarity-855cf2",
+      "properties": {
+        "losses": 0,
+        "note": "cards.rarity stores the printing rarity with values common, uncommon, rare, mythic, so a mythic card is identified by cards.rarity = 'mythic'.",
+        "origin": "s515",
+        "sql": "cards.rarity = 'mythic'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:language-and-flavor-text",
+      "type": "MEANS",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {
+        "_feedback_sources": [
+          "s480",
+          "s369",
+          "s519",
+          "s381",
+          "s400",
+          "s438",
+          "s529",
+          "s516",
+          "s440",
+          "s405"
+        ],
+        "losses": 3,
+        "note": "A card's language and its flavor text live in the foreign_data table, keyed by the card's uuid.",
+        "origin": "s445",
+        "sql": "foreign_data.language, foreign_data.flavorText",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:card-name-in-a-set",
+      "type": "MEANS",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {
+        "_feedback_sources": [
+          "s401"
+        ],
+        "losses": 1,
+        "note": "A card's set is identified by the printing code cards.setCode, which joins to sets.code while the human-readable set label is sets.name.",
+        "origin": "s484",
+        "sql": "cards.setCode = sets.code AND sets.name = 'Coldsnap'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:available-in-a-translation-language",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s401",
+          "s473"
+        ],
+        "losses": 2,
+        "note": "Which translations a set has is recorded in set_translations.language using stored language names such as 'Italian', and it joins to sets via set_translations.setCode = sets.code.",
+        "origin": "s353",
+        "sql": "set_translations.language = 'Italian'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:legendary-frame-effect",
+      "type": "MEANS",
+      "to_entity": "column:cards.frameeffects-d02a7b",
+      "properties": {
+        "_feedback_sources": [
+          "s437",
+          "s343",
+          "s386"
+        ],
+        "losses": 3,
+        "note": "cards.frameEffects stores a single frame effect code or a comma-separated combination list, so a single frame effect must be matched exactly rather than with a wildcard LIKE.",
+        "origin": "s401",
+        "sql": "cards.frameEffects = 'legendary'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:card-set-translation-language",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s438",
+          "s446",
+          "s516",
+          "s503",
+          "s440",
+          "s499",
+          "s468",
+          "s405"
+        ],
+        "losses": 2,
+        "note": "Translations of a card set are recorded per set in set_translations, whose language column stores the language name (e.g. 'Spanish').",
+        "origin": "s400",
+        "sql": "set_translations.language = 'Spanish'",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-qualifying-sets",
+      "type": "MEANS",
+      "to_entity": "column:sets.isonlineonly-99332b",
+      "properties": {
+        "_feedback_sources": [
+          "s396",
+          "s434",
+          "s451",
+          "s502",
+          "s353",
+          "s401",
+          "s350",
+          "s526",
+          "s427",
+          "s473",
+          "s399"
+        ],
+        "losses": 5,
+        "note": "Both conditions belong in one numerator CASE expression, while the denominator COUNT(*) spans all joined set/set_translations rows, so non-qualifying language rows are still part of the population.",
+        "origin": "s433",
+        "sql": "100.0 * SUM(CASE WHEN set_translations.language = 'Chinese Simplified' AND sets.isOnlineOnly = 1 THEN 1 ELSE 0 END) / COUNT(*)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:foreign-name-of-a-card",
+      "type": "MEANS",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {
+        "losses": 0,
+        "note": "When a card is linked to foreign-language printings in foreign_data, the card's own name and type are still read from cards, not from foreign_data.",
+        "origin": "s444",
+        "sql": "cards.name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:card-release-date",
+      "type": "MEANS",
+      "to_entity": "column:sets.releasedate-711619",
+      "properties": {
+        "_feedback_sources": [
+          "s506",
+          "s432",
+          "s389",
+          "s433"
+        ],
+        "losses": 3,
+        "note": "A card's release date comes from the set it was printed in, linked by cards.setCode = sets.code.",
+        "origin": "s470",
+        "sql": "sets.releaseDate",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:original-type-is-creature-elf",
+      "type": "MEANS",
+      "to_entity": "column:cards.originaltype-05c20b",
+      "properties": {
+        "_feedback_sources": [
+          "s445",
+          "s530",
+          "s355"
+        ],
+        "losses": 2,
+        "note": "The originalType column stores the type line as originally printed, so the subtype must be matched with an exact equality on the full string 'Creature - Elf'.",
+        "origin": "s389",
+        "sql": "cards.originalType = 'Creature - Elf'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-types",
+      "type": "MEANS",
+      "to_entity": "column:cards.subtypes-597bb4",
+      "properties": {
+        "losses": 0,
+        "note": "A card's types are described by both its subtypes (after the em-dash) and its supertypes (before the em-dash), so a type listing must project both columns.",
+        "origin": "s399",
+        "sql": "cards.subtypes, cards.supertypes",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:banned-status",
+      "type": "MEANS",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {
+        "_feedback_sources": [
+          "s346",
+          "s386"
+        ],
+        "losses": 1,
+        "note": "Legality status is stored capitalized as 'Legal', 'Banned', 'Restricted', so a banned check must use legalities.status = 'Banned'.",
+        "origin": "s530",
+        "sql": "legalities.status = 'Banned'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-name-with-apostrophe",
+      "type": "MEANS",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {
+        "_feedback_sources": [
+          "s373",
+          "s498",
+          "s455",
+          "s491",
+          "s343",
+          "s460",
+          "s355"
+        ],
+        "losses": 1,
+        "note": "String literals in cards.name must escape embedded single quotes by doubling them, otherwise the SQL breaks.",
+        "origin": "s470",
+        "sql": "cards.name = 'Ancestor''s Chosen'",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:card-colour",
+      "type": "MEANS",
+      "to_entity": "column:cards.colors-cd5744",
+      "properties": {
+        "_feedback_sources": [
+          "s399"
+        ],
+        "losses": 1,
+        "note": "The colour(s) of a card, as a list of colors from manaCost and colorIndicator, are stored in cards.colors.",
+        "origin": "s387",
+        "sql": "cards.colors",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:format-of-play",
+      "type": "MEANS",
+      "to_entity": "column:legalities.format-792827",
+      "properties": {
+        "_feedback_sources": [
+          "s363",
+          "s346",
+          "s386"
+        ],
+        "losses": 2,
+        "note": "The rules format a card can be played under is legalities.format, linked to a card by legalities.uuid = cards.uuid.",
+        "origin": "s520",
+        "sql": "legalities.format",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:future-frame-version",
+      "type": "MEANS",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {
+        "_feedback_sources": [
+          "s511"
+        ],
+        "losses": 0,
+        "note": "The card frame style version is stored in cards.frameVersion as one of the codes '1993', '1997', '2003', '2015', 'future'.",
+        "origin": "s386",
+        "sql": "cards.frameVersion = 'future'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-qualifying-sets",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s474",
+          "s498",
+          "s414",
+          "s445",
+          "s463",
+          "s370",
+          "s480",
+          "s369",
+          "s462",
+          "s484",
+          "s381",
+          "s438",
+          "s446",
+          "s516",
+          "s468",
+          "s405",
+          "s368"
+        ],
+        "losses": 5,
+        "note": "Both conditions belong in one numerator CASE expression, while the denominator COUNT(*) spans all joined set/set_translations rows, so non-qualifying language rows are still part of the population.",
+        "origin": "s433",
+        "sql": "100.0 * SUM(CASE WHEN set_translations.language = 'Chinese Simplified' AND sets.isOnlineOnly = 1 THEN 1 ELSE 0 END) / COUNT(*)",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:banned-card-flag",
+      "type": "MEANS",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {
+        "_feedback_sources": [
+          "s346",
+          "s386",
+          "s372"
+        ],
+        "losses": 1,
+        "note": "When the question asks to find banned cards \"if there are any\", report a per-card flag column instead of filtering rows out in WHERE, so non-banned cards still appear with 'NO'.",
+        "origin": "s530",
+        "sql": "IIF(legalities.status = 'Banned', cards.name, 'NO')",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:black-border",
+      "type": "MEANS",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {
+        "_feedback_sources": [
+          "s358",
+          "s368"
+        ],
+        "losses": 0,
+        "note": "Border color is stored on cards.borderColor with lowercase color values including 'black', 'white', 'gold', 'silver' and 'borderless'.",
+        "origin": "s437",
+        "sql": "cards.borderColor = 'black'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:available-in-arena",
+      "type": "MEANS",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {
+        "_feedback_sources": [
+          "s508",
+          "s395",
+          "s444"
+        ],
+        "losses": 1,
+        "note": "cards.availability holds the printing types for a card (e.g. 'arena', 'paper', 'arena,mtgo,paper'), and the arena printing is the stored value 'arena'.",
+        "origin": "s399",
+        "sql": "cards.availability = 'arena'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:set-name",
+      "type": "MEANS",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {
+        "_feedback_sources": [
+          "s491",
+          "s401",
+          "s466",
+          "s503",
+          "s348",
+          "s387",
+          "s493"
+        ],
+        "losses": 2,
+        "note": "A set's name is stored in sets.name, and identifying a set by name means filtering sets.name on the given title.",
+        "origin": "s519",
+        "sql": "sets.name",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:cards-belonging-to-a-set",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {
+        "_feedback_sources": [
+          "s462",
+          "s484",
+          "s478",
+          "s466",
+          "s427",
+          "s441",
+          "s493"
+        ],
+        "losses": 2,
+        "note": "A card's set membership is expressed by matching cards.setCode to set_translations.setCode, and the card name is cards.name.",
+        "origin": "s463",
+        "sql": "cards.setCode = set_translations.setCode",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:which-card",
+      "type": "MEANS",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {
+        "_feedback_sources": [
+          "s444"
+        ],
+        "losses": 1,
+        "note": "When a question asks which card, return the card's identifier from cards.id rather than a display name column.",
+        "origin": "s437",
+        "sql": "cards.id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:card-number",
+      "type": "MEANS",
+      "to_entity": "column:cards.number-380393",
+      "properties": {
+        "_feedback_sources": [
+          "s502",
+          "s353",
+          "s350",
+          "s503",
+          "s348"
+        ],
+        "losses": 1,
+        "note": "A card's number within its set is stored in cards.number as TEXT (e.g. '4'), so numeric card-number filters should be written as cards.number = '4' or compared against the text value.",
+        "origin": "s478",
+        "sql": "cards.number",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:chinese-simplified-language",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s474",
+          "s498",
+          "s414",
+          "s445",
+          "s463",
+          "s370",
+          "s480",
+          "s369",
+          "s462",
+          "s484",
+          "s478",
+          "s381",
+          "s438",
+          "s446",
+          "s516",
+          "s503",
+          "s440",
+          "s499",
+          "s468",
+          "s405"
+        ],
+        "losses": 7,
+        "note": "set_translations.language stores the human-readable language name, with 'Chinese Simplified' as the exact stored value (distinct from 'Chinese Traditional').",
+        "origin": "s433",
+        "sql": "set_translations.language = 'Chinese Simplified'",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:legal-play-format",
+      "type": "MEANS",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {
+        "losses": 0,
+        "note": "legalities.status stores one of 'Legal', 'Banned', 'Restricted', and only rows with status 'Legal' represent formats where the card may legally be played.",
+        "origin": "s515",
+        "sql": "legalities.status = 'Legal'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:missing-or-degraded-properties",
+      "type": "MEANS",
+      "to_entity": "column:cards.hascontentwarning-68cca1",
+      "properties": {
+        "_feedback_sources": [
+          "s342"
+        ],
+        "losses": 1,
+        "note": "cards.hasContentWarning is a stored integer flag where 0 = the card does not have a content warning (i.e. warning/property information is missing or degraded) and 1 = the card is marked by Wizards of the Coast as having sensitive content.",
+        "origin": "s347",
+        "sql": "cards.hasContentWarning",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:card-artist-and-frame-style",
+      "type": "MEANS",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {
+        "_feedback_sources": [
+          "s466",
+          "s343"
+        ],
+        "losses": 1,
+        "note": "The illustrator of a card is cards.artist and its frame style/version is cards.frameVersion.",
+        "origin": "s530",
+        "sql": "cards.artist, cards.frameVersion",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:card-name-in-a-set",
+      "type": "MEANS",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {
+        "losses": 0,
+        "note": "A card's set is identified by the printing code cards.setCode, which joins to sets.code while the human-readable set label is sets.name.",
+        "origin": "s484",
+        "sql": "cards.setCode = sets.code AND sets.name = 'Coldsnap'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:italian-language-card-data",
+      "type": "MEANS",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {
+        "losses": 0,
+        "note": "Per-language card data lives in foreign_data keyed by the card's uuid, and the language is stored as the full label such as 'Italian'.",
+        "origin": "s484",
+        "sql": "foreign_data.language = 'Italian' AND foreign_data.uuid = cards.uuid",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:frame-style-version",
+      "type": "MEANS",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {
+        "_feedback_sources": [
+          "s511"
+        ],
+        "losses": 0,
+        "note": "Frame style is cards.frameVersion, stored as text codes ('1993', '1997', '2003', '2015', 'future'), so the year frame must be compared as a quoted string.",
+        "origin": "s343",
+        "sql": "cards.frameVersion = '2015'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:number-of-cards-in-the-set",
+      "type": "MEANS",
+      "to_entity": "column:sets.basesetsize-e81a7b",
+      "properties": {
+        "_feedback_sources": [
+          "s433",
+          "s474",
+          "s498",
+          "s414",
+          "s463",
+          "s462",
+          "s519",
+          "s484",
+          "s478",
+          "s451",
+          "s502",
+          "s400",
+          "s353",
+          "s466",
+          "s348",
+          "s387",
+          "s368"
+        ],
+        "losses": 9,
+        "note": "The stored size of a card set is sets.baseSetSize, so set-card-count questions should use that column rather than counting card rows.",
+        "origin": "s432",
+        "sql": "sets.baseSetSize",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:cards-in-a-legality-state",
+      "type": "MEANS",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {
+        "_feedback_sources": [
+          "s387"
+        ],
+        "losses": 1,
+        "note": "Card-legality states are matched by joining cards.uuid to legalities.uuid, and each joined card row counts separately (no implicit de-duplication).",
+        "origin": "s383",
+        "sql": "cards.uuid = legalities.uuid",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:restricted-legality-status",
+      "type": "MEANS",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {
+        "_feedback_sources": [
+          "s346",
+          "s386"
+        ],
+        "losses": 1,
+        "note": "legalities.status stores capitalized category labels ('Legal', 'Banned', 'Restricted'), so the filter must use the exact stored casing.",
+        "origin": "s363",
+        "sql": "legalities.status = 'Restricted'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:white-border",
+      "type": "MEANS",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {
+        "_feedback_sources": [
+          "s368"
+        ],
+        "losses": 0,
+        "note": "cards.borderColor stores lowercase color words: black, borderless, gold, silver, white.",
+        "origin": "s383",
+        "sql": "cards.borderColor = 'white'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:available-in-paper",
+      "type": "MEANS",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {
+        "_feedback_sources": [
+          "s401",
+          "s375",
+          "s350",
+          "s503",
+          "s526",
+          "s473",
+          "s358",
+          "s342",
+          "s508",
+          "s395",
+          "s444"
+        ],
+        "losses": 4,
+        "note": "cards.availability stores a comma-separated list of printing-type codes (arena, dreamcast, mtgo, paper, shandalar), so a specific printing must be matched with exact equality on the code, not a LIKE substring pattern.",
+        "origin": "s451",
+        "sql": "cards.availability = 'paper'",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:powerful-foil",
+      "type": "MEANS",
+      "to_entity": "column:cards.cardkingdomfoilid-7e05d4",
+      "properties": {
+        "_feedback_sources": [
+          "s511"
+        ],
+        "losses": 0,
+        "note": "The cardKingdomFoilId value is only meaningful (powerful) when paired with a non-NULL cardKingdomId.",
+        "origin": "s393",
+        "sql": "(cards.cardKingdomId IS NOT NULL AND cards.cardKingdomFoilId IS NOT NULL)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:cards-belonging-to-a-set",
+      "type": "MEANS",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {
+        "losses": 0,
+        "note": "Card rows are linked to a set through cards.setCode = sets.code, and setCode is per printing so a card can appear in several rows.",
+        "origin": "s446",
+        "sql": "cards.setCode = sets.code",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:lowest-face-mana-cost-card",
+      "type": "MEANS",
+      "to_entity": "column:cards.faceconvertedmanacost-f26919",
+      "properties": {
+        "_feedback_sources": [
+          "s453"
+        ],
+        "losses": 0,
+        "note": "To pick the single card at the bottom of the face converted mana cost range, sort cards by cards.faceConvertedManaCost ascending and take the first row.",
+        "origin": "s342",
+        "sql": "ORDER BY cards.faceConvertedManaCost ASC",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:cards-in-a-legality-state",
+      "type": "MEANS",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {
+        "losses": 0,
+        "note": "Card-legality states are matched by joining cards.uuid to legalities.uuid, and each joined card row counts separately (no implicit de-duplication).",
+        "origin": "s383",
+        "sql": "cards.uuid = legalities.uuid",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:powerful-foil",
+      "type": "MEANS",
+      "to_entity": "column:cards.cardkingdomid-397af7",
+      "properties": {
+        "_feedback_sources": [
+          "s530",
+          "s375",
+          "s347",
+          "s454"
+        ],
+        "losses": 3,
+        "note": "The cardKingdomFoilId value is only meaningful (powerful) when paired with a non-NULL cardKingdomId.",
+        "origin": "s393",
+        "sql": "(cards.cardKingdomId IS NOT NULL AND cards.cardKingdomFoilId IS NOT NULL)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:total-number-of-cards-in-set",
+      "type": "MEANS",
+      "to_entity": "column:sets.totalsetsize-70b051",
+      "properties": {
+        "_feedback_sources": [
+          "s466",
+          "s446",
+          "s348",
+          "s460",
+          "s387",
+          "s395"
+        ],
+        "losses": 2,
+        "note": "The total card count for a set is sets.totalSetSize, which includes promos and supplemental products, whereas sets.baseSetSize counts only the main set.",
+        "origin": "s353",
+        "sql": "sets.totalSetSize",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:yes-or-no-question",
+      "type": "MEANS",
+      "to_entity": "column:sets.isforeignonly-35385b",
+      "properties": {
+        "_feedback_sources": [
+          "s440",
+          "s387"
+        ],
+        "losses": 1,
+        "note": "Yes/no questions about a flag column should return the literal 'YES'/'NO' via IIF on the flag rather than the raw 0/1 value.",
+        "origin": "s473",
+        "sql": "IIF(sets.isForeignOnly = 1, 'YES', 'NO')",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:italian-language-card-data",
+      "type": "MEANS",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {
+        "_feedback_sources": [
+          "s381",
+          "s438",
+          "s529",
+          "s516",
+          "s440"
+        ],
+        "losses": 1,
+        "note": "Per-language card data lives in foreign_data keyed by the card's uuid, and the language is stored as the full label such as 'Italian'.",
+        "origin": "s484",
+        "sql": "foreign_data.language = 'Italian' AND foreign_data.uuid = cards.uuid",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:non-japanese-translation-row",
+      "type": "MEANS",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {
+        "_feedback_sources": [
+          "s468",
+          "s405"
+        ],
+        "losses": 0,
+        "note": "Exclude Japanese at the row level by testing the language value of the translation row itself rather than excluding whole sets that have any Japanese row.",
+        "origin": "s529",
+        "sql": "set_translations.language NOT LIKE '%Japanese%'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:non-powerful-foil",
+      "type": "MEANS",
+      "to_entity": "column:cards.cardkingdomid-397af7",
+      "properties": {
+        "_feedback_sources": [
+          "s530",
+          "s375",
+          "s347",
+          "s454"
+        ],
+        "losses": 3,
+        "note": "A card's foil counts as powerful only when both cardKingdomId and cardKingdomFoilId are present, so a foil is non-powerful when either is NULL; the separate hasFoil flag does not express this.",
+        "origin": "s393",
+        "sql": "(cards.cardKingdomId IS NULL OR cards.cardKingdomFoilId IS NULL)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:duel-deck-code",
+      "type": "MEANS",
+      "to_entity": "column:cards.dueldeck-beeb1c",
+      "properties": {
+        "_feedback_sources": [
+          "s445",
+          "s363",
+          "s441",
+          "s493"
+        ],
+        "losses": 2,
+        "note": "cards.duelDeck stores lowercase single-letter codes ('a', 'b') plus NULL for cards in no duel deck, so comparisons must use lowercase values.",
+        "origin": "s512",
+        "sql": "cards.duelDeck = 'a'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:listed-card-types-only",
+      "type": "MEANS",
+      "to_entity": "column:cards.supertypes-b9225a",
+      "properties": {
+        "_feedback_sources": [
+          "s508"
+        ],
+        "losses": 0,
+        "note": "Both subtype and supertype lists are frequently NULL, so type listings should exclude rows where either is missing.",
+        "origin": "s399",
+        "sql": "cards.subtypes IS NOT NULL AND cards.supertypes IS NOT NULL",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s529",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s480",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.flavortext-e895db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s526",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s388",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s502",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s480",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s440",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s440",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s440",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s503",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s529",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s438",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.id-8db305",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s530",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s363",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s387",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s383",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s358",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s516",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s353",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s480",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s381",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s530",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s524",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s347",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s353",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s350",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s446",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s473",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.isforeignonly-35385b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s388",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.id-72f7cb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s515",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.rarity-855cf2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s506",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s370",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s399",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s368",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s468",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s432",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.id-8db305",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s455",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.otherfaceids-b450d7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s386",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s370",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s405",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s433",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.isonlineonly-99332b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s343",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.edhrecrank-8e65fb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s355",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s348",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.number-380393",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s393",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s433",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s363",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.isstarter-80b749",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s462",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s411",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.flavortext-51fe7c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s451",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s493",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.parentcode-4054b0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s499",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s480",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s530",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s444",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.watermark-67f11d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s511",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.cardkingdomfoilid-7e05d4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s411",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.flavortext-e895db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s386",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s427",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.hascontentwarning-68cca1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s396",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s434",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s502",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.releasedate-711619",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s362",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s474",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s393",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s369",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.isreprint-6d4d3c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s400",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s515",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s387",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.id-72f7cb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s520",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s499",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s373",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s478",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s373",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s370",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s498",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s508",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s368",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s375",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s519",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s498",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s455",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s503",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.type-b17175",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s383",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s347",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s369",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s393",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.cardkingdomfoilid-7e05d4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s485",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s385",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s343",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s432",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.basesetsize-e81a7b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s347",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.hascontentwarning-68cca1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s405",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s502",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s502",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s444",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.type-b50fc9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s414",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.block-266026",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s363",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s466",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s470",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s478",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s389",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s401",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.isonlineonly-629eb6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s520",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s347",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s358",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s526",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s445",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s463",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.power-a7f9d2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s437",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s375",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.convertedmanacost-8f35d0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s478",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s506",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s369",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s453",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.manacost-2b8c1e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s433",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s347",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s347",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.text-0d329a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s460",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s348",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s427",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.mcmname-563959",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s474",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s342",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.faceconvertedmanacost-f26919",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s529",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s498",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s444",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s383",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s463",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s355",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.keywords-78aee3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s493",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s441",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.releasedate-711619",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s454",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s362",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.text-0d329a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s506",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.isnonfoilonly-7b74f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s395",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s463",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s400",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s454",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.power-a7f9d2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s499",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.format-792827",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s381",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s396",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s530",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s441",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s519",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.id-8db305",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s511",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.cardkingdomid-397af7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s411",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s503",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s418",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s393",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.cardkingdomid-397af7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s485",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s381",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s437",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.isfullart-8976d7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s453",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s473",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s427",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s401",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameeffects-d02a7b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s411",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s372",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s445",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.watermark-67f11d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s369",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s466",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s432",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s395",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s515",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s520",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s414",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s519",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s414",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s395",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s446",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s370",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s350",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s520",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s396",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.hascontentwarning-68cca1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s508",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s446",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s405",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s485",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.date-21472c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s387",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.colors-cd5744",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s370",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s530",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s348",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s381",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s470",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.releasedate-711619",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s363",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.convertedmanacost-8f35d0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s385",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s462",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s466",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s468",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s427",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s519",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.id-72f7cb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s395",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.hand-6d1db2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.format-792827",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s372",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.toughness-bac953",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s451",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.hand-6d1db2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s530",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s387",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s466",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s468",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s506",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s353",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.totalsetsize-70b051",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s353",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s411",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s343",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameversion-9b04da",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s512",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.dueldeck-beeb1c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s441",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s440",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.name-920697",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s445",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s502",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s342",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s418",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s414",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s362",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s348",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.text-0d329a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s445",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.flavortext-e895db",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s389",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s350",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.number-380393",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s529",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s470",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s468",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s511",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.frameeffects-d02a7b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s503",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s516",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s468",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s470",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s515",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.originalreleasedate-aae401",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s383",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s478",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s474",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.basesetsize-e81a7b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s515",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.status-cab6b4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s478",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.number-380393",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s460",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.flavorname-2a3d66",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s515",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.format-792827",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s353",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s491",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.mcmname-563959",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s508",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.istextless-1ef909",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s484",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s432",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s386",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s414",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.basesetsize-e81a7b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s405",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.block-266026",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s521",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s434",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.mtgocode-a11ac7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s388",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s462",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s388",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.convertedmanacost-8f35d0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s516",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.artist-400780",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s462",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s438",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.id-72f7cb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s462",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s444",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s524",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s434",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s445",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s388",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s350",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s516",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s389",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s446",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s389",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.originaltype-05c20b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s446",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.convertedmanacost-8f35d0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s512",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.hasfoil-e9cf5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s346",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s401",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s369",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s348",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s399",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.subtypes-597bb4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s432",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s485",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s466",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s524",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s383",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s434",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s399",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.supertypes-b9225a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s512",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.power-a7f9d2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s433",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s362",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s385",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.text-0d329a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s499",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s491",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.releasedate-711619",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s438",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.language-e5b31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s463",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s386",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.id-14a69d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s389",
+      "type": "TOUCHES",
+      "to_entity": "column:rulings.date-21472c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s498",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.translation-5a4169",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s385",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s473",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.setcode-ff4a6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s520",
+      "type": "TOUCHES",
+      "to_entity": "column:legalities.format-792827",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s474",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s444",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s350",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s480",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s437",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.bordercolor-46ea80",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s427",
+      "type": "TOUCHES",
+      "to_entity": "column:sets.name-5b30f7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s462",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s498",
+      "type": "TOUCHES",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s526",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.availability-9ee9a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s473",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.name-92f925",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s363",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.uuid-c0c3bd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s455",
+      "type": "TOUCHES",
+      "to_entity": "column:cards.ispromo-a76d0b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s516",
+      "type": "TOUCHES",
+      "to_entity": "column:foreign-data.language-0ebbb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:cards.setcode-ff4a6d",
+      "type": "JOINS",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {
+        "_win_sources": [
+          "s470",
+          "s462",
+          "s484",
+          "s478",
+          "s466",
+          "s446",
+          "s503",
+          "s473"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "column:set-translations.setcode-514e40",
+      "type": "JOINS",
+      "to_entity": "column:sets.code-aa5863",
+      "properties": {
+        "_win_sources": [
+          "s432",
+          "s433",
+          "s414",
+          "s434",
+          "s462",
+          "s502",
+          "s353",
+          "s466",
+          "s427",
+          "s499",
+          "s441",
+          "s468",
+          "s405"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "column:cards.setcode-ff4a6d",
+      "type": "JOINS",
+      "to_entity": "column:set-translations.setcode-514e40",
+      "properties": {
+        "_win_sources": [
+          "s498"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:cards.uuid-c0c3bd",
+      "type": "JOINS",
+      "to_entity": "column:foreign-data.uuid-9a89bc",
+      "properties": {
+        "_win_sources": [
+          "s411",
+          "s445",
+          "s370",
+          "s480",
+          "s369",
+          "s484",
+          "s381",
+          "s516",
+          "s350",
+          "s440",
+          "s444"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "column:cards.uuid-c0c3bd",
+      "type": "JOINS",
+      "to_entity": "column:legalities.uuid-980eae",
+      "properties": {
+        "_win_sources": [
+          "s521",
+          "s520",
+          "s363",
+          "s530",
+          "s346",
+          "s386",
+          "s383",
+          "s515"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "column:cards.uuid-c0c3bd",
+      "type": "JOINS",
+      "to_entity": "column:rulings.uuid-6e4c80",
+      "properties": {
+        "_win_sources": [
+          "s389",
+          "s485",
+          "s385",
+          "s347",
+          "s362",
+          "s348"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 6
+      }
+    }
+  ]
+}

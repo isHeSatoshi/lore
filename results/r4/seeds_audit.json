@@ -1,0 +1,18 @@
+{
+  "run": "r4",
+  "all_11_databases_checked": true,
+  "expected_stream_examples": 864,
+  "actual_unique_examples": 864,
+  "heldout_examples_or_rule_origins": 0,
+  "entities": {
+    "Column": 252,
+    "Example": 864,
+    "Term": 746
+  },
+  "relations": {
+    "MEANS": 964,
+    "TOUCHES": 4010,
+    "JOINS": 93
+  },
+  "scope": "Offline exported-seed provenance audit; no graph writes or model calls"
+}

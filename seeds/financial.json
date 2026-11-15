@@ -1,0 +1,6125 @@
+{
+  "entities": [
+    {
+      "id": "column:account.date-e3cb32",
+      "type": "Column",
+      "name": "account.date",
+      "properties": {
+        "profile": "{\"distinct\": 1535, \"nulls\": 0, \"top\": [\"1993-02-08\", \"1993-10-08\", \"1996-11-24\", \"1996-06-25\", \"1997-08-08\", \"1996-07-08\", \"1993-06-08\", \"1993-02-27\", \"1996-07-22\", \"1996-07-21\", \"1996-05-08\", \"1996-01-01\", \"1995-06-08\", \"1993-11-01\", \"1993-03-08\", \"1993-01-08\", \"1997-05-08\", \"1996-12-30\", \"1996-12-21\", \"1996-11-10\", \"1996-08-30\", \"1996-08-23\", \"1996-08-19\", \"1996-08-08\", \"1996-07-02\"]}"
+      }
+    },
+    {
+      "id": "column:account.frequency-08d3a0",
+      "type": "Column",
+      "name": "account.frequency",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 0, \"top\": [\"POPLATEK MESICNE\", \"POPLATEK TYDNE\", \"POPLATEK PO OBRATU\"]}"
+      }
+    },
+    {
+      "id": "column:client.birth-date-16ad62",
+      "type": "Column",
+      "name": "client.birth_date",
+      "properties": {
+        "profile": "{\"distinct\": 4738, \"nulls\": 0, \"top\": [\"1971-02-28\", \"1970-10-07\", \"1965-07-25\", \"1952-08-26\", \"1947-07-13\", \"1980-09-09\", \"1980-07-04\", \"1979-12-25\", \"1979-12-07\", \"1978-12-15\", \"1978-07-09\", \"1977-09-29\", \"1977-01-11\", \"1976-11-05\", \"1976-09-12\", \"1975-01-28\", \"1972-12-27\", \"1970-07-07\", \"1969-03-17\", \"1968-11-07\", \"1968-10-02\", \"1968-08-27\", \"1967-08-28\", \"1967-07-19\", \"1966-11-12\"]}"
+      }
+    },
+    {
+      "id": "column:client.gender-4f3988",
+      "type": "Column",
+      "name": "client.gender",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [\"M\", \"F\"]}"
+      }
+    },
+    {
+      "id": "column:disp.account-id-ad9c35",
+      "type": "Column",
+      "name": "disp.account_id",
+      "properties": {
+        "profile": "{\"distinct\": 4500, \"nulls\": 0, \"top\": [11349, 11186, 11111, 10954, 10940, 10812, 10789, 10445, 10364, 10351, 10345, 10093, 10079, 10068, 10049, 9928, 9869, 9790, 9731, 9730, 9673, 9646, 9640, 9583, 9513]}"
+      }
+    },
+    {
+      "id": "column:disp.type-60eee9",
+      "type": "Column",
+      "name": "disp.type",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [\"OWNER\", \"DISPONENT\"]}"
+      }
+    },
+    {
+      "id": "column:district.a11-9390b7",
+      "type": "Column",
+      "name": "district.A11",
+      "properties": {
+        "profile": "{\"distinct\": 76, \"nulls\": 0, \"top\": [8369, 12541, 11277, 10787, 10673, 10446, 10177, 10124, 10045, 9920, 9897, 9893, 9832, 9753, 9675, 9650, 9624, 9622, 9538, 9425, 9317, 9307, 9272, 9198, 9104]}"
+      }
+    },
+    {
+      "id": "column:district.a2-68cd05",
+      "type": "Column",
+      "name": "district.A2",
+      "properties": {
+        "profile": "{\"distinct\": 77, \"nulls\": 0, \"top\": [\"Znojmo\", \"Zlin\", \"Zdar nad Sazavou\", \"Vyskov\", \"Vsetin\", \"Usti nad Orlici\", \"Usti nad Labem\", \"Uherske Hradiste\", \"Trutnov\", \"Trebic\", \"Teplice\", \"Tachov\", \"Tabor\", \"Svitavy\", \"Sumperk\", \"Strakonice\", \"Sokolov\", \"Semily\", \"Rychnov nad Kneznou\", \"Rokycany\", \"Rakovnik\", \"Prostejov\", \"Pribram\", \"Prerov\", \"Praha - zapad\"]}"
+      }
+    },
+    {
+      "id": "column:district.a3-b7f292",
+      "type": "Column",
+      "name": "district.A3",
+      "properties": {
+        "profile": "{\"distinct\": 8, \"nulls\": 0, \"top\": [\"south Moravia\", \"central Bohemia\", \"north Moravia\", \"east Bohemia\", \"west Bohemia\", \"north Bohemia\", \"south Bohemia\", \"Prague\"]}"
+      }
+    },
+    {
+      "id": "column:loan.duration-341baa",
+      "type": "Column",
+      "name": "loan.duration",
+      "properties": {
+        "profile": "{\"distinct\": 5, \"nulls\": 0, \"top\": [60, 48, 24, 12, 36]}"
+      }
+    },
+    {
+      "id": "column:loan.status-6343ba",
+      "type": "Column",
+      "name": "loan.status",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [\"C\", \"A\", \"D\", \"B\"]}"
+      }
+    },
+    {
+      "id": "column:order.order-id-0bb7bc",
+      "type": "Column",
+      "name": "order.order_id",
+      "properties": {
+        "profile": "{\"distinct\": 6471, \"nulls\": 0, \"top\": [29401, 29402, 29403, 29404, 29405, 29406, 29407, 29408, 29409, 29410, 29411, 29412, 29413, 29414, 29415, 29416, 29417, 29418, 29419, 29420, 29421, 29422, 29423, 29425, 29426]}"
+      }
+    },
+    {
+      "id": "column:trans.amount-2b9c52",
+      "type": "Column",
+      "name": "trans.amount",
+      "properties": {
+        "profile": "{\"distinct\": 35890, \"nulls\": 0, \"top\": [15, 30, 100, 1200, 1800, 600, 2400, 800, 1500, 1600, 700, 1000, 900, 3000, 1100, 2100, 500, 1300, 300, 1900, 1400, 400, 3600, 2700, 2000]}"
+      }
+    },
+    {
+      "id": "column:trans.balance-a84987",
+      "type": "Column",
+      "name": "trans.balance",
+      "properties": {
+        "profile": "{\"distinct\": 111042, \"nulls\": 0, \"top\": [900, 1100, 600, 1000, 200, 700, 800, 400, 300, 500, 20100, 17200, 21100, 24600, 22500, 19600, 21000, 20700, 20300, 24200, 22100, 21500, 17100, 28661, 26100]}"
+      }
+    },
+    {
+      "id": "column:trans.bank-278de7",
+      "type": "Column",
+      "name": "trans.bank",
+      "properties": {
+        "profile": "{\"distinct\": 13, \"nulls\": 782812, \"top\": [null, \"QR\", \"AB\", \"ST\", \"YZ\", \"GH\", \"EF\", \"KL\", \"UV\", \"OP\", \"IJ\", \"WX\", \"MN\", \"CD\"]}"
+      }
+    },
+    {
+      "id": "column:trans.date-101c96",
+      "type": "Column",
+      "name": "trans.date",
+      "properties": {
+        "profile": "{\"distinct\": 2191, \"nulls\": 0, \"top\": [\"1998-06-30\", \"1998-09-30\", \"1998-07-31\", \"1998-08-31\", \"1998-10-31\", \"1998-11-30\", \"1998-05-31\", \"1998-04-30\", \"1998-03-31\", \"1998-02-28\", \"1998-01-31\", \"1997-12-31\", \"1997-11-30\", \"1997-10-31\", \"1997-09-30\", \"1997-08-31\", \"1997-07-31\", \"1997-06-30\", \"1997-05-31\", \"1997-04-30\", \"1997-03-31\", \"1997-02-28\", \"1997-01-31\", \"1996-12-31\", \"1996-11-30\"]}"
+      }
+    },
+    {
+      "id": "column:trans.k-symbol-78dcd0",
+      "type": "Column",
+      "name": "trans.k_symbol",
+      "properties": {
+        "profile": "{\"distinct\": 8, \"nulls\": 481881, \"top\": [null, \"UROK\", \"SLUZBY\", \"SIPO\", \" \", \"DUCHOD\", \"POJISTNE\", \"UVER\", \"SANKC. UROK\"]}"
+      }
+    },
+    {
+      "id": "column:trans.operation-f72bce",
+      "type": "Column",
+      "name": "trans.operation",
+      "properties": {
+        "profile": "{\"distinct\": 5, \"nulls\": 183114, \"top\": [\"VYBER\", \"PREVOD NA UCET\", null, \"VKLAD\", \"PREVOD Z UCTU\", \"VYBER KARTOU\"]}"
+      }
+    },
+    {
+      "id": "example:s100",
+      "type": "Example",
+      "name": "Among the account opened, how many female customers who were born before 1950 and stayed in Sokolov?",
+      "aliases": [],
+      "properties": {
+        "key": "s100",
+        "learning_complete": true,
+        "sql": "-- Count female clients born before 1950 residing in Sokolov that have an account opened\nSELECT COUNT(DISTINCT c.client_id) AS num_female_customers\nFROM client AS c\nJOIN district AS d ON c.district_id = d.district_id\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN account AS a ON dp.account_id = a.account_id\nWHERE c.gender = 'F'\n  AND c.birth_date < '1950-01-01'\n  AND d.A2 = 'Sokolov'"
+      }
+    },
+    {
+      "id": "example:s102",
+      "type": "Example",
+      "name": "State different accounts who have account opening date before 1997 and own an amount of money greater than 3000USD",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "account",
+            "date"
+          ],
+          [
+            "trans",
+            "amount"
+          ]
+        ],
+        "key": "s102",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T2.date) < '1997' AND T1.amount > 3000"
+      }
+    },
+    {
+      "id": "example:s103",
+      "type": "Example",
+      "name": "Which client issued his/her card in 1994/3/3, give his/her client id.",
+      "aliases": [],
+      "properties": {
+        "key": "s103",
+        "learning_complete": true,
+        "sql": "SELECT d.client_id\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nWHERE c.issued = '1994-03-03'"
+      }
+    },
+    {
+      "id": "example:s104",
+      "type": "Example",
+      "name": "The transaction of 840 USD happened in 1998/10/14, when was this account opened?",
+      "aliases": [],
+      "properties": {
+        "key": "s104",
+        "learning_complete": true,
+        "sql": "SELECT a.date\nFROM trans AS t\nJOIN account AS a ON t.account_id = a.account_id\nWHERE t.amount = 840\n  AND STRFTIME('%Y-%m-%d', t.date) = '1998-10-14'"
+      }
+    },
+    {
+      "id": "example:s105",
+      "type": "Example",
+      "name": "There was a loan approved in 1994/8/25, where was that account opened, give the district Id of the branch.",
+      "aliases": [],
+      "properties": {
+        "key": "s105",
+        "learning_complete": true,
+        "sql": "SELECT a.district_id\nFROM loan AS l\nJOIN account AS a ON l.account_id = a.account_id\nWHERE l.date = '1994-08-25'"
+      }
+    },
+    {
+      "id": "example:s107",
+      "type": "Example",
+      "name": "What is the gender of the oldest client who opened his/her account in the highest average salary branch?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s107",
+        "learning_complete": true,
+        "sql": "SELECT T2.gender FROM district AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id ORDER BY T1.A11 DESC, T2.birth_date ASC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s108",
+      "type": "Example",
+      "name": "For the client who applied the biggest loan, what was his/her first amount of transaction after opened the account?",
+      "aliases": [],
+      "properties": {
+        "key": "s108",
+        "learning_complete": true,
+        "sql": "SELECT t.amount\nFROM trans AS t\nJOIN account AS a ON t.account_id = a.account_id\nJOIN disp AS dp ON a.account_id = dp.account_id\nWHERE t.date >= a.date\n  AND a.account_id = (\n        SELECT l.account_id\n        FROM loan AS l\n        ORDER BY l.amount DESC\n        LIMIT 1\n      )\nORDER BY t.date ASC, t.trans_id ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s109",
+      "type": "Example",
+      "name": "How many clients opened their accounts in Jesenik branch were women?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s109",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.gender = 'F' AND T2.A2 = 'Jesenik'"
+      }
+    },
+    {
+      "id": "example:s110",
+      "type": "Example",
+      "name": "What is the disposition id of the client who made 5100 USD transaction in 1998/9/2?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s110",
+        "learning_complete": true,
+        "sql": "SELECT T1.disp_id FROM disp AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.date='1997-08-20' AND T3.amount = 5100"
+      }
+    },
+    {
+      "id": "example:s111",
+      "type": "Example",
+      "name": "How many accounts were opened in Litomerice in 1996?",
+      "aliases": [],
+      "properties": {
+        "key": "s111",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_accounts\nFROM account AS a\nJOIN district AS d ON a.district_id = d.district_id\nWHERE d.A2 = 'Litomerice' AND STRFTIME('%Y', a.date) = '1996'"
+      }
+    },
+    {
+      "id": "example:s112",
+      "type": "Example",
+      "name": "For the female client who was born in 1976/1/29, which district did she opened her account?",
+      "aliases": [],
+      "properties": {
+        "key": "s112",
+        "learning_complete": true,
+        "sql": "SELECT d.A2\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN account AS a ON dp.account_id = a.account_id\nJOIN district AS d ON a.district_id = d.district_id\nWHERE c.gender = 'F' AND c.birth_date = '1976-01-29'"
+      }
+    },
+    {
+      "id": "example:s113",
+      "type": "Example",
+      "name": "For the client who applied 98832 USD loan in 1996/1/3, when was his/her birthday?",
+      "aliases": [],
+      "properties": {
+        "key": "s113",
+        "learning_complete": true,
+        "sql": "SELECT c.birth_date\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN loan AS l ON dp.account_id = l.account_id\nWHERE l.amount = 98832\n  AND l.date = '1996-01-03'"
+      }
+    },
+    {
+      "id": "example:s114",
+      "type": "Example",
+      "name": "For the first client who opened his/her account in Prague, what is his/her account ID?",
+      "aliases": [],
+      "properties": {
+        "key": "s114",
+        "learning_complete": true,
+        "sql": "SELECT a.account_id\nFROM account AS a\nJOIN district AS d ON a.district_id = d.district_id\nJOIN disp AS dp ON a.account_id = dp.account_id\nJOIN client AS c ON dp.client_id = c.client_id\nWHERE d.A3 = 'Prague'\nORDER BY a.date ASC, a.account_id ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s115",
+      "type": "Example",
+      "name": "For the branch which located in the south Bohemia with biggest number of inhabitants, what is the percentage of the male clients?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s115",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T2.A3 = 'south Bohemia' GROUP BY T2.A4 ORDER BY T2.A4 DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s118",
+      "type": "Example",
+      "name": "For loan amount less than USD100,000, what is the percentage of accounts that is still running with no issue.",
+      "aliases": [],
+      "properties": {
+        "key": "s118",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT CAST(COUNT(DISTINCT CASE WHEN l.status = 'C' THEN l.account_id END) AS REAL) * 100\n       / COUNT(DISTINCT l.account_id) AS percentage\nFROM loan AS l\nWHERE l.amount < 100000"
+      }
+    },
+    {
+      "id": "example:s119",
+      "type": "Example",
+      "name": "For accounts in 1993 with statement issued after transaction, list the account ID, district name and district region.",
+      "aliases": [],
+      "properties": {
+        "key": "s119",
+        "learning_complete": true,
+        "sql": "SELECT T1.account_id, T3.A2, T3.A3\nFROM account AS T1\nINNER JOIN district AS T3 ON T1.district_id = T3.district_id\nWHERE T1.frequency = 'POPLATEK PO OBRATU'\n  AND STRFTIME('%Y', T1.date) = '1993'"
+      }
+    },
+    {
+      "id": "example:s121",
+      "type": "Example",
+      "name": "List account ID and account opening date for accounts from 'Prachatice'.",
+      "aliases": [],
+      "properties": {
+        "key": "s121",
+        "learning_complete": true,
+        "sql": "SELECT T1.account_id, T1.date\nFROM account AS T1\nINNER JOIN district AS T2 ON T1.district_id = T2.district_id\nWHERE T2.A2 = 'Prachatice'"
+      }
+    },
+    {
+      "id": "example:s122",
+      "type": "Example",
+      "name": "State the district and region for loan ID '4990'.",
+      "aliases": [],
+      "properties": {
+        "key": "s122",
+        "learning_complete": true,
+        "sql": "SELECT T3.A2, T3.A3\nFROM loan AS T1\nINNER JOIN account AS T2 ON T1.account_id = T2.account_id\nINNER JOIN district AS T3 ON T2.district_id = T3.district_id\nWHERE T1.loan_id = 4990"
+      }
+    },
+    {
+      "id": "example:s125",
+      "type": "Example",
+      "name": "For loans contracts which are still running where client are in debt, list the district of the and the state the percentage unemployment rate increment from year 1995 to 1996.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "loan",
+            "status"
+          ]
+        ],
+        "key": "s125",
+        "learning_complete": true,
+        "sql": "SELECT CAST((T3.A13 - T3.A12) AS REAL) * 100 / T3.A12 FROM loan AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN district AS T3 ON T2.district_id = T3.district_id WHERE T1.status = 'D'"
+      }
+    },
+    {
+      "id": "example:s126",
+      "type": "Example",
+      "name": "Calculate the percentage of account from 'Decin' district for all accounts are opened in 1993.",
+      "aliases": [],
+      "properties": {
+        "key": "s126",
+        "learning_complete": true,
+        "sql": "SELECT 100.0 * SUM(CASE WHEN d.A2 = 'Decin' THEN 1 ELSE 0 END) / COUNT(*) AS percentage\nFROM account AS a\nLEFT JOIN district AS d ON a.district_id = d.district_id\nWHERE strftime('%Y', a.date) = '1993'"
+      }
+    },
+    {
+      "id": "example:s128",
+      "type": "Example",
+      "name": "List the top nine districts, by descending order, from the highest to the lowest, the number of female account holders.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s128",
+        "learning_complete": true,
+        "sql": "SELECT T2.A2, COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.gender = 'F' GROUP BY T2.district_id, T2.A2 ORDER BY COUNT(T1.client_id) DESC LIMIT 9"
+      }
+    },
+    {
+      "id": "example:s130",
+      "type": "Example",
+      "name": "How many of the account holders in South Bohemia still do not own credit cards?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s130",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T3.account_id) FROM district AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.client_id = T3.client_id WHERE T1.A3 = 'south Bohemia' AND T3.type != 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s131",
+      "type": "Example",
+      "name": "Which district has highest active loan?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s131",
+        "learning_complete": true,
+        "sql": "SELECT T2.A3 FROM account AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN loan AS T3 ON T1.account_id = T3.account_id WHERE T3.status IN ('C', 'D') GROUP BY T2.A3 ORDER BY SUM(T3.amount) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s132",
+      "type": "Example",
+      "name": "What is the average loan amount by male borrowers?",
+      "aliases": [],
+      "properties": {
+        "key": "s132",
+        "learning_complete": true,
+        "sql": "SELECT AVG(l.amount) AS avg_loan_amount\nFROM loan AS l\nJOIN account AS a ON l.account_id = a.account_id\nJOIN disp AS dp ON a.account_id = dp.account_id\nJOIN client AS c ON dp.client_id = c.client_id\nWHERE c.gender = 'M'"
+      }
+    },
+    {
+      "id": "example:s133",
+      "type": "Example",
+      "name": "In 1996, which districts have the highest unemployment rate? List their branch location and district name.",
+      "aliases": [],
+      "properties": {
+        "key": "s133",
+        "learning_complete": true,
+        "sql": "SELECT district_id, A2\nFROM district\nWHERE A13 = (SELECT MAX(A13) FROM district)\nORDER BY A2"
+      }
+    },
+    {
+      "id": "example:s134",
+      "type": "Example",
+      "name": "In the branch where the largest number of crimes were committed in 1996, how many accounts were opened?",
+      "aliases": [],
+      "properties": {
+        "key": "s134",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_accounts\nFROM account AS a\nJOIN district AS d ON a.district_id = d.district_id\nWHERE d.A16 = (SELECT MAX(A16) FROM district)"
+      }
+    },
+    {
+      "id": "example:s135",
+      "type": "Example",
+      "name": "After making a credit card withdrawal, how many account/s with monthly issuance has a negative balance?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "trans",
+            "balance"
+          ],
+          [
+            "trans",
+            "operation"
+          ]
+        ],
+        "key": "s135",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'"
+      }
+    },
+    {
+      "id": "example:s137",
+      "type": "Example",
+      "name": "How many accounts have running contracts in Branch location 1?",
+      "aliases": [],
+      "properties": {
+        "key": "s137",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.account_id)\nFROM account AS T1\nINNER JOIN loan AS T2 ON T1.account_id = T2.account_id\nWHERE T1.district_id = 1 AND T2.status IN ('C', 'D')"
+      }
+    },
+    {
+      "id": "example:s138",
+      "type": "Example",
+      "name": "In the branch where the second-highest number of crimes were committed in 1995 occurred, how many male clients are there?",
+      "aliases": [],
+      "properties": {
+        "key": "s138",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_male_clients\nFROM client AS c\nJOIN district AS d ON c.district_id = d.district_id\nWHERE c.gender = 'M'\n  AND d.district_id = (\n      SELECT district_id\n      FROM district\n      ORDER BY A15 DESC\n      LIMIT 1 OFFSET 1\n  )"
+      }
+    },
+    {
+      "id": "example:s139",
+      "type": "Example",
+      "name": "How many high-level credit cards have \"OWNER\" type of disposition?",
+      "aliases": [],
+      "properties": {
+        "key": "s139",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_gold_cards\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nWHERE c.type = 'gold' AND d.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s141",
+      "type": "Example",
+      "name": "Which districts have transactions greater than USS$10,000 in 1997?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s141",
+        "learning_complete": true,
+        "sql": "SELECT T1.district_id FROM account AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T1.account_id = T3.account_id WHERE STRFTIME('%Y', T3.date) = '1997' GROUP BY T1.district_id HAVING SUM(T3.amount) > 10000"
+      }
+    },
+    {
+      "id": "example:s143",
+      "type": "Example",
+      "name": "What are the accounts that have gold credit cards?",
+      "aliases": [],
+      "properties": {
+        "key": "s143",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT d.account_id\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nWHERE c.type = 'gold'"
+      }
+    },
+    {
+      "id": "example:s145",
+      "type": "Example",
+      "name": "Who are the account holder identification numbers whose who have transactions on the credit card with the amount is less than the average, in 1998?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "trans",
+            "date"
+          ]
+        ],
+        "key": "s145",
+        "learning_complete": true,
+        "sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')"
+      }
+    },
+    {
+      "id": "example:s146",
+      "type": "Example",
+      "name": "Who are the female account holders who own credit cards and also have loans?",
+      "aliases": [],
+      "properties": {
+        "key": "s146",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT c.client_id\nFROM client AS c\nJOIN disp AS d ON c.client_id = d.client_id\nJOIN card AS cd ON cd.disp_id = d.disp_id\nJOIN loan AS l ON d.account_id = l.account_id\nWHERE c.gender = 'F' AND d.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s147",
+      "type": "Example",
+      "name": "How many female clients' accounts are in the region of South Bohemia?",
+      "aliases": [],
+      "properties": {
+        "key": "s147",
+        "learning_complete": true,
+        "sql": "-- Count accounts of female clients that are located in the South Bohemia region\nSELECT COUNT(DISTINCT a.account_id) AS num_accounts\nFROM account AS a\nINNER JOIN district AS d ON a.district_id = d.district_id\nINNER JOIN disp AS dp ON a.account_id = dp.account_id\nINNER JOIN client AS c ON dp.client_id = c.client_id\nWHERE d.A3 = 'south Bohemia'\n  AND c.gender = 'F'"
+      }
+    },
+    {
+      "id": "example:s148",
+      "type": "Example",
+      "name": "Please list the accounts whose district is Tabor that are eligible for loans.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "district",
+            "A2"
+          ]
+        ],
+        "key": "s148",
+        "learning_complete": true,
+        "sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'"
+      }
+    },
+    {
+      "id": "example:s149",
+      "type": "Example",
+      "name": "Please list the account types that are not eligible for loans, and the average income of residents in the district where the account is located exceeds $8000 but is no more than $9000.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "district",
+            "A11"
+          ]
+        ],
+        "key": "s149",
+        "learning_complete": true,
+        "sql": "SELECT T3.type FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type != 'OWNER' AND T1.A11 BETWEEN 8000 AND 9000"
+      }
+    },
+    {
+      "id": "example:s150",
+      "type": "Example",
+      "name": "How many accounts in North Bohemia has made a transaction with the partner's bank being AB?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "district",
+            "A3"
+          ],
+          [
+            "trans",
+            "bank"
+          ]
+        ],
+        "key": "s150",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'"
+      }
+    },
+    {
+      "id": "example:s151",
+      "type": "Example",
+      "name": "Please list the name of the districts with accounts that made withdrawal transactions.",
+      "aliases": [],
+      "properties": {
+        "key": "s151",
+        "learning_complete": true,
+        "sql": "-- This SQL query finds the names of districts that have accounts with withdrawal transactions\nSELECT DISTINCT T2.A2\nFROM trans AS T1\nINNER JOIN account AS T3 ON T1.account_id = T3.account_id\nINNER JOIN district AS T2 ON T3.district_id = T2.district_id\nWHERE T1.operation = 'VYBER'"
+      }
+    },
+    {
+      "id": "example:s154",
+      "type": "Example",
+      "name": "How many male clients in 'Hl.m. Praha' district?",
+      "aliases": [],
+      "properties": {
+        "key": "s154",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS male_clients\nFROM client AS c\nJOIN district AS d ON c.district_id = d.district_id\nWHERE c.gender = 'M' AND d.A2 = 'Hl.m. Praha'"
+      }
+    },
+    {
+      "id": "example:s157",
+      "type": "Example",
+      "name": "What is the number of committed crimes in 1995 in the district of the account with the id 532?",
+      "aliases": [],
+      "properties": {
+        "key": "s157",
+        "learning_complete": true,
+        "sql": "SELECT d.A15\nFROM account AS a\nJOIN district AS d ON a.district_id = d.district_id\nWHERE a.account_id = 532"
+      }
+    },
+    {
+      "id": "example:s158",
+      "type": "Example",
+      "name": "What is the district Id of the account that placed the order with the id 33333?",
+      "aliases": [],
+      "properties": {
+        "key": "s158",
+        "learning_complete": true,
+        "sql": "SELECT a.district_id\nFROM `order` AS o\nJOIN account AS a ON o.account_id = a.account_id\nWHERE o.order_id = 33333"
+      }
+    },
+    {
+      "id": "example:s160",
+      "type": "Example",
+      "name": "Among the weekly issuance accounts, how many have a loan of under 200000?",
+      "aliases": [],
+      "properties": {
+        "key": "s160",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.account_id)\nFROM account AS T1\nINNER JOIN loan AS T2 ON T1.account_id = T2.account_id\nWHERE T1.frequency = 'POPLATEK TYDNE'\n  AND T2.amount < 200000"
+      }
+    },
+    {
+      "id": "example:s161",
+      "type": "Example",
+      "name": "What type of credit card does the client with the id 13539 own?",
+      "aliases": [],
+      "properties": {
+        "key": "s161",
+        "learning_complete": true,
+        "sql": "SELECT c.type\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nJOIN client AS cl ON d.client_id = cl.client_id\nWHERE cl.client_id = 13539"
+      }
+    },
+    {
+      "id": "example:s162",
+      "type": "Example",
+      "name": "What is the region of the client with the id 3541 from?",
+      "aliases": [],
+      "properties": {
+        "key": "s162",
+        "learning_complete": true,
+        "sql": "-- Get the region (A3) of the district where client 3541 is located\nSELECT d.A3\nFROM client AS c\nINNER JOIN district AS d ON c.district_id = d.district_id\nWHERE c.client_id = 3541"
+      }
+    },
+    {
+      "id": "example:s163",
+      "type": "Example",
+      "name": "Which district has the most accounts with loan contracts finished with no problems?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s163",
+        "learning_complete": true,
+        "sql": "SELECT T1.A2 FROM District AS T1 INNER JOIN Account AS T2 ON T1.District_id = T2.District_id INNER JOIN Loan AS T3 ON T2.Account_id = T3.Account_id WHERE T3.status = 'A' GROUP BY T1.District_id ORDER BY COUNT(T2.Account_id) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s164",
+      "type": "Example",
+      "name": "Who placed the order with the id 32423?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "order",
+            "order_id"
+          ]
+        ],
+        "key": "s164",
+        "learning_complete": true,
+        "sql": "SELECT T3.client_id FROM `order` AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T4.account_id = T2.account_id  INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE T1.order_id = 32423"
+      }
+    },
+    {
+      "id": "example:s166",
+      "type": "Example",
+      "name": "How many of the accounts are from Jesenik district?",
+      "aliases": [],
+      "properties": {
+        "key": "s166",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.account_id)\nFROM account AS T1\nINNER JOIN district AS T2 ON T1.district_id = T2.district_id\nWHERE T2.A2 = 'Jesenik'"
+      }
+    },
+    {
+      "id": "example:s167",
+      "type": "Example",
+      "name": "List all the clients' IDs whose junior credit cards were issued after 1996.",
+      "aliases": [],
+      "properties": {
+        "key": "s167",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT d.client_id\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nWHERE c.type = 'junior' AND c.issued > '1996-12-31'"
+      }
+    },
+    {
+      "id": "example:s170",
+      "type": "Example",
+      "name": "How many credit card withdrawals were recorded after 1995?",
+      "aliases": [],
+      "properties": {
+        "key": "s170",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_credit_card_withdrawals\nFROM trans\nWHERE operation = 'VYBER KARTOU'\n  AND STRFTIME('%Y', date) > '1995'"
+      }
+    },
+    {
+      "id": "example:s172",
+      "type": "Example",
+      "name": "How many owner and disponent dispositions are there from account number 1 to account number 10?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "disp",
+            "account_id"
+          ]
+        ],
+        "key": "s172",
+        "learning_complete": true,
+        "sql": "SELECT SUM(type = 'OWNER') , SUM(type = 'DISPONENT') FROM disp WHERE account_id BETWEEN 1 AND 10"
+      }
+    },
+    {
+      "id": "example:s174",
+      "type": "Example",
+      "name": "What year was account owner number 130 born?",
+      "aliases": [],
+      "properties": {
+        "key": "s174",
+        "learning_complete": true,
+        "sql": "-- What year was the owner of account number 130 born?\nSELECT STRFTIME('%Y', c.birth_date) AS birth_year\nFROM disp AS dp\nJOIN client AS c ON dp.client_id = c.client_id\nWHERE dp.account_id = 130\n  AND dp.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s175",
+      "type": "Example",
+      "name": "How many accounts have an owner disposition and request for a statement to be generated upon a transaction?",
+      "aliases": [],
+      "properties": {
+        "key": "s175",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.account_id)\nFROM account AS T1\nINNER JOIN disp AS T2 ON T1.account_id = T2.account_id\nWHERE T2.type = 'OWNER' AND T1.frequency = 'POPLATEK PO OBRATU'"
+      }
+    },
+    {
+      "id": "example:s176",
+      "type": "Example",
+      "name": "What is the amount of debt that client number 992 has, and how is this client doing with payments?",
+      "aliases": [],
+      "properties": {
+        "key": "s176",
+        "learning_complete": true,
+        "sql": "SELECT l.amount, l.status\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN loan AS l ON dp.account_id = l.account_id\nWHERE c.client_id = 992"
+      }
+    },
+    {
+      "id": "example:s177",
+      "type": "Example",
+      "name": "What is the sum that client number 4's account has following transaction 851? Who owns this account, a man or a woman?",
+      "aliases": [],
+      "properties": {
+        "key": "s177",
+        "learning_complete": true,
+        "sql": "SELECT t.balance, c.gender\nFROM client AS c\nJOIN disp AS d ON c.client_id = d.client_id\nJOIN trans AS t ON d.account_id = t.account_id\nWHERE c.client_id = 4\n  AND t.trans_id = 851"
+      }
+    },
+    {
+      "id": "example:s178",
+      "type": "Example",
+      "name": "Which kind of credit card does client number 9 possess?",
+      "aliases": [],
+      "properties": {
+        "key": "s178",
+        "learning_complete": true,
+        "sql": "-- What type of credit card does the client with the id 9 own?\nSELECT c.type\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nJOIN client AS cl ON d.client_id = cl.client_id\nWHERE cl.client_id = 9"
+      }
+    },
+    {
+      "id": "example:s179",
+      "type": "Example",
+      "name": "How much, in total, did client number 617 pay for all of the transactions in 1998?",
+      "aliases": [],
+      "properties": {
+        "key": "s179",
+        "learning_complete": true,
+        "sql": "SELECT SUM(t.amount) AS total_amount\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN trans AS t ON dp.account_id = t.account_id\nWHERE c.client_id = 617\n  AND STRFTIME('%Y', t.date) = '1998'"
+      }
+    },
+    {
+      "id": "example:s181",
+      "type": "Example",
+      "name": "Please provide the IDs of the 3 female clients with the largest loans.",
+      "aliases": [],
+      "properties": {
+        "key": "s181",
+        "learning_complete": true,
+        "sql": "SELECT c.client_id\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN account AS a ON dp.account_id = a.account_id\nJOIN loan AS l ON a.account_id = l.account_id\nWHERE c.gender = 'F'\nGROUP BY c.client_id\nORDER BY SUM(l.amount) DESC\nLIMIT 3"
+      }
+    },
+    {
+      "id": "example:s182",
+      "type": "Example",
+      "name": "How many male customers who were born between 1974 and 1976 have made a payment on their home in excess of $4000?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "client",
+            "birth_date"
+          ],
+          [
+            "client",
+            "gender"
+          ],
+          [
+            "trans",
+            "k_symbol"
+          ]
+        ],
+        "key": "s182",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'"
+      }
+    },
+    {
+      "id": "example:s183",
+      "type": "Example",
+      "name": "How many accounts in Beroun were opened after 1996?",
+      "aliases": [],
+      "properties": {
+        "key": "s183",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS num_accounts\nFROM account AS a\nJOIN district AS d ON a.district_id = d.district_id\nWHERE d.A2 = 'Beroun' AND strftime('%Y', a.date) > '1996'"
+      }
+    },
+    {
+      "id": "example:s184",
+      "type": "Example",
+      "name": "How many female customers have a junior credit card?",
+      "aliases": [],
+      "properties": {
+        "key": "s184",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT cl.client_id)\nFROM client AS cl\nJOIN disp AS d ON cl.client_id = d.client_id\nJOIN card AS c ON d.disp_id = c.disp_id\nWHERE cl.gender = 'F' AND c.type = 'junior'"
+      }
+    },
+    {
+      "id": "example:s185",
+      "type": "Example",
+      "name": "What proportion of customers who have accounts at the Prague branch are female?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s185",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(T2.gender = 'F') AS REAL) / COUNT(T2.client_id) * 100 FROM district AS T1 INNER JOIN client AS T2 ON T1.district_id = T2.district_id WHERE T1.A3 = 'Prague'"
+      }
+    },
+    {
+      "id": "example:s186",
+      "type": "Example",
+      "name": "What percentage of male clients request for weekly statements to be issued?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s186",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'"
+      }
+    },
+    {
+      "id": "example:s187",
+      "type": "Example",
+      "name": "How many clients who choose statement of weekly issuance are Owner?",
+      "aliases": [],
+      "properties": {
+        "key": "s187",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T2.client_id)\nFROM account AS T1\nINNER JOIN disp AS T2 ON T1.account_id = T2.account_id\nWHERE T1.frequency = 'POPLATEK TYDNE' AND T2.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s188",
+      "type": "Example",
+      "name": "Among the accounts who have loan validity more than 24 months, list out the accounts that have the lowest approved amount and have account opening date before 1997.",
+      "aliases": [],
+      "properties": {
+        "key": "s188",
+        "learning_complete": true,
+        "sql": "SELECT a.account_id\nFROM account AS a\nJOIN loan AS l ON l.account_id = a.account_id\nWHERE l.duration > 24\n  AND STRFTIME('%Y', a.date) < '1997'\nORDER BY l.amount ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s189",
+      "type": "Example",
+      "name": "Name the account numbers of female clients who are oldest and have lowest average salary?",
+      "aliases": [],
+      "properties": {
+        "key": "s189",
+        "learning_complete": true,
+        "sql": "-- Account numbers of the oldest female client, restricted to the district with the lowest average salary\nSELECT a.account_id\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN account AS a ON dp.account_id = a.account_id\nJOIN district AS d ON a.district_id = d.district_id\nWHERE c.gender = 'F'\nORDER BY c.birth_date ASC, d.A11 ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s191",
+      "type": "Example",
+      "name": "How many loan accounts are for pre-payment of duration of 24 months with weekly issuance of statement.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "loan",
+            "duration"
+          ]
+        ],
+        "key": "s191",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T2.account_id) FROM account AS T1 INNER JOIN loan AS T2 ON T1.account_id = T2.account_id WHERE T2.duration = 24 AND T1.frequency = 'POPLATEK TYDNE'"
+      }
+    },
+    {
+      "id": "example:s192",
+      "type": "Example",
+      "name": "What is the average amount of loan which are still on running contract with statement issuance after each transaction?",
+      "aliases": [],
+      "properties": {
+        "key": "s192",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT AVG(T2.amount) AS avg_loan_amount\nFROM account AS T1\nINNER JOIN loan AS T2 ON T1.account_id = T2.account_id\nWHERE T2.status IN ('C', 'D')\n  AND T1.frequency = 'POPLATEK PO OBRATU'"
+      }
+    },
+    {
+      "id": "example:s193",
+      "type": "Example",
+      "name": "List all ID and district for clients that can only have the right to issue permanent orders or apply for loans.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s193",
+        "learning_complete": true,
+        "sql": "SELECT T3.client_id, T2.district_id, T2.A2 FROM account AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T1.account_id = T3.account_id WHERE T3.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s194",
+      "type": "Example",
+      "name": "Provide the IDs and age of the client with high level credit card, which is eligible for loans.",
+      "aliases": [],
+      "properties": {
+        "key": "s194",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT cl.client_id,\n       (strftime('%Y', 'now') - strftime('%Y', cl.birth_date)) AS age\nFROM card AS c\nJOIN disp AS d ON c.disp_id = d.disp_id\nJOIN client AS cl ON d.client_id = cl.client_id\nWHERE c.type = 'gold'\n  AND d.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s89",
+      "type": "Example",
+      "name": "How many accounts who choose issuance after transaction are staying in East Bohemia region?",
+      "aliases": [],
+      "properties": {
+        "key": "s89",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.account_id)\nFROM account AS T1\nINNER JOIN district AS T2 ON T1.district_id = T2.district_id\nWHERE T1.frequency = 'POPLATEK PO OBRATU'\n  AND T2.A3 = 'east Bohemia'"
+      }
+    },
+    {
+      "id": "example:s90",
+      "type": "Example",
+      "name": "How many accounts who have region in Prague are eligible for loans?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s90",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.account_id) FROM account AS T1 INNER JOIN loan AS T2 ON T1.account_id = T2.account_id INNER JOIN district AS T3 ON T1.district_id = T3.district_id WHERE T3.A3 = 'Prague'"
+      }
+    },
+    {
+      "id": "example:s91",
+      "type": "Example",
+      "name": "The average unemployment ratio of 1995 and 1996, which one has higher percentage?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s91",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT IIF(AVG(A13) > AVG(A12), '1996', '1995') FROM district"
+      }
+    },
+    {
+      "id": "example:s92",
+      "type": "Example",
+      "name": "List out the no. of districts that have female average salary is more than 6000 but less than 10000?",
+      "aliases": [],
+      "properties": {
+        "key": "s92",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT d.district_id)\nFROM district AS d\nJOIN client AS c ON c.district_id = d.district_id\nWHERE c.gender = 'F'\n  AND d.A11 > 6000\n  AND d.A11 < 10000"
+      }
+    },
+    {
+      "id": "example:s93",
+      "type": "Example",
+      "name": "How many male customers who are living in North Bohemia have average salary greater than 8000?",
+      "aliases": [],
+      "properties": {
+        "key": "s93",
+        "learning_complete": true,
+        "sql": "-- Male clients living in North Bohemia whose district has an average salary greater than 8000\nSELECT COUNT(*) AS num_male_clients\nFROM (\n    SELECT c.client_id\n    FROM client AS c\n    JOIN district AS d ON c.district_id = d.district_id\n    WHERE c.gender = 'M'\n      AND d.A3 = 'north Bohemia'\n    GROUP BY c.client_id\n    HAVING AVG(d.A11) > 8000\n) AS t"
+      }
+    },
+    {
+      "id": "example:s95",
+      "type": "Example",
+      "name": "List out the account numbers of clients who are youngest and have highest average salary?",
+      "aliases": [],
+      "properties": {
+        "key": "s95",
+        "learning_complete": true,
+        "sql": "-- Account numbers of the youngest client, restricted to the district with the highest average salary\nSELECT a.account_id\nFROM client AS c\nJOIN disp AS dp ON c.client_id = dp.client_id\nJOIN account AS a ON dp.account_id = a.account_id\nJOIN district AS d ON a.district_id = d.district_id\nORDER BY c.birth_date DESC, d.A11 DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s96",
+      "type": "Example",
+      "name": "How many customers who choose statement of weekly issuance are Owner?",
+      "aliases": [],
+      "properties": {
+        "key": "s96",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T2.client_id)\nFROM account AS T1\nINNER JOIN disp AS T2 ON T1.account_id = T2.account_id\nWHERE T1.frequency = 'POPLATEK TYDNE' AND T2.type = 'OWNER'"
+      }
+    },
+    {
+      "id": "example:s97",
+      "type": "Example",
+      "name": "List out the id number of client who choose statement of issuance after transaction are Disponent?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "account",
+            "frequency"
+          ],
+          [
+            "disp",
+            "type"
+          ]
+        ],
+        "key": "s97",
+        "learning_complete": true,
+        "sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'"
+      }
+    },
+    {
+      "id": "example:s98",
+      "type": "Example",
+      "name": "Among the accounts who have approved loan date in 1997, list out the accounts that have the lowest approved amount and choose weekly issuance statement.",
+      "aliases": [],
+      "properties": {
+        "key": "s98",
+        "learning_complete": true,
+        "sql": "SELECT a.account_id\nFROM account AS a\nJOIN loan AS l ON l.account_id = a.account_id\nWHERE STRFTIME('%Y', l.date) = '1997'\n  AND a.frequency = 'POPLATEK TYDNE'\nORDER BY l.amount ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s99",
+      "type": "Example",
+      "name": "Among the accounts who have loan validity more than 12 months, list out the accounts that have the highest approved amount and have account opening date in 1993.",
+      "aliases": [],
+      "properties": {
+        "key": "s99",
+        "learning_complete": true,
+        "sql": "SELECT a.account_id\nFROM account AS a\nJOIN loan AS l ON l.account_id = a.account_id\nWHERE l.duration > 12\n  AND STRFTIME('%Y', a.date) = '1993'\nORDER BY l.amount DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "term:account-branch-location",
+      "type": "Term",
+      "name": "account branch location",
+      "aliases": [
+        "branch of account",
+        "district of account"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:account-holder",
+      "type": "Term",
+      "name": "account holder",
+      "aliases": [
+        "account owner",
+        "owner of the account",
+        "owns the account"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:account-located-in-region",
+      "type": "Term",
+      "name": "account located in region",
+      "aliases": [
+        "accounts in a region",
+        "branch region of account"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:account-number",
+      "type": "Term",
+      "name": "account number",
+      "aliases": [
+        "account id",
+        "accounts"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:account-opening-date-before-year",
+      "type": "Term",
+      "name": "account opening date before year",
+      "aliases": [
+        "account opened before",
+        "opening date year",
+        "account creation date earlier than"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:account-that-placed-the-order",
+      "type": "Term",
+      "name": "account that placed the order",
+      "aliases": [
+        "which account placed the order",
+        "order account"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:account-type",
+      "type": "Term",
+      "name": "account type",
+      "aliases": [
+        "disposition type",
+        "type of disposition",
+        "account types",
+        "owner and disponent",
+        "disposition kind"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:accounts-linked-to-transactions",
+      "type": "Term",
+      "name": "accounts linked to transactions",
+      "aliases": [
+        "distinct accounts with transactions"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:accounts-with-loans-in-a-district",
+      "type": "Term",
+      "name": "accounts with loans in a district",
+      "aliases": [
+        "accounts of district",
+        "accounts per district"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:average-income-of-district-residents",
+      "type": "Term",
+      "name": "average income of district residents",
+      "aliases": [
+        "average salary in district",
+        "district average income"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:born-between-years",
+      "type": "Term",
+      "name": "born between years",
+      "aliases": [
+        "birth year between",
+        "year of birth range"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:branch-in-a-region",
+      "type": "Term",
+      "name": "branch in a region",
+      "aliases": [
+        "clients of a branch in a region",
+        "branch of an oblast"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:branch-with-most-inhabitants",
+      "type": "Term",
+      "name": "branch with most inhabitants",
+      "aliases": [
+        "most populous branch",
+        "biggest population branch"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:client-linked-to-an-account",
+      "type": "Term",
+      "name": "client linked to an account",
+      "aliases": [
+        "account holder client",
+        "disp relationship",
+        "account to client mapping"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:client-of-an-account-disposition",
+      "type": "Term",
+      "name": "client of an account disposition",
+      "aliases": [
+        "client who chose disposition",
+        "disp.client_id"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:client-s-branch",
+      "type": "Term",
+      "name": "client's branch",
+      "aliases": [
+        "branch of client",
+        "clients in a branch",
+        "branch clients"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:client-s-branch-location",
+      "type": "Term",
+      "name": "client's branch location",
+      "aliases": [
+        "branch where the client is located",
+        "client district"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:client-s-district",
+      "type": "Term",
+      "name": "client's district",
+      "aliases": [
+        "district of a client",
+        "client branch location",
+        "client region",
+        "branch region",
+        "region of the client's branch",
+        "district region"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:contract-client-in-debt",
+      "type": "Term",
+      "name": "contract client in debt",
+      "aliases": [
+        "loan in debt",
+        "contract status in debt"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:credit-card-transaction",
+      "type": "Term",
+      "name": "credit card transaction",
+      "aliases": [
+        "credit card withdrawal",
+        "credit card operation",
+        "money taken out by credit card"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:credit-card-withdrawal",
+      "type": "Term",
+      "name": "credit card withdrawal",
+      "aliases": [
+        "card withdrawal",
+        "withdrawal by card",
+        "cash advance"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-branch-location",
+      "type": "Term",
+      "name": "customer branch location",
+      "aliases": [
+        "branch of a customer",
+        "customer's region",
+        "customers at a branch"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:disponent",
+      "type": "Term",
+      "name": "disponent",
+      "aliases": [
+        "disposition type",
+        "disponent role",
+        "OWNER/DISPONENT type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:disposition-id-of-account",
+      "type": "Term",
+      "name": "disposition id of account",
+      "aliases": [
+        "disp id",
+        "disposition id"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:district-name",
+      "type": "Term",
+      "name": "district name",
+      "aliases": [
+        "district is",
+        "branch district",
+        "district located in",
+        "district label",
+        "district title",
+        "branch name",
+        "which district",
+        "district",
+        "district where",
+        "branch location",
+        "region"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:district-of-an-account-branch",
+      "type": "Term",
+      "name": "district of an account branch",
+      "aliases": [
+        "account district",
+        "branch location",
+        "district identifier"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:district-of-client-account",
+      "type": "Term",
+      "name": "district of client account",
+      "aliases": [
+        "branch district",
+        "district name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:does-not-own-the-account",
+      "type": "Term",
+      "name": "does not own the account",
+      "aliases": [
+        "not an account owner",
+        "non-owner of the account",
+        "without owning the account"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:eligible-for-loans",
+      "type": "Term",
+      "name": "eligible for loans",
+      "aliases": [
+        "right to apply for loans",
+        "can borrow",
+        "loan eligible account",
+        "has a loan",
+        "accounts with loans",
+        "borrowed accounts"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:female-client",
+      "type": "Term",
+      "name": "female client",
+      "aliases": [
+        "female account holder",
+        "women clients",
+        "female customers",
+        "female persons"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:female-clients",
+      "type": "Term",
+      "name": "female clients",
+      "aliases": [
+        "women clients",
+        "gender female",
+        "female customers"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:female-customer",
+      "type": "Term",
+      "name": "female customer",
+      "aliases": [
+        "women customers",
+        "female clients"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:higher-unemployment-year",
+      "type": "Term",
+      "name": "higher unemployment year",
+      "aliases": [
+        "which year has higher unemployment",
+        "year with higher average unemployment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-loan-amount",
+      "type": "Term",
+      "name": "highest loan amount",
+      "aliases": [
+        "most loan amount",
+        "largest total loan",
+        "top district by loans"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:loan-duration-in-months",
+      "type": "Term",
+      "name": "loan duration in months",
+      "aliases": [
+        "duration of 24 months",
+        "loan term",
+        "months of duration"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:loan-finished-no-problems",
+      "type": "Term",
+      "name": "loan finished no problems",
+      "aliases": [
+        "contract finished, no problems",
+        "good loans",
+        "status A"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:male-client",
+      "type": "Term",
+      "name": "male client",
+      "aliases": [
+        "men",
+        "male customers",
+        "gender is male"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:monthly-issuance",
+      "type": "Term",
+      "name": "monthly issuance",
+      "aliases": [
+        "monthly statement",
+        "issued monthly",
+        "POPLATEK MESICNE"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:negative-balance",
+      "type": "Term",
+      "name": "negative balance",
+      "aliases": [
+        "balance below zero",
+        "overdrawn balance",
+        "negative account balance"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:north-bohemia-region",
+      "type": "Term",
+      "name": "north bohemia region",
+      "aliases": [
+        "north Bohemia",
+        "region North Bohemia"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:not-eligible-for-loans",
+      "type": "Term",
+      "name": "not eligible for loans",
+      "aliases": [
+        "cannot apply for loans",
+        "not authorized to borrow"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:oldest-client",
+      "type": "Term",
+      "name": "oldest client",
+      "aliases": [
+        "earliest birth date",
+        "senior client"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:own-an-amount-of-money",
+      "type": "Term",
+      "name": "own an amount of money",
+      "aliases": [
+        "amount of money greater than",
+        "money amount",
+        "transaction amount"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:owner-and-disponent-counts",
+      "type": "Term",
+      "name": "owner and disponent counts",
+      "aliases": [
+        "count of each disposition type",
+        "number of owner and disponent dispositions"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:partner-s-bank",
+      "type": "Term",
+      "name": "partner's bank",
+      "aliases": [
+        "counterparty bank",
+        "the other party's bank",
+        "transaction bank code"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:payment-amount",
+      "type": "Term",
+      "name": "payment amount",
+      "aliases": [
+        "amount paid",
+        "transaction amount",
+        "payment value"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:payment-on-their-home",
+      "type": "Term",
+      "name": "payment on their home",
+      "aliases": [
+        "household payment",
+        "payment for home",
+        "home payment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-male-clients",
+      "type": "Term",
+      "name": "percentage of male clients",
+      "aliases": [
+        "share of male clients",
+        "percent male"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:pre-payment-loan-accounts",
+      "type": "Term",
+      "name": "pre-payment loan accounts",
+      "aliases": [
+        "prepayment accounts",
+        "loans for pre-payment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:proportion-as-percentage",
+      "type": "Term",
+      "name": "proportion as percentage",
+      "aliases": [
+        "percentage of customers",
+        "share of clients"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:region-of-account",
+      "type": "Term",
+      "name": "region of account",
+      "aliases": [
+        "region",
+        "branch region",
+        "geographic region"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:right-to-issue-orders-or-apply-for-loans",
+      "type": "Term",
+      "name": "right to issue orders or apply for loans",
+      "aliases": [
+        "account owner",
+        "full account rights",
+        "disp type OWNER"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:statement-of-issuance-after-transaction",
+      "type": "Term",
+      "name": "statement of issuance after transaction",
+      "aliases": [
+        "monthly statement of issuance",
+        "POPLATEK PO OBRATU",
+        "monthly statement issuance frequency"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:still-running-contract",
+      "type": "Term",
+      "name": "still running contract",
+      "aliases": [
+        "active loan",
+        "running loan",
+        "contract still running",
+        "running contract",
+        "loan in progress",
+        "current loan"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-transaction-amount-per-district",
+      "type": "Term",
+      "name": "total transaction amount per district",
+      "aliases": [
+        "districts with transactions greater than amount",
+        "district transaction total above threshold",
+        "sum of transactions in district"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:transaction-date",
+      "type": "Term",
+      "name": "transaction date",
+      "aliases": [
+        "trans date",
+        "date of transaction"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:transactions-in-a-given-year",
+      "type": "Term",
+      "name": "transactions in a given year",
+      "aliases": [
+        "during 1998",
+        "in that year",
+        "year of the transaction"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:unemployment-rate-1995",
+      "type": "Term",
+      "name": "unemployment rate 1995",
+      "aliases": [
+        "unemployment ratio 1995",
+        "unemployment percentage 1995",
+        "unemployment rate in 1995"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:unemployment-rate-1996",
+      "type": "Term",
+      "name": "unemployment rate 1996",
+      "aliases": [
+        "unemployment ratio 1996",
+        "unemployment percentage 1996",
+        "unemployment rate in 1996"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:unemployment-rate-increase-1995-to-1996",
+      "type": "Term",
+      "name": "unemployment rate increase 1995 to 1996",
+      "aliases": [
+        "unemployment rate increment",
+        "percentage change in unemployment rate"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:weekly-statements",
+      "type": "Term",
+      "name": "weekly statements",
+      "aliases": [
+        "weekly statement issuance",
+        "weekly frequency",
+        "statements issued weekly",
+        "weekly statement",
+        "statement issued weekly"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:who-placed-the-order",
+      "type": "Term",
+      "name": "who placed the order",
+      "aliases": [
+        "which client placed the order",
+        "who made the order",
+        "order placed by client"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-transaction-date",
+      "type": "Term",
+      "name": "year of transaction date",
+      "aliases": [
+        "transactions in a given year",
+        "by year",
+        "year filter on transactions"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:branch-in-a-region",
+      "type": "MEANS",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {
+        "_feedback_sources": [
+          "s162"
+        ],
+        "losses": 0,
+        "note": "A client's branch is client.district_id pointing to district.district_id, and the branch's region/oblast is stored in district.A3 (e.g. 'south Bohemia').",
+        "origin": "s115",
+        "sql": "client.district_id = district.district_id AND district.A3 = 'south Bohemia'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:right-to-issue-orders-or-apply-for-loans",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "losses": 0,
+        "note": "In the disp table, 'OWNER' marks the client who owns the account and therefore holds the rights to issue orders or apply for loans, while 'DISPONENT' and 'USER' do not.",
+        "origin": "s193",
+        "sql": "disp.type = 'OWNER'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:female-client",
+      "type": "MEANS",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {
+        "_feedback_sources": [
+          "s167",
+          "s179",
+          "s93",
+          "s110",
+          "s114",
+          "s96",
+          "s147",
+          "s146",
+          "s184"
+        ],
+        "losses": 1,
+        "note": "Gender is stored on the client row with 'F' for female and 'M' for male.",
+        "origin": "s128",
+        "sql": "client.gender = 'F'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:branch-with-most-inhabitants",
+      "type": "MEANS",
+      "to_entity": "column:district.a4-77b848",
+      "properties": {
+        "losses": 0,
+        "note": "The inhabitants count of a branch is district.A4 (stored as text), so branches are ranked by district.A4 descending and the client percentage must be computed per branch group before the top one is taken.",
+        "origin": "s115",
+        "sql": "ORDER BY district.A4 DESC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:client-linked-to-an-account",
+      "type": "MEANS",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {
+        "losses": 0,
+        "note": "disp is the table that associates each account with a client (account_id -> client_id), so client identity for an account always comes through disp.",
+        "origin": "s164",
+        "sql": "disp.client_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:account-branch-location",
+      "type": "MEANS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "losses": 0,
+        "note": "To scope an account attribute by region, link account.district_id to district.district_id.",
+        "origin": "s90",
+        "sql": "account.district_id = district.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:disponent",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "_feedback_sources": [
+          "s132",
+          "s105",
+          "s100",
+          "s102",
+          "s139",
+          "s91",
+          "s161",
+          "s174",
+          "s187",
+          "s175",
+          "s128",
+          "s118",
+          "s194",
+          "s110",
+          "s96",
+          "s146"
+        ],
+        "losses": 4,
+        "note": "In the disposition table, the role of the client to the account is coded as 'DISPONENT' (versus 'OWNER').",
+        "origin": "s97",
+        "sql": "disp.type = 'DISPONENT'",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:negative-balance",
+      "type": "MEANS",
+      "to_entity": "column:trans.balance-a84987",
+      "properties": {
+        "_feedback_sources": [
+          "s108",
+          "s104",
+          "s110",
+          "s170",
+          "s141"
+        ],
+        "losses": 2,
+        "note": "trans.balance is the balance after the transaction in USD, so a negative balance is a simple comparison to zero.",
+        "origin": "s135",
+        "sql": "trans.balance < 0",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:highest-loan-amount",
+      "type": "MEANS",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {
+        "_feedback_sources": [
+          "s98"
+        ],
+        "losses": 0,
+        "note": "For monetary 'highest' comparisons, rank by the summed approved amount in US dollars rather than by the number of loan records.",
+        "origin": "s131",
+        "sql": "SUM(loan.amount)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:unemployment-rate-increase-1995-to-1996",
+      "type": "MEANS",
+      "to_entity": "column:district.a12-fbba56",
+      "properties": {
+        "_feedback_sources": [
+          "s170",
+          "s166",
+          "s131",
+          "s133"
+        ],
+        "losses": 1,
+        "note": "district.A12 is the 1995 unemployment rate and district.A13 the 1996 rate, so the percentage increment is the difference over the 1995 value.",
+        "origin": "s125",
+        "sql": "(district.A13 - district.A12) * 100.0 / district.A12",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:district-name",
+      "type": "MEANS",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {
+        "losses": 0,
+        "note": "The district's reported name/region text used to label a district is district.A3, grouped by district.A3 when aggregating.",
+        "origin": "s131",
+        "sql": "district.A3",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:contract-client-in-debt",
+      "type": "MEANS",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {
+        "_feedback_sources": [
+          "s194",
+          "s179",
+          "s149",
+          "s122",
+          "s160",
+          "s192",
+          "s137",
+          "s177"
+        ],
+        "losses": 1,
+        "note": "In loan.status, 'D' stands for running contract, client in debt, while 'C' is running contract OK so far and 'A'/'B' are finished contracts.",
+        "origin": "s125",
+        "sql": "loan.status = 'D'",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:accounts-linked-to-transactions",
+      "type": "MEANS",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {
+        "_feedback_sources": [
+          "s157",
+          "s161",
+          "s119",
+          "s189",
+          "s174",
+          "s99",
+          "s121",
+          "s111",
+          "s95",
+          "s175",
+          "s118",
+          "s179",
+          "s109",
+          "s158",
+          "s89",
+          "s160",
+          "s166",
+          "s143",
+          "s114",
+          "s137",
+          "s185",
+          "s151"
+        ],
+        "losses": 2,
+        "note": "Account-level facts about money come from joining trans on trans.account_id = account.account_id.",
+        "origin": "s102",
+        "sql": "trans.account_id = account.account_id",
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "term:does-not-own-the-account",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "losses": 0,
+        "note": "Rows where the client's disposition type is not 'OWNER' represent clients who do not own the account.",
+        "origin": "s130",
+        "sql": "disp.type != 'OWNER'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:eligible-for-loans",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "_feedback_sources": [
+          "s174",
+          "s99",
+          "s108",
+          "s187",
+          "s175",
+          "s128",
+          "s118",
+          "s194",
+          "s110",
+          "s90",
+          "s96",
+          "s146"
+        ],
+        "losses": 3,
+        "note": "Eligibility to apply for loans is expressed by the account owner disposition, i.e. disp.type = 'OWNER', linked through disp.account_id, not by the presence of a loan row.",
+        "origin": "s148",
+        "sql": "disp.type = 'OWNER'",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:loan-finished-no-problems",
+      "type": "MEANS",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {
+        "_feedback_sources": [
+          "s149"
+        ],
+        "losses": 1,
+        "note": "loan.status = 'A' denotes a contract finished with no problems ('B' finished unpaid, 'C' running OK, 'D' running in debt).",
+        "origin": "s163",
+        "sql": "loan.status = 'A'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:district-name",
+      "type": "MEANS",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {
+        "_feedback_sources": [
+          "s138",
+          "s149",
+          "s137",
+          "s115"
+        ],
+        "losses": 2,
+        "note": "The district name text is stored in district.A2, and accounts are tied to a branch district via account.district_id = district.district_id.",
+        "origin": "s148",
+        "sql": "district.A2",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:unemployment-rate-increase-1995-to-1996",
+      "type": "MEANS",
+      "to_entity": "column:district.a13-081d86",
+      "properties": {
+        "losses": 0,
+        "note": "district.A12 is the 1995 unemployment rate and district.A13 the 1996 rate, so the percentage increment is the difference over the 1995 value.",
+        "origin": "s125",
+        "sql": "(district.A13 - district.A12) * 100.0 / district.A12",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:north-bohemia-region",
+      "type": "MEANS",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {
+        "_feedback_sources": [
+          "s119",
+          "s148",
+          "s92",
+          "s93",
+          "s122",
+          "s89",
+          "s114",
+          "s147",
+          "s162"
+        ],
+        "losses": 1,
+        "note": "Region names are stored in district.A3 with only the first letter lowercased, so a filter must use the exact stored casing 'north Bohemia'.",
+        "origin": "s150",
+        "sql": "district.A3 = 'north Bohemia'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:who-placed-the-order",
+      "type": "MEANS",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {
+        "_feedback_sources": [
+          "s151",
+          "s177"
+        ],
+        "losses": 0,
+        "note": "The person who placed an order is the client, found by taking the order's account_id, matching disp.account_id, and returning disp.client_id.",
+        "origin": "s164",
+        "sql": "client.client_id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:branch-in-a-region",
+      "type": "MEANS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "losses": 0,
+        "note": "A client's branch is client.district_id pointing to district.district_id, and the branch's region/oblast is stored in district.A3 (e.g. 'south Bohemia').",
+        "origin": "s115",
+        "sql": "client.district_id = district.district_id AND district.A3 = 'south Bohemia'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:branch-in-a-region",
+      "type": "MEANS",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {
+        "losses": 0,
+        "note": "A client's branch is client.district_id pointing to district.district_id, and the branch's region/oblast is stored in district.A3 (e.g. 'south Bohemia').",
+        "origin": "s115",
+        "sql": "client.district_id = district.district_id AND district.A3 = 'south Bohemia'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:account-branch-location",
+      "type": "MEANS",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {
+        "losses": 0,
+        "note": "To scope an account attribute by region, link account.district_id to district.district_id.",
+        "origin": "s90",
+        "sql": "account.district_id = district.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:weekly-statements",
+      "type": "MEANS",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {
+        "_feedback_sources": [
+          "s119",
+          "s113",
+          "s189",
+          "s95",
+          "s187",
+          "s175",
+          "s128",
+          "s167",
+          "s103",
+          "s89",
+          "s160",
+          "s192",
+          "s96",
+          "s98"
+        ],
+        "losses": 1,
+        "note": "Statement issuance frequency is stored on the account as an ASCII Czech code: 'POPLATEK TYDNE' = weekly, 'POPLATEK MESICNE' = monthly, 'POPLATEK PO OBRATU' = per turnover, so no accent/encoding normalization is needed.",
+        "origin": "s186",
+        "sql": "account.frequency = 'POPLATEK TYDNE'",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:account-number",
+      "type": "MEANS",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {
+        "_feedback_sources": [
+          "s177"
+        ],
+        "losses": 0,
+        "note": "In the disp table, the account a disposition belongs to is identified by disp.account_id, so account-scoped disposition questions filter on that column.",
+        "origin": "s172",
+        "sql": "disp.account_id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:female-customer",
+      "type": "MEANS",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {
+        "losses": 0,
+        "note": "Gender is stored as the codes 'F' (female) and 'M' (male) on client.gender.",
+        "origin": "s185",
+        "sql": "client.gender = 'F'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:client-s-district",
+      "type": "MEANS",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {
+        "losses": 0,
+        "note": "A client's region comes from client.district_id joined to district.district_id, with the region name stored lowercased in district.A3 (e.g. 'south Bohemia').",
+        "origin": "s130",
+        "sql": "district.A3",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:transaction-date",
+      "type": "MEANS",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {
+        "_feedback_sources": [
+          "s98"
+        ],
+        "losses": 0,
+        "note": "trans.date is stored as text in ISO 'YYYY-MM-DD' form, so equality comparison works directly and STRFTIME('%Y-%m-%d', trans.date) is unnecessary but also harmless.",
+        "origin": "s110",
+        "sql": "trans.date = 'YYYY-MM-DD'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:disposition-id-of-account",
+      "type": "MEANS",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {
+        "losses": 0,
+        "note": "disp links to transactions through the shared account_id key, so no client join is needed to get a disposition id for a transaction.",
+        "origin": "s110",
+        "sql": "disp.account_id = trans.account_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:district-of-client-account",
+      "type": "MEANS",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {
+        "_feedback_sources": [
+          "s151",
+          "s133",
+          "s107"
+        ],
+        "losses": 1,
+        "note": "A client's district comes from the district of the account they are connected to via disp, and district.A2 holds the human-readable district name.",
+        "origin": "s193",
+        "sql": "account.district_id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:transactions-in-a-given-year",
+      "type": "MEANS",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {
+        "_feedback_sources": [
+          "s188",
+          "s179",
+          "s104",
+          "s151",
+          "s98"
+        ],
+        "losses": 0,
+        "note": "trans.date is stored as a full date string (YYYY-MM-DD), so the year must be extracted with STRFTIME.",
+        "origin": "s145",
+        "sql": "STRFTIME('%Y', trans.date) = '1998'",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:higher-unemployment-year",
+      "type": "MEANS",
+      "to_entity": "column:district.a12-fbba56",
+      "properties": {
+        "_feedback_sources": [
+          "s138",
+          "s170",
+          "s166",
+          "s192",
+          "s131"
+        ],
+        "losses": 1,
+        "note": "When asked which year had the higher average unemployment, compare the two year columns and return the year label ('1995'/'1996'), not a column name such as 'A12'.",
+        "origin": "s91",
+        "sql": "IIF(AVG(district.A13) > AVG(district.A12), '1996', '1995')",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:still-running-contract",
+      "type": "MEANS",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {
+        "_feedback_sources": [
+          "s149",
+          "s122",
+          "s160",
+          "s192",
+          "s137",
+          "s130"
+        ],
+        "losses": 2,
+        "note": "Running contracts are the two statuses 'C' (OK so far) and 'D' (client in debt); debt status must be checked on loan.status, not on disp.type.",
+        "origin": "s125",
+        "sql": "loan.status IN ('C', 'D')",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:average-income-of-district-residents",
+      "type": "MEANS",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {
+        "losses": 0,
+        "note": "district.A11 holds the branch district's average salary per resident, and the account's location is linked via account.district_id = district.district_id.",
+        "origin": "s149",
+        "sql": "district.A11",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:male-client",
+      "type": "MEANS",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {
+        "_feedback_sources": [
+          "s161",
+          "s176",
+          "s113",
+          "s189",
+          "s92",
+          "s178",
+          "s138",
+          "s194",
+          "s179",
+          "s93",
+          "s110",
+          "s96",
+          "s147",
+          "s146",
+          "s184"
+        ],
+        "losses": 1,
+        "note": "Gender is stored on the client as a single-letter code, 'M' for male and 'F' for female.",
+        "origin": "s186",
+        "sql": "client.gender = 'M'",
+        "wins": 14
+      }
+    },
+    {
+      "from_entity": "term:partner-s-bank",
+      "type": "MEANS",
+      "to_entity": "column:trans.bank-278de7",
+      "properties": {
+        "_feedback_sources": [
+          "s135",
+          "s104",
+          "s177"
+        ],
+        "losses": 1,
+        "note": "The two-letter code of the partner (other party) bank on a transaction is stored in trans.bank.",
+        "origin": "s150",
+        "sql": "trans.bank",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:oldest-client",
+      "type": "MEANS",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {
+        "losses": 0,
+        "note": "Client age is derived from birth_date stored as a DATE text (YYYY-MM-DD), so the oldest client is the one with the earliest (ascending) birth_date.",
+        "origin": "s107",
+        "sql": "ORDER BY client.birth_date ASC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:pre-payment-loan-accounts",
+      "type": "MEANS",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {
+        "_feedback_sources": [
+          "s172"
+        ],
+        "losses": 1,
+        "note": "Pre-payment/loan account counts come from the loan table joined to account on account_id, and only filters stated in the question (duration, frequency) should be applied — no extra loan status filter.",
+        "origin": "s191",
+        "sql": "COUNT(loan.account_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:owner-and-disponent-counts",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "losses": 0,
+        "note": "When one question asks for totals of two specific type categories, return them side by side in a single row using conditional aggregates instead of GROUP BY rows.",
+        "origin": "s172",
+        "sql": "SUM(disp.type = 'OWNER') AS owner_count, SUM(disp.type = 'DISPONENT') AS disponent_count",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:female-clients",
+      "type": "MEANS",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {
+        "losses": 0,
+        "note": "Client gender is stored as the code 'F' for female and 'M' for male.",
+        "origin": "s109",
+        "sql": "client.gender = 'F'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:account-that-placed-the-order",
+      "type": "MEANS",
+      "to_entity": "column:order.account-id-991d18",
+      "properties": {
+        "_feedback_sources": [
+          "s172"
+        ],
+        "losses": 1,
+        "note": "The account that owns/places an order is stored directly on the order row as order.account_id, which is not itself the client.",
+        "origin": "s164",
+        "sql": "order.account_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-male-clients",
+      "type": "MEANS",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {
+        "_feedback_sources": [
+          "s91",
+          "s161",
+          "s176",
+          "s113",
+          "s189",
+          "s174",
+          "s178",
+          "s95",
+          "s187",
+          "s138",
+          "s118",
+          "s125",
+          "s167",
+          "s194",
+          "s103",
+          "s179",
+          "s93",
+          "s114",
+          "s193",
+          "s147",
+          "s172",
+          "s162",
+          "s177"
+        ],
+        "losses": 4,
+        "note": "A percentage over the filtered client-account rows is computed as a conditional SUM divided by the total row count (not as distinct client counts), and the row set is the clients linked to accounts via disp.",
+        "origin": "s186",
+        "sql": "CAST(SUM(client.gender = 'M') AS REAL) * 100 / COUNT(client.client_id)",
+        "wins": 19
+      }
+    },
+    {
+      "from_entity": "term:client-s-branch",
+      "type": "MEANS",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {
+        "losses": 0,
+        "note": "The branch a client belongs to is the client's own district_id, so client counts by branch must link client.district_id to district.district_id rather than to an account's district.",
+        "origin": "s109",
+        "sql": "client.district_id = district.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:credit-card-transaction",
+      "type": "MEANS",
+      "to_entity": "column:trans.operation-f72bce",
+      "properties": {
+        "_feedback_sources": [
+          "s95",
+          "s104"
+        ],
+        "losses": 0,
+        "note": "The operation code 'VYBER KARTOU' is the stored value for a credit card withdrawal, while 'VYBER' is plain cash withdrawal.",
+        "origin": "s145",
+        "sql": "trans.operation = 'VYBER KARTOU'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:monthly-issuance",
+      "type": "MEANS",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {
+        "_feedback_sources": [
+          "s119",
+          "s113",
+          "s95",
+          "s187",
+          "s175",
+          "s128",
+          "s167",
+          "s103",
+          "s89",
+          "s160",
+          "s192",
+          "s96",
+          "s98"
+        ],
+        "losses": 1,
+        "note": "account.frequency stores Czech issuance-frequency codes, where 'POPLATEK MESICNE' means monthly issuance (other codes: 'POPLATEK TYDNE', 'POPLATEK PO OBRATU').",
+        "origin": "s135",
+        "sql": "account.frequency = 'POPLATEK MESICNE'",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:not-eligible-for-loans",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "_feedback_sources": [
+          "s90"
+        ],
+        "losses": 1,
+        "note": "Eligibility to apply for loans is expressed by the disposition type of the account holder, so accounts that are not OWNER are the ones that may borrow.",
+        "origin": "s149",
+        "sql": "disp.type <> 'OWNER'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:born-between-years",
+      "type": "MEANS",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {
+        "_feedback_sources": [
+          "s174",
+          "s141"
+        ],
+        "losses": 1,
+        "note": "Birth years are ISO DATE strings in client.birth_date, so a year range is extracted with STRFTIME('%Y', ...) instead of comparing raw dates.",
+        "origin": "s182",
+        "sql": "STRFTIME('%Y', client.birth_date) BETWEEN '1974' AND '1976'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:year-of-transaction-date",
+      "type": "MEANS",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {
+        "_feedback_sources": [
+          "s98"
+        ],
+        "losses": 0,
+        "note": "trans.date stores a full date string, so a year restriction is expressed as STRFTIME('%Y', trans.date) = '<year>'.",
+        "origin": "s141",
+        "sql": "STRFTIME('%Y', trans.date)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:client-s-branch",
+      "type": "MEANS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "losses": 0,
+        "note": "The branch a client belongs to is the client's own district_id, so client counts by branch must link client.district_id to district.district_id rather than to an account's district.",
+        "origin": "s109",
+        "sql": "client.district_id = district.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:proportion-as-percentage",
+      "type": "MEANS",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {
+        "_feedback_sources": [
+          "s184"
+        ],
+        "losses": 0,
+        "note": "A proportion is reported as a 0-100 percentage and is computed over customer rows (COUNT of client.client_id), so the numerator and denominator must be drawn from the same client population to avoid double counting.",
+        "origin": "s185",
+        "sql": "CAST(SUM(CASE WHEN client.gender = 'F' THEN 1 ELSE 0 END) AS REAL) / COUNT(client.client_id) * 100",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:region-of-account",
+      "type": "MEANS",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {
+        "_feedback_sources": [
+          "s147",
+          "s162",
+          "s107"
+        ],
+        "losses": 1,
+        "note": "An account's region comes from its branch's district row, district.A3, whose values are region names such as 'Prague'.",
+        "origin": "s90",
+        "sql": "district.A3",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:account-type",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "_feedback_sources": [
+          "s96",
+          "s146"
+        ],
+        "losses": 0,
+        "note": "The account's type/disposition is stored in disp.type with codes OWNER, DISPONENT and USER, while account.frequency is only a statement frequency and is not an account type.",
+        "origin": "s149",
+        "sql": "disp.type",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:unemployment-rate-1996",
+      "type": "MEANS",
+      "to_entity": "column:district.a13-081d86",
+      "properties": {
+        "_feedback_sources": [
+          "s113",
+          "s148",
+          "s111",
+          "s118",
+          "s167",
+          "s166",
+          "s133"
+        ],
+        "losses": 1,
+        "note": "Column district.A13 stores the district unemployment rate for 1996 (a ratio/percentage value).",
+        "origin": "s91",
+        "sql": "district.A13",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:customer-branch-location",
+      "type": "MEANS",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {
+        "_feedback_sources": [
+          "s184",
+          "s162",
+          "s133"
+        ],
+        "losses": 0,
+        "note": "A customer's own branch/location is the district recorded on the client row, which links to district.district_id for the district or region name, so filtering customers by region should use client.district_id rather than the district of accounts they hold.",
+        "origin": "s185",
+        "sql": "client.district_id",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:client-s-district",
+      "type": "MEANS",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {
+        "_feedback_sources": [
+          "s125",
+          "s103",
+          "s179",
+          "s158",
+          "s122",
+          "s89",
+          "s166",
+          "s164",
+          "s114",
+          "s137",
+          "s90",
+          "s147",
+          "s162",
+          "s133",
+          "s177"
+        ],
+        "losses": 3,
+        "note": "A client's district is taken directly from client.district_id rather than inferred through account or disposition links.",
+        "origin": "s128",
+        "sql": "client.district_id = district.district_id",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:account-holder",
+      "type": "MEANS",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {
+        "losses": 0,
+        "note": "A holder/owner of an account is a disposition row whose disp.type is 'OWNER' (the other stored code is 'DISPONENT').",
+        "origin": "s130",
+        "sql": "disp.type = 'OWNER'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:district-of-an-account-branch",
+      "type": "MEANS",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {
+        "_feedback_sources": [
+          "s164",
+          "s137"
+        ],
+        "losses": 1,
+        "note": "A transaction's district is reached through its account's district_id, and the same id identifies the district in the district table.",
+        "origin": "s141",
+        "sql": "account.district_id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:payment-amount",
+      "type": "MEANS",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {
+        "_feedback_sources": [
+          "s150",
+          "s91",
+          "s176",
+          "s99",
+          "s108",
+          "s104",
+          "s192",
+          "s191"
+        ],
+        "losses": 3,
+        "note": "The amount of money actually paid in a transaction is trans.amount, whereas order.amount is the value of an order, not a payment.",
+        "origin": "s182",
+        "sql": "trans.amount",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:eligible-for-loans",
+      "type": "MEANS",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {
+        "_feedback_sources": [
+          "s193"
+        ],
+        "losses": 1,
+        "note": "An account is eligible for / has a loan only if a matching row exists in the loan table keyed by account_id; disposition or owner status is a separate concept.",
+        "origin": "s90",
+        "sql": "loan.account_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:accounts-with-loans-in-a-district",
+      "type": "MEANS",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {
+        "_feedback_sources": [
+          "s109",
+          "s158",
+          "s122",
+          "s89",
+          "s160",
+          "s166",
+          "s143",
+          "s114",
+          "s137",
+          "s185",
+          "s146",
+          "s151"
+        ],
+        "losses": 2,
+        "note": "Link loan rows to accounts with loan.account_id = account.account_id and place accounts in a district via account.district_id.",
+        "origin": "s163",
+        "sql": "account.account_id",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:proportion-as-percentage",
+      "type": "MEANS",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {
+        "losses": 0,
+        "note": "A proportion is reported as a 0-100 percentage and is computed over customer rows (COUNT of client.client_id), so the numerator and denominator must be drawn from the same client population to avoid double counting.",
+        "origin": "s185",
+        "sql": "CAST(SUM(CASE WHEN client.gender = 'F' THEN 1 ELSE 0 END) AS REAL) / COUNT(client.client_id) * 100",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:statement-of-issuance-after-transaction",
+      "type": "MEANS",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {
+        "_feedback_sources": [
+          "s183",
+          "s100",
+          "s102",
+          "s150",
+          "s119",
+          "s113",
+          "s108",
+          "s187",
+          "s175",
+          "s128",
+          "s167",
+          "s103",
+          "s170",
+          "s89",
+          "s160",
+          "s192",
+          "s96",
+          "s98"
+        ],
+        "losses": 3,
+        "note": "The account's statement-of-issuance-after-transaction frequency is stored as the code 'POPLATEK PO OBRATU' in account.frequency.",
+        "origin": "s97",
+        "sql": "account.frequency = 'POPLATEK PO OBRATU'",
+        "wins": 15
+      }
+    },
+    {
+      "from_entity": "term:credit-card-withdrawal",
+      "type": "MEANS",
+      "to_entity": "column:trans.operation-f72bce",
+      "properties": {
+        "_feedback_sources": [
+          "s91",
+          "s161",
+          "s178",
+          "s167",
+          "s194",
+          "s103",
+          "s170",
+          "s143",
+          "s146",
+          "s184",
+          "s151",
+          "s130"
+        ],
+        "losses": 2,
+        "note": "In the trans.operation code list, 'VYBER KARTOU' denotes credit card withdrawal (plain 'VYBER' is cash withdrawal), so card-related wording must match this exact code rather than a LIKE pattern on KARTY/CARD.",
+        "origin": "s135",
+        "sql": "trans.operation = 'VYBER KARTOU'",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:account-located-in-region",
+      "type": "MEANS",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {
+        "_feedback_sources": [
+          "s135"
+        ],
+        "losses": 1,
+        "note": "An account's region is found by joining account.district_id to district.district_id and reading district.A3.",
+        "origin": "s150",
+        "sql": "account.district_id = district.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:own-an-amount-of-money",
+      "type": "MEANS",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {
+        "_feedback_sources": [
+          "s150",
+          "s91",
+          "s161",
+          "s176",
+          "s99",
+          "s92",
+          "s108",
+          "s188",
+          "s118",
+          "s93",
+          "s104",
+          "s192",
+          "s146",
+          "s130"
+        ],
+        "losses": 3,
+        "note": "The money amount held by an account is trans.amount (stored in USD), not a balance field on the account.",
+        "origin": "s102",
+        "sql": "trans.amount > 3000",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:client-s-district",
+      "type": "MEANS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "losses": 0,
+        "note": "A client's district is taken directly from client.district_id rather than inferred through account or disposition links.",
+        "origin": "s128",
+        "sql": "client.district_id = district.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:account-located-in-region",
+      "type": "MEANS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "_feedback_sources": [
+          "s119",
+          "s189",
+          "s99",
+          "s121",
+          "s111",
+          "s95",
+          "s175",
+          "s138",
+          "s188",
+          "s118",
+          "s158",
+          "s122",
+          "s89",
+          "s160",
+          "s166",
+          "s143",
+          "s164",
+          "s137",
+          "s147",
+          "s162",
+          "s151",
+          "s133"
+        ],
+        "losses": 1,
+        "note": "An account's region is found by joining account.district_id to district.district_id and reading district.A3.",
+        "origin": "s150",
+        "sql": "account.district_id = district.district_id",
+        "wins": 21
+      }
+    },
+    {
+      "from_entity": "term:total-transaction-amount-per-district",
+      "type": "MEANS",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {
+        "_feedback_sources": [
+          "s151",
+          "s177"
+        ],
+        "losses": 0,
+        "note": "When a question asks which districts have transactions greater than a money threshold, compare the aggregate SUM(trans.amount) for each district (HAVING) rather than testing individual transaction rows.",
+        "origin": "s141",
+        "sql": "SUM(trans.amount)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:loan-duration-in-months",
+      "type": "MEANS",
+      "to_entity": "column:loan.duration-341baa",
+      "properties": {
+        "_feedback_sources": [
+          "s131"
+        ],
+        "losses": 1,
+        "note": "loan.duration stores the loan term in months (12/24/36/48/60), so a stated number of months maps directly to this column.",
+        "origin": "s191",
+        "sql": "loan.duration = 24",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:unemployment-rate-1995",
+      "type": "MEANS",
+      "to_entity": "column:district.a12-fbba56",
+      "properties": {
+        "_feedback_sources": [
+          "s148",
+          "s138",
+          "s170",
+          "s166",
+          "s133"
+        ],
+        "losses": 1,
+        "note": "Column district.A12 stores the district unemployment rate for 1995 (a ratio/percentage value).",
+        "origin": "s91",
+        "sql": "district.A12",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:client-of-an-account-disposition",
+      "type": "MEANS",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {
+        "_feedback_sources": [
+          "s105",
+          "s100",
+          "s102",
+          "s157",
+          "s139",
+          "s161",
+          "s176",
+          "s113",
+          "s189",
+          "s174",
+          "s121",
+          "s178",
+          "s108",
+          "s95",
+          "s175",
+          "s138",
+          "s128",
+          "s194",
+          "s103",
+          "s179",
+          "s110",
+          "s114",
+          "s172",
+          "s162",
+          "s177"
+        ],
+        "losses": 4,
+        "note": "The client attached to a disposition is disp.client_id, and account-level attributes (such as frequency) are only reachable by matching disp.account_id = account.account_id.",
+        "origin": "s97",
+        "sql": "disp.client_id",
+        "wins": 21
+      }
+    },
+    {
+      "from_entity": "term:payment-on-their-home",
+      "type": "MEANS",
+      "to_entity": "column:trans.k-symbol-78dcd0",
+      "properties": {
+        "_feedback_sources": [
+          "s150",
+          "s135",
+          "s119",
+          "s187",
+          "s194",
+          "s122",
+          "s191"
+        ],
+        "losses": 3,
+        "note": "Household/home payments are recorded in the trans table with k_symbol code 'SIPO' (household), while 'POJISTNE' is insurance, 'UVER' loan payment, and 'UROK' credited interest.",
+        "origin": "s182",
+        "sql": "trans.k_symbol = 'SIPO'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:accounts-linked-to-transactions",
+      "type": "MEANS",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {
+        "losses": 0,
+        "note": "Account-level facts about money come from joining trans on trans.account_id = account.account_id.",
+        "origin": "s102",
+        "sql": "trans.account_id = account.account_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-male-clients",
+      "type": "MEANS",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {
+        "_feedback_sources": [
+          "s92",
+          "s110",
+          "s184"
+        ],
+        "losses": 1,
+        "note": "A percentage over the filtered client-account rows is computed as a conditional SUM divided by the total row count (not as distinct client counts), and the row set is the clients linked to accounts via disp.",
+        "origin": "s186",
+        "sql": "CAST(SUM(client.gender = 'M') AS REAL) * 100 / COUNT(client.client_id)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:client-s-branch-location",
+      "type": "MEANS",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {
+        "losses": 0,
+        "note": "A client's own branch is client.district_id, so matching clients to a branch joins client.district_id to district.district_id rather than going through account/disp.",
+        "origin": "s107",
+        "sql": "client.district_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:higher-unemployment-year",
+      "type": "MEANS",
+      "to_entity": "column:district.a13-081d86",
+      "properties": {
+        "_feedback_sources": [
+          "s113",
+          "s189",
+          "s148",
+          "s174",
+          "s92",
+          "s111",
+          "s145",
+          "s95",
+          "s167",
+          "s93",
+          "s133",
+          "s107"
+        ],
+        "losses": 3,
+        "note": "When asked which year had the higher average unemployment, compare the two year columns and return the year label ('1995'/'1996'), not a column name such as 'A12'.",
+        "origin": "s91",
+        "sql": "IIF(AVG(district.A13) > AVG(district.A12), '1996', '1995')",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:disposition-id-of-account",
+      "type": "MEANS",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {
+        "_feedback_sources": [
+          "s164"
+        ],
+        "losses": 1,
+        "note": "disp links to transactions through the shared account_id key, so no client join is needed to get a disposition id for a transaction.",
+        "origin": "s110",
+        "sql": "disp.account_id = trans.account_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:account-opening-date-before-year",
+      "type": "MEANS",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {
+        "_feedback_sources": [
+          "s157",
+          "s91",
+          "s119",
+          "s189",
+          "s174",
+          "s99",
+          "s121",
+          "s92",
+          "s111",
+          "s145",
+          "s108",
+          "s188",
+          "s118",
+          "s125",
+          "s93",
+          "s109",
+          "s104",
+          "s170",
+          "s141",
+          "s114",
+          "s98"
+        ],
+        "losses": 5,
+        "note": "account.date stores the creation date as YYYY-MM-DD, so a year comparison should extract the year with STRFTIME('%Y', account.date) rather than string-comparing the whole date.",
+        "origin": "s102",
+        "sql": "STRFTIME('%Y', account.date) < '1997'",
+        "wins": 16
+      }
+    },
+    {
+      "from_entity": "example:s104",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s90",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s158",
+      "type": "TOUCHES",
+      "to_entity": "column:order.account-id-991d18",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s104",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s134",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s174",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s187",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s92",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s187",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s135",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.operation-f72bce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s143",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s148",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s138",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s187",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s104",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s170",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s103",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s98",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s110",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s185",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s126",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s115",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a4-77b848",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s96",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s121",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s192",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s167",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s90",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s110",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s150",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s162",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.k-symbol-78dcd0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s183",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s163",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s188",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s157",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s160",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s103",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s133",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s105",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s163",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s148",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s93",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s92",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s121",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s89",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s166",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s107",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s93",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s135",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.balance-a84987",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s143",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s149",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s149",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s187",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s107",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s157",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s139",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s166",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s163",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s160",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s176",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s160",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s102",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s96",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s154",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s162",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s150",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s167",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s143",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s150",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s126",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s137",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s141",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s179",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s175",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s179",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s109",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s157",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a15-352e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s128",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s154",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s151",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s188",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s91",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a12-fbba56",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s118",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s111",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s150",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s128",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s110",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s184",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s163",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s98",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s103",
+      "type": "TOUCHES",
+      "to_entity": "column:card.issued-13940b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s174",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s191",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s161",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s151",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s167",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s176",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s158",
+      "type": "TOUCHES",
+      "to_entity": "column:order.order-id-0bb7bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s121",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s163",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s161",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s141",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s167",
+      "type": "TOUCHES",
+      "to_entity": "column:card.issued-13940b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s187",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s145",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s96",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s97",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s179",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s118",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s126",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s188",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.duration-341baa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s141",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s163",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s115",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s93",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s145",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s149",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s148",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s135",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s151",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a13-081d86",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s111",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s184",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s164",
+      "type": "TOUCHES",
+      "to_entity": "column:order.account-id-991d18",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s111",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s104",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.trans-id-b0be19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s105",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s139",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s160",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s185",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s105",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.date-5699c3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s166",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s179",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s96",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s188",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s192",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s109",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s89",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s151",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.operation-f72bce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s150",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s109",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s99",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s110",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s183",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s167",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s184",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s131",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s92",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s183",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s107",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a11-9390b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s128",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s134",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a16-05cc30",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s148",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s188",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s185",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s111",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s93",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s151",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s99",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s178",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s174",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s137",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s128",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s166",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s161",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s164",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s158",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s132",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s135",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s139",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s115",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s151",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s175",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s102",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s121",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s133",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a13-081d86",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s178",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a12-fbba56",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s149",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s176",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s178",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s174",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s104",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s97",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s145",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.operation-f72bce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s184",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s143",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s128",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s137",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s164",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s97",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s141",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s110",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s92",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s181",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s90",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s184",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s192",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s103",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s109",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s102",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s90",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s172",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s191",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.duration-341baa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s148",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s149",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.trans-id-b0be19",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s126",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s137",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s158",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s134",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:client.birth-date-16ad62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s119",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s133",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s161",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s135",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s192",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s172",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s184",
+      "type": "TOUCHES",
+      "to_entity": "column:card.disp-id-de569f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s145",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.amount-2b9c52",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s183",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s91",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a13-081d86",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s96",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s89",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.date-5699c3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s148",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s182",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s107",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.type-60eee9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s99",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s99",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.duration-341baa",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s139",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s179",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s109",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s105",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s191",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s107",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s157",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s121",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s193",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s170",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.operation-f72bce",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s95",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s185",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s118",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.status-6343ba",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s97",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s191",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s186",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s175",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.balance-a84987",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s141",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s99",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s185",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s154",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a2-68cd05",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s179",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s93",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s93",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s154",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s89",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s164",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s149",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s194",
+      "type": "TOUCHES",
+      "to_entity": "column:card.type-d74bd9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s138",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a15-352e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s176",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s122",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.loan-id-1c7b2a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s164",
+      "type": "TOUCHES",
+      "to_entity": "column:order.order-id-0bb7bc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s162",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s90",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s162",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s164",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s138",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s178",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s115",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s98",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.date-5699c3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s114",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s98",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s89",
+      "type": "TOUCHES",
+      "to_entity": "column:district.a3-b7f292",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s145",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s113",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s176",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s177",
+      "type": "TOUCHES",
+      "to_entity": "column:client.gender-4f3988",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s97",
+      "type": "TOUCHES",
+      "to_entity": "column:account.frequency-08d3a0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s178",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s147",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s115",
+      "type": "TOUCHES",
+      "to_entity": "column:client.district-id-29a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s98",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s110",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.date-101c96",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s176",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s175",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s102",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s112",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s125",
+      "type": "TOUCHES",
+      "to_entity": "column:account.district-id-a1c33e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s108",
+      "type": "TOUCHES",
+      "to_entity": "column:account.date-e3cb32",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s161",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s138",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s130",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s115",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s192",
+      "type": "TOUCHES",
+      "to_entity": "column:loan.amount-fee980",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s174",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s189",
+      "type": "TOUCHES",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s100",
+      "type": "TOUCHES",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s141",
+      "type": "TOUCHES",
+      "to_entity": "column:account.account-id-e3a731",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s146",
+      "type": "TOUCHES",
+      "to_entity": "column:client.client-id-ca2e0e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s150",
+      "type": "TOUCHES",
+      "to_entity": "column:trans.bank-278de7",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:client.client-id-ca2e0e",
+      "type": "JOINS",
+      "to_entity": "column:disp.client-id-40c93a",
+      "properties": {
+        "_win_sources": [
+          "s112",
+          "s181",
+          "s132",
+          "s100",
+          "s182",
+          "s186",
+          "s161",
+          "s176",
+          "s113",
+          "s189",
+          "s174",
+          "s178",
+          "s95",
+          "s194",
+          "s179",
+          "s164",
+          "s114",
+          "s147",
+          "s146",
+          "s184",
+          "s177",
+          "s130"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 22
+      }
+    },
+    {
+      "from_entity": "column:account.account-id-e3a731",
+      "type": "JOINS",
+      "to_entity": "column:disp.account-id-ad9c35",
+      "properties": {
+        "_win_sources": [
+          "s112",
+          "s181",
+          "s97",
+          "s132",
+          "s100",
+          "s182",
+          "s186",
+          "s189",
+          "s148",
+          "s108",
+          "s95",
+          "s187",
+          "s175",
+          "s149",
+          "s110",
+          "s164",
+          "s114",
+          "s96",
+          "s193",
+          "s147"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "column:account.account-id-e3a731",
+      "type": "JOINS",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {
+        "_win_sources": [
+          "s181",
+          "s132",
+          "s105",
+          "s99",
+          "s188",
+          "s125",
+          "s163",
+          "s122",
+          "s160",
+          "s192",
+          "s137",
+          "s191",
+          "s90",
+          "s131",
+          "s98"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 15
+      }
+    },
+    {
+      "from_entity": "column:account.account-id-e3a731",
+      "type": "JOINS",
+      "to_entity": "column:order.account-id-991d18",
+      "properties": {
+        "_win_sources": [
+          "s158",
+          "s164"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:client.district-id-29a816",
+      "type": "JOINS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "_win_sources": [
+          "s154",
+          "s100",
+          "s186",
+          "s92",
+          "s138",
+          "s128",
+          "s93",
+          "s109",
+          "s185",
+          "s115",
+          "s162",
+          "s130",
+          "s107"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "column:account.district-id-a1c33e",
+      "type": "JOINS",
+      "to_entity": "column:district.district-id-7e63d3",
+      "properties": {
+        "_win_sources": [
+          "s112",
+          "s126",
+          "s134",
+          "s183",
+          "s157",
+          "s186",
+          "s150",
+          "s119",
+          "s189",
+          "s148",
+          "s121",
+          "s111",
+          "s95",
+          "s125",
+          "s163",
+          "s149",
+          "s122",
+          "s89",
+          "s166",
+          "s141",
+          "s114",
+          "s90",
+          "s193",
+          "s147",
+          "s131",
+          "s151"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 26
+      }
+    },
+    {
+      "from_entity": "column:disp.account-id-ad9c35",
+      "type": "JOINS",
+      "to_entity": "column:loan.account-id-8635a8",
+      "properties": {
+        "_win_sources": [
+          "s176",
+          "s113",
+          "s146"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "column:account.account-id-e3a731",
+      "type": "JOINS",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {
+        "_win_sources": [
+          "s102",
+          "s182",
+          "s150",
+          "s135",
+          "s145",
+          "s108",
+          "s104",
+          "s110",
+          "s141",
+          "s151"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "column:disp.account-id-ad9c35",
+      "type": "JOINS",
+      "to_entity": "column:trans.account-id-204c5f",
+      "properties": {
+        "_win_sources": [
+          "s179",
+          "s177"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:card.disp-id-de569f",
+      "type": "JOINS",
+      "to_entity": "column:disp.disp-id-92aa2c",
+      "properties": {
+        "_win_sources": [
+          "s139",
+          "s161",
+          "s178",
+          "s167",
+          "s194",
+          "s103",
+          "s143",
+          "s146",
+          "s184"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 9
+      }
+    }
+  ]
+}

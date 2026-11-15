@@ -1,0 +1,5694 @@
+{
+  "entities": [
+    {
+      "id": "column:badges.date-8ac445",
+      "type": "Column",
+      "name": "badges.Date",
+      "properties": {
+        "profile": "{\"distinct\": 65586, \"nulls\": 0, \"top\": [\"2014-07-02 16:05:34.0\", \"2012-06-08 23:00:52.0\", \"2012-09-21 23:23:23.0\", \"2010-12-09 01:22:23.0\", \"2010-12-11 00:22:29.0\", \"2011-07-20 00:02:13.0\", \"2012-01-10 13:56:39.0\", \"2010-07-19 19:39:09.0\", \"2010-07-19 19:39:10.0\", \"2012-07-19 19:38:59.0\", \"2011-07-21 00:03:32.0\", \"2010-12-11 00:22:30.0\", \"2014-08-19 10:27:18.0\", \"2011-08-15 09:39:49.0\", \"2010-07-27 09:13:47.0\", \"2012-02-22 19:59:36.0\", \"2012-07-03 15:26:24.0\", \"2010-07-27 09:13:45.0\", \"2013-09-16 20:12:52.0\", \"2010-07-27 09:13:44.0\", \"2013-05-11 19:22:59.0\", \"2012-02-22 19:54:36.0\", \"2011-07-28 00:32:57.0\", \"2011-02-10 04:47:00.0\", \"2013-07-19 19:22:46.0\"]}"
+      }
+    },
+    {
+      "id": "column:badges.name-4e6f2e",
+      "type": "Column",
+      "name": "badges.Name",
+      "properties": {
+        "profile": "{\"distinct\": 153, \"nulls\": 0, \"top\": [\"Student\", \"Supporter\", \"Editor\", \"Scholar\", \"Teacher\", \"Popular Question\", \"Autobiographer\", \"Tumbleweed\", \"Nice Answer\", \"Yearling\", \"Commentator\", \"Notable Question\", \"Nice Question\", \"Informed\", \"Revival\", \"Custodian\", \"Curious\", \"Critic\", \"Enlightened\", \"Citizen Patrol\", \"Promoter\", \"Necromancer\", \"Caucus\", \"Organizer\", \"Enthusiast\"]}"
+      }
+    },
+    {
+      "id": "column:comments.score-0e730e",
+      "type": "Column",
+      "name": "comments.Score",
+      "properties": {
+        "profile": "{\"distinct\": 36, \"nulls\": 0, \"top\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 17, 25, 23, 19, 16, 30, 26, 21]}"
+      }
+    },
+    {
+      "id": "column:posthistory.creationdate-ab9fc4",
+      "type": "Column",
+      "name": "postHistory.CreationDate",
+      "properties": {
+        "profile": "{\"distinct\": 189959, \"nulls\": 0, \"top\": [\"2012-02-22 19:46:04.0\", \"2012-02-22 19:46:03.0\", \"2012-02-22 19:46:05.0\", \"2012-02-23 19:55:21.0\", \"2010-08-01 18:56:25.0\", \"2010-08-16 13:01:42.0\", \"2011-06-01 03:42:00.0\", \"2014-06-16 18:42:37.0\", \"2012-08-21 15:17:25.0\", \"2011-02-06 11:01:16.0\", \"2013-09-02 15:22:07.0\", \"2013-08-08 22:45:51.0\", \"2012-10-02 19:51:30.0\", \"2012-02-22 18:17:52.0\", \"2011-09-29 11:04:53.0\", \"2010-10-12 08:48:39.0\", \"2010-09-03 06:27:41.0\", \"2014-07-30 20:09:14.0\", \"2014-02-09 17:15:42.0\", \"2012-09-20 13:45:20.0\", \"2012-04-27 13:48:30.0\", \"2011-10-11 23:16:01.0\", \"2011-09-20 20:42:50.0\", \"2014-01-27 14:38:45.0\", \"2013-09-04 15:58:36.0\"]}"
+      }
+    },
+    {
+      "id": "column:posthistory.posthistorytypeid-93eec0",
+      "type": "Column",
+      "name": "postHistory.PostHistoryTypeId",
+      "properties": {
+        "profile": "{\"distinct\": 25, \"nulls\": 0, \"top\": [2, 5, 3, 1, 4, 6, 25, 24, 16, 10, 36, 33, 34, 13, 12, 38, 14, 11, 8, 37, 35, 15, 7, 19, 9]}"
+      }
+    },
+    {
+      "id": "column:postlinks.postid-ffed1d",
+      "type": "Column",
+      "name": "postLinks.PostId",
+      "properties": {
+        "profile": "{\"distinct\": 7604, \"nulls\": 0, \"top\": [91253, 88290, 102882, 61217, 54724, 86125, 63254, 90489, 81391, 78898, 60410, 37638, 29731, 105681, 88537, 88188, 88011, 80555, 79056, 60674, 59670, 59088, 58421, 57147, 48786]}"
+      }
+    },
+    {
+      "id": "column:posts.closeddate-d1191a",
+      "type": "Column",
+      "name": "posts.ClosedDate",
+      "properties": {
+        "profile": "{\"distinct\": 1610, \"nulls\": 90356, \"top\": [null, \"2014-09-13 19:29:33.0\", \"2014-09-13 19:28:21.0\", \"2014-09-13 18:43:55.0\", \"2014-09-13 15:07:09.0\", \"2014-09-13 10:39:03.0\", \"2014-09-13 10:38:43.0\", \"2014-09-12 19:15:03.0\", \"2014-09-12 19:13:17.0\", \"2014-09-12 19:11:31.0\", \"2014-09-12 13:38:30.0\", \"2014-09-12 09:45:35.0\", \"2014-09-12 05:25:05.0\", \"2014-09-12 02:11:22.0\", \"2014-09-11 20:34:34.0\", \"2014-09-11 20:20:22.0\", \"2014-09-11 20:20:09.0\", \"2014-09-11 16:10:32.0\", \"2014-09-11 00:32:40.0\", \"2014-09-10 16:04:15.0\", \"2014-09-10 15:07:53.0\", \"2014-09-10 14:55:10.0\", \"2014-09-10 14:52:02.0\", \"2014-09-10 13:24:52.0\", \"2014-09-10 12:48:55.0\"]}"
+      }
+    },
+    {
+      "id": "column:posts.commentcount-d9d81b",
+      "type": "Column",
+      "name": "posts.CommentCount",
+      "properties": {
+        "profile": "{\"distinct\": 39, \"nulls\": 0, \"top\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 18, 20, 24, 22, 21, 30]}"
+      }
+    },
+    {
+      "id": "column:posts.favoritecount-09c0c3",
+      "type": "Column",
+      "name": "posts.FavoriteCount",
+      "properties": {
+        "profile": "{\"distinct\": 77, \"nulls\": 78723, \"top\": [null, 1, 2, 3, 0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 13, 17, 18, 21, 20, 19, 23, 22]}"
+      }
+    },
+    {
+      "id": "column:posts.lasactivitydate-967dd6",
+      "type": "Column",
+      "name": "posts.LasActivityDate",
+      "properties": {
+        "profile": "{\"distinct\": 72647, \"nulls\": 0, \"top\": [\"2011-01-03 11:13:42.0\", \"2014-08-26 14:01:02.0\", \"2014-09-10 15:29:29.0\", \"2014-09-07 05:15:42.0\", \"2014-06-30 11:17:38.0\", \"2014-06-09 08:34:39.0\", \"2013-10-02 18:19:06.0\", \"2013-04-16 10:24:44.0\", \"2013-01-25 17:12:52.0\", \"2012-06-09 16:27:05.0\", \"2012-06-07 13:48:23.0\", \"2011-07-22 15:30:25.0\", \"2014-09-14 02:54:13.0\", \"2014-09-14 02:09:23.0\", \"2014-09-14 02:05:41.0\", \"2014-09-13 23:18:30.0\", \"2014-09-13 23:15:00.0\", \"2014-09-13 20:13:11.0\", \"2014-09-13 19:37:20.0\", \"2014-09-13 18:53:58.0\", \"2014-09-13 16:25:32.0\", \"2014-09-13 16:15:30.0\", \"2014-09-13 12:41:48.0\", \"2014-09-13 12:38:57.0\", \"2014-09-13 12:22:12.0\"]}"
+      }
+    },
+    {
+      "id": "column:posts.score-7070a5",
+      "type": "Column",
+      "name": "posts.Score",
+      "properties": {
+        "profile": "{\"distinct\": 130, \"nulls\": 0, \"top\": [1, 0, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1, 11, 12, 13, 14, 15, -2, 16, 17, 18, 19, 20, -3, 22]}"
+      }
+    },
+    {
+      "id": "column:posts.title-ea3861",
+      "type": "Column",
+      "name": "posts.Title",
+      "properties": {
+        "profile": "{\"distinct\": 42877, \"nulls\": 49054, \"top\": [null, \"wilcox.test usage in R\", \"X and Y are not correlated, but X is sig\", \"What is this distribution?\", \"What are the general strategies in creat\", \"Using panel OLS coefficients for forecas\", \"Tests of within subjects contrasts in R\", \"Steps to figure out a posterior distribu\", \"Relatively normalizing values for collab\", \"Priors and Loss in R\", \"Predictive analysis of data using R\", \"Predict binary outcome with R\", \"Posterior distribution\", \"Markov chain getting stuck due to insuff\", \"Likelihood ratio test in R\", \"Kriging on log transformed rainfall data\", \"How to estimate true value and 95% bands\", \"How to estimate confidence level for SVM\", \"How to convert a table into a graph in R\", \"How to compare features and classifiers \", \"How to choose initial values for nonline\", \"How to calculate the correlation between\", \"How can I help ensure testing data does \", \"Goodness of fit test for a mixture in R\", \"Formula to discard items by votes (Lower\"]}"
+      }
+    },
+    {
+      "id": "column:posts.viewcount-4497a1",
+      "type": "Column",
+      "name": "posts.ViewCount",
+      "properties": {
+        "profile": "{\"distinct\": 3714, \"nulls\": 49054, \"top\": [null, 31, 38, 27, 37, 24, 36, 30, 33, 25, 32, 29, 28, 47, 39, 34, 18, 35, 45, 26, 42, 40, 21, 43, 41]}"
+      }
+    },
+    {
+      "id": "column:tags.tagname-e6c31a",
+      "type": "Column",
+      "name": "tags.TagName",
+      "properties": {
+        "profile": "{\"distinct\": 1032, \"nulls\": 0, \"top\": [\"zipf\", \"zero-inflation\", \"zero-inflated\", \"z-test\", \"z-statistic\", \"yates-correction\", \"xorshift\", \"wlln\", \"within-subjects\", \"wishart\", \"winbugs\", \"wilcoxon\", \"white-noise\", \"weka\", \"weighted-sampling\", \"weighted-regression\", \"weighted-mean\", \"weibull\", \"web\", \"wavelet\", \"ward\", \"vowpal-wabbit\", \"volatility-forecasting\", \"visual-summary\", \"vif\"]}"
+      }
+    },
+    {
+      "id": "column:users.age-760e6d",
+      "type": "Column",
+      "name": "users.Age",
+      "properties": {
+        "profile": "{\"distinct\": 70, \"nulls\": 32007, \"top\": [null, 28, 27, 29, 25, 26, 31, 24, 32, 30, 33, 34, 23, 35, 36, 22, 37, 38, 39, 21, 40, 41, 42, 43, 44]}"
+      }
+    },
+    {
+      "id": "column:users.displayname-b93d2c",
+      "type": "Column",
+      "name": "users.DisplayName",
+      "properties": {
+        "profile": "{\"distinct\": 35644, \"nulls\": 0, \"top\": [\"Chris\", \"John\", \"Alex\", \"Tom\", \"Michael\", \"James\", \"David\", \"Dan\", \"Matt\", \"Mike\", \"Andrew\", \"Paul\", \"Max\", \"Daniel\", \"Ben\", \"Sam\", \"Thomas\", \"Joe\", \"Kevin\", \"Nick\", \"Eric\", \"Tim\", \"Peter\", \"Will\", \"Ryan\"]}"
+      }
+    },
+    {
+      "id": "column:users.lastaccessdate-368a63",
+      "type": "Column",
+      "name": "users.LastAccessDate",
+      "properties": {
+        "profile": "{\"distinct\": 40287, \"nulls\": 0, \"top\": [\"2014-09-08 15:53:04.0\", \"2014-09-12 19:55:18.0\", \"2014-09-12 14:45:36.0\", \"2014-09-12 14:24:28.0\", \"2014-09-12 13:00:10.0\", \"2014-09-12 12:29:44.0\", \"2014-09-11 22:47:20.0\", \"2014-09-11 21:34:11.0\", \"2014-09-11 17:43:32.0\", \"2014-09-11 15:07:33.0\", \"2014-09-11 13:05:06.0\", \"2014-09-10 19:18:55.0\", \"2014-09-10 14:42:11.0\", \"2014-09-10 11:25:34.0\", \"2014-09-10 10:29:28.0\", \"2014-09-08 04:18:44.0\", \"2014-09-04 13:20:30.0\", \"2014-09-04 02:47:26.0\", \"2014-09-02 16:23:30.0\", \"2014-08-31 12:08:39.0\", \"2014-08-25 07:17:55.0\", \"2014-08-12 16:28:50.0\", \"2014-08-08 08:37:52.0\", \"2014-08-06 13:01:54.0\", \"2014-08-04 14:44:41.0\"]}"
+      }
+    },
+    {
+      "id": "column:users.location-89b349",
+      "type": "Column",
+      "name": "users.Location",
+      "properties": {
+        "profile": "{\"distinct\": 2464, \"nulls\": 28634, \"top\": [null, \"United States\", \"London, United Kingdom\", \"Germany\", \"United Kingdom\", \"India\", \"San Francisco, CA\", \"New York, United States\", \"Seattle, WA\", \"Bangalore, India\", \"California\", \"New York, NY\", \"Chicago, IL\", \"Netherlands\", \"Boston, MA\", \"Moscow, Russia\", \"Paris, France\", \"Canada\", \"Sydney, Australia\", \"France\", \"Berlin, Germany\", \"Australia\", \"Brazil\", \"Toronto, Canada\", \"Italy\"]}"
+      }
+    },
+    {
+      "id": "column:users.views-4e1331",
+      "type": "Column",
+      "name": "users.Views",
+      "properties": {
+        "profile": "{\"distinct\": 362, \"nulls\": 0, \"top\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 15, 17, 19, 18, 20, 22, 23, 24, 21]}"
+      }
+    },
+    {
+      "id": "column:votes.bountyamount-2539c9",
+      "type": "Column",
+      "name": "votes.BountyAmount",
+      "properties": {
+        "profile": "{\"distinct\": 6, \"nulls\": 38829, \"top\": [null, 50, 100, 25, 150, 0, 200]}"
+      }
+    },
+    {
+      "id": "column:votes.userid-906068",
+      "type": "Column",
+      "name": "votes.UserId",
+      "properties": {
+        "profile": "{\"distinct\": 509, \"nulls\": 35505, \"top\": [null, 253, 3911, 71, 439, 251, 930, 22, 595, 2116, 442, 88, 3467, 795, 3167, 300, 1349, 221, 573, 597, 3309, 1307, 2322, 2043, 1443]}"
+      }
+    },
+    {
+      "id": "example:s532",
+      "type": "Example",
+      "name": "Please list the display names of all the users whose accounts were created in the year 2011.",
+      "aliases": [],
+      "properties": {
+        "key": "s532",
+        "learning_complete": true,
+        "sql": "SELECT DisplayName\nFROM users\nWHERE STRFTIME('%Y', CreationDate) = '2011'"
+      }
+    },
+    {
+      "id": "example:s533",
+      "type": "Example",
+      "name": "How many users last accessed the website after 2014/9/1?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "users",
+            "LastAccessDate"
+          ]
+        ],
+        "key": "s533",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id) FROM users WHERE date(LastAccessDate) > '2014-09-01'"
+      }
+    },
+    {
+      "id": "example:s536",
+      "type": "Example",
+      "name": "How many users with more than 10 views created their account after the year 2013?",
+      "aliases": [],
+      "properties": {
+        "key": "s536",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM users\nWHERE Views > 10\n  AND CreationDate >= '2014-01-01'"
+      }
+    },
+    {
+      "id": "example:s537",
+      "type": "Example",
+      "name": "How many posts does the user csgillespie own?",
+      "aliases": [],
+      "properties": {
+        "key": "s537",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) AS PostCount\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE u.DisplayName = 'csgillespie'"
+      }
+    },
+    {
+      "id": "example:s538",
+      "type": "Example",
+      "name": "Please list the titles of the posts owned by the user csgillespie?",
+      "aliases": [],
+      "properties": {
+        "key": "s538",
+        "learning_complete": true,
+        "sql": "SELECT p.Title\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE u.DisplayName = 'csgillespie'"
+      }
+    },
+    {
+      "id": "example:s540",
+      "type": "Example",
+      "name": "What is the title of the post that is owned by csgillespie and has the highest popularity?",
+      "aliases": [],
+      "properties": {
+        "key": "s540",
+        "learning_complete": true,
+        "sql": "-- Find the post owned by user 'csgillespie' with the highest popularity (sum of view counts)\nSELECT T2.Title\nFROM users AS T1\nINNER JOIN posts AS T2 ON T1.Id = T2.OwnerUserId\nWHERE T1.DisplayName = 'csgillespie'\nGROUP BY T2.Id, T2.Title\nORDER BY SUM(T2.ViewCount) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s543",
+      "type": "Example",
+      "name": "For the post that got the most number of answers owned by csgillespie, how many answers did it get?",
+      "aliases": [],
+      "properties": {
+        "key": "s543",
+        "learning_complete": true,
+        "sql": "SELECT p.AnswerCount\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE u.DisplayName = 'csgillespie'\nORDER BY p.AnswerCount DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s546",
+      "type": "Example",
+      "name": "Please list the display names of all the users who owns a post that is well-finished.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "posts",
+            "ClosedDate"
+          ]
+        ],
+        "key": "s546",
+        "learning_complete": true,
+        "sql": "SELECT T2.DisplayName FROM posts AS T1 INNER JOIN users AS T2 ON T1.OwnerUserId = T2.Id WHERE T1.ClosedDate IS NOT NULL"
+      }
+    },
+    {
+      "id": "example:s549",
+      "type": "Example",
+      "name": "From which post is the tag \"bayesian\" excerpted from? Please give the body of the post.",
+      "aliases": [],
+      "properties": {
+        "key": "s549",
+        "learning_complete": true,
+        "sql": "SELECT p.Body\nFROM posts AS p\nINNER JOIN tags AS t ON t.ExcerptPostId = p.Id\nWHERE t.TagName = 'bayesian'"
+      }
+    },
+    {
+      "id": "example:s553",
+      "type": "Example",
+      "name": "Among the badges obtained by csgillespie, how many of them were obtained in the year 2011?",
+      "aliases": [],
+      "properties": {
+        "key": "s553",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(b.Id)\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE u.DisplayName = 'csgillespie'\n  AND STRFTIME('%Y', b.Date) = '2011'"
+      }
+    },
+    {
+      "id": "example:s554",
+      "type": "Example",
+      "name": "What is the display name of the user who has obtained the most number of badges?",
+      "aliases": [],
+      "properties": {
+        "key": "s554",
+        "learning_complete": true,
+        "sql": "SELECT u.DisplayName\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nGROUP BY u.Id, u.DisplayName\nORDER BY COUNT(b.Id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s559",
+      "type": "Example",
+      "name": "Indicate the creation date of the maximum number of votes.",
+      "aliases": [],
+      "properties": {
+        "key": "s559",
+        "learning_complete": true,
+        "sql": "SELECT CreationDate\nFROM votes\nGROUP BY CreationDate\nORDER BY COUNT(Id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s560",
+      "type": "Example",
+      "name": "Give the number of \"Revival\" badges.",
+      "aliases": [],
+      "properties": {
+        "key": "s560",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*) FROM badges WHERE Name = 'Revival'"
+      }
+    },
+    {
+      "id": "example:s561",
+      "type": "Example",
+      "name": "What is the title for the post which got the highest score comment?",
+      "aliases": [],
+      "properties": {
+        "key": "s561",
+        "learning_complete": true,
+        "sql": "-- The title of the post that received the highest-scoring comment\nSELECT p.Title\nFROM comments AS c\nINNER JOIN posts AS p ON c.PostId = p.Id\nORDER BY c.Score DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s563",
+      "type": "Example",
+      "name": "User No.3025 gave a comment at 20:29:39 on 2014/4/23 to a post, how many favorite counts did that post get?",
+      "aliases": [],
+      "properties": {
+        "key": "s563",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.FavoriteCount\nFROM comments AS T1\nINNER JOIN posts AS T2 ON T1.PostId = T2.Id\nWHERE T1.UserId = 3025\n  AND STRFTIME('%Y-%m-%d %H:%M:%S', T1.CreationDate) = '2014-04-23 20:29:39'"
+      }
+    },
+    {
+      "id": "example:s564",
+      "type": "Example",
+      "name": "Give the only one comment text of the post with parent id 107829.",
+      "aliases": [],
+      "properties": {
+        "key": "s564",
+        "learning_complete": true,
+        "sql": "SELECT T1.Text\nFROM comments AS T1\nINNER JOIN posts AS T2 ON T1.PostId = T2.Id\nWHERE T2.ParentId = 107829"
+      }
+    },
+    {
+      "id": "example:s566",
+      "type": "Example",
+      "name": "For the owner user of post No. 65041, what is his/her reputation points?",
+      "aliases": [],
+      "properties": {
+        "key": "s566",
+        "learning_complete": true,
+        "sql": "SELECT u.Reputation\nFROM users AS u\nINNER JOIN posts AS p ON p.OwnerUserId = u.Id\nWHERE p.Id = 65041"
+      }
+    },
+    {
+      "id": "example:s571",
+      "type": "Example",
+      "name": "For the user No.24, how many times is the number of his/her posts compared to his/her votes?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "votes",
+            "UserId"
+          ]
+        ],
+        "key": "s571",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(T2.Id) AS REAL) / COUNT(DISTINCT T1.Id) FROM votes AS T1 INNER JOIN posts AS T2 ON T1.UserId = T2.OwnerUserId WHERE T1.UserId = 24"
+      }
+    },
+    {
+      "id": "example:s573",
+      "type": "Example",
+      "name": "Write the contents of comments with a score of 17.",
+      "aliases": [],
+      "properties": {
+        "key": "s573",
+        "learning_complete": true,
+        "sql": "SELECT Text\nFROM comments\nWHERE Score = 17"
+      }
+    },
+    {
+      "id": "example:s575",
+      "type": "Example",
+      "name": "What is the badge name that user 'SilentGhost' obtained?",
+      "aliases": [],
+      "properties": {
+        "key": "s575",
+        "learning_complete": true,
+        "sql": "SELECT b.Name\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE u.DisplayName = 'SilentGhost'"
+      }
+    },
+    {
+      "id": "example:s576",
+      "type": "Example",
+      "name": "Name the user that commented 'thank you user93!'",
+      "aliases": [],
+      "properties": {
+        "key": "s576",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT u.DisplayName\nFROM comments AS c\nINNER JOIN users AS u ON c.UserId = u.Id\nWHERE c.Text = 'thank you user93!'"
+      }
+    },
+    {
+      "id": "example:s577",
+      "type": "Example",
+      "name": "Write all comments made by user 'A Lion.'",
+      "aliases": [],
+      "properties": {
+        "key": "s577",
+        "learning_complete": true,
+        "sql": "SELECT T1.Text\nFROM comments AS T1\nINNER JOIN users AS T2 ON T1.UserId = T2.Id\nWHERE T2.DisplayName = 'A Lion'"
+      }
+    },
+    {
+      "id": "example:s578",
+      "type": "Example",
+      "name": "Which user made a post titled 'Understanding what Dassault iSight is doing?' and how much is the reputation of the user?",
+      "aliases": [],
+      "properties": {
+        "key": "s578",
+        "learning_complete": true,
+        "sql": "SELECT u.DisplayName, u.Reputation\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE p.Title = 'Understanding what Dassault iSight is doing?'"
+      }
+    },
+    {
+      "id": "example:s579",
+      "type": "Example",
+      "name": "Write all comments made on the post titled 'How does gentle boosting differ from AdaBoost?'",
+      "aliases": [],
+      "properties": {
+        "key": "s579",
+        "learning_complete": true,
+        "sql": "SELECT T1.Text\nFROM comments AS T1\nINNER JOIN posts AS T2 ON T1.PostId = T2.Id\nWHERE T2.Title = 'How does gentle boosting differ from AdaBoost?'"
+      }
+    },
+    {
+      "id": "example:s583",
+      "type": "Example",
+      "name": "What is the total score of the posts edited by Yevgeny and include the user's website URL.",
+      "aliases": [],
+      "properties": {
+        "key": "s583",
+        "learning_complete": true,
+        "sql": "SELECT SUM(T2.Score) AS TotalScore, T1.WebsiteUrl\nFROM users AS T1\nINNER JOIN posts AS T2 ON T1.Id = T2.LastEditorUserId\nWHERE T1.DisplayName = 'Yevgeny'\nGROUP BY T1.WebsiteUrl"
+      }
+    },
+    {
+      "id": "example:s585",
+      "type": "Example",
+      "name": "How much is the total bounty amount of the post titled about 'data'",
+      "aliases": [],
+      "properties": {
+        "key": "s585",
+        "learning_complete": true,
+        "sql": "SELECT SUM(v.BountyAmount) AS TotalBountyAmount\nFROM posts AS p\nINNER JOIN votes AS v ON p.Id = v.PostId\nWHERE p.Title LIKE '%data%'"
+      }
+    },
+    {
+      "id": "example:s586",
+      "type": "Example",
+      "name": "Which user added a bounty amount of 50 to the post title mentioning variance?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "posts",
+            "Title"
+          ],
+          [
+            "votes",
+            "BountyAmount"
+          ]
+        ],
+        "key": "s586",
+        "learning_complete": true,
+        "sql": "SELECT T3.DisplayName, T1.Title FROM posts AS T1 INNER JOIN votes AS T2 ON T1.Id = T2.PostId INNER JOIN users AS T3 ON T3.Id = T2.UserId WHERE T2.BountyAmount = 50 AND T1.Title LIKE '%variance%'"
+      }
+    },
+    {
+      "id": "example:s589",
+      "type": "Example",
+      "name": "Which user ID has the highest reputation?",
+      "aliases": [],
+      "properties": {
+        "key": "s589",
+        "learning_complete": true,
+        "sql": "SELECT Id\nFROM users\nWHERE Reputation = (SELECT MAX(Reputation) FROM users)"
+      }
+    },
+    {
+      "id": "example:s590",
+      "type": "Example",
+      "name": "Which user ID has the lowest view?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "users",
+            "Views"
+          ]
+        ],
+        "key": "s590",
+        "learning_complete": true,
+        "sql": "SELECT Id FROM users WHERE Views = ( SELECT MIN(Views) FROM users )"
+      }
+    },
+    {
+      "id": "example:s591",
+      "type": "Example",
+      "name": "How many users are awarded with supporter badge during year 2011?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "badges",
+            "Date"
+          ],
+          [
+            "badges",
+            "Name"
+          ]
+        ],
+        "key": "s591",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id) FROM badges WHERE STRFTIME('%Y', Date) = '2011' AND Name = 'Supporter'"
+      }
+    },
+    {
+      "id": "example:s595",
+      "type": "Example",
+      "name": "Which user have only one post history per post and having at least 1000 views?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "postHistory",
+            "PostHistoryTypeId"
+          ]
+        ],
+        "key": "s595",
+        "learning_complete": true,
+        "sql": "SELECT T2.UserId FROM users AS T1 INNER JOIN postHistory AS T2 ON T1.Id = T2.UserId INNER JOIN posts AS T3 ON T2.PostId = T3.Id WHERE T3.ViewCount >= 1000 GROUP BY T2.UserId HAVING COUNT(DISTINCT T2.PostHistoryTypeId) = 1"
+      }
+    },
+    {
+      "id": "example:s600",
+      "type": "Example",
+      "name": "List out all post that are related to post ID 61217 and what is the popularity of this post?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "postLinks",
+            "PostId"
+          ]
+        ],
+        "key": "s600",
+        "learning_complete": true,
+        "sql": "SELECT T1.ViewCount FROM posts AS T1 INNER JOIN postLinks AS T2 ON T1.Id = T2.PostId WHERE T2.PostId = 61217"
+      }
+    },
+    {
+      "id": "example:s601",
+      "type": "Example",
+      "name": "What is the score and the link type ID for post ID 395?",
+      "aliases": [],
+      "properties": {
+        "key": "s601",
+        "learning_complete": true,
+        "sql": "-- Get the post's score and the link type id of the link associated with post 395\nSELECT p.Score, pl.LinkTypeId\nFROM posts AS p\nINNER JOIN postLinks AS pl ON pl.PostId = p.Id\nWHERE p.Id = 395"
+      }
+    },
+    {
+      "id": "example:s604",
+      "type": "Example",
+      "name": "What is the average of the up votes and the average user age for users creating more than 10 posts?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s604",
+        "learning_complete": true,
+        "sql": "SELECT AVG(T1.UpVotes), AVG(T1.Age) FROM users AS T1 INNER JOIN ( SELECT OwnerUserId, COUNT(*) AS post_count FROM posts GROUP BY OwnerUserId HAVING post_count > 10) AS T2 ON T1.Id = T2.OwnerUserId"
+      }
+    },
+    {
+      "id": "example:s607",
+      "type": "Example",
+      "name": "How many positive comments are there on the list?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s607",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM comments WHERE score > 60"
+      }
+    },
+    {
+      "id": "example:s614",
+      "type": "Example",
+      "name": "Among the users who obtained the \"Teacher\" badge, calculate their percentage of users",
+      "aliases": [],
+      "properties": {
+        "key": "s614",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT u.Id) * 100.0 / (SELECT COUNT(Id) FROM users) AS percentage\nFROM users AS u\nINNER JOIN badges AS b ON b.UserId = u.Id\nWHERE b.Name = 'Teacher'"
+      }
+    },
+    {
+      "id": "example:s615",
+      "type": "Example",
+      "name": "Among the users who obtained the \"Organizer\" badges, calculate the percentage of users who are teenagers.",
+      "aliases": [],
+      "properties": {
+        "key": "s615",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(DISTINCT CASE WHEN u.Age BETWEEN 13 AND 19 THEN u.Id END) * 100.0\n       / COUNT(DISTINCT u.Id) AS percentage\nFROM users AS u\nINNER JOIN badges AS b ON b.UserId = u.Id\nWHERE b.Name = 'Organizer'"
+      }
+    },
+    {
+      "id": "example:s620",
+      "type": "Example",
+      "name": "State the number of views of users who obtained the badge on 7/19/2010 7:39:08 PM.",
+      "aliases": [],
+      "properties": {
+        "key": "s620",
+        "learning_complete": true,
+        "sql": "SELECT u.Views\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE b.Date = '2010-07-19 19:39:08.0'"
+      }
+    },
+    {
+      "id": "example:s621",
+      "type": "Example",
+      "name": "What are the name of badges that users who have the lowest reputation obtained?",
+      "aliases": [],
+      "properties": {
+        "key": "s621",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT b.Name\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE u.Reputation = (SELECT MIN(Reputation) FROM users)"
+      }
+    },
+    {
+      "id": "example:s622",
+      "type": "Example",
+      "name": "State the name of badge that the user whose display name is \"Sharpie\" obtained.",
+      "aliases": [],
+      "properties": {
+        "key": "s622",
+        "learning_complete": true,
+        "sql": "SELECT b.Name\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE u.DisplayName = 'Sharpie'"
+      }
+    },
+    {
+      "id": "example:s625",
+      "type": "Example",
+      "name": "How many users were from New York?",
+      "aliases": [],
+      "properties": {
+        "key": "s625",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id)\nFROM users\nWHERE Location = 'New York'"
+      }
+    },
+    {
+      "id": "example:s627",
+      "type": "Example",
+      "name": "How many users were adult?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s627",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM users WHERE Age BETWEEN 19 AND 65"
+      }
+    },
+    {
+      "id": "example:s628",
+      "type": "Example",
+      "name": "Which users have the highest number of views?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s628",
+        "learning_complete": true,
+        "sql": "SELECT Id, DisplayName FROM users WHERE Views = ( SELECT MAX(Views) FROM users )"
+      }
+    },
+    {
+      "id": "example:s630",
+      "type": "Example",
+      "name": "What is the name of tags used by John Salvatier's?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s630",
+        "learning_complete": true,
+        "sql": "SELECT T3.Tags FROM users AS T1 INNER JOIN postHistory AS T2 ON T1.Id = T2.UserId INNER JOIN posts AS T3 ON T2.PostId = T3.Id WHERE T1.DisplayName = 'John Salvatier'"
+      }
+    },
+    {
+      "id": "example:s632",
+      "type": "Example",
+      "name": "How many votes were made by Harlan?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s632",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.Id) FROM users AS T1 INNER JOIN postHistory AS T2 ON T1.Id = T2.UserId INNER JOIN votes AS T3 ON T3.PostId = T2.PostId WHERE T1.DisplayName = 'Harlan'"
+      }
+    },
+    {
+      "id": "example:s633",
+      "type": "Example",
+      "name": "Which post by slashnick has the most answers count? State the post ID.",
+      "aliases": [],
+      "properties": {
+        "key": "s633",
+        "learning_complete": true,
+        "sql": "-- Post by user 'slashnick' with the highest AnswerCount\nSELECT p.Id\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE u.DisplayName = 'slashnick'\nORDER BY p.AnswerCount DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s634",
+      "type": "Example",
+      "name": "Among posts by Harvey Motulsky and Noah Snyder, which one has higher popularity?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "users",
+            "DisplayName"
+          ]
+        ],
+        "key": "s634",
+        "learning_complete": true,
+        "sql": "SELECT T1.DisplayName FROM users AS T1 INNER JOIN postHistory AS T2 ON T1.Id = T2.UserId INNER JOIN posts AS T3 ON T2.PostId = T3.Id WHERE T1.DisplayName = 'Harvey Motulsky' OR T1.DisplayName = 'Noah Snyder' GROUP BY T1.DisplayName ORDER BY SUM(T3.ViewCount) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s638",
+      "type": "Example",
+      "name": "List all the name of users that obtained the Organizer Badges.",
+      "aliases": [],
+      "properties": {
+        "key": "s638",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT u.DisplayName\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE b.Name = 'Organizer'"
+      }
+    },
+    {
+      "id": "example:s639",
+      "type": "Example",
+      "name": "Based on posts posted by Community, calculate the percentage of posts that use the R language.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s639",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(T3.TagName = 'r', 1, 0)) AS REAL) * 100 / COUNT(T1.Id) FROM users AS T1 INNER JOIN postHistory AS T2 ON T1.Id = T2.UserId INNER JOIN tags AS T3 ON T3.ExcerptPostId = T2.PostId WHERE T1.DisplayName = 'Community'"
+      }
+    },
+    {
+      "id": "example:s641",
+      "type": "Example",
+      "name": "How many users received commentator badges in 2014?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s641",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id) FROM badges WHERE Name = 'Commentator' AND STRFTIME('%Y', Date) = '2014'"
+      }
+    },
+    {
+      "id": "example:s642",
+      "type": "Example",
+      "name": "How many posts were created on 21st July, 2010?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "postHistory",
+            "CreationDate"
+          ]
+        ],
+        "key": "s642",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM postHistory WHERE date(CreationDate) = '2010-07-21'"
+      }
+    },
+    {
+      "id": "example:s649",
+      "type": "Example",
+      "name": "Describe the post history counts and last edit date of the post title \"What is the best introductory Bayesian statistics textbook?\"",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s649",
+        "learning_complete": true,
+        "sql": "SELECT T1.Id, T2.LastEditDate FROM postHistory AS T1 INNER JOIN posts AS T2 ON T1.PostId = T2.Id WHERE T2.Title = 'What is the best introductory Bayesian statistics textbook?'"
+      }
+    },
+    {
+      "id": "example:s650",
+      "type": "Example",
+      "name": "Describe the last accessed date and location of the users who received the outliers badge.",
+      "aliases": [],
+      "properties": {
+        "key": "s650",
+        "learning_complete": true,
+        "sql": "SELECT u.LastAccessDate, u.Location\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE b.Name = 'outliers'"
+      }
+    },
+    {
+      "id": "example:s654",
+      "type": "Example",
+      "name": "Mention the display name and location of the user who owned the excerpt post with hypothesis-testing tag.",
+      "aliases": [],
+      "properties": {
+        "key": "s654",
+        "learning_complete": true,
+        "sql": "SELECT u.DisplayName, u.Location\nFROM tags AS t\nINNER JOIN posts AS p ON t.ExcerptPostId = p.Id\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE t.TagName = 'hypothesis-testing'"
+      }
+    },
+    {
+      "id": "example:s660",
+      "type": "Example",
+      "name": "What is the owner user id of the most valuable post?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "posts",
+            "FavoriteCount"
+          ]
+        ],
+        "key": "s660",
+        "learning_complete": true,
+        "sql": "SELECT OwnerUserId FROM posts WHERE FavoriteCount = ( SELECT MAX(FavoriteCount) FROM posts )"
+      }
+    },
+    {
+      "id": "example:s664",
+      "type": "Example",
+      "name": "What is the sum of score of the post on 2010-07-19?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "posts",
+            "LasActivityDate"
+          ]
+        ],
+        "key": "s664",
+        "learning_complete": true,
+        "sql": "SELECT SUM(Score) FROM posts WHERE LasActivityDate LIKE '2010-07-19%'"
+      }
+    },
+    {
+      "id": "example:s668",
+      "type": "Example",
+      "name": "What is the display name of the user who acquired the highest amount of badges?",
+      "aliases": [],
+      "properties": {
+        "key": "s668",
+        "learning_complete": true,
+        "sql": "SELECT u.DisplayName\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nGROUP BY u.Id, u.DisplayName\nORDER BY COUNT(b.Id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s670",
+      "type": "Example",
+      "name": "What is the date when the youngest user made his or her first post?",
+      "aliases": [],
+      "properties": {
+        "key": "s670",
+        "learning_complete": true,
+        "sql": "SELECT MIN(p.CreaionDate)\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE u.Age = (SELECT MIN(Age) FROM users WHERE Age IS NOT NULL)"
+      }
+    },
+    {
+      "id": "example:s672",
+      "type": "Example",
+      "name": "Among the users located in United Kingdom, how many users whose post have a total favorite amount of 4 or more?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "users",
+            "Location"
+          ]
+        ],
+        "key": "s672",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.Id) FROM users AS T1 INNER JOIN posts AS T2 ON T1.Id = T2.OwnerUserId WHERE T1.Location = 'United Kingdom' AND T2.FavoriteCount >= 4"
+      }
+    },
+    {
+      "id": "example:s675",
+      "type": "Example",
+      "name": "How many users whose reputations are higher than 2000 and the number of views is higher than 1000?",
+      "aliases": [],
+      "properties": {
+        "key": "s675",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id) AS UserCount\nFROM users\nWHERE Reputation > 2000 AND Views > 1000"
+      }
+    },
+    {
+      "id": "example:s678",
+      "type": "Example",
+      "name": "Which post by Harvey Motulsky has the most views? Please give the id and title of this post.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s678",
+        "learning_complete": true,
+        "sql": "SELECT T2.Id, T2.Title FROM users AS T1 INNER JOIN posts AS T2 ON T1.Id = T2.OwnerUserId WHERE T1.DisplayName = 'Harvey Motulsky' ORDER BY T2.ViewCount DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s679",
+      "type": "Example",
+      "name": "Which post has the highest score? Please give its id and title's name.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s679",
+        "learning_complete": true,
+        "sql": "SELECT T1.Id, T2.Title FROM users AS T1 INNER JOIN posts AS T2 ON T1.Id = T2.OwnerUserId ORDER BY T2.Score DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s681",
+      "type": "Example",
+      "name": "Please list the users' display names whose posts had over 20000 views in 2011.",
+      "aliases": [],
+      "properties": {
+        "key": "s681",
+        "learning_complete": true,
+        "sql": "SELECT u.DisplayName\nFROM posts AS p\nINNER JOIN users AS u ON p.OwnerUserId = u.Id\nWHERE p.ViewCount > 20000\n  AND STRFTIME('%Y', p.CreaionDate) = '2011'"
+      }
+    },
+    {
+      "id": "example:s684",
+      "type": "Example",
+      "name": "Identify the percentage of teenage users.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s684",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(Age BETWEEN 13 AND 18, 1, 0)) AS REAL) * 100 / COUNT(Id) FROM users"
+      }
+    },
+    {
+      "id": "example:s685",
+      "type": "Example",
+      "name": "Identify the total views on the post 'Computer Game Datasets'. Name the user who posted it last time.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "postHistory",
+            "Text"
+          ]
+        ],
+        "key": "s685",
+        "learning_complete": true,
+        "sql": "SELECT T2.ViewCount, T3.DisplayName FROM postHistory AS T1 INNER JOIN posts AS T2 ON T1.PostId = T2.Id INNER JOIN users AS T3 ON T2.LastEditorUserId = T3.Id WHERE T1.Text = 'Computer Game Datasets'"
+      }
+    },
+    {
+      "id": "example:s686",
+      "type": "Example",
+      "name": "Identify the total number of posts with views above average.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "posts",
+            "ViewCount"
+          ]
+        ],
+        "key": "s686",
+        "learning_complete": true,
+        "sql": "SELECT Id FROM posts WHERE ViewCount > ( SELECT AVG(ViewCount) FROM posts )"
+      }
+    },
+    {
+      "id": "example:s690",
+      "type": "Example",
+      "name": "Identify the latest badge awarded to the user with the display name Emmett.",
+      "aliases": [],
+      "properties": {
+        "key": "s690",
+        "learning_complete": true,
+        "sql": "SELECT b.Name\nFROM badges AS b\nINNER JOIN users AS u ON b.UserId = u.Id\nWHERE u.DisplayName = 'Emmett'\nORDER BY b.Date DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s694",
+      "type": "Example",
+      "name": "Provide the text of the latest 10 comments to the post with the title 'Analysing wind data with R' and the display name of the user who left it.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s694",
+        "learning_complete": true,
+        "sql": "SELECT T3.Text, T1.DisplayName FROM users AS T1 INNER JOIN posts AS T2 ON T1.Id = T2.OwnerUserId INNER JOIN comments AS T3 ON T2.Id = T3.PostId WHERE T2.Title = 'Analysing wind data with R' ORDER BY T1.CreationDate DESC LIMIT 10"
+      }
+    },
+    {
+      "id": "example:s696",
+      "type": "Example",
+      "name": "Count the number of posts with a tag specified as 'careers'.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "tags",
+            "TagName"
+          ]
+        ],
+        "key": "s696",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id) FROM tags WHERE TagName = 'careers'"
+      }
+    },
+    {
+      "id": "example:s698",
+      "type": "Example",
+      "name": "How many comments and answers were left by the users on the post with the title 'Clustering 1D data'?",
+      "aliases": [],
+      "properties": {
+        "key": "s698",
+        "learning_complete": true,
+        "sql": "-- For the post titled 'Clustering 1D data', count the comments left on it and the answers posted to it\nSELECT\n    (SELECT COUNT(*)\n       FROM comments AS c\n       INNER JOIN users AS u ON c.UserId = u.Id\n       INNER JOIN posts AS p ON c.PostId = p.Id\n      WHERE p.Title = 'Clustering 1D data') AS CommentCount,\n    (SELECT COUNT(*)\n       FROM posts AS a\n       INNER JOIN users AS u ON a.OwnerUserId = u.Id\n       INNER JOIN posts AS p ON a.ParentId = p.Id\n      WHERE p.Title = 'Clustering 1D data') AS AnswerCount"
+      }
+    },
+    {
+      "id": "example:s699",
+      "type": "Example",
+      "name": "When did the user known as 'IrishStat' create his or her account?",
+      "aliases": [],
+      "properties": {
+        "key": "s699",
+        "learning_complete": true,
+        "sql": "SELECT CreationDate FROM users WHERE DisplayName = 'IrishStat'"
+      }
+    },
+    {
+      "id": "example:s701",
+      "type": "Example",
+      "name": "Among all the posts posted by the most influential user, identify the percentage with a score above 50.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s701",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN T2.Score > 50 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.Id) FROM users T1 INNER JOIN posts T2 ON T1.Id = T2.OwnerUserId INNER JOIN ( SELECT MAX(Reputation) AS max_reputation FROM users ) T3 ON T1.Reputation = T3.max_reputation"
+      }
+    },
+    {
+      "id": "example:s702",
+      "type": "Example",
+      "name": "How many posts have a score less than 20?",
+      "aliases": [],
+      "properties": {
+        "key": "s702",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(Id) FROM posts WHERE Score < 20"
+      }
+    },
+    {
+      "id": "example:s704",
+      "type": "Example",
+      "name": "What is the excerpt post ID and wiki post ID of the tag named sample?",
+      "aliases": [],
+      "properties": {
+        "key": "s704",
+        "learning_complete": true,
+        "sql": "SELECT ExcerptPostId, WikiPostId\nFROM tags\nWHERE TagName = 'sample'"
+      }
+    },
+    {
+      "id": "example:s705",
+      "type": "Example",
+      "name": "Give the user's reputation and up vote number of the user that commented \"fine, you win :)\".",
+      "aliases": [],
+      "properties": {
+        "key": "s705",
+        "learning_complete": true,
+        "sql": "SELECT u.Reputation, u.UpVotes\nFROM users AS u\nINNER JOIN comments AS c ON c.UserId = u.Id\nWHERE c.Text = 'fine, you win :)'"
+      }
+    },
+    {
+      "id": "example:s707",
+      "type": "Example",
+      "name": "Among the posts with views ranging from 100 to 150, what is the comment with the highest score?",
+      "aliases": [],
+      "properties": {
+        "key": "s707",
+        "learning_complete": true,
+        "sql": "SELECT T1.Text\nFROM comments AS T1\nINNER JOIN posts AS T2 ON T1.PostId = T2.Id\nWHERE T2.ViewCount BETWEEN 100 AND 150\nORDER BY T1.Score DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s710",
+      "type": "Example",
+      "name": "In posts with 1 comment, how many of the comments have 0 score?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "posts",
+            "CommentCount"
+          ],
+          [
+            "posts",
+            "Score"
+          ]
+        ],
+        "key": "s710",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.id) FROM comments AS T1 INNER JOIN posts AS T2 ON T1.PostId = T2.Id WHERE T2.CommentCount = 1 AND T2.Score = 0"
+      }
+    },
+    {
+      "id": "example:s711",
+      "type": "Example",
+      "name": "Among products comments with 0 score, what is the total number of users ages 40 years old?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "comments",
+            "Score"
+          ],
+          [
+            "users",
+            "Age"
+          ]
+        ],
+        "key": "s711",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T1.id) FROM comments AS T1 INNER JOIN users AS T2 ON T1.UserId = T2.Id WHERE T1.Score = 0 AND T2.Age = 40"
+      }
+    },
+    {
+      "id": "example:s715",
+      "type": "Example",
+      "name": "In comments with score between 1 to 5, list down the display names of the users with 0 down votes.",
+      "aliases": [],
+      "properties": {
+        "key": "s715",
+        "learning_complete": true,
+        "sql": "SELECT T2.DisplayName\nFROM comments AS T1\nINNER JOIN users AS T2 ON T1.UserId = T2.Id\nWHERE T1.Score BETWEEN 1 AND 5 AND T2.DownVotes = 0"
+      }
+    },
+    {
+      "id": "example:s716",
+      "type": "Example",
+      "name": "Among the comments with scores between 5 to 10, what is the percentage of the users with 0 up votes?",
+      "aliases": [],
+      "properties": {
+        "key": "s716",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN T2.UpVotes = 0 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM comments AS T1\nINNER JOIN users AS T2 ON T1.UserId = T2.Id\nWHERE T1.Score BETWEEN 5 AND 10"
+      }
+    },
+    {
+      "id": "term:adult-user",
+      "type": "Term",
+      "name": "adult user",
+      "aliases": [
+        "users who are adults",
+        "adult age group"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:badge-awarded-in-a-year",
+      "type": "Term",
+      "name": "badge awarded in a year",
+      "aliases": [
+        "badge year",
+        "year of badge award",
+        "badges during year"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:badge-identifier",
+      "type": "Term",
+      "name": "badge identifier",
+      "aliases": [
+        "badge id",
+        "count of badges"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bounty-amount",
+      "type": "Term",
+      "name": "bounty amount",
+      "aliases": [
+        "bounty",
+        "bounty points",
+        "bonus amount"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:comment-author",
+      "type": "Term",
+      "name": "comment author",
+      "aliases": [
+        "user who posted the comment",
+        "commenter",
+        "user id of a comment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:comment-score",
+      "type": "Term",
+      "name": "comment score",
+      "aliases": [
+        "comment rating",
+        "score of the comment",
+        "comment points",
+        "score of a comment",
+        "comment with 0 score",
+        "score of comments"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:commentator-badge",
+      "type": "Term",
+      "name": "commentator badge",
+      "aliases": [
+        "commentator badge awarded",
+        "received commentator badge"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:comments-on-a-titled-post",
+      "type": "Term",
+      "name": "comments on a titled post",
+      "aliases": [
+        "comments of the post",
+        "post comments by title"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:count-of-comments",
+      "type": "Term",
+      "name": "count of comments",
+      "aliases": [
+        "how many comments",
+        "number of comments"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:date-prefix-matching",
+      "type": "Term",
+      "name": "date prefix matching",
+      "aliases": [
+        "date as text filter",
+        "day-level date filter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:elder-user",
+      "type": "Term",
+      "name": "elder user",
+      "aliases": [
+        "elderly users",
+        "elder age group",
+        "users over 65"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:favorite-count",
+      "type": "Term",
+      "name": "favorite count",
+      "aliases": [
+        "total favorites",
+        "number of favorites",
+        "favorite amount"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-number-of-views",
+      "type": "Term",
+      "name": "highest number of views",
+      "aliases": [
+        "most views",
+        "max views",
+        "top viewers",
+        "highest view count",
+        "most viewed",
+        "top viewed post",
+        "popularity by views"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-score",
+      "type": "Term",
+      "name": "highest score",
+      "aliases": [
+        "top scored post",
+        "most upvoted post",
+        "best score"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:last-access-date-after-a-date",
+      "type": "Term",
+      "name": "last access date after a date",
+      "aliases": [
+        "accessed after",
+        "last accessed on or after",
+        "recently accessed"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:last-edit-date",
+      "type": "Term",
+      "name": "last edit date",
+      "aliases": [
+        "last edited date",
+        "post last edit"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:latest-comments",
+      "type": "Term",
+      "name": "latest comments",
+      "aliases": [
+        "most recent comments",
+        "newest comments"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:more-popular-user",
+      "type": "Term",
+      "name": "more popular user",
+      "aliases": [
+        "user with higher popularity",
+        "which user is more popular"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:most-valuable-post",
+      "type": "Term",
+      "name": "most valuable post",
+      "aliases": [
+        "highest value post",
+        "most favorited post",
+        "top valued post"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:negative-comment",
+      "type": "Term",
+      "name": "negative comment",
+      "aliases": [
+        "bad comment",
+        "low-rated comment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:number-of-users",
+      "type": "Term",
+      "name": "number of users",
+      "aliases": [
+        "count of users",
+        "how many users",
+        "user count"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:one-post-history",
+      "type": "Term",
+      "name": "one post history",
+      "aliases": [
+        "only one post history",
+        "single post history type",
+        "exactly one history type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:positive-comment",
+      "type": "Term",
+      "name": "positive comment",
+      "aliases": [
+        "good comment",
+        "high-rated comment",
+        "favorable comment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-by-a-user",
+      "type": "Term",
+      "name": "post by a user",
+      "aliases": [
+        "posts owned by user",
+        "post authored by",
+        "posts written by"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-created-date",
+      "type": "Term",
+      "name": "post created date",
+      "aliases": [
+        "date a post was created",
+        "post creation date",
+        "posts created on"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-history-entries",
+      "type": "Term",
+      "name": "post history entries",
+      "aliases": [
+        "post history count",
+        "history count",
+        "post history records"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-identifier",
+      "type": "Term",
+      "name": "post identifier",
+      "aliases": [
+        "post id",
+        "which posts",
+        "posts listed",
+        "post's id"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-on-a-date",
+      "type": "Term",
+      "name": "post on a date",
+      "aliases": [
+        "post activity date",
+        "last activity date of post"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-owner",
+      "type": "Term",
+      "name": "post owner",
+      "aliases": [
+        "owner user id",
+        "post author id",
+        "user who owns the post",
+        "user who owns a post",
+        "post author"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-popularity",
+      "type": "Term",
+      "name": "post popularity",
+      "aliases": [
+        "popularity of a post",
+        "how popular",
+        "view popularity"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-title",
+      "type": "Term",
+      "name": "post title",
+      "aliases": [
+        "title's name",
+        "post name",
+        "title of the post",
+        "post subject"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:post-title-mentioning",
+      "type": "Term",
+      "name": "post title mentioning",
+      "aliases": [
+        "post title containing",
+        "title like",
+        "post about"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-a-user-wrote",
+      "type": "Term",
+      "name": "posts a user wrote",
+      "aliases": [
+        "posts authored by a user",
+        "user's posts",
+        "posts made by a user"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-by-a-user",
+      "type": "Term",
+      "name": "posts by a user",
+      "aliases": [
+        "post authored by",
+        "user's posts",
+        "posts written by",
+        "posts owned by user",
+        "post count of user"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-created-by-a-user",
+      "type": "Term",
+      "name": "posts created by a user",
+      "aliases": [
+        "user's posts",
+        "posts owned by user",
+        "post creator"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-created-on-a-day",
+      "type": "Term",
+      "name": "posts created on a day",
+      "aliases": [
+        "number of posts created on date",
+        "posts per day"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-posted-by-a-user",
+      "type": "Term",
+      "name": "posts posted by a user",
+      "aliases": [
+        "posts authored by user",
+        "post history for user",
+        "posts by Community"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-with-a-tag",
+      "type": "Term",
+      "name": "posts with a tag",
+      "aliases": [
+        "posts having a tag",
+        "count posts by tag",
+        "tagged posts"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:posts-with-n-comments",
+      "type": "Term",
+      "name": "posts with n comments",
+      "aliases": [
+        "comment count of a post",
+        "posts having comments"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:r-language-tag",
+      "type": "Term",
+      "name": "r language tag",
+      "aliases": [
+        "r programming language",
+        "statistical language r"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:ratio-of-two-counts",
+      "type": "Term",
+      "name": "ratio of two counts",
+      "aliases": [
+        "count comparison ratio",
+        "how many times more",
+        "post to vote ratio"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:related-post",
+      "type": "Term",
+      "name": "related post",
+      "aliases": [
+        "posts related to a post",
+        "linked posts",
+        "post links of a post"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:score-of-post",
+      "type": "Term",
+      "name": "score of post",
+      "aliases": [
+        "post score",
+        "sum of scores"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:supporter-badge",
+      "type": "Term",
+      "name": "supporter badge",
+      "aliases": [
+        "Supporter badge awarded",
+        "supporter badge name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:tag-name-value",
+      "type": "Term",
+      "name": "tag name value",
+      "aliases": [
+        "tag label",
+        "tag category"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:tags-of-a-post",
+      "type": "Term",
+      "name": "tags of a post",
+      "aliases": [
+        "post tags",
+        "tags on a post",
+        "post's tags",
+        "post tag list",
+        "excerpt post tags"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:tags-used-by-a-user",
+      "type": "Term",
+      "name": "tags used by a user",
+      "aliases": [
+        "user's tags",
+        "tags used by author"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:teenager-age-range",
+      "type": "Term",
+      "name": "teenager age range",
+      "aliases": [
+        "teenage users",
+        "teen users",
+        "under 19",
+        "adolescent age"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:teenager-user",
+      "type": "Term",
+      "name": "teenager user",
+      "aliases": [
+        "teen users",
+        "teenage age group"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-views",
+      "type": "Term",
+      "name": "total views",
+      "aliases": [
+        "view count",
+        "post views",
+        "number of views",
+        "post popularity"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-age",
+      "type": "Term",
+      "name": "user age",
+      "aliases": [
+        "age of the user",
+        "user's age in years",
+        "commenter age"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-display-name",
+      "type": "Term",
+      "name": "user display name",
+      "aliases": [
+        "user name",
+        "display name of user"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-location-country",
+      "type": "Term",
+      "name": "user location country",
+      "aliases": [
+        "user country",
+        "located in country",
+        "location filter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-of-post-history",
+      "type": "Term",
+      "name": "user of post history",
+      "aliases": [
+        "who posted",
+        "user who posted the post",
+        "poster"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-s-own-posts",
+      "type": "Term",
+      "name": "user's own posts",
+      "aliases": [
+        "posts owned by user",
+        "posts authored by user",
+        "post owner"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-views",
+      "type": "Term",
+      "name": "user views",
+      "aliases": [
+        "views",
+        "view count",
+        "number of views"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-who-left-the-comment",
+      "type": "Term",
+      "name": "user who left the comment",
+      "aliases": [
+        "comment author",
+        "display name of commenter",
+        "user who posted the comment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:user-who-posted-it-last-time",
+      "type": "Term",
+      "name": "user who posted it last time",
+      "aliases": [
+        "last poster",
+        "most recent poster",
+        "last editor"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:views-of-a-post",
+      "type": "Term",
+      "name": "views of a post",
+      "aliases": [
+        "view count",
+        "popularity",
+        "post popularity",
+        "how popular a post is",
+        "post views"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:votes-made-by-a-user",
+      "type": "Term",
+      "name": "votes made by a user",
+      "aliases": [
+        "votes by a user",
+        "votes cast by a user",
+        "user's votes",
+        "votes cast by user",
+        "voter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:votes-on-a-post",
+      "type": "Term",
+      "name": "votes on a post",
+      "aliases": [
+        "post's votes",
+        "vote count for a post"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:well-finished-post",
+      "type": "Term",
+      "name": "well-finished post",
+      "aliases": [
+        "closed post",
+        "finished question",
+        "resolved post"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:which-user",
+      "type": "Term",
+      "name": "which user",
+      "aliases": [
+        "who voted",
+        "who added bounty",
+        "user who added bounty",
+        "voter's display name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:which-users",
+      "type": "Term",
+      "name": "which users",
+      "aliases": [
+        "users",
+        "user name",
+        "who the users are"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-badge-obtained",
+      "type": "Term",
+      "name": "year badge obtained",
+      "aliases": [
+        "badge year",
+        "year badge awarded"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:posts-posted-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {
+        "_feedback_sources": [
+          "s537",
+          "s685",
+          "s538",
+          "s549",
+          "s578",
+          "s704",
+          "s701"
+        ],
+        "losses": 2,
+        "note": "Post authorship is recorded in postHistory (UserId identifies the poster, PostId the post), so a user's posts are the postHistory rows where UserId equals users.Id rather than the posts.OwnerUserId column.",
+        "origin": "s639",
+        "sql": "postHistory.UserId = users.Id",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:votes-on-a-post",
+      "type": "MEANS",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {
+        "_feedback_sources": [
+          "s679",
+          "s571"
+        ],
+        "losses": 2,
+        "note": "A vote is tied to the post it was cast on, so any user-to-vote attribution must pass through postHistory.PostId.",
+        "origin": "s632",
+        "sql": "votes.PostId = postHistory.PostId",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:most-valuable-post",
+      "type": "MEANS",
+      "to_entity": "column:posts.favoritecount-09c0c3",
+      "properties": {
+        "_feedback_sources": [
+          "s686",
+          "s710",
+          "s604"
+        ],
+        "losses": 3,
+        "note": "Post value/quality is measured by posts.FavoriteCount, so the most valuable post is the one with the maximum favorite count, not the most viewed.",
+        "origin": "s660",
+        "sql": "posts.FavoriteCount = (SELECT MAX(posts.FavoriteCount) FROM posts)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:adult-user",
+      "type": "MEANS",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {
+        "losses": 0,
+        "note": "In this database the stored age category 'adult' covers ages 19 through 65 inclusive, so adult users are selected with a BETWEEN range rather than a lower-bound-only test like Age >= 18.",
+        "origin": "s627",
+        "sql": "users.Age BETWEEN 19 AND 65",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:posts-created-on-a-day",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.creationdate-ab9fc4",
+      "properties": {
+        "_feedback_sources": [
+          "s675",
+          "s532",
+          "s563",
+          "s628",
+          "s595",
+          "s559"
+        ],
+        "losses": 2,
+        "note": "CreationDate is stored as a text datetime like '2012-02-22 19:46:04.0', so compare calendar days with date(CreationDate) = 'YYYY-MM-DD' rather than matching against another table's date column.",
+        "origin": "s642",
+        "sql": "date(postHistory.CreationDate) = '2010-07-21'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:post-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {
+        "losses": 0,
+        "note": "A post belongs to the user identified by posts.OwnerUserId, so ownership/author questions join users to posts on that column rather than through postHistory, which records other users' activity on a post.",
+        "origin": "s678",
+        "sql": "posts.OwnerUserId = users.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:views-of-a-post",
+      "type": "MEANS",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {
+        "_feedback_sources": [
+          "s707",
+          "s536",
+          "s696",
+          "s590",
+          "s633",
+          "s540",
+          "s675",
+          "s681"
+        ],
+        "losses": 2,
+        "note": "The number of views a post received is stored in posts.ViewCount, and posts with no recorded views hold NULL in that column.",
+        "origin": "s686",
+        "sql": "posts.ViewCount",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:post-identifier",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_feedback_sources": [
+          "s554",
+          "s575",
+          "s638",
+          "s591",
+          "s690",
+          "s576",
+          "s537",
+          "s614",
+          "s538",
+          "s615",
+          "s577",
+          "s589",
+          "s625"
+        ],
+        "losses": 1,
+        "note": "When a post's id is requested together with the post title, the id is the owner user's id from users.Id, linked to the post through posts.OwnerUserId.",
+        "origin": "s679",
+        "sql": "users.Id",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:comment-author",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_feedback_sources": [
+          "s699",
+          "s670",
+          "s564",
+          "s620",
+          "s660",
+          "s650",
+          "s621",
+          "s622",
+          "s561",
+          "s583",
+          "s554",
+          "s575",
+          "s705",
+          "s707",
+          "s638",
+          "s536",
+          "s591",
+          "s690",
+          "s576",
+          "s537",
+          "s614",
+          "s538",
+          "s578",
+          "s563",
+          "s615",
+          "s589",
+          "s625"
+        ],
+        "losses": 2,
+        "note": "The commenter is identified by comments.UserId, which references users.Id, so questions about comment authors link comments to users on that pair.",
+        "origin": "s711",
+        "sql": "comments.UserId = users.Id",
+        "wins": 25
+      }
+    },
+    {
+      "from_entity": "term:user-display-name",
+      "type": "MEANS",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {
+        "_feedback_sources": [
+          "s654",
+          "s622",
+          "s554",
+          "s575",
+          "s638",
+          "s590",
+          "s668",
+          "s690",
+          "s576",
+          "s715",
+          "s532",
+          "s681"
+        ],
+        "losses": 1,
+        "note": "A person referred to by name in the question is identified by the users.DisplayName text value.",
+        "origin": "s632",
+        "sql": "users.DisplayName",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:date-prefix-matching",
+      "type": "MEANS",
+      "to_entity": "column:posts.lasactivitydate-967dd6",
+      "properties": {
+        "losses": 0,
+        "note": "Datetime columns are stored as text like '2011-01-03 11:13:42.0', so a day-level filter matches with a date prefix.",
+        "origin": "s664",
+        "sql": "posts.LasActivityDate LIKE 'YYYY-MM-DD%'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:post-popularity",
+      "type": "MEANS",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {
+        "_feedback_sources": [
+          "s590",
+          "s540"
+        ],
+        "losses": 1,
+        "note": "Popularity is measured by the view count, and comparing users' popularity requires summing ViewCount over all of that user's posts rather than looking at a single post.",
+        "origin": "s634",
+        "sql": "SUM(posts.ViewCount)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:year-badge-obtained",
+      "type": "MEANS",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {
+        "_feedback_sources": [
+          "s532",
+          "s563",
+          "s615"
+        ],
+        "losses": 0,
+        "note": "The badge award date is a DATETIME text value in 'YYYY-MM-DD HH:MM:SS.0' form, so the calendar year is extracted with STRFTIME('%Y', badges.Date).",
+        "origin": "s641",
+        "sql": "STRFTIME('%Y', badges.Date)",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:posts-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {
+        "_feedback_sources": [
+          "s633"
+        ],
+        "losses": 0,
+        "note": "The posts a user owns are identified by posts.OwnerUserId; postHistory rows are edit-history records and do not represent a user's posts.",
+        "origin": "s571",
+        "sql": "posts.OwnerUserId",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:commentator-badge",
+      "type": "MEANS",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {
+        "_feedback_sources": [
+          "s615"
+        ],
+        "losses": 0,
+        "note": "Badge names are stored as fixed case-sensitive labels, so the commentator badge is exactly 'Commentator'.",
+        "origin": "s641",
+        "sql": "badges.Name = 'Commentator'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:highest-number-of-views",
+      "type": "MEANS",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {
+        "losses": 0,
+        "note": "View popularity is measured by the posts.ViewCount integer column, and the most-viewed item is the one with the largest value.",
+        "origin": "s678",
+        "sql": "ORDER BY posts.ViewCount DESC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:score-of-post",
+      "type": "MEANS",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {
+        "_feedback_sources": [
+          "s702",
+          "s715",
+          "s573",
+          "s716"
+        ],
+        "losses": 0,
+        "note": "The post's score value is the integer column posts.Score, summed directly.",
+        "origin": "s664",
+        "sql": "SUM(posts.Score)",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:votes-made-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {
+        "_feedback_sources": [
+          "s583"
+        ],
+        "losses": 0,
+        "note": "Votes carry no user column, so votes attributed to a person are the votes on the posts recorded in that person's postHistory entries.",
+        "origin": "s632",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = votes.PostId",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:tag-name-value",
+      "type": "MEANS",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {
+        "_feedback_sources": [
+          "s690",
+          "s576",
+          "s549",
+          "s704"
+        ],
+        "losses": 0,
+        "note": "A tag is identified by its plain name in tags.TagName (no angle brackets or delimiters), so an equality filter on the raw name is the correct condition.",
+        "origin": "s696",
+        "sql": "tags.TagName = 'careers'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:post-owner",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "losses": 0,
+        "note": "The user who owns a post is identified by posts.OwnerUserId matching users.Id, and that user's display name is users.DisplayName.",
+        "origin": "s546",
+        "sql": "posts.OwnerUserId = users.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:user-views",
+      "type": "MEANS",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {
+        "_feedback_sources": [
+          "s543",
+          "s533",
+          "s675",
+          "s715",
+          "s685",
+          "s681",
+          "s595"
+        ],
+        "losses": 3,
+        "note": "The number of views for a user is stored in users.Views; posts.ViewCount is a different measure (views on a post) and should not be substituted.",
+        "origin": "s590",
+        "sql": "users.Views",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:user-of-post-history",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {
+        "_feedback_sources": [
+          "s701"
+        ],
+        "losses": 1,
+        "note": "The user behind a post history entry is postHistory.UserId, which matches users.Id for the user's name.",
+        "origin": "s595",
+        "sql": "postHistory.UserId",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:highest-score",
+      "type": "MEANS",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {
+        "_feedback_sources": [
+          "s649",
+          "s554",
+          "s707",
+          "s543",
+          "s668",
+          "s633",
+          "s533",
+          "s702",
+          "s540",
+          "s715",
+          "s628",
+          "s573",
+          "s589",
+          "s716",
+          "s678"
+        ],
+        "losses": 4,
+        "note": "Post score is posts.Score, and the highest-scoring post is obtained by ordering by that column descending.",
+        "origin": "s679",
+        "sql": "ORDER BY posts.Score DESC",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:posts-a-user-wrote",
+      "type": "MEANS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_feedback_sources": [
+          "s578",
+          "s704",
+          "s577",
+          "s585"
+        ],
+        "losses": 0,
+        "note": "A user's posts are found through postHistory authorship (postHistory.UserId = users.Id, postHistory.PostId = posts.Id), not through posts.OwnerUserId.",
+        "origin": "s630",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:r-language-tag",
+      "type": "MEANS",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {
+        "_feedback_sources": [
+          "s549",
+          "s704"
+        ],
+        "losses": 0,
+        "note": "Tag names are stored lowercase without angle brackets in tags.TagName, so the R language tag is the exact value 'r' (not '<r>' in posts.Tags).",
+        "origin": "s639",
+        "sql": "tags.TagName = 'r'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:user-age",
+      "type": "MEANS",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {
+        "_feedback_sources": [
+          "s699",
+          "s620",
+          "s583",
+          "s705",
+          "s630"
+        ],
+        "losses": 1,
+        "note": "A person's age in whole years is stored in users.Age (teenager 13-18, adult 19-65, elder above 65), and it may be NULL when unknown.",
+        "origin": "s711",
+        "sql": "users.Age",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:votes-made-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_feedback_sources": [
+          "s554",
+          "s575",
+          "s705",
+          "s638",
+          "s571",
+          "s591",
+          "s690",
+          "s576",
+          "s614",
+          "s578",
+          "s577",
+          "s589",
+          "s559"
+        ],
+        "losses": 2,
+        "note": "Votes carry no user column, so votes attributed to a person are the votes on the posts recorded in that person's postHistory entries.",
+        "origin": "s632",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = votes.PostId",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:ratio-of-two-counts",
+      "type": "MEANS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_feedback_sources": [
+          "s543",
+          "s591",
+          "s642"
+        ],
+        "losses": 2,
+        "note": "When comparing two counts as a ratio, cast the numerator to REAL so the division is decimal instead of truncated integer division.",
+        "origin": "s571",
+        "sql": "CAST(COUNT(posts.Id) AS REAL) / COUNT(DISTINCT votes.Id)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:posts-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_feedback_sources": [
+          "s564",
+          "s579",
+          "s660",
+          "s601",
+          "s561",
+          "s664",
+          "s696",
+          "s642"
+        ],
+        "losses": 4,
+        "note": "A user's posts are linked through postHistory (UserId to PostId), so posts and users must be joined via postHistory rather than through posts.OwnerUserId alone.",
+        "origin": "s634",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:teenager-user",
+      "type": "MEANS",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {
+        "losses": 0,
+        "note": "The stored age category 'teenager' spans 13 to 18 inclusive.",
+        "origin": "s627",
+        "sql": "users.Age BETWEEN 13 AND 18",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:latest-comments",
+      "type": "MEANS",
+      "to_entity": "column:users.creationdate-a79633",
+      "properties": {
+        "_feedback_sources": [
+          "s559",
+          "s678",
+          "s701"
+        ],
+        "losses": 2,
+        "note": "comments has no timestamp column, so recency of a comment is expressed by ordering on the CreationDate of the user associated with the post.",
+        "origin": "s694",
+        "sql": "ORDER BY users.CreationDate DESC",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:posts-a-user-wrote",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {
+        "losses": 0,
+        "note": "A user's posts are found through postHistory authorship (postHistory.UserId = users.Id, postHistory.PostId = posts.Id), not through posts.OwnerUserId.",
+        "origin": "s630",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:positive-comment",
+      "type": "MEANS",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {
+        "_feedback_sources": [
+          "s707",
+          "s664",
+          "s536",
+          "s702",
+          "s715",
+          "s573",
+          "s716"
+        ],
+        "losses": 1,
+        "note": "comments.Score is a 0-100 rating where a score above 60 defines a positive comment (below 60 is negative).",
+        "origin": "s607",
+        "sql": "comments.Score > 60",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:badge-awarded-in-a-year",
+      "type": "MEANS",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {
+        "_feedback_sources": [
+          "s668",
+          "s690",
+          "s553",
+          "s614",
+          "s532",
+          "s563",
+          "s615"
+        ],
+        "losses": 0,
+        "note": "badges.Date is a DATETIME stored as text like '2011-07-20 00:02:13.0', so the calendar year of an award is extracted with STRFTIME('%Y', badges.Date) rather than by string slicing.",
+        "origin": "s591",
+        "sql": "STRFTIME('%Y', badges.Date) = '2011'",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:votes-made-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {
+        "_feedback_sources": [
+          "s654",
+          "s622",
+          "s679",
+          "s649",
+          "s566"
+        ],
+        "losses": 2,
+        "note": "Votes carry no user column, so votes attributed to a person are the votes on the posts recorded in that person's postHistory entries.",
+        "origin": "s632",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = votes.PostId",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:negative-comment",
+      "type": "MEANS",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {
+        "_feedback_sources": [
+          "s707",
+          "s664",
+          "s536",
+          "s702",
+          "s715",
+          "s573",
+          "s716"
+        ],
+        "losses": 1,
+        "note": "In the same 0-100 rating scale, a score below 60 defines a negative comment.",
+        "origin": "s607",
+        "sql": "comments.Score < 60",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:posts-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_feedback_sources": [
+          "s620",
+          "s698",
+          "s650",
+          "s686",
+          "s621",
+          "s654",
+          "s622",
+          "s583",
+          "s554",
+          "s575",
+          "s705",
+          "s638",
+          "s536",
+          "s571",
+          "s543",
+          "s591",
+          "s690",
+          "s633",
+          "s576",
+          "s540",
+          "s537",
+          "s614",
+          "s538",
+          "s615",
+          "s589",
+          "s625"
+        ],
+        "losses": 3,
+        "note": "A user's posts are linked through postHistory (UserId to PostId), so posts and users must be joined via postHistory rather than through posts.OwnerUserId alone.",
+        "origin": "s634",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 23
+      }
+    },
+    {
+      "from_entity": "term:one-post-history",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.posthistorytypeid-93eec0",
+      "properties": {
+        "losses": 0,
+        "note": "\"Only one post history\" for a user means the user has exactly one distinct history type (postHistory.PostHistoryTypeId) across the qualifying posts, so count distinct types grouped by postHistory.UserId rather than counting history rows per post.",
+        "origin": "s595",
+        "sql": "COUNT(DISTINCT postHistory.PostHistoryTypeId) = 1",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:favorite-count",
+      "type": "MEANS",
+      "to_entity": "column:posts.favoritecount-09c0c3",
+      "properties": {
+        "_feedback_sources": [
+          "s696",
+          "s543",
+          "s668",
+          "s675",
+          "s685",
+          "s563",
+          "s628",
+          "s585"
+        ],
+        "losses": 3,
+        "note": "The number of favorites a post received is stored per post in posts.FavoriteCount (may be NULL), so a 'favorites of at least N' condition is posts.FavoriteCount >= N rather than a sum over post history.",
+        "origin": "s672",
+        "sql": "posts.FavoriteCount",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:elder-user",
+      "type": "MEANS",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {
+        "_feedback_sources": [
+          "s681"
+        ],
+        "losses": 0,
+        "note": "The stored age category 'elder' is any age strictly greater than 65.",
+        "origin": "s627",
+        "sql": "users.Age > 65",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:tags-used-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posts.tags-16512c",
+      "properties": {
+        "_feedback_sources": [
+          "s696",
+          "s694"
+        ],
+        "losses": 2,
+        "note": "Tags used by a person means the posts that person authored via postHistory, returning the posts.Tags values.",
+        "origin": "s630",
+        "sql": "posts.Tags",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:comment-score",
+      "type": "MEANS",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {
+        "_feedback_sources": [
+          "s564",
+          "s620",
+          "s601",
+          "s710",
+          "s604",
+          "s561",
+          "s583",
+          "s672",
+          "s707",
+          "s664",
+          "s536",
+          "s566",
+          "s702",
+          "s715",
+          "s573",
+          "s716"
+        ],
+        "losses": 4,
+        "note": "The rating given to a comment is stored in comments.Score as an integer from 0 to 100, where 0 is the lowest score.",
+        "origin": "s711",
+        "sql": "comments.Score",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:number-of-users",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_feedback_sources": [
+          "s702",
+          "s576",
+          "s537",
+          "s675",
+          "s553",
+          "s614",
+          "s641",
+          "s563",
+          "s589",
+          "s625",
+          "s559"
+        ],
+        "losses": 1,
+        "note": "users.Id is the integer primary key identifying a user account and is non-null, so it is the column to count for user counts.",
+        "origin": "s533",
+        "sql": "COUNT(users.Id)",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:more-popular-user",
+      "type": "MEANS",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {
+        "_feedback_sources": [
+          "s604",
+          "s675"
+        ],
+        "losses": 1,
+        "note": "When ranking users by popularity, group results per user (users.DisplayName) and order by the summed view count, returning the user's DisplayName instead of a post title.",
+        "origin": "s634",
+        "sql": "ORDER BY SUM(posts.ViewCount) DESC",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:tags-of-a-post",
+      "type": "MEANS",
+      "to_entity": "column:posts.tags-16512c",
+      "properties": {
+        "_feedback_sources": [
+          "s642",
+          "s549",
+          "s532",
+          "s704",
+          "s681",
+          "s546",
+          "s600"
+        ],
+        "losses": 3,
+        "note": "Post tags are stored directly as text in posts.Tags, not in a separate tag-name table.",
+        "origin": "s630",
+        "sql": "posts.Tags",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:post-created-date",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.creationdate-ab9fc4",
+      "properties": {
+        "_feedback_sources": [
+          "s639",
+          "s532",
+          "s559"
+        ],
+        "losses": 1,
+        "note": "Post creation timestamps are recorded in postHistory.CreationDate, so counting posts created on a given day means counting postHistory rows whose creation date matches that day.",
+        "origin": "s642",
+        "sql": "date(postHistory.CreationDate)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:comments-on-a-titled-post",
+      "type": "MEANS",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {
+        "_feedback_sources": [
+          "s578",
+          "s573",
+          "s577",
+          "s585",
+          "s600"
+        ],
+        "losses": 1,
+        "note": "A post is identified by its Title text, and comments attach to it via comments.PostId = posts.Id.",
+        "origin": "s694",
+        "sql": "posts.Title",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:votes-on-a-post",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {
+        "_feedback_sources": [
+          "s705",
+          "s696",
+          "s633",
+          "s549",
+          "s559"
+        ],
+        "losses": 1,
+        "note": "A vote is tied to the post it was cast on, so any user-to-vote attribution must pass through postHistory.PostId.",
+        "origin": "s632",
+        "sql": "votes.PostId = postHistory.PostId",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:post-history-entries",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {
+        "_feedback_sources": [
+          "s696"
+        ],
+        "losses": 1,
+        "note": "Each post history entry is its own row in postHistory keyed by postHistory.Id and linked to a post via postHistory.PostId, so describing the history of a titled post returns one row per history entry rather than a COUNT aggregate.",
+        "origin": "s649",
+        "sql": "postHistory.Id, postHistory.PostId",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:supporter-badge",
+      "type": "MEANS",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {
+        "_feedback_sources": [
+          "s668",
+          "s690",
+          "s576",
+          "s553",
+          "s614",
+          "s615"
+        ],
+        "losses": 0,
+        "note": "Badge names are stored in exact Title Case with multi-word values (e.g. 'Supporter', 'Popular Question'), so equality must match the stored casing exactly since SQLite text comparison is case-sensitive.",
+        "origin": "s591",
+        "sql": "badges.Name = 'Supporter'",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:related-post",
+      "type": "MEANS",
+      "to_entity": "column:postlinks.postid-ffed1d",
+      "properties": {
+        "losses": 0,
+        "note": "Posts related to a given post are the ones whose postLinks row has PostId pointing to it, so join posts.Id = postLinks.PostId rather than including the RelatedPostId side.",
+        "origin": "s600",
+        "sql": "postLinks.PostId",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:tags-of-a-post",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {
+        "_feedback_sources": [
+          "s538",
+          "s549",
+          "s532",
+          "s704",
+          "s681",
+          "s546",
+          "s600"
+        ],
+        "losses": 2,
+        "note": "Tags attach to posts through tags.ExcerptPostId = postHistory.PostId, so tag usage is counted by joining tags to the user's postHistory rows.",
+        "origin": "s639",
+        "sql": "tags.ExcerptPostId = postHistory.PostId",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:votes-made-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {
+        "losses": 0,
+        "note": "Votes carry no user column, so votes attributed to a person are the votes on the posts recorded in that person's postHistory entries.",
+        "origin": "s632",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = votes.PostId",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:which-user",
+      "type": "MEANS",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {
+        "_feedback_sources": [
+          "s621",
+          "s679",
+          "s583",
+          "s705",
+          "s585"
+        ],
+        "losses": 1,
+        "note": "The user attached to a vote (including its bounty) is the voter, resolved as users.DisplayName via votes.UserId = users.Id, not the post author.",
+        "origin": "s586",
+        "sql": "users.DisplayName",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:highest-number-of-views",
+      "type": "MEANS",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {
+        "_feedback_sources": [
+          "s681",
+          "s589",
+          "s716",
+          "s678",
+          "s600"
+        ],
+        "losses": 2,
+        "note": "\"Highest\" among views is expressed by comparing users.Views to the maximum users.Views, which returns every user tied at that maximum instead of a single arbitrary row.",
+        "origin": "s628",
+        "sql": "users.Views = (SELECT MAX(users.Views) FROM users)",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:count-of-comments",
+      "type": "MEANS",
+      "to_entity": "column:comments.id-51e91e",
+      "properties": {
+        "_feedback_sources": [
+          "s632",
+          "s561",
+          "s560",
+          "s554",
+          "s705",
+          "s672",
+          "s536",
+          "s696",
+          "s571",
+          "s543",
+          "s591",
+          "s642",
+          "s533",
+          "s702",
+          "s537",
+          "s675",
+          "s553",
+          "s627",
+          "s641",
+          "s573",
+          "s577",
+          "s625"
+        ],
+        "losses": 9,
+        "note": "Each comment is one row in comments, so counting comments.Id counts the comment rows attached to the qualifying posts.",
+        "origin": "s710",
+        "sql": "COUNT(comments.Id)",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:post-owner",
+      "type": "MEANS",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {
+        "_feedback_sources": [
+          "s601",
+          "s586",
+          "s686",
+          "s710"
+        ],
+        "losses": 0,
+        "note": "The user who owns a post is identified by posts.OwnerUserId matching users.Id, and that user's display name is users.DisplayName.",
+        "origin": "s546",
+        "sql": "posts.OwnerUserId = users.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:last-edit-date",
+      "type": "MEANS",
+      "to_entity": "column:posts.lasteditdate-e0086e",
+      "properties": {
+        "_feedback_sources": [
+          "s583",
+          "s642",
+          "s533",
+          "s685"
+        ],
+        "losses": 3,
+        "note": "The post's last edit timestamp is stored in posts.LastEditDate as a DATETIME value.",
+        "origin": "s649",
+        "sql": "posts.LastEditDate",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:posts-with-n-comments",
+      "type": "MEANS",
+      "to_entity": "column:posts.commentcount-d9d81b",
+      "properties": {
+        "_feedback_sources": [
+          "s561",
+          "s607",
+          "s560",
+          "s672",
+          "s707",
+          "s664",
+          "s696",
+          "s571",
+          "s595"
+        ],
+        "losses": 6,
+        "note": "The number of comments on a post is stored in posts.CommentCount, so restricting to posts with a given comment count filters on that column rather than by counting comment rows.",
+        "origin": "s710",
+        "sql": "posts.CommentCount = 1",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:post-on-a-date",
+      "type": "MEANS",
+      "to_entity": "column:posts.lasactivitydate-967dd6",
+      "properties": {
+        "_feedback_sources": [
+          "s533"
+        ],
+        "losses": 1,
+        "note": "When a question gives a single calendar date for a post, filter on posts.LasActivityDate (the last activity date), not the creation date.",
+        "origin": "s664",
+        "sql": "posts.LasActivityDate",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:well-finished-post",
+      "type": "MEANS",
+      "to_entity": "column:posts.closeddate-d1191a",
+      "properties": {
+        "losses": 0,
+        "note": "A post is well-finished/closed when posts.ClosedDate is populated (non-null); a null or empty ClosedDate means it is not finished.",
+        "origin": "s546",
+        "sql": "posts.ClosedDate IS NOT NULL",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:post-history-entries",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.id-a4444a",
+      "properties": {
+        "_feedback_sources": [
+          "s633",
+          "s549",
+          "s704",
+          "s595",
+          "s585"
+        ],
+        "losses": 1,
+        "note": "Each post history entry is its own row in postHistory keyed by postHistory.Id and linked to a post via postHistory.PostId, so describing the history of a titled post returns one row per history entry rather than a COUNT aggregate.",
+        "origin": "s649",
+        "sql": "postHistory.Id, postHistory.PostId",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:post-title",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.text-ffd7ab",
+      "properties": {
+        "_feedback_sources": [
+          "s694"
+        ],
+        "losses": 1,
+        "note": "In this database the post's title text is stored in postHistory.Text, so identifying a post by its title means filtering postHistory.Text.",
+        "origin": "s685",
+        "sql": "postHistory.Text",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:badge-identifier",
+      "type": "MEANS",
+      "to_entity": "column:badges.id-f36d13",
+      "properties": {
+        "_feedback_sources": [
+          "s615"
+        ],
+        "losses": 0,
+        "note": "Each row in badges is one awarded badge, identified by badges.Id, so badge counts can be taken directly from badges without joining users.",
+        "origin": "s641",
+        "sql": "badges.Id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:posts-posted-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "losses": 0,
+        "note": "Post authorship is recorded in postHistory (UserId identifies the poster, PostId the post), so a user's posts are the postHistory rows where UserId equals users.Id rather than the posts.OwnerUserId column.",
+        "origin": "s639",
+        "sql": "postHistory.UserId = users.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:comment-author",
+      "type": "MEANS",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {
+        "_feedback_sources": [
+          "s579",
+          "s698",
+          "s601",
+          "s586",
+          "s710",
+          "s654",
+          "s607",
+          "s566",
+          "s694",
+          "s577"
+        ],
+        "losses": 4,
+        "note": "The commenter is identified by comments.UserId, which references users.Id, so questions about comment authors link comments to users on that pair.",
+        "origin": "s711",
+        "sql": "comments.UserId = users.Id",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:user-location-country",
+      "type": "MEANS",
+      "to_entity": "column:users.location-89b349",
+      "properties": {
+        "_feedback_sources": [
+          "s591",
+          "s625"
+        ],
+        "losses": 1,
+        "note": "User location is stored as free text in users.Location (values such as 'United Kingdom', 'London, United Kingdom'), so a country filter is an equality check on users.Location.",
+        "origin": "s672",
+        "sql": "users.Location = 'United Kingdom'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:posts-with-a-tag",
+      "type": "MEANS",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {
+        "_feedback_sources": [
+          "s633",
+          "s549",
+          "s704",
+          "s595"
+        ],
+        "losses": 1,
+        "note": "Post-tag associations live in the tags table (one row per post's tag), so a question about posts carrying a given tag should be answered from tags, not from the posts table's delimited Tags string.",
+        "origin": "s696",
+        "sql": "tags.TagName",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:user-s-own-posts",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_feedback_sources": [
+          "s638",
+          "s543",
+          "s591",
+          "s566",
+          "s540",
+          "s537",
+          "s614",
+          "s538",
+          "s578",
+          "s577",
+          "s589",
+          "s625"
+        ],
+        "losses": 1,
+        "note": "A user's posts are identified by posts.OwnerUserId; postHistory.UserId records who interacted with a post and does not identify the owner.",
+        "origin": "s672",
+        "sql": "posts.OwnerUserId = users.Id",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:ratio-of-two-counts",
+      "type": "MEANS",
+      "to_entity": "column:votes.id-144071",
+      "properties": {
+        "_feedback_sources": [
+          "s633",
+          "s533",
+          "s553",
+          "s627",
+          "s563",
+          "s625",
+          "s559",
+          "s716"
+        ],
+        "losses": 2,
+        "note": "When comparing two counts as a ratio, cast the numerator to REAL so the division is decimal instead of truncated integer division.",
+        "origin": "s571",
+        "sql": "CAST(COUNT(posts.Id) AS REAL) / COUNT(DISTINCT votes.Id)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:votes-made-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:votes.userid-906068",
+      "properties": {
+        "_feedback_sources": [
+          "s578",
+          "s577",
+          "s559"
+        ],
+        "losses": 0,
+        "note": "The voter is recorded in votes.UserId, and votes must be counted from the votes table rather than inferred from postHistory entries.",
+        "origin": "s571",
+        "sql": "votes.UserId",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:post-title",
+      "type": "MEANS",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {
+        "_feedback_sources": [
+          "s575",
+          "s630",
+          "s639",
+          "s540"
+        ],
+        "losses": 2,
+        "note": "The title of a post is stored in posts.Title (many rows have a NULL title).",
+        "origin": "s679",
+        "sql": "posts.Title",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:user-who-left-the-comment",
+      "type": "MEANS",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {
+        "_feedback_sources": [
+          "s563",
+          "s701"
+        ],
+        "losses": 1,
+        "note": "The comments table stores only PostId and Text, so there is no comment-author user id; the user linked to a comment is reached through the post's owner (posts.OwnerUserId = users.Id).",
+        "origin": "s694",
+        "sql": "users.DisplayName",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:teenager-age-range",
+      "type": "MEANS",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {
+        "_feedback_sources": [
+          "s664"
+        ],
+        "losses": 1,
+        "note": "The database defines teenager as age 13 through 18 inclusive; age 19 is classified as adult, so teenage predicates must exclude 19.",
+        "origin": "s684",
+        "sql": "users.Age BETWEEN 13 AND 18",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:post-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "losses": 0,
+        "note": "A post belongs to the user identified by posts.OwnerUserId, so ownership/author questions join users to posts on that column rather than through postHistory, which records other users' activity on a post.",
+        "origin": "s678",
+        "sql": "posts.OwnerUserId = users.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:posts-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {
+        "losses": 0,
+        "note": "A user's posts are linked through postHistory (UserId to PostId), so posts and users must be joined via postHistory rather than through posts.OwnerUserId alone.",
+        "origin": "s634",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bounty-amount",
+      "type": "MEANS",
+      "to_entity": "column:votes.bountyamount-2539c9",
+      "properties": {
+        "_feedback_sources": [
+          "s632",
+          "s672",
+          "s668",
+          "s566",
+          "s585"
+        ],
+        "losses": 2,
+        "note": "A bounty placed on a post is recorded in votes.BountyAmount, where the voter is votes.UserId and the target post is votes.PostId.",
+        "origin": "s586",
+        "sql": "votes.BountyAmount",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:tags-of-a-post",
+      "type": "MEANS",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {
+        "losses": 0,
+        "note": "Tags attach to posts through tags.ExcerptPostId = postHistory.PostId, so tag usage is counted by joining tags to the user's postHistory rows.",
+        "origin": "s639",
+        "sql": "tags.ExcerptPostId = postHistory.PostId",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:which-users",
+      "type": "MEANS",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {
+        "losses": 0,
+        "note": "When a question asks which users, return the human-readable name from users.DisplayName (often alongside users.Id), not the numeric id alone.",
+        "origin": "s628",
+        "sql": "users.DisplayName",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:posts-a-user-wrote",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {
+        "_feedback_sources": [
+          "s566",
+          "s685"
+        ],
+        "losses": 1,
+        "note": "A user's posts are found through postHistory authorship (postHistory.UserId = users.Id, postHistory.PostId = posts.Id), not through posts.OwnerUserId.",
+        "origin": "s630",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:total-views",
+      "type": "MEANS",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {
+        "_feedback_sources": [
+          "s628",
+          "s585"
+        ],
+        "losses": 0,
+        "note": "Post popularity is stored in posts.ViewCount and a minimum-views request compares posts.ViewCount directly (the column may be NULL for some posts).",
+        "origin": "s595",
+        "sql": "posts.ViewCount >= 1000",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:post-identifier",
+      "type": "MEANS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_feedback_sources": [
+          "s561",
+          "s607",
+          "s679",
+          "s642"
+        ],
+        "losses": 3,
+        "note": "Each post is a single row keyed by the integer posts.Id, so queries about which posts qualify should project posts.Id rather than an aggregate over the whole table.",
+        "origin": "s686",
+        "sql": "posts.Id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:user-who-posted-it-last-time",
+      "type": "MEANS",
+      "to_entity": "column:posts.lasteditoruserid-de0739",
+      "properties": {
+        "_feedback_sources": [
+          "s538",
+          "s678",
+          "s701"
+        ],
+        "losses": 2,
+        "note": "The user associated with the most recent revision of a post is posts.LastEditorUserId, and their name comes from users.DisplayName via users.Id.",
+        "origin": "s685",
+        "sql": "posts.LastEditorUserId",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:posts-created-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {
+        "_feedback_sources": [
+          "s654",
+          "s622",
+          "s583",
+          "s575",
+          "s705",
+          "s630",
+          "s536",
+          "s590",
+          "s543",
+          "s642",
+          "s566",
+          "s639",
+          "s540",
+          "s537",
+          "s538",
+          "s578",
+          "s532"
+        ],
+        "losses": 4,
+        "note": "The creator/owner of a post is recorded in posts.OwnerUserId, while posts.Id links to post history rows.",
+        "origin": "s604",
+        "sql": "posts.OwnerUserId",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:posts-a-user-wrote",
+      "type": "MEANS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "losses": 0,
+        "note": "A user's posts are found through postHistory authorship (postHistory.UserId = users.Id, postHistory.PostId = posts.Id), not through posts.OwnerUserId.",
+        "origin": "s630",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:post-title-mentioning",
+      "type": "MEANS",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {
+        "_feedback_sources": [
+          "s632",
+          "s561",
+          "s639",
+          "s540",
+          "s585",
+          "s600"
+        ],
+        "losses": 3,
+        "note": "A post whose title mentions a topic is matched with a LIKE '%term%' filter on posts.Title, and the matched posts.Title should be included in the output when the question identifies the post by its title.",
+        "origin": "s586",
+        "sql": "posts.Title LIKE '%variance%'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:posts-by-a-user",
+      "type": "MEANS",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {
+        "losses": 0,
+        "note": "A user's posts are linked through postHistory (UserId to PostId), so posts and users must be joined via postHistory rather than through posts.OwnerUserId alone.",
+        "origin": "s634",
+        "sql": "postHistory.UserId = users.Id AND postHistory.PostId = posts.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:comment-score",
+      "type": "MEANS",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {
+        "_feedback_sources": [
+          "s561",
+          "s607",
+          "s707",
+          "s566",
+          "s702",
+          "s715",
+          "s573",
+          "s716"
+        ],
+        "losses": 1,
+        "note": "Comments carry no score of their own; the score discussed for comments is the score of the post the comment belongs to, reached by joining comments.PostId to posts.Id.",
+        "origin": "s710",
+        "sql": "posts.Score = 0",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:last-access-date-after-a-date",
+      "type": "MEANS",
+      "to_entity": "column:users.lastaccessdate-368a63",
+      "properties": {
+        "_feedback_sources": [
+          "s641"
+        ],
+        "losses": 1,
+        "note": "users.LastAccessDate is a DATETIME stored as 'YYYY-MM-DD HH:MM:SS.0', so compare dates with date(users.LastAccessDate) to avoid counting rows from the boundary day.",
+        "origin": "s533",
+        "sql": "date(users.LastAccessDate) > 'YYYY-MM-DD'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:user-s-own-posts",
+      "type": "MEANS",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {
+        "_feedback_sources": [
+          "s642"
+        ],
+        "losses": 1,
+        "note": "A user's posts are identified by posts.OwnerUserId; postHistory.UserId records who interacted with a post and does not identify the owner.",
+        "origin": "s672",
+        "sql": "posts.OwnerUserId = users.Id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "example:s707",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s705",
+      "type": "TOUCHES",
+      "to_entity": "column:users.upvotes-6b2ccb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s642",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.creationdate-ab9fc4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s621",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s634",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s563",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.favoritecount-09c0c3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s707",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s607",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s675",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s577",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s710",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.id-51e91e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s554",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.id-f36d13",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s546",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s704",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s675",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s578",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s620",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s668",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s571",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.userid-906068",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s701",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s707",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s686",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s583",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.lasteditoruserid-de0739",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:users.location-89b349",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s711",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s681",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s591",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s710",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s672",
+      "type": "TOUCHES",
+      "to_entity": "column:users.location-89b349",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s561",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s621",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s533",
+      "type": "TOUCHES",
+      "to_entity": "column:users.lastaccessdate-368a63",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s705",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s638",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s615",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s537",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s600",
+      "type": "TOUCHES",
+      "to_entity": "column:postlinks.postid-ffed1d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s634",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s639",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s563",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s553",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s710",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s630",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s702",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s583",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s711",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s540",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s632",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s576",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s561",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s601",
+      "type": "TOUCHES",
+      "to_entity": "column:postlinks.postid-ffed1d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s716",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s575",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s559",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.creationdate-9a4c48",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s546",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s566",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s633",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s549",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s672",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s678",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s630",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s634",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s638",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s630",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.tags-16512c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.userid-906068",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s628",
+      "type": "TOUCHES",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s710",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.lasteditoruserid-de0739",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s641",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s641",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s701",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s546",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.closeddate-d1191a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s642",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.id-a4444a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s625",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s579",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s711",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.id-51e91e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s576",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s540",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s595",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s668",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s614",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s553",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s591",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s670",
+      "type": "TOUCHES",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s670",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s715",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s670",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.creaiondate-219238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s615",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s604",
+      "type": "TOUCHES",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s576",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s690",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s696",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s595",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.bountyamount-2539c9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s678",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s538",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s704",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.wikipostid-372110",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s536",
+      "type": "TOUCHES",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s630",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s628",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s627",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s578",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s566",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s634",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s538",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s649",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.lasteditdate-e0086e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s633",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.answercount-4d7adf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s583",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s595",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.posthistorytypeid-93eec0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.text-ffd7ab",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s561",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s577",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s664",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.lasactivitydate-967dd6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s690",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s560",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s716",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s595",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s604",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s649",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.id-a4444a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s561",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s716",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s715",
+      "type": "TOUCHES",
+      "to_entity": "column:users.downvotes-c91133",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s690",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s589",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s699",
+      "type": "TOUCHES",
+      "to_entity": "column:users.creationdate-a79633",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s686",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s650",
+      "type": "TOUCHES",
+      "to_entity": "column:users.location-89b349",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s571",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.id-144071",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s670",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s639",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s578",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s540",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s536",
+      "type": "TOUCHES",
+      "to_entity": "column:users.creationdate-a79633",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s702",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s573",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s715",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s600",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s583",
+      "type": "TOUCHES",
+      "to_entity": "column:users.websiteurl-b5f764",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s650",
+      "type": "TOUCHES",
+      "to_entity": "column:users.lastaccessdate-368a63",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s595",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s585",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.bountyamount-2539c9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s660",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s532",
+      "type": "TOUCHES",
+      "to_entity": "column:users.creationdate-a79633",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s583",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s705",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s601",
+      "type": "TOUCHES",
+      "to_entity": "column:postlinks.linktypeid-8cf7e7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s537",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s705",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s543",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s632",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s711",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.score-0e730e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s620",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s638",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s650",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s664",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s578",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s638",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s679",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s625",
+      "type": "TOUCHES",
+      "to_entity": "column:users.location-89b349",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s604",
+      "type": "TOUCHES",
+      "to_entity": "column:users.upvotes-6b2ccb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s571",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s634",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s600",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s564",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s639",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s705",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s639",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s604",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s566",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s540",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s564",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s553",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.id-f36d13",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s549",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s553",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s684",
+      "type": "TOUCHES",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s649",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s549",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s585",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s633",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s575",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s564",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s579",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s577",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s641",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.id-f36d13",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s679",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s704",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.tagname-e6c31a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s563",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.creationdate-861d34",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s699",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s672",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.favoritecount-09c0c3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s543",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.answercount-4d7adf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s615",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s639",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s632",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s679",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:users.creationdate-a79633",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s563",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s543",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s639",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s585",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s716",
+      "type": "TOUCHES",
+      "to_entity": "column:users.upvotes-6b2ccb",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s690",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s622",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.name-4e6f2e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s620",
+      "type": "TOUCHES",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s575",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s701",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s564",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.parentid-39ca62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s554",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s633",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s681",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.parentid-39ca62",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s632",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s573",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s681",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.creaiondate-219238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s554",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s681",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s553",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s679",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s563",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s614",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s715",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s678",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s634",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s540",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s620",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s668",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s533",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s589",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s649",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s621",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s595",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.userid-32ccda",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s586",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s650",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s543",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s690",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.date-8ac445",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s660",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.favoritecount-09c0c3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s575",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s675",
+      "type": "TOUCHES",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s630",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s578",
+      "type": "TOUCHES",
+      "to_entity": "column:users.reputation-343c5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s711",
+      "type": "TOUCHES",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s590",
+      "type": "TOUCHES",
+      "to_entity": "column:users.views-4e1331",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s607",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.id-51e91e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s684",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s540",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s678",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s668",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.id-f36d13",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s678",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s622",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s559",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.id-144071",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s576",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s621",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s566",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s538",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s707",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.text-07b93e",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s614",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s538",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s633",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s579",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s601",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.score-7070a5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s577",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s701",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s649",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s591",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.id-f36d13",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s549",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.body-dd46ab",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s554",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s601",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s622",
+      "type": "TOUCHES",
+      "to_entity": "column:badges.userid-66d536",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s628",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s632",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s715",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s615",
+      "type": "TOUCHES",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s571",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s654",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s681",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s696",
+      "type": "TOUCHES",
+      "to_entity": "column:tags.id-9be01f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s627",
+      "type": "TOUCHES",
+      "to_entity": "column:users.age-760e6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.userid-38505a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s630",
+      "type": "TOUCHES",
+      "to_entity": "column:posthistory.postid-13997d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s622",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s537",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s685",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s532",
+      "type": "TOUCHES",
+      "to_entity": "column:users.displayname-b93d2c",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s585",
+      "type": "TOUCHES",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s546",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s694",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.owneruserid-2bbdbf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s710",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.commentcount-d9d81b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s579",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s698",
+      "type": "TOUCHES",
+      "to_entity": "column:comments.postid-b9398b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s672",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s590",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s707",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.viewcount-4497a1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s678",
+      "type": "TOUCHES",
+      "to_entity": "column:posts.title-ea3861",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s650",
+      "type": "TOUCHES",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:comments.userid-38505a",
+      "type": "JOINS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_win_sources": [
+          "s711",
+          "s698",
+          "s705",
+          "s576",
+          "s715",
+          "s577",
+          "s716"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "column:posts.lasteditoruserid-de0739",
+      "type": "JOINS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_win_sources": [
+          "s583",
+          "s685"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:postlinks.postid-ffed1d",
+      "type": "JOINS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_win_sources": [
+          "s601",
+          "s600"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:posts.owneruserid-2bbdbf",
+      "type": "JOINS",
+      "to_entity": "column:votes.userid-906068",
+      "properties": {
+        "_win_sources": [
+          "s571"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:badges.userid-66d536",
+      "type": "JOINS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_win_sources": [
+          "s620",
+          "s650",
+          "s621",
+          "s622",
+          "s554",
+          "s575",
+          "s638",
+          "s668",
+          "s690",
+          "s553",
+          "s614",
+          "s615"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "column:posts.id-5920c8",
+      "type": "JOINS",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {
+        "_win_sources": [
+          "s586",
+          "s585"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:comments.postid-b9398b",
+      "type": "JOINS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_win_sources": [
+          "s564",
+          "s579",
+          "s698",
+          "s710",
+          "s561",
+          "s707",
+          "s694",
+          "s563"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "column:posts.owneruserid-2bbdbf",
+      "type": "JOINS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_win_sources": [
+          "s670",
+          "s698",
+          "s654",
+          "s679",
+          "s672",
+          "s543",
+          "s566",
+          "s633",
+          "s540",
+          "s537",
+          "s694",
+          "s538",
+          "s578",
+          "s681",
+          "s546",
+          "s678",
+          "s701"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 17
+      }
+    },
+    {
+      "from_entity": "column:posts.id-5920c8",
+      "type": "JOINS",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {
+        "_win_sources": [
+          "s654",
+          "s549"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:posthistory.postid-13997d",
+      "type": "JOINS",
+      "to_entity": "column:votes.postid-884d84",
+      "properties": {
+        "_win_sources": [
+          "s632"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:posthistory.userid-32ccda",
+      "type": "JOINS",
+      "to_entity": "column:users.id-51f17f",
+      "properties": {
+        "_win_sources": [
+          "s634",
+          "s632",
+          "s630",
+          "s639",
+          "s595"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "column:users.id-51f17f",
+      "type": "JOINS",
+      "to_entity": "column:votes.userid-906068",
+      "properties": {
+        "_win_sources": [
+          "s586"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:posthistory.postid-13997d",
+      "type": "JOINS",
+      "to_entity": "column:tags.excerptpostid-0c1adf",
+      "properties": {
+        "_win_sources": [
+          "s639"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:posthistory.postid-13997d",
+      "type": "JOINS",
+      "to_entity": "column:posts.id-5920c8",
+      "properties": {
+        "_win_sources": [
+          "s634",
+          "s649",
+          "s630",
+          "s685",
+          "s595"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 5
+      }
+    }
+  ]
+}

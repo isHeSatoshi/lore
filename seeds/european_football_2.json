@@ -1,0 +1,5559 @@
+{
+  "entities": [
+    {
+      "id": "column:league.name-d422c6",
+      "type": "Column",
+      "name": "League.name",
+      "properties": {
+        "profile": "{\"distinct\": 11, \"nulls\": 0, \"top\": [\"Belgium Jupiler League\", \"England Premier League\", \"France Ligue 1\", \"Germany 1. Bundesliga\", \"Italy Serie A\", \"Netherlands Eredivisie\", \"Poland Ekstraklasa\", \"Portugal Liga ZON Sagres\", \"Scotland Premier League\", \"Spain LIGA BBVA\", \"Switzerland Super League\"]}"
+      }
+    },
+    {
+      "id": "column:match.away-team-goal-746cc8",
+      "type": "Column",
+      "name": "Match.away_team_goal",
+      "properties": {
+        "profile": "{\"distinct\": 10, \"nulls\": 0, \"top\": [1, 0, 2, 3, 4, 5, 6, 7, 8, 9]}"
+      }
+    },
+    {
+      "id": "column:match.home-team-goal-f3ffcd",
+      "type": "Column",
+      "name": "Match.home_team_goal",
+      "properties": {
+        "profile": "{\"distinct\": 11, \"nulls\": 0, \"top\": [1, 2, 0, 3, 4, 5, 6, 7, 8, 9, 10]}"
+      }
+    },
+    {
+      "id": "column:match.id-bf6cf4",
+      "type": "Column",
+      "name": "Match.id",
+      "properties": {
+        "profile": "{\"distinct\": 25979, \"nulls\": 0, \"top\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]}"
+      }
+    },
+    {
+      "id": "column:match.league-id-c6f153",
+      "type": "Column",
+      "name": "Match.league_id",
+      "properties": {
+        "profile": "{\"distinct\": 11, \"nulls\": 0, \"top\": [21518, 4769, 1729, 10257, 13274, 7809, 17642, 15722, 19694, 1, 24558]}"
+      }
+    },
+    {
+      "id": "column:match.season-3277c4",
+      "type": "Column",
+      "name": "Match.season",
+      "properties": {
+        "profile": "{\"distinct\": 8, \"nulls\": 0, \"top\": [\"2015/2016\", \"2008/2009\", \"2014/2015\", \"2012/2013\", \"2010/2011\", \"2009/2010\", \"2011/2012\", \"2013/2014\"]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.attacking-work-rate-924593",
+      "type": "Column",
+      "name": "Player_Attributes.attacking_work_rate",
+      "properties": {
+        "profile": "{\"distinct\": 8, \"nulls\": 3230, \"top\": [\"medium\", \"high\", \"low\", \"None\", null, \"norm\", \"y\", \"le\", \"stoc\"]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.date-49697d",
+      "type": "Column",
+      "name": "Player_Attributes.date",
+      "properties": {
+        "profile": "{\"distinct\": 197, \"nulls\": 0, \"top\": [\"2007-02-22 00:00:00\", \"2013-09-20 00:00:00\", \"2011-08-30 00:00:00\", \"2015-09-21 00:00:00\", \"2012-08-31 00:00:00\", \"2014-09-18 00:00:00\", \"2013-02-15 00:00:00\", \"2010-08-30 00:00:00\", \"2012-02-22 00:00:00\", \"2009-08-30 00:00:00\", \"2011-02-22 00:00:00\", \"2008-08-30 00:00:00\", \"2010-02-22 00:00:00\", \"2007-08-30 00:00:00\", \"2009-02-22 00:00:00\", \"2013-03-22 00:00:00\", \"2013-02-22 00:00:00\", \"2015-01-09 00:00:00\", \"2015-10-16 00:00:00\", \"2013-03-08 00:00:00\", \"2014-02-07 00:00:00\", \"2014-10-02 00:00:00\", \"2015-04-10 00:00:00\", \"2014-11-14 00:00:00\", \"2016-03-10 00:00:00\"]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.defensive-work-rate-29e652",
+      "type": "Column",
+      "name": "Player_Attributes.defensive_work_rate",
+      "properties": {
+        "profile": "{\"distinct\": 19, \"nulls\": 836, \"top\": [\"medium\", \"high\", \"low\", \"_0\", \"o\", null, \"1\", \"ormal\", \"2\", \"3\", \"5\", \"7\", \"6\", \"0\", \"9\", \"4\", \"es\", \"ean\", \"tocky\", \"8\"]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.overall-rating-64ad3f",
+      "type": "Column",
+      "name": "Player_Attributes.overall_rating",
+      "properties": {
+        "profile": "{\"distinct\": 61, \"nulls\": 836, \"top\": [68, 69, 67, 66, 70, 72, 71, 65, 73, 64, 74, 63, 75, 76, 62, 61, 77, 60, 78, 79, 59, 58, 80, 57, 81]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.player-api-id-4a84f2",
+      "type": "Column",
+      "name": "Player_Attributes.player_api_id",
+      "properties": {
+        "profile": "{\"distinct\": 11060, \"nulls\": 0, \"top\": [210278, 41269, 42116, 26472, 179795, 41890, 25772, 30453, 163838, 110189, 56916, 47394, 193866, 185389, 96540, 42645, 40930, 30626, 96616, 37799, 33080, 27483, 194165, 161660, 108808]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.preferred-foot-214929",
+      "type": "Column",
+      "name": "Player_Attributes.preferred_foot",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 836, \"top\": [\"right\", \"left\", null]}"
+      }
+    },
+    {
+      "id": "column:player-attributes.vision-c495ad",
+      "type": "Column",
+      "name": "Player_Attributes.vision",
+      "properties": {
+        "profile": "{\"distinct\": 97, \"nulls\": 2713, \"top\": [68, 64, 65, 58, 59, 62, 66, 70, 67, 60, 25, 69, 63, 57, 72, 61, 56, 74, 54, 52, 71, 55, 73, 53, 75]}"
+      }
+    },
+    {
+      "id": "column:player.birthday-c01a5d",
+      "type": "Column",
+      "name": "Player.birthday",
+      "properties": {
+        "profile": "{\"distinct\": 5762, \"nulls\": 0, \"top\": [\"1989-03-02 00:00:00\", \"1990-03-27 00:00:00\", \"1990-01-13 00:00:00\", \"1988-08-31 00:00:00\", \"1995-02-09 00:00:00\", \"1991-08-19 00:00:00\", \"1991-06-04 00:00:00\", \"1990-03-09 00:00:00\", \"1990-01-08 00:00:00\", \"1989-11-14 00:00:00\", \"1989-06-09 00:00:00\", \"1989-04-22 00:00:00\", \"1989-03-23 00:00:00\", \"1989-02-25 00:00:00\", \"1988-06-12 00:00:00\", \"1988-03-02 00:00:00\", \"1988-01-08 00:00:00\", \"1988-01-05 00:00:00\", \"1987-04-16 00:00:00\", \"1987-02-14 00:00:00\", \"1984-01-16 00:00:00\", \"1984-01-10 00:00:00\", \"1980-08-05 00:00:00\", \"1994-04-04 00:00:00\", \"1994-01-19 00:00:00\"]}"
+      }
+    },
+    {
+      "id": "column:player.height-a28506",
+      "type": "Column",
+      "name": "Player.height",
+      "properties": {
+        "profile": "{\"distinct\": 20, \"nulls\": 0, \"top\": [182.88, 177.8, 180.34, 187.96, 185.42, 175.26, 190.5, 172.72, 193.04, 170.18, 195.58, 167.64, 165.1, 198.12, 203.2, 200.66, 162.56, 160.02, 208.28, 157.48]}"
+      }
+    },
+    {
+      "id": "column:player.player-api-id-477c51",
+      "type": "Column",
+      "name": "Player.player_api_id",
+      "properties": {
+        "profile": "{\"distinct\": 11060, \"nulls\": 0, \"top\": [2625, 2752, 2768, 2770, 2790, 2796, 2802, 2805, 2857, 2862, 2907, 2973, 2977, 2983, 2984, 3140, 3204, 3263, 3264, 3316, 3329, 3377, 3441, 3512, 3517]}"
+      }
+    },
+    {
+      "id": "column:player.player-name-0d8e0d",
+      "type": "Column",
+      "name": "Player.player_name",
+      "properties": {
+        "profile": "{\"distinct\": 10848, \"nulls\": 0, \"top\": [\"Danilo\", \"Paulinho\", \"Ricardo\", \"Roberto\", \"Rafael\", \"Joao Pedro\", \"Fernando\", \"Felipe\", \"Douglas\", \"Adriano\", \"Wallace\", \"Serginho\", \"Scott Brown\", \"Sandro\", \"Renan\", \"Rafinha\", \"Nelson\", \"Michel\", \"Matheus\", \"Marcelo\", \"Kiko\", \"Kanu\", \"Juan Carlos\", \"Josue\", \"Jorginho\"]}"
+      }
+    },
+    {
+      "id": "column:player.weight-393fe5",
+      "type": "Column",
+      "name": "Player.weight",
+      "properties": {
+        "profile": "{\"distinct\": 50, \"nulls\": 0, \"top\": [165, 176, 154, 172, 168, 159, 163, 161, 170, 174, 181, 183, 157, 179, 185, 150, 187, 152, 148, 143, 190, 146, 194, 192, 198]}"
+      }
+    },
+    {
+      "id": "column:team-attributes.buildupplaydribblingclass-c179f9",
+      "type": "Column",
+      "name": "Team_Attributes.buildUpPlayDribblingClass",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 0, \"top\": [\"Little\", \"Normal\", \"Lots\"]}"
+      }
+    },
+    {
+      "id": "column:team-attributes.chancecreationpassing-bb4d99",
+      "type": "Column",
+      "name": "Team_Attributes.chanceCreationPassing",
+      "properties": {
+        "profile": "{\"distinct\": 50, \"nulls\": 0, \"top\": [50, 55, 52, 53, 48, 49, 45, 70, 65, 54, 60, 56, 40, 47, 35, 67, 68, 30, 38, 51, 66, 62, 57, 59, 42]}"
+      }
+    },
+    {
+      "id": "column:team-attributes.date-d53fa1",
+      "type": "Column",
+      "name": "Team_Attributes.date",
+      "properties": {
+        "profile": "{\"distinct\": 6, \"nulls\": 0, \"top\": [\"2015-09-10 00:00:00\", \"2014-09-19 00:00:00\", \"2011-02-22 00:00:00\", \"2013-09-20 00:00:00\", \"2012-02-22 00:00:00\", \"2010-02-22 00:00:00\"]}"
+      }
+    },
+    {
+      "id": "column:team.id-0a7f56",
+      "type": "Column",
+      "name": "Team.id",
+      "properties": {
+        "profile": "{\"distinct\": 299, \"nulls\": 0, \"top\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 614, 1034, 1042, 1513, 2004, 2476, 2510]}"
+      }
+    },
+    {
+      "id": "column:team.team-api-id-48d3e5",
+      "type": "Column",
+      "name": "Team.team_api_id",
+      "properties": {
+        "profile": "{\"distinct\": 299, \"nulls\": 0, \"top\": [1601, 1773, 1957, 2033, 2182, 2183, 2186, 4049, 4064, 4087, 4170, 6269, 6351, 6367, 6391, 6403, 6413, 6421, 6433, 6493, 6547, 6601, 6631, 7730, 7788]}"
+      }
+    },
+    {
+      "id": "example:s1020",
+      "type": "Example",
+      "name": "Which player has the highest overall rating? Indicate the player's api id.",
+      "aliases": [],
+      "properties": {
+        "key": "s1020",
+        "learning_complete": true,
+        "sql": "SELECT player_api_id\nFROM Player_Attributes\nORDER BY overall_rating DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1021",
+      "type": "Example",
+      "name": "What is the height of the tallest player? Indicate his name.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1021",
+        "learning_complete": true,
+        "sql": "SELECT player_name FROM Player ORDER BY height DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1022",
+      "type": "Example",
+      "name": "What is the preferred foot when attacking of the player with the lowest potential?",
+      "aliases": [],
+      "properties": {
+        "key": "s1022",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.preferred_foot\nFROM Player AS T1\nINNER JOIN Player_Attributes AS T2\n    ON T1.player_api_id = T2.player_api_id\nWHERE T2.potential = (SELECT MIN(potential) FROM Player_Attributes)"
+      }
+    },
+    {
+      "id": "example:s1023",
+      "type": "Example",
+      "name": "Among the players with an overall rating between 60 to 65, how many players whose going to be in all of your attack moves instead of defensing?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player_Attributes",
+            "defensive_work_rate"
+          ]
+        ],
+        "key": "s1023",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM Player_Attributes WHERE overall_rating BETWEEN 60 AND 65 AND defensive_work_rate = 'low'"
+      }
+    },
+    {
+      "id": "example:s1024",
+      "type": "Example",
+      "name": "Who are the top 5 players who perform better in crossing actions? Indicate their player id.",
+      "aliases": [],
+      "properties": {
+        "key": "s1024",
+        "learning_complete": true,
+        "sql": "-- Step 1: Rank player attribute records by their crossing score (higher = better crossing performance).\n-- Step 2: Return the unique player id of the top 5 records.\nSELECT id\nFROM Player_Attributes\nORDER BY crossing DESC\nLIMIT 5"
+      }
+    },
+    {
+      "id": "example:s1026",
+      "type": "Example",
+      "name": "Which home team had lost the fewest matches in the 2016 season?",
+      "aliases": [],
+      "properties": {
+        "key": "s1026",
+        "learning_complete": true,
+        "sql": "SELECT t.team_long_name\nFROM Match AS m\nINNER JOIN Team AS t ON m.home_team_api_id = t.team_api_id\nWHERE m.season = '2015/2016' AND m.home_team_goal < m.away_team_goal\nGROUP BY t.team_api_id, t.team_long_name\nORDER BY COUNT(m.id) ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1027",
+      "type": "Example",
+      "name": "Indicate the full names of the top 10 players with the highest number of penalties.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1027",
+        "learning_complete": true,
+        "sql": "SELECT t2.player_name FROM Player_Attributes AS t1 INNER JOIN Player AS t2 ON t1.id = t2.id ORDER BY t1.penalties DESC LIMIT 10"
+      }
+    },
+    {
+      "id": "example:s1028",
+      "type": "Example",
+      "name": "In Scotland Premier League, which away team won the most during the 2010 season?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "League",
+            "name"
+          ]
+        ],
+        "key": "s1028",
+        "learning_complete": true,
+        "sql": "SELECT teamInfo.team_long_name FROM League AS leagueData INNER JOIN Match AS matchData ON leagueData.id = matchData.league_id INNER JOIN Team AS teamInfo ON matchData.away_team_api_id = teamInfo.team_api_id WHERE leagueData.name = 'Scotland Premier League' AND matchData.season = '2009/2010' AND matchData.away_team_goal - matchData.home_team_goal > 0 GROUP BY matchData.away_team_api_id ORDER BY COUNT(*) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1030",
+      "type": "Example",
+      "name": "Give the name of the league had the most matches end as draw in the 2016 season?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Match",
+            "away_team_goal"
+          ],
+          [
+            "Match",
+            "home_team_goal"
+          ],
+          [
+            "Match",
+            "season"
+          ]
+        ],
+        "key": "s1030",
+        "learning_complete": true,
+        "sql": "SELECT t2.name FROM Match AS t1 INNER JOIN League AS t2 ON t1.league_id = t2.id WHERE t1.season = '2015/2016' AND t1.home_team_goal = t1.away_team_goal GROUP BY t2.name ORDER BY COUNT(t1.id) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1031",
+      "type": "Example",
+      "name": "At present, calculate for the player's age who have a sprint speed of no less than 97 between 2013 to 2015.",
+      "aliases": [],
+      "properties": {
+        "key": "s1031",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT CAST((julianday('now') - julianday(p.birthday)) / 365.25 AS INTEGER) AS player_age\nFROM Player_Attributes AS pa\nJOIN Player AS p ON pa.player_api_id = p.player_api_id\nWHERE pa.sprint_speed >= 97\n  AND STRFTIME('%Y', pa.date) BETWEEN '2013' AND '2015'"
+      }
+    },
+    {
+      "id": "example:s1033",
+      "type": "Example",
+      "name": "What is the average height of players born between 1990 and 1995?",
+      "aliases": [],
+      "properties": {
+        "key": "s1033",
+        "learning_complete": true,
+        "sql": "SELECT AVG(height) FROM Player WHERE SUBSTR(birthday, 1, 4) BETWEEN '1990' AND '1995'"
+      }
+    },
+    {
+      "id": "example:s1034",
+      "type": "Example",
+      "name": "List the players' api id who had the highest above average overall ratings in 2010.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1034",
+        "learning_complete": true,
+        "sql": "SELECT player_api_id FROM Player_Attributes WHERE SUBSTR(`date`, 1, 4) = '2010' ORDER BY overall_rating DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1035",
+      "type": "Example",
+      "name": "Give the team_fifa_api_id of teams with more than 50 but less than 60 build-up play speed.",
+      "aliases": [],
+      "properties": {
+        "key": "s1035",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT team_fifa_api_id\nFROM Team_Attributes\nWHERE buildUpPlaySpeed > 50 AND buildUpPlaySpeed < 60"
+      }
+    },
+    {
+      "id": "example:s1037",
+      "type": "Example",
+      "name": "Calculate the percentage of players who prefer left foot, who were born between 1987 and 1992.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player",
+            "birthday"
+          ]
+        ],
+        "key": "s1037",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN t2.preferred_foot = 'left' THEN t1.id ELSE NULL END) AS REAL) * 100 / COUNT(t1.id) percent FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE SUBSTR(t1.birthday, 1, 4) BETWEEN '1987' AND '1992'"
+      }
+    },
+    {
+      "id": "example:s1040",
+      "type": "Example",
+      "name": "List the top 10 players' names whose heights are above 180 in descending order of average heading accuracy.",
+      "aliases": [],
+      "properties": {
+        "key": "s1040",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT p.player_name\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nWHERE p.height > 180\nGROUP BY p.player_api_id, p.player_name\nORDER BY AVG(pa.heading_accuracy) DESC\nLIMIT 10"
+      }
+    },
+    {
+      "id": "example:s1041",
+      "type": "Example",
+      "name": "For the teams with normal build-up play dribbling class in 2014, List the names of the teams with less than average chance creation passing, in descending order of chance creation passing.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Team",
+            "id"
+          ],
+          [
+            "Team",
+            "team_api_id"
+          ],
+          [
+            "Team_Attributes",
+            "buildUpPlayDribblingClass"
+          ],
+          [
+            "Team_Attributes",
+            "chanceCreationPassing"
+          ],
+          [
+            "Team_Attributes",
+            "date"
+          ]
+        ],
+        "key": "s1041",
+        "learning_complete": true,
+        "sql": "SELECT t3.team_long_name FROM Team AS t3 INNER JOIN Team_Attributes AS t4 ON t3.team_api_id = t4.team_api_id WHERE t4.buildUpPlayDribblingClass = 'Normal' AND t4.chanceCreationPassing < ( SELECT CAST(SUM(t2.chanceCreationPassing) AS REAL) / COUNT(t1.id) FROM Team AS t1 INNER JOIN Team_Attributes AS t2 ON t1.team_api_id = t2.team_api_id WHERE t2.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(t2.`date`, 1, 4) = '2014') ORDER BY t4.chanceCreationPassing DESC"
+      }
+    },
+    {
+      "id": "example:s1043",
+      "type": "Example",
+      "name": "What is the short name of the football team Queens Park Rangers?",
+      "aliases": [],
+      "properties": {
+        "key": "s1043",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT team_short_name\nFROM Team\nWHERE team_long_name = 'Queens Park Rangers'"
+      }
+    },
+    {
+      "id": "example:s1044",
+      "type": "Example",
+      "name": "List the football players with a birthyear of 1970 and a birthmonth of October.",
+      "aliases": [],
+      "properties": {
+        "key": "s1044",
+        "learning_complete": true,
+        "sql": "SELECT player_name\nFROM Player\nWHERE SUBSTR(birthday, 1, 4) = '1970'\n  AND SUBSTR(birthday, 6, 2) = '10'"
+      }
+    },
+    {
+      "id": "example:s1045",
+      "type": "Example",
+      "name": "What is the attacking work rate of the football playerr Franco Zennaro?",
+      "aliases": [],
+      "properties": {
+        "key": "s1045",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.attacking_work_rate\nFROM Player AS T1\nINNER JOIN Player_Attributes AS T2\n    ON T1.player_api_id = T2.player_api_id\nWHERE T1.player_name = 'Franco Zennaro'"
+      }
+    },
+    {
+      "id": "example:s1046",
+      "type": "Example",
+      "name": "What is the ADO Den Haag team freedom of movement in the 1st two thirds of the pitch?",
+      "aliases": [],
+      "properties": {
+        "key": "s1046",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ta.buildUpPlayPositioningClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name = 'ADO Den Haag'"
+      }
+    },
+    {
+      "id": "example:s1047",
+      "type": "Example",
+      "name": "What is the football player Francois Affolter header's finishing rate on 18/09/2014?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player",
+            "player_name"
+          ]
+        ],
+        "key": "s1047",
+        "learning_complete": true,
+        "sql": "SELECT t2.heading_accuracy FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t1.player_name = 'Francois Affolter' AND SUBSTR(t2.`date`, 1, 10) = '2014-09-18'"
+      }
+    },
+    {
+      "id": "example:s1050",
+      "type": "Example",
+      "name": "What is the preferred foot when attacking of the youngest football player?",
+      "aliases": [],
+      "properties": {
+        "key": "s1050",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.preferred_foot\nFROM Player AS T1\nINNER JOIN Player_Attributes AS T2\n    ON T1.player_api_id = T2.player_api_id\nWHERE T1.birthday = (SELECT MAX(birthday) FROM Player)"
+      }
+    },
+    {
+      "id": "example:s1051",
+      "type": "Example",
+      "name": "List all the football player with the highest potential score.",
+      "aliases": [],
+      "properties": {
+        "key": "s1051",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT p.player_name\nFROM Player_Attributes AS pa\nINNER JOIN Player AS p ON pa.player_api_id = p.player_api_id\nWHERE pa.potential = (SELECT MAX(potential) FROM Player_Attributes)"
+      }
+    },
+    {
+      "id": "example:s1052",
+      "type": "Example",
+      "name": "Among all the players whose weight is under 130, how many of them preferred foot in attacking is left?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player_Attributes",
+            "preferred_foot"
+          ]
+        ],
+        "key": "s1052",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT t1.id) FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t1.weight < 130 AND t2.preferred_foot = 'left'"
+      }
+    },
+    {
+      "id": "example:s1053",
+      "type": "Example",
+      "name": "List the football teams that has a chance creation passing class of Risky. Inidcate its short name only.",
+      "aliases": [],
+      "properties": {
+        "key": "s1053",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT t.team_short_name\nFROM Team AS t\nINNER JOIN Team_Attributes AS ta ON t.team_api_id = ta.team_api_id\nWHERE ta.chanceCreationPassingClass = 'Risky'"
+      }
+    },
+    {
+      "id": "example:s1056",
+      "type": "Example",
+      "name": "What is the name of the football league in the country of Netherlands?",
+      "aliases": [],
+      "properties": {
+        "key": "s1056",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT l.name\nFROM League AS l\nJOIN Country AS c ON l.country_id = c.id\nWHERE c.name = 'Netherlands'"
+      }
+    },
+    {
+      "id": "example:s1057",
+      "type": "Example",
+      "name": "Calculate the average home team goal in the 2010/2011 season in the country of Poland.",
+      "aliases": [],
+      "properties": {
+        "key": "s1057",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(m.home_team_goal) AS REAL) / COUNT(m.id) AS avg_home_team_goal\nFROM Match AS m\nINNER JOIN Country AS c ON m.country_id = c.id\nWHERE m.season = '2010/2011' AND c.name = 'Poland'"
+      }
+    },
+    {
+      "id": "example:s1059",
+      "type": "Example",
+      "name": "Please list player names which are higher than 180.",
+      "aliases": [],
+      "properties": {
+        "key": "s1059",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT player_name FROM Player WHERE height > 180"
+      }
+    },
+    {
+      "id": "example:s1063",
+      "type": "Example",
+      "name": "What is Aaron Doran's potential score?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1063",
+        "learning_complete": true,
+        "sql": "SELECT t2.potential FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t1.player_name = 'Aaron Doran'"
+      }
+    },
+    {
+      "id": "example:s1065",
+      "type": "Example",
+      "name": "Please list all team names which the speed class is fast.",
+      "aliases": [],
+      "properties": {
+        "key": "s1065",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT t.team_long_name\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE ta.buildUpPlaySpeedClass = 'Fast'"
+      }
+    },
+    {
+      "id": "example:s1066",
+      "type": "Example",
+      "name": "What is the passing class of CLB team?",
+      "aliases": [],
+      "properties": {
+        "key": "s1066",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT ta.buildUpPlayPassingClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_short_name = 'CLB'"
+      }
+    },
+    {
+      "id": "example:s1068",
+      "type": "Example",
+      "name": "From 2010 to 2015, what was the average overall rating of players who are higher than 170?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player",
+            "height"
+          ],
+          [
+            "Player_Attributes",
+            "date"
+          ]
+        ],
+        "key": "s1068",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(t2.overall_rating) AS REAL) / COUNT(t2.id) FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t1.height > 170 AND STRFTIME('%Y',t2.`date`) >= '2010' AND STRFTIME('%Y',t2.`date`) <= '2015'"
+      }
+    },
+    {
+      "id": "example:s1069",
+      "type": "Example",
+      "name": "Which football player has the shortest height?",
+      "aliases": [],
+      "properties": {
+        "key": "s1069",
+        "learning_complete": true,
+        "sql": "SELECT player_name\nFROM Player\nORDER BY height ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1070",
+      "type": "Example",
+      "name": "Which country is the league Italy Serie A from?",
+      "aliases": [],
+      "properties": {
+        "key": "s1070",
+        "learning_complete": true,
+        "sql": "SELECT c.name\nFROM League AS l\nJOIN Country AS c ON l.country_id = c.id\nWHERE l.name = 'Italy Serie A'"
+      }
+    },
+    {
+      "id": "example:s1072",
+      "type": "Example",
+      "name": "What is the average overall rating of the football player Aaron Doran?",
+      "aliases": [],
+      "properties": {
+        "key": "s1072",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(t2.overall_rating) AS REAL) / COUNT(t2.id)\nFROM Player AS t1\nINNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id\nWHERE t1.player_name = 'Aaron Doran'"
+      }
+    },
+    {
+      "id": "example:s1074",
+      "type": "Example",
+      "name": "List all the short name of the football team that had a home team goal of 10?",
+      "aliases": [],
+      "properties": {
+        "key": "s1074",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT t.team_short_name\nFROM Match AS m\nJOIN Team AS t ON m.home_team_api_id = t.team_api_id\nWHERE m.home_team_goal = 10"
+      }
+    },
+    {
+      "id": "example:s1077",
+      "type": "Example",
+      "name": "What's the long name for the team GEN?",
+      "aliases": [],
+      "properties": {
+        "key": "s1077",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT team_long_name\nFROM Team\nWHERE team_short_name = 'GEN'"
+      }
+    },
+    {
+      "id": "example:s1079",
+      "type": "Example",
+      "name": "Which player is the tallest?",
+      "aliases": [],
+      "properties": {
+        "key": "s1079",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT player_name FROM Player ORDER BY height DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1080",
+      "type": "Example",
+      "name": "Among the players whose preferred foot was the left foot when attacking, how many of them would remain in his position when the team attacked?",
+      "aliases": [],
+      "properties": {
+        "key": "s1080",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(id)\nFROM Player_Attributes\nWHERE preferred_foot = 'left' AND attacking_work_rate = 'low'"
+      }
+    },
+    {
+      "id": "example:s1081",
+      "type": "Example",
+      "name": "Which country is the Belgium Jupiler League from?",
+      "aliases": [],
+      "properties": {
+        "key": "s1081",
+        "learning_complete": true,
+        "sql": "SELECT c.name\nFROM League AS l\nJOIN Country AS c ON l.country_id = c.id\nWHERE l.name = 'Belgium Jupiler League'"
+      }
+    },
+    {
+      "id": "example:s1082",
+      "type": "Example",
+      "name": "Please list the leagues from Germany.",
+      "aliases": [],
+      "properties": {
+        "key": "s1082",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT l.name\nFROM League AS l\nJOIN Country AS c ON l.country_id = c.id\nWHERE c.name = 'Germany'"
+      }
+    },
+    {
+      "id": "example:s1086",
+      "type": "Example",
+      "name": "What's the heading accuracy of Ariel Borysiuk?",
+      "aliases": [],
+      "properties": {
+        "key": "s1086",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT pa.heading_accuracy\nFROM Player_Attributes AS pa\nJOIN Player AS p ON pa.player_api_id = p.player_api_id\nWHERE p.player_name = 'Ariel Borysiuk'"
+      }
+    },
+    {
+      "id": "example:s1089",
+      "type": "Example",
+      "name": "How many matches in the 2008/2009 season were held in Belgium?",
+      "aliases": [],
+      "properties": {
+        "key": "s1089",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(M.id) AS match_count\nFROM Match AS M\nINNER JOIN Country AS C ON M.country_id = C.id\nWHERE M.season = '2008/2009' AND C.name = 'Belgium'"
+      }
+    },
+    {
+      "id": "example:s1090",
+      "type": "Example",
+      "name": "What is the long passing score of the oldest player?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1090",
+        "learning_complete": true,
+        "sql": "SELECT t2.long_passing FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id ORDER BY t1.birthday ASC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1092",
+      "type": "Example",
+      "name": "Give the name of the league had the most matches in the 2008/2009 season?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Match",
+            "id"
+          ],
+          [
+            "Match",
+            "league_id"
+          ]
+        ],
+        "key": "s1092",
+        "learning_complete": true,
+        "sql": "SELECT t1.name FROM League AS t1 JOIN Match AS t2 ON t1.id = t2.league_id WHERE t2.season = '2008/2009' GROUP BY t1.name HAVING COUNT(t2.id) = (SELECT MAX(match_count) FROM (SELECT COUNT(t2.id) AS match_count FROM Match AS t2 WHERE t2.season = '2008/2009' GROUP BY t2.league_id))"
+      }
+    },
+    {
+      "id": "example:s1095",
+      "type": "Example",
+      "name": "How much is the average build up play speed of the Heart of Midlothian team?",
+      "aliases": [],
+      "properties": {
+        "key": "s1095",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT AVG(ta.buildUpPlaySpeed) AS avg_buildUpPlaySpeed\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name = 'Heart of Midlothian'"
+      }
+    },
+    {
+      "id": "example:s1096",
+      "type": "Example",
+      "name": "Calculate the average overall rating of Pietro Marino.",
+      "aliases": [],
+      "properties": {
+        "key": "s1096",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(t2.overall_rating) AS REAL) / COUNT(t2.id) AS average_overall_rating\nFROM Player AS t1\nINNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id\nWHERE t1.player_name = 'Pietro Marino'"
+      }
+    },
+    {
+      "id": "example:s1098",
+      "type": "Example",
+      "name": "What is Ajax's highest chance creation passing score and what is it classified as?",
+      "aliases": [],
+      "properties": {
+        "key": "s1098",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ta.chanceCreationPassing, ta.chanceCreationPassingClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name = 'Ajax'\n  AND ta.chanceCreationPassing = (\n    SELECT MAX(ta2.chanceCreationPassing)\n    FROM Team_Attributes AS ta2\n    JOIN Team AS t2 ON ta2.team_api_id = t2.team_api_id\n    WHERE t2.team_long_name = 'Ajax'\n  )"
+      }
+    },
+    {
+      "id": "example:s1099",
+      "type": "Example",
+      "name": "Which foot is preferred by Abdou Diallo?",
+      "aliases": [],
+      "properties": {
+        "key": "s1099",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT T2.preferred_foot\nFROM Player AS T1\nINNER JOIN Player_Attributes AS T2\n    ON T1.player_api_id = T2.player_api_id\nWHERE T1.player_name LIKE '%Abdou Diallo%'"
+      }
+    },
+    {
+      "id": "example:s1103",
+      "type": "Example",
+      "name": "What was the overall rating for Aaron Mooy on 2016/2/4?",
+      "aliases": [],
+      "properties": {
+        "key": "s1103",
+        "learning_complete": true,
+        "sql": "SELECT t2.overall_rating\nFROM Player AS t1\nINNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id\nWHERE t1.player_name = 'Aaron Mooy'\n  AND SUBSTR(t2.`date`, 1, 10) = '2016-02-04'"
+      }
+    },
+    {
+      "id": "example:s1105",
+      "type": "Example",
+      "name": "How was Francesco Migliore's attacking work rate on 2015/5/1?",
+      "aliases": [],
+      "properties": {
+        "key": "s1105",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.attacking_work_rate\nFROM Player AS T1\nINNER JOIN Player_Attributes AS T2\n    ON T1.player_api_id = T2.player_api_id\nWHERE T1.player_name = 'Francesco Migliore'\n  AND SUBSTR(T2.`date`, 1, 10) = '2015-05-01'"
+      }
+    },
+    {
+      "id": "example:s1106",
+      "type": "Example",
+      "name": "Tell the defensive work rate for Kevin Berigaud on 2013/2/22.",
+      "aliases": [],
+      "properties": {
+        "key": "s1106",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.defensive_work_rate\nFROM Player AS T1\nINNER JOIN Player_Attributes AS T2\n    ON T1.player_api_id = T2.player_api_id\nWHERE T1.player_name = 'Kevin Berigaud'\n  AND SUBSTR(T2.`date`, 1, 10) = '2013-02-22'"
+      }
+    },
+    {
+      "id": "example:s1107",
+      "type": "Example",
+      "name": "When was the first time did Kevin Constant have his highest crossing score? Give the date.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1107",
+        "learning_complete": true,
+        "sql": "SELECT `date` FROM ( SELECT t2.crossing, t2.`date` FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_fifa_api_id = t2.player_fifa_api_id WHERE t1.player_name = 'Kevin Constant' ORDER BY t2.crossing DESC) ORDER BY date DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1108",
+      "type": "Example",
+      "name": "What was the build up play speed class for \"Willem II\" on 2011/2/22?",
+      "aliases": [],
+      "properties": {
+        "key": "s1108",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ta.buildUpPlaySpeedClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name = 'Willem II'\n  AND ta.date = '2011-02-22 00:00:00'"
+      }
+    },
+    {
+      "id": "example:s1109",
+      "type": "Example",
+      "name": "How was the build up play dribbling class for \"LEI\" on 2015/9/10?",
+      "aliases": [],
+      "properties": {
+        "key": "s1109",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ta.buildUpPlayDribblingClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_short_name = 'LEI'\n  AND ta.date = '2015-09-10 00:00:00'"
+      }
+    },
+    {
+      "id": "example:s1111",
+      "type": "Example",
+      "name": "State the chance creation passing class for \"PEC Zwolle\" on 2013/9/20.",
+      "aliases": [],
+      "properties": {
+        "key": "s1111",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ta.chanceCreationPassingClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name = 'PEC Zwolle'\n  AND ta.date = '2013-09-20 00:00:00'"
+      }
+    },
+    {
+      "id": "example:s1112",
+      "type": "Example",
+      "name": "What was the chance creation crossing class for \"Hull City\" on 2010/2/22?",
+      "aliases": [],
+      "properties": {
+        "key": "s1112",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ta.chanceCreationCrossingClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name = 'Hull City'\n  AND ta.date = '2010-02-22 00:00:00'"
+      }
+    },
+    {
+      "id": "example:s1114",
+      "type": "Example",
+      "name": "What was the average overall rating for Marko Arnautovic from 2007/2/22 to 2016/4/21?",
+      "aliases": [],
+      "properties": {
+        "key": "s1114",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(t2.overall_rating) AS REAL) / COUNT(t2.id)\nFROM Player AS t1\nINNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id\nWHERE t1.player_name = 'Marko Arnautovic'\n  AND SUBSTR(t2.`date`, 1, 10) >= '2007-02-22'\n  AND SUBSTR(t2.`date`, 1, 10) <= '2016-04-21'"
+      }
+    },
+    {
+      "id": "example:s1115",
+      "type": "Example",
+      "name": "What percentage is Landon Donovan's overall rating higher than Jordan Bowery on 2013/7/12?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1115",
+        "learning_complete": true,
+        "sql": "SELECT (SUM(CASE WHEN t1.player_name = 'Landon Donovan' THEN t2.overall_rating ELSE 0 END) * 1.0 - SUM(CASE WHEN t1.player_name = 'Jordan Bowery' THEN t2.overall_rating ELSE 0 END)) * 100 / SUM(CASE WHEN t1.player_name = 'Landon Donovan' THEN t2.overall_rating ELSE 0 END) LvsJ_percent FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_fifa_api_id = t2.player_fifa_api_id WHERE SUBSTR(t2.`date`, 1, 10) = '2013-07-12'"
+      }
+    },
+    {
+      "id": "example:s1117",
+      "type": "Example",
+      "name": "What are the player api id of 10 heaviest players?",
+      "aliases": [],
+      "properties": {
+        "key": "s1117",
+        "learning_complete": true,
+        "sql": "SELECT player_api_id\nFROM Player\nORDER BY weight DESC\nLIMIT 10"
+      }
+    },
+    {
+      "id": "example:s1121",
+      "type": "Example",
+      "name": "Calculate the total home team goal scored by players whose age are 30 years old and below.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1121",
+        "learning_complete": true,
+        "sql": "SELECT SUM(t2.home_team_goal) FROM Player AS t1 INNER JOIN match AS t2 ON t1.player_api_id = t2.away_player_1 WHERE datetime(CURRENT_TIMESTAMP, 'localtime') - datetime(T1.birthday) < 31"
+      }
+    },
+    {
+      "id": "example:s1122",
+      "type": "Example",
+      "name": "State the name of the most strongest player.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player_Attributes",
+            "overall_rating"
+          ]
+        ],
+        "key": "s1122",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT t1.player_name FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t2.overall_rating = (SELECT MAX(overall_rating) FROM Player_Attributes)"
+      }
+    },
+    {
+      "id": "example:s1124",
+      "type": "Example",
+      "name": "Who are the players that tend to be attacking when their mates were doing attack moves? List down their name.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player_Attributes",
+            "attacking_work_rate"
+          ]
+        ],
+        "key": "s1124",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT t1.player_name FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t2.attacking_work_rate = 'high'"
+      }
+    },
+    {
+      "id": "example:s1125",
+      "type": "Example",
+      "name": "Among the players with finishing rate of 1, pick the eldest player and state the player's name.",
+      "aliases": [],
+      "properties": {
+        "key": "s1125",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT p.player_name\nFROM Player_Attributes pa\nJOIN Player p ON pa.player_api_id = p.player_api_id\nWHERE pa.finishing = 1\nORDER BY p.birthday ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1127",
+      "type": "Example",
+      "name": "Locate players with vision scores of 90 and above, state the country of these players.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player_Attributes",
+            "vision"
+          ]
+        ],
+        "key": "s1127",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT t4.name FROM Player_Attributes AS t1 INNER JOIN Player AS t2 ON t1.player_api_id = t2.player_api_id INNER JOIN Match AS t3 ON t2.player_api_id = t3.home_player_8 INNER JOIN Country AS t4 ON t3.country_id = t4.id WHERE t1.vision > 89"
+      }
+    },
+    {
+      "id": "example:s1128",
+      "type": "Example",
+      "name": "Which country's players have the heaviest average weights?",
+      "aliases": [],
+      "properties": {
+        "key": "s1128",
+        "learning_complete": true,
+        "sql": "-- The country's players (identified via matches played, using Match.country_id as the player's country) with the heaviest average weight\nSELECT c.name\nFROM Player AS p\nINNER JOIN Match AS m\n    ON p.player_api_id = m.home_player_1 OR p.player_api_id = m.away_player_1\nINNER JOIN Country AS c\n    ON m.country_id = c.id\nGROUP BY c.id, c.name\nORDER BY AVG(p.weight) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1132",
+      "type": "Example",
+      "name": "Please provide the names of top three football players who are over 180 cm tall in alphabetical order.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1132",
+        "learning_complete": true,
+        "sql": "SELECT player_name FROM Player WHERE height > 180 ORDER BY player_name LIMIT 3"
+      }
+    },
+    {
+      "id": "example:s1133",
+      "type": "Example",
+      "name": "How many football players born after the 1990s have the first name \"Aaron\"?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1133",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(id) FROM Player WHERE birthday > '1990' AND player_name LIKE 'Aaron%'"
+      }
+    },
+    {
+      "id": "example:s1137",
+      "type": "Example",
+      "name": "What percentage of players have a strength and stamina score of more than 80?",
+      "aliases": [],
+      "properties": {
+        "key": "s1137",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT CAST(COUNT(CASE WHEN strength > 80 AND stamina > 80 THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(*) AS percentage\nFROM Player_Attributes"
+      }
+    },
+    {
+      "id": "example:s1138",
+      "type": "Example",
+      "name": "In what country did the Poland Ekstraklasa take place?",
+      "aliases": [],
+      "properties": {
+        "key": "s1138",
+        "learning_complete": true,
+        "sql": "SELECT c.name\nFROM League AS l\nJOIN Country AS c ON l.country_id = c.id\nWHERE l.name = 'Poland Ekstraklasa'"
+      }
+    },
+    {
+      "id": "example:s1139",
+      "type": "Example",
+      "name": "What was the final score for the match on September 24, 2008, in the Belgian Jupiler League between the home team and the away team?",
+      "aliases": [],
+      "properties": {
+        "key": "s1139",
+        "learning_complete": true,
+        "sql": "SELECT M.home_team_goal, M.away_team_goal\nFROM Match AS M\nINNER JOIN League AS L ON M.league_id = L.id\nWHERE L.name = 'Belgium Jupiler League'\n  AND M.date LIKE '2008-09-24%'"
+      }
+    },
+    {
+      "id": "example:s1140",
+      "type": "Example",
+      "name": "What are Alexis Blin's sprint speed, agility, and acceleration scores?",
+      "aliases": [],
+      "properties": {
+        "key": "s1140",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT pa.sprint_speed, pa.agility, pa.acceleration\nFROM Player_Attributes AS pa\nJOIN Player AS p ON pa.player_api_id = p.player_api_id\nWHERE p.player_name = 'Alexis Blin'"
+      }
+    },
+    {
+      "id": "example:s1141",
+      "type": "Example",
+      "name": "Does the KSV Cercle Brugge team have a slow, balanced or fast speed class?",
+      "aliases": [],
+      "properties": {
+        "key": "s1141",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT DISTINCT ta.buildUpPlaySpeedClass\nFROM Team_Attributes AS ta\nJOIN Team AS t ON ta.team_api_id = t.team_api_id\nWHERE t.team_long_name LIKE '%Cercle Brugge%'"
+      }
+    },
+    {
+      "id": "example:s1142",
+      "type": "Example",
+      "name": "In the 2015–2016 season, how many games were played in the Italian Serie A league?",
+      "aliases": [],
+      "properties": {
+        "key": "s1142",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(M.id) AS match_count\nFROM Match AS M\nINNER JOIN League AS L ON M.league_id = L.id\nWHERE M.season = '2015/2016' AND L.name = 'Italy Serie A'"
+      }
+    },
+    {
+      "id": "example:s1143",
+      "type": "Example",
+      "name": "What was the highest score of the home team in the Netherlands Eredivisie league?",
+      "aliases": [],
+      "properties": {
+        "key": "s1143",
+        "learning_complete": true,
+        "sql": "SELECT MAX(M.home_team_goal)\nFROM Match AS M\nINNER JOIN League AS L ON M.league_id = L.id\nWHERE L.name = 'Netherlands Eredivisie'"
+      }
+    },
+    {
+      "id": "example:s1144",
+      "type": "Example",
+      "name": "Please state the finishing rate and curve score of the player who has the heaviest weight.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "Player",
+            "player_api_id"
+          ],
+          [
+            "Player",
+            "weight"
+          ],
+          [
+            "Player_Attributes",
+            "player_api_id"
+          ]
+        ],
+        "key": "s1144",
+        "learning_complete": true,
+        "sql": "SELECT id, finishing, curve FROM Player_Attributes WHERE player_api_id = ( SELECT player_api_id FROM Player ORDER BY weight DESC LIMIT 1 ) LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1145",
+      "type": "Example",
+      "name": "Which top 4 leagues had the most games in the 2015-2016 season?",
+      "aliases": [],
+      "properties": {
+        "key": "s1145",
+        "learning_complete": true,
+        "sql": "SELECT t2.name\nFROM Match AS t1\nINNER JOIN League AS t2 ON t1.league_id = t2.id\nWHERE t1.season = '2015/2016'\nGROUP BY t2.id, t2.name\nORDER BY COUNT(t1.id) DESC\nLIMIT 4"
+      }
+    },
+    {
+      "id": "example:s1146",
+      "type": "Example",
+      "name": "Please provide the full name of the away team that scored the most goals.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1146",
+        "learning_complete": true,
+        "sql": "SELECT t2.team_long_name FROM Match AS t1 INNER JOIN Team AS t2 ON t1.away_team_api_id = t2.team_api_id ORDER BY t1.away_team_goal DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1147",
+      "type": "Example",
+      "name": "Please name one player whose overall strength is the greatest.",
+      "aliases": [],
+      "properties": {
+        "key": "s1147",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT t1.player_name\nFROM Player AS t1\nINNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id\nWHERE t2.overall_rating = (SELECT MAX(overall_rating) FROM Player_Attributes)\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1148",
+      "type": "Example",
+      "name": "What is the percentage of players that are under 180 cm who have an overall strength of more than 70?",
+      "aliases": [],
+      "properties": {
+        "key": "s1148",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT CAST(COUNT(CASE WHEN t2.overall_rating > 70 THEN 1 END) AS REAL) * 100 / COUNT(*)\nFROM Player AS t1\nINNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id\nWHERE t1.height < 180"
+      }
+    },
+    {
+      "id": "term:2010-season",
+      "type": "Term",
+      "name": "2010 season",
+      "aliases": [
+        "2009/2010 season",
+        "season 2009-2010",
+        "2010/11 season is 2010/2011"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:2016-season",
+      "type": "Term",
+      "name": "2016 season",
+      "aliases": [
+        "2016/2017 season",
+        "season 2016"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:alphabetical-order",
+      "type": "Term",
+      "name": "alphabetical order",
+      "aliases": [
+        "in alphabetical order",
+        "sorted by name",
+        "ordered by player name ascending"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attacking-during-attack-moves",
+      "type": "Term",
+      "name": "attacking during attack moves",
+      "aliases": [
+        "tends to be attacking",
+        "in all of your attack moves",
+        "high attacking work rate"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attribute-date-filter",
+      "type": "Term",
+      "name": "attribute date filter",
+      "aliases": [
+        "date of attributes",
+        "snapshot date",
+        "rating date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attribute-date-matching",
+      "type": "Term",
+      "name": "attribute date matching",
+      "aliases": [
+        "date filter on attributes",
+        "attributes on a given day"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:attribute-records-per-player",
+      "type": "Term",
+      "name": "attribute records per player",
+      "aliases": [
+        "multiple rows per player",
+        "player attribute history",
+        "single attribute value for one player"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:average-chance-creation-passing",
+      "type": "Term",
+      "name": "average chance creation passing",
+      "aliases": [
+        "mean chance creation passing",
+        "average passing risk"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:average-overall-rating",
+      "type": "Term",
+      "name": "average overall rating",
+      "aliases": [
+        "mean overall rating",
+        "average rating"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:away-team",
+      "type": "Term",
+      "name": "away team",
+      "aliases": [
+        "away side",
+        "visiting team",
+        "opponent team"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:away-win",
+      "type": "Term",
+      "name": "away win",
+      "aliases": [
+        "away team victory",
+        "won as away team",
+        "away victory"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:birth-year",
+      "type": "Term",
+      "name": "birth year",
+      "aliases": [
+        "year of birth",
+        "year born"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:born-after-the-1990s",
+      "type": "Term",
+      "name": "born after the 1990s",
+      "aliases": [
+        "born after 1990",
+        "post-1990 players",
+        "birthday later than the 1990s"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:born-in-a-year-range",
+      "type": "Term",
+      "name": "born in a year range",
+      "aliases": [
+        "birth year between",
+        "year of birth filter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:country-of-a-player",
+      "type": "Term",
+      "name": "country of a player",
+      "aliases": [
+        "player's country",
+        "country the player plays in"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:curve-score",
+      "type": "Term",
+      "name": "curve score",
+      "aliases": [
+        "curve",
+        "curve rating"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:date-of-a-player-attribute-record",
+      "type": "Term",
+      "name": "date of a player attribute record",
+      "aliases": [
+        "when the rating was recorded",
+        "rating date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:date-year-filter",
+      "type": "Term",
+      "name": "date year filter",
+      "aliases": [
+        "in year",
+        "for year",
+        "during 2010",
+        "year of date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:finishing-rate",
+      "type": "Term",
+      "name": "finishing rate",
+      "aliases": [
+        "finishing",
+        "finishing attribute"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:header-heading-accuracy",
+      "type": "Term",
+      "name": "header (heading accuracy)",
+      "aliases": [
+        "heading",
+        "heading accuracy",
+        "header rate",
+        "header accuracy",
+        "aerial header ability"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-crossing-score",
+      "type": "Term",
+      "name": "highest crossing score",
+      "aliases": [
+        "best crossing",
+        "max crossing",
+        "top crossing rating"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-penalties",
+      "type": "Term",
+      "name": "highest penalties",
+      "aliases": [
+        "most penalties",
+        "penalties score",
+        "number of penalties",
+        "top players by penalties"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:highest-rated-player",
+      "type": "Term",
+      "name": "highest rated player",
+      "aliases": [
+        "top rated player",
+        "best overall rating",
+        "player with maximum overall rating"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:home-team-goal",
+      "type": "Term",
+      "name": "home team goal",
+      "aliases": [
+        "goals scored by home team",
+        "home goals"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:how-many-players",
+      "type": "Term",
+      "name": "how many players",
+      "aliases": [
+        "number of players",
+        "count of players",
+        "player count"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:in-all-attack-moves-instead-of-defending",
+      "type": "Term",
+      "name": "in all attack moves instead of defending",
+      "aliases": [
+        "low defensive work rate",
+        "goes to attack instead of defense"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:indicate-his-name",
+      "type": "Term",
+      "name": "indicate his name",
+      "aliases": [
+        "give the player's name",
+        "who is the tallest player"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:league-of-a-match",
+      "type": "Term",
+      "name": "league of a match",
+      "aliases": [
+        "league name",
+        "competition"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:league-with-the-most-matches",
+      "type": "Term",
+      "name": "league with the most matches",
+      "aliases": [
+        "busiest league",
+        "top league by matches",
+        "league name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:long-passing-score",
+      "type": "Term",
+      "name": "long passing score",
+      "aliases": [
+        "long passing rating",
+        "long passing attribute"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:match-ending-as-draw",
+      "type": "Term",
+      "name": "match ending as draw",
+      "aliases": [
+        "draw",
+        "drawn match",
+        "tie",
+        "goalless draw",
+        "level score"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:match-season",
+      "type": "Term",
+      "name": "match season",
+      "aliases": [
+        "season",
+        "season of a match"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:matches-per-league",
+      "type": "Term",
+      "name": "matches per league",
+      "aliases": [
+        "number of matches in a league",
+        "match count by league",
+        "how many matches a league has"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:most-goals-scored",
+      "type": "Term",
+      "name": "most goals scored",
+      "aliases": [
+        "highest goals",
+        "top goals scored",
+        "most goals in a match"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:normal-build-up-play-dribbling-class",
+      "type": "Term",
+      "name": "normal build-up play dribbling class",
+      "aliases": [
+        "dribbling class normal",
+        "normal dribbling"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:oldest-player",
+      "type": "Term",
+      "name": "oldest player",
+      "aliases": [
+        "player born earliest",
+        "earliest birthday",
+        "oldest player in the database"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:over-180-cm-tall",
+      "type": "Term",
+      "name": "over 180 cm tall",
+      "aliases": [
+        "taller than 180 cm",
+        "height above 180",
+        "height greater than 180 cm"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percent-higher-overall-rating",
+      "type": "Term",
+      "name": "percent higher overall rating",
+      "aliases": [
+        "percentage rating higher than another player",
+        "rating percent difference between two players"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-rows-matching-a-condition",
+      "type": "Term",
+      "name": "percentage of rows matching a condition",
+      "aliases": [
+        "percent of rows",
+        "share of rows"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-age-30-or-below",
+      "type": "Term",
+      "name": "player age 30 or below",
+      "aliases": [
+        "30 years old and below",
+        "age at most 30",
+        "younger than 31",
+        "players aged 30 or less"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-appears-in-match-lineup",
+      "type": "Term",
+      "name": "player appears in match lineup",
+      "aliases": [
+        "home player position slot",
+        "starting lineup slot 8"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-attributes-join-key",
+      "type": "Term",
+      "name": "player attributes join key",
+      "aliases": [
+        "fifa api id",
+        "player fifa id",
+        "linking player to attributes"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-attributes-lookup-by-name",
+      "type": "Term",
+      "name": "player attributes lookup by name",
+      "aliases": [
+        "player name filter",
+        "find player id"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-full-name",
+      "type": "Term",
+      "name": "player full name",
+      "aliases": [
+        "player name",
+        "name of player",
+        "player's name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-height",
+      "type": "Term",
+      "name": "player height",
+      "aliases": [
+        "height in cm",
+        "taller than",
+        "height of player",
+        "stature"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-identifier",
+      "type": "Term",
+      "name": "player identifier",
+      "aliases": [
+        "player id",
+        "player key",
+        "unique player id"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-in-a-match-lineup",
+      "type": "Term",
+      "name": "player in a match lineup",
+      "aliases": [
+        "player participated in match",
+        "starting player of a match",
+        "player matched to a match"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-name",
+      "type": "Term",
+      "name": "player name",
+      "aliases": [
+        "name of the player",
+        "player's name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-s-attribute-value",
+      "type": "Term",
+      "name": "player's attribute value",
+      "aliases": [
+        "attribute score for player",
+        "player attribute value"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-s-first-name",
+      "type": "Term",
+      "name": "player's first name",
+      "aliases": [
+        "given name",
+        "first name of player"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-s-overall-strength-rating",
+      "type": "Term",
+      "name": "player's overall strength rating",
+      "aliases": [
+        "overall rating",
+        "player strength score"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-s-weight",
+      "type": "Term",
+      "name": "player's weight",
+      "aliases": [
+        "weight",
+        "body weight"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:player-to-attributes-join-key",
+      "type": "Term",
+      "name": "player to attributes join key",
+      "aliases": [
+        "fifa id join",
+        "matching player records"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:potential-score",
+      "type": "Term",
+      "name": "potential score",
+      "aliases": [
+        "potential",
+        "player potential",
+        "potential rating"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:prefer-left-foot",
+      "type": "Term",
+      "name": "prefer left foot",
+      "aliases": [
+        "left-footed players",
+        "preferred foot is left"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:preferred-foot",
+      "type": "Term",
+      "name": "preferred foot",
+      "aliases": [
+        "attacking foot",
+        "foot preference",
+        "preferred foot when attacking"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:season-format",
+      "type": "Term",
+      "name": "season format",
+      "aliases": [
+        "season column values",
+        "how seasons are stored"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:tallest-player",
+      "type": "Term",
+      "name": "tallest player",
+      "aliases": [
+        "highest player",
+        "player with greatest height"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:team-full-name",
+      "type": "Term",
+      "name": "team full name",
+      "aliases": [
+        "team long name",
+        "club name",
+        "full team name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:vision-score",
+      "type": "Term",
+      "name": "vision score",
+      "aliases": [
+        "vision",
+        "player's vision"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-a-date",
+      "type": "Term",
+      "name": "year of a date",
+      "aliases": [
+        "in year",
+        "during year",
+        "year filter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-team-attributes-date",
+      "type": "Term",
+      "name": "year of team attributes date",
+      "aliases": [
+        "attribute year",
+        "season year"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:attribute-date-filter",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {
+        "_feedback_sources": [
+          "s1072",
+          "s1096",
+          "s1109",
+          "s1145",
+          "s1057",
+          "s1103",
+          "s1114",
+          "s1031",
+          "s1106",
+          "s1089"
+        ],
+        "losses": 0,
+        "note": "Player_Attributes.date is stored as 'YYYY-MM-DD HH:MM:00' text, so compare only the first 10 characters when a question specifies a calendar day.",
+        "origin": "s1047",
+        "sql": "SUBSTR(Player_Attributes.date, 1, 10) = 'YYYY-MM-DD'",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:born-in-a-year-range",
+      "type": "MEANS",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {
+        "_feedback_sources": [
+          "s1108",
+          "s1059",
+          "s1033",
+          "s1031"
+        ],
+        "losses": 0,
+        "note": "Player.birthday is stored as text 'YYYY-MM-DD HH:MM:SS', so the birth year is extracted with SUBSTR(Player.birthday, 1, 4) and compared as a string range.",
+        "origin": "s1037",
+        "sql": "SUBSTR(Player.birthday, 1, 4) BETWEEN '1987' AND '1992'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:date-of-a-player-attribute-record",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {
+        "_feedback_sources": [
+          "s1072",
+          "s1096",
+          "s1109",
+          "s1145",
+          "s1057",
+          "s1103",
+          "s1114",
+          "s1020",
+          "s1031",
+          "s1106",
+          "s1142",
+          "s1089"
+        ],
+        "losses": 0,
+        "note": "Dates are stored as TEXT timestamps in 'YYYY-MM-DD HH:MM:SS' form, so they sort lexicographically (ASC = earliest, DESC = most recent) and the date returned for the top-scoring record is the one attached to that specific Player_Attributes row.",
+        "origin": "s1107",
+        "sql": "Player_Attributes.date",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:player-s-weight",
+      "type": "MEANS",
+      "to_entity": "column:player.weight-393fe5",
+      "properties": {
+        "_feedback_sources": [
+          "s1086"
+        ],
+        "losses": 0,
+        "note": "Weight in the player's own record is Player.weight, in kilograms, joined to attributes via Player.player_api_id = Player_Attributes.player_api_id.",
+        "origin": "s1052",
+        "sql": "Player.weight",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:highest-rated-player",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {
+        "_feedback_sources": [
+          "s1051",
+          "s1098",
+          "s1037",
+          "s1045",
+          "s1132",
+          "s1024",
+          "s1107",
+          "s1072",
+          "s1096",
+          "s1059",
+          "s1147",
+          "s1143",
+          "s1103",
+          "s1114",
+          "s1020",
+          "s1027"
+        ],
+        "losses": 4,
+        "note": "The single best player is found by sorting Player_Attributes.overall_rating descending and taking the first row's Player_Attributes.player_api_id, instead of DISTINCT plus an equality-to-maximum predicate that returns several players on ties.",
+        "origin": "s1034",
+        "sql": "ORDER BY Player_Attributes.overall_rating DESC",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:home-team-goal",
+      "type": "MEANS",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {
+        "_feedback_sources": [
+          "s1109",
+          "s1146",
+          "s1057",
+          "s1040",
+          "s1026",
+          "s1143",
+          "s1046"
+        ],
+        "losses": 1,
+        "note": "The goals scored by the home side in a match are stored as the integer Match.home_team_goal.",
+        "origin": "s1121",
+        "sql": "Match.home_team_goal",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:alphabetical-order",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "_feedback_sources": [
+          "s1147",
+          "s1040"
+        ],
+        "losses": 0,
+        "note": "\"Alphabetical order\" of players means ordering the Player table by Player.player_name ascending, not by any rating or performance metric.",
+        "origin": "s1132",
+        "sql": "ORDER BY Player.player_name ASC",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:team-full-name",
+      "type": "MEANS",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {
+        "_feedback_sources": [
+          "s1124",
+          "s1095",
+          "s1046",
+          "s1086",
+          "s1027"
+        ],
+        "losses": 2,
+        "note": "A team's full name is stored in Team.team_long_name, looked up from the team api id.",
+        "origin": "s1146",
+        "sql": "Team.team_long_name",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:match-season",
+      "type": "MEANS",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {
+        "_feedback_sources": [
+          "s1108",
+          "s1111",
+          "s1047",
+          "s1132",
+          "s1105",
+          "s1109",
+          "s1145",
+          "s1057",
+          "s1026",
+          "s1031",
+          "s1106",
+          "s1142",
+          "s1089"
+        ],
+        "losses": 2,
+        "note": "Seasons are stored on each match row as text in 'YYYY/YYYY' form (e.g. '2008/2009'), so season questions filter Match.season with that literal format.",
+        "origin": "s1092",
+        "sql": "Match.season = '2008/2009'",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:most-goals-scored",
+      "type": "MEANS",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {
+        "_feedback_sources": [
+          "s1143",
+          "s1027"
+        ],
+        "losses": 1,
+        "note": "\"Scored the most goals\" refers to the single-match maximum of the goal column, not a cumulative SUM across matches.",
+        "origin": "s1146",
+        "sql": "MAX(Match.away_team_goal)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:player-attributes-lookup-by-name",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {
+        "_feedback_sources": [
+          "s1021"
+        ],
+        "losses": 1,
+        "note": "Player_Attributes rows link to a player by player_api_id, and the human-readable name lives only in Player.player_name, so a name filter requires joining Player to Player_Attributes on player_api_id.",
+        "origin": "s1047",
+        "sql": "Player.player_api_id = Player_Attributes.player_api_id AND Player.player_name = 'Player Name'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:average-chance-creation-passing",
+      "type": "MEANS",
+      "to_entity": "column:team-attributes.buildupplaydribblingclass-c179f9",
+      "properties": {
+        "_feedback_sources": [
+          "s1095"
+        ],
+        "losses": 0,
+        "note": "The comparison threshold must be the average over the same filtered population (same dribbling class and year) as the outer query, computed as SUM(chanceCreationPassing)/COUNT(team rows) over the joined rows rather than AVG over all attribute rows.",
+        "origin": "s1041",
+        "sql": "(SELECT CAST(SUM(Team_Attributes.chanceCreationPassing) AS REAL) / COUNT(Team.id) FROM Team INNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id WHERE Team_Attributes.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(Team_Attributes.date, 1, 4) = '2014')",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-rows-matching-a-condition",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {
+        "_feedback_sources": [
+          "s1045",
+          "s1022",
+          "s1137",
+          "s1105",
+          "s1080",
+          "s1099",
+          "s1115",
+          "s1124",
+          "s1148",
+          "s1140",
+          "s1050"
+        ],
+        "losses": 2,
+        "note": "A percentage over a joined result set is computed as a conditional COUNT multiplied by 100 and divided by the total row count, without deduplicating the joined rows.",
+        "origin": "s1037",
+        "sql": "CAST(COUNT(CASE WHEN Player_Attributes.preferred_foot = 'left' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(*)",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:average-overall-rating",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {
+        "_feedback_sources": [
+          "s1127",
+          "s1132",
+          "s1024",
+          "s1044",
+          "s1121",
+          "s1133",
+          "s1080",
+          "s1124",
+          "s1125",
+          "s1117",
+          "s1052"
+        ],
+        "losses": 6,
+        "note": "The database computes an average rating as total rating divided by the number of attribute rows, which keeps rows with a NULL rating in the denominator (AVG() would silently skip them).",
+        "origin": "s1068",
+        "sql": "CAST(SUM(Player_Attributes.overall_rating) AS REAL) / COUNT(Player_Attributes.id)",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:attribute-records-per-player",
+      "type": "MEANS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "_feedback_sources": [
+          "s1147"
+        ],
+        "losses": 0,
+        "note": "Player_Attributes holds one row per player per season/league, so joining to Player yields several rows for the same person and DISTINCT on an attribute column returns many values instead of the single requested one; pick a single ordered row instead.",
+        "origin": "s1090",
+        "sql": "Player_Attributes.player_api_id = Player.player_api_id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:in-all-attack-moves-instead-of-defending",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.defensive-work-rate-29e652",
+      "properties": {
+        "_feedback_sources": [
+          "s1045",
+          "s1108",
+          "s1047",
+          "s1065",
+          "s1024",
+          "s1105",
+          "s1080",
+          "s1124",
+          "s1125",
+          "s1052",
+          "s1021",
+          "s1106"
+        ],
+        "losses": 4,
+        "note": "The phrase describes the stored value 'low' in Player_Attributes.defensive_work_rate, where low means the player joins every attack move rather than defending.",
+        "origin": "s1023",
+        "sql": "Player_Attributes.defensive_work_rate = 'low'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:birth-year",
+      "type": "MEANS",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {
+        "_feedback_sources": [
+          "s1033"
+        ],
+        "losses": 0,
+        "note": "The birth year is the 4-digit prefix of the birthday text; use this only when the question asks about the year itself, and note that text comparisons of the 4-digit year string treat the boundary year as excluded.",
+        "origin": "s1133",
+        "sql": "CAST(SUBSTR(Player.birthday, 1, 4) AS INTEGER)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:match-ending-as-draw",
+      "type": "MEANS",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {
+        "_feedback_sources": [
+          "s1026",
+          "s1143"
+        ],
+        "losses": 0,
+        "note": "A drawn match is one where the home and away goals in Match are equal.",
+        "origin": "s1030",
+        "sql": "Match.home_team_goal = Match.away_team_goal",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:oldest-player",
+      "type": "MEANS",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {
+        "losses": 0,
+        "note": "The oldest player is the one with the earliest stored birthday, so results are ranked by Player.birthday ascending rather than filtered with birthday = MIN(birthday), which matches every player tied on that date.",
+        "origin": "s1090",
+        "sql": "ORDER BY Player.birthday ASC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:player-to-attributes-join-key",
+      "type": "MEANS",
+      "to_entity": "column:player.player-fifa-api-id-1e0d18",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes links to Player through player_fifa_api_id, not player_api_id, which is not a column of Player_Attributes.",
+        "origin": "s1115",
+        "sql": "Player.player_fifa_api_id = Player_Attributes.player_fifa_api_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:long-passing-score",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.long-passing-732a27",
+      "properties": {
+        "_feedback_sources": [
+          "s1077",
+          "s1063",
+          "s1053"
+        ],
+        "losses": 1,
+        "note": "A player's long passing ability is stored as an integer 0-100 FIFA rating in Player_Attributes.long_passing.",
+        "origin": "s1090",
+        "sql": "Player_Attributes.long_passing",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:matches-per-league",
+      "type": "MEANS",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {
+        "_feedback_sources": [
+          "s1023",
+          "s1111",
+          "s1024",
+          "s1133",
+          "s1080",
+          "s1070",
+          "s1081",
+          "s1026",
+          "s1052",
+          "s1027",
+          "s1142",
+          "s1089"
+        ],
+        "losses": 4,
+        "note": "Each Match row is one match and carries its league in Match.league_id, so COUNT(Match.id) grouped by Match.league_id yields a league's match total.",
+        "origin": "s1092",
+        "sql": "COUNT(Match.id)",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:league-of-a-match",
+      "type": "MEANS",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {
+        "_feedback_sources": [
+          "s1133"
+        ],
+        "losses": 1,
+        "note": "A match's league is identified by Match.league_id matching League.id, and the league's name is League.name.",
+        "origin": "s1030",
+        "sql": "Match.league_id = League.id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:player-height",
+      "type": "MEANS",
+      "to_entity": "column:player.height-a28506",
+      "properties": {
+        "_feedback_sources": [
+          "s1112",
+          "s1108",
+          "s1024",
+          "s1137",
+          "s1035",
+          "s1059",
+          "s1069",
+          "s1033",
+          "s1115",
+          "s1040",
+          "s1148",
+          "s1031"
+        ],
+        "losses": 1,
+        "note": "Player.height holds the player's height in centimeters as a decimal value (e.g. 182.88), so height thresholds compare directly against this column.",
+        "origin": "s1068",
+        "sql": "Player.height",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:finishing-rate",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.finishing-565b9b",
+      "properties": {
+        "_feedback_sources": [
+          "s1128",
+          "s1037",
+          "s1045",
+          "s1047",
+          "s1105",
+          "s1096",
+          "s1125",
+          "s1140",
+          "s1086",
+          "s1106"
+        ],
+        "losses": 2,
+        "note": "Finishing is a per-attribute-row FIFA rating stored 0-100 in Player_Attributes, not a value on the Player table.",
+        "origin": "s1144",
+        "sql": "Player_Attributes.finishing",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:player-in-a-match-lineup",
+      "type": "MEANS",
+      "to_entity": "column:match.away-player-1-7f7840",
+      "properties": {
+        "_feedback_sources": [
+          "s1069",
+          "s1146",
+          "s1125",
+          "s1050",
+          "s1139",
+          "s1079"
+        ],
+        "losses": 1,
+        "note": "To associate a Player with a Match, join Player.player_api_id to the lineup slot columns of Match (e.g. Match.away_player_1, or Match.home_player_1 through Match.home_player_11 for home-side slots).",
+        "origin": "s1121",
+        "sql": "Player.player_api_id = Match.away_player_1",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:over-180-cm-tall",
+      "type": "MEANS",
+      "to_entity": "column:player.height-a28506",
+      "properties": {
+        "_feedback_sources": [
+          "s1137",
+          "s1059",
+          "s1069",
+          "s1033",
+          "s1115",
+          "s1040",
+          "s1148"
+        ],
+        "losses": 1,
+        "note": "Player height is stored in centimeters in Player.height, so a cm threshold maps directly to a numeric comparison on that column.",
+        "origin": "s1132",
+        "sql": "Player.height > 180",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:league-with-the-most-matches",
+      "type": "MEANS",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {
+        "_feedback_sources": [
+          "s1132",
+          "s1077",
+          "s1070",
+          "s1145",
+          "s1081",
+          "s1043",
+          "s1147",
+          "s1146",
+          "s1026",
+          "s1124",
+          "s1125",
+          "s1143",
+          "s1056",
+          "s1142",
+          "s1089"
+        ],
+        "losses": 3,
+        "note": "Leagues are aggregated and reported by League.name (leagues sharing a name are counted together), and the answer is the name whose match count equals the maximum per-league count for the season rather than a single arbitrary row.",
+        "origin": "s1092",
+        "sql": "League.name",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:country-of-a-player",
+      "type": "MEANS",
+      "to_entity": "column:match.country-id-4581b7",
+      "properties": {
+        "_feedback_sources": [
+          "s1128",
+          "s1034",
+          "s1047",
+          "s1070",
+          "s1081",
+          "s1138",
+          "s1056",
+          "s1140",
+          "s1086"
+        ],
+        "losses": 2,
+        "note": "A player's country is not stored on Player/Player_Attributes; it is derived from the Match row in which the player appears, and the readable name is Country.name.",
+        "origin": "s1127",
+        "sql": "Match.country_id",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:year-of-a-date",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {
+        "_feedback_sources": [
+          "s1112",
+          "s1030",
+          "s1092",
+          "s1108",
+          "s1111",
+          "s1109",
+          "s1145",
+          "s1028",
+          "s1114"
+        ],
+        "losses": 3,
+        "note": "Player_Attributes.date is stored as text like '2015-12-31 00:00:00', so year ranges should be extracted with STRFTIME('%Y', ...) because plain string bounds exclude rows on the boundary days.",
+        "origin": "s1068",
+        "sql": "STRFTIME('%Y', Player_Attributes.date)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:preferred-foot",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {
+        "_feedback_sources": [
+          "s1050"
+        ],
+        "losses": 0,
+        "note": "Foot preference is stored on Player_Attributes as lowercase text 'left' or 'right' (NULL when unknown).",
+        "origin": "s1052",
+        "sql": "Player_Attributes.preferred_foot = 'left'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:player-attributes-join-key",
+      "type": "MEANS",
+      "to_entity": "column:player.player-fifa-api-id-1e0d18",
+      "properties": {
+        "_feedback_sources": [
+          "s1072",
+          "s1133",
+          "s1035",
+          "s1069",
+          "s1043",
+          "s1099",
+          "s1056",
+          "s1117",
+          "s1050",
+          "s1053",
+          "s1020"
+        ],
+        "losses": 1,
+        "note": "Player_Attributes rows are linked to a player through the FIFA API id column, which may differ from the general player_api_id.",
+        "origin": "s1107",
+        "sql": "Player.player_fifa_api_id = Player_Attributes.player_fifa_api_id",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:average-overall-rating",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {
+        "_feedback_sources": [
+          "s1128",
+          "s1037",
+          "s1072",
+          "s1096",
+          "s1059",
+          "s1033",
+          "s1147",
+          "s1057",
+          "s1040",
+          "s1148",
+          "s1103",
+          "s1095",
+          "s1114",
+          "s1020"
+        ],
+        "losses": 1,
+        "note": "The database computes an average rating as total rating divided by the number of attribute rows, which keeps rows with a NULL rating in the denominator (AVG() would silently skip them).",
+        "origin": "s1068",
+        "sql": "CAST(SUM(Player_Attributes.overall_rating) AS REAL) / COUNT(Player_Attributes.id)",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:player-s-attribute-value",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.potential-a9745a",
+      "properties": {
+        "_feedback_sources": [
+          "s1086",
+          "s1139"
+        ],
+        "losses": 0,
+        "note": "A player's attribute is stored as individual per-row values in Player_Attributes, so asking for the attribute value should return the stored column rather than an aggregate such as AVG over the player's attribute rows.",
+        "origin": "s1063",
+        "sql": "Player_Attributes.potential",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:league-of-a-match",
+      "type": "MEANS",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {
+        "_feedback_sources": [
+          "s1082",
+          "s1077",
+          "s1070",
+          "s1145",
+          "s1081",
+          "s1147",
+          "s1143",
+          "s1056",
+          "s1021",
+          "s1142"
+        ],
+        "losses": 1,
+        "note": "A match's league is identified by Match.league_id matching League.id, and the league's name is League.name.",
+        "origin": "s1030",
+        "sql": "Match.league_id = League.id",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:potential-score",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.potential-a9745a",
+      "properties": {
+        "losses": 0,
+        "note": "\"Potential score\" is the 0-100 FIFA potential stored per row in Player_Attributes.potential, so a request for a player's potential maps to that column value.",
+        "origin": "s1063",
+        "sql": "Player_Attributes.potential",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:highest-crossing-score",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.crossing-69553f",
+      "properties": {
+        "_feedback_sources": [
+          "s1072",
+          "s1096",
+          "s1090",
+          "s1077",
+          "s1059",
+          "s1143",
+          "s1063",
+          "s1020",
+          "s1027"
+        ],
+        "losses": 3,
+        "note": "The crossing score is the 0-100 rating in Player_Attributes.crossing and the maximum of it identifies the best crossing record, which may be tied across several dated records.",
+        "origin": "s1107",
+        "sql": "Player_Attributes.crossing = (SELECT MAX(Player_Attributes.crossing) FROM Player_Attributes)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:player-in-a-match-lineup",
+      "type": "MEANS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "losses": 0,
+        "note": "To associate a Player with a Match, join Player.player_api_id to the lineup slot columns of Match (e.g. Match.away_player_1, or Match.home_player_1 through Match.home_player_11 for home-side slots).",
+        "origin": "s1121",
+        "sql": "Player.player_api_id = Match.away_player_1",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:attribute-date-matching",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes.date is stored as text 'YYYY-MM-DD HH:MM:SS', so the day is compared via SUBSTR(date, 1, 10).",
+        "origin": "s1115",
+        "sql": "SUBSTR(Player_Attributes.date, 1, 10) = 'YYYY-MM-DD'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:2010-season",
+      "type": "MEANS",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {
+        "_feedback_sources": [
+          "s1142",
+          "s1089"
+        ],
+        "losses": 0,
+        "note": "Match.season stores the season as 'startYear/endYear' (e.g. 2009/2010 through 2015/2016), so a season named by its end year 2010 is stored as '2009/2010'.",
+        "origin": "s1028",
+        "sql": "Match.season = '2009/2010'",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:away-win",
+      "type": "MEANS",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {
+        "losses": 0,
+        "note": "An away win means the away side scored strictly more goals than the home side; a draw has equal goals and is not a win.",
+        "origin": "s1028",
+        "sql": "Match.away_team_goal > Match.home_team_goal",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:player-attributes-lookup-by-name",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes rows link to a player by player_api_id, and the human-readable name lives only in Player.player_name, so a name filter requires joining Player to Player_Attributes on player_api_id.",
+        "origin": "s1047",
+        "sql": "Player.player_api_id = Player_Attributes.player_api_id AND Player.player_name = 'Player Name'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:2016-season",
+      "type": "MEANS",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {
+        "_feedback_sources": [
+          "s1108",
+          "s1111",
+          "s1047",
+          "s1132",
+          "s1105",
+          "s1109",
+          "s1145",
+          "s1057",
+          "s1026",
+          "s1103",
+          "s1114",
+          "s1031",
+          "s1106",
+          "s1142",
+          "s1089"
+        ],
+        "losses": 2,
+        "note": "Match.season stores the season as a text range starting with the earlier year, so the season ending in 2016 is stored as '2015/2016'.",
+        "origin": "s1030",
+        "sql": "Match.season = '2015/2016'",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:player-appears-in-match-lineup",
+      "type": "MEANS",
+      "to_entity": "column:match.home-player-8-6d518b",
+      "properties": {
+        "_feedback_sources": [
+          "s1121",
+          "s1080",
+          "s1026",
+          "s1143"
+        ],
+        "losses": 1,
+        "note": "Linking a player to a match (and thus a country) is done by matching the player's api id to a lineup slot column on Match, such as the home position-8 slot.",
+        "origin": "s1127",
+        "sql": "Match.home_player_8",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:away-win",
+      "type": "MEANS",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {
+        "losses": 0,
+        "note": "An away win means the away side scored strictly more goals than the home side; a draw has equal goals and is not a win.",
+        "origin": "s1028",
+        "sql": "Match.away_team_goal > Match.home_team_goal",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:player-s-overall-strength-rating",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {
+        "_feedback_sources": [
+          "s1037",
+          "s1072",
+          "s1137",
+          "s1096",
+          "s1090",
+          "s1147",
+          "s1148",
+          "s1103",
+          "s1063",
+          "s1114",
+          "s1020"
+        ],
+        "losses": 3,
+        "note": "The column Player_Attributes.overall_rating stores the 0-100 FIFA overall rating, where a higher number means a stronger overall player.",
+        "origin": "s1122",
+        "sql": "Player_Attributes.overall_rating",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:normal-build-up-play-dribbling-class",
+      "type": "MEANS",
+      "to_entity": "column:team-attributes.buildupplaydribblingclass-c179f9",
+      "properties": {
+        "_feedback_sources": [
+          "s1095"
+        ],
+        "losses": 0,
+        "note": "buildUpPlayDribblingClass stores one of three category codes: 'Little', 'Normal', 'Lots', so the phrase maps to a direct equality on that column.",
+        "origin": "s1041",
+        "sql": "Team_Attributes.buildUpPlayDribblingClass = 'Normal'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:year-of-team-attributes-date",
+      "type": "MEANS",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {
+        "_feedback_sources": [
+          "s1046",
+          "s1028"
+        ],
+        "losses": 1,
+        "note": "Team_Attributes.date is stored as a 'YYYY-MM-DD HH:MM:SS' text, so a calendar year is extracted with SUBSTR(date, 1, 4).",
+        "origin": "s1041",
+        "sql": "SUBSTR(Team_Attributes.date, 1, 4) = '2014'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:player-attributes-join-key",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.player-fifa-api-id-f5f113",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes rows are linked to a player through the FIFA API id column, which may differ from the general player_api_id.",
+        "origin": "s1107",
+        "sql": "Player.player_fifa_api_id = Player_Attributes.player_fifa_api_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:average-chance-creation-passing",
+      "type": "MEANS",
+      "to_entity": "column:team-attributes.chancecreationpassing-bb4d99",
+      "properties": {
+        "losses": 0,
+        "note": "The comparison threshold must be the average over the same filtered population (same dribbling class and year) as the outer query, computed as SUM(chanceCreationPassing)/COUNT(team rows) over the joined rows rather than AVG over all attribute rows.",
+        "origin": "s1041",
+        "sql": "(SELECT CAST(SUM(Team_Attributes.chanceCreationPassing) AS REAL) / COUNT(Team.id) FROM Team INNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id WHERE Team_Attributes.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(Team_Attributes.date, 1, 4) = '2014')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:tallest-player",
+      "type": "MEANS",
+      "to_entity": "column:player.height-a28506",
+      "properties": {
+        "_feedback_sources": [
+          "s1079"
+        ],
+        "losses": 0,
+        "note": "Ranking players by stature means ordering by Player.height in descending numeric order.",
+        "origin": "s1021",
+        "sql": "Player.height DESC",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:average-chance-creation-passing",
+      "type": "MEANS",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {
+        "losses": 0,
+        "note": "The comparison threshold must be the average over the same filtered population (same dribbling class and year) as the outer query, computed as SUM(chanceCreationPassing)/COUNT(team rows) over the joined rows rather than AVG over all attribute rows.",
+        "origin": "s1041",
+        "sql": "(SELECT CAST(SUM(Team_Attributes.chanceCreationPassing) AS REAL) / COUNT(Team.id) FROM Team INNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id WHERE Team_Attributes.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(Team_Attributes.date, 1, 4) = '2014')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:average-chance-creation-passing",
+      "type": "MEANS",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {
+        "losses": 0,
+        "note": "The comparison threshold must be the average over the same filtered population (same dribbling class and year) as the outer query, computed as SUM(chanceCreationPassing)/COUNT(team rows) over the joined rows rather than AVG over all attribute rows.",
+        "origin": "s1041",
+        "sql": "(SELECT CAST(SUM(Team_Attributes.chanceCreationPassing) AS REAL) / COUNT(Team.id) FROM Team INNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id WHERE Team_Attributes.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(Team_Attributes.date, 1, 4) = '2014')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:player-name",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "_feedback_sources": [
+          "s1030",
+          "s1092",
+          "s1043"
+        ],
+        "losses": 2,
+        "note": "Player names live in Player.player_name and are matched to attribute rows via the shared Player.player_api_id = Player_Attributes.player_api_id key.",
+        "origin": "s1122",
+        "sql": "Player.player_name",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:average-chance-creation-passing",
+      "type": "MEANS",
+      "to_entity": "column:team.id-0a7f56",
+      "properties": {
+        "losses": 0,
+        "note": "The comparison threshold must be the average over the same filtered population (same dribbling class and year) as the outer query, computed as SUM(chanceCreationPassing)/COUNT(team rows) over the joined rows rather than AVG over all attribute rows.",
+        "origin": "s1041",
+        "sql": "(SELECT CAST(SUM(Team_Attributes.chanceCreationPassing) AS REAL) / COUNT(Team.id) FROM Team INNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id WHERE Team_Attributes.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(Team_Attributes.date, 1, 4) = '2014')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:player-age-30-or-below",
+      "type": "MEANS",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {
+        "_feedback_sources": [
+          "s1137",
+          "s1035",
+          "s1059",
+          "s1033",
+          "s1041",
+          "s1148",
+          "s1031"
+        ],
+        "losses": 1,
+        "note": "Age is measured from Player.birthday (a full 'YYYY-MM-DD HH:MM:SS' timestamp) against the current time, so the comparison must be a duration in days, not a subtraction of year parts.",
+        "origin": "s1121",
+        "sql": "datetime(CURRENT_TIMESTAMP, 'localtime') - datetime(Player.birthday) < 31",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:player-identifier",
+      "type": "MEANS",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {
+        "losses": 0,
+        "note": "Player.id is the internal player identifier and Player_Attributes.id references it, while Player.player_api_id is the external API id and does not link attribute rows to the player record.",
+        "origin": "s1027",
+        "sql": "Player.id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percent-higher-overall-rating",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {
+        "_feedback_sources": [
+          "s1148",
+          "s1103",
+          "s1052",
+          "s1046",
+          "s1114",
+          "s1020",
+          "s1031"
+        ],
+        "losses": 1,
+        "note": "The percentage is computed as (subject's summed overall_rating - other player's summed overall_rating) * 100 divided by the subject's summed overall_rating, aggregating all attribute rows for that date.",
+        "origin": "s1115",
+        "sql": "(SUM(CASE WHEN Player.player_name = 'Subject' THEN Player_Attributes.overall_rating ELSE 0 END) * 1.0 - SUM(CASE WHEN Player.player_name = 'Other' THEN Player_Attributes.overall_rating ELSE 0 END)) * 100 / SUM(CASE WHEN Player.player_name = 'Subject' THEN Player_Attributes.overall_rating ELSE 0 END)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:player-full-name",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "losses": 0,
+        "note": "A player's name is stored as Player.player_name.",
+        "origin": "s1027",
+        "sql": "Player.player_name",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:prefer-left-foot",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {
+        "_feedback_sources": [
+          "s1045",
+          "s1132",
+          "s1024",
+          "s1044",
+          "s1022",
+          "s1121",
+          "s1133",
+          "s1137",
+          "s1105",
+          "s1080",
+          "s1033",
+          "s1099",
+          "s1040",
+          "s1124",
+          "s1125",
+          "s1140",
+          "s1117",
+          "s1027"
+        ],
+        "losses": 5,
+        "note": "The preferred foot of a player is stored in Player_Attributes.preferred_foot with the lowercase codes 'left' and 'right'.",
+        "origin": "s1037",
+        "sql": "Player_Attributes.preferred_foot = 'left'",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:highest-penalties",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.penalties-abf2c6",
+      "properties": {
+        "losses": 0,
+        "note": "Penalties is a per-player attribute score stored in Player_Attributes.penalties, so ranking players by penalties means ordering attribute rows by that column descending rather than aggregating a MAX per player.",
+        "origin": "s1027",
+        "sql": "ORDER BY Player_Attributes.penalties DESC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:date-year-filter",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {
+        "_feedback_sources": [
+          "s1030",
+          "s1092",
+          "s1108",
+          "s1111",
+          "s1109",
+          "s1145",
+          "s1057",
+          "s1028"
+        ],
+        "losses": 3,
+        "note": "Player_Attributes.date is stored as text like '2010-08-30 00:00:00', so the year is the first four characters.",
+        "origin": "s1034",
+        "sql": "SUBSTR(Player_Attributes.`date`, 1, 4) = '2010'",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:player-to-attributes-join-key",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.player-fifa-api-id-f5f113",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes links to Player through player_fifa_api_id, not player_api_id, which is not a column of Player_Attributes.",
+        "origin": "s1115",
+        "sql": "Player.player_fifa_api_id = Player_Attributes.player_fifa_api_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:average-chance-creation-passing",
+      "type": "MEANS",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {
+        "_feedback_sources": [
+          "s1117",
+          "s1046",
+          "s1053",
+          "s1020"
+        ],
+        "losses": 0,
+        "note": "The comparison threshold must be the average over the same filtered population (same dribbling class and year) as the outer query, computed as SUM(chanceCreationPassing)/COUNT(team rows) over the joined rows rather than AVG over all attribute rows.",
+        "origin": "s1041",
+        "sql": "(SELECT CAST(SUM(Team_Attributes.chanceCreationPassing) AS REAL) / COUNT(Team.id) FROM Team INNER JOIN Team_Attributes ON Team.team_api_id = Team_Attributes.team_api_id WHERE Team_Attributes.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(Team_Attributes.date, 1, 4) = '2014')",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:season-format",
+      "type": "MEANS",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {
+        "_feedback_sources": [
+          "s1142",
+          "s1089"
+        ],
+        "losses": 0,
+        "note": "Every Match.season value has the text form 'YYYY/YYYY' where the first four characters are the season's starting calendar year.",
+        "origin": "s1028",
+        "sql": "substr(Match.season, 1, 4)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:vision-score",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.vision-c495ad",
+      "properties": {
+        "_feedback_sources": [
+          "s1144",
+          "s1128",
+          "s1051",
+          "s1098",
+          "s1023",
+          "s1047",
+          "s1107",
+          "s1090",
+          "s1140",
+          "s1063",
+          "s1086"
+        ],
+        "losses": 6,
+        "note": "Vision is a 0-100 FIFA attribute stored on Player_Attributes per player rating, with NULLs present for some rows.",
+        "origin": "s1127",
+        "sql": "Player_Attributes.vision",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:percent-higher-overall-rating",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "losses": 0,
+        "note": "The percentage is computed as (subject's summed overall_rating - other player's summed overall_rating) * 100 divided by the subject's summed overall_rating, aggregating all attribute rows for that date.",
+        "origin": "s1115",
+        "sql": "(SUM(CASE WHEN Player.player_name = 'Subject' THEN Player_Attributes.overall_rating ELSE 0 END) * 1.0 - SUM(CASE WHEN Player.player_name = 'Other' THEN Player_Attributes.overall_rating ELSE 0 END)) * 100 / SUM(CASE WHEN Player.player_name = 'Subject' THEN Player_Attributes.overall_rating ELSE 0 END)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:indicate-his-name",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "_feedback_sources": [
+          "s1079"
+        ],
+        "losses": 0,
+        "note": "When the question asks only for the name of the ranked player, the height column is the ranking criterion and should not be added to the output columns.",
+        "origin": "s1021",
+        "sql": "Player.player_name",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:header-heading-accuracy",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.heading-accuracy-e67d60",
+      "properties": {
+        "_feedback_sources": [
+          "s1105",
+          "s1040",
+          "s1140",
+          "s1086",
+          "s1106"
+        ],
+        "losses": 0,
+        "note": "A player's header ability/accuracy is stored as Player_Attributes.heading_accuracy (0-100), distinct from finishing, shot power, or dribbling skills.",
+        "origin": "s1047",
+        "sql": "Player_Attributes.heading_accuracy",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:born-after-the-1990s",
+      "type": "MEANS",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {
+        "_feedback_sources": [
+          "s1137",
+          "s1059",
+          "s1033",
+          "s1148",
+          "s1052"
+        ],
+        "losses": 1,
+        "note": "Player.birthday is stored as ISO-like text 'YYYY-MM-DD HH:MM:SS', so a direct string comparison against the year boundary includes every player born after the start of that year (including births inside that year), whereas truncating with SUBSTR(birthday,1,4) wrongly drops those same-year rows.",
+        "origin": "s1133",
+        "sql": "Player.birthday > '1990'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:how-many-players",
+      "type": "MEANS",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes holds one row per player per season, so counting distinct Player.id avoids inflating the player count when joining attributes.",
+        "origin": "s1052",
+        "sql": "COUNT(DISTINCT Player.id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:attribute-records-per-player",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {
+        "losses": 0,
+        "note": "Player_Attributes holds one row per player per season/league, so joining to Player yields several rows for the same person and DISTINCT on an attribute column returns many values instead of the single requested one; pick a single ordered row instead.",
+        "origin": "s1090",
+        "sql": "Player_Attributes.player_api_id = Player.player_api_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:match-ending-as-draw",
+      "type": "MEANS",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {
+        "_feedback_sources": [
+          "s1108",
+          "s1111",
+          "s1132",
+          "s1024",
+          "s1105",
+          "s1109",
+          "s1057",
+          "s1040",
+          "s1027"
+        ],
+        "losses": 2,
+        "note": "A drawn match is one where the home and away goals in Match are equal.",
+        "origin": "s1030",
+        "sql": "Match.home_team_goal = Match.away_team_goal",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:player-s-first-name",
+      "type": "MEANS",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {
+        "_feedback_sources": [
+          "s1077",
+          "s1147",
+          "s1125",
+          "s1140",
+          "s1086"
+        ],
+        "losses": 0,
+        "note": "Player.player_name holds the whole name in one text field, so a first-name condition is a prefix match on that same column (LIKE 'Firstname%'), not a separate first-name column.",
+        "origin": "s1133",
+        "sql": "Player.player_name",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:curve-score",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.curve-4ec018",
+      "properties": {
+        "_feedback_sources": [
+          "s1128",
+          "s1051",
+          "s1098",
+          "s1023",
+          "s1037",
+          "s1107",
+          "s1072",
+          "s1137",
+          "s1096",
+          "s1090",
+          "s1140",
+          "s1103",
+          "s1063"
+        ],
+        "losses": 5,
+        "note": "Curve is a per-attribute-row FIFA rating stored 0-100 in Player_Attributes.",
+        "origin": "s1144",
+        "sql": "Player_Attributes.curve",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:away-team",
+      "type": "MEANS",
+      "to_entity": "column:match.away-team-api-id-62eb26",
+      "properties": {
+        "_feedback_sources": [
+          "s1117",
+          "s1095",
+          "s1046",
+          "s1139"
+        ],
+        "losses": 0,
+        "note": "The away-side club in a match is identified by Match.away_team_api_id, which links to Team.team_api_id.",
+        "origin": "s1146",
+        "sql": "Match.away_team_api_id",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:player-attributes-lookup-by-name",
+      "type": "MEANS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "_feedback_sources": [
+          "s1024",
+          "s1133"
+        ],
+        "losses": 1,
+        "note": "Player_Attributes rows link to a player by player_api_id, and the human-readable name lives only in Player.player_name, so a name filter requires joining Player to Player_Attributes on player_api_id.",
+        "origin": "s1047",
+        "sql": "Player.player_api_id = Player_Attributes.player_api_id AND Player.player_name = 'Player Name'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:attacking-during-attack-moves",
+      "type": "MEANS",
+      "to_entity": "column:player-attributes.attacking-work-rate-924593",
+      "properties": {
+        "_feedback_sources": [
+          "s1125",
+          "s1052",
+          "s1050",
+          "s1021",
+          "s1106"
+        ],
+        "losses": 2,
+        "note": "The stored value 'high' in Player_Attributes.attacking_work_rate is defined as the player going to be in all of your attack moves, while 'medium' selects attack actions to join and 'low' means remaining in position while the team attacks.",
+        "origin": "s1124",
+        "sql": "Player_Attributes.attacking_work_rate = 'high'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "example:s1040",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1148",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1105",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1115",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1035",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-fifa-api-id-863c34",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1099",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1057",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1040",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.heading-accuracy-e67d60",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1089",
+      "type": "TOUCHES",
+      "to_entity": "column:match.country-id-4581b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1047",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1114",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1024",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1063",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1124",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1043",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1089",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1079",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1069",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1068",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1107",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-fifa-api-id-f5f113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1096",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:player.weight-393fe5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1095",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1072",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1051",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1140",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.agility-7f0e71",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1124",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1111",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1095",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1022",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1027",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1050",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1021",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1098",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:match.country-id-4581b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1139",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1115",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-fifa-api-id-f5f113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1031",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1106",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1144",
+      "type": "TOUCHES",
+      "to_entity": "column:player.weight-393fe5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1082",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1034",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1106",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1121",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1145",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1125",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1108",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1115",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1142",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1108",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1051",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.potential-a9745a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1124",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1137",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.stamina-fe9cd7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1144",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.curve-4ec018",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1107",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-fifa-api-id-1e0d18",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1046",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1098",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.chancecreationpassing-bb4d99",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1059",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1068",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1141",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplayspeedclass-b34a91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1081",
+      "type": "TOUCHES",
+      "to_entity": "column:league.country-id-bd76d5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1108",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplayspeedclass-b34a91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1070",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1111",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1056",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1111",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.chancecreationpassingclass-eca05d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1020",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1095",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplayspeed-ecf526",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1052",
+      "type": "TOUCHES",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1147",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1117",
+      "type": "TOUCHES",
+      "to_entity": "column:player.weight-393fe5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1089",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1121",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1057",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1106",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1068",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1040",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1140",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1044",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1137",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.strength-e252e4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1081",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1092",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1027",
+      "type": "TOUCHES",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1099",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1096",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1145",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1086",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1082",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1144",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1066",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1109",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1108",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1121",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1140",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1037",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1077",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1141",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1080",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1072",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1103",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1107",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-api-id-62eb26",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1111",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1022",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1125",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1053",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.chancecreationpassingclass-eca05d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1114",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1147",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1031",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.sprint-speed-c3d0f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1106",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1034",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1115",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-fifa-api-id-1e0d18",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1112",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1109",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1146",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1090",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1074",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1023",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.defensive-work-rate-29e652",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1065",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1140",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1139",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1043",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-short-name-d925cc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1045",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1050",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1111",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1112",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1107",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1056",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1047",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1047",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1107",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.crossing-69553f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1074",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-api-id-221b99",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1090",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.long-passing-732a27",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1046",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplaypositioningclass-ed07ef",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1092",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1057",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1143",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1021",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-player-8-6d518b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1148",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1047",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.heading-accuracy-e67d60",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1034",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1072",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1122",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1068",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1052",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1074",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1052",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1065",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1081",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1057",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1098",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.chancecreationpassingclass-eca05d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplaydribblingclass-c179f9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1072",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1079",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1112",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1105",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1027",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.penalties-abf2c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1070",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1033",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1148",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1121",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-player-1-7f7840",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1112",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.chancecreationcrossingclass-32be6d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1046",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1031",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1124",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.attacking-work-rate-924593",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1145",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1096",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1037",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1066",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1144",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.finishing-565b9b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1082",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1052",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1146",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1146",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1044",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1092",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1139",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1065",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1138",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1053",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1133",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1098",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1086",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.heading-accuracy-e67d60",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1109",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplaydribblingclass-c179f9",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1063",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1138",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1040",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1047",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-goal-746cc8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1031",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1139",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1144",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1056",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1125",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1099",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1089",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1109",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1106",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.defensive-work-rate-29e652",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1069",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1099",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1108",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1053",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-short-name-d925cc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1143",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1140",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.acceleration-8ea55f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1051",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-player-1-0be65d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1125",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1112",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1045",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1122",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1024",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.crossing-69553f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1072",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team.id-0a7f56",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1133",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1145",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1142",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1114",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1056",
+      "type": "TOUCHES",
+      "to_entity": "column:league.country-id-bd76d5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1109",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-short-name-d925cc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1023",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1051",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1147",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1057",
+      "type": "TOUCHES",
+      "to_entity": "column:match.country-id-4581b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1068",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1082",
+      "type": "TOUCHES",
+      "to_entity": "column:league.country-id-bd76d5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1127",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.vision-c495ad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1070",
+      "type": "TOUCHES",
+      "to_entity": "column:country.name-048150",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1122",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:match.country-id-4581b7",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1139",
+      "type": "TOUCHES",
+      "to_entity": "column:match.date-2838ae",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1068",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1063",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.potential-a9745a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1066",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplaypassingclass-2d9c54",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1105",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1022",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1080",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1098",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1114",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1037",
+      "type": "TOUCHES",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1139",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1080",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.attacking-work-rate-924593",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1090",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1063",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1031",
+      "type": "TOUCHES",
+      "to_entity": "column:player.birthday-c01a5d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1033",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1081",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1065",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplayspeedclass-b34a91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-player-1-7f7840",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1057",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1089",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1132",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1145",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1096",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1122",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1077",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-short-name-d925cc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1035",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.buildupplayspeed-ecf526",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1053",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.chancecreationpassing-bb4d99",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1041",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.date-d53fa1",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1125",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.finishing-565b9b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1103",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1132",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1027",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1096",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1045",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.attacking-work-rate-924593",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1146",
+      "type": "TOUCHES",
+      "to_entity": "column:match.away-team-api-id-62eb26",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1114",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1050",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1148",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1028",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1138",
+      "type": "TOUCHES",
+      "to_entity": "column:league.country-id-bd76d5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1040",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1144",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1142",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1115",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.overall-rating-64ad3f",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1105",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.attacking-work-rate-924593",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-api-id-221b99",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1046",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1030",
+      "type": "TOUCHES",
+      "to_entity": "column:match.home-team-goal-f3ffcd",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1045",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1086",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1140",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.sprint-speed-c3d0f3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1103",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.date-49697d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1141",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1147",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:match.season-3277c4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1117",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1103",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-name-0d8e0d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1128",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1020",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1105",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1143",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1059",
+      "type": "TOUCHES",
+      "to_entity": "column:player.height-a28506",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1070",
+      "type": "TOUCHES",
+      "to_entity": "column:league.country-id-bd76d5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1138",
+      "type": "TOUCHES",
+      "to_entity": "column:country.id-b76afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1143",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1142",
+      "type": "TOUCHES",
+      "to_entity": "column:league.id-9ace91",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1103",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1090",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1074",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-short-name-d925cc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1095",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1037",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1023",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.id-e0855b",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1092",
+      "type": "TOUCHES",
+      "to_entity": "column:league.name-d422c6",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1022",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.potential-a9745a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1066",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-short-name-d925cc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1086",
+      "type": "TOUCHES",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1092",
+      "type": "TOUCHES",
+      "to_entity": "column:match.id-bf6cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1050",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1133",
+      "type": "TOUCHES",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1037",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.preferred-foot-214929",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1114",
+      "type": "TOUCHES",
+      "to_entity": "column:player-attributes.player-api-id-4a84f2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1141",
+      "type": "TOUCHES",
+      "to_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1052",
+      "type": "TOUCHES",
+      "to_entity": "column:player.weight-393fe5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1142",
+      "type": "TOUCHES",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1026",
+      "type": "TOUCHES",
+      "to_entity": "column:team.team-long-name-1bf647",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:player-attributes.player-fifa-api-id-f5f113",
+      "type": "JOINS",
+      "to_entity": "column:player.player-fifa-api-id-1e0d18",
+      "properties": {
+        "_win_sources": [
+          "s1107",
+          "s1115"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:match.away-player-1-7f7840",
+      "type": "JOINS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "_win_sources": [
+          "s1128",
+          "s1121"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:player-attributes.player-api-id-4a84f2",
+      "type": "JOINS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "_win_sources": [
+          "s1068",
+          "s1127",
+          "s1051",
+          "s1122",
+          "s1037",
+          "s1045",
+          "s1047",
+          "s1022",
+          "s1072",
+          "s1105",
+          "s1096",
+          "s1090",
+          "s1147",
+          "s1099",
+          "s1040",
+          "s1124",
+          "s1125",
+          "s1148",
+          "s1140",
+          "s1103",
+          "s1052",
+          "s1050",
+          "s1063",
+          "s1114",
+          "s1086",
+          "s1031",
+          "s1106"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 27
+      }
+    },
+    {
+      "from_entity": "column:country.id-b76afc",
+      "type": "JOINS",
+      "to_entity": "column:league.country-id-bd76d5",
+      "properties": {
+        "_win_sources": [
+          "s1082",
+          "s1070",
+          "s1081",
+          "s1138",
+          "s1056"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "column:player-attributes.id-e0855b",
+      "type": "JOINS",
+      "to_entity": "column:player.id-03d8b5",
+      "properties": {
+        "_win_sources": [
+          "s1027"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:match.home-team-api-id-221b99",
+      "type": "JOINS",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {
+        "_win_sources": [
+          "s1074",
+          "s1026"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:match.away-team-api-id-62eb26",
+      "type": "JOINS",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {
+        "_win_sources": [
+          "s1146",
+          "s1028"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "column:match.home-player-8-6d518b",
+      "type": "JOINS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "_win_sources": [
+          "s1127"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:team-attributes.team-api-id-1bf0d3",
+      "type": "JOINS",
+      "to_entity": "column:team.team-api-id-48d3e5",
+      "properties": {
+        "_win_sources": [
+          "s1112",
+          "s1098",
+          "s1108",
+          "s1111",
+          "s1065",
+          "s1066",
+          "s1141",
+          "s1109",
+          "s1041",
+          "s1095",
+          "s1046",
+          "s1053"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "column:country.id-b76afc",
+      "type": "JOINS",
+      "to_entity": "column:match.country-id-4581b7",
+      "properties": {
+        "_win_sources": [
+          "s1127",
+          "s1128",
+          "s1057",
+          "s1089"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "column:match.home-player-1-0be65d",
+      "type": "JOINS",
+      "to_entity": "column:player.player-api-id-477c51",
+      "properties": {
+        "_win_sources": [
+          "s1128"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "column:league.id-9ace91",
+      "type": "JOINS",
+      "to_entity": "column:match.league-id-c6f153",
+      "properties": {
+        "_win_sources": [
+          "s1030",
+          "s1092",
+          "s1145",
+          "s1143",
+          "s1028",
+          "s1139",
+          "s1142"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 7
+      }
+    }
+  ]
+}

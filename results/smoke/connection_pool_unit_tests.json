@@ -1,0 +1,8 @@
+{
+  "command": ".venv/bin/pytest -q",
+  "passed": 122,
+  "skipped": 4,
+  "failed": 0,
+  "seconds": 8.49,
+  "scope": "Full nonintegration suite after connection-pool repair; four real-graph integration cases deliberately deferred"
+}

@@ -1,0 +1,4806 @@
+{
+  "entities": [
+    {
+      "id": "column:customers.currency-3f5cd2",
+      "type": "Column",
+      "name": "customers.Currency",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [\"CZK\", \"EUR\"]}"
+      }
+    },
+    {
+      "id": "column:customers.segment-e2126a",
+      "type": "Column",
+      "name": "customers.Segment",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 0, \"top\": [\"SME\", \"LAM\", \"KAM\"]}"
+      }
+    },
+    {
+      "id": "column:gasstations.gasstationid-096311",
+      "type": "Column",
+      "name": "gasstations.GasStationID",
+      "properties": {
+        "profile": "{\"distinct\": 5716, \"nulls\": 0, \"top\": [44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68]}"
+      }
+    },
+    {
+      "id": "column:gasstations.segment-258d04",
+      "type": "Column",
+      "name": "gasstations.Segment",
+      "properties": {
+        "profile": "{\"distinct\": 5, \"nulls\": 0, \"top\": [\"Other\", \"Premium\", \"Noname\", \"Value for money\", \"Discount\"]}"
+      }
+    },
+    {
+      "id": "column:transactions-1k.customerid-3d5afc",
+      "type": "Column",
+      "name": "transactions_1k.CustomerID",
+      "properties": {
+        "profile": "{\"distinct\": 517, \"nulls\": 0, \"top\": [19182, 31543, 7626, 33094, 30895, 19907, 12459, 6266, 5381, 46707, 30837, 24700, 7471, 5983, 5328, 44480, 38508, 28134, 27026, 19131, 5476, 48079, 42861, 19870, 12702]}"
+      }
+    },
+    {
+      "id": "column:transactions-1k.date-4222b5",
+      "type": "Column",
+      "name": "transactions_1k.Date",
+      "properties": {
+        "profile": "{\"distinct\": 4, \"nulls\": 0, \"top\": [\"2012-08-24\", \"2012-08-25\", \"2012-08-26\", \"2012-08-23\"]}"
+      }
+    },
+    {
+      "id": "column:transactions-1k.gasstationid-a8beb8",
+      "type": "Column",
+      "name": "transactions_1k.GasStationID",
+      "properties": {
+        "profile": "{\"distinct\": 437, \"nulls\": 0, \"top\": [1155, 448, 48, 3748, 3621, 636, 4431, 345, 5300, 4347, 3396, 3319, 1107, 910, 3763, 3566, 3505, 3398, 2417, 967, 373, 5298, 4545, 3694, 3121]}"
+      }
+    },
+    {
+      "id": "column:transactions-1k.price-503613",
+      "type": "Column",
+      "name": "transactions_1k.Price",
+      "properties": {
+        "profile": "{\"distinct\": 930, \"nulls\": 0, \"top\": [123.91, 43.56, 53.29, 72.76, 38.69, 460.75, 124.05, 36.26, 35.98, 28.96, 24.09, 737.95, 709.85, 683.63, 624.38, 591.54, 583.74, 582.87, 575.94, 572.81, 554.09, 504.3, 479.48, 470.34, 332.45]}"
+      }
+    },
+    {
+      "id": "column:transactions-1k.time-a1cbad",
+      "type": "Column",
+      "name": "transactions_1k.Time",
+      "properties": {
+        "profile": "{\"distinct\": 599, \"nulls\": 0, \"top\": [\"08:57:00\", \"16:20:00\", \"16:04:00\", \"15:23:00\", \"11:55:00\", \"09:50:00\", \"08:26:00\", \"08:24:00\", \"06:17:00\", \"17:54:00\", \"17:38:00\", \"17:09:00\", \"15:53:00\", \"14:54:00\", \"13:52:00\", \"13:02:00\", \"12:05:00\", \"11:54:00\", \"11:47:00\", \"11:31:00\", \"11:11:00\", \"09:40:00\", \"09:18:00\", \"08:16:00\", \"07:53:00\"]}"
+      }
+    },
+    {
+      "id": "column:yearmonth.consumption-64b1f0",
+      "type": "Column",
+      "name": "yearmonth.Consumption",
+      "properties": {
+        "profile": "{\"distinct\": 279091, \"nulls\": 0, \"top\": [33.22, 0.75, 683.57, 26.04, 43.56, 312.16, 64.99, 38.69, 82.47, 1.58, 624.32, 25.83, 72.73, 52.08, 66.44, 32.94, 28.96, 468.24, 36.26, 81.79, 36.37, 164.94, 1.49, 26.52, 41.12]}"
+      }
+    },
+    {
+      "id": "column:yearmonth.customerid-1d0cf4",
+      "type": "Column",
+      "name": "yearmonth.CustomerID",
+      "properties": {
+        "profile": "{\"distinct\": 30566, \"nulls\": 0, \"top\": [46987, 45554, 45354, 45348, 44480, 42861, 42164, 39281, 38508, 35679, 35570, 35042, 33373, 33340, 33094, 31881, 31543, 30999, 29174, 29084, 28504, 28450, 28134, 25986, 24369]}"
+      }
+    },
+    {
+      "id": "column:yearmonth.date-e80b01",
+      "type": "Column",
+      "name": "yearmonth.Date",
+      "properties": {
+        "profile": "{\"distinct\": 21, \"nulls\": 0, \"top\": [\"201305\", \"201304\", \"201306\", \"201307\", \"201303\", \"201308\", \"201309\", \"201310\", \"201311\", \"201203\", \"201206\", \"201205\", \"201202\", \"201204\", \"201208\", \"201201\", \"201207\", \"201209\", \"201302\", \"201301\", \"201112\"]}"
+      }
+    },
+    {
+      "id": "example:s1470",
+      "type": "Example",
+      "name": "How many gas stations in CZE has Premium gas?",
+      "aliases": [],
+      "properties": {
+        "key": "s1470",
+        "learning_complete": true,
+        "sql": "-- This SQL query counts the number of gas stations in the Czech Republic (CZE) belonging to the \"Premium\" segment.\nSELECT COUNT(*) AS PremiumGasStations\nFROM gasstations\nWHERE Country = 'CZE'\n  AND Segment = 'Premium'"
+      }
+    },
+    {
+      "id": "example:s1471",
+      "type": "Example",
+      "name": "What is the ratio of customers who pay in EUR against customers who pay in CZK?",
+      "aliases": [],
+      "properties": {
+        "key": "s1471",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT CAST(SUM(IIF(T1.Currency = 'EUR', 1, 0)) AS REAL) / SUM(IIF(T1.Currency = 'CZK', 1, 0)) AS EUR_to_CZK_ratio\nFROM customers AS T1"
+      }
+    },
+    {
+      "id": "example:s1472",
+      "type": "Example",
+      "name": "In 2012, who had the least consumption in LAM?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1472",
+        "learning_complete": true,
+        "sql": "SELECT T1.CustomerID FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Segment = 'LAM' AND SUBSTR(T2.Date, 1, 4) = '2012' GROUP BY T1.CustomerID ORDER BY SUM(T2.Consumption) ASC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1473",
+      "type": "Example",
+      "name": "What was the average monthly consumption of customers in SME for the year 2013?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "customers",
+            "Segment"
+          ]
+        ],
+        "key": "s1473",
+        "learning_complete": true,
+        "sql": "SELECT AVG(T2.Consumption) / 12 FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE SUBSTR(T2.Date, 1, 4) = '2013' AND T1.Segment = 'SME'"
+      }
+    },
+    {
+      "id": "example:s1474",
+      "type": "Example",
+      "name": "Which customers, paying in CZK, consumed the most gas in 2011?",
+      "aliases": [],
+      "properties": {
+        "key": "s1474",
+        "learning_complete": true,
+        "sql": "-- Which customers, paying in CZK, consumed the most gas in 2011?\nSELECT T2.CustomerID\nFROM customers AS T1\nINNER JOIN yearmonth AS T2\n    ON T1.CustomerID = T2.CustomerID\nWHERE T1.Currency = 'CZK'\n  AND T2.Date BETWEEN 201101 AND 201112\nGROUP BY T2.CustomerID\nHAVING SUM(T2.Consumption) = (\n    SELECT MAX(T3.TotalCons)\n    FROM (\n        SELECT SUM(T4.Consumption) AS TotalCons\n        FROM customers AS T5\n        INNER JOIN yearmonth AS T4\n            ON T5.CustomerID = T4.CustomerID\n        WHERE T5.Currency = 'CZK'\n          AND T4.Date BETWEEN 201101 AND 201112\n        GROUP BY T4.CustomerID\n    ) AS T3\n)"
+      }
+    },
+    {
+      "id": "example:s1475",
+      "type": "Example",
+      "name": "How many customers in KAM had a consumption of less than 30,000 for the year 2012?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1475",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) FROM ( SELECT T2.CustomerID FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Segment = 'KAM' AND SUBSTRING(T2.Date, 1, 4) = '2012' GROUP BY T2.CustomerID HAVING SUM(T2.Consumption) < 30000 ) AS t1"
+      }
+    },
+    {
+      "id": "example:s1476",
+      "type": "Example",
+      "name": "What was the difference in gas consumption between CZK-paying customers and EUR-paying customers in 2012?",
+      "aliases": [],
+      "properties": {
+        "key": "s1476",
+        "learning_complete": true,
+        "sql": "-- Difference in total gas consumption in 2012 between CZK-paying and EUR-paying customers\nSELECT\n    CAST(SUM(IIF(T1.Currency = 'CZK', T2.Consumption, 0)) AS REAL)\n  - CAST(SUM(IIF(T1.Currency = 'EUR', T2.Consumption, 0)) AS REAL) AS ConsumptionDifference\nFROM customers AS T1\nINNER JOIN yearmonth AS T2\n  ON T1.CustomerID = T2.CustomerID\nWHERE T2.Date BETWEEN '201201' AND '201212'"
+      }
+    },
+    {
+      "id": "example:s1477",
+      "type": "Example",
+      "name": "Which year recorded the most gas use paid in EUR?",
+      "aliases": [],
+      "properties": {
+        "key": "s1477",
+        "learning_complete": true,
+        "sql": "SELECT SUBSTR(T2.Date, 1, 4) AS Year\nFROM customers AS T1\nINNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID\nWHERE T1.Currency = 'EUR'\nGROUP BY SUBSTR(T2.Date, 1, 4)\nORDER BY SUM(T2.Consumption) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1478",
+      "type": "Example",
+      "name": "Which segment had the least consumption?",
+      "aliases": [],
+      "properties": {
+        "key": "s1478",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.Segment\nFROM customers AS T1\nINNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID\nGROUP BY T1.Segment\nORDER BY SUM(T2.Consumption) ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1479",
+      "type": "Example",
+      "name": "Which year recorded the most consumption of gas paid in CZK?",
+      "aliases": [],
+      "properties": {
+        "key": "s1479",
+        "learning_complete": true,
+        "sql": "-- Which year recorded the most consumption of gas paid in CZK?\nSELECT SUBSTR(T2.Date, 1, 4) AS Year\nFROM customers AS T1\nINNER JOIN yearmonth AS T2\n    ON T1.CustomerID = T2.CustomerID\nWHERE T1.Currency = 'CZK'\nGROUP BY SUBSTR(T2.Date, 1, 4)\nORDER BY SUM(T2.Consumption) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1480",
+      "type": "Example",
+      "name": "What was the gas consumption peak month for SME customers in 2013?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1480",
+        "learning_complete": true,
+        "sql": "SELECT SUBSTR(T2.Date, 5, 2) FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE SUBSTR(T2.Date, 1, 4) = '2013' AND T1.Segment = 'SME' GROUP BY SUBSTR(T2.Date, 5, 2) ORDER BY SUM(T2.Consumption) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1481",
+      "type": "Example",
+      "name": "What is the difference in the annual average consumption of the customers with the least amount of consumption paid in CZK for 2013 between SME and LAM, LAM and KAM, and KAM and SME?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1481",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(T1.Segment = 'SME', T2.Consumption, 0)) AS REAL) / COUNT(T1.CustomerID) - CAST(SUM(IIF(T1.Segment = 'LAM', T2.Consumption, 0)) AS REAL) / COUNT(T1.CustomerID) , CAST(SUM(IIF(T1.Segment = 'LAM', T2.Consumption, 0)) AS REAL) / COUNT(T1.CustomerID) - CAST(SUM(IIF(T1.Segment = 'KAM', T2.Consumption, 0)) AS REAL) / COUNT(T1.CustomerID) , CAST(SUM(IIF(T1.Segment = 'KAM', T2.Consumption, 0)) AS REAL) / COUNT(T1.CustomerID) - CAST(SUM(IIF(T1.Segment = 'SME', T2.Consumption, 0)) AS REAL) / COUNT(T1.CustomerID) FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Currency = 'CZK' AND T2.Consumption = ( SELECT MIN(Consumption) FROM yearmonth ) AND T2.Date BETWEEN 201301 AND 201312"
+      }
+    },
+    {
+      "id": "example:s1482",
+      "type": "Example",
+      "name": "Which of the three segments—SME, LAM and KAM—has the biggest and lowest percentage increases in consumption paid in EUR between 2012 and 2013?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1482",
+        "learning_complete": true,
+        "sql": "SELECT CAST((SUM(IIF(T1.Segment = 'SME' AND T2.Date LIKE '2013%', T2.Consumption, 0)) - SUM(IIF(T1.Segment = 'SME' AND T2.Date LIKE '2012%', T2.Consumption, 0))) AS FLOAT) * 100 / SUM(IIF(T1.Segment = 'SME' AND T2.Date LIKE '2012%', T2.Consumption, 0)), CAST(SUM(IIF(T1.Segment = 'LAM' AND T2.Date LIKE '2013%', T2.Consumption, 0)) - SUM(IIF(T1.Segment = 'LAM' AND T2.Date LIKE '2012%', T2.Consumption, 0)) AS FLOAT) * 100 / SUM(IIF(T1.Segment = 'LAM' AND T2.Date LIKE '2012%', T2.Consumption, 0)) , CAST(SUM(IIF(T1.Segment = 'KAM' AND T2.Date LIKE '2013%', T2.Consumption, 0)) - SUM(IIF(T1.Segment = 'KAM' AND T2.Date LIKE '2012%', T2.Consumption, 0)) AS FLOAT) * 100 / SUM(IIF(T1.Segment = 'KAM' AND T2.Date LIKE '2012%', T2.Consumption, 0)) FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID"
+      }
+    },
+    {
+      "id": "example:s1483",
+      "type": "Example",
+      "name": "How much did customer 6 consume in total between August and November 2013?",
+      "aliases": [],
+      "properties": {
+        "key": "s1483",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT SUM(Consumption) AS total_consumption\nFROM yearmonth\nWHERE CustomerID = 6\n  AND Date IN ('201308', '201309', '201310', '201311')"
+      }
+    },
+    {
+      "id": "example:s1484",
+      "type": "Example",
+      "name": "How many more \"discount\" gas stations does the Czech Republic have compared to Slovakia?",
+      "aliases": [],
+      "properties": {
+        "key": "s1484",
+        "learning_complete": true,
+        "sql": "-- Difference in the number of \"discount\" segment gas stations between the Czech Republic and Slovakia\nSELECT\n    (SELECT COUNT(*) FROM gasstations WHERE Country = 'CZE' AND LOWER(Segment) = 'discount')\n  - (SELECT COUNT(*) FROM gasstations WHERE Country = 'SVK' AND LOWER(Segment) = 'discount')\n    AS DiscountStationsDifference"
+      }
+    },
+    {
+      "id": "example:s1485",
+      "type": "Example",
+      "name": "How much more was customer 7 consuming in April 2013 than customer 5?",
+      "aliases": [],
+      "properties": {
+        "key": "s1485",
+        "learning_complete": true,
+        "sql": "-- How much more was customer 7 consuming in April 2013 than customer 5?\nSELECT\n  (SELECT T2.Consumption FROM yearmonth AS T2 WHERE T2.CustomerID = 7 AND T2.Date = '201304')\n  -\n  (SELECT T2.Consumption FROM yearmonth AS T2 WHERE T2.CustomerID = 5 AND T2.Date = '201304') AS consumption_difference"
+      }
+    },
+    {
+      "id": "example:s1486",
+      "type": "Example",
+      "name": "Is it true that more SMEs pay in Czech koruna than in euros? If so, how many more?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1486",
+        "learning_complete": true,
+        "sql": "SELECT SUM(Currency = 'CZK') - SUM(Currency = 'EUR') FROM customers WHERE Segment = 'SME'"
+      }
+    },
+    {
+      "id": "example:s1487",
+      "type": "Example",
+      "name": "Which LAM customer used the Euro as their currency and had the highest consumption in October 2013?",
+      "aliases": [],
+      "properties": {
+        "key": "s1487",
+        "learning_complete": true,
+        "sql": "SELECT T1.CustomerID\nFROM customers AS T1\nINNER JOIN yearmonth AS T2\n  ON T1.CustomerID = T2.CustomerID\nWHERE T1.Segment = 'LAM'\n  AND T1.Currency = 'EUR'\n  AND T2.Date = '201310'\nORDER BY T2.Consumption DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1488",
+      "type": "Example",
+      "name": "Who among KAM's customers consumed the most? How much did it consume?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1488",
+        "learning_complete": true,
+        "sql": "SELECT T2.CustomerID, SUM(T2.Consumption) FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Segment = 'KAM' GROUP BY T2.CustomerID ORDER BY SUM(T2.Consumption) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1489",
+      "type": "Example",
+      "name": "How much did the KAM customers consume in total in May 2013?",
+      "aliases": [],
+      "properties": {
+        "key": "s1489",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT SUM(T2.Consumption) AS total_consumption\nFROM customers AS T1\nINNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID\nWHERE T1.Segment = 'KAM' AND T2.Date = '201305'"
+      }
+    },
+    {
+      "id": "example:s1490",
+      "type": "Example",
+      "name": "How many percent of LAM customer consumed more than 46.73?",
+      "aliases": [],
+      "properties": {
+        "key": "s1490",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(T2.Consumption > 46.73, 1, 0)) AS FLOAT) * 100 / COUNT(T2.CustomerID)\nFROM customers AS T1\nINNER JOIN yearmonth AS T2\n  ON T1.CustomerID = T2.CustomerID\nWHERE T1.Segment = 'LAM'"
+      }
+    },
+    {
+      "id": "example:s1491",
+      "type": "Example",
+      "name": "Which country has more \"value for money\" gas stations? Please give a total number of \"value for money\" gas stations in each country.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "gasstations",
+            "Segment"
+          ]
+        ],
+        "key": "s1491",
+        "learning_complete": true,
+        "sql": "SELECT Country , ( SELECT COUNT(GasStationID) FROM gasstations WHERE Segment = 'Value for money' ) FROM gasstations WHERE Segment = 'Value for money' GROUP BY Country ORDER BY COUNT(GasStationID) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1492",
+      "type": "Example",
+      "name": "What percentage of KAM customers pay in euros?",
+      "aliases": [],
+      "properties": {
+        "key": "s1492",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(Currency = 'EUR', 1, 0)) AS FLOAT) * 100 / COUNT(CustomerID) AS percentage_eur\nFROM customers\nWHERE Segment = 'KAM'"
+      }
+    },
+    {
+      "id": "example:s1493",
+      "type": "Example",
+      "name": "In February 2012, what percentage of customers consumed more than 528.3?",
+      "aliases": [],
+      "properties": {
+        "key": "s1493",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT CAST(SUM(CASE WHEN Consumption > 528.3 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(DISTINCT CustomerID) AS PercentageOfCustomers\nFROM yearmonth\nWHERE Date = '201202'"
+      }
+    },
+    {
+      "id": "example:s1494",
+      "type": "Example",
+      "name": "What percentage of Slovakian gas stations are premium?",
+      "aliases": [],
+      "properties": {
+        "key": "s1494",
+        "learning_complete": true,
+        "sql": "SELECT\n    100.0 * SUM(CASE WHEN Segment = 'Premium' THEN 1 ELSE 0 END) / COUNT(*) AS PremiumPercentage\nFROM gasstations\nWHERE Country = 'SVK'"
+      }
+    },
+    {
+      "id": "example:s1495",
+      "type": "Example",
+      "name": "Which client ID consumed the most in September 2013?",
+      "aliases": [],
+      "properties": {
+        "key": "s1495",
+        "learning_complete": true,
+        "sql": "SELECT yearmonth.CustomerID\nFROM yearmonth\nWHERE yearmonth.Date = '201309'\n  AND yearmonth.Consumption = (\n      SELECT MAX(yearmonth.Consumption)\n      FROM yearmonth\n      WHERE yearmonth.Date = '201309'\n  )"
+      }
+    },
+    {
+      "id": "example:s1496",
+      "type": "Example",
+      "name": "Which client segment consumed the least in September 2013?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1496",
+        "learning_complete": true,
+        "sql": "SELECT T1.Segment FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.Date = '201309' GROUP BY T1.CustomerID ORDER BY SUM(T2.Consumption) ASC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1497",
+      "type": "Example",
+      "name": "Which SME customer consumed the least in June 2012?",
+      "aliases": [],
+      "properties": {
+        "key": "s1497",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.CustomerID\nFROM customers AS T1\nINNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID\nWHERE T1.Segment = 'SME' AND T2.Date = '201206'\nORDER BY T2.Consumption ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1498",
+      "type": "Example",
+      "name": "What is the highest monthly consumption in the year 2012?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "yearmonth",
+            "Date"
+          ]
+        ],
+        "key": "s1498",
+        "learning_complete": true,
+        "sql": "SELECT SUM(Consumption) FROM yearmonth WHERE SUBSTR(Date, 1, 4) = '2012' GROUP BY SUBSTR(Date, 5, 2) ORDER BY SUM(Consumption) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1499",
+      "type": "Example",
+      "name": "What is the biggest monthly consumption of the customers who use euro as their currency?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "customers",
+            "Currency"
+          ]
+        ],
+        "key": "s1499",
+        "learning_complete": true,
+        "sql": "SELECT SUM(T2.Consumption) / 12 AS MonthlyConsumption FROM customers AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Currency = 'EUR' GROUP BY T1.CustomerID ORDER BY MonthlyConsumption DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1500",
+      "type": "Example",
+      "name": "Please list the product description of the products consumed in September, 2013.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1500",
+        "learning_complete": true,
+        "sql": "SELECT T3.Description FROM transactions_1k AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN products AS T3 ON T1.ProductID = T3.ProductID WHERE T2.Date = '201309'"
+      }
+    },
+    {
+      "id": "example:s1501",
+      "type": "Example",
+      "name": "Please list the countries of the gas stations with transactions taken place in June, 2013.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1501",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.Country FROM transactions_1k AS T1 INNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID INNER JOIN yearmonth AS T3 ON T1.CustomerID = T3.CustomerID WHERE T3.Date = '201306'"
+      }
+    },
+    {
+      "id": "example:s1502",
+      "type": "Example",
+      "name": "Please list the chains of the gas stations with transactions in euro.",
+      "aliases": [],
+      "properties": {
+        "key": "s1502",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T3.ChainID\nFROM transactions_1k AS T1\nINNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID\nINNER JOIN gasstations AS T3 ON T1.GasStationID = T3.GasStationID\nWHERE T2.Currency = 'EUR'"
+      }
+    },
+    {
+      "id": "example:s1503",
+      "type": "Example",
+      "name": "Please list the product description of the products bought in transactions in euro.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1503",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.ProductID, T3.Description FROM transactions_1k AS T1 INNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID INNER JOIN products AS T3 ON T1.ProductID = T3.ProductID WHERE T2.Currency = 'EUR'"
+      }
+    },
+    {
+      "id": "example:s1504",
+      "type": "Example",
+      "name": "What is the average total price of the transactions taken place in January, 2012?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1504",
+        "learning_complete": true,
+        "sql": "SELECT AVG(Amount) FROM transactions_1k WHERE Date LIKE '2012-01%'"
+      }
+    },
+    {
+      "id": "example:s1505",
+      "type": "Example",
+      "name": "Among the customers who paid in euro, how many of them have a monthly consumption of over 1000?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "yearmonth",
+            "Consumption"
+          ]
+        ],
+        "key": "s1505",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(*) FROM yearmonth AS T1 INNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.Currency = 'EUR' AND T1.Consumption > 1000.00"
+      }
+    },
+    {
+      "id": "example:s1506",
+      "type": "Example",
+      "name": "Please list the product descriptions of the transactions taken place in the gas stations in the Czech Republic.",
+      "aliases": [],
+      "properties": {
+        "key": "s1506",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T2.Description\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T3 ON T1.GasStationID = T3.GasStationID\nINNER JOIN products AS T2 ON T1.ProductID = T2.ProductID\nWHERE T3.Country = 'CZE'"
+      }
+    },
+    {
+      "id": "example:s1507",
+      "type": "Example",
+      "name": "Please list the disparate time of the transactions taken place in the gas stations from chain no. 11.",
+      "aliases": [],
+      "properties": {
+        "key": "s1507",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.Time\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID\nWHERE T2.ChainID = 11"
+      }
+    },
+    {
+      "id": "example:s1508",
+      "type": "Example",
+      "name": "How many transactions taken place in the gas station in the Czech Republic are with a price of over 1000?",
+      "aliases": [],
+      "properties": {
+        "key": "s1508",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.TransactionID)\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2\n    ON T1.GasStationID = T2.GasStationID\nWHERE T2.Country = 'CZE' AND T1.Price > 1000"
+      }
+    },
+    {
+      "id": "example:s1509",
+      "type": "Example",
+      "name": "Among the transactions made in the gas stations in the Czech Republic, how many of them are taken place after 2012/1/1?",
+      "aliases": [],
+      "properties": {
+        "key": "s1509",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.TransactionID)\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2\n    ON T1.GasStationID = T2.GasStationID\nWHERE T2.Country = 'CZE' AND T1.Date > '2012-01-01'"
+      }
+    },
+    {
+      "id": "example:s1510",
+      "type": "Example",
+      "name": "What is the average total price of the transactions taken place in gas stations in the Czech Republic?",
+      "aliases": [],
+      "properties": {
+        "key": "s1510",
+        "learning_complete": true,
+        "sql": "SELECT AVG(T1.Price) AS AverageTotalPrice\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2\n    ON T1.GasStationID = T2.GasStationID\nWHERE T2.Country = 'CZE'"
+      }
+    },
+    {
+      "id": "example:s1511",
+      "type": "Example",
+      "name": "For the customers who paid in the euro, what is their average total price of the transactions?",
+      "aliases": [],
+      "properties": {
+        "key": "s1511",
+        "learning_complete": true,
+        "sql": "SELECT AVG(T1.Price) AS avg_total_price\nFROM transactions_1k AS T1\nINNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID\nWHERE T2.Currency = 'EUR'"
+      }
+    },
+    {
+      "id": "example:s1512",
+      "type": "Example",
+      "name": "Which customer paid the most in 2012/8/25?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "transactions_1k",
+            "Date"
+          ]
+        ],
+        "key": "s1512",
+        "learning_complete": true,
+        "sql": "SELECT CustomerID FROM transactions_1k WHERE Date = '2012-08-25' GROUP BY CustomerID ORDER BY SUM(Price) DESC LIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1513",
+      "type": "Example",
+      "name": "Which country's gas station had the first paid cusomer in 2012/8/25?",
+      "aliases": [],
+      "properties": {
+        "key": "s1513",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.Country\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID\nWHERE T1.Date = '2012-08-25' AND T1.Price > 0\nORDER BY T1.Time ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1514",
+      "type": "Example",
+      "name": "What kind of currency did the customer paid at 16:25:00 in 2012/8/24?",
+      "aliases": [],
+      "properties": {
+        "key": "s1514",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.Currency\nFROM transactions_1k AS T1\nINNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID\nWHERE T1.Date = '2012-08-24' AND T1.Time = '16:25:00'"
+      }
+    },
+    {
+      "id": "example:s1515",
+      "type": "Example",
+      "name": "What segment did the customer have at 2012/8/23 21:20:00?",
+      "aliases": [],
+      "properties": {
+        "key": "s1515",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.Segment\nFROM customers AS T1\nINNER JOIN transactions_1k AS T2 ON T1.CustomerID = T2.CustomerID\nWHERE T2.Date = '2012-08-23' AND T2.Time = '21:20:00'"
+      }
+    },
+    {
+      "id": "example:s1516",
+      "type": "Example",
+      "name": "How many transactions were paid in CZK in the morning of 2012/8/26?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "transactions_1k",
+            "Time"
+          ]
+        ],
+        "key": "s1516",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T1.TransactionID) FROM transactions_1k AS T1 INNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Date = '2012-08-26' AND T1.Time < '13:00:00' AND T2.Currency = 'CZK'"
+      }
+    },
+    {
+      "id": "example:s1517",
+      "type": "Example",
+      "name": "For the earliest customer, what segment did he/she have?",
+      "aliases": [],
+      "properties": {
+        "key": "s1517",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.Segment\nFROM customers AS T1\nINNER JOIN transactions_1k AS T2\n  ON T1.CustomerID = T2.CustomerID\nORDER BY T2.Date ASC, T2.Time ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1518",
+      "type": "Example",
+      "name": "For the deal happened at 2012/8/24 12:42:00, which country was it?",
+      "aliases": [],
+      "properties": {
+        "key": "s1518",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.Country\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID\nWHERE T1.Date = '2012-08-24' AND T1.Time = '12:42:00'"
+      }
+    },
+    {
+      "id": "example:s1519",
+      "type": "Example",
+      "name": "What was the product id of the transaction happened at 2012/8/23 21:20:00?",
+      "aliases": [],
+      "properties": {
+        "key": "s1519",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT ProductID\nFROM transactions_1k\nWHERE Date = '2012-08-23' AND Time = '21:20:00'"
+      }
+    },
+    {
+      "id": "example:s1520",
+      "type": "Example",
+      "name": "For the customer who paid 124.05 in 2012/8/24, how much did he/she spend during the January of 2012? And what is the date and expenses exactly?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "transactions_1k",
+            "Price"
+          ]
+        ],
+        "key": "s1520",
+        "learning_complete": true,
+        "sql": "SELECT T1.CustomerID, T2.Date, T2.Consumption FROM transactions_1k AS T1 INNER JOIN yearmonth AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Date = '2012-08-24' AND T1.Price = 124.05 AND T2.Date = '201201'"
+      }
+    },
+    {
+      "id": "example:s1521",
+      "type": "Example",
+      "name": "For all the transactions happened during 8:00-9:00 in 2012/8/26, how many happened in CZE?",
+      "aliases": [],
+      "properties": {
+        "key": "s1521",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID\nWHERE T1.Date = '2012-08-26'\n  AND T1.Time BETWEEN '08:00:00' AND '09:00:00'\n  AND T2.Country = 'CZE'"
+      }
+    },
+    {
+      "id": "example:s1522",
+      "type": "Example",
+      "name": "There's one customer spent 214582.17 in the June of 2013, which currency did he/she use?",
+      "aliases": [],
+      "properties": {
+        "key": "s1522",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T1.Currency\nFROM customers AS T1\nINNER JOIN yearmonth AS T2\n  ON T1.CustomerID = T2.CustomerID\nWHERE T2.Date = '201306'\n  AND (\n    T2.Consumption = 214582.17\n    OR T1.CustomerID IN (\n      SELECT CustomerID\n      FROM transactions_1k\n      GROUP BY CustomerID\n      HAVING SUM(Price) = 214582.17\n    )\n  )"
+      }
+    },
+    {
+      "id": "example:s1523",
+      "type": "Example",
+      "name": "Which country was the card owner of No.667467 in?",
+      "aliases": [],
+      "properties": {
+        "key": "s1523",
+        "learning_complete": true,
+        "sql": "-- The card owner of card No. 667467 made transactions at gas stations;\n-- we report the country/countries of those gas stations.\nSELECT DISTINCT g.Country\nFROM transactions_1k AS t\nINNER JOIN gasstations AS g\n    ON t.GasStationID = g.GasStationID\nWHERE t.CardID = 667467"
+      }
+    },
+    {
+      "id": "example:s1524",
+      "type": "Example",
+      "name": "What's the nationality of the customer who spent 548.4 in 2012/8/24?",
+      "aliases": [],
+      "properties": {
+        "key": "s1524",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT T2.Country\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID\nWHERE T1.Date = '2012-08-24' AND T1.Price = 548.4"
+      }
+    },
+    {
+      "id": "example:s1525",
+      "type": "Example",
+      "name": "What is the percentage of the customers who used EUR in 2012/8/25?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1525",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(T2.Currency = 'EUR', 1, 0)) AS FLOAT) * 100 / COUNT(T1.CustomerID) FROM transactions_1k AS T1 INNER JOIN customers AS T2 ON T1.CustomerID = T2.CustomerID WHERE T1.Date = '2012-08-25'"
+      }
+    },
+    {
+      "id": "example:s1526",
+      "type": "Example",
+      "name": "For the customer who paid 634.8 in 2012/8/25, what was the consumption decrease rate from Year 2012 to 2013?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "gasstations",
+            "GasStationID"
+          ],
+          [
+            "transactions_1k",
+            "GasStationID"
+          ]
+        ],
+        "key": "s1526",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(IIF(SUBSTR(Date, 1, 4) = '2012', Consumption, 0)) - SUM(IIF(SUBSTR(Date, 1, 4) = '2013', Consumption, 0)) AS FLOAT) / SUM(IIF(SUBSTR(Date, 1, 4) = '2012', Consumption, 0)) FROM yearmonth WHERE CustomerID = ( SELECT T1.CustomerID FROM transactions_1k AS T1 INNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID WHERE T1.Date = '2012-08-25' AND T1.Price = 634.8 )"
+      }
+    },
+    {
+      "id": "example:s1527",
+      "type": "Example",
+      "name": "Which gas station has the highest amount of revenue?",
+      "aliases": [],
+      "properties": {
+        "key": "s1527",
+        "learning_complete": true,
+        "sql": "SELECT GasStationID\nFROM transactions_1k\nGROUP BY GasStationID\nORDER BY SUM(Price) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1528",
+      "type": "Example",
+      "name": "What is the percentage of \"premium\" against the overall segment in Country = \"SVK\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s1528",
+        "learning_complete": true,
+        "sql": "-- Percentage of \"Premium\" segment gas stations among all gas stations in Slovakia (SVK)\nSELECT\n    100.0 * SUM(CASE WHEN Segment = 'Premium' THEN 1 ELSE 0 END) / COUNT(*) AS PremiumPercentage\nFROM gasstations\nWHERE Country = 'SVK'"
+      }
+    },
+    {
+      "id": "example:s1529",
+      "type": "Example",
+      "name": "What is the amount spent by customer \"38508\" at the gas stations? How much had the customer spent in January 2012?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1529",
+        "learning_complete": true,
+        "sql": "SELECT SUM(T1.Price) , SUM(IIF(T3.Date = '201201', T1.Price, 0)) FROM transactions_1k AS T1 INNER JOIN gasstations AS T2 ON T1.GasStationID = T2.GasStationID INNER JOIN yearmonth AS T3 ON T1.CustomerID = T3.CustomerID WHERE T1.CustomerID = '38508'"
+      }
+    },
+    {
+      "id": "example:s1530",
+      "type": "Example",
+      "name": "Which are the top five best selling products? Please state the full name of them.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s1530",
+        "learning_complete": true,
+        "sql": "SELECT T2.Description FROM transactions_1k AS T1 INNER JOIN products AS T2 ON T1.ProductID = T2.ProductID ORDER BY T1.Amount DESC LIMIT 5"
+      }
+    },
+    {
+      "id": "example:s1531",
+      "type": "Example",
+      "name": "Who is the top spending customer and how much is the average price per single item purchased by this customer? What currency was being used?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "transactions_1k",
+            "CustomerID"
+          ],
+          [
+            "yearmonth",
+            "CustomerID"
+          ]
+        ],
+        "key": "s1531",
+        "learning_complete": true,
+        "sql": "SELECT T2.CustomerID, SUM(T2.Price / T2.Amount), T1.Currency FROM customers AS T1 INNER JOIN transactions_1k AS T2 ON T1.CustomerID = T2.CustomerID WHERE T2.CustomerID = ( SELECT CustomerID FROM yearmonth ORDER BY Consumption DESC LIMIT 1 ) GROUP BY T2.CustomerID, T1.Currency"
+      }
+    },
+    {
+      "id": "example:s1532",
+      "type": "Example",
+      "name": "Which country had the gas station that sold the most expensive product id No.2 for one unit?",
+      "aliases": [],
+      "properties": {
+        "key": "s1532",
+        "learning_complete": true,
+        "sql": "SELECT T2.Country\nFROM transactions_1k AS T1\nINNER JOIN gasstations AS T2\n    ON T1.GasStationID = T2.GasStationID\nWHERE T1.ProductID = 2\nORDER BY T1.Price / T1.Amount DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s1533",
+      "type": "Example",
+      "name": "For all the people who paid more than 29.00 per unit of product id No.5. Give their consumption status in the August of 2012.",
+      "aliases": [],
+      "properties": {
+        "key": "s1533",
+        "learning_complete": true,
+        "sql": "SELECT T2.Consumption\nFROM yearmonth AS T2\nWHERE T2.Date = '201208'\n  AND T2.CustomerID IN (\n      SELECT T1.CustomerID\n      FROM transactions_1k AS T1\n      WHERE T1.ProductID = 5\n        AND T1.Price / T1.Amount > 29\n  )"
+      }
+    },
+    {
+      "id": "term:a-given-month-of-a-year",
+      "type": "Term",
+      "name": "a given month of a year",
+      "aliases": [
+        "month and year filter",
+        "during a specific month"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:amount-spent-by-a-customer",
+      "type": "Term",
+      "name": "amount spent by a customer",
+      "aliases": [
+        "total spending",
+        "money spent at gas stations"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:annual-average-consumption-by-segment",
+      "type": "Term",
+      "name": "annual average consumption by segment",
+      "aliases": [
+        "average segment consumption",
+        "segment consumption average",
+        "average consumption difference between segments"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:average-price-per-single-item",
+      "type": "Term",
+      "name": "average price per single item",
+      "aliases": [
+        "average unit price",
+        "price per item",
+        "unit price bought"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:best-selling-product",
+      "type": "Term",
+      "name": "best selling product",
+      "aliases": [
+        "top selling product",
+        "highest value product sale"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:biggest-monthly-consumption",
+      "type": "Term",
+      "name": "biggest monthly consumption",
+      "aliases": [
+        "highest monthly consumption",
+        "top customer by monthly consumption",
+        "customer with largest monthly consumption"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:client-segment",
+      "type": "Term",
+      "name": "client segment",
+      "aliases": [
+        "customer segment",
+        "segment of customer"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:consumed-the-least",
+      "type": "Term",
+      "name": "consumed the least",
+      "aliases": [
+        "lowest consumption",
+        "smallest consumption",
+        "least consuming"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:consumption-decrease-rate-between-two-years",
+      "type": "Term",
+      "name": "consumption decrease rate between two years",
+      "aliases": [
+        "consumption drop rate",
+        "year-over-year consumption decline"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:consumption-month",
+      "type": "Term",
+      "name": "consumption month",
+      "aliases": [
+        "year month",
+        "month code",
+        "yearmonth date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:consumption-paid-in-czk",
+      "type": "Term",
+      "name": "consumption paid in czk",
+      "aliases": [
+        "CZK customers",
+        "currency is CZK"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:consumption-total-by-period",
+      "type": "Term",
+      "name": "consumption total by period",
+      "aliases": [
+        "total consumption",
+        "gas consumption",
+        "highest consumption period",
+        "consumed the most",
+        "highest consumption",
+        "energy consumed",
+        "total usage"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:currency",
+      "type": "Term",
+      "name": "currency",
+      "aliases": [
+        "customer currency",
+        "currency code",
+        "currency used by customer",
+        "currency of spending"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:currency-a-customer-pays-in",
+      "type": "Term",
+      "name": "currency a customer pays in",
+      "aliases": [
+        "payment currency",
+        "currency code"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer",
+      "type": "Term",
+      "name": "customer",
+      "aliases": [
+        "buyer",
+        "purchaser",
+        "client"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-currency-eur",
+      "type": "Term",
+      "name": "customer currency eur",
+      "aliases": [
+        "used euros",
+        "EUR customers",
+        "paid in EUR"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-month-record",
+      "type": "Term",
+      "name": "customer month record",
+      "aliases": [
+        "month of activity",
+        "yearmonth entry",
+        "June 2013 filter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-monthly-records",
+      "type": "Term",
+      "name": "customer monthly records",
+      "aliases": [
+        "customer consumption history",
+        "customer yearmonth rows"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-s-month-record",
+      "type": "Term",
+      "name": "customer's month record",
+      "aliases": [
+        "customer yearmonth",
+        "customer period"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-s-monthly-expenses",
+      "type": "Term",
+      "name": "customer's monthly expenses",
+      "aliases": [
+        "consumption for a customer",
+        "spending in month"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:customer-who-paid-a-price-on-a-date",
+      "type": "Term",
+      "name": "customer who paid a price on a date",
+      "aliases": [
+        "payer on a given date",
+        "customer of a specific transaction"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:difference-in-counts-between-two-categories",
+      "type": "Term",
+      "name": "difference in counts between two categories",
+      "aliases": [
+        "how many more",
+        "count of one group minus another"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:gas-station-country",
+      "type": "Term",
+      "name": "gas station country",
+      "aliases": [
+        "country of station",
+        "station location country"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:in-euro",
+      "type": "Term",
+      "name": "in euro",
+      "aliases": [
+        "euro transactions",
+        "currency euro",
+        "EUR customers"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:in-the-morning",
+      "type": "Term",
+      "name": "in the morning",
+      "aliases": [
+        "morning transactions",
+        "before noon/1pm",
+        "earlier part of the day"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:january-2012",
+      "type": "Term",
+      "name": "january 2012",
+      "aliases": [
+        "Jan 2012",
+        "2012-01"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:kam-segment",
+      "type": "Term",
+      "name": "kam segment",
+      "aliases": [
+        "key account manager customers",
+        "customers in the KAM segment",
+        "KAM clients"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:kam-segment-customer",
+      "type": "Term",
+      "name": "kam segment customer",
+      "aliases": [
+        "customer in segment KAM",
+        "clients in the KAM segment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:lam-client-segment",
+      "type": "Term",
+      "name": "lam client segment",
+      "aliases": [
+        "LAM segment customer",
+        "segment LAM"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:least-total-consumption",
+      "type": "Term",
+      "name": "least total consumption",
+      "aliases": [
+        "lowest consumption",
+        "smallest consumption customer",
+        "minimum consumption"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:month-code-yyyymm",
+      "type": "Term",
+      "name": "month code yyyymm",
+      "aliases": [
+        "yearmonth date",
+        "monthly period code"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:month-number",
+      "type": "Term",
+      "name": "month number",
+      "aliases": [
+        "month of year",
+        "which month",
+        "peak month",
+        "month of peak consumption"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:month-of-a-date",
+      "type": "Term",
+      "name": "month of a date",
+      "aliases": [
+        "calendar month",
+        "monthly bucket"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:monthly-consumption",
+      "type": "Term",
+      "name": "monthly consumption",
+      "aliases": [
+        "average monthly consumption",
+        "consumption per month"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:monthly-consumption-period",
+      "type": "Term",
+      "name": "monthly consumption period",
+      "aliases": [
+        "January of 2012",
+        "monthly statement period",
+        "year-month"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:number-of-gas-stations",
+      "type": "Term",
+      "name": "number of gas stations",
+      "aliases": [
+        "gas station count",
+        "how many gas stations"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:on-a-date",
+      "type": "Term",
+      "name": "on a date",
+      "aliases": [
+        "transaction date",
+        "day of purchase",
+        "date of transaction",
+        "on a given day"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:paid-amount-single-transaction",
+      "type": "Term",
+      "name": "paid amount (single transaction)",
+      "aliases": [
+        "payment of",
+        "transaction price",
+        "amount paid"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:paid-in-czk",
+      "type": "Term",
+      "name": "paid in czk",
+      "aliases": [
+        "CZK transactions",
+        "currency CZK",
+        "in Czech koruna"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:paid-in-euro",
+      "type": "Term",
+      "name": "paid in euro",
+      "aliases": [
+        "EUR customers",
+        "euro payment currency",
+        "currency is euro"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:paid-the-most",
+      "type": "Term",
+      "name": "paid the most",
+      "aliases": [
+        "spent the most",
+        "highest spender",
+        "largest total spend",
+        "top customer by spending"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-increase-in-consumption",
+      "type": "Term",
+      "name": "percentage increase in consumption",
+      "aliases": [
+        "percent change in consumption",
+        "growth rate of consumption",
+        "consumption increase percentage"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-rows-matching-a-condition",
+      "type": "Term",
+      "name": "percentage of rows matching a condition",
+      "aliases": [
+        "percent of customers",
+        "share of transactions"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:product-description",
+      "type": "Term",
+      "name": "product description",
+      "aliases": [
+        "description of product",
+        "product descriptions"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:product-full-name",
+      "type": "Term",
+      "name": "product full name",
+      "aliases": [
+        "product description",
+        "product name"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:ranking-customers-by-consumption",
+      "type": "Term",
+      "name": "ranking customers by consumption",
+      "aliases": [
+        "most consuming customer",
+        "top customer by usage"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:sme-customers",
+      "type": "Term",
+      "name": "sme customers",
+      "aliases": [
+        "small and medium enterprises",
+        "SME segment clients"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:sme-segment-customers",
+      "type": "Term",
+      "name": "sme segment customers",
+      "aliases": [
+        "SME clients",
+        "small and medium enterprise segment"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:spending-in-a-single-month",
+      "type": "Term",
+      "name": "spending in a single month",
+      "aliases": [
+        "January 2012 spending",
+        "conditional monthly total"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:statement-year",
+      "type": "Term",
+      "name": "statement year",
+      "aliases": [
+        "year of consumption",
+        "year in yearmonth",
+        "consumption in 2013"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:three-client-segments",
+      "type": "Term",
+      "name": "three client segments",
+      "aliases": [
+        "SME LAM KAM",
+        "the segments",
+        "client segment list"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:top-spending-customer",
+      "type": "Term",
+      "name": "top spending customer",
+      "aliases": [
+        "highest spending customer",
+        "customer with most consumption",
+        "best customer by spend"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-consumption-for-a-year",
+      "type": "Term",
+      "name": "total consumption for a year",
+      "aliases": [
+        "yearly consumption",
+        "annual consumption",
+        "consumption in a year"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-number-of-gas-stations-overall",
+      "type": "Term",
+      "name": "total number of gas stations overall",
+      "aliases": [
+        "grand total gas stations",
+        "total across all countries"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:total-price-of-a-transaction",
+      "type": "Term",
+      "name": "total price of a transaction",
+      "aliases": [
+        "transaction amount",
+        "total amount",
+        "price paid"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:transaction-date-filter",
+      "type": "Term",
+      "name": "transaction date filter",
+      "aliases": [
+        "on a given day",
+        "that day's transactions"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:transaction-s-customer-month",
+      "type": "Term",
+      "name": "transaction's customer month",
+      "aliases": [
+        "link transaction to yearmonth",
+        "monthly activity of customer"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:value-for-money-gas-stations",
+      "type": "Term",
+      "name": "value for money gas stations",
+      "aliases": [
+        "value for money segment",
+        "budget gas stations"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-filter",
+      "type": "Term",
+      "name": "year filter",
+      "aliases": [
+        "during year",
+        "in year",
+        "calendar year"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-a-date",
+      "type": "Term",
+      "name": "year of a date",
+      "aliases": [
+        "calendar year",
+        "in year"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-a-monthly-record",
+      "type": "Term",
+      "name": "year of a monthly record",
+      "aliases": [
+        "year",
+        "calendar year"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-consumption-date",
+      "type": "Term",
+      "name": "year of consumption date",
+      "aliases": [
+        "filter by year",
+        "year filter on Date"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-monthly-record",
+      "type": "Term",
+      "name": "year of monthly record",
+      "aliases": [
+        "in year 2012",
+        "during a year",
+        "year filter"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:year-of-yearmonth-statement",
+      "type": "Term",
+      "name": "year of yearmonth statement",
+      "aliases": [
+        "year in yearmonth date",
+        "statement year",
+        "year of consumption record"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:ranking-customers-by-consumption",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "losses": 0,
+        "note": "Rank customers by their aggregated (SUM) consumption, not by a single monthly row value.",
+        "origin": "s1488",
+        "sql": "ORDER BY SUM(yearmonth.Consumption) DESC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:top-spending-customer",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1477",
+          "s1512",
+          "s1515",
+          "s1485",
+          "s1487",
+          "s1532",
+          "s1524",
+          "s1474",
+          "s1479",
+          "s1527",
+          "s1495",
+          "s1518"
+        ],
+        "losses": 1,
+        "note": "Spending level per customer is recorded as yearmonth.Consumption, so the top spender is the customer whose consumption value is the maximum.",
+        "origin": "s1531",
+        "sql": "yearmonth.CustomerID WHERE yearmonth.Consumption = (SELECT MAX(yearmonth.Consumption) FROM yearmonth)",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:consumed-the-least",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "losses": 0,
+        "note": "When the question names a segment but asks which one consumed least, the ranking unit is the individual customer, so the consumption total must be ordered per customer (grouped by customers.CustomerID) and the segment is then read off that customer.",
+        "origin": "s1496",
+        "sql": "ORDER BY SUM(yearmonth.Consumption) ASC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:year-of-yearmonth-statement",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth.Date is stored as a 'YYYYMM' text string, so the year is the first four characters.",
+        "origin": "s1526",
+        "sql": "SUBSTR(yearmonth.Date, 1, 4) = '2012'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:sme-customers",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "losses": 0,
+        "note": "The client segment is stored as a code in customers.Segment, where 'SME' denotes small and medium enterprises (other values are 'LAM' and 'KAM').",
+        "origin": "s1486",
+        "sql": "customers.Segment = 'SME'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:gas-station-country",
+      "type": "MEANS",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {
+        "_feedback_sources": [
+          "s1518"
+        ],
+        "losses": 0,
+        "note": "Country is an attribute of the gasstations row, obtained by joining a transaction's GasStationID to gasstations.GasStationID.",
+        "origin": "s1501",
+        "sql": "gasstations.Country",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:lam-client-segment",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "losses": 0,
+        "note": "customers.Segment holds the client segment code as text, with values SME, LAM, and KAM; 'LAM' denotes that segment.",
+        "origin": "s1472",
+        "sql": "customers.Segment = 'LAM'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:month-number",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1491"
+        ],
+        "losses": 1,
+        "note": "yearmonth.Date is stored as a 'YYYYMM' text value, so the month is the last two characters and must be extracted with SUBSTR(yearmonth.Date, 5, 2).",
+        "origin": "s1480",
+        "sql": "SUBSTR(yearmonth.Date, 5, 2)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:customer-s-monthly-expenses",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "losses": 0,
+        "note": "A transaction-level customer is tied to a monthly consumption row by CustomerID, and the resulting monthly spending value is yearmonth.Consumption.",
+        "origin": "s1520",
+        "sql": "transactions_1k.CustomerID = yearmonth.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:annual-average-consumption-by-segment",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1477",
+          "s1515",
+          "s1514",
+          "s1511",
+          "s1517",
+          "s1504",
+          "s1528",
+          "s1476",
+          "s1478",
+          "s1483"
+        ],
+        "losses": 1,
+        "note": "A segment's average consumption over the filtered joined rows is the sum of that segment's Consumption divided by the number of joined customer rows, so differences between segments subtract those two averages.",
+        "origin": "s1481",
+        "sql": "CAST(SUM(IIF(customers.Segment = 'SME', yearmonth.Consumption, 0)) AS REAL) / COUNT(customers.CustomerID) - CAST(SUM(IIF(customers.Segment = 'LAM', yearmonth.Consumption, 0)) AS REAL) / COUNT(customers.CustomerID)",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:total-number-of-gas-stations-overall",
+      "type": "MEANS",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {
+        "losses": 0,
+        "note": "An overall total independent of the country grouping is a scalar subquery that counts matching rows without GROUP BY, while the per-country figure is COUNT(gasstations.GasStationID) ordered descending to pick the top country.",
+        "origin": "s1491",
+        "sql": "(SELECT COUNT(gasstations.GasStationID) FROM gasstations WHERE gasstations.Segment = 'Value for money')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:transaction-s-customer-month",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth is keyed by CustomerID, so a transaction's month must be resolved by matching the customer id, not by the gas station id.",
+        "origin": "s1501",
+        "sql": "transactions_1k.CustomerID = yearmonth.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:kam-segment-customer",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "_feedback_sources": [
+          "s1512",
+          "s1515",
+          "s1529",
+          "s1517",
+          "s1528",
+          "s1478"
+        ],
+        "losses": 2,
+        "note": "customers.Segment holds the client segment code, with 'KAM' as one of the stored values (alongside 'LAM' and 'SME').",
+        "origin": "s1475",
+        "sql": "customers.Segment = 'KAM'",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:annual-average-consumption-by-segment",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "_feedback_sources": [
+          "s1489",
+          "s1495"
+        ],
+        "losses": 0,
+        "note": "A segment's average consumption over the filtered joined rows is the sum of that segment's Consumption divided by the number of joined customer rows, so differences between segments subtract those two averages.",
+        "origin": "s1481",
+        "sql": "CAST(SUM(IIF(customers.Segment = 'SME', yearmonth.Consumption, 0)) AS REAL) / COUNT(customers.CustomerID) - CAST(SUM(IIF(customers.Segment = 'LAM', yearmonth.Consumption, 0)) AS REAL) / COUNT(customers.CustomerID)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:annual-average-consumption-by-segment",
+      "type": "MEANS",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {
+        "_feedback_sources": [
+          "s1497",
+          "s1512",
+          "s1471",
+          "s1485"
+        ],
+        "losses": 1,
+        "note": "A segment's average consumption over the filtered joined rows is the sum of that segment's Consumption divided by the number of joined customer rows, so differences between segments subtract those two averages.",
+        "origin": "s1481",
+        "sql": "CAST(SUM(IIF(customers.Segment = 'SME', yearmonth.Consumption, 0)) AS REAL) / COUNT(customers.CustomerID) - CAST(SUM(IIF(customers.Segment = 'LAM', yearmonth.Consumption, 0)) AS REAL) / COUNT(customers.CustomerID)",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:customer-who-paid-a-price-on-a-date",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {
+        "_feedback_sources": [
+          "s1518",
+          "s1519"
+        ],
+        "losses": 0,
+        "note": "Resolve the paying customer with a subquery on transactions_1k.Date and transactions_1k.Price instead of joining transactions_1k to yearmonth, which would duplicate the customer's consumption rows and inflate the sums.",
+        "origin": "s1526",
+        "sql": "yearmonth.CustomerID = (SELECT transactions_1k.CustomerID FROM transactions_1k WHERE transactions_1k.Date = '2012-08-25' AND transactions_1k.Price = 634.8)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:top-spending-customer",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "losses": 0,
+        "note": "Spending level per customer is recorded as yearmonth.Consumption, so the top spender is the customer whose consumption value is the maximum.",
+        "origin": "s1531",
+        "sql": "yearmonth.CustomerID WHERE yearmonth.Consumption = (SELECT MAX(yearmonth.Consumption) FROM yearmonth)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:year-of-consumption-date",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1479"
+        ],
+        "losses": 0,
+        "note": "yearmonth.Date is stored as a YYYYMM text string, so the year is the first four characters.",
+        "origin": "s1473",
+        "sql": "SUBSTR(yearmonth.Date, 1, 4)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:client-segment",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "losses": 0,
+        "note": "Segment (SME / LAM / KAM) is an attribute stored on the customers table for each customer, so it is projected from the customer row rather than used as the ranking unit.",
+        "origin": "s1496",
+        "sql": "customers.Segment",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:paid-the-most",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {
+        "_feedback_sources": [
+          "s1514",
+          "s1511",
+          "s1485",
+          "s1487",
+          "s1532",
+          "s1524",
+          "s1521",
+          "s1491",
+          "s1474",
+          "s1522",
+          "s1479",
+          "s1508",
+          "s1504",
+          "s1488",
+          "s1527",
+          "s1483"
+        ],
+        "losses": 3,
+        "note": "\"Paid the most\" means the customer with the greatest total spending, so aggregate SUM(Price) per CustomerID rather than taking the single largest transaction row.",
+        "origin": "s1512",
+        "sql": "SUM(transactions_1k.Price) AS total_paid, transactions_1k.CustomerID",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:customer",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "_feedback_sources": [
+          "s1515",
+          "s1485",
+          "s1517",
+          "s1490",
+          "s1524",
+          "s1522",
+          "s1483",
+          "s1495",
+          "s1496"
+        ],
+        "losses": 1,
+        "note": "A customer is identified by transactions_1k.CustomerID, which repeats across rows so it must be grouped or aggregated before ranking.",
+        "origin": "s1512",
+        "sql": "transactions_1k.CustomerID",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:customer-monthly-records",
+      "type": "MEANS",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {
+        "_feedback_sources": [
+          "s1493",
+          "s1497",
+          "s1512",
+          "s1471"
+        ],
+        "losses": 1,
+        "note": "A customer's monthly consumption history is found by matching customers.CustomerID to yearmonth.CustomerID.",
+        "origin": "s1505",
+        "sql": "customers.CustomerID = yearmonth.CustomerID",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:year-filter",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1521"
+        ],
+        "losses": 0,
+        "note": "Because the date column is a compact 'YYYYMM' string, the calendar year is the first four characters, compared as text.",
+        "origin": "s1480",
+        "sql": "SUBSTR(yearmonth.Date, 1, 4)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:customer-monthly-records",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "_feedback_sources": [
+          "s1477",
+          "s1515",
+          "s1485",
+          "s1487",
+          "s1517",
+          "s1490",
+          "s1524",
+          "s1478",
+          "s1483"
+        ],
+        "losses": 0,
+        "note": "A customer's monthly consumption history is found by matching customers.CustomerID to yearmonth.CustomerID.",
+        "origin": "s1505",
+        "sql": "customers.CustomerID = yearmonth.CustomerID",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:percentage-increase-in-consumption",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1525"
+        ],
+        "losses": 1,
+        "note": "Percentage growth for a segment is the later-year total minus the earlier-year total divided by the earlier-year total, computed from yearmonth.Consumption rows linked to customers by CustomerID.",
+        "origin": "s1482",
+        "sql": "(SUM(IIF(yearmonth.Date LIKE '2013%', yearmonth.Consumption, 0)) - SUM(IIF(yearmonth.Date LIKE '2012%', yearmonth.Consumption, 0))) * 100.0 / NULLIF(SUM(IIF(yearmonth.Date LIKE '2012%', yearmonth.Consumption, 0)), 0)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:total-number-of-gas-stations-overall",
+      "type": "MEANS",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {
+        "_feedback_sources": [
+          "s1513",
+          "s1508",
+          "s1528",
+          "s1509",
+          "s1476",
+          "s1527",
+          "s1483",
+          "s1507",
+          "s1489",
+          "s1495",
+          "s1502"
+        ],
+        "losses": 0,
+        "note": "An overall total independent of the country grouping is a scalar subquery that counts matching rows without GROUP BY, while the per-country figure is COUNT(gasstations.GasStationID) ordered descending to pick the top country.",
+        "origin": "s1491",
+        "sql": "(SELECT COUNT(gasstations.GasStationID) FROM gasstations WHERE gasstations.Segment = 'Value for money')",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:sme-segment-customers",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "_feedback_sources": [
+          "s1515",
+          "s1525",
+          "s1471",
+          "s1517",
+          "s1490",
+          "s1528",
+          "s1478",
+          "s1492",
+          "s1489",
+          "s1495"
+        ],
+        "losses": 1,
+        "note": "Customer segment is a stored code in customers.Segment, with 'SME' denoting the small/medium enterprise segment.",
+        "origin": "s1473",
+        "sql": "customers.Segment = 'SME'",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:in-the-morning",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {
+        "_feedback_sources": [
+          "s1507",
+          "s1518",
+          "s1519"
+        ],
+        "losses": 0,
+        "note": "The morning period on this database spans transactions with a stored 'HH:MM:SS' time earlier than 13:00:00, so the cutoff is 1 PM rather than 12:00.",
+        "origin": "s1516",
+        "sql": "transactions_1k.Time < '13:00:00'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:average-price-per-single-item",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {
+        "_feedback_sources": [
+          "s1529"
+        ],
+        "losses": 1,
+        "note": "transactions_1k.Price is the total line price where total = Amount x Price, so the price of a single item is Price / Amount and the average per item is the sum of those unit prices.",
+        "origin": "s1531",
+        "sql": "SUM(transactions_1k.Price / transactions_1k.Amount)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:a-given-month-of-a-year",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {
+        "_feedback_sources": [
+          "s1509",
+          "s1518",
+          "s1519"
+        ],
+        "losses": 0,
+        "note": "transactions_1k.Date is stored as ISO text 'YYYY-MM-DD', so a month is matched with a 'YYYY-MM' prefix rather than a YYYYMM code.",
+        "origin": "s1504",
+        "sql": "transactions_1k.Date LIKE '2012-01%'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:month-code-yyyymm",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "The yearmonth table stores the period as a 6-character text code in 'YYYYMM' form (e.g. a year followed by a zero-padded month), linked to transactions through yearmonth.CustomerID.",
+        "origin": "s1529",
+        "sql": "yearmonth.Date",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:best-selling-product",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {
+        "_feedback_sources": [
+          "s1510",
+          "s1481",
+          "s1529",
+          "s1533",
+          "s1506",
+          "s1491",
+          "s1509",
+          "s1527",
+          "s1500"
+        ],
+        "losses": 4,
+        "note": "\"Best selling\" here ranks products by the monetary Amount of their transaction rows, descending, rather than by how many times a product was transacted.",
+        "origin": "s1530",
+        "sql": "ORDER BY transactions_1k.Amount DESC",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:product-description",
+      "type": "MEANS",
+      "to_entity": "column:products.description-50eb3d",
+      "properties": {
+        "losses": 0,
+        "note": "The product's text description lives in products.Description and the product itself is identified by products.ProductID, so listings of bought products should carry both so each distinct product is identifiable.",
+        "origin": "s1503",
+        "sql": "products.ProductID, products.Description",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-increase-in-consumption",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1490",
+          "s1533",
+          "s1528",
+          "s1478",
+          "s1492",
+          "s1518"
+        ],
+        "losses": 0,
+        "note": "Percentage growth for a segment is the later-year total minus the earlier-year total divided by the earlier-year total, computed from yearmonth.Consumption rows linked to customers by CustomerID.",
+        "origin": "s1482",
+        "sql": "(SUM(IIF(yearmonth.Date LIKE '2013%', yearmonth.Consumption, 0)) - SUM(IIF(yearmonth.Date LIKE '2012%', yearmonth.Consumption, 0))) * 100.0 / NULLIF(SUM(IIF(yearmonth.Date LIKE '2012%', yearmonth.Consumption, 0)), 0)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:consumption-decrease-rate-between-two-years",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "losses": 0,
+        "note": "The decrease rate is a plain ratio (difference divided by the earlier year's total), not a value multiplied by 100.",
+        "origin": "s1526",
+        "sql": "(SUM(IIF(SUBSTR(yearmonth.Date, 1, 4) = '2012', yearmonth.Consumption, 0)) - SUM(IIF(SUBSTR(yearmonth.Date, 1, 4) = '2013', yearmonth.Consumption, 0))) / CAST(SUM(IIF(SUBSTR(yearmonth.Date, 1, 4) = '2012', yearmonth.Consumption, 0)) AS FLOAT)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-rows-matching-a-condition",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "_feedback_sources": [
+          "s1471",
+          "s1514",
+          "s1511",
+          "s1490",
+          "s1532",
+          "s1506",
+          "s1521",
+          "s1474",
+          "s1522",
+          "s1479",
+          "s1528",
+          "s1476",
+          "s1492"
+        ],
+        "losses": 0,
+        "note": "A percentage over a filtered set is computed as SUM of a 0/1 indicator divided by the row count of that same filtered set, without de-duplicating the joined rows first, since DISTINCT changes both numerator and denominator.",
+        "origin": "s1525",
+        "sql": "CAST(SUM(IIF(customers.Currency = 'EUR', 1, 0)) AS FLOAT) * 100 / COUNT(transactions_1k.CustomerID)",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:year-of-monthly-record",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth.Date is stored as a 6-character 'YYYYMM' text string, so the calendar year is the first 4 characters.",
+        "origin": "s1472",
+        "sql": "SUBSTR(yearmonth.Date, 1, 4)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:customer-month-record",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth.Date stores the activity month as a six-character 'YYYYMM' string (e.g. '201306' = June 2013), so month filters should compare against this table's code rather than a 'YYYY-MM' pattern on transaction text.",
+        "origin": "s1501",
+        "sql": "yearmonth.Date = '201306'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:on-a-date",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {
+        "_feedback_sources": [
+          "s1515",
+          "s1529",
+          "s1514",
+          "s1524",
+          "s1521",
+          "s1513",
+          "s1509",
+          "s1518",
+          "s1519"
+        ],
+        "losses": 1,
+        "note": "Transactions_1k.Date is stored as a 'YYYY-MM-DD' text value, so a specific day is matched by exact string equality.",
+        "origin": "s1512",
+        "sql": "transactions_1k.Date = 'YYYY-MM-DD'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:customer-s-month-record",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "losses": 0,
+        "note": "The monthly summary table is keyed to transactions by CustomerID, so month conditions come from yearmonth.Date rather than from a filter on transactions_1k.Date.",
+        "origin": "s1500",
+        "sql": "transactions_1k.CustomerID = yearmonth.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:customer-s-month-record",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "losses": 0,
+        "note": "The monthly summary table is keyed to transactions by CustomerID, so month conditions come from yearmonth.Date rather than from a filter on transactions_1k.Date.",
+        "origin": "s1500",
+        "sql": "transactions_1k.CustomerID = yearmonth.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:year-of-a-monthly-record",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth.Date is stored as text in 'YYYYMM' format, so the year is the first four characters.",
+        "origin": "s1475",
+        "sql": "SUBSTR(yearmonth.Date, 1, 4)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:consumption-month",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth.Date stores a text period code in 'YYYYMM' form (e.g. 201309) identifying a customer's activity in that month.",
+        "origin": "s1500",
+        "sql": "yearmonth.Date",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:monthly-consumption-period",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth.Date is TEXT in YYYYMM form (January 2012 = '201201'), so a month filter is an equality against that six-character code.",
+        "origin": "s1520",
+        "sql": "yearmonth.Date",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:total-consumption-for-a-year",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1477",
+          "s1479",
+          "s1504"
+        ],
+        "losses": 1,
+        "note": "Consumption is a per-month amount in yearmonth, so a customer's consumption for a year is the SUM of their monthly rows, not a single row value.",
+        "origin": "s1475",
+        "sql": "SUM(yearmonth.Consumption)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:paid-the-most",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "losses": 0,
+        "note": "\"Paid the most\" means the customer with the greatest total spending, so aggregate SUM(Price) per CustomerID rather than taking the single largest transaction row.",
+        "origin": "s1512",
+        "sql": "SUM(transactions_1k.Price) AS total_paid, transactions_1k.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:paid-amount-single-transaction",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {
+        "_feedback_sources": [
+          "s1486"
+        ],
+        "losses": 1,
+        "note": "A stated payment amount matches one transaction's Price value in transactions_1k, so the filter is transactions_1k.Price = <amount> on a single row, never SUM(Price) grouped over a customer's transactions.",
+        "origin": "s1520",
+        "sql": "transactions_1k.Price",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:average-price-per-single-item",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {
+        "_feedback_sources": [
+          "s1511",
+          "s1533",
+          "s1532",
+          "s1521",
+          "s1491",
+          "s1508",
+          "s1504"
+        ],
+        "losses": 2,
+        "note": "transactions_1k.Price is the total line price where total = Amount x Price, so the price of a single item is Price / Amount and the average per item is the sum of those unit prices.",
+        "origin": "s1531",
+        "sql": "SUM(transactions_1k.Price / transactions_1k.Amount)",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:biggest-monthly-consumption",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1530",
+          "s1497",
+          "s1512",
+          "s1487"
+        ],
+        "losses": 2,
+        "note": "The largest monthly consumption is the per-customer monthly figure (SUM(yearmonth.Consumption)/12) compared across customers, not the maximum single stored Consumption value.",
+        "origin": "s1499",
+        "sql": "ORDER BY SUM(yearmonth.Consumption) / 12 DESC",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:three-client-segments",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "_feedback_sources": [
+          "s1471",
+          "s1517",
+          "s1490",
+          "s1506",
+          "s1528",
+          "s1478",
+          "s1507",
+          "s1492",
+          "s1500",
+          "s1489",
+          "s1495",
+          "s1501",
+          "s1502"
+        ],
+        "losses": 2,
+        "note": "customers.Segment holds exactly the three codes SME, LAM and KAM, so a request about these segments is an explicit IN filter on that column.",
+        "origin": "s1482",
+        "sql": "customers.Segment IN ('SME', 'LAM', 'KAM')",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:currency-a-customer-pays-in",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "losses": 0,
+        "note": "customers.Currency holds ISO-style currency codes as stored text, e.g. 'CZK' (Czech koruna) and 'EUR' (euro), so a currency question compares these codes directly.",
+        "origin": "s1486",
+        "sql": "customers.Currency",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:difference-in-counts-between-two-categories",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "losses": 0,
+        "note": "In SQLite a conditional count over one column can be written as SUM(boolexpression), and comparing two groups means subtracting the two SUM(condition) values within the same filtered population.",
+        "origin": "s1486",
+        "sql": "SUM(customers.Currency = 'CZK') - SUM(customers.Currency = 'EUR')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:paid-in-czk",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "losses": 0,
+        "note": "The transaction currency is stored as a code on the customer (CZK or EUR) and is reached by joining transactions_1k.CustomerID = customers.CustomerID.",
+        "origin": "s1516",
+        "sql": "customers.Currency = 'CZK'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:spending-in-a-single-month",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1525"
+        ],
+        "losses": 1,
+        "note": "A month-specific total is computed with conditional aggregation over the joined yearmonth rows, returning 0 for other months instead of NULL.",
+        "origin": "s1529",
+        "sql": "SUM(IIF(yearmonth.Date = '201201', transactions_1k.Price, 0))",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:customer-who-paid-a-price-on-a-date",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "losses": 0,
+        "note": "Resolve the paying customer with a subquery on transactions_1k.Date and transactions_1k.Price instead of joining transactions_1k to yearmonth, which would duplicate the customer's consumption rows and inflate the sums.",
+        "origin": "s1526",
+        "sql": "yearmonth.CustomerID = (SELECT transactions_1k.CustomerID FROM transactions_1k WHERE transactions_1k.Date = '2012-08-25' AND transactions_1k.Price = 634.8)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:number-of-gas-stations",
+      "type": "MEANS",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {
+        "_feedback_sources": [
+          "s1513",
+          "s1508",
+          "s1509",
+          "s1476",
+          "s1516",
+          "s1527",
+          "s1507",
+          "s1502",
+          "s1486"
+        ],
+        "losses": 2,
+        "note": "Each row of gasstations is one gas station, identified by GasStationID, so counting that column counts stations.",
+        "origin": "s1491",
+        "sql": "COUNT(gasstations.GasStationID)",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:statement-year",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1485",
+          "s1487",
+          "s1522",
+          "s1479",
+          "s1478",
+          "s1483",
+          "s1489",
+          "s1495"
+        ],
+        "losses": 0,
+        "note": "yearmonth.Date is stored as a six-character text year-month code (YYYYMM), so a year filter uses a LIKE prefix match on the first four characters.",
+        "origin": "s1482",
+        "sql": "yearmonth.Date LIKE '2013%'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:january-2012",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {
+        "losses": 0,
+        "note": "Month-year filters on this database use the ISO 'YYYY-MM' prefix of the stored date string.",
+        "origin": "s1504",
+        "sql": "transactions_1k.Date LIKE '2012-01%'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:currency",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "_feedback_sources": [
+          "s1530",
+          "s1493",
+          "s1497",
+          "s1475",
+          "s1477",
+          "s1512",
+          "s1471",
+          "s1514",
+          "s1487",
+          "s1474",
+          "s1522",
+          "s1476"
+        ],
+        "losses": 3,
+        "note": "customers.Currency stores the currency code (e.g. EUR, CZK) used to filter customers by currency.",
+        "origin": "s1499",
+        "sql": "customers.Currency",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-rows-matching-a-condition",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "losses": 0,
+        "note": "A percentage over a filtered set is computed as SUM of a 0/1 indicator divided by the row count of that same filtered set, without de-duplicating the joined rows first, since DISTINCT changes both numerator and denominator.",
+        "origin": "s1525",
+        "sql": "CAST(SUM(IIF(customers.Currency = 'EUR', 1, 0)) AS FLOAT) * 100 / COUNT(transactions_1k.CustomerID)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:transaction-s-customer-month",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "losses": 0,
+        "note": "yearmonth is keyed by CustomerID, so a transaction's month must be resolved by matching the customer id, not by the gas station id.",
+        "origin": "s1501",
+        "sql": "transactions_1k.CustomerID = yearmonth.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:in-euro",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "_feedback_sources": [
+          "s1530",
+          "s1510",
+          "s1471",
+          "s1511",
+          "s1521",
+          "s1502"
+        ],
+        "losses": 1,
+        "note": "\"In euro\" is a stored currency code on the customer's record, compared as customers.Currency = 'EUR'.",
+        "origin": "s1503",
+        "sql": "customers.Currency = 'EUR'",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:consumption-decrease-rate-between-two-years",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "losses": 0,
+        "note": "The decrease rate is a plain ratio (difference divided by the earlier year's total), not a value multiplied by 100.",
+        "origin": "s1526",
+        "sql": "(SUM(IIF(SUBSTR(yearmonth.Date, 1, 4) = '2012', yearmonth.Consumption, 0)) - SUM(IIF(SUBSTR(yearmonth.Date, 1, 4) = '2013', yearmonth.Consumption, 0))) / CAST(SUM(IIF(SUBSTR(yearmonth.Date, 1, 4) = '2012', yearmonth.Consumption, 0)) AS FLOAT)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:product-full-name",
+      "type": "MEANS",
+      "to_entity": "column:products.description-50eb3d",
+      "properties": {
+        "_feedback_sources": [
+          "s1533",
+          "s1532",
+          "s1506",
+          "s1519"
+        ],
+        "losses": 0,
+        "note": "The product's full readable name is stored in products.Description, linked to transactions through products.ProductID.",
+        "origin": "s1530",
+        "sql": "products.Description",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:spending-in-a-single-month",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {
+        "_feedback_sources": [
+          "s1511",
+          "s1480",
+          "s1491",
+          "s1508",
+          "s1504"
+        ],
+        "losses": 3,
+        "note": "A month-specific total is computed with conditional aggregation over the joined yearmonth rows, returning 0 for other months instead of NULL.",
+        "origin": "s1529",
+        "sql": "SUM(IIF(yearmonth.Date = '201201', transactions_1k.Price, 0))",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:consumption-paid-in-czk",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "_feedback_sources": [
+          "s1497",
+          "s1473",
+          "s1475",
+          "s1477",
+          "s1512",
+          "s1482",
+          "s1471",
+          "s1514",
+          "s1511",
+          "s1487",
+          "s1533",
+          "s1480",
+          "s1474",
+          "s1513",
+          "s1479",
+          "s1476",
+          "s1526"
+        ],
+        "losses": 6,
+        "note": "The billing currency of a customer is stored on customers.Currency as a code (e.g. CZK, EUR), so currency questions filter that column directly.",
+        "origin": "s1481",
+        "sql": "customers.Currency = 'CZK'",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:customer-who-paid-a-price-on-a-date",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {
+        "losses": 0,
+        "note": "Resolve the paying customer with a subquery on transactions_1k.Date and transactions_1k.Price instead of joining transactions_1k to yearmonth, which would duplicate the customer's consumption rows and inflate the sums.",
+        "origin": "s1526",
+        "sql": "yearmonth.CustomerID = (SELECT transactions_1k.CustomerID FROM transactions_1k WHERE transactions_1k.Date = '2012-08-25' AND transactions_1k.Price = 634.8)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:consumption-total-by-period",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1506",
+          "s1491",
+          "s1474",
+          "s1508",
+          "s1476",
+          "s1527",
+          "s1483",
+          "s1500",
+          "s1489",
+          "s1495"
+        ],
+        "losses": 2,
+        "note": "Peak consumption for a period is found by summing yearmonth.Consumption over each period and taking the maximum group.",
+        "origin": "s1480",
+        "sql": "SUM(yearmonth.Consumption)",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:paid-in-euro",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "_feedback_sources": [
+          "s1493",
+          "s1497",
+          "s1473",
+          "s1475",
+          "s1477",
+          "s1512",
+          "s1482"
+        ],
+        "losses": 4,
+        "note": "customers.Currency stores the payment currency as a code ('CZK' or 'EUR'), so euro customers are selected with customers.Currency = 'EUR'.",
+        "origin": "s1505",
+        "sql": "customers.Currency = 'EUR'",
+        "wins": 3
+      }
+    },
+    {
+      "from_entity": "term:customer-s-monthly-expenses",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "losses": 0,
+        "note": "A transaction-level customer is tied to a monthly consumption row by CustomerID, and the resulting monthly spending value is yearmonth.Consumption.",
+        "origin": "s1520",
+        "sql": "transactions_1k.CustomerID = yearmonth.CustomerID",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:value-for-money-gas-stations",
+      "type": "MEANS",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {
+        "_feedback_sources": [
+          "s1513",
+          "s1508",
+          "s1528",
+          "s1509",
+          "s1478",
+          "s1527",
+          "s1507",
+          "s1501",
+          "s1502"
+        ],
+        "losses": 1,
+        "note": "gasstations.Segment stores the chain segment category, with 'Value for money' as one of the stored values.",
+        "origin": "s1491",
+        "sql": "gasstations.Segment = 'Value for money'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:product-description",
+      "type": "MEANS",
+      "to_entity": "column:products.productid-df15a8",
+      "properties": {
+        "_feedback_sources": [
+          "s1533",
+          "s1532",
+          "s1506",
+          "s1519"
+        ],
+        "losses": 0,
+        "note": "The product's text description lives in products.Description and the product itself is identified by products.ProductID, so listings of bought products should carry both so each distinct product is identifiable.",
+        "origin": "s1503",
+        "sql": "products.ProductID, products.Description",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:month-of-a-date",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1505",
+          "s1530",
+          "s1493",
+          "s1497"
+        ],
+        "losses": 2,
+        "note": "The YYYYMM text format makes the month the two characters after position 4, which is the grouping key for monthly figures.",
+        "origin": "s1498",
+        "sql": "SUBSTR(yearmonth.Date, 5, 2)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:amount-spent-by-a-customer",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {
+        "_feedback_sources": [
+          "s1470",
+          "s1511",
+          "s1484",
+          "s1485",
+          "s1517",
+          "s1490",
+          "s1480",
+          "s1532",
+          "s1524",
+          "s1506",
+          "s1521",
+          "s1491",
+          "s1474",
+          "s1513",
+          "s1522",
+          "s1508",
+          "s1504",
+          "s1509",
+          "s1527",
+          "s1483",
+          "s1507",
+          "s1489",
+          "s1501",
+          "s1502"
+        ],
+        "losses": 4,
+        "note": "Customer spending is the sum of the transaction prices recorded in transactions_1k.Price for that customer.",
+        "origin": "s1529",
+        "sql": "SUM(transactions_1k.Price)",
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "term:kam-segment",
+      "type": "MEANS",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {
+        "_feedback_sources": [
+          "s1489"
+        ],
+        "losses": 0,
+        "note": "customers.Segment holds the client segment code; KAM is one stored value alongside SME and LAM.",
+        "origin": "s1488",
+        "sql": "customers.Segment = 'KAM'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:monthly-consumption",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "_feedback_sources": [
+          "s1530",
+          "s1510",
+          "s1533"
+        ],
+        "losses": 1,
+        "note": "yearmonth holds a yearly consumption total per customer, so a monthly consumption figure is the sum over the year divided by 12.",
+        "origin": "s1499",
+        "sql": "SUM(yearmonth.Consumption) / 12",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:customer-currency-eur",
+      "type": "MEANS",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {
+        "_feedback_sources": [
+          "s1514",
+          "s1485",
+          "s1487",
+          "s1517",
+          "s1490",
+          "s1533",
+          "s1532",
+          "s1524",
+          "s1474",
+          "s1513",
+          "s1522",
+          "s1479",
+          "s1476",
+          "s1488",
+          "s1492",
+          "s1520",
+          "s1526"
+        ],
+        "losses": 3,
+        "note": "The currency a customer transacts in is a stored attribute of the customer record (customers.Currency), holding codes such as 'EUR' and 'CZK'.",
+        "origin": "s1525",
+        "sql": "customers.Currency = 'EUR'",
+        "wins": 14
+      }
+    },
+    {
+      "from_entity": "term:transaction-date-filter",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {
+        "_feedback_sources": [
+          "s1514",
+          "s1524",
+          "s1506",
+          "s1521",
+          "s1513",
+          "s1522",
+          "s1509",
+          "s1488",
+          "s1518",
+          "s1519"
+        ],
+        "losses": 1,
+        "note": "transactions_1k.Date stores dates as plain 'YYYY-MM-DD' text, so a day is matched with equality on that literal format.",
+        "origin": "s1525",
+        "sql": "transactions_1k.Date = '2012-08-25'",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:year-of-a-date",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {
+        "_feedback_sources": [
+          "s1530",
+          "s1493",
+          "s1497",
+          "s1477",
+          "s1515"
+        ],
+        "losses": 1,
+        "note": "yearmonth.Date is stored as YYYYMM text, so the year is the first four characters and the month is the last two.",
+        "origin": "s1498",
+        "sql": "SUBSTR(yearmonth.Date, 1, 4)",
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "term:least-total-consumption",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {
+        "losses": 0,
+        "note": "When comparing customers by consumption over a period, each customer must be reduced to the SUM of their monthly yearmonth.Consumption values before ranking, not a single row's value.",
+        "origin": "s1472",
+        "sql": "ORDER BY SUM(yearmonth.Consumption) ASC",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:total-price-of-a-transaction",
+      "type": "MEANS",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {
+        "_feedback_sources": [
+          "s1519"
+        ],
+        "losses": 0,
+        "note": "The money value of a transaction in transactions_1k is the Amount column (integer), not a Price column.",
+        "origin": "s1504",
+        "sql": "transactions_1k.Amount",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:customer-who-paid-a-price-on-a-date",
+      "type": "MEANS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "losses": 0,
+        "note": "Resolve the paying customer with a subquery on transactions_1k.Date and transactions_1k.Price instead of joining transactions_1k to yearmonth, which would duplicate the customer's consumption rows and inflate the sums.",
+        "origin": "s1526",
+        "sql": "yearmonth.CustomerID = (SELECT transactions_1k.CustomerID FROM transactions_1k WHERE transactions_1k.Date = '2012-08-25' AND transactions_1k.Price = 634.8)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "example:s1474",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1481",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1524",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1524",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1518",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1489",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1514",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1509",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.transactionid-f6ceaf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1510",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1497",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1521",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1524",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1520",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1503",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1496",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1513",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1511",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1487",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1480",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1490",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1528",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1530",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1502",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1476",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1472",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1525",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1476",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1485",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1529",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1532",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1489",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1512",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1519",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1513",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1510",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1477",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1521",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1502",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1484",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1488",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1478",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1529",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1520",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1474",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1491",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1493",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1532",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1519",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1502",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1530",
+      "type": "TOUCHES",
+      "to_entity": "column:products.description-50eb3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1508",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1521",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1479",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1505",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1514",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1478",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1505",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1509",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1515",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1524",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1483",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1495",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1488",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1527",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1489",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1480",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1489",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1525",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1497",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1502",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.chainid-8abcf5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1529",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1507",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1482",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1527",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1500",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1505",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1506",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1511",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1514",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1523",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1516",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1493",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1532",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1482",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1507",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1472",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1491",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1500",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1472",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1521",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1518",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1503",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1478",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1498",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1516",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1530",
+      "type": "TOUCHES",
+      "to_entity": "column:products.productid-df15a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1477",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1524",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1504",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1513",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1501",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1473",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1480",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1516",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.transactionid-f6ceaf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1473",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1532",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1490",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1520",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1517",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1475",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1476",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1470",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1473",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1497",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1488",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1508",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1499",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1480",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1514",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1485",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1473",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1523",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1490",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1505",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1487",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1520",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1492",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1500",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1475",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1509",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1506",
+      "type": "TOUCHES",
+      "to_entity": "column:products.description-50eb3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1523",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.cardid-9b4ed5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1472",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1488",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1501",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1481",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1496",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1494",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1500",
+      "type": "TOUCHES",
+      "to_entity": "column:products.productid-df15a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1499",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1482",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1500",
+      "type": "TOUCHES",
+      "to_entity": "column:products.description-50eb3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1502",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1518",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1501",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1487",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1511",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1471",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1498",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1499",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1530",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1490",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1501",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1496",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1502",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1497",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1492",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1503",
+      "type": "TOUCHES",
+      "to_entity": "column:products.description-50eb3d",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1503",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1481",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1483",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1470",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1481",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1484",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1508",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.transactionid-f6ceaf",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1517",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1516",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1532",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1529",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1509",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1522",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1475",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1511",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1516",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1529",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1494",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1515",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1515",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1486",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1478",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1477",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1481",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1499",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1518",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.time-a1cbad",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1504",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1485",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1489",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1521",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1517",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1479",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1487",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1496",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1520",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1476",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1501",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1508",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1512",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1513",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1479",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1516",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1528",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1477",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1523",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1506",
+      "type": "TOUCHES",
+      "to_entity": "column:products.productid-df15a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1486",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1473",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1517",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1475",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1479",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1509",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1506",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1492",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1482",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1482",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1497",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1475",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1533",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1507",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.chainid-8abcf5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1514",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1520",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1532",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.amount-42a816",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1491",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.segment-258d04",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1503",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1501",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1513",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1506",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1510",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1481",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1519",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1529",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1515",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1483",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1518",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1477",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1474",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1513",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1512",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1493",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1495",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1506",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1476",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1500",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1487",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1507",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1472",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1495",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1487",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1525",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1510",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.price-503613",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1526",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.gasstationid-096311",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1525",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.customerid-3e3ba8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1531",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1517",
+      "type": "TOUCHES",
+      "to_entity": "column:transactions-1k.date-4222b5",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1515",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.segment-e2126a",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1474",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1479",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1474",
+      "type": "TOUCHES",
+      "to_entity": "column:customers.currency-3f5cd2",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1503",
+      "type": "TOUCHES",
+      "to_entity": "column:products.productid-df15a8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1480",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.consumption-64b1f0",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1508",
+      "type": "TOUCHES",
+      "to_entity": "column:gasstations.country-e5e858",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s1496",
+      "type": "TOUCHES",
+      "to_entity": "column:yearmonth.date-e80b01",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:customers.customerid-3e3ba8",
+      "type": "JOINS",
+      "to_entity": "column:transactions-1k.customerid-3d5afc",
+      "properties": {
+        "_win_sources": [
+          "s1503",
+          "s1531",
+          "s1515",
+          "s1525",
+          "s1514",
+          "s1511",
+          "s1517",
+          "s1516",
+          "s1502"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "column:products.productid-df15a8",
+      "type": "JOINS",
+      "to_entity": "column:transactions-1k.productid-7b086a",
+      "properties": {
+        "_win_sources": [
+          "s1503",
+          "s1530",
+          "s1506",
+          "s1500"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "column:customers.customerid-3e3ba8",
+      "type": "JOINS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "_win_sources": [
+          "s1499",
+          "s1505",
+          "s1481",
+          "s1497",
+          "s1473",
+          "s1475",
+          "s1477",
+          "s1482",
+          "s1487",
+          "s1490",
+          "s1480",
+          "s1474",
+          "s1522",
+          "s1479",
+          "s1476",
+          "s1488",
+          "s1478",
+          "s1489",
+          "s1472",
+          "s1496"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "column:transactions-1k.customerid-3d5afc",
+      "type": "JOINS",
+      "to_entity": "column:yearmonth.customerid-1d0cf4",
+      "properties": {
+        "_win_sources": [
+          "s1529",
+          "s1500",
+          "s1520",
+          "s1501"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 4
+      }
+    },
+    {
+      "from_entity": "column:gasstations.gasstationid-096311",
+      "type": "JOINS",
+      "to_entity": "column:transactions-1k.gasstationid-a8beb8",
+      "properties": {
+        "_win_sources": [
+          "s1510",
+          "s1529",
+          "s1532",
+          "s1524",
+          "s1506",
+          "s1521",
+          "s1513",
+          "s1508",
+          "s1509",
+          "s1507",
+          "s1523",
+          "s1501",
+          "s1502",
+          "s1526",
+          "s1518"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 15
+      }
+    }
+  ]
+}

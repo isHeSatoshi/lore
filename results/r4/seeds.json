@@ -1,0 +1,49 @@
+{
+  "run": "r4",
+  "databases": {
+    "california_schools": {
+      "entities": 190,
+      "relations": 487
+    },
+    "card_games": {
+      "entities": 191,
+      "relations": 425
+    },
+    "codebase_community": {
+      "entities": 166,
+      "relations": 420
+    },
+    "debit_card_specializing": {
+      "entities": 140,
+      "relations": 373
+    },
+    "european_football_2": {
+      "entities": 165,
+      "relations": 432
+    },
+    "financial": {
+      "entities": 161,
+      "relations": 525
+    },
+    "formula_1": {
+      "entities": 174,
+      "relations": 567
+    },
+    "student_club": {
+      "entities": 166,
+      "relations": 506
+    },
+    "superhero": {
+      "entities": 127,
+      "relations": 450
+    },
+    "thrombosis_prediction": {
+      "entities": 244,
+      "relations": 481
+    },
+    "toxicology": {
+      "entities": 138,
+      "relations": 401
+    }
+  }
+}

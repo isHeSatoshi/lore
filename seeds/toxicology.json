@@ -1,0 +1,5076 @@
+{
+  "entities": [
+    {
+      "id": "column:atom.atom-id-e07906",
+      "type": "Column",
+      "name": "atom.atom_id",
+      "properties": {
+        "profile": "{\"distinct\": 12333, \"nulls\": 0, \"top\": [\"TR000_1\", \"TR000_2\", \"TR000_3\", \"TR000_4\", \"TR000_5\", \"TR001_1\", \"TR001_10\", \"TR001_11\", \"TR001_12\", \"TR001_13\", \"TR001_14\", \"TR001_15\", \"TR001_16\", \"TR001_17\", \"TR001_18\", \"TR001_19\", \"TR001_2\", \"TR001_20\", \"TR001_21\", \"TR001_3\", \"TR001_4\", \"TR001_5\", \"TR001_6\", \"TR001_7\", \"TR001_8\"]}"
+      }
+    },
+    {
+      "id": "column:atom.element-977113",
+      "type": "Column",
+      "name": "atom.element",
+      "properties": {
+        "profile": "{\"distinct\": 21, \"nulls\": 0, \"top\": [\"h\", \"c\", \"o\", \"n\", \"cl\", \"s\", \"br\", \"na\", \"p\", \"f\", \"i\", \"si\", \"sn\", \"cu\", \"zn\", \"y\", \"te\", \"pb\", \"k\", \"ca\", \"b\"]}"
+      }
+    },
+    {
+      "id": "column:atom.molecule-id-fc9aa8",
+      "type": "Column",
+      "name": "atom.molecule_id",
+      "properties": {
+        "profile": "{\"distinct\": 444, \"nulls\": 0, \"top\": [\"TR338\", \"TR496\", \"TR060\", \"TR059\", \"TR397\", \"TR430\", \"TR405\", \"TR193\", \"TR426\", \"TR131\", \"TR274\", \"TR152\", \"TR225\", \"TR043\", \"TR438\", \"TR327\", \"TR305\", \"TR067\", \"TR252\", \"TR030\", \"TR296\", \"TR212\", \"TR481\", \"TR175\", \"TR217\"]}"
+      }
+    },
+    {
+      "id": "column:bond.bond-id-8d7c57",
+      "type": "Column",
+      "name": "bond.bond_id",
+      "properties": {
+        "profile": "{\"distinct\": 12379, \"nulls\": 0, \"top\": [\"TR000_1_2\", \"TR000_2_3\", \"TR000_2_4\", \"TR000_2_5\", \"TR001_10_11\", \"TR001_1_12\", \"TR001_1_2\", \"TR001_1_7\", \"TR001_1_8\", \"TR001_2_14\", \"TR001_2_4\", \"TR001_2_6\", \"TR001_3_13\", \"TR001_3_4\", \"TR001_3_5\", \"TR001_3_6\", \"TR001_4_10\", \"TR001_4_19\", \"TR001_5_15\", \"TR001_5_7\", \"TR001_5_8\", \"TR001_6_17\", \"TR001_6_9\", \"TR001_7_16\", \"TR001_7_9\"]}"
+      }
+    },
+    {
+      "id": "column:bond.bond-type-fd1075",
+      "type": "Column",
+      "name": "bond.bond_type",
+      "properties": {
+        "profile": "{\"distinct\": 3, \"nulls\": 1, \"top\": [\"-\", \"=\", \"#\", null]}"
+      }
+    },
+    {
+      "id": "column:bond.molecule-id-a19629",
+      "type": "Column",
+      "name": "bond.molecule_id",
+      "properties": {
+        "profile": "{\"distinct\": 444, \"nulls\": 0, \"top\": [\"TR338\", \"TR496\", \"TR060\", \"TR059\", \"TR397\", \"TR193\", \"TR405\", \"TR430\", \"TR131\", \"TR426\", \"TR274\", \"TR043\", \"TR225\", \"TR152\", \"TR438\", \"TR030\", \"TR327\", \"TR067\", \"TR305\", \"TR175\", \"TR252\", \"TR364\", \"TR212\", \"TR481\", \"TR217\"]}"
+      }
+    },
+    {
+      "id": "column:connected.atom-id-f34238",
+      "type": "Column",
+      "name": "connected.atom_id",
+      "properties": {
+        "profile": "{\"distinct\": 12284, \"nulls\": 0, \"top\": [\"TR000_2\", \"TR001_1\", \"TR001_2\", \"TR001_3\", \"TR001_4\", \"TR001_5\", \"TR001_6\", \"TR001_7\", \"TR001_8\", \"TR001_9\", \"TR003_1\", \"TR003_2\", \"TR004_12\", \"TR004_2\", \"TR004_6\", \"TR004_7\", \"TR004_8\", \"TR006_2\", \"TR006_24\", \"TR006_25\", \"TR006_26\", \"TR006_3\", \"TR006_4\", \"TR007_7\", \"TR007_8\"]}"
+      }
+    },
+    {
+      "id": "column:connected.atom-id2-d22444",
+      "type": "Column",
+      "name": "connected.atom_id2",
+      "properties": {
+        "profile": "{\"distinct\": 12284, \"nulls\": 0, \"top\": [\"TR502_3\", \"TR502_1\", \"TR501_1\", \"TR496_9\", \"TR496_8\", \"TR496_7\", \"TR496_49\", \"TR496_45\", \"TR496_4\", \"TR496_38\", \"TR496_37\", \"TR496_36\", \"TR496_32\", \"TR496_31\", \"TR496_30\", \"TR496_3\", \"TR496_29\", \"TR496_28\", \"TR496_27\", \"TR496_20\", \"TR496_2\", \"TR496_19\", \"TR496_18\", \"TR496_17\", \"TR496_16\"]}"
+      }
+    },
+    {
+      "id": "column:connected.bond-id-cc2d31",
+      "type": "Column",
+      "name": "connected.bond_id",
+      "properties": {
+        "profile": "{\"distinct\": 12379, \"nulls\": 0, \"top\": [\"TR502_7_10\", \"TR502_6_9\", \"TR502_3_5\", \"TR502_3_4\", \"TR502_2_3\", \"TR502_1_8\", \"TR502_1_7\", \"TR502_1_6\", \"TR502_1_3\", \"TR501_9_21\", \"TR501_9_13\", \"TR501_8_20\", \"TR501_8_12\", \"TR501_7_19\", \"TR501_7_11\", \"TR501_6_18\", \"TR501_6_10\", \"TR501_5_9\", \"TR501_5_8\", \"TR501_4_7\", \"TR501_4_6\", \"TR501_1_5\", \"TR501_1_4\", \"TR501_1_3\", \"TR501_1_2\"]}"
+      }
+    },
+    {
+      "id": "column:molecule.label-a14568",
+      "type": "Column",
+      "name": "molecule.label",
+      "properties": {
+        "profile": "{\"distinct\": 2, \"nulls\": 0, \"top\": [\"-\", \"+\"]}"
+      }
+    },
+    {
+      "id": "column:molecule.molecule-id-41d6de",
+      "type": "Column",
+      "name": "molecule.molecule_id",
+      "properties": {
+        "profile": "{\"distinct\": 343, \"nulls\": 0, \"top\": [\"TR000\", \"TR001\", \"TR002\", \"TR004\", \"TR006\", \"TR007\", \"TR008\", \"TR009\", \"TR010\", \"TR011\", \"TR012\", \"TR014\", \"TR015\", \"TR017\", \"TR019\", \"TR020\", \"TR021\", \"TR022\", \"TR023\", \"TR024\", \"TR025\", \"TR028\", \"TR029\", \"TR030\", \"TR031\"]}"
+      }
+    },
+    {
+      "id": "example:s197",
+      "type": "Example",
+      "name": "Calculate the average number of oxygen atoms in single-bonded molecules.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s197",
+        "learning_complete": true,
+        "sql": "SELECT AVG(oxygen_count) FROM (SELECT T1.molecule_id, COUNT(T1.element) AS oxygen_count FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id  WHERE T2.bond_type = '-' AND T1.element = 'o'  GROUP BY T1.molecule_id) AS oxygen_counts"
+      }
+    },
+    {
+      "id": "example:s198",
+      "type": "Example",
+      "name": "On average how many carcinogenic molecules are single bonded?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s198",
+        "learning_complete": true,
+        "sql": "SELECT AVG(single_bond_count) FROM (SELECT T3.molecule_id, COUNT(T1.bond_type) AS single_bond_count FROM bond AS T1  INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN molecule AS T3 ON T3.molecule_id = T2.molecule_id WHERE T1.bond_type = '-' AND T3.label = '+' GROUP BY T3.molecule_id) AS subquery"
+      }
+    },
+    {
+      "id": "example:s199",
+      "type": "Example",
+      "name": "In the molecule containing sodium atoms, how many are non-carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s199",
+        "learning_complete": true,
+        "sql": "-- Count the molecules that contain sodium ('na') atoms and are labeled non-carcinogenic ('-')\nSELECT COUNT(DISTINCT m.molecule_id) AS non_carcinogenic_molecule_count\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'na' AND m.label = '-'"
+      }
+    },
+    {
+      "id": "example:s200",
+      "type": "Example",
+      "name": "Find the triple-bonded molecules which are carcinogenic.",
+      "aliases": [],
+      "properties": {
+        "key": "s200",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.molecule_id\nFROM molecule AS T1\nINNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id\nWHERE T1.label = '+' AND T2.bond_type = '#'"
+      }
+    },
+    {
+      "id": "example:s201",
+      "type": "Example",
+      "name": "What is the percentage of carbon in double-bond molecules?",
+      "aliases": [],
+      "properties": {
+        "key": "s201",
+        "learning_complete": true,
+        "sql": "-- Percentage of carbon atoms among atoms belonging to molecules that contain double bonds\nSELECT CAST(COUNT(CASE WHEN T1.element = 'c' THEN T1.atom_id ELSE NULL END) AS REAL) * 100 / COUNT(T1.atom_id) AS percentage_carbon_in_double_bond_molecules\nFROM atom AS T1\nINNER JOIN (\n    SELECT DISTINCT molecule_id\n    FROM bond\n    WHERE bond_type = '='\n) AS T2 ON T1.molecule_id = T2.molecule_id"
+      }
+    },
+    {
+      "id": "example:s208",
+      "type": "Example",
+      "name": "Which type of label is the most numerous in atoms with hydrogen?",
+      "aliases": [],
+      "properties": {
+        "key": "s208",
+        "learning_complete": true,
+        "sql": "-- Label (carcinogenic status) most common among hydrogen atoms\nSELECT m.label\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'h'\nGROUP BY m.label\nORDER BY COUNT(a.atom_id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s209",
+      "type": "Example",
+      "name": "Chlorine is in what type of bond?",
+      "aliases": [],
+      "properties": {
+        "key": "s209",
+        "learning_complete": true,
+        "sql": "-- Bond types formed by chlorine atoms\nSELECT DISTINCT b.bond_type\nFROM atom AS a\nINNER JOIN connected AS c ON a.atom_id = c.atom_id\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE a.element = 'cl'"
+      }
+    },
+    {
+      "id": "example:s210",
+      "type": "Example",
+      "name": "What atoms are connected in single type bonds?",
+      "aliases": [],
+      "properties": {
+        "key": "s210",
+        "learning_complete": true,
+        "sql": "-- Atoms connected by single bonds\nSELECT c.atom_id, c.atom_id2\nFROM connected AS c\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE b.bond_type = '-'"
+      }
+    },
+    {
+      "id": "example:s211",
+      "type": "Example",
+      "name": "Indicate which atoms are connected in non-carcinogenic type molecules.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s211",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.atom_id FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN connected AS T3 ON T1.atom_id = T3.atom_id WHERE T2.label = '-'"
+      }
+    },
+    {
+      "id": "example:s212",
+      "type": "Example",
+      "name": "Which element is the least numerous in non-carcinogenic molecules?",
+      "aliases": [],
+      "properties": {
+        "key": "s212",
+        "learning_complete": true,
+        "sql": "-- Element with the fewest atoms among non-carcinogenic ('-') molecules\nSELECT a.element\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE m.label = '-'\nGROUP BY a.element\nORDER BY COUNT(a.atom_id) ASC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s214",
+      "type": "Example",
+      "name": "What type of label is not on molecules with atoms with tin?",
+      "aliases": [],
+      "properties": {
+        "key": "s214",
+        "learning_complete": true,
+        "sql": "-- Labels of molecules that do NOT contain any tin ('sn') atoms\nSELECT DISTINCT m.label\nFROM molecule AS m\nWHERE m.molecule_id NOT IN (\n    SELECT a.molecule_id\n    FROM atom AS a\n    WHERE a.element = 'sn'\n)"
+      }
+    },
+    {
+      "id": "example:s216",
+      "type": "Example",
+      "name": "Identify all connected atoms with a triple bond.",
+      "aliases": [],
+      "properties": {
+        "key": "s216",
+        "learning_complete": true,
+        "sql": "-- Connected atom pairs joined by a triple bond\nSELECT c.atom_id, c.atom_id2\nFROM connected AS c\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE b.bond_type = '#'"
+      }
+    },
+    {
+      "id": "example:s217",
+      "type": "Example",
+      "name": "Identify all the atoms that are connected to the atoms of the TR181 molecule.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "atom",
+            "molecule_id"
+          ]
+        ],
+        "key": "s217",
+        "learning_complete": true,
+        "sql": "SELECT T2.atom_id, T2.atom_id2 FROM atom AS T1 INNER JOIN connected AS T2 ON T2.atom_id = T1.atom_id WHERE T1.molecule_id = 'TR181'"
+      }
+    },
+    {
+      "id": "example:s218",
+      "type": "Example",
+      "name": "What percentage of carcinogenic-type molecules does not contain fluorine?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "molecule",
+            "label"
+          ]
+        ],
+        "key": "s218",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(DISTINCT CASE WHEN T1.element <> 'f' THEN T2.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(DISTINCT T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'"
+      }
+    },
+    {
+      "id": "example:s219",
+      "type": "Example",
+      "name": "What is the percentage of carcinogenic molecules in triple type bonds?",
+      "aliases": [],
+      "properties": {
+        "key": "s219",
+        "learning_complete": true,
+        "sql": "-- Percentage of carcinogenic molecules among molecules containing triple ('#') bonds\nSELECT\n    100.0 * SUM(CASE WHEN t.label = '+' THEN 1 ELSE 0 END) / COUNT(*) AS percentage_carcinogenic\nFROM (\n    SELECT DISTINCT m.molecule_id, m.label\n    FROM bond b\n    JOIN molecule m ON m.molecule_id = b.molecule_id\n    WHERE b.bond_type = '#'\n) AS t"
+      }
+    },
+    {
+      "id": "example:s220",
+      "type": "Example",
+      "name": "Please list top three elements of the toxicology of the molecule TR000 in alphabetical order.",
+      "aliases": [],
+      "properties": {
+        "key": "s220",
+        "learning_complete": true,
+        "sql": "-- Top three elements present in molecule TR000, in alphabetical order\nSELECT DISTINCT a.element\nFROM atom AS a\nWHERE a.molecule_id = 'TR000'\nORDER BY a.element\nLIMIT 3"
+      }
+    },
+    {
+      "id": "example:s221",
+      "type": "Example",
+      "name": "What are the atoms that are bonded in the molecule TR001 with the bond ID of TR001_2_6?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "bond",
+            "bond_id"
+          ],
+          [
+            "bond",
+            "molecule_id"
+          ]
+        ],
+        "key": "s221",
+        "learning_complete": true,
+        "sql": "SELECT SUBSTR(T.bond_id, 1, 7) AS atom_id1 , T.molecule_id || SUBSTR(T.bond_id, 8, 2) AS atom_id2 FROM bond AS T WHERE T.molecule_id = 'TR001' AND T.bond_id = 'TR001_2_6'"
+      }
+    },
+    {
+      "id": "example:s223",
+      "type": "Example",
+      "name": "What are the atom IDs of the bond TR000_2_5?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "connected",
+            "bond_id"
+          ]
+        ],
+        "key": "s223",
+        "learning_complete": true,
+        "sql": "SELECT T.atom_id FROM connected AS T WHERE T.bond_id = 'TR000_2_5'"
+      }
+    },
+    {
+      "id": "example:s224",
+      "type": "Example",
+      "name": "What are the bond IDs that have the same atom ID 2 of TR000_2?",
+      "aliases": [],
+      "properties": {
+        "key": "s224",
+        "learning_complete": true,
+        "sql": "-- Bond IDs that involve the atom TR000_2 (atom number 2 of molecule TR000)\nSELECT bond_id\nFROM connected\nWHERE atom_id = 'TR000_2'\nUNION\nSELECT bond_id\nFROM connected\nWHERE atom_id2 = 'TR000_2'"
+      }
+    },
+    {
+      "id": "example:s225",
+      "type": "Example",
+      "name": "Please list top five molecules that have double bonds in alphabetical order.",
+      "aliases": [],
+      "properties": {
+        "key": "s225",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT molecule_id\nFROM bond\nWHERE bond_type = '='\nORDER BY molecule_id\nLIMIT 5"
+      }
+    },
+    {
+      "id": "example:s226",
+      "type": "Example",
+      "name": "What is the percentage of double bonds in the molecule TR008? Please provide your answer as a percentage with five decimal places.",
+      "aliases": [],
+      "properties": {
+        "key": "s226",
+        "learning_complete": true,
+        "sql": "-- Percentage of bonds in molecule TR008 that are double bonds ('=')\nSELECT ROUND(CAST(COUNT(CASE WHEN b.bond_type = '=' THEN b.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(b.bond_id), 5) AS percentage_double_bonds\nFROM bond AS b\nWHERE b.molecule_id = 'TR008'"
+      }
+    },
+    {
+      "id": "example:s230",
+      "type": "Example",
+      "name": "What are the elements of the toxicology and label of molecule TR060?",
+      "aliases": [],
+      "properties": {
+        "key": "s230",
+        "learning_complete": true,
+        "sql": "-- Elements present in molecule TR060 and its carcinogenic label\nSELECT DISTINCT a.element, m.label\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE m.molecule_id = 'TR060'"
+      }
+    },
+    {
+      "id": "example:s232",
+      "type": "Example",
+      "name": "Please list top three molecules that have single bonds between two atoms and are not carcinogenic in alphabetical order.",
+      "aliases": [],
+      "properties": {
+        "key": "s232",
+        "learning_complete": true,
+        "sql": "-- Top three non-carcinogenic molecules that contain single bonds between two atoms\nSELECT DISTINCT m.molecule_id\nFROM molecule AS m\nJOIN bond AS b ON b.molecule_id = m.molecule_id\nJOIN connected AS c ON c.bond_id = b.bond_id\nWHERE b.bond_type = '-'\n  AND m.label = '-'\nORDER BY m.molecule_id\nLIMIT 3"
+      }
+    },
+    {
+      "id": "example:s233",
+      "type": "Example",
+      "name": "Please list top two bonds that happened with the molecule TR006 in alphabetical order.",
+      "aliases": [],
+      "properties": {
+        "key": "s233",
+        "learning_complete": true,
+        "sql": "-- Top two bond ids for molecule TR006 in alphabetical order\nSELECT bond_id\nFROM bond\nWHERE molecule_id = 'TR006'\nORDER BY bond_id\nLIMIT 2"
+      }
+    },
+    {
+      "id": "example:s234",
+      "type": "Example",
+      "name": "How many bonds which involved atom 12 does molecule TR009 have?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "connected",
+            "atom_id2"
+          ]
+        ],
+        "key": "s234",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T2.bond_id) FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T1.molecule_id = 'TR009' AND T2.atom_id = T1.molecule_id || '_1' AND T2.atom_id2 = T1.molecule_id || '_2'"
+      }
+    },
+    {
+      "id": "example:s239",
+      "type": "Example",
+      "name": "How many connections does the atom 19 have?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s239",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(T.bond_id) FROM connected AS T WHERE SUBSTR(T.atom_id, -2) = '19'"
+      }
+    },
+    {
+      "id": "example:s240",
+      "type": "Example",
+      "name": "List all the elements of the toxicology of the molecule \"TR004\".",
+      "aliases": [],
+      "properties": {
+        "key": "s240",
+        "learning_complete": true,
+        "sql": "-- Distinct elements present in molecule TR004\nSELECT DISTINCT a.element\nFROM atom AS a\nWHERE a.molecule_id = 'TR004'"
+      }
+    },
+    {
+      "id": "example:s242",
+      "type": "Example",
+      "name": "Among all the atoms from 21 to 25, list all the molecules that are carcinogenic.",
+      "aliases": [],
+      "properties": {
+        "key": "s242",
+        "learning_complete": true,
+        "sql": "-- Molecules (carcinogenic, label '+') that contain atoms numbered 21 through 25\nSELECT DISTINCT a.molecule_id\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE CAST(SUBSTR(a.atom_id, 7, 2) AS INTEGER) BETWEEN 21 AND 25\n  AND m.label = '+'\nORDER BY a.molecule_id"
+      }
+    },
+    {
+      "id": "example:s244",
+      "type": "Example",
+      "name": "Is the molecule with the most double bonds carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s244",
+        "learning_complete": true,
+        "sql": "-- Find the molecule with the most double bonds ('=') and report whether it is carcinogenic\nSELECT m.label\nFROM bond AS b\nJOIN molecule AS m ON m.molecule_id = b.molecule_id\nWHERE b.bond_type = '='\nGROUP BY b.molecule_id, m.label\nORDER BY COUNT(b.bond_id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s245",
+      "type": "Example",
+      "name": "What is the average number of bonds the atoms with the element iodine have?",
+      "aliases": [],
+      "properties": {
+        "key": "s245",
+        "learning_complete": true,
+        "sql": "-- Average number of bonds per iodine atom\nSELECT CAST(COUNT(DISTINCT c.bond_id) AS REAL) / COUNT(DISTINCT a.atom_id) AS avg_bonds_per_iodine_atom\nFROM atom AS a\nLEFT JOIN connected AS c\n       ON a.atom_id = c.atom_id OR a.atom_id = c.atom_id2\nWHERE a.element = 'i'"
+      }
+    },
+    {
+      "id": "example:s246",
+      "type": "Example",
+      "name": "List the bond type and the bond ID of the atom 45.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "connected",
+            "atom_id"
+          ]
+        ],
+        "key": "s246",
+        "learning_complete": true,
+        "sql": "SELECT T1.bond_type, T1.bond_id FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE SUBSTR(T2.atom_id, 7, 2) = '45'"
+      }
+    },
+    {
+      "id": "example:s247",
+      "type": "Example",
+      "name": "List all the elements of atoms that can not bond with any other atoms.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "atom",
+            "atom_id"
+          ]
+        ],
+        "key": "s247",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T.element FROM atom AS T WHERE T.element NOT IN ( SELECT DISTINCT T1.element FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id )"
+      }
+    },
+    {
+      "id": "example:s249",
+      "type": "Example",
+      "name": "What are the elements of the atoms of TR144_8_19?",
+      "aliases": [],
+      "properties": {
+        "key": "s249",
+        "learning_complete": true,
+        "sql": "-- Elements of the atoms forming bond TR144_8_19\nSELECT a.element\nFROM atom AS a\nINNER JOIN connected AS c ON a.atom_id = c.atom_id\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE b.bond_id = 'TR144_8_19'\nUNION\nSELECT a2.element\nFROM atom AS a2\nINNER JOIN connected AS c2 ON a2.atom_id = c2.atom_id2\nINNER JOIN bond AS b2 ON c2.bond_id = b2.bond_id\nWHERE b2.bond_id = 'TR144_8_19'"
+      }
+    },
+    {
+      "id": "example:s250",
+      "type": "Example",
+      "name": "Of all the carcinogenic molecules, which one has the most double bonds?",
+      "aliases": [],
+      "properties": {
+        "key": "s250",
+        "learning_complete": true,
+        "sql": "-- Carcinogenic molecule ('+') with the greatest number of double bonds ('=')\nSELECT b.molecule_id\nFROM bond AS b\nJOIN molecule AS m ON m.molecule_id = b.molecule_id\nWHERE m.label = '+' AND b.bond_type = '='\nGROUP BY b.molecule_id\nORDER BY COUNT(b.bond_id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s251",
+      "type": "Example",
+      "name": "What is the least common element of all carcinogenic molecules?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s251",
+        "learning_complete": true,
+        "sql": "SELECT T.element FROM ( SELECT T2.element, COUNT(DISTINCT T2.molecule_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.label = '+' GROUP BY T2.element ORDER BY COUNT(DISTINCT T2.molecule_id) LIMIT 1 ) t"
+      }
+    },
+    {
+      "id": "example:s254",
+      "type": "Example",
+      "name": "What percentage of bonds have the most common combination of atoms' elements?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s254",
+        "learning_complete": true,
+        "sql": "SELECT CAST((SELECT COUNT(T1.atom_id) FROM connected AS T1 INNER JOIN bond AS T2 ON T1.bond_id = T2.bond_id GROUP BY T2.bond_type ORDER BY COUNT(T2.bond_id) DESC LIMIT 1 ) AS REAL) * 100 / ( SELECT COUNT(atom_id) FROM connected )"
+      }
+    },
+    {
+      "id": "example:s255",
+      "type": "Example",
+      "name": "What proportion of single bonds are carcinogenic? Please provide your answer as a percentage with five decimal places.",
+      "aliases": [],
+      "properties": {
+        "key": "s255",
+        "learning_complete": true,
+        "sql": "-- Percentage of single ('-') bonds that belong to carcinogenic molecules\nSELECT ROUND(100.0 * SUM(CASE WHEN m.label = '+' THEN 1 ELSE 0 END) / COUNT(*), 5) AS percentage_carcinogenic\nFROM bond AS b\nJOIN molecule AS m ON m.molecule_id = b.molecule_id\nWHERE b.bond_type = '-'"
+      }
+    },
+    {
+      "id": "example:s256",
+      "type": "Example",
+      "name": "Calculate the total atoms consisting of the element carbon and hydrogen.",
+      "aliases": [],
+      "properties": {
+        "key": "s256",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(a.atom_id) AS atom_count\nFROM atom AS a\nWHERE a.element IN ('c', 'h')"
+      }
+    },
+    {
+      "id": "example:s259",
+      "type": "Example",
+      "name": "How many elements are there for single bond molecules?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s259",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T.element) FROM ( SELECT DISTINCT T2.molecule_id, T1.element FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T3.bond_type = '-' ) AS T"
+      }
+    },
+    {
+      "id": "example:s261",
+      "type": "Example",
+      "name": "Write down bond id for molecules that are carcinogenic.",
+      "aliases": [],
+      "properties": {
+        "key": "s261",
+        "learning_complete": true,
+        "sql": "-- Bond ids of molecules labeled as carcinogenic ('+')\nSELECT T1.bond_id\nFROM bond AS T1\nINNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id\nWHERE T2.label = '+'"
+      }
+    },
+    {
+      "id": "example:s262",
+      "type": "Example",
+      "name": "Among the single bond molecule id, which molecules are not carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s262",
+        "learning_complete": true,
+        "sql": "-- Molecules that contain single bonds ('-') and are non-carcinogenic ('-')\nSELECT DISTINCT m.molecule_id\nFROM molecule AS m\nJOIN bond AS b ON b.molecule_id = m.molecule_id\nWHERE b.bond_type = '-' AND m.label = '-'"
+      }
+    },
+    {
+      "id": "example:s264",
+      "type": "Example",
+      "name": "What are the labels for TR000, TR001 and TR002?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s264",
+        "learning_complete": true,
+        "sql": "SELECT molecule_id, T.label FROM molecule AS T WHERE T.molecule_id IN ('TR000', 'TR001', 'TR002')"
+      }
+    },
+    {
+      "id": "example:s266",
+      "type": "Example",
+      "name": "Calculate the total carcinogenic molecules for molecule id from TR000 to TR030.",
+      "aliases": [],
+      "properties": {
+        "key": "s266",
+        "learning_complete": true,
+        "sql": "-- Your SQL query\nSELECT COUNT(*)\nFROM molecule\nWHERE label = '+'\n  AND molecule_id BETWEEN 'TR000' AND 'TR030'"
+      }
+    },
+    {
+      "id": "example:s270",
+      "type": "Example",
+      "name": "Among the molecules with element Calcium, are they mostly carcinogenic or non carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s270",
+        "learning_complete": true,
+        "sql": "-- Determine whether molecules containing Calcium ('ca') atoms are mostly carcinogenic ('+') or non-carcinogenic ('-')\nSELECT m.label\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'ca'\nGROUP BY m.label\nORDER BY COUNT(DISTINCT m.molecule_id) DESC\nLIMIT 1"
+      }
+    },
+    {
+      "id": "example:s271",
+      "type": "Example",
+      "name": "Does bond id TR001_1_8 have both element of chlorine and carbon?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s271",
+        "learning_complete": true,
+        "sql": "SELECT T2.bond_id, T2.atom_id2, T1.element AS flag_have_CaCl FROM atom AS T1 INNER JOIN connected AS T2 ON T2.atom_id = T1.atom_id WHERE T2.bond_id = 'TR001_1_8' AND (T1.element = 'c1' OR T1.element = 'c')"
+      }
+    },
+    {
+      "id": "example:s272",
+      "type": "Example",
+      "name": "List down two molecule id of triple bond non carcinogenic molecules with element carbon.",
+      "aliases": [],
+      "properties": {
+        "key": "s272",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT m.molecule_id\nFROM molecule AS m\nINNER JOIN atom AS a ON a.molecule_id = m.molecule_id\nINNER JOIN bond AS b ON b.molecule_id = m.molecule_id\nWHERE b.bond_type = '#' AND m.label = '-' AND a.element = 'c'\nLIMIT 2"
+      }
+    },
+    {
+      "id": "example:s273",
+      "type": "Example",
+      "name": "What is the percentage of element chlorine in carcinogenic molecules?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s273",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT( CASE WHEN T1.element = 'cl' THEN T1.element ELSE NULL END) AS REAL) * 100 / COUNT(T1.element) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'"
+      }
+    },
+    {
+      "id": "example:s279",
+      "type": "Example",
+      "name": "What is the label for bond ID TR001_10_11?",
+      "aliases": [],
+      "properties": {
+        "key": "s279",
+        "learning_complete": true,
+        "sql": "-- Label (carcinogenic '+' or '-') of the molecule containing bond TR001_10_11\nSELECT m.label\nFROM bond AS b\nJOIN molecule AS m ON m.molecule_id = b.molecule_id\nWHERE b.bond_id = 'TR001_10_11'"
+      }
+    },
+    {
+      "id": "example:s280",
+      "type": "Example",
+      "name": "Enumerate the bond ID of triple bond type molecules and tell me if they are carcinogenic or not.",
+      "aliases": [],
+      "properties": {
+        "key": "s280",
+        "learning_complete": true,
+        "sql": "SELECT b.bond_id, m.label\nFROM bond AS b\nINNER JOIN molecule AS m ON b.molecule_id = m.molecule_id\nWHERE b.bond_type = '#'"
+      }
+    },
+    {
+      "id": "example:s281",
+      "type": "Example",
+      "name": "Tally the toxicology element of the 4th atom of each molecule that was carcinogenic.",
+      "aliases": [],
+      "properties": {
+        "key": "s281",
+        "learning_complete": true,
+        "sql": "-- Element of the 4th atom (atom_id ending in '_4') of each carcinogenic ('+') molecule\nSELECT a.element\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE m.label = '+'\n  AND SUBSTR(a.atom_id, LENGTH(a.atom_id) - 1) = '_4'"
+      }
+    },
+    {
+      "id": "example:s284",
+      "type": "Example",
+      "name": "Determine the bond type that is formed in the chemical compound containing element Carbon.",
+      "aliases": [],
+      "properties": {
+        "key": "s284",
+        "learning_complete": true,
+        "sql": "-- Bond types formed in molecules that contain carbon atoms\nSELECT DISTINCT b.bond_type\nFROM atom AS a\nINNER JOIN connected AS c ON a.atom_id = c.atom_id\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE a.element = 'c'"
+      }
+    },
+    {
+      "id": "example:s286",
+      "type": "Example",
+      "name": "Among all chemical compounds identified in the database, what percent of compounds form a triple-bond.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s286",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN T.bond_type = '#' THEN T.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(T.bond_id) FROM bond AS T"
+      }
+    },
+    {
+      "id": "example:s287",
+      "type": "Example",
+      "name": "Among all chemical compounds that contain molecule TR047, identify the percent that form a double-bond.",
+      "aliases": [],
+      "properties": {
+        "key": "s287",
+        "learning_complete": true,
+        "sql": "-- Percentage of bonds in molecule TR047 that are double bonds ('=')\nSELECT CAST(COUNT(CASE WHEN T1.bond_type = '=' THEN T1.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(T1.bond_id) AS percentage_double_bond\nFROM bond AS T1\nINNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id\nWHERE T2.molecule_id = 'TR047'"
+      }
+    },
+    {
+      "id": "example:s290",
+      "type": "Example",
+      "name": "Which toxic element can be found in the molecule TR151?",
+      "aliases": [],
+      "properties": {
+        "key": "s290",
+        "learning_complete": true,
+        "sql": "-- Find the element(s) present in the molecule TR151\nSELECT DISTINCT a.element\nFROM atom AS a\nWHERE a.molecule_id = 'TR151'"
+      }
+    },
+    {
+      "id": "example:s292",
+      "type": "Example",
+      "name": "Identify the atoms belong to the molecule with ID between TR010 to TR050 that contain the element carbon.",
+      "aliases": [],
+      "properties": {
+        "key": "s292",
+        "learning_complete": true,
+        "sql": "-- Carbon atoms in molecules with IDs from TR010 through TR050\nSELECT a.atom_id\nFROM atom AS a\nWHERE a.element = 'c'\n  AND a.molecule_id BETWEEN 'TR010' AND 'TR050'"
+      }
+    },
+    {
+      "id": "example:s293",
+      "type": "Example",
+      "name": "How many atoms belong to the molecule labeled with carcinogenic compounds?",
+      "aliases": [],
+      "properties": {
+        "key": "s293",
+        "learning_complete": true,
+        "sql": "-- Count all atoms that belong to carcinogenic ('+') molecules\nSELECT COUNT(a.atom_id) AS atom_count\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE m.label = '+'"
+      }
+    },
+    {
+      "id": "example:s295",
+      "type": "Example",
+      "name": "How many atoms belong to the molecule that element is hydrogen and labeled with carcinogenic compound?",
+      "aliases": [],
+      "properties": {
+        "key": "s295",
+        "learning_complete": true,
+        "sql": "-- Count the atoms with element 'h' that belong to carcinogenic ('+') molecules\nSELECT COUNT(a.atom_id) AS atom_count\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'h' AND m.label = '+'"
+      }
+    },
+    {
+      "id": "example:s297",
+      "type": "Example",
+      "name": "Among the atoms that contain element carbon, which one does not contain compound carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s297",
+        "learning_complete": true,
+        "sql": "-- Atoms with element carbon ('c') that belong to non-carcinogenic ('-') molecules\nSELECT a.atom_id\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'c' AND m.label = '-'"
+      }
+    },
+    {
+      "id": "example:s298",
+      "type": "Example",
+      "name": "Calculate the percentage of molecules containing carcinogenic compounds that element is hydrogen.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s298",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN T1.element = 'h' AND T2.label = '+' THEN T2.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id"
+      }
+    },
+    {
+      "id": "example:s302",
+      "type": "Example",
+      "name": "Name the elements that comprise the atoms of bond TR001_2_4.",
+      "aliases": [],
+      "properties": {
+        "key": "s302",
+        "learning_complete": true,
+        "sql": "-- Elements of the atoms forming bond TR001_2_4\nSELECT a.element\nFROM atom AS a\nINNER JOIN connected AS c ON a.atom_id = c.atom_id\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE b.bond_id = 'TR001_2_4'\nUNION\nSELECT a2.element\nFROM atom AS a2\nINNER JOIN connected AS c2 ON a2.atom_id = c2.atom_id2\nINNER JOIN bond AS b2 ON c2.bond_id = b2.bond_id\nWHERE b2.bond_id = 'TR001_2_4'"
+      }
+    },
+    {
+      "id": "example:s303",
+      "type": "Example",
+      "name": "How many double bonds does TR006 have and is it carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s303",
+        "learning_complete": true,
+        "sql": "-- Count the double bonds ('=') in molecule TR006 and report whether TR006 is carcinogenic\nSELECT COUNT(b.bond_id) AS double_bond_count,\n       (SELECT m.label FROM molecule AS m WHERE m.molecule_id = 'TR006') AS label\nFROM bond AS b\nWHERE b.molecule_id = 'TR006' AND b.bond_type = '='"
+      }
+    },
+    {
+      "id": "example:s304",
+      "type": "Example",
+      "name": "List all carcinogenic molecules and their elements.",
+      "aliases": [],
+      "properties": {
+        "key": "s304",
+        "learning_complete": true,
+        "sql": "-- Carcinogenic molecules and the elements they contain\nSELECT DISTINCT m.molecule_id, a.element\nFROM molecule AS m\nJOIN atom AS a ON a.molecule_id = m.molecule_id\nWHERE m.label = '+'\nORDER BY m.molecule_id, a.element"
+      }
+    },
+    {
+      "id": "example:s307",
+      "type": "Example",
+      "name": "Name the atoms' elements that form bond TR000_2_3.",
+      "aliases": [],
+      "properties": {
+        "key": "s307",
+        "learning_complete": true,
+        "sql": "-- Elements of the atoms forming bond TR000_2_3\nSELECT a.element\nFROM atom AS a\nINNER JOIN connected AS c ON a.atom_id = c.atom_id\nINNER JOIN bond AS b ON c.bond_id = b.bond_id\nWHERE b.bond_id = 'TR000_2_3'\nUNION\nSELECT a2.element\nFROM atom AS a2\nINNER JOIN connected AS c2 ON a2.atom_id = c2.atom_id2\nINNER JOIN bond AS b2 ON c2.bond_id = b2.bond_id\nWHERE b2.bond_id = 'TR000_2_3'"
+      }
+    },
+    {
+      "id": "example:s309",
+      "type": "Example",
+      "name": "List out the atom id that belongs to the TR346 molecule and how many bond type can be created by this molecule?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s309",
+        "learning_complete": true,
+        "sql": "SELECT T1.atom_id, COUNT(DISTINCT T2.bond_type),T1.molecule_id FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.molecule_id = 'TR000' GROUP BY T1.atom_id, T2.bond_type"
+      }
+    },
+    {
+      "id": "example:s310",
+      "type": "Example",
+      "name": "How many molecules have a double bond type and among these molecule, how many are labeled as carcinogenic compound?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s310",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(DISTINCT T2.molecule_id), SUM(CASE WHEN T2.label = '+' THEN 1 ELSE 0 END) FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '='"
+      }
+    },
+    {
+      "id": "example:s312",
+      "type": "Example",
+      "name": "What is the carcinogenic label for bond TR001_2_4?",
+      "aliases": [],
+      "properties": {
+        "key": "s312",
+        "learning_complete": true,
+        "sql": "-- Carcinogenic label ('+' or '-') of the molecule containing bond TR001_2_4\nSELECT m.label\nFROM bond AS b\nJOIN molecule AS m ON m.molecule_id = b.molecule_id\nWHERE b.bond_id = 'TR001_2_4'"
+      }
+    },
+    {
+      "id": "example:s315",
+      "type": "Example",
+      "name": "Among the molecules which contain \"cl\" element, which of them are carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s315",
+        "learning_complete": true,
+        "sql": "-- Molecules that contain chlorine ('cl') atoms and are carcinogenic ('+')\nSELECT DISTINCT a.molecule_id\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'cl' AND m.label = '+'"
+      }
+    },
+    {
+      "id": "example:s316",
+      "type": "Example",
+      "name": "Among the molecules which contain \"c\" element, which of them are not carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s316",
+        "learning_complete": true,
+        "sql": "-- Molecules that contain carbon ('c') atoms and are non-carcinogenic ('-')\nSELECT DISTINCT a.molecule_id\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'c' AND m.label = '-'"
+      }
+    },
+    {
+      "id": "example:s317",
+      "type": "Example",
+      "name": "Calculate the percentage of carcinogenic molecules which contain the Chlorine element.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s317",
+        "learning_complete": true,
+        "sql": "SELECT COUNT(CASE WHEN T2.label = '+' AND T1.element = 'cl' THEN T2.molecule_id ELSE NULL END) * 100 / COUNT(T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id"
+      }
+    },
+    {
+      "id": "example:s318",
+      "type": "Example",
+      "name": "What is the molecule id of bond id TR001_1_7?",
+      "aliases": [],
+      "properties": {
+        "key": "s318",
+        "learning_complete": true,
+        "sql": "-- Molecule id for the given bond id\nSELECT molecule_id\nFROM bond\nWHERE bond_id = 'TR001_1_7'"
+      }
+    },
+    {
+      "id": "example:s319",
+      "type": "Example",
+      "name": "How many elements are contained in bond_id TR001_3_4?",
+      "aliases": [],
+      "properties": {
+        "key": "s319",
+        "learning_complete": true,
+        "sql": "-- Count of distinct elements contained in the atoms of bond TR001_3_4\nSELECT COUNT(*) AS element_count\nFROM (\n    SELECT a.element AS element\n    FROM atom AS a\n    INNER JOIN connected AS c ON a.atom_id = c.atom_id\n    INNER JOIN bond AS b ON c.bond_id = b.bond_id\n    WHERE b.bond_id = 'TR001_3_4'\n    UNION\n    SELECT a2.element AS element\n    FROM atom AS a2\n    INNER JOIN connected AS c2 ON a2.atom_id = c2.atom_id2\n    INNER JOIN bond AS b2 ON c2.bond_id = b2.bond_id\n    WHERE b2.bond_id = 'TR001_3_4'\n)"
+      }
+    },
+    {
+      "id": "example:s321",
+      "type": "Example",
+      "name": "What is the molecule of atom id \"TR000_2\" and atom id 2 \"TR000_4\"?",
+      "aliases": [],
+      "properties": {
+        "key": "s321",
+        "learning_complete": true,
+        "sql": "-- Molecule of the connected atom pair TR000_2 and TR000_4\nSELECT SUBSTR(c.atom_id, 1, 5) AS molecule_id\nFROM connected AS c\nWHERE c.atom_id = 'TR000_2' AND c.atom_id2 = 'TR000_4'\nUNION\nSELECT SUBSTR(c2.atom_id, 1, 5) AS molecule_id\nFROM connected AS c2\nWHERE c2.atom_id = 'TR000_4' AND c2.atom_id2 = 'TR000_2'"
+      }
+    },
+    {
+      "id": "example:s324",
+      "type": "Example",
+      "name": "Find the percentage of atoms with single bond.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s324",
+        "learning_complete": true,
+        "sql": "SELECT CAST(COUNT(CASE WHEN T.bond_type = '-' THEN T.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(T.bond_id) FROM bond t"
+      }
+    },
+    {
+      "id": "example:s325",
+      "type": "Example",
+      "name": "How many carcinogenic molecules that consisted of Nitrogen?",
+      "aliases": [],
+      "properties": {
+        "key": "s325",
+        "learning_complete": true,
+        "sql": "-- Count the carcinogenic ('+') molecules that contain nitrogen ('n') atoms\nSELECT COUNT(DISTINCT a.molecule_id) AS carcinogenic_molecule_count\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.element = 'n' AND m.label = '+'"
+      }
+    },
+    {
+      "id": "example:s326",
+      "type": "Example",
+      "name": "Which molecule consisted of Sulphur atom with double bond?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [],
+        "key": "s326",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.molecule_id FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 's' AND T2.bond_type = '='"
+      }
+    },
+    {
+      "id": "example:s330",
+      "type": "Example",
+      "name": "Calculate the percentage of carcinogenic molecules with triple bonded Hidrogen atoms.",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "atom",
+            "element"
+          ],
+          [
+            "bond",
+            "bond_type"
+          ]
+        ],
+        "key": "s330",
+        "learning_complete": true,
+        "sql": "SELECT CAST(SUM(CASE WHEN T1.label = '+' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(DISTINCT T1.molecule_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T1.molecule_id = T3.molecule_id WHERE T3.bond_type = '#' AND T2.element = 'h'"
+      }
+    },
+    {
+      "id": "example:s331",
+      "type": "Example",
+      "name": "How many of the molecules are carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s331",
+        "learning_complete": true,
+        "sql": "-- Count of carcinogenic molecules\nSELECT COUNT(DISTINCT molecule_id) AS carcinogenic_molecule_count\nFROM molecule\nWHERE label = '+'"
+      }
+    },
+    {
+      "id": "example:s334",
+      "type": "Example",
+      "name": "What is the element with the atom ID of TR004_7 in molecule that is not carcinogenic?",
+      "aliases": [],
+      "properties": {
+        "key": "s334",
+        "learning_complete": true,
+        "sql": "-- Element of atom TR004_7 whose molecule is non-carcinogenic ('-')\nSELECT a.element\nFROM atom AS a\nJOIN molecule AS m ON m.molecule_id = a.molecule_id\nWHERE a.atom_id = 'TR004_7' AND m.label = '-'"
+      }
+    },
+    {
+      "id": "example:s337",
+      "type": "Example",
+      "name": "List the element and bond type included in the molecule with molecule ID of TR002.",
+      "aliases": [],
+      "properties": {
+        "key": "s337",
+        "learning_complete": true,
+        "sql": "SELECT DISTINCT T1.element, T2.bond_type\nFROM atom AS T1\nINNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id\nWHERE T1.molecule_id = 'TR002'"
+      }
+    },
+    {
+      "id": "example:s338",
+      "type": "Example",
+      "name": "What is the atom ID of double bonded carbon in TR012 molecule?",
+      "aliases": [],
+      "properties": {
+        "_profile_columns": [
+          [
+            "molecule",
+            "molecule_id"
+          ]
+        ],
+        "key": "s338",
+        "learning_complete": true,
+        "sql": "SELECT T1.atom_id FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T2.molecule_id = 'TR012' AND T3.bond_type = '=' AND T1.element = 'c'"
+      }
+    },
+    {
+      "id": "term:atom-id-encodes-molecule",
+      "type": "Term",
+      "name": "atom id encodes molecule",
+      "aliases": [
+        "TR181_1 atom id format",
+        "atom id naming pattern"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atom-ids-of-a-bond",
+      "type": "Term",
+      "name": "atom ids of a bond",
+      "aliases": [
+        "atoms connected by a bond",
+        "which atoms does this bond connect"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atom-number",
+      "type": "Term",
+      "name": "atom number",
+      "aliases": [
+        "atom 45",
+        "atom id number",
+        "the atom index"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atom-of-molecule",
+      "type": "Term",
+      "name": "atom of molecule",
+      "aliases": [
+        "atom number",
+        "atom id",
+        "atom index"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atoms-in-a-molecule",
+      "type": "Term",
+      "name": "atoms in a molecule",
+      "aliases": [
+        "molecule's atoms",
+        "atoms belonging to compound"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atoms-joined-to-bonds-on-molecule",
+      "type": "Term",
+      "name": "atoms joined to bonds on molecule",
+      "aliases": [
+        "atom-bond pair count",
+        "oxygen atoms per single bond"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atoms-of-a-bond",
+      "type": "Term",
+      "name": "atoms of a bond",
+      "aliases": [
+        "bond atoms",
+        "atoms connected by a bond"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:atoms-of-a-molecule",
+      "type": "Term",
+      "name": "atoms of a molecule",
+      "aliases": [
+        "molecule's atoms",
+        "atoms belonging to a molecule"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bond-atom-pair-ordering",
+      "type": "Term",
+      "name": "bond atom pair ordering",
+      "aliases": [
+        "bond between two atoms",
+        "bond's two atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bond-id",
+      "type": "Term",
+      "name": "bond id",
+      "aliases": [
+        "bond identifier",
+        "bond reference",
+        "bond ID format",
+        "bond code"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bond-type",
+      "type": "Term",
+      "name": "bond type",
+      "aliases": [
+        "type of the bond",
+        "single double or triple bond"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bonded-atom",
+      "type": "Term",
+      "name": "bonded atom",
+      "aliases": [
+        "atom that forms a bond",
+        "atom participating in a connection"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bonded-atom-pair",
+      "type": "Term",
+      "name": "bonded atom pair",
+      "aliases": [
+        "atoms in a bond",
+        "bond endpoints",
+        "atoms bonded"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bonds-involving-an-atom",
+      "type": "Term",
+      "name": "bonds involving an atom",
+      "aliases": [
+        "atom's bonds",
+        "bonds of atom",
+        "bonds touching an atom"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:bonds-of-a-molecule",
+      "type": "Term",
+      "name": "bonds of a molecule",
+      "aliases": [
+        "bonds in a molecule",
+        "bond list per molecule"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:carbon-atom",
+      "type": "Term",
+      "name": "carbon atom",
+      "aliases": [
+        "carbon",
+        "c atom"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:carbon-element",
+      "type": "Term",
+      "name": "carbon element",
+      "aliases": [
+        "carbon atom",
+        "c element"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:carcinogenic-molecule",
+      "type": "Term",
+      "name": "carcinogenic molecule",
+      "aliases": [
+        "cancer causing molecule",
+        "molecule labeled plus",
+        "carcinogenic compounds",
+        "toxic molecules",
+        "molecules labeled plus",
+        "cancer-causing molecules",
+        "carcinogenic compound",
+        "labeled plus",
+        "positive label molecule",
+        "carcinogenic",
+        "cancer-causing compound",
+        "labeled carcinogen",
+        "labeled carcinogenic",
+        "is a carcinogen",
+        "molecules that are carcinogenic",
+        "cancer-causing molecule",
+        "toxic molecule",
+        "is carcinogenic"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:chlorine-element",
+      "type": "Term",
+      "name": "chlorine element",
+      "aliases": [
+        "chlorine",
+        "element chlorine",
+        "chlorine atom",
+        "cl element",
+        "contains chlorine",
+        "chlorine atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:combination-of-atoms-elements",
+      "type": "Term",
+      "name": "combination of atoms' elements",
+      "aliases": [
+        "element pair of bonded atoms",
+        "atom element combination",
+        "bond kind between two atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:common-element",
+      "type": "Term",
+      "name": "common element",
+      "aliases": [
+        "element frequency",
+        "how often an element appears",
+        "element prevalence"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:connected-to-the-atoms",
+      "type": "Term",
+      "name": "connected to the atoms",
+      "aliases": [
+        "bonded to",
+        "neighbor atom",
+        "connected atoms",
+        "atoms connected to each other",
+        "bonded atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:does-not-contain-element-x",
+      "type": "Term",
+      "name": "does not contain element x",
+      "aliases": [
+        "molecules without fluorine",
+        "free of fluorine",
+        "lack fluorine",
+        "non-fluorine molecule"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:double-bond",
+      "type": "Term",
+      "name": "double bond",
+      "aliases": [
+        "double bonded",
+        "bonded with double bond",
+        "double-bonded atom",
+        "double-bonded",
+        "bond type double",
+        "two bonds",
+        "bond type = double",
+        "double bond type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:element-that-cannot-bond",
+      "type": "Term",
+      "name": "element that cannot bond",
+      "aliases": [
+        "non-bondable element",
+        "elements that do not form bonds",
+        "element with no bonded atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:elements-in-molecules-with-single-bonds",
+      "type": "Term",
+      "name": "elements in molecules with single bonds",
+      "aliases": [
+        "element count for single bond molecules",
+        "distinct elements among single-bond molecules"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:fluorine-atoms-contains-fluorine",
+      "type": "Term",
+      "name": "fluorine atoms / contains fluorine",
+      "aliases": [
+        "element is f",
+        "fluorine presence",
+        "atoms of fluorine"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:hydrogen-atom",
+      "type": "Term",
+      "name": "hydrogen atom",
+      "aliases": [
+        "element is hydrogen",
+        "hydrogen element"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:labels-for-named-molecules",
+      "type": "Term",
+      "name": "labels for named molecules",
+      "aliases": [
+        "label of each listed molecule",
+        "labels for these molecules"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:least-common-element",
+      "type": "Term",
+      "name": "least common element",
+      "aliases": [
+        "rarest element",
+        "element found in fewest molecules"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:molecule-label",
+      "type": "Term",
+      "name": "molecule label",
+      "aliases": [
+        "carcinogenicity label",
+        "carcinogenic marker",
+        "label of molecule"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:molecule-of-a-bond",
+      "type": "Term",
+      "name": "molecule of a bond",
+      "aliases": [
+        "bond's molecule",
+        "molecule containing bond"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:molecule-of-an-atom",
+      "type": "Term",
+      "name": "molecule of an atom",
+      "aliases": [
+        "which molecule",
+        "molecule code",
+        "which molecule an atom belongs to",
+        "molecule id",
+        "molecule identifier",
+        "compound id"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:non-carcinogenic-molecule",
+      "type": "Term",
+      "name": "non-carcinogenic molecule",
+      "aliases": [
+        "not carcinogenic",
+        "non-carcinogenic compound"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:oxygen-atom",
+      "type": "Term",
+      "name": "oxygen atom",
+      "aliases": [
+        "oxygen atoms",
+        "oxygen",
+        "O atom"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-atoms-in-carcinogenic-molecules",
+      "type": "Term",
+      "name": "percentage of atoms in carcinogenic molecules",
+      "aliases": [
+        "percent hydrogen atoms among carcinogenic compounds",
+        "hydrogen share of atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-bonds",
+      "type": "Term",
+      "name": "percentage of bonds",
+      "aliases": [
+        "bond percentage",
+        "percent of bonds",
+        "share of bonds"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-carcinogenic-molecules-containing-an-element",
+      "type": "Term",
+      "name": "percentage of carcinogenic molecules containing an element",
+      "aliases": [
+        "percent of carcinogenic molecules with element",
+        "share of carcinogenic molecules containing element"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-of-molecules",
+      "type": "Term",
+      "name": "percentage of molecules",
+      "aliases": [
+        "percent of molecules",
+        "share of molecules"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:percentage-within-filtered-group",
+      "type": "Term",
+      "name": "percentage within filtered group",
+      "aliases": [
+        "percentage of atoms in carcinogenic molecules",
+        "share of chlorine among carcinogenic molecules"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:share-of-bonds-of-the-most-common-type",
+      "type": "Term",
+      "name": "share of bonds of the most common type",
+      "aliases": [
+        "percentage of bonds with most common element combination",
+        "percent of bonds having the top bond type"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:single-bond",
+      "type": "Term",
+      "name": "single bond",
+      "aliases": [
+        "single-bond",
+        "single bond type",
+        "bonded by single bond",
+        "single-bonded",
+        "single bonds",
+        "bonded with one bond",
+        "one bond",
+        "bond type single"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:single-bonded",
+      "type": "Term",
+      "name": "single bonded",
+      "aliases": [
+        "single bond",
+        "single-bonded atoms"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:sulfur-atom",
+      "type": "Term",
+      "name": "sulfur atom",
+      "aliases": [
+        "sulphur atom",
+        "atom of sulfur",
+        "S element"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:triple-bond",
+      "type": "Term",
+      "name": "triple bond",
+      "aliases": [
+        "triple-bonded",
+        "bond order three",
+        "three-bond"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:triple-bonded-hydrogen-atom",
+      "type": "Term",
+      "name": "triple bonded hydrogen atom",
+      "aliases": [
+        "triple bond with hydrogen",
+        "hydrogen involved in a triple bond"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "term:which-atoms",
+      "type": "Term",
+      "name": "which atoms",
+      "aliases": [
+        "list of atoms",
+        "atom identifiers"
+      ],
+      "properties": {}
+    }
+  ],
+  "relations": [
+    {
+      "from_entity": "term:triple-bond",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s232",
+          "s216",
+          "s200",
+          "s272",
+          "s287",
+          "s280",
+          "s210",
+          "s233",
+          "s337",
+          "s220"
+        ],
+        "losses": 0,
+        "note": "Bond type codes are stored as '-' for single, '=' for double and '#' for triple.",
+        "origin": "s286",
+        "sql": "bond.bond_type = '#'",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:molecule-of-a-bond",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "_feedback_sources": [
+          "s199",
+          "s230"
+        ],
+        "losses": 0,
+        "note": "bond.molecule_id names the molecule the bond belongs to and must match the molecule mentioned in the question.",
+        "origin": "s221",
+        "sql": "bond.molecule_id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:labels-for-named-molecules",
+      "type": "MEANS",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {
+        "_feedback_sources": [
+          "s266"
+        ],
+        "losses": 0,
+        "note": "When labels are requested for specific molecules, return each molecule_id alongside its label so the '+'/'-' codes can be matched to the requested molecules.",
+        "origin": "s264",
+        "sql": "molecule.molecule_id, molecule.label",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:molecule-of-an-atom",
+      "type": "MEANS",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {
+        "_feedback_sources": [
+          "s266"
+        ],
+        "losses": 0,
+        "note": "Molecules are uniquely identified by molecule.molecule_id, whose values look like 'TR000', 'TR001', etc.",
+        "origin": "s264",
+        "sql": "molecule.molecule_id",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-molecules",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "_feedback_sources": [
+          "s225",
+          "s255",
+          "s240",
+          "s214",
+          "s324",
+          "s244",
+          "s247",
+          "s316",
+          "s309",
+          "s199",
+          "s312",
+          "s232",
+          "s293",
+          "s262"
+        ],
+        "losses": 3,
+        "note": "Percentages must use a real-number cast (CAST(... AS REAL)) to avoid integer division and must divide by the distinct count of molecules so each molecule counts once in the denominator.",
+        "origin": "s330",
+        "sql": "100.0 * CAST(SUM(CASE WHEN molecule.label = '+' THEN 1 ELSE 0 END) AS REAL) / COUNT(DISTINCT molecule.molecule_id)",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:atoms-of-a-molecule",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "_feedback_sources": [
+          "s199",
+          "s293",
+          "s230",
+          "s249",
+          "s266"
+        ],
+        "losses": 0,
+        "note": "Membership of an atom in a molecule is stored in atom.molecule_id, so molecule-scoped questions filter the atom table on that column before matching atom ids.",
+        "origin": "s217",
+        "sql": "atom.molecule_id",
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "term:does-not-contain-element-x",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "_feedback_sources": [
+          "s225",
+          "s284",
+          "s240",
+          "s214",
+          "s292",
+          "s250",
+          "s304",
+          "s239",
+          "s247",
+          "s230"
+        ],
+        "losses": 2,
+        "note": "A molecule counts as not containing the element when its atom rows include at least one atom with a different element, counted once per molecule (an anti-join on the element would wrongly exclude molecules that mix elements).",
+        "origin": "s218",
+        "sql": "COUNT(DISTINCT CASE WHEN atom.element <> 'f' THEN atom.molecule_id END)",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:atom-number",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_feedback_sources": [
+          "s279",
+          "s225",
+          "s240",
+          "s214",
+          "s292",
+          "s338",
+          "s245",
+          "s242",
+          "s221",
+          "s307",
+          "s318",
+          "s312",
+          "s197",
+          "s302",
+          "s303",
+          "s334",
+          "s264",
+          "s233",
+          "s321",
+          "s319",
+          "s224"
+        ],
+        "losses": 4,
+        "note": "connected.atom_id stores 'TRxxx_N' where the molecule code occupies the first 5 characters and the atom's number within that molecule starts at character 7, so 'atom 45' must be matched with SUBSTR(connected.atom_id, 7, 2) rather than the whole atom_id text.",
+        "origin": "s246",
+        "sql": "SUBSTR(connected.atom_id, 7, 2)",
+        "wins": 17
+      }
+    },
+    {
+      "from_entity": "term:atom-of-molecule",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "losses": 0,
+        "note": "Atom identifiers are stored as the molecule id, an underscore, and the atom number, so atom 12 of TR009 is 'TR009_12' and a bare number never matches.",
+        "origin": "s234",
+        "sql": "connected.atom_id = bond.molecule_id || '_' || 12",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:molecule-of-an-atom",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_feedback_sources": [
+          "s279",
+          "s225",
+          "s240",
+          "s214",
+          "s292",
+          "s338",
+          "s244",
+          "s242",
+          "s290",
+          "s221",
+          "s281",
+          "s307",
+          "s318",
+          "s312",
+          "s302",
+          "s303",
+          "s334",
+          "s264",
+          "s233",
+          "s321",
+          "s319",
+          "s224"
+        ],
+        "losses": 3,
+        "note": "The molecule identifier prefix of a connected.atom_id value is the first 5 characters (e.g. 'TR000'), used when a question asks which molecule an atom belongs to.",
+        "origin": "s246",
+        "sql": "SUBSTR(connected.atom_id, 1, 5)",
+        "wins": 19
+      }
+    },
+    {
+      "from_entity": "term:bonded-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {
+        "_feedback_sources": [
+          "s221"
+        ],
+        "losses": 1,
+        "note": "connected.atom_id is the column that identifies the atom side used to record a bond, so bonded atoms are found by matching atom.atom_id to it.",
+        "origin": "s247",
+        "sql": "atom.atom_id IN (SELECT connected.atom_id FROM connected)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:triple-bonded-hydrogen-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s240",
+          "s292",
+          "s198",
+          "s245",
+          "s290",
+          "s221",
+          "s281",
+          "s270",
+          "s315",
+          "s325"
+        ],
+        "losses": 2,
+        "note": "The condition is a molecule that has a hydrogen atom (atom.element = 'h') and also has a triple bond (bond.bond_type = '#'); it does not require both ends of the bond to be hydrogen, so no connected/atom-pair join is needed.",
+        "origin": "s330",
+        "sql": "bond.bond_type = '#' AND atom.element = 'h'",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:single-bonded",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s245",
+          "s247",
+          "s217"
+        ],
+        "losses": 2,
+        "note": "Bond types are stored as symbols: '-' single, '=' double, '#' triple, with NULL possible.",
+        "origin": "s198",
+        "sql": "bond.bond_type = '-'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:least-common-element",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "_feedback_sources": [
+          "s315",
+          "s254"
+        ],
+        "losses": 1,
+        "note": "Rank elements by the fewest distinct molecules they occur in, so elements appearing many times inside one molecule do not dominate the count.",
+        "origin": "s251",
+        "sql": "ORDER BY COUNT(DISTINCT atom.molecule_id) ASC",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:triple-bonded-hydrogen-atom",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s218",
+          "s225",
+          "s255",
+          "s284",
+          "s214",
+          "s250",
+          "s239",
+          "s244",
+          "s209",
+          "s295",
+          "s201",
+          "s223",
+          "s307",
+          "s216",
+          "s200",
+          "s272",
+          "s256",
+          "s280",
+          "s210",
+          "s234",
+          "s208",
+          "s337"
+        ],
+        "losses": 4,
+        "note": "The condition is a molecule that has a hydrogen atom (atom.element = 'h') and also has a triple bond (bond.bond_type = '#'); it does not require both ends of the bond to be hydrogen, so no connected/atom-pair join is needed.",
+        "origin": "s330",
+        "sql": "bond.bond_type = '#' AND atom.element = 'h'",
+        "wins": 18
+      }
+    },
+    {
+      "from_entity": "term:bond-atom-pair-ordering",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {
+        "losses": 0,
+        "note": "For each bond row, connected lists the two endpoint atoms in a fixed order in atom_id and atom_id2, so a bond between atoms 1 and 2 requires atom_id = molecule_id||'_1' and atom_id2 = molecule_id||'_2'.",
+        "origin": "s234",
+        "sql": "connected.atom_id2 = bond.molecule_id || '_' || 2",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:atoms-in-a-molecule",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "_feedback_sources": [
+          "s209",
+          "s245",
+          "s247",
+          "s295",
+          "s242",
+          "s217",
+          "s199",
+          "s293",
+          "s230",
+          "s249",
+          "s266"
+        ],
+        "losses": 2,
+        "note": "Atoms and bonds are linked by their shared molecule_id (atom ids like TR012_i denote the i-th atom of that molecule), rather than needing the connected link table.",
+        "origin": "s338",
+        "sql": "atom.molecule_id = bond.molecule_id",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:chlorine-element",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s325"
+        ],
+        "losses": 0,
+        "note": "Element symbols are stored lowercase in atom.element, with chlorine coded 'cl'.",
+        "origin": "s273",
+        "sql": "atom.element = 'cl'",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-within-filtered-group",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s211",
+          "s261",
+          "s270",
+          "s200",
+          "s315",
+          "s325",
+          "s293",
+          "s287",
+          "s256",
+          "s262",
+          "s254",
+          "s266",
+          "s226"
+        ],
+        "losses": 2,
+        "note": "A percentage over a subgroup must place the subgroup filter (e.g. molecule.label = '+') in WHERE so both numerator and denominator count only that group's rows.",
+        "origin": "s273",
+        "sql": "CAST(COUNT(CASE WHEN atom.element = 'cl' THEN atom.element ELSE NULL END) AS REAL) * 100 / COUNT(atom.element)",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:does-not-contain-element-x",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s209",
+          "s245",
+          "s295",
+          "s242",
+          "s201",
+          "s331",
+          "s290",
+          "s212",
+          "s316",
+          "s281",
+          "s199",
+          "s211",
+          "s334",
+          "s270",
+          "s315",
+          "s272",
+          "s325",
+          "s287",
+          "s256",
+          "s280",
+          "s262"
+        ],
+        "losses": 1,
+        "note": "A molecule counts as not containing the element when its atom rows include at least one atom with a different element, counted once per molecule (an anti-join on the element would wrongly exclude molecules that mix elements).",
+        "origin": "s218",
+        "sql": "COUNT(DISTINCT CASE WHEN atom.element <> 'f' THEN atom.molecule_id END)",
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "term:bonds-of-a-molecule",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "_feedback_sources": [
+          "s272",
+          "s233",
+          "s337",
+          "s266",
+          "s226",
+          "s220"
+        ],
+        "losses": 0,
+        "note": "Bonds are matched to atoms by the shared molecule identifier atom.molecule_id = bond.molecule_id, so both tables use the same TRXXX code.",
+        "origin": "s309",
+        "sql": "bond.molecule_id",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:which-atoms",
+      "type": "MEANS",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {
+        "_feedback_sources": [
+          "s302",
+          "s232",
+          "s264",
+          "s249",
+          "s321",
+          "s337",
+          "s319",
+          "s224",
+          "s220"
+        ],
+        "losses": 1,
+        "note": "When the question asks which atoms qualify, the output is a single atom id column, not the pair of bond endpoints.",
+        "origin": "s211",
+        "sql": "atom.atom_id",
+        "wins": 8
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-molecules",
+      "type": "MEANS",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {
+        "_feedback_sources": [
+          "s284",
+          "s292",
+          "s250",
+          "s304",
+          "s295",
+          "s242",
+          "s201",
+          "s331",
+          "s212",
+          "s221",
+          "s318",
+          "s303",
+          "s286",
+          "s334",
+          "s287",
+          "s233",
+          "s234",
+          "s337",
+          "s254",
+          "s266",
+          "s226",
+          "s220"
+        ],
+        "losses": 4,
+        "note": "Percentages must use a real-number cast (CAST(... AS REAL)) to avoid integer division and must divide by the distinct count of molecules so each molecule counts once in the denominator.",
+        "origin": "s330",
+        "sql": "100.0 * CAST(SUM(CASE WHEN molecule.label = '+' THEN 1 ELSE 0 END) AS REAL) / COUNT(DISTINCT molecule.molecule_id)",
+        "wins": 18
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-atoms-in-carcinogenic-molecules",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "_feedback_sources": [
+          "s324"
+        ],
+        "losses": 1,
+        "note": "Compute this share over atom rows (no DISTINCT on molecule ids): numerator is hydrogen atoms in carcinogenic molecules, denominator is all joined atom rows, and the label filter belongs inside the numerator case rather than in a WHERE clause that also shrinks the denominator.",
+        "origin": "s298",
+        "sql": "CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bonds-involving-an-atom",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "losses": 0,
+        "note": "A bond touches an atom on either side, so the atom must be checked in both the first-atom and second-atom columns of connected, filtered to the bond's own molecule.",
+        "origin": "s234",
+        "sql": "(connected.atom_id = bond.molecule_id || '_' || 12 OR connected.atom_id2 = bond.molecule_id || '_' || 12)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:combination-of-atoms-elements",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "losses": 0,
+        "note": "In this database the element combination of the two bonded atoms is encoded in bond.bond_type, whose codes are '-' (single bond), '=' (double bond) and '#' (triple bond).",
+        "origin": "s254",
+        "sql": "bond.bond_type",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:elements-in-molecules-with-single-bonds",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "_feedback_sources": [
+          "s262",
+          "s337",
+          "s254"
+        ],
+        "losses": 1,
+        "note": "Atom and bond rows must belong to the same molecule, so atom rows must be linked to bond rows through molecule.molecule_id (atom -> molecule -> bond) rather than joined directly on molecule_id alone, which would mix atoms of unrelated molecules.",
+        "origin": "s259",
+        "sql": "atom.molecule_id IN (SELECT bond.molecule_id FROM bond WHERE bond.bond_type = '-')",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:carbon-element",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s256"
+        ],
+        "losses": 0,
+        "note": "Carbon is stored in atom.element as 'c' and sometimes as the numbered variant 'c1', so a carbon check should accept both codes.",
+        "origin": "s271",
+        "sql": "atom.element IN ('c', 'c1')",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:atoms-joined-to-bonds-on-molecule",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s293",
+          "s210",
+          "s234"
+        ],
+        "losses": 1,
+        "note": "When atom is joined to bond on molecule_id to filter by bond type, each atom row is duplicated once per matching bond row, so COUNT(atom.element) yields atom-bond pair counts rather than distinct atoms (an EXISTS filter instead counts each atom only once).",
+        "origin": "s197",
+        "sql": "COUNT(atom.element)",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:elements-in-molecules-with-single-bonds",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "losses": 0,
+        "note": "Atom and bond rows must belong to the same molecule, so atom rows must be linked to bond rows through molecule.molecule_id (atom -> molecule -> bond) rather than joined directly on molecule_id alone, which would mix atoms of unrelated molecules.",
+        "origin": "s259",
+        "sql": "atom.molecule_id IN (SELECT bond.molecule_id FROM bond WHERE bond.bond_type = '-')",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:hydrogen-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s239",
+          "s295",
+          "s290",
+          "s212",
+          "s316",
+          "s281",
+          "s270",
+          "s315",
+          "s325",
+          "s256",
+          "s208"
+        ],
+        "losses": 1,
+        "note": "atom.element stores lowercase element symbols, so hydrogen is 'h'.",
+        "origin": "s298",
+        "sql": "atom.element = 'h'",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:bonded-atom-pair",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "losses": 0,
+        "note": "The two atoms of a bond are derived from bond.bond_id by taking the TRxxx_A1 prefix and re-attaching the molecule code to the A2 suffix number.",
+        "origin": "s221",
+        "sql": "SUBSTR(bond.bond_id, 1, 7) , bond.molecule_id || SUBSTR(bond.bond_id, 8, 2)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:fluorine-atoms-contains-fluorine",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s225",
+          "s284",
+          "s240",
+          "s214",
+          "s292",
+          "s324",
+          "s209",
+          "s245",
+          "s295",
+          "s242",
+          "s217",
+          "s290",
+          "s212",
+          "s316",
+          "s281",
+          "s270",
+          "s315",
+          "s325",
+          "s256",
+          "s249"
+        ],
+        "losses": 2,
+        "note": "Elements are stored as lowercase symbols in atom.element, with fluorine stored as 'f'.",
+        "origin": "s218",
+        "sql": "atom.element = 'f'",
+        "wins": 18
+      }
+    },
+    {
+      "from_entity": "term:sulfur-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "losses": 0,
+        "note": "atom.element stores lowercase element symbols, with sulfur stored as 's'.",
+        "origin": "s326",
+        "sql": "atom.element = 's'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-carcinogenic-molecules-containing-an-element",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "losses": 0,
+        "note": "The ratio is taken over atom records joined to carcinogenic molecules only, with the carcinogenic label applied inside the CASE so both numerator and denominator cover the same carcinogenic population, and integer *100/ division is used as in the verified answer.",
+        "origin": "s317",
+        "sql": "COUNT(CASE WHEN molecule.label = '+' AND atom.element = 'cl' THEN atom.molecule_id END) * 100 / COUNT(atom.molecule_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:element-that-cannot-bond",
+      "type": "MEANS",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {
+        "_feedback_sources": [
+          "s290",
+          "s212",
+          "s221",
+          "s316",
+          "s307",
+          "s318",
+          "s199",
+          "s312",
+          "s197",
+          "s302",
+          "s303",
+          "s286",
+          "s232",
+          "s334",
+          "s270",
+          "s272",
+          "s287",
+          "s264",
+          "s230",
+          "s249",
+          "s210",
+          "s259",
+          "s321",
+          "s254",
+          "s319",
+          "s224"
+        ],
+        "losses": 6,
+        "note": "Bondability is an element-level property: an element is excluded if any atom carrying that element appears as the bonded atom in connected.atom_id.",
+        "origin": "s247",
+        "sql": "atom.element NOT IN (SELECT DISTINCT atom.element FROM atom INNER JOIN connected ON atom.atom_id = connected.atom_id)",
+        "wins": 20
+      }
+    },
+    {
+      "from_entity": "term:single-bond",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s250",
+          "s244",
+          "s209",
+          "s201",
+          "s221",
+          "s307",
+          "s303",
+          "s232",
+          "s216",
+          "s200",
+          "s280",
+          "s210",
+          "s337"
+        ],
+        "losses": 1,
+        "note": "Bond types are stored as codes in bond.bond_type: '-' for single, '=' for double, '#' for triple (NULL when unknown).",
+        "origin": "s324",
+        "sql": "bond.bond_type = '-'",
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "term:oxygen-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "losses": 0,
+        "note": "atom.element stores lowercase element symbols, so oxygen is the value 'o'.",
+        "origin": "s197",
+        "sql": "atom.element = 'o'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:atom-ids-of-a-bond",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_feedback_sources": [
+          "s309",
+          "s216",
+          "s224"
+        ],
+        "losses": 1,
+        "note": "The atom IDs belonging to a bond are listed in connected.atom_id rows filtered by that bond's bond_id.",
+        "origin": "s223",
+        "sql": "connected.atom_id",
+        "wins": 2
+      }
+    },
+    {
+      "from_entity": "term:bonds-involving-an-atom",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "losses": 0,
+        "note": "A bond touches an atom on either side, so the atom must be checked in both the first-atom and second-atom columns of connected, filtered to the bond's own molecule.",
+        "origin": "s234",
+        "sql": "(connected.atom_id = bond.molecule_id || '_' || 12 OR connected.atom_id2 = bond.molecule_id || '_' || 12)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-atoms-in-carcinogenic-molecules",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "_feedback_sources": [
+          "s250",
+          "s304",
+          "s239",
+          "s244",
+          "s331",
+          "s212",
+          "s316",
+          "s281",
+          "s199",
+          "s286",
+          "s261",
+          "s232",
+          "s270",
+          "s200",
+          "s315",
+          "s325",
+          "s293",
+          "s287",
+          "s230",
+          "s256",
+          "s249",
+          "s208",
+          "s262",
+          "s254",
+          "s266",
+          "s226"
+        ],
+        "losses": 3,
+        "note": "Compute this share over atom rows (no DISTINCT on molecule ids): numerator is hydrogen atoms in carcinogenic molecules, denominator is all joined atom rows, and the label filter belongs inside the numerator case rather than in a WHERE clause that also shrinks the denominator.",
+        "origin": "s298",
+        "sql": "CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id)",
+        "wins": 23
+      }
+    },
+    {
+      "from_entity": "term:element-that-cannot-bond",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "losses": 0,
+        "note": "Bondability is an element-level property: an element is excluded if any atom carrying that element appears as the bonded atom in connected.atom_id.",
+        "origin": "s247",
+        "sql": "atom.element NOT IN (SELECT DISTINCT atom.element FROM atom INNER JOIN connected ON atom.atom_id = connected.atom_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:element-that-cannot-bond",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "losses": 0,
+        "note": "Bondability is an element-level property: an element is excluded if any atom carrying that element appears as the bonded atom in connected.atom_id.",
+        "origin": "s247",
+        "sql": "atom.element NOT IN (SELECT DISTINCT atom.element FROM atom INNER JOIN connected ON atom.atom_id = connected.atom_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bond-id",
+      "type": "MEANS",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {
+        "_feedback_sources": [
+          "s211"
+        ],
+        "losses": 1,
+        "note": "connected.bond_id stores the bond identifier string (e.g. TR000_2_5) linking the two atoms of that bond.",
+        "origin": "s223",
+        "sql": "connected.bond_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bonds-involving-an-atom",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {
+        "losses": 0,
+        "note": "A bond touches an atom on either side, so the atom must be checked in both the first-atom and second-atom columns of connected, filtered to the bond's own molecule.",
+        "origin": "s234",
+        "sql": "(connected.atom_id = bond.molecule_id || '_' || 12 OR connected.atom_id2 = bond.molecule_id || '_' || 12)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bond-type",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s303",
+          "s216",
+          "s200",
+          "s272",
+          "s287",
+          "s280",
+          "s210",
+          "s262",
+          "s337",
+          "s226"
+        ],
+        "losses": 0,
+        "note": "bond.bond_type stores single-character codes '-' (single), '=' (double), '#' (triple), with NULL for some rows.",
+        "origin": "s309",
+        "sql": "bond.bond_type",
+        "wins": 10
+      }
+    },
+    {
+      "from_entity": "term:bonded-atom-pair",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {
+        "_feedback_sources": [
+          "s307",
+          "s318",
+          "s312",
+          "s197",
+          "s302",
+          "s216",
+          "s200",
+          "s271",
+          "s249",
+          "s321",
+          "s319",
+          "s224",
+          "s220"
+        ],
+        "losses": 2,
+        "note": "The two atoms of a bond are derived from bond.bond_id by taking the TRxxx_A1 prefix and re-attaching the molecule code to the A2 suffix number.",
+        "origin": "s221",
+        "sql": "SUBSTR(bond.bond_id, 1, 7) , bond.molecule_id || SUBSTR(bond.bond_id, 8, 2)",
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "term:bond-id",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {
+        "_feedback_sources": [
+          "s307",
+          "s318",
+          "s312",
+          "s302",
+          "s271",
+          "s264",
+          "s321",
+          "s319",
+          "s224"
+        ],
+        "losses": 2,
+        "note": "Bonds are identified by bond.bond_id stored as TRxxx_A1_A2 where TRxxx is the molecule and A1/A2 are the two atom numbers.",
+        "origin": "s221",
+        "sql": "bond.bond_id",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:atoms-of-a-bond",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {
+        "losses": 0,
+        "note": "The atoms of a bond are stored directly in connected as the first atom (atom_id) and second atom (atom_id2) for that bond_id, so filtering a bond's atoms only requires connected plus a join of atom.atom_id to connected.atom_id / connected.atom_id2.",
+        "origin": "s271",
+        "sql": "connected.atom_id, connected.atom_id2",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:non-carcinogenic-molecule",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "_feedback_sources": [
+          "s334",
+          "s270",
+          "s272",
+          "s293",
+          "s230",
+          "s280",
+          "s233",
+          "s262",
+          "s220"
+        ],
+        "losses": 0,
+        "note": "The molecule.label column stores '-' for non-carcinogenic compounds and '+' for carcinogenic ones.",
+        "origin": "s211",
+        "sql": "molecule.label = '-'",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:connected-to-the-atoms",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_feedback_sources": [
+          "s221",
+          "s197"
+        ],
+        "losses": 1,
+        "note": "The connected table stores each bond between two atom ids (atom_id and atom_id2), so a bond's participation is recorded per endpoint row rather than as one row per atom.",
+        "origin": "s211",
+        "sql": "connected.atom_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:atoms-of-a-bond",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "losses": 0,
+        "note": "The atoms of a bond are stored directly in connected as the first atom (atom_id) and second atom (atom_id2) for that bond_id, so filtering a bond's atoms only requires connected plus a join of atom.atom_id to connected.atom_id / connected.atom_id2.",
+        "origin": "s271",
+        "sql": "connected.atom_id, connected.atom_id2",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-bonds",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {
+        "_feedback_sources": [
+          "s250",
+          "s338",
+          "s244",
+          "s307",
+          "s318",
+          "s312",
+          "s302",
+          "s303",
+          "s271",
+          "s287",
+          "s264",
+          "s249",
+          "s321",
+          "s319",
+          "s224",
+          "s220"
+        ],
+        "losses": 3,
+        "note": "A percentage over bonds is computed as a real-valued conditional count of bond rows divided by the total number of bond rows, and bond.bond_id is the unique per-bond identifier used for counting.",
+        "origin": "s324",
+        "sql": "CAST(COUNT(CASE WHEN bond.bond_type = '-' THEN bond.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(bond.bond_id)",
+        "wins": 13
+      }
+    },
+    {
+      "from_entity": "term:atoms-in-a-molecule",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "losses": 0,
+        "note": "Atoms and bonds are linked by their shared molecule_id (atom ids like TR012_i denote the i-th atom of that molecule), rather than needing the connected link table.",
+        "origin": "s338",
+        "sql": "atom.molecule_id = bond.molecule_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bonds-of-a-molecule",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "losses": 0,
+        "note": "Both atom and bond carry molecule_id, so molecule-level bond conditions should be matched via molecule_id rather than the atom-bond link table, which only records direct atom connections and can omit bonds of interest.",
+        "origin": "s326",
+        "sql": "bond.molecule_id = atom.molecule_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:bond-atom-pair-ordering",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "losses": 0,
+        "note": "For each bond row, connected lists the two endpoint atoms in a fixed order in atom_id and atom_id2, so a bond between atoms 1 and 2 requires atom_id = molecule_id||'_1' and atom_id2 = molecule_id||'_2'.",
+        "origin": "s234",
+        "sql": "connected.atom_id2 = bond.molecule_id || '_' || 2",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-bonds",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s209",
+          "s245",
+          "s201",
+          "s273",
+          "s216",
+          "s280",
+          "s210",
+          "s226"
+        ],
+        "losses": 1,
+        "note": "A percentage over bonds is computed as a real-valued conditional count of bond rows divided by the total number of bond rows, and bond.bond_id is the unique per-bond identifier used for counting.",
+        "origin": "s324",
+        "sql": "CAST(COUNT(CASE WHEN bond.bond_type = '-' THEN bond.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(bond.bond_id)",
+        "wins": 7
+      }
+    },
+    {
+      "from_entity": "term:carbon-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s239",
+          "s201",
+          "s316",
+          "s281",
+          "s315",
+          "s325",
+          "s256"
+        ],
+        "losses": 1,
+        "note": "Element codes are lowercase single letters, e.g. 'c' carbon, 'h' hydrogen, 'o' oxygen.",
+        "origin": "s338",
+        "sql": "atom.element = 'c'",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:share-of-bonds-of-the-most-common-type",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_feedback_sources": [
+          "s226"
+        ],
+        "losses": 0,
+        "note": "Each bonded atom pair is one row in connected, so the percentage is the number of connected.atom_id rows in the top bond.bond_type group divided by the total number of connected.atom_id rows, multiplied by 100.",
+        "origin": "s254",
+        "sql": "CAST(COUNT(connected.atom_id) AS REAL) * 100 / (SELECT COUNT(connected.atom_id) FROM connected)",
+        "wins": 1
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-carcinogenic-molecules-containing-an-element",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "losses": 0,
+        "note": "The ratio is taken over atom records joined to carcinogenic molecules only, with the carcinogenic label applied inside the CASE so both numerator and denominator cover the same carcinogenic population, and integer *100/ division is used as in the verified answer.",
+        "origin": "s317",
+        "sql": "COUNT(CASE WHEN molecule.label = '+' AND atom.element = 'cl' THEN atom.molecule_id END) * 100 / COUNT(atom.molecule_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:molecule-of-an-atom",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "losses": 0,
+        "note": "Atoms are tagged with their parent molecule via atom.molecule_id, stored as codes like 'TR000' (TR plus three digits).",
+        "origin": "s309",
+        "sql": "atom.molecule_id",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:atom-id-encodes-molecule",
+      "type": "MEANS",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {
+        "_feedback_sources": [
+          "s223"
+        ],
+        "losses": 1,
+        "note": "An atom id is built as <molecule id>_<index within molecule>, so the atoms of one molecule can also be selected by the atom_id prefix.",
+        "origin": "s217",
+        "sql": "atom.atom_id LIKE 'TR181' || '_%' ESCAPE '\\'",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-atoms-in-carcinogenic-molecules",
+      "type": "MEANS",
+      "to_entity": "column:atom.element-977113",
+      "properties": {
+        "_feedback_sources": [
+          "s209",
+          "s245",
+          "s295",
+          "s242",
+          "s217",
+          "s201",
+          "s310",
+          "s290"
+        ],
+        "losses": 2,
+        "note": "Compute this share over atom rows (no DISTINCT on molecule ids): numerator is hydrogen atoms in carcinogenic molecules, denominator is all joined atom rows, and the label filter belongs inside the numerator case rather than in a WHERE clause that also shrinks the denominator.",
+        "origin": "s298",
+        "sql": "CAST(COUNT(CASE WHEN atom.element = 'h' AND molecule.label = '+' THEN atom.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(atom.molecule_id)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:bonded-atom",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_feedback_sources": [
+          "s318",
+          "s197",
+          "s302",
+          "s334",
+          "s200",
+          "s264",
+          "s321",
+          "s319"
+        ],
+        "losses": 2,
+        "note": "connected.atom_id is the column that identifies the atom side used to record a bond, so bonded atoms are found by matching atom.atom_id to it.",
+        "origin": "s247",
+        "sql": "atom.atom_id IN (SELECT connected.atom_id FROM connected)",
+        "wins": 6
+      }
+    },
+    {
+      "from_entity": "term:connected-to-the-atoms",
+      "type": "MEANS",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {
+        "_feedback_sources": [
+          "s211"
+        ],
+        "losses": 1,
+        "note": "A connection in the `connected` table is a two-ended relationship, so reporting the atoms connected to a set of atoms shows both endpoints of each connection, not just the opposite side.",
+        "origin": "s217",
+        "sql": "connected.atom_id, connected.atom_id2",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:double-bond",
+      "type": "MEANS",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {
+        "_feedback_sources": [
+          "s239",
+          "s244",
+          "s209",
+          "s247",
+          "s201",
+          "s223",
+          "s303",
+          "s232",
+          "s216",
+          "s210",
+          "s233",
+          "s234",
+          "s226"
+        ],
+        "losses": 4,
+        "note": "Bond types are stored as symbols: '-' single, '=' double, '#' triple.",
+        "origin": "s338",
+        "sql": "bond.bond_type = '='",
+        "wins": 9
+      }
+    },
+    {
+      "from_entity": "term:carcinogenic-molecule",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "_feedback_sources": [
+          "s225",
+          "s255",
+          "s284",
+          "s240",
+          "s214",
+          "s292",
+          "s250",
+          "s304",
+          "s244",
+          "s247",
+          "s295",
+          "s242",
+          "s217",
+          "s331",
+          "s290",
+          "s212",
+          "s316",
+          "s281",
+          "s309",
+          "s199",
+          "s312",
+          "s232",
+          "s334",
+          "s293",
+          "s230",
+          "s280",
+          "s233",
+          "s262",
+          "s220"
+        ],
+        "losses": 3,
+        "note": "The carcinogenicity flag is stored in molecule.label, where '+' means carcinogenic and '-' means not carcinogenic.",
+        "origin": "s330",
+        "sql": "molecule.label = '+'",
+        "wins": 26
+      }
+    },
+    {
+      "from_entity": "term:common-element",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "_feedback_sources": [
+          "s254"
+        ],
+        "losses": 1,
+        "note": "Element prevalence is measured by the number of distinct molecules containing that element, not by the raw number of atom rows.",
+        "origin": "s251",
+        "sql": "COUNT(DISTINCT atom.molecule_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:labels-for-named-molecules",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "losses": 0,
+        "note": "When labels are requested for specific molecules, return each molecule_id alongside its label so the '+'/'-' codes can be matched to the requested molecules.",
+        "origin": "s264",
+        "sql": "molecule.molecule_id, molecule.label",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:percentage-of-carcinogenic-molecules-containing-an-element",
+      "type": "MEANS",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {
+        "losses": 0,
+        "note": "The ratio is taken over atom records joined to carcinogenic molecules only, with the carcinogenic label applied inside the CASE so both numerator and denominator cover the same carcinogenic population, and integer *100/ division is used as in the verified answer.",
+        "origin": "s317",
+        "sql": "COUNT(CASE WHEN molecule.label = '+' AND atom.element = 'cl' THEN atom.molecule_id END) * 100 / COUNT(atom.molecule_id)",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:atom-of-molecule",
+      "type": "MEANS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "losses": 0,
+        "note": "Atom identifiers are stored as the molecule id, an underscore, and the atom number, so atom 12 of TR009 is 'TR009_12' and a bare number never matches.",
+        "origin": "s234",
+        "sql": "connected.atom_id = bond.molecule_id || '_' || 12",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "term:molecule-label",
+      "type": "MEANS",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {
+        "losses": 0,
+        "note": "The label of a molecule is stored in molecule.label as '+' (carcinogenic) or '-' (not carcinogenic).",
+        "origin": "s264",
+        "sql": "molecule.label",
+        "wins": 0
+      }
+    },
+    {
+      "from_entity": "example:s261",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s290",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s330",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s331",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s297",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s214",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s307",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s219",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s230",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s210",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s259",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s230",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s338",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s251",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s307",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s315",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s250",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s315",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s223",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s319",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s280",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s312",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s219",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s214",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s251",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s266",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s337",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s334",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s217",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s303",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s225",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s201",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s234",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s234",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s287",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s201",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s245",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s201",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s307",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s250",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s254",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s246",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s212",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s302",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s284",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s249",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s316",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s251",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s303",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s302",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s197",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s225",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s280",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s198",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s200",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s239",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s199",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s304",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s316",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s218",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s293",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s298",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s211",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s315",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s273",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s298",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s208",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s217",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s250",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s244",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s216",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s224",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s326",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s249",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s330",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s337",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s200",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s216",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s232",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s249",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s201",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s281",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s297",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s244",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s255",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s244",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s293",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s287",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s279",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s279",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s221",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s254",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s286",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s200",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s246",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s209",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s303",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s264",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s218",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s230",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s272",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s303",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s216",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s262",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s338",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s324",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s232",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s272",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s304",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s217",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s273",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s280",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s318",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s262",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s211",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s312",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s302",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s284",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s242",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s302",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s309",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s334",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s245",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s199",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s256",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s297",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s287",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s319",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s256",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s244",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s210",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s330",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s297",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s271",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s211",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s271",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s198",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s208",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s259",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s262",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s261",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s273",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s220",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s317",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s330",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s292",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s242",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s249",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s284",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s261",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s271",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s287",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s226",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s262",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s298",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s298",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s293",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s209",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s290",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s198",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s255",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s297",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s245",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s211",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s316",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s309",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s261",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s208",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s232",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s250",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s319",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s310",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s310",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s218",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s324",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s234",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s249",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s292",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s317",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s198",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s272",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s242",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s337",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s197",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s338",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s270",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s330",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s270",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s338",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s312",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s245",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s214",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s271",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s280",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s310",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s303",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s307",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s226",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s272",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s251",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s326",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s315",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s334",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s254",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s284",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s197",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s250",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s304",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s240",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s293",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s292",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s326",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s247",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s295",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s337",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s266",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s281",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s325",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s272",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s326",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s338",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s281",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s295",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s318",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s254",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s319",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s224",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s209",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s325",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s242",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s209",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s312",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s259",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s270",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s199",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s210",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s271",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s255",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s309",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s338",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s209",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s221",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s240",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s284",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s255",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s234",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s199",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s302",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s246",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s286",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s234",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s304",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s334",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s264",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s210",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s239",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s232",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s224",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s316",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s212",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s325",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s197",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s321",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s325",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s309",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s226",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s212",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s270",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s245",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s279",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s219",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s249",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s330",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s209",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s218",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s212",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s246",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s307",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s319",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s280",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s230",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s281",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s211",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s233",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s310",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s214",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s232",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s223",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s232",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s273",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s219",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s247",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s259",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s321",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s317",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s200",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s272",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s334",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s331",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s295",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s302",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s217",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s247",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s208",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s259",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s319",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s210",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s220",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s279",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s295",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s216",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-type-fd1075",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s244",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.bond-id-8d7c57",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s307",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s208",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s281",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s284",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s212",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.atom-id-e07906",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s201",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.molecule-id-fc9aa8",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s216",
+      "type": "TOUCHES",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s233",
+      "type": "TOUCHES",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s317",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s295",
+      "type": "TOUCHES",
+      "to_entity": "column:atom.element-977113",
+      "properties": {}
+    },
+    {
+      "from_entity": "example:s198",
+      "type": "TOUCHES",
+      "to_entity": "column:molecule.label-a14568",
+      "properties": {}
+    },
+    {
+      "from_entity": "column:atom.atom-id-e07906",
+      "type": "JOINS",
+      "to_entity": "column:connected.atom-id-f34238",
+      "properties": {
+        "_win_sources": [
+          "s284",
+          "s209",
+          "s245",
+          "s247",
+          "s217",
+          "s307",
+          "s211",
+          "s302",
+          "s271",
+          "s249",
+          "s319"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 11
+      }
+    },
+    {
+      "from_entity": "column:bond.bond-id-8d7c57",
+      "type": "JOINS",
+      "to_entity": "column:connected.bond-id-cc2d31",
+      "properties": {
+        "_win_sources": [
+          "s246",
+          "s284",
+          "s209",
+          "s307",
+          "s302",
+          "s232",
+          "s216",
+          "s249",
+          "s210",
+          "s234",
+          "s254",
+          "s319"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 12
+      }
+    },
+    {
+      "from_entity": "column:atom.molecule-id-fc9aa8",
+      "type": "JOINS",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {
+        "_win_sources": [
+          "s297",
+          "s330",
+          "s218",
+          "s298",
+          "s198",
+          "s304",
+          "s338",
+          "s295",
+          "s242",
+          "s212",
+          "s316",
+          "s281",
+          "s199",
+          "s273",
+          "s211",
+          "s251",
+          "s334",
+          "s270",
+          "s315",
+          "s272",
+          "s325",
+          "s293",
+          "s230",
+          "s208",
+          "s259",
+          "s317"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 26
+      }
+    },
+    {
+      "from_entity": "column:atom.atom-id-e07906",
+      "type": "JOINS",
+      "to_entity": "column:connected.atom-id2-d22444",
+      "properties": {
+        "_win_sources": [
+          "s245",
+          "s307",
+          "s302",
+          "s249",
+          "s319"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 5
+      }
+    },
+    {
+      "from_entity": "column:bond.molecule-id-a19629",
+      "type": "JOINS",
+      "to_entity": "column:molecule.molecule-id-41d6de",
+      "properties": {
+        "_win_sources": [
+          "s219",
+          "s279",
+          "s330",
+          "s255",
+          "s250",
+          "s338",
+          "s244",
+          "s310",
+          "s312",
+          "s261",
+          "s232",
+          "s200",
+          "s272",
+          "s287",
+          "s280",
+          "s259",
+          "s262"
+        ],
+        "declared": true,
+        "losses": 0,
+        "wins": 17
+      }
+    },
+    {
+      "from_entity": "column:atom.molecule-id-fc9aa8",
+      "type": "JOINS",
+      "to_entity": "column:bond.molecule-id-a19629",
+      "properties": {
+        "_win_sources": [
+          "s198",
+          "s309",
+          "s197",
+          "s337",
+          "s326"
+        ],
+        "declared": false,
+        "losses": 0,
+        "wins": 5
+      }
+    }
+  ]
+}
