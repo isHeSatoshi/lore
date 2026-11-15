@@ -1,0 +1,25 @@
+{
+  "scope": "Disclosure-only check on the real unseeded local preview, not final trained teaching or hosted validation",
+  "viewports": {
+    "desktop": {
+      "inapplicable": 54,
+      "incomplete": 0,
+      "passes": 35,
+      "violations": 0
+    },
+    "mobile": {
+      "inapplicable": 54,
+      "incomplete": 0,
+      "passes": 35,
+      "violations": 0
+    }
+  },
+  "mobile_width": 390,
+  "mobile_scroll_width": 390,
+  "model_calls": 0,
+  "completed_utc": "2026-11-15T18:14:44.309948+00:00",
+  "screenshots": [
+    "results/ui/r4-disclosure-desktop.png",
+    "results/ui/r4-disclosure-mobile.png"
+  ]
+}

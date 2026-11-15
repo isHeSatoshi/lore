@@ -1,0 +1,20 @@
+{
+  "scope": "Dependency preparation only; seeded launcher not yet exercised",
+  "environment": "/tmp/lore-hf-release-env",
+  "versions": {
+    "lore": "0.1.0",
+    "droid-sdk": "0.5.0",
+    "gradio": "6.32.0",
+    "fastapi": "0.163.1",
+    "selfgraph": "0.2.1",
+    "neo4j": "6.4.1"
+  },
+  "rootless_tools_container_imports_pass": true,
+  "container_network": "none",
+  "container_uid": 1000,
+  "container_read_only": true,
+  "skopeo": true,
+  "umoci": true,
+  "model_calls": 0,
+  "public_ports": 0
+}
