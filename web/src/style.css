@@ -720,6 +720,9 @@ summary {
   margin: 22px 0 20px;
   font-size: 10px;
 }
+.chart .recharts-text {
+  fill: #53604c;
+}
 .footnote {
   font-size: 10px;
   color: #60784c;
