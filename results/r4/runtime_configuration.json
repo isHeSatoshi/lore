@@ -1,0 +1,48 @@
+{
+  "driver_option": "max_connection_pool_size",
+  "per_namespace_connection_pool_size": 4,
+  "scope": "Client connection scheduling only; graph queries, prompts, model, learning and metric unchanged",
+  "file_sha256": {
+    "lore/connection_pool.py": "171e352941015148d08183261c08662e775e979e3acdf6229e1958c319347735",
+    "lore/bench/factory_runtime.py": "275bb7dcd203db521c36155ef299f515824068c5251b0b657d0de3c1d88fc478"
+  },
+  "introduced_after": [
+    {
+      "system": "ceiling",
+      "phase": "test",
+      "checkpoint": 0,
+      "answers": 500
+    },
+    {
+      "system": "floor",
+      "phase": "test",
+      "checkpoint": 0,
+      "answers": 500
+    },
+    {
+      "system": "lore",
+      "phase": "stream",
+      "checkpoint": 0,
+      "answers": 847
+    },
+    {
+      "system": "lore",
+      "phase": "test",
+      "checkpoint": 0.25,
+      "answers": 500
+    },
+    {
+      "system": "lore",
+      "phase": "test",
+      "checkpoint": 0.5,
+      "answers": 500
+    },
+    {
+      "system": "lore",
+      "phase": "test",
+      "checkpoint": 1.0,
+      "answers": 251
+    }
+  ],
+  "captured_at": "2026-11-15T18:41:40.568839+00:00"
+}

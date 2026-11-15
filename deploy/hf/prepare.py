@@ -114,6 +114,11 @@ def prepare(root, run, data_bundle, parent):
         "seeds.json",
         "baseline.json",
         "learning_configuration.json",
+        "runtime_configuration.json",
+        "connection_pool_validation.json",
+        "interruption.hydra.1.json",
+        "interruption.hydra.2.json",
+        "interruption.sdk.1.json",
         "ceiling_review.json",
         "ceiling_review.md",
     ):

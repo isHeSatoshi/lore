@@ -1,0 +1,16 @@
+{
+  "phase": "lore",
+  "reason": "Repeated ten-second Bolt handshake timeout under the default client pool",
+  "saved_stream_answers": 847,
+  "saved_test_answers": {
+    "0.25": 500,
+    "0.5": 500,
+    "1.0": 251
+  },
+  "recorded_usage": {
+    "input_tokens": 14988341,
+    "output_tokens": 2298422,
+    "calls": 3294
+  },
+  "recovery": "Cap the public driver max_connection_pool_size option at four per namespace using a separately recorded runtime entrypoint; no query, prompt, learning, scoring, checkpoint or source-freeze changes; no HydraDB restart"
+}

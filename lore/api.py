@@ -37,6 +37,7 @@ from lore.bird import (
     render_prompt,
 )
 from lore.config import ROOT, settings
+from lore.connection_pool import configure_graph_pool
 from lore.graphdb import GraphReader, open_graph
 from lore.ground import ground
 from lore.ids import example_id, table_id
@@ -48,6 +49,8 @@ from lore.seeds import import_seeds
 from lore.sqlexec import execute_table
 from lore.systems import Outcome
 from lore.text import entity_label, trace_summary
+
+configure_graph_pool()
 
 Mode = Literal["trained", "sandbox"]
 Session = str

@@ -120,12 +120,25 @@ def measured_gates(root):
         path = Path(name)
         require(not path.is_absolute() and ".." not in path.parts and path.parts[0] == "lore" and path.suffix == ".py", "protocol-path")
         require(fingerprint(root / path) == expected, "protocol-source-drift")
+    runtime = read_json(results / "runtime_configuration.json")
+    require(
+        runtime["driver_option"] == "max_connection_pool_size"
+        and runtime["per_namespace_connection_pool_size"] == 4
+        and set(runtime["file_sha256"]) == {
+            "lore/connection_pool.py", "lore/bench/factory_runtime.py",
+        },
+        "graph-runtime",
+    )
+    for name, expected in runtime["file_sha256"].items():
+        require(fingerprint(root / name) == expected, "runtime-source-drift")
     demo = read_json(results / "demo.json")
     require(demo["run"] == RUN and len(demo["databases"]) == 4, "demo-run")
     replays = read_json(results / "demo_replays.json")
     seed_manifest = read_json(results / "seeds.json")
     require(seed_manifest["run"] == RUN, "seed-run")
-    require(len(read_json(results / "load.json")["levels"]) == 3, "load-levels")
+    load = read_json(results / "load.json")
+    require(len(load["levels"]) == 3, "load-levels")
+    require(load.get("per_namespace_connection_pool_size") == 4, "load-pool")
     for entry in demo["databases"]:
         db = entry["id"]
         passed = [

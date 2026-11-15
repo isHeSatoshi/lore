@@ -1,0 +1,26 @@
+{
+  "per_namespace_pool": 4,
+  "original_default_pool": 100,
+  "checks": [
+    {
+      "db": "financial",
+      "key": "t234",
+      "original_and_capped_grounding_identical": true,
+      "block_chars": 2128
+    },
+    {
+      "db": "financial",
+      "key": "t230",
+      "original_and_capped_grounding_identical": true,
+      "block_chars": 2138
+    },
+    {
+      "db": "financial",
+      "key": "t219",
+      "original_and_capped_grounding_identical": true,
+      "block_chars": 1695
+    }
+  ],
+  "model_calls": 0,
+  "frozen_sources_unchanged": true
+}

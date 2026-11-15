@@ -35,6 +35,17 @@ def release(tmp_path, monkeypatch):
     (root / "web/dist").mkdir(parents=True)
     (root / "web/dist/index.html").write_text("<html>public</html>")
     results = root / "results/r4"
+    runtime_hashes = {}
+    for name in ("lore/connection_pool.py", "lore/bench/factory_runtime.py"):
+        path = root / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("# public scheduling fixture\n")
+        runtime_hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+    write_json(results / "runtime_configuration.json", {
+        "driver_option": "max_connection_pool_size",
+        "per_namespace_connection_pool_size": 4,
+        "file_sha256": runtime_hashes,
+    })
     systems = {}
     for name in ("floor", "ceiling", "lore", "vector", "flat"):
         checkpoints = [0.25, 0.5, 1] if name in ("lore", "vector") else [1] if name == "flat" else [0]
@@ -79,6 +90,7 @@ def release(tmp_path, monkeypatch):
     write_json(results / "seeds.json", {"run": "r4", "databases": seeds})
     write_json(results / "load.json", {
         "trained": True, "frozen": False, "llm_calls": 0,
+        "per_namespace_connection_pool_size": 4,
         "levels": [{"concurrency": c, "requests": 1000, "error_count": 0} for c in (10, 50, 100)],
     })
     write_json(bird / "paths.json", layout)
@@ -199,11 +211,14 @@ def test_symlinks_and_known_credential_bytes_block_before_api(release):
     ("summary.json", lambda d: d["systems"]["floor"][0].update(accuracy=99)),
     ("summary.json", lambda d: d.update(model="different-model")),
     ("learning_configuration.json", lambda d: d.update(protocol="factory-sdk-v1")),
+    ("runtime_configuration.json", lambda d: d.update(per_namespace_connection_pool_size=100)),
+    ("runtime_configuration.json", lambda d: d.update(file_sha256={})),
     ("seeds.json", lambda d: d.update(run="r2")),
     ("demo.json", lambda d: d["databases"][0].update(suggestions=[])),
     ("demo_replays.json", lambda d: d[0].update(passed=False)),
     ("load.json", lambda d: d.update(trained=False)),
     ("load.json", lambda d: d.update(llm_calls=1)),
+    ("load.json", lambda d: d.update(per_namespace_connection_pool_size=100)),
     ("load.json", lambda d: d["levels"][0].update(error_count=1)),
     ("load.json", lambda d: d["levels"].pop()),
 ])
@@ -234,11 +249,13 @@ def test_credential_scan_detects_chunk_boundary(tmp_path):
         scan_credentials(tmp_path, [secret])
 
 
-@pytest.mark.parametrize("target", ["protocol", "database", "heldout-seed", "missing-seed"])
+@pytest.mark.parametrize("target", ["protocol", "runtime", "database", "heldout-seed", "missing-seed"])
 def test_source_and_seed_integrity_fail_closed(release, api, target):
     root, package = release
     if target == "protocol":
         (root / "lore/providers.py").write_text("# unmeasured source change")
+    elif target == "runtime":
+        (root / "lore/connection_pool.py").write_text("# unrecorded runtime change")
     elif target == "database":
         (package / "data/bird/db0.sqlite").write_bytes(b"unreviewed database")
     elif target == "missing-seed":

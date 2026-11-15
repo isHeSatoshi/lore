@@ -196,11 +196,11 @@ Keep `FACTORY_API_KEY` in the ignored private `.env`. Use a fresh run ID;
 ```sh
 export LORE_LLM_CONCURRENCY=6 LORE_LLM_MIN_INTERVAL_S=0.5
 .venv/bin/python -m lore.bench.check_data --run reproduction
-.venv/bin/python -m lore.bench.factory --run reproduction --systems floor,ceiling
+.venv/bin/python -m lore.bench.factory_runtime --run reproduction --systems floor,ceiling
 .venv/bin/python -m lore.bench.review_baselines --run reproduction
-.venv/bin/python -m lore.bench.factory --run reproduction --systems lore --stream-cap 80 --checkpoints 0.25,0.5,1.0
-.venv/bin/python -m lore.bench.factory --run reproduction --systems vector --stream-cap 80 --checkpoints 0.25,0.5,1.0
-.venv/bin/python -m lore.bench.factory --run reproduction --systems flat --from-run reproduction
+.venv/bin/python -m lore.bench.factory_runtime --run reproduction --systems lore --stream-cap 80 --checkpoints 0.25,0.5,1.0
+.venv/bin/python -m lore.bench.factory_runtime --run reproduction --systems vector --stream-cap 80 --checkpoints 0.25,0.5,1.0
+.venv/bin/python -m lore.bench.factory_runtime --run reproduction --systems flat --from-run reproduction
 .venv/bin/python -m lore.bench.report --run reproduction
 .venv/bin/python -m lore.seeds export --run reproduction --out seeds/
 .venv/bin/python -m lore.bench.load --run reproduction --concurrency 10,50,100 --requests 1000
@@ -219,6 +219,13 @@ export LORE_LLM_EFFORT=medium LORE_LLM_MAX_TOKENS=0 LORE_RESULTS_RUN=r4
 ```
 
 Here `max_tokens=0` explicitly means SDK-managed, not a zero-token generation.
+The runtime entrypoint caps each namespace's client connection pool at four.
+After two Bolt handshake interruptions, `r4` resumed with this scheduling-only
+change, recorded in [runtime configuration](results/r4/runtime_configuration.json).
+The [comparison check](results/r4/connection_pool_validation.json) preserves
+identical original/capped grounding on its recorded real inputs. Earlier
+answers remain intact; no prompt, query, learning rule or metric changed.
+The API and trained-load entrypoint use the same connection cap.
 For tests use `.venv/bin/pytest -q`; add `LORE_INTEGRATION=1` for real HydraDB.
 
 ### Historical raw-provider reproduction
