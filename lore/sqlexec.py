@@ -28,6 +28,10 @@ def _execute(db_path, sql, timeout_s=30.0, max_rows=None):
             Path(db_path).resolve().as_uri() + "?mode=ro", uri=True, check_same_thread=False
         )
         conn.execute("PRAGMA query_only=ON")
+        if max_rows is not None:
+            conn.setlimit(sqlite3.SQLITE_LIMIT_LENGTH, 1_000_000)
+            conn.setlimit(sqlite3.SQLITE_LIMIT_SQL_LENGTH, 50_000)
+            conn.setlimit(sqlite3.SQLITE_LIMIT_VDBE_OP, 100_000)
         conn.set_authorizer(
             lambda action, *_: sqlite3.SQLITE_OK if action in _allowed else sqlite3.SQLITE_DENY
         )
@@ -37,7 +41,18 @@ def _execute(db_path, sql, timeout_s=30.0, max_rows=None):
         timer.start()
         cur = conn.execute(sql)
         columns = [c[0] for c in (cur.description or [])]
-        rows = cur.fetchmany(max_rows) if max_rows is not None else cur.fetchall()
+        if max_rows is None:
+            rows = cur.fetchall()
+        else:
+            rows, size = [], 0
+            for _ in range(max_rows):
+                row = cur.fetchone()
+                if row is None:
+                    break
+                size += sum(len(v) if isinstance(v, bytes) else len(str(v).encode()) for v in row)
+                if size > 1_000_000:
+                    break
+                rows.append(row)
         return rows, None, int((time.monotonic() - start) * 1000), columns
     except Exception as exc:
         return None, f"{type(exc).__name__}: {exc}", int((time.monotonic() - start) * 1000), []

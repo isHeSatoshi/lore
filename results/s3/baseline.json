@@ -1,0 +1,12 @@
+{
+  "model": "MiniMax-M3.1-Flash",
+  "effort": "medium",
+  "systems": {
+    "floor": {
+      "n": 95,
+      "correct": 34,
+      "accuracy": 35.78947368421053,
+      "mean_prompt_tokens": 2535.7263157894736
+    }
+  }
+}

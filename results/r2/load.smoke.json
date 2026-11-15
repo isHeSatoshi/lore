@@ -1,0 +1,147 @@
+{
+  "run": "r2",
+  "date": "2026-11-15T12:16:43.738217+00:00",
+  "seed": 0,
+  "frozen": false,
+  "llm_calls": 0,
+  "counts": {
+    "per_db": {
+      "california_schools": {
+        "entities": 92,
+        "relations": 91,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "card_games": {
+        "entities": 121,
+        "relations": 119,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "codebase_community": {
+        "entities": 79,
+        "relations": 84,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "debit_card_specializing": {
+        "entities": 26,
+        "relations": 22,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "european_football_2": {
+        "entities": 206,
+        "relations": 230,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "financial": {
+        "entities": 63,
+        "relations": 63,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "formula_1": {
+        "entities": 107,
+        "relations": 113,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "student_club": {
+        "entities": 56,
+        "relations": 56,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "superhero": {
+        "entities": 41,
+        "relations": 42,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "thrombosis_prediction": {
+        "entities": 67,
+        "relations": 66,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "toxicology": {
+        "entities": 15,
+        "relations": 16,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      }
+    },
+    "total": {
+      "entities": 873,
+      "relations": 902,
+      "rules": 0,
+      "rules_hidden": 0,
+      "joins_learned": 0,
+      "columns_profiled": 0,
+      "examples": 0,
+      "merges": 0
+    }
+  },
+  "levels": [
+    {
+      "concurrency": 2,
+      "requests": 8,
+      "p50_ms": 191.83188149963826,
+      "p95_ms": 236.9800705500893,
+      "p99_ms": 237.26695491004648,
+      "max_ms": 237.33867600003578,
+      "requests_per_second": 10.403743753897217,
+      "successes_per_second": 10.403743753897217,
+      "error_count": 0,
+      "error_samples": [],
+      "elapsed_s": 0.7689539640000476
+    }
+  ],
+  "trained": false
+}

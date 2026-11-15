@@ -1,0 +1,227 @@
+{
+  "model": "MiniMax-M3.1-Flash",
+  "effort": "medium",
+  "date": "2026-11-15T13:37:30.015677+00:00",
+  "seed": 0,
+  "stream_cap": 30,
+  "split": {
+    "seed": 0,
+    "stream_cap": 30,
+    "raw_stream": 1534,
+    "test_count": 500,
+    "removed": {
+      "question_equal": 13,
+      "sql_equal": 17,
+      "question_jaccard": 1,
+      "sql_jaccard": 6
+    },
+    "remaining": 1497,
+    "eligible_per_db": {
+      "california_schools": 85,
+      "financial": 102,
+      "toxicology": 142,
+      "card_games": 184,
+      "codebase_community": 183,
+      "superhero": 127,
+      "formula_1": 171,
+      "european_football_2": 126,
+      "thrombosis_prediction": 160,
+      "student_club": 153,
+      "debit_card_specializing": 64
+    },
+    "stream_per_db": {
+      "california_schools": 30,
+      "card_games": 30,
+      "codebase_community": 30,
+      "debit_card_specializing": 30,
+      "european_football_2": 30,
+      "financial": 30,
+      "formula_1": 30,
+      "student_club": 30,
+      "superhero": 30,
+      "thrombosis_prediction": 30,
+      "toxicology": 30
+    },
+    "tokenization": "lowercase Unicode word tokens; each removal attributed to the first matching rule"
+  },
+  "expected_test_count": 95,
+  "systems": {
+    "floor": [
+      {
+        "checkpoint": 0,
+        "questions_seen": 0,
+        "n": 95,
+        "expected": 95,
+        "complete": true,
+        "correct": 34,
+        "accuracy": 35.78947368421053,
+        "ci95": [
+          26.87504166729956,
+          45.808485749085456
+        ],
+        "mean_prompt_tokens": 2535.7263157894736,
+        "mean_block_chars": 0.0
+      }
+    ],
+    "ceiling": [
+      {
+        "checkpoint": 0,
+        "questions_seen": 0,
+        "n": 0,
+        "expected": 95,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      }
+    ],
+    "lore": [
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 60,
+        "n": 95,
+        "expected": 95,
+        "complete": true,
+        "correct": 50,
+        "accuracy": 52.63157894736842,
+        "ci95": [
+          42.685348170018464,
+          62.3732578639843
+        ],
+        "mean_prompt_tokens": 3135.8105263157895,
+        "mean_block_chars": 2207.7368421052633
+      }
+    ],
+    "vector": [
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 60,
+        "n": 0,
+        "expected": 95,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      }
+    ],
+    "flat": [
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 60,
+        "n": 0,
+        "expected": 95,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      }
+    ]
+  },
+  "comparisons": {
+    "lore_minus_floor": {
+      "points": 16.84210526315789,
+      "ci95": [
+        4.210526315789476,
+        29.47368421052631
+      ],
+      "n": 95
+    }
+  },
+  "gap_closed": null,
+  "per_db": [
+    {
+      "db_id": "california_schools",
+      "n": 49,
+      "floor": 26.53061224489796,
+      "ceiling": null,
+      "vector": null,
+      "flat": null,
+      "lore": 44.89795918367347,
+      "rules": 48
+    },
+    {
+      "db_id": "financial",
+      "n": 46,
+      "floor": 45.65217391304348,
+      "ceiling": null,
+      "vector": null,
+      "flat": null,
+      "lore": 60.869565217391305,
+      "rules": 27
+    }
+  ],
+  "stream_accuracy": {
+    "first": {
+      "n": 20,
+      "accuracy": 55.0
+    },
+    "last": {
+      "n": 20,
+      "accuracy": 65.0
+    }
+  },
+  "missing": [
+    "ceiling@0: 0/95",
+    "vector@1: 0/95",
+    "flat@1: 0/95"
+  ],
+  "complete": false,
+  "metric": "set(predicted_rows) == set(gold_rows); errors/timeouts are incorrect",
+  "intervals": {
+    "accuracy": "Wilson 95%",
+    "differences": "paired bootstrap; 10000 samples; seed 0"
+  },
+  "mechanisms": {
+    "native_path_search": false,
+    "path_compression": false,
+    "fuzzy_merge": false,
+    "certification": "supported, not used in benchmark"
+  },
+  "run": "s2",
+  "generated_at": "2026-11-15T13:53:48.098033+00:00",
+  "counts": {
+    "per_db": {
+      "california_schools": {
+        "entities": 156,
+        "relations": 278,
+        "rules": 48,
+        "rules_hidden": 7,
+        "joins_learned": 3,
+        "columns_profiled": 20,
+        "examples": 30,
+        "merges": 3
+      },
+      "financial": {
+        "entities": 111,
+        "relations": 257,
+        "rules": 27,
+        "rules_hidden": 0,
+        "joins_learned": 8,
+        "columns_profiled": 13,
+        "examples": 30,
+        "merges": 2
+      }
+    },
+    "total": {
+      "entities": 267,
+      "relations": 535,
+      "rules": 75,
+      "rules_hidden": 7,
+      "joins_learned": 11,
+      "columns_profiled": 33,
+      "examples": 60,
+      "merges": 5
+    }
+  },
+  "usage": {
+    "input_tokens": 483641,
+    "output_tokens": 178253,
+    "calls": 171
+  }
+}

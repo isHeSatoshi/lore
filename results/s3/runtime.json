@@ -1,0 +1,13 @@
+{
+  "run": "s3",
+  "started_at": "2026-11-15T13:53:47.315447+00:00",
+  "finished_at": "2026-11-15T14:09:10.397830+00:00",
+  "wall_seconds": 923.0823833942413,
+  "usage": {
+    "input_tokens": 488259,
+    "output_tokens": 172171,
+    "calls": 169
+  },
+  "event_counts": {},
+  "note": "Observed small-run timing, not a forecast or a full-run result"
+}

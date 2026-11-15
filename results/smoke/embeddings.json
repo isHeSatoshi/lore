@@ -1,0 +1,9 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "dimension": 384,
+  "cold_ms_including_download": 5674.4916590000685,
+  "disk_cache_ms": 0.2571459999671788,
+  "max_question_chars": 1566,
+  "threads": 1,
+  "peak_process_rss_kib": 531796
+}

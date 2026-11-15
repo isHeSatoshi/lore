@@ -3,7 +3,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from lore.sqlexec import GoldCache, ex_match, run_sql
+from lore.sqlexec import GoldCache, ex_match, execute_table, run_sql
 
 
 @pytest.fixture
@@ -59,3 +59,10 @@ async def test_gold_cache_round_trip_and_db_change(db, tmp_path):
     with sqlite3.connect(db) as conn:
         conn.execute("INSERT INTO items VALUES (3)")
     assert len((await GoldCache(path).get(q))[0]) == 4
+
+
+@pytest.mark.asyncio
+async def test_ui_bounds_large_values_without_changing_benchmark(db):
+    assert (await execute_table(db, "SELECT randomblob(1000001)"))[1] is not None
+    rows, error, _ = run_sql(db, "SELECT length(randomblob(1000001))")
+    assert error is None and rows == [(1000001,)]

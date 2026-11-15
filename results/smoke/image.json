@@ -1,0 +1,12 @@
+{
+  "non_root": true,
+  "read_only_database_mount": true,
+  "writable_state": true,
+  "health": true,
+  "database_listing": true,
+  "frontend": true,
+  "invalid_unicode_rejected": true,
+  "bench_dependencies_absent": true,
+  "model_calls": 0,
+  "public_ports": 0
+}

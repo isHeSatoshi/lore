@@ -5,7 +5,7 @@ from types import SimpleNamespace
 import pytest
 
 from lore.config import settings
-from lore.llm import LLM, TokenBudgetExceeded
+from lore.llm import LLM, TokenBudgetExceeded, request_guard
 
 
 @pytest.mark.asyncio
@@ -74,4 +74,31 @@ async def test_budget_gate_blocks_new_network_call(tmp_path):
         with pytest.raises(TokenBudgetExceeded):
             await llm.complete("must not be sent")
     finally:
+        await llm.close()
+
+
+@pytest.mark.asyncio
+async def test_public_guard_counts_both_attempts_and_cache_requests(tmp_path):
+    llm = LLM("unit", cfg=replace(settings, data_dir=tmp_path, api_key="fixture"))
+    attempts, reservations = [], []
+
+    async def guard():
+        reservations.append(True)
+
+    async def create(**kwargs):
+        attempts.append(kwargs)
+        return SimpleNamespace(
+            content=[] if len(attempts) == 1 else [SimpleNamespace(type="text", text="SELECT 1")],
+            usage=SimpleNamespace(input_tokens=10, output_tokens=10),
+            stop_reason="max_tokens" if len(attempts) == 1 else "end_turn",
+        )
+
+    llm.client.messages.create = create
+    token = request_guard.set(guard)
+    try:
+        await llm.complete("guard fixture")
+        await llm.complete("guard fixture")
+        assert len(attempts) == 2 and len(reservations) == 3
+    finally:
+        request_guard.reset(token)
         await llm.close()

@@ -46,5 +46,62 @@ services:
       - "127.0.0.1:19091:9090"
     volumes:
       - hydra_data:/data
+  app:
+    profiles: ["prod"]
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.app
+    depends_on:
+      hydradb:
+        condition: service_started
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      LORE_ROOT: /app
+      LORE_DATA_DIR: /app/data
+      LORE_STATE_DIR: /app/state
+      LORE_RESULTS_RUN: ${LORE_RESULTS_RUN:-r2}
+      LORE_LLM_CONCURRENCY: "2"
+      LORE_LLM_MIN_INTERVAL_S: "2"
+      LORE_BEHIND_CLOUDFLARE: ${LORE_BEHIND_CLOUDFLARE:-0}
+      HYDRA_BOLT_URI: bolt://hydradb:7687
+      HYDRA_ADMIN_URL: http://hydradb:9090
+      HYDRA_HTTP_URL: http://hydradb:8443
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./data:/app/data:ro
+      - app_state:/app/state
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      start_period: 60s
+      retries: 5
+  caddy:
+    profiles: ["prod"]
+    image: caddy:2
+    depends_on:
+      app:
+        condition: service_healthy
+    restart: unless-stopped
+    environment:
+      SITE_HOST: ${SITE_HOST:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
 volumes:
   hydra_data:
+  app_state:
+  caddy_data:
+  caddy_config:

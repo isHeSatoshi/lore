@@ -1,0 +1,37 @@
+{
+  "scope": "Post-review validator regression only; s3 graph, answers and accuracy are unchanged",
+  "input_relations": 87,
+  "rejected_by_final_guards": [
+    {
+      "id": "relation:9a02646622df6a54dcc71d7c",
+      "origin": "s49",
+      "term": "single top county",
+      "column": "schools.County",
+      "reason": "fragment shape"
+    },
+    {
+      "id": "relation:b63dc5d73d2ffeadde9ccb7b",
+      "origin": "s49",
+      "term": "single top county",
+      "column": "schools.School",
+      "reason": "fragment shape"
+    },
+    {
+      "id": "relation:d742e76bf3570345fe58e6bf",
+      "origin": "s49",
+      "term": "single top county",
+      "column": "schools.StatusType",
+      "reason": "fragment shape"
+    },
+    {
+      "id": "relation:41150c2ba768957662a8730e",
+      "origin": "s148",
+      "term": "existing active loan",
+      "column": "loan.status",
+      "reason": "column absent from verified correction"
+    }
+  ],
+  "retained_relations": 83,
+  "reflection_sha256": "cc1c44eadb2c27ea693a6f0fb3c007f3deab6e54d0a087d3c78a8ceb18aff8d0",
+  "final_learning_file_sha256": "c5ed43c182e1ae25cf7cf801e62e640f0beab87ed9d04a499fa74a394dce8cae"
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "id": "relation:13793c4d50da9e86a4b7cbc5",
+    "origin": "s145",
+    "term": "yearly average amount",
+    "aliases": [
+      "average transaction amount",
+      "below the yearly average"
+    ],
+    "column": "trans.amount",
+    "sql": "AVG(trans.amount) OVER (PARTITION BY STRFTIME('%Y', trans.date))",
+    "note": "Compute the average over all transactions in the relevant year, without restricting the average population to a transaction operation.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:13b517048abd73486710ff85",
+    "origin": "s97",
+    "term": "disponent",
+    "aliases": [
+      "disponent role",
+      "disposition type disponent"
+    ],
+    "column": "disp.type",
+    "sql": "disp.type = 'DISPONENT'",
+    "note": "The disp.type code identifies clients who have the DISPONENT relationship with an account.",
+    "wins": 8,
+    "losses": 1
+  },
+  {
+    "id": "relation:1763102be6cd1c2929a31f33",
+    "origin": "s186",
+    "term": "weekly statement requesters",
+    "aliases": [
+      "clients requesting weekly statements",
+      "weekly-frequency account clients"
+    ],
+    "column": "disp.account_id",
+    "sql": "disp.client_id = client.client_id AND disp.account_id = account.account_id AND account.frequency = 'POPLATEK TYDNE'",
+    "note": "Identify clients requesting a statement frequency by linking them through disp to accounts with that stored frequency.",
+    "wins": 1,
+    "losses": 0
+  },
+  {
+    "id": "relation:39d3c417a22648f9a6d71ce3",
+    "origin": "s148",
+    "term": "eligible for loans",
+    "aliases": [
+      "loan-eligible account",
+      "eligible for lending"
+    ],
+    "column": "disp.type",
+    "sql": "disp.type = 'OWNER'",
+    "note": "Loan eligibility is represented by an account disposition of type OWNER, not by the existence of a loan record.",
+    "wins": 1,
+    "losses": 1
+  },
+  {
+    "id": "relation:3d1842f50701db54890f3b28",
+    "origin": "s174",
+    "term": "account owner birth year",
+    "aliases": [
+      "year account owner was born",
+      "owner birth year"
+    ],
+    "column": "client.birth_date",
+    "sql": "STRFTIME('%Y', client.birth_date)",
+    "note": "The birth year is the year component of the owner client\u2019s birth_date, found through the client\u2013account ownership relationship.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:6403ee87939908477f641bcc",
+    "origin": "s186",
+    "term": "weekly statement requesters",
+    "aliases": [
+      "clients requesting weekly statements",
+      "weekly-frequency account clients"
+    ],
+    "column": "client.client_id",
+    "sql": "disp.client_id = client.client_id AND disp.account_id = account.account_id AND account.frequency = 'POPLATEK TYDNE'",
+    "note": "Identify clients requesting a statement frequency by linking them through disp to accounts with that stored frequency.",
+    "wins": 5,
+    "losses": 0
+  },
+  {
+    "id": "relation:66467a3ae1fe923fa23d6c88",
+    "origin": "s135",
+    "term": "negative balance after transaction",
+    "aliases": [
+      "negative transaction balance",
+      "account overdrawn after transaction"
+    ],
+    "column": "trans.balance",
+    "sql": "trans.balance < 0",
+    "note": "A negative balance is identified by a negative post-transaction value in trans.balance.",
+    "wins": 3,
+    "losses": 0
+  },
+  {
+    "id": "relation:6b6a553b73b0af6cda0b21f1",
+    "origin": "s186",
+    "term": "weekly statement requesters",
+    "aliases": [
+      "clients requesting weekly statements",
+      "weekly-frequency account clients"
+    ],
+    "column": "account.frequency",
+    "sql": "disp.client_id = client.client_id AND disp.account_id = account.account_id AND account.frequency = 'POPLATEK TYDNE'",
+    "note": "Identify clients requesting a statement frequency by linking them through disp to accounts with that stored frequency.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:6bfbeef7f06d22be522badb8",
+    "origin": "s97",
+    "term": "statement of issuance",
+    "aliases": [
+      "monthly statement",
+      "monthly statement frequency"
+    ],
+    "column": "account.frequency",
+    "sql": "account.frequency = 'POPLATEK PO OBRATU'",
+    "note": "Statement issuance is represented by the account frequency code for monthly statements, not by a comparison between card issue and transaction dates.",
+    "wins": 5,
+    "losses": 0
+  },
+  {
+    "id": "relation:6cb681ccb158ecb15a81c399",
+    "origin": "s186",
+    "term": "male client percentage",
+    "aliases": [
+      "percentage of male clients",
+      "male share of clients"
+    ],
+    "column": "client.gender",
+    "sql": "CAST(SUM(client.gender = 'M') AS REAL) * 100 / COUNT(client.client_id)",
+    "note": "Calculate the male share within the already filtered requester population, with all clients in that population as the denominator.",
+    "wins": 5,
+    "losses": 0
+  },
+  {
+    "id": "relation:73163d6e9eb2fc6630a0f6db",
+    "origin": "s186",
+    "term": "male client percentage",
+    "aliases": [
+      "percentage of male clients",
+      "male share of clients"
+    ],
+    "column": "client.client_id",
+    "sql": "CAST(SUM(client.gender = 'M') AS REAL) * 100 / COUNT(client.client_id)",
+    "note": "Calculate the male share within the already filtered requester population, with all clients in that population as the denominator.",
+    "wins": 1,
+    "losses": 0
+  },
+  {
+    "id": "relation:750a70e70e8ba24a7bc19e71",
+    "origin": "s148",
+    "term": "account district",
+    "aliases": [
+      "district name",
+      "branch location"
+    ],
+    "column": "district.A2",
+    "sql": "district.A2",
+    "note": "An account's district name is stored in district.A2 and is associated with the account through account.district_id.",
+    "wins": 0,
+    "losses": 1
+  },
+  {
+    "id": "relation:78d1eb3e85922e8bd255502a",
+    "origin": "s150",
+    "term": "partner's bank",
+    "aliases": [
+      "transaction bank",
+      "bank code"
+    ],
+    "column": "trans.bank",
+    "sql": "trans.bank = 'AB'",
+    "note": "The partner bank code AB is stored in trans.bank.",
+    "wins": 0,
+    "losses": 1
+  },
+  {
+    "id": "relation:7e5fb569725a33701fae9295",
+    "origin": "s150",
+    "term": "north bohemia",
+    "aliases": [
+      "north Bohemia region",
+      "accounts in north Bohemia"
+    ],
+    "column": "district.A3",
+    "sql": "district.A3 = 'north Bohemia'",
+    "note": "The region is stored in district.A3 with a lowercase n, and SQLite string comparisons are case-sensitive.",
+    "wins": 5,
+    "losses": 1
+  },
+  {
+    "id": "relation:86494ed933815b7161dfa149",
+    "origin": "s174",
+    "term": "account owner relationship",
+    "aliases": [
+      "account holder",
+      "owner of account"
+    ],
+    "column": "client.client_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "An account\u2019s owner is the client linked to that account through the disp relationship.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:8f4c45d2487cf6e34c8db67f",
+    "origin": "s135",
+    "term": "monthly issuance",
+    "aliases": [
+      "monthly statement issuance",
+      "issued monthly"
+    ],
+    "column": "account.frequency",
+    "sql": "account.frequency = 'POPLATEK MESICNE'",
+    "note": "Accounts issued monthly are identified by the stored account.frequency code 'POPLATEK MESICNE'.",
+    "wins": 3,
+    "losses": 0
+  },
+  {
+    "id": "relation:97598cc475ab56c1ccdaace2",
+    "origin": "s174",
+    "term": "account owner relationship",
+    "aliases": [
+      "account holder",
+      "owner of account"
+    ],
+    "column": "disp.account_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "An account\u2019s owner is the client linked to that account through the disp relationship.",
+    "wins": 1,
+    "losses": 1
+  },
+  {
+    "id": "relation:b033e092b8cadfb8dbf2c767",
+    "origin": "s174",
+    "term": "account owner relationship",
+    "aliases": [
+      "account holder",
+      "owner of account"
+    ],
+    "column": "account.account_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "An account\u2019s owner is the client linked to that account through the disp relationship.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:b3f0a5501a25bd374ff13f45",
+    "origin": "s182",
+    "term": "payment amount",
+    "aliases": [
+      "transaction amount",
+      "amount paid"
+    ],
+    "column": "trans.amount",
+    "sql": "trans.amount",
+    "note": "The monetary value of an individual transaction is stored in trans.amount, not in \"order\".amount.",
+    "wins": 4,
+    "losses": 1
+  },
+  {
+    "id": "relation:b758594b56b1a32b1f9a7bc3",
+    "origin": "s150",
+    "term": "accounts with a transaction",
+    "aliases": [
+      "how many accounts made a transaction",
+      "transaction-making accounts"
+    ],
+    "column": "account.account_id",
+    "sql": "COUNT(account.account_id)",
+    "note": "For this phrasing, count account IDs over matching account\u2013transaction rows without adding DISTINCT.",
+    "wins": 6,
+    "losses": 0
+  },
+  {
+    "id": "relation:ba8bd4f3a6ea7f4809814dd8",
+    "origin": "s186",
+    "term": "weekly statement requesters",
+    "aliases": [
+      "clients requesting weekly statements",
+      "weekly-frequency account clients"
+    ],
+    "column": "disp.client_id",
+    "sql": "disp.client_id = client.client_id AND disp.account_id = account.account_id AND account.frequency = 'POPLATEK TYDNE'",
+    "note": "Identify clients requesting a statement frequency by linking them through disp to accounts with that stored frequency.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:c69c4849c3a8bfbcbd70a54a",
+    "origin": "s135",
+    "term": "credit card withdrawal",
+    "aliases": [
+      "card cash withdrawal",
+      "credit-card cash withdrawal",
+      "card transaction",
+      "credit card transaction"
+    ],
+    "column": "trans.operation",
+    "sql": "trans.operation = 'VYBER KARTOU'",
+    "note": "Credit card withdrawals are stored in trans.operation using the code 'VYBER KARTOU'.",
+    "wins": 2,
+    "losses": 0
+  },
+  {
+    "id": "relation:d192046a0ea9e105a7bd044c",
+    "origin": "s174",
+    "term": "account owner relationship",
+    "aliases": [
+      "account holder",
+      "owner of account"
+    ],
+    "column": "disp.client_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "An account\u2019s owner is the client linked to that account through the disp relationship.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:de6ff27d2291495a3ea21e91",
+    "origin": "s145",
+    "term": "yearly average amount",
+    "aliases": [
+      "average transaction amount",
+      "below the yearly average"
+    ],
+    "column": "trans.date",
+    "sql": "AVG(trans.amount) OVER (PARTITION BY STRFTIME('%Y', trans.date))",
+    "note": "Compute the average over all transactions in the relevant year, without restricting the average population to a transaction operation.",
+    "wins": 0,
+    "losses": 0
+  },
+  {
+    "id": "relation:e47dd13bc461a95f160b1c27",
+    "origin": "s182",
+    "term": "payment on their home",
+    "aliases": [
+      "household payment",
+      "home payment",
+      "housing payment"
+    ],
+    "column": "trans.k_symbol",
+    "sql": "trans.k_symbol = 'SIPO'",
+    "note": "Transactions representing a payment on a home or household are identified by the fixed transaction code 'SIPO'.",
+    "wins": 1,
+    "losses": 2
+  },
+  {
+    "id": "relation:ef4e47e0af1f72529aed19f2",
+    "origin": "s174",
+    "term": "account owner number",
+    "aliases": [
+      "account number",
+      "account ID",
+      "owner account",
+      "account identification number",
+      "account holder identification"
+    ],
+    "column": "account.account_id",
+    "sql": "account.account_id",
+    "note": "\u201cAccount owner number\u201d identifies the account whose owner is being sought, so it should be matched against account.account_id rather than client.client_id.",
+    "wins": 1,
+    "losses": 0
+  },
+  {
+    "id": "relation:fd292e25e88d8d035aba5820",
+    "origin": "s186",
+    "term": "weekly statement requesters",
+    "aliases": [
+      "clients requesting weekly statements",
+      "weekly-frequency account clients"
+    ],
+    "column": "account.account_id",
+    "sql": "disp.client_id = client.client_id AND disp.account_id = account.account_id AND account.frequency = 'POPLATEK TYDNE'",
+    "note": "Identify clients requesting a statement frequency by linking them through disp to accounts with that stored frequency.",
+    "wins": 0,
+    "losses": 0
+  }
+]

@@ -1,0 +1,1659 @@
+[
+  {
+    "db": "california_schools",
+    "id": "relation:032b7a61cfe4aba3a8769321",
+    "term": "school county",
+    "aliases": [
+      "county name",
+      "in county"
+    ],
+    "column": "schools.County",
+    "sql": "schools.County",
+    "note": "Use schools.County directly for the requested county name rather than obtaining the county through a separate district join.",
+    "origin": "s47",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What is the monthly average number of schools that opened in Alameda County under the jurisdiction of the Elementary School District in 1980?",
+    "source_gold_sql": "SELECT CAST(COUNT(School) AS REAL) / 12 FROM schools WHERE DOC = 52 AND County = 'Alameda' AND strftime('%Y', OpenDate) = '1980'",
+    "source_verified_sql": "SELECT CAST(COUNT(School) AS REAL) / 12 FROM schools WHERE DOC = 52 AND County = 'Alameda' AND strftime('%Y', OpenDate) = '1980'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:0c3c0c385ed9c5ff462b2cee",
+    "term": "lowest excellence rate",
+    "aliases": [
+      "minimum excellence rate",
+      "school with lowest excellence"
+    ],
+    "column": "satscores.NumTstTakr",
+    "sql": "ORDER BY CAST(satscores.NumGE1500 AS REAL) / satscores.NumTstTakr ASC",
+    "note": "Order by the calculated excellence rate in ascending order, without adding filters that are not explicitly requested.",
+    "origin": "s37",
+    "wins": 10,
+    "losses": 3,
+    "certified": false,
+    "source_question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+    "source_gold_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1",
+    "source_verified_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:0d0ee1fe87b37f69da372288",
+    "term": "school record linkage",
+    "aliases": [
+      "matching school",
+      "associated school record"
+    ],
+    "column": "frpm.CDSCode",
+    "sql": "schools.CDSCode = frpm.CDSCode",
+    "note": "Enrollment records are associated with schools by matching their CDS codes.",
+    "origin": "s11",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Please list the codes of the schools with a total enrollment of over 500.",
+    "source_gold_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500",
+    "source_verified_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:0d58a329f21a27cecde0be10",
+    "term": "school name",
+    "aliases": [
+      "school",
+      "school names",
+      "name of school"
+    ],
+    "column": "schools.School",
+    "sql": "schools.School",
+    "note": "The school name requested for a school record is stored in schools.School.",
+    "origin": "s46",
+    "wins": 6,
+    "losses": 4,
+    "certified": false,
+    "source_question": "Which state special schools have the highest number of enrollees from grades 1 through 12?",
+    "source_gold_sql": "SELECT T2.School FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.DOC = 31 ORDER BY T1.`Enrollment (K-12)` DESC LIMIT 1",
+    "source_verified_sql": "SELECT T2.School FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.DOC = 31 ORDER BY T1.`Enrollment (K-12)` DESC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:12348a45d77fd2fd978f44dd",
+    "term": "total enrollment",
+    "aliases": [
+      "combined enrollment",
+      "overall enrollment"
+    ],
+    "column": "frpm.Enrollment (Ages 5-17)",
+    "sql": "frpm.`Enrollment (K-12)` + frpm.`Enrollment (Ages 5-17)`",
+    "note": "Total enrollment is the combined K-12 and Ages 5-17 enrollment, not the K-12 enrollment alone.",
+    "origin": "s11",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Please list the codes of the schools with a total enrollment of over 500.",
+    "source_gold_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500",
+    "source_verified_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:1fed4b8da9e553c13189fb91",
+    "term": "youth authority facilities",
+    "aliases": [
+      "Youth Authority school",
+      "CEA school",
+      "Youth Authority Facilities (CEA)"
+    ],
+    "column": "schools.SOC",
+    "sql": "schools.SOC = '11'",
+    "note": "Youth Authority Facilities (CEA) are identified by school ownership code 11, stored as text.",
+    "origin": "s68",
+    "wins": 4,
+    "losses": 3,
+    "certified": false,
+    "source_question": "Which county reported the most number of school closure in the 1980s with school wonership code belonging to Youth Authority Facilities (CEA)?",
+    "source_gold_sql": "SELECT County FROM schools WHERE strftime('%Y', ClosedDate) BETWEEN '1980' AND '1989' AND StatusType = 'Closed' AND SOC = 11 GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1",
+    "source_verified_sql": "SELECT County FROM schools WHERE strftime('%Y', ClosedDate) BETWEEN '1980' AND '1989' AND StatusType = 'Closed' AND SOC = 11 GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:277fa0f51bbe013bf2cd2e01",
+    "term": "excellence rate",
+    "aliases": [
+      "SAT excellence rate",
+      "percent scoring at least 1500"
+    ],
+    "column": "satscores.NumGE1500",
+    "sql": "CAST(satscores.NumGE1500 AS REAL) / satscores.NumTstTakr",
+    "note": "Excellence rate is the number scoring at least 1500 divided by the number of test takers; a record-type filter or positive-taker filter is not inherently part of this definition.",
+    "origin": "s37",
+    "wins": 0,
+    "losses": 2,
+    "certified": false,
+    "source_question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+    "source_gold_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1",
+    "source_verified_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:367274f66c5538f05e80aaf5",
+    "term": "closed school status",
+    "aliases": [
+      "school is closed",
+      "closed district"
+    ],
+    "column": "schools.StatusType",
+    "sql": "schools.StatusType = 'Closed'",
+    "note": "The stored status category Closed identifies schools or districts that are no longer in operation.",
+    "origin": "s49",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which different county has the most number of closed schools? Please provide the name of each school as well as the closure date.",
+    "source_gold_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL",
+    "source_verified_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:3e0964da6675afb20b01d867",
+    "term": "highest latitude",
+    "aliases": [
+      "maximum latitude",
+      "greatest latitude"
+    ],
+    "column": "schools.Latitude",
+    "sql": "ORDER BY schools.Latitude DESC",
+    "note": "Latitude is stored in the schools table, with larger values ranking first.",
+    "origin": "s80",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What is the school type of the school with the highest latitude? Indicate the name of the school as well as the latitude coordinates.",
+    "source_gold_sql": "SELECT T1.`School Type`, T1.`School Name`, T2.Latitude FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode ORDER BY T2.Latitude DESC LIMIT 1",
+    "source_verified_sql": "SELECT T1.`School Type`, T1.`School Name`, T2.Latitude FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode ORDER BY T2.Latitude DESC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:43fe4ff4f15d21cb79ba04a6",
+    "term": "school score record",
+    "aliases": [
+      "school associated with a score",
+      "score record school"
+    ],
+    "column": "schools.CDSCode",
+    "sql": "satscores.cds = schools.CDSCode",
+    "note": "Associate a score record with its school by matching the score CDS code to the school CDSCode.",
+    "origin": "s57",
+    "wins": 2,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What is the phone number and extension number for the school that had the 333rd highest average writing score?",
+    "source_gold_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1",
+    "source_verified_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:4501851a95a74d21009299d7",
+    "term": "excellence rate",
+    "aliases": [
+      "SAT excellence rate",
+      "percent scoring at least 1500"
+    ],
+    "column": "satscores.NumTstTakr",
+    "sql": "CAST(satscores.NumGE1500 AS REAL) / satscores.NumTstTakr",
+    "note": "Excellence rate is the number scoring at least 1500 divided by the number of test takers; a record-type filter or positive-taker filter is not inherently part of this definition.",
+    "origin": "s37",
+    "wins": 9,
+    "losses": 3,
+    "certified": false,
+    "source_question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+    "source_gold_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1",
+    "source_verified_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:4e707806d06f9cf73b954746",
+    "term": "school communication address",
+    "aliases": [
+      "full school address",
+      "school mailing address"
+    ],
+    "column": "schools.Street",
+    "sql": "schools.Street, schools.City, schools.State, schools.Zip",
+    "note": "A school's street, city, state, and ZIP code are stored in the schools table.",
+    "origin": "s26",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "State the names and full communication address of high schools in Monterey which has more than 800 free or reduced price meals for ages 15-17?",
+    "source_gold_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'",
+    "source_verified_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:50906a051c85aa670ffee681",
+    "term": "monthly average school count",
+    "aliases": [
+      "average schools opened per month"
+    ],
+    "column": "schools.School",
+    "sql": "CAST(COUNT(schools.School) AS REAL) / 12",
+    "note": "For a one-year period, calculate the monthly average by counting schools and dividing by 12 with real division to preserve a fractional result.",
+    "origin": "s47",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What is the monthly average number of schools that opened in Alameda County under the jurisdiction of the Elementary School District in 1980?",
+    "source_gold_sql": "SELECT CAST(COUNT(School) AS REAL) / 12 FROM schools WHERE DOC = 52 AND County = 'Alameda' AND strftime('%Y', OpenDate) = '1980'",
+    "source_verified_sql": "SELECT CAST(COUNT(School) AS REAL) / 12 FROM schools WHERE DOC = 52 AND County = 'Alameda' AND strftime('%Y', OpenDate) = '1980'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:60b523db5d4432a98a391149",
+    "term": "continuation schools",
+    "aliases": [
+      "continuation school"
+    ],
+    "column": "frpm.Educational Option Type",
+    "sql": "frpm.`Educational Option Type` = 'Continuation School'",
+    "note": "Use the Educational Option Type category value 'Continuation School' for continuation schools.",
+    "origin": "s1",
+    "wins": 0,
+    "losses": 3,
+    "certified": false,
+    "source_question": "Please list the lowest three eligible free rates for students aged 5-17 in continuation schools.",
+    "source_gold_sql": "SELECT `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` FROM frpm WHERE `Educational Option Type` = 'Continuation School' AND `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` IS NOT NULL ORDER BY `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` ASC LIMIT 3",
+    "source_verified_sql": "SELECT `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` FROM frpm WHERE `Educational Option Type` = 'Continuation School' AND `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` IS NOT NULL ORDER BY `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` ASC LIMIT 3"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:6990136399cd94affd89e445",
+    "term": "school communication address",
+    "aliases": [
+      "full school address",
+      "school mailing address"
+    ],
+    "column": "schools.City",
+    "sql": "schools.Street, schools.City, schools.State, schools.Zip",
+    "note": "A school's street, city, state, and ZIP code are stored in the schools table.",
+    "origin": "s26",
+    "wins": 6,
+    "losses": 1,
+    "certified": false,
+    "source_question": "State the names and full communication address of high schools in Monterey which has more than 800 free or reduced price meals for ages 15-17?",
+    "source_gold_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'",
+    "source_verified_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:78e1108d7d747273af0c3b2e",
+    "term": "closure calendar year",
+    "aliases": [
+      "year school closed",
+      "closure date year"
+    ],
+    "column": "schools.ClosedDate",
+    "sql": "strftime('%Y', schools.ClosedDate)",
+    "note": "Use the calendar year extracted from ClosedDate when filtering schools by a closure year or decade.",
+    "origin": "s68",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which county reported the most number of school closure in the 1980s with school wonership code belonging to Youth Authority Facilities (CEA)?",
+    "source_gold_sql": "SELECT County FROM schools WHERE strftime('%Y', ClosedDate) BETWEEN '1980' AND '1989' AND StatusType = 'Closed' AND SOC = 11 GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1",
+    "source_verified_sql": "SELECT County FROM schools WHERE strftime('%Y', ClosedDate) BETWEEN '1980' AND '1989' AND StatusType = 'Closed' AND SOC = 11 GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:81a6f46b6d05c05d2dcdf091",
+    "term": "school city",
+    "aliases": [
+      "city location",
+      "located in city",
+      "in a city"
+    ],
+    "column": "schools.City",
+    "sql": "schools.City",
+    "note": "Use the school's physical city for phrases such as \u201cin [city]\u201d; do not substitute the mailing city.",
+    "origin": "s56",
+    "wins": 6,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Of all the schools with a mailing state address in California, how many are active in San Joaquin city?",
+    "source_gold_sql": "SELECT COUNT(CDSCode) FROM schools WHERE City = 'San Joaquin' AND MailState = 'CA' AND StatusType = 'Active'",
+    "source_verified_sql": "SELECT COUNT(CDSCode) FROM schools WHERE City = 'San Joaquin' AND MailState = 'CA' AND StatusType = 'Active'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:8c65e5017b80755d496fad0f",
+    "term": "full street address",
+    "aliases": [
+      "school street address",
+      "street address"
+    ],
+    "column": "schools.Street",
+    "sql": "schools.Street",
+    "note": "In this database, a school's full street address is represented by schools.Street; City, State, and Zip are separate fields and are not part of the requested address.",
+    "origin": "s23",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "List the names of schools with more than 30 difference in enrollements between K-12 and ages 5-17? Please also give the full street adress of the schools.",
+    "source_gold_sql": "SELECT T1.School, T1.Street FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` - T2.`Enrollment (Ages 5-17)` > 30",
+    "source_verified_sql": "SELECT T1.School, T1.Street FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` - T2.`Enrollment (Ages 5-17)` > 30"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:8e68c04d4a92aeb018cc9af3",
+    "term": "named school",
+    "aliases": [
+      "school name",
+      "name of each school"
+    ],
+    "column": "schools.School",
+    "sql": "schools.School IS NOT NULL",
+    "note": "A null school name does not identify a named school and should be excluded when listing school names.",
+    "origin": "s49",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which different county has the most number of closed schools? Please provide the name of each school as well as the closure date.",
+    "source_gold_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL",
+    "source_verified_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:8f40437b83640be39134d832",
+    "term": "school score record",
+    "aliases": [
+      "school associated with a score",
+      "score record school"
+    ],
+    "column": "satscores.cds",
+    "sql": "satscores.cds = schools.CDSCode",
+    "note": "Associate a score record with its school by matching the score CDS code to the school CDSCode.",
+    "origin": "s57",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What is the phone number and extension number for the school that had the 333rd highest average writing score?",
+    "source_gold_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1",
+    "source_verified_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:990581a34d4868fa402a4ff9",
+    "term": "k-12 versus 5-17 enrolment difference",
+    "aliases": [
+      "difference between K-12 and ages 5-17 enrolments",
+      "K-12 enrollment minus ages 5-17 enrollment"
+    ],
+    "column": "frpm.Enrollment (Ages 5-17)",
+    "sql": "frpm.`Enrollment (K-12)` - frpm.`Enrollment (Ages 5-17)`",
+    "note": "When the question states the difference between K-12 and ages 5-17 enrolments, subtract in that stated order rather than using an absolute difference.",
+    "origin": "s23",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "List the names of schools with more than 30 difference in enrollements between K-12 and ages 5-17? Please also give the full street adress of the schools.",
+    "source_gold_sql": "SELECT T1.School, T1.Street FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` - T2.`Enrollment (Ages 5-17)` > 30",
+    "source_verified_sql": "SELECT T1.School, T1.Street FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` - T2.`Enrollment (Ages 5-17)` > 30"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:9a02646622df6a54dcc71d7c",
+    "term": "single top county",
+    "aliases": [
+      "county with most closed schools",
+      "highest closed-school county"
+    ],
+    "column": "schools.County",
+    "sql": "schools.County = (SELECT schools.County FROM schools WHERE schools.StatusType = 'Closed' GROUP BY schools.County ORDER BY COUNT(schools.School) DESC LIMIT 1)",
+    "note": "When one county is requested, select the first county after ranking by the number of closed-school records rather than returning every tied county.",
+    "origin": "s49",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which different county has the most number of closed schools? Please provide the name of each school as well as the closure date.",
+    "source_gold_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL",
+    "source_verified_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:9d08e990069b3b4149f25acd",
+    "term": "school phone and extension",
+    "aliases": [
+      "school contact number",
+      "phone number and extension"
+    ],
+    "column": "schools.Phone",
+    "sql": "schools.Phone, schools.Ext",
+    "note": "The school's phone number and phone extension come directly from the schools table.",
+    "origin": "s57",
+    "wins": 1,
+    "losses": 3,
+    "certified": false,
+    "source_question": "What is the phone number and extension number for the school that had the 333rd highest average writing score?",
+    "source_gold_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1",
+    "source_verified_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:a4c603b21b01914bef9065b4",
+    "term": "school sat results",
+    "aliases": [
+      "SAT scores for a school",
+      "school-level SAT records"
+    ],
+    "column": "schools.CDSCode",
+    "sql": "satscores.cds = schools.CDSCode",
+    "note": "Link SAT score records to their school by matching satscores.cds with schools.CDSCode.",
+    "origin": "s37",
+    "wins": 4,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+    "source_gold_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1",
+    "source_verified_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:a74a2671cb82e69148142e51",
+    "term": "average writing score ranking",
+    "aliases": [
+      "highest average writing score",
+      "top writing scores"
+    ],
+    "column": "satscores.AvgScrWrite",
+    "sql": "ORDER BY satscores.AvgScrWrite DESC",
+    "note": "Rank score records by average writing score descending, adding no row-type or non-null filter unless the question explicitly requests one.",
+    "origin": "s57",
+    "wins": 0,
+    "losses": 3,
+    "certified": false,
+    "source_question": "What is the phone number and extension number for the school that had the 333rd highest average writing score?",
+    "source_gold_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1",
+    "source_verified_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:abe763e17889d239ab7db50c",
+    "term": "school record linkage",
+    "aliases": [
+      "matching school",
+      "associated school record"
+    ],
+    "column": "schools.CDSCode",
+    "sql": "schools.CDSCode = frpm.CDSCode",
+    "note": "Enrollment records are associated with schools by matching their CDS codes.",
+    "origin": "s11",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Please list the codes of the schools with a total enrollment of over 500.",
+    "source_gold_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500",
+    "source_verified_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:b28007fa0871285b24822ffa",
+    "term": "school closure",
+    "aliases": [
+      "closed school",
+      "school closed"
+    ],
+    "column": "schools.StatusType",
+    "sql": "schools.StatusType = 'Closed'",
+    "note": "A school closure requires the school status to be Closed.",
+    "origin": "s68",
+    "wins": 2,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Which county reported the most number of school closure in the 1980s with school wonership code belonging to Youth Authority Facilities (CEA)?",
+    "source_gold_sql": "SELECT County FROM schools WHERE strftime('%Y', ClosedDate) BETWEEN '1980' AND '1989' AND StatusType = 'Closed' AND SOC = 11 GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1",
+    "source_verified_sql": "SELECT County FROM schools WHERE strftime('%Y', ClosedDate) BETWEEN '1980' AND '1989' AND StatusType = 'Closed' AND SOC = 11 GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:b63dc5d73d2ffeadde9ccb7b",
+    "term": "single top county",
+    "aliases": [
+      "county with most closed schools",
+      "highest closed-school county"
+    ],
+    "column": "schools.School",
+    "sql": "schools.County = (SELECT schools.County FROM schools WHERE schools.StatusType = 'Closed' GROUP BY schools.County ORDER BY COUNT(schools.School) DESC LIMIT 1)",
+    "note": "When one county is requested, select the first county after ranking by the number of closed-school records rather than returning every tied county.",
+    "origin": "s49",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which different county has the most number of closed schools? Please provide the name of each school as well as the closure date.",
+    "source_gold_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL",
+    "source_verified_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:bedf988344138efe1bbf84be",
+    "term": "school phone and extension",
+    "aliases": [
+      "school contact number",
+      "phone number and extension"
+    ],
+    "column": "schools.Ext",
+    "sql": "schools.Phone, schools.Ext",
+    "note": "The school's phone number and phone extension come directly from the schools table.",
+    "origin": "s57",
+    "wins": 6,
+    "losses": 3,
+    "certified": false,
+    "source_question": "What is the phone number and extension number for the school that had the 333rd highest average writing score?",
+    "source_gold_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1",
+    "source_verified_sql": "SELECT T2.Phone, T2.Ext FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY T1.AvgScrWrite DESC LIMIT 332, 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:c7c7ff6f70b6ea4bd040bc6f",
+    "term": "top average reading",
+    "aliases": [
+      "highest average reading scores",
+      "county reading score ranking"
+    ],
+    "column": "schools.County",
+    "sql": "RANK() OVER (PARTITION BY schools.County ORDER BY satscores.AvgScrRead DESC)",
+    "note": "Rank schools within schools.County by satscores.AvgScrRead descending, using RANK so schools tied at the same score share a rank.",
+    "origin": "s41",
+    "wins": 8,
+    "losses": 4,
+    "certified": false,
+    "source_question": "List the names of virtual schools that are among the top 5 in their respective counties based on average reading scores.",
+    "source_gold_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5",
+    "source_verified_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:c7fe6dec26f53d3339ee6dcd",
+    "term": "eligible free rate",
+    "aliases": [
+      "free rate",
+      "eligible free rates"
+    ],
+    "column": "frpm.Free Meal Count (Ages 5-17)",
+    "sql": "frpm.`Free Meal Count (Ages 5-17)` / frpm.`Enrollment (Ages 5-17)`",
+    "note": "Calculate the eligible free rate for students aged 5-17 as free meal count divided by enrollment.",
+    "origin": "s1",
+    "wins": 2,
+    "losses": 2,
+    "certified": false,
+    "source_question": "Please list the lowest three eligible free rates for students aged 5-17 in continuation schools.",
+    "source_gold_sql": "SELECT `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` FROM frpm WHERE `Educational Option Type` = 'Continuation School' AND `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` IS NOT NULL ORDER BY `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` ASC LIMIT 3",
+    "source_verified_sql": "SELECT `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` FROM frpm WHERE `Educational Option Type` = 'Continuation School' AND `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` IS NOT NULL ORDER BY `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` ASC LIMIT 3"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:d3fb9d91e27af87a4d4ee5be",
+    "term": "active school",
+    "aliases": [
+      "active district",
+      "operating district"
+    ],
+    "column": "schools.StatusType",
+    "sql": "schools.StatusType = 'Active'",
+    "note": "The active operational status is stored as 'Active' in StatusType.",
+    "origin": "s56",
+    "wins": 2,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Of all the schools with a mailing state address in California, how many are active in San Joaquin city?",
+    "source_gold_sql": "SELECT COUNT(CDSCode) FROM schools WHERE City = 'San Joaquin' AND MailState = 'CA' AND StatusType = 'Active'",
+    "source_verified_sql": "SELECT COUNT(CDSCode) FROM schools WHERE City = 'San Joaquin' AND MailState = 'CA' AND StatusType = 'Active'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:d742e76bf3570345fe58e6bf",
+    "term": "single top county",
+    "aliases": [
+      "county with most closed schools",
+      "highest closed-school county"
+    ],
+    "column": "schools.StatusType",
+    "sql": "schools.County = (SELECT schools.County FROM schools WHERE schools.StatusType = 'Closed' GROUP BY schools.County ORDER BY COUNT(schools.School) DESC LIMIT 1)",
+    "note": "When one county is requested, select the first county after ranking by the number of closed-school records rather than returning every tied county.",
+    "origin": "s49",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which different county has the most number of closed schools? Please provide the name of each school as well as the closure date.",
+    "source_gold_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL",
+    "source_verified_sql": "SELECT DISTINCT County, School, ClosedDate FROM schools WHERE County = ( SELECT County FROM schools WHERE StatusType = 'Closed' GROUP BY County ORDER BY COUNT(School) DESC LIMIT 1 ) AND StatusType = 'Closed' AND school IS NOT NULL"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:d9e6af3bdc221809b729a3a9",
+    "term": "lowest excellence rate",
+    "aliases": [
+      "minimum excellence rate",
+      "school with lowest excellence"
+    ],
+    "column": "satscores.NumGE1500",
+    "sql": "ORDER BY CAST(satscores.NumGE1500 AS REAL) / satscores.NumTstTakr ASC",
+    "note": "Order by the calculated excellence rate in ascending order, without adding filters that are not explicitly requested.",
+    "origin": "s37",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+    "source_gold_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1",
+    "source_verified_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:da851dda2b6691de73ea2079",
+    "term": "school communication address",
+    "aliases": [
+      "full school address",
+      "school mailing address"
+    ],
+    "column": "schools.State",
+    "sql": "schools.Street, schools.City, schools.State, schools.Zip",
+    "note": "A school's street, city, state, and ZIP code are stored in the schools table.",
+    "origin": "s26",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "State the names and full communication address of high schools in Monterey which has more than 800 free or reduced price meals for ages 15-17?",
+    "source_gold_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'",
+    "source_verified_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:dadc1e7299490e41a293b6d5",
+    "term": "mailing state",
+    "aliases": [
+      "state in mailing address",
+      "mail address state"
+    ],
+    "column": "schools.MailState",
+    "sql": "schools.MailState = 'CA'",
+    "note": "California is stored as the mailing-state code 'CA'.",
+    "origin": "s56",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Of all the schools with a mailing state address in California, how many are active in San Joaquin city?",
+    "source_gold_sql": "SELECT COUNT(CDSCode) FROM schools WHERE City = 'San Joaquin' AND MailState = 'CA' AND StatusType = 'Active'",
+    "source_verified_sql": "SELECT COUNT(CDSCode) FROM schools WHERE City = 'San Joaquin' AND MailState = 'CA' AND StatusType = 'Active'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:dbf9788a2dbdaa8c4df81f3f",
+    "term": "total enrollment",
+    "aliases": [
+      "combined enrollment",
+      "overall enrollment"
+    ],
+    "column": "frpm.Enrollment (K-12)",
+    "sql": "frpm.`Enrollment (K-12)` + frpm.`Enrollment (Ages 5-17)`",
+    "note": "Total enrollment is the combined K-12 and Ages 5-17 enrollment, not the K-12 enrollment alone.",
+    "origin": "s11",
+    "wins": 2,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Please list the codes of the schools with a total enrollment of over 500.",
+    "source_gold_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500",
+    "source_verified_sql": "SELECT T2.CDSCode FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` + T2.`Enrollment (Ages 5-17)` > 500"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:de2cc254808ea46ab1504917",
+    "term": "school zip code",
+    "aliases": [
+      "zip",
+      "zip code",
+      "school zip"
+    ],
+    "column": "schools.Zip",
+    "sql": "schools.Zip",
+    "note": "A school's ZIP code is stored in the schools table.",
+    "origin": "s2",
+    "wins": 2,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Please list the zip code of all the charter schools in Fresno County Office of Education.",
+    "source_gold_sql": "SELECT T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T1.`District Name` = 'Fresno County Office of Education' AND T1.`Charter School (Y/N)` = 1",
+    "source_verified_sql": "SELECT T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T1.`District Name` = 'Fresno County Office of Education' AND T1.`Charter School (Y/N)` = 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:e0ab3b6b390446aee7bd9e04",
+    "term": "district name",
+    "aliases": [
+      "district",
+      "school district",
+      "District"
+    ],
+    "column": "frpm.District Name",
+    "sql": "frpm.`District Name`",
+    "note": "The district name is stored in frpm rather than in the schools table; combine it with schools using the shared CDSCode.",
+    "origin": "s2",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Please list the zip code of all the charter schools in Fresno County Office of Education.",
+    "source_gold_sql": "SELECT T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T1.`District Name` = 'Fresno County Office of Education' AND T1.`Charter School (Y/N)` = 1",
+    "source_verified_sql": "SELECT T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T1.`District Name` = 'Fresno County Office of Education' AND T1.`Charter School (Y/N)` = 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:e2c29e40c42346a214235906",
+    "term": "school communication address",
+    "aliases": [
+      "full school address",
+      "school mailing address"
+    ],
+    "column": "schools.Zip",
+    "sql": "schools.Street, schools.City, schools.State, schools.Zip",
+    "note": "A school's street, city, state, and ZIP code are stored in the schools table.",
+    "origin": "s26",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "State the names and full communication address of high schools in Monterey which has more than 800 free or reduced price meals for ages 15-17?",
+    "source_gold_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'",
+    "source_verified_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:e63aa34c13b307462b58abe4",
+    "term": "k-12 versus 5-17 enrolment difference",
+    "aliases": [
+      "difference between K-12 and ages 5-17 enrolments",
+      "K-12 enrollment minus ages 5-17 enrollment"
+    ],
+    "column": "frpm.Enrollment (K-12)",
+    "sql": "frpm.`Enrollment (K-12)` - frpm.`Enrollment (Ages 5-17)`",
+    "note": "When the question states the difference between K-12 and ages 5-17 enrolments, subtract in that stated order rather than using an absolute difference.",
+    "origin": "s23",
+    "wins": 2,
+    "losses": 0,
+    "certified": false,
+    "source_question": "List the names of schools with more than 30 difference in enrollements between K-12 and ages 5-17? Please also give the full street adress of the schools.",
+    "source_gold_sql": "SELECT T1.School, T1.Street FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` - T2.`Enrollment (Ages 5-17)` > 30",
+    "source_verified_sql": "SELECT T1.School, T1.Street FROM schools AS T1 INNER JOIN frpm AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.`Enrollment (K-12)` - T2.`Enrollment (Ages 5-17)` > 30"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:e7fea9940b9ecd738e7488f9",
+    "term": "school sat results",
+    "aliases": [
+      "SAT scores for a school",
+      "school-level SAT records"
+    ],
+    "column": "satscores.cds",
+    "sql": "satscores.cds = schools.CDSCode",
+    "note": "Link SAT score records to their school by matching satscores.cds with schools.CDSCode.",
+    "origin": "s37",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+    "source_gold_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1",
+    "source_verified_sql": "SELECT T2.Street, T2.City, T2.State, T2.Zip FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode ORDER BY CAST(T1.NumGE1500 AS REAL) / T1.NumTstTakr ASC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:ea4c52b1e1b83f5268bce55e",
+    "term": "virtual schools",
+    "aliases": [
+      "exclusively virtual schools",
+      "virtual instruction schools"
+    ],
+    "column": "schools.Virtual",
+    "sql": "schools.Virtual = 'F'",
+    "note": "The database identifies exclusively virtual schools with schools.Virtual = 'F'; codes such as 'P' represent other virtual instruction types.",
+    "origin": "s41",
+    "wins": 4,
+    "losses": 1,
+    "certified": false,
+    "source_question": "List the names of virtual schools that are among the top 5 in their respective counties based on average reading scores.",
+    "source_gold_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5",
+    "source_verified_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:f01507829c8bdf8737342b0d",
+    "term": "public high school type",
+    "aliases": [
+      "high schools",
+      "high school classification"
+    ],
+    "column": "frpm.School Type",
+    "sql": "frpm.`School Type` = 'High Schools (Public)'",
+    "note": "The school-type classification is stored in frpm and the exact category is High Schools (Public).",
+    "origin": "s26",
+    "wins": 3,
+    "losses": 4,
+    "certified": false,
+    "source_question": "State the names and full communication address of high schools in Monterey which has more than 800 free or reduced price meals for ages 15-17?",
+    "source_gold_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'",
+    "source_verified_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:f0d0881fd00ff9420af8edfe",
+    "term": "elementary school district",
+    "aliases": [
+      "elementary district jurisdiction"
+    ],
+    "column": "schools.DOC",
+    "sql": "schools.DOC = '52'",
+    "note": "For an Elementary School District jurisdiction, filter the schools table's District Ownership Code, where 52 denotes Elementary School District.",
+    "origin": "s47",
+    "wins": 2,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What is the monthly average number of schools that opened in Alameda County under the jurisdiction of the Elementary School District in 1980?",
+    "source_gold_sql": "SELECT CAST(COUNT(School) AS REAL) / 12 FROM schools WHERE DOC = 52 AND County = 'Alameda' AND strftime('%Y', OpenDate) = '1980'",
+    "source_verified_sql": "SELECT CAST(COUNT(School) AS REAL) / 12 FROM schools WHERE DOC = 52 AND County = 'Alameda' AND strftime('%Y', OpenDate) = '1980'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:f35feb52f4ee0d762028d0f9",
+    "term": "respective counties",
+    "aliases": [
+      "county",
+      "county name",
+      "each school\u2019s county"
+    ],
+    "column": "schools.County",
+    "sql": "schools.County",
+    "note": "County-based rankings must be partitioned by the county name stored in schools.County.",
+    "origin": "s41",
+    "wins": 4,
+    "losses": 4,
+    "certified": false,
+    "source_question": "List the names of virtual schools that are among the top 5 in their respective counties based on average reading scores.",
+    "source_gold_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5",
+    "source_verified_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:f63c5cc0cfdccca5b236de2c",
+    "term": "free or reduced meals",
+    "aliases": [
+      "free meal count",
+      "free or reduced-price meals",
+      "meals for ages 15-17"
+    ],
+    "column": "frpm.Free Meal Count (Ages 5-17)",
+    "sql": "frpm.`Free Meal Count (Ages 5-17)`",
+    "note": "Use the free-meal measure covering ages 5-17, rather than the broader FRPM Count measure.",
+    "origin": "s26",
+    "wins": 3,
+    "losses": 1,
+    "certified": false,
+    "source_question": "State the names and full communication address of high schools in Monterey which has more than 800 free or reduced price meals for ages 15-17?",
+    "source_gold_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'",
+    "source_verified_sql": "SELECT T1.`School Name`, T2.Street, T2.City, T2.State, T2.Zip FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.County = 'Monterey' AND T1.`Free Meal Count (Ages 5-17)` > 800 AND T1.`School Type` = 'High Schools (Public)'"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:f95d3952327af952486fcfa2",
+    "term": "enrollees grades 1 through 12",
+    "aliases": [
+      "K-12 enrollment",
+      "grades 1-12 enrollment",
+      "enrollment from grades 1 through 12"
+    ],
+    "column": "frpm.Enrollment (K-12)",
+    "sql": "frpm.`Enrollment (K-12)`",
+    "note": "The enrollment measure for grades 1 through 12 is frpm.Enrollment (K-12), not a grade-specific SAT enrollment field.",
+    "origin": "s46",
+    "wins": 3,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Which state special schools have the highest number of enrollees from grades 1 through 12?",
+    "source_gold_sql": "SELECT T2.School FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.DOC = 31 ORDER BY T1.`Enrollment (K-12)` DESC LIMIT 1",
+    "source_verified_sql": "SELECT T2.School FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.DOC = 31 ORDER BY T1.`Enrollment (K-12)` DESC LIMIT 1"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:f98894b30fa75b2e2b6b550d",
+    "term": "sat test takers at 1500",
+    "aliases": [
+      "test takers scoring at least 1500",
+      "students scoring 1500 or above",
+      "SAT scores greater than or equal to 1500"
+    ],
+    "column": "satscores.NumGE1500",
+    "sql": "satscores.NumGE1500 > 0",
+    "note": "satscores.NumGE1500 counts test takers with total SAT scores of at least 1500, so a positive count means at least one qualifying test taker.",
+    "origin": "s24",
+    "wins": 7,
+    "losses": 4,
+    "certified": false,
+    "source_question": "Give the names of the schools with the percent eligible for free meals in K-12 is more than 0.1 and test takers whose test score is greater than or equal to 1500?",
+    "source_gold_sql": "SELECT T2.`School Name` FROM satscores AS T1 INNER JOIN frpm AS T2 ON T1.cds = T2.CDSCode WHERE CAST(T2.`Free Meal Count (K-12)` AS REAL) / T2.`Enrollment (K-12)` > 0.1 AND T1.NumGE1500 > 0",
+    "source_verified_sql": "SELECT T2.`School Name` FROM satscores AS T1 INNER JOIN frpm AS T2 ON T1.cds = T2.CDSCode WHERE CAST(T2.`Free Meal Count (K-12)` AS REAL) / T2.`Enrollment (K-12)` > 0.1 AND T1.NumGE1500 > 0"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:fa4841e9b9dff4cd61d25b67",
+    "term": "top average reading",
+    "aliases": [
+      "highest average reading scores",
+      "county reading score ranking"
+    ],
+    "column": "satscores.AvgScrRead",
+    "sql": "RANK() OVER (PARTITION BY schools.County ORDER BY satscores.AvgScrRead DESC)",
+    "note": "Rank schools within schools.County by satscores.AvgScrRead descending, using RANK so schools tied at the same score share a rank.",
+    "origin": "s41",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "List the names of virtual schools that are among the top 5 in their respective counties based on average reading scores.",
+    "source_gold_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5",
+    "source_verified_sql": "SELECT School FROM (SELECT T2.School,T1.AvgScrRead, RANK() OVER (PARTITION BY T2.County ORDER BY T1.AvgScrRead DESC) AS rnk FROM satscores AS T1 INNER JOIN schools AS T2 ON T1.cds = T2.CDSCode WHERE T2.Virtual = 'F' ) ranked_schools WHERE rnk <= 5"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:fd96282f500eab0e417b64d6",
+    "term": "eligible free rate",
+    "aliases": [
+      "free rate",
+      "eligible free rates"
+    ],
+    "column": "frpm.Enrollment (Ages 5-17)",
+    "sql": "frpm.`Free Meal Count (Ages 5-17)` / frpm.`Enrollment (Ages 5-17)`",
+    "note": "Calculate the eligible free rate for students aged 5-17 as free meal count divided by enrollment.",
+    "origin": "s1",
+    "wins": 1,
+    "losses": 2,
+    "certified": false,
+    "source_question": "Please list the lowest three eligible free rates for students aged 5-17 in continuation schools.",
+    "source_gold_sql": "SELECT `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` FROM frpm WHERE `Educational Option Type` = 'Continuation School' AND `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` IS NOT NULL ORDER BY `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` ASC LIMIT 3",
+    "source_verified_sql": "SELECT `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` FROM frpm WHERE `Educational Option Type` = 'Continuation School' AND `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` IS NOT NULL ORDER BY `Free Meal Count (Ages 5-17)` / `Enrollment (Ages 5-17)` ASC LIMIT 3"
+  },
+  {
+    "db": "california_schools",
+    "id": "relation:fefb34c0e153744dd64bebad",
+    "term": "state special schools",
+    "aliases": [
+      "state special school",
+      "state special schools category"
+    ],
+    "column": "schools.DOC",
+    "sql": "schools.DOC = '31'",
+    "note": "The state special school category is identified by the schools.DOC code 31, rather than by a descriptive Educational Option Type value.",
+    "origin": "s46",
+    "wins": 0,
+    "losses": 3,
+    "certified": false,
+    "source_question": "Which state special schools have the highest number of enrollees from grades 1 through 12?",
+    "source_gold_sql": "SELECT T2.School FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.DOC = 31 ORDER BY T1.`Enrollment (K-12)` DESC LIMIT 1",
+    "source_verified_sql": "SELECT T2.School FROM frpm AS T1 INNER JOIN schools AS T2 ON T1.CDSCode = T2.CDSCode WHERE T2.DOC = 31 ORDER BY T1.`Enrollment (K-12)` DESC LIMIT 1"
+  },
+  {
+    "db": "financial",
+    "id": "relation:02828dd7517cdec06ef5c446",
+    "term": "oldest then lowest salary",
+    "aliases": [
+      "oldest with lowest average salary",
+      "earliest-born lowest-paid"
+    ],
+    "column": "district.A11",
+    "sql": "ORDER BY client.birth_date ASC, district.A11 ASC",
+    "note": "Oldest means the earliest client.birth_date, with district.A11 as the ascending salary tie-breaker rather than as a separate global minimum.",
+    "origin": "s189",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Name the account numbers of female clients who are oldest and have lowest average salary?",
+    "source_gold_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1",
+    "source_verified_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1"
+  },
+  {
+    "db": "financial",
+    "id": "relation:09f08b227e1d6cff6db6255e",
+    "term": "female client",
+    "aliases": [
+      "women clients",
+      "female customers"
+    ],
+    "column": "client.gender",
+    "sql": "client.gender = 'F'",
+    "note": "The database stores female gender with the code 'F'.",
+    "origin": "s189",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Name the account numbers of female clients who are oldest and have lowest average salary?",
+    "source_gold_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1",
+    "source_verified_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1"
+  },
+  {
+    "db": "financial",
+    "id": "relation:13b517048abd73486710ff85",
+    "term": "disponent",
+    "aliases": [
+      "disponent disposition",
+      "disponent client"
+    ],
+    "column": "disp.type",
+    "sql": "disp.type = 'DISPONENT'",
+    "note": "A disponent relationship is stored as the disp.type category 'DISPONENT'.",
+    "origin": "s97",
+    "wins": 9,
+    "losses": 2,
+    "certified": false,
+    "source_question": "List out the id number of client who choose statement of issuance after transaction are Disponent?",
+    "source_gold_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'",
+    "source_verified_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:1f245298b29867406ed55f67",
+    "term": "account district",
+    "aliases": [
+      "account location",
+      "account branch district"
+    ],
+    "column": "district.district_id",
+    "sql": "account.district_id = district.district_id",
+    "note": "An account's district is identified by matching account.district_id to district.district_id.",
+    "origin": "s150",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "How many accounts in North Bohemia has made a transaction with the partner's bank being AB?",
+    "source_gold_sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'",
+    "source_verified_sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:1fd7e7e54a98f2eaa303cd44",
+    "term": "account holder identification number",
+    "aliases": [
+      "account holder id",
+      "account identification number"
+    ],
+    "column": "trans.account_id",
+    "sql": "trans.account_id = account.account_id",
+    "note": "Associate transactions with the account table and return account.account_id as the account holder identification number.",
+    "origin": "s145",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Who are the account holder identification numbers whose who have transactions on the credit card with the amount is less than the average, in 1998?",
+    "source_gold_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')",
+    "source_verified_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')"
+  },
+  {
+    "db": "financial",
+    "id": "relation:20f649e2f985f6c20bc2d408",
+    "term": "birth year",
+    "aliases": [
+      "year of birth",
+      "born in year"
+    ],
+    "column": "client.birth_date",
+    "sql": "CAST(STRFTIME('%Y', client.birth_date) AS INTEGER)",
+    "note": "A client's birth year is extracted from client.birth_date using the year component of the stored date.",
+    "origin": "s182",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "How many male customers who were born between 1974 and 1976 have made a payment on their home in excess of $4000?",
+    "source_gold_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'",
+    "source_verified_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:24253cc2cf18ee1dd66e52a7",
+    "term": "transaction amount",
+    "aliases": [
+      "payment amount",
+      "money paid"
+    ],
+    "column": "trans.amount",
+    "sql": "trans.amount",
+    "note": "The amount of a payment is stored in trans.amount, in USD.",
+    "origin": "s182",
+    "wins": 4,
+    "losses": 1,
+    "certified": false,
+    "source_question": "How many male customers who were born between 1974 and 1976 have made a payment on their home in excess of $4000?",
+    "source_gold_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'",
+    "source_verified_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:39d3c417a22648f9a6d71ce3",
+    "term": "eligible for loans",
+    "aliases": [
+      "loan eligibility",
+      "right to apply for loans",
+      "authorized to borrow"
+    ],
+    "column": "disp.type",
+    "sql": "disp.type = 'OWNER'",
+    "note": "Eligibility to apply for a loan is established by an OWNER disposition, not by the presence of an existing loan.",
+    "origin": "s148",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Please list the accounts whose district is Tabor that are eligible for loans.",
+    "source_gold_sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'",
+    "source_verified_sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:3a718bd1881066c8133b40c1",
+    "term": "account branch average salary",
+    "aliases": [
+      "average salary by account branch",
+      "account district salary"
+    ],
+    "column": "district.district_id",
+    "sql": "account.district_id = district.district_id",
+    "note": "For an account's average salary, use district.A11 from the district matching the account's own district_id, rather than inferring salary only from the client's district.",
+    "origin": "s189",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Name the account numbers of female clients who are oldest and have lowest average salary?",
+    "source_gold_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1",
+    "source_verified_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1"
+  },
+  {
+    "db": "financial",
+    "id": "relation:41150c2ba768957662a8730e",
+    "term": "existing active loan",
+    "aliases": [
+      "active loan",
+      "loan currently in progress"
+    ],
+    "column": "loan.status",
+    "sql": "loan.status = 'A'",
+    "note": "An existing loan with status A indicates current loan activity and must not be treated as proof of eligibility for a new loan.",
+    "origin": "s148",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Please list the accounts whose district is Tabor that are eligible for loans.",
+    "source_gold_sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'",
+    "source_verified_sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:4277e5a5ddfdb3fb7bb33263",
+    "term": "average transaction amount",
+    "aliases": [
+      "average amount",
+      "mean transaction amount"
+    ],
+    "column": "trans.amount",
+    "sql": "AVG(trans.amount)",
+    "note": "For a year-specific comparison, compute the average over all transactions in that year rather than filtering the average population by operation category.",
+    "origin": "s145",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Who are the account holder identification numbers whose who have transactions on the credit card with the amount is less than the average, in 1998?",
+    "source_gold_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')",
+    "source_verified_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')"
+  },
+  {
+    "db": "financial",
+    "id": "relation:452375455731637c13a9173e",
+    "term": "oldest then lowest salary",
+    "aliases": [
+      "oldest with lowest average salary",
+      "earliest-born lowest-paid"
+    ],
+    "column": "client.birth_date",
+    "sql": "ORDER BY client.birth_date ASC, district.A11 ASC",
+    "note": "Oldest means the earliest client.birth_date, with district.A11 as the ascending salary tie-breaker rather than as a separate global minimum.",
+    "origin": "s189",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Name the account numbers of female clients who are oldest and have lowest average salary?",
+    "source_gold_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1",
+    "source_verified_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1"
+  },
+  {
+    "db": "financial",
+    "id": "relation:4dda3f7aeb4cb0aa71b99451",
+    "term": "account holder identification number",
+    "aliases": [
+      "account holder id",
+      "account identification number"
+    ],
+    "column": "account.account_id",
+    "sql": "trans.account_id = account.account_id",
+    "note": "Associate transactions with the account table and return account.account_id as the account holder identification number.",
+    "origin": "s145",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Who are the account holder identification numbers whose who have transactions on the credit card with the amount is less than the average, in 1998?",
+    "source_gold_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')",
+    "source_verified_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')"
+  },
+  {
+    "db": "financial",
+    "id": "relation:502e47144105775e1abfa9fe",
+    "term": "weekly statements",
+    "aliases": [
+      "weekly statement requests",
+      "weekly statement issuance"
+    ],
+    "column": "account.frequency",
+    "sql": "account.frequency = 'POPLATEK TYDNE'",
+    "note": "Requests for weekly statements are stored in account.frequency using the code 'POPLATEK TYDNE'.",
+    "origin": "s186",
+    "wins": 2,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What percentage of male clients request for weekly statements to be issued?",
+    "source_gold_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'",
+    "source_verified_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:5744885106c829d5974b95e4",
+    "term": "account branch average salary",
+    "aliases": [
+      "average salary by account branch",
+      "account district salary"
+    ],
+    "column": "account.district_id",
+    "sql": "account.district_id = district.district_id",
+    "note": "For an account's average salary, use district.A11 from the district matching the account's own district_id, rather than inferring salary only from the client's district.",
+    "origin": "s189",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Name the account numbers of female clients who are oldest and have lowest average salary?",
+    "source_gold_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1",
+    "source_verified_sql": "SELECT T3.account_id FROM client AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id INNER JOIN account AS T3 ON T2.district_id = T3.district_id INNER JOIN disp AS T4 ON T1.client_id = T4.client_id AND T4.account_id = T3.account_id  WHERE T1.gender = 'F' ORDER BY T1.birth_date ASC, T2.A11 ASC LIMIT 1"
+  },
+  {
+    "db": "financial",
+    "id": "relation:75145fdb7de831afb0bffde7",
+    "term": "statement after transaction",
+    "aliases": [
+      "statement of issuance",
+      "monthly statement issuance"
+    ],
+    "column": "account.frequency",
+    "sql": "account.frequency = 'POPLATEK PO OBRATU'",
+    "note": "This account-frequency code identifies the statement issued after each transaction.",
+    "origin": "s97",
+    "wins": 5,
+    "losses": 2,
+    "certified": false,
+    "source_question": "List out the id number of client who choose statement of issuance after transaction are Disponent?",
+    "source_gold_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'",
+    "source_verified_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:78d1eb3e85922e8bd255502a",
+    "term": "partner's bank",
+    "aliases": [
+      "transaction bank",
+      "counterparty bank"
+    ],
+    "column": "trans.bank",
+    "sql": "trans.bank",
+    "note": "A transaction's partner bank is identified by the two-letter code in trans.bank.",
+    "origin": "s150",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "How many accounts in North Bohemia has made a transaction with the partner's bank being AB?",
+    "source_gold_sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'",
+    "source_verified_sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:7d15930054041d92528f64f4",
+    "term": "home payment",
+    "aliases": [
+      "household payment",
+      "payment on their home"
+    ],
+    "column": "trans.k_symbol",
+    "sql": "trans.k_symbol = 'SIPO'",
+    "note": "The transaction category code 'SIPO' denotes a household payment.",
+    "origin": "s182",
+    "wins": 1,
+    "losses": 2,
+    "certified": false,
+    "source_question": "How many male customers who were born between 1974 and 1976 have made a payment on their home in excess of $4000?",
+    "source_gold_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'",
+    "source_verified_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id INNER JOIN disp AS T4 ON T2.account_id = T4.account_id INNER JOIN client AS T3 ON T4.client_id = T3.client_id WHERE STRFTIME('%Y', T3.birth_date) BETWEEN '1974' AND '1976' AND T3.gender = 'M' AND T1.amount > 4000 AND T1.k_symbol = 'SIPO'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:7e5fb569725a33701fae9295",
+    "term": "north bohemia",
+    "aliases": [
+      "north Bohemia region"
+    ],
+    "column": "district.A3",
+    "sql": "district.A3 = 'north Bohemia'",
+    "note": "The region value is stored with a lowercase 'n' and a space between the words.",
+    "origin": "s150",
+    "wins": 2,
+    "losses": 1,
+    "certified": false,
+    "source_question": "How many accounts in North Bohemia has made a transaction with the partner's bank being AB?",
+    "source_gold_sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'",
+    "source_verified_sql": "SELECT COUNT(T2.account_id) FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN trans AS T3 ON T2.account_id = T3.account_id WHERE T3.bank = 'AB' AND T1.A3 = 'north Bohemia'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:7e96c61ecda618611f77305b",
+    "term": "disponent account",
+    "aliases": [
+      "account with disponent"
+    ],
+    "column": "account.account_id",
+    "sql": "disp.account_id = account.account_id",
+    "note": "The disposition record links a client to the account through disp.account_id and disp.client_id.",
+    "origin": "s97",
+    "wins": 7,
+    "losses": 0,
+    "certified": false,
+    "source_question": "List out the id number of client who choose statement of issuance after transaction are Disponent?",
+    "source_gold_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'",
+    "source_verified_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:8412cba1143acc48b412d948",
+    "term": "owner birth year",
+    "aliases": [
+      "account holder birth year",
+      "client birth year"
+    ],
+    "column": "client.birth_date",
+    "sql": "STRFTIME('%Y', client.birth_date)",
+    "note": "Extract the birth year from the owner's client.birth_date DATE value.",
+    "origin": "s174",
+    "wins": 0,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What year was account owner number 130 born?",
+    "source_gold_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130",
+    "source_verified_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130"
+  },
+  {
+    "db": "financial",
+    "id": "relation:86494ed933815b7161dfa149",
+    "term": "account owner relationship",
+    "aliases": [
+      "account to owner link",
+      "account holder mapping"
+    ],
+    "column": "client.client_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "Identify the client who owns an account by matching the account through disp.",
+    "origin": "s174",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What year was account owner number 130 born?",
+    "source_gold_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130",
+    "source_verified_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130"
+  },
+  {
+    "db": "financial",
+    "id": "relation:8cfafb7783d82a5dde4aee70",
+    "term": "credit card transaction",
+    "aliases": [
+      "transactions on the credit card",
+      "credit card withdrawals"
+    ],
+    "column": "trans.operation",
+    "sql": "trans.operation = 'VYBER KARTOU'",
+    "note": "The stored operation code 'VYBER KARTOU' identifies a credit card withdrawal.",
+    "origin": "s145",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "Who are the account holder identification numbers whose who have transactions on the credit card with the amount is less than the average, in 1998?",
+    "source_gold_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')",
+    "source_verified_sql": "SELECT T1.account_id FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE STRFTIME('%Y', T1.date) = '1998' AND T1.operation = 'VYBER KARTOU' AND T1.amount < (SELECT AVG(amount) FROM trans WHERE STRFTIME('%Y', date) = '1998')"
+  },
+  {
+    "db": "financial",
+    "id": "relation:8f4c45d2487cf6e34c8db67f",
+    "term": "monthly issuance",
+    "aliases": [
+      "monthly statements",
+      "monthly frequency",
+      "monthly account issuance"
+    ],
+    "column": "account.frequency",
+    "sql": "account.frequency = 'POPLATEK MESICNE'",
+    "note": "Monthly issuance is stored in the account frequency field under the code 'POPLATEK MESICNE'.",
+    "origin": "s135",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "After making a credit card withdrawal, how many account/s with monthly issuance has a negative balance?",
+    "source_gold_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'",
+    "source_verified_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:97598cc475ab56c1ccdaace2",
+    "term": "account owner relationship",
+    "aliases": [
+      "account to owner link",
+      "account holder mapping"
+    ],
+    "column": "disp.account_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "Identify the client who owns an account by matching the account through disp.",
+    "origin": "s174",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "What year was account owner number 130 born?",
+    "source_gold_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130",
+    "source_verified_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130"
+  },
+  {
+    "db": "financial",
+    "id": "relation:a508cc111fcbd2fdf2f3dfbc",
+    "term": "male share of requesters",
+    "aliases": [
+      "percentage of requesters who are male",
+      "percentage of male clients among requesters"
+    ],
+    "column": "client.gender",
+    "sql": "CAST(SUM(CASE WHEN client.gender = 'M' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(client.client_id)",
+    "note": "After filtering to clients requesting the specified statement frequency, the denominator is the full requester population rather than all clients or only male clients.",
+    "origin": "s186",
+    "wins": 2,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What percentage of male clients request for weekly statements to be issued?",
+    "source_gold_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'",
+    "source_verified_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:a857c824d209557b75fd6149",
+    "term": "negative transaction balance",
+    "aliases": [
+      "negative balance",
+      "balance below zero"
+    ],
+    "column": "trans.balance",
+    "sql": "trans.balance < 0",
+    "note": "A negative balance refers to the balance after the transaction stored in trans.balance.",
+    "origin": "s135",
+    "wins": 2,
+    "losses": 0,
+    "certified": false,
+    "source_question": "After making a credit card withdrawal, how many account/s with monthly issuance has a negative balance?",
+    "source_gold_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'",
+    "source_verified_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:b033e092b8cadfb8dbf2c767",
+    "term": "account owner relationship",
+    "aliases": [
+      "account to owner link",
+      "account holder mapping"
+    ],
+    "column": "account.account_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "Identify the client who owns an account by matching the account through disp.",
+    "origin": "s174",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What year was account owner number 130 born?",
+    "source_gold_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130",
+    "source_verified_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130"
+  },
+  {
+    "db": "financial",
+    "id": "relation:b7860118d1167f0c18d05d81",
+    "term": "male clients",
+    "aliases": [
+      "male customers"
+    ],
+    "column": "client.gender",
+    "sql": "client.gender = 'M'",
+    "note": "The database stores male clients with client.gender equal to 'M'.",
+    "origin": "s186",
+    "wins": 4,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What percentage of male clients request for weekly statements to be issued?",
+    "source_gold_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'",
+    "source_verified_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:c36392723cffe80775adcaef",
+    "term": "account district",
+    "aliases": [
+      "account location",
+      "account branch district"
+    ],
+    "column": "account.district_id",
+    "sql": "district.district_id = account.district_id",
+    "note": "An account's district is identified by matching account.district_id to district.district_id.",
+    "origin": "s148",
+    "wins": 1,
+    "losses": 1,
+    "certified": false,
+    "source_question": "Please list the accounts whose district is Tabor that are eligible for loans.",
+    "source_gold_sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'",
+    "source_verified_sql": "SELECT T2.account_id FROM district AS T1 INNER JOIN account AS T2 ON T1.district_id = T2.district_id INNER JOIN disp AS T3 ON T2.account_id = T3.account_id WHERE T3.type = 'OWNER' AND T1.A2 = 'Tabor'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:c69c4849c3a8bfbcbd70a54a",
+    "term": "credit card withdrawal",
+    "aliases": [
+      "card withdrawal",
+      "credit card cash withdrawal"
+    ],
+    "column": "trans.operation",
+    "sql": "trans.operation = 'VYBER KARTOU'",
+    "note": "A credit card withdrawal is a transaction whose operation code is 'VYBER KARTOU'.",
+    "origin": "s135",
+    "wins": 2,
+    "losses": 0,
+    "certified": false,
+    "source_question": "After making a credit card withdrawal, how many account/s with monthly issuance has a negative balance?",
+    "source_gold_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'",
+    "source_verified_sql": "SELECT COUNT(T1.account_id) FROM trans AS T1 INNER JOIN account AS T2 ON T1.account_id = T2.account_id WHERE T1.balance < 0 AND T1.operation = 'VYBER KARTOU' AND T2.frequency = 'POPLATEK MESICNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:cb3e572b45b8131b04ad7177",
+    "term": "male share of requesters",
+    "aliases": [
+      "percentage of requesters who are male",
+      "percentage of male clients among requesters"
+    ],
+    "column": "client.client_id",
+    "sql": "CAST(SUM(CASE WHEN client.gender = 'M' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(client.client_id)",
+    "note": "After filtering to clients requesting the specified statement frequency, the denominator is the full requester population rather than all clients or only male clients.",
+    "origin": "s186",
+    "wins": 4,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What percentage of male clients request for weekly statements to be issued?",
+    "source_gold_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'",
+    "source_verified_sql": "SELECT CAST(SUM(T1.gender = 'M') AS REAL) * 100 / COUNT(T1.client_id) FROM client AS T1 INNER JOIN district AS T3 ON T1.district_id = T3.district_id INNER JOIN account AS T2 ON T2.district_id = T3.district_id INNER JOIN disp as T4 on T1.client_id = T4.client_id AND T2.account_id = T4.account_id WHERE T2.frequency = 'POPLATEK TYDNE'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:d192046a0ea9e105a7bd044c",
+    "term": "account owner relationship",
+    "aliases": [
+      "account to owner link",
+      "account holder mapping"
+    ],
+    "column": "disp.client_id",
+    "sql": "disp.account_id = account.account_id AND disp.client_id = client.client_id",
+    "note": "Identify the client who owns an account by matching the account through disp.",
+    "origin": "s174",
+    "wins": 0,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What year was account owner number 130 born?",
+    "source_gold_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130",
+    "source_verified_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130"
+  },
+  {
+    "db": "financial",
+    "id": "relation:d3e09c8b6ae5f19ae8f20661",
+    "term": "disponent account",
+    "aliases": [
+      "account with disponent"
+    ],
+    "column": "disp.account_id",
+    "sql": "disp.account_id = account.account_id",
+    "note": "The disposition record links a client to the account through disp.account_id and disp.client_id.",
+    "origin": "s97",
+    "wins": 3,
+    "losses": 0,
+    "certified": false,
+    "source_question": "List out the id number of client who choose statement of issuance after transaction are Disponent?",
+    "source_gold_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'",
+    "source_verified_sql": "SELECT T2.client_id FROM account AS T1 INNER JOIN disp AS T2 ON T1.account_id = T2.account_id WHERE T1.frequency = 'POPLATEK PO OBRATU' AND T2.type = 'DISPONENT'"
+  },
+  {
+    "db": "financial",
+    "id": "relation:ef4e47e0af1f72529aed19f2",
+    "term": "account owner number",
+    "aliases": [
+      "owner account number",
+      "account identifier"
+    ],
+    "column": "account.account_id",
+    "sql": "account.account_id",
+    "note": "Interpret an account owner number as an account identifier, not as client.client_id.",
+    "origin": "s174",
+    "wins": 1,
+    "losses": 0,
+    "certified": false,
+    "source_question": "What year was account owner number 130 born?",
+    "source_gold_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130",
+    "source_verified_sql": "SELECT STRFTIME('%Y', T1.birth_date) FROM client AS T1 INNER JOIN disp AS T3 ON T1.client_id = T3.client_id INNER JOIN account AS T2 ON T3.account_id = T2.account_id WHERE T2.account_id = 130"
+  }
+]

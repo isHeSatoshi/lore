@@ -4,7 +4,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(os.getenv("LORE_ROOT", str(Path(__file__).resolve().parents[1]))).resolve()
 load_dotenv(ROOT / ".env")
 
 
@@ -16,6 +16,7 @@ class Settings:
     effort: str = os.getenv("LORE_LLM_EFFORT", "")
     max_tokens: int = int(os.getenv("LORE_LLM_MAX_TOKENS", "8192"))
     concurrency: int = int(os.getenv("LORE_LLM_CONCURRENCY", "8"))
+    min_interval_s: float = float(os.getenv("LORE_LLM_MIN_INTERVAL_S", "0"))
     hydra_token: str = os.getenv("HYDRA_TOKEN", "")
     bolt_uri: str = os.getenv("HYDRA_BOLT_URI", "bolt://127.0.0.1:17687")
     admin_url: str = os.getenv("HYDRA_ADMIN_URL", "http://127.0.0.1:19091")

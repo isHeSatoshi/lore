@@ -1,0 +1,34 @@
+{
+  "per_db": {
+    "california_schools": {
+      "entities": 159,
+      "relations": 285,
+      "rules": 52,
+      "rules_hidden": 4,
+      "joins_learned": 3,
+      "columns_profiled": 19,
+      "examples": 30,
+      "merges": 1
+    },
+    "financial": {
+      "entities": 119,
+      "relations": 266,
+      "rules": 35,
+      "rules_hidden": 0,
+      "joins_learned": 8,
+      "columns_profiled": 13,
+      "examples": 30,
+      "merges": 0
+    }
+  },
+  "total": {
+    "entities": 278,
+    "relations": 551,
+    "rules": 87,
+    "rules_hidden": 4,
+    "joins_learned": 11,
+    "columns_profiled": 32,
+    "examples": 60,
+    "merges": 1
+  }
+}

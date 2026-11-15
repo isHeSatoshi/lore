@@ -1,0 +1,83 @@
+{
+  "scope": "Historical s1 fragment/target regression checks only; not a rescore or a repair of persisted s1 rules",
+  "source_sha256": "f6f1ecbe31671e51f79ab3b602169f849f0c5863887782800d8828b010d6aba2",
+  "reflection_after_sha256": "17c94fef71a49193493609b622eb7853559073a6d967dbe47342bca64e068678",
+  "input_relations": 107,
+  "retained_by_syntax_target_validation": 63,
+  "rejected_by_syntax_target_validation": 44,
+  "checks": [
+    {
+      "case": "mixed aliases / complete SELECT",
+      "origin": "s11",
+      "relation_ids": [
+        "relation:2aa08e1d021eea264b257d05",
+        "relation:4b5b2c7f2790b9df12cb337e"
+      ],
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "passed": true
+    },
+    {
+      "case": "unbound angle placeholder",
+      "origin": "s53",
+      "relation_ids": [
+        "relation:1f9e845c41bcc2fb2b1a43f9"
+      ],
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "passed": true
+    },
+    {
+      "case": "incorrect enrollment target",
+      "origin": "s46",
+      "relation_ids": [
+        "relation:25d49ef5f1d309109c88e21c"
+      ],
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "passed": true
+    },
+    {
+      "case": "incorrect school-name join-key target",
+      "origin": "s23",
+      "relation_ids": [
+        "relation:51e59e1a4639740b744dfce2"
+      ],
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "passed": true
+    },
+    {
+      "case": "valid school-name target",
+      "origin": "s23",
+      "relation_ids": [
+        "relation:dd61c557799336c49d50c408"
+      ],
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "passed": true
+    },
+    {
+      "case": "valid monthly frequency mapping",
+      "origin": "s135",
+      "relation_ids": [
+        "relation:8f4c45d2487cf6e34c8db67f"
+      ],
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "passed": true
+    },
+    {
+      "case": "valid excellence-rate formula",
+      "origin": "s37",
+      "relation_ids": [
+        "relation:277fa0f51bbe013bf2cd2e01",
+        "relation:4501851a95a74d21009299d7"
+      ],
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "passed": true
+    }
+  ],
+  "semantic_reusability_requires_fresh_run_and_manual_review": true
+}
