@@ -1,0 +1,38 @@
+{
+  "model": "MiniMax-M3.1-Flash",
+  "effort": "medium",
+  "concurrency": 1,
+  "min_interval_s": 2.0,
+  "responses": [
+    {
+      "key": "t40",
+      "db_id": "california_schools",
+      "prompt_chars": 10890,
+      "input_tokens": 6288,
+      "output_tokens": 14330,
+      "ms": 95584,
+      "cached": false,
+      "text_chars": 2340
+    },
+    {
+      "key": "t176",
+      "db_id": "european_football_2",
+      "prompt_chars": 16917,
+      "input_tokens": 5099,
+      "output_tokens": 1584,
+      "ms": 8533,
+      "cached": false,
+      "text_chars": 858
+    },
+    {
+      "key": "t234",
+      "db_id": "financial",
+      "prompt_chars": 7458,
+      "input_tokens": 2253,
+      "output_tokens": 3790,
+      "ms": 42915,
+      "cached": false,
+      "text_chars": 3143
+    }
+  ]
+}

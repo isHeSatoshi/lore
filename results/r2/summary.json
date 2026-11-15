@@ -1,0 +1,450 @@
+{
+  "model": "MiniMax-M3.1-Flash",
+  "effort": "medium",
+  "date": "2026-11-15T11:55:47.813861+00:00",
+  "seed": 0,
+  "stream_cap": 80,
+  "split": {
+    "seed": 0,
+    "stream_cap": 80,
+    "raw_stream": 1534,
+    "test_count": 500,
+    "removed": {
+      "question_equal": 13,
+      "sql_equal": 17,
+      "question_jaccard": 1,
+      "sql_jaccard": 6
+    },
+    "remaining": 1497,
+    "eligible_per_db": {
+      "california_schools": 85,
+      "financial": 102,
+      "toxicology": 142,
+      "card_games": 184,
+      "codebase_community": 183,
+      "superhero": 127,
+      "formula_1": 171,
+      "european_football_2": 126,
+      "thrombosis_prediction": 160,
+      "student_club": 153,
+      "debit_card_specializing": 64
+    },
+    "stream_per_db": {
+      "california_schools": 80,
+      "card_games": 80,
+      "codebase_community": 80,
+      "debit_card_specializing": 64,
+      "european_football_2": 80,
+      "financial": 80,
+      "formula_1": 80,
+      "student_club": 80,
+      "superhero": 80,
+      "thrombosis_prediction": 80,
+      "toxicology": 80
+    },
+    "tokenization": "lowercase Unicode word tokens; each removal attributed to the first matching rule"
+  },
+  "expected_test_count": 500,
+  "systems": {
+    "floor": [
+      {
+        "checkpoint": 0,
+        "questions_seen": 0,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 227,
+        "accuracy": 45.4,
+        "ci95": [
+          41.08757266738578,
+          49.782571264860515
+        ],
+        "mean_prompt_tokens": 2623.416,
+        "mean_block_chars": 0.0
+      }
+    ],
+    "ceiling": [
+      {
+        "checkpoint": 0,
+        "questions_seen": 0,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 258,
+        "accuracy": 51.6,
+        "ci95": [
+          47.22414643366831,
+          55.95145567685472
+        ],
+        "mean_prompt_tokens": 2642.738,
+        "mean_block_chars": 0.0
+      }
+    ],
+    "lore": [
+      {
+        "checkpoint": 0.25,
+        "questions_seen": 216,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      },
+      {
+        "checkpoint": 0.5,
+        "questions_seen": 432,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      },
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 864,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      }
+    ],
+    "vector": [
+      {
+        "checkpoint": 0.25,
+        "questions_seen": 216,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      },
+      {
+        "checkpoint": 0.5,
+        "questions_seen": 432,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      },
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 864,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      }
+    ],
+    "flat": [
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 864,
+        "n": 0,
+        "expected": 500,
+        "complete": false,
+        "correct": 0,
+        "accuracy": null,
+        "ci95": null,
+        "mean_prompt_tokens": null,
+        "mean_block_chars": null
+      }
+    ]
+  },
+  "comparisons": {},
+  "gap_closed": null,
+  "per_db": [
+    {
+      "db_id": "california_schools",
+      "n": 49,
+      "floor": 26.53061224489796,
+      "ceiling": 34.69387755102041,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "card_games",
+      "n": 69,
+      "floor": 53.6231884057971,
+      "ceiling": 53.6231884057971,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "n": 31,
+      "floor": 25.806451612903224,
+      "ceiling": 35.483870967741936,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "n": 14,
+      "floor": 64.28571428571429,
+      "ceiling": 57.142857142857146,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "n": 31,
+      "floor": 70.96774193548387,
+      "ceiling": 61.29032258064516,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "financial",
+      "n": 46,
+      "floor": 45.65217391304348,
+      "ceiling": 56.52173913043478,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "formula_1",
+      "n": 55,
+      "floor": 52.72727272727273,
+      "ceiling": 50.90909090909091,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "student_club",
+      "n": 37,
+      "floor": 48.648648648648646,
+      "ceiling": 59.45945945945946,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "superhero",
+      "n": 50,
+      "floor": 36.0,
+      "ceiling": 40.0,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "n": 86,
+      "floor": 33.72093023255814,
+      "ceiling": 52.325581395348834,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    },
+    {
+      "db_id": "toxicology",
+      "n": 32,
+      "floor": 71.875,
+      "ceiling": 78.125,
+      "vector": null,
+      "flat": null,
+      "lore": null,
+      "rules": 0
+    }
+  ],
+  "stream_accuracy": {
+    "first": {
+      "n": 0,
+      "accuracy": null
+    },
+    "last": {
+      "n": 0,
+      "accuracy": null
+    }
+  },
+  "missing": [
+    "lore@0.25: 0/500",
+    "lore@0.5: 0/500",
+    "lore@1: 0/500",
+    "vector@0.25: 0/500",
+    "vector@0.5: 0/500",
+    "vector@1: 0/500",
+    "flat@1: 0/500"
+  ],
+  "complete": false,
+  "metric": "set(predicted_rows) == set(gold_rows); errors/timeouts are incorrect",
+  "intervals": {
+    "accuracy": "Wilson 95%",
+    "differences": "paired bootstrap; 10000 samples; seed 0"
+  },
+  "mechanisms": {
+    "native_path_search": false,
+    "path_compression": false,
+    "fuzzy_merge": false,
+    "certification": "supported, not used in benchmark"
+  },
+  "run": "r2",
+  "generated_at": "2026-11-15T13:13:22.483751+00:00",
+  "counts": {
+    "per_db": {
+      "california_schools": {
+        "entities": 92,
+        "relations": 91,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "card_games": {
+        "entities": 121,
+        "relations": 119,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "codebase_community": {
+        "entities": 79,
+        "relations": 84,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "debit_card_specializing": {
+        "entities": 26,
+        "relations": 22,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "european_football_2": {
+        "entities": 206,
+        "relations": 230,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "financial": {
+        "entities": 63,
+        "relations": 63,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "formula_1": {
+        "entities": 107,
+        "relations": 113,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "student_club": {
+        "entities": 56,
+        "relations": 56,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "superhero": {
+        "entities": 41,
+        "relations": 42,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "thrombosis_prediction": {
+        "entities": 67,
+        "relations": 66,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      },
+      "toxicology": {
+        "entities": 15,
+        "relations": 16,
+        "rules": 0,
+        "rules_hidden": 0,
+        "joins_learned": 0,
+        "columns_profiled": 0,
+        "examples": 0,
+        "merges": 0
+      }
+    },
+    "total": {
+      "entities": 873,
+      "relations": 902,
+      "rules": 0,
+      "rules_hidden": 0,
+      "joins_learned": 0,
+      "columns_profiled": 0,
+      "examples": 0,
+      "merges": 0
+    }
+  },
+  "usage": {
+    "input_tokens": 2275265,
+    "output_tokens": 924637,
+    "calls": 867
+  }
+}
