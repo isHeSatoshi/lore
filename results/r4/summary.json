@@ -1,0 +1,488 @@
+{
+  "model": "minimax-m3.1-flash",
+  "effort": "medium",
+  "date": "2026-11-15T17:18:30.442456+00:00",
+  "seed": 0,
+  "stream_cap": 80,
+  "split": {
+    "seed": 0,
+    "stream_cap": 80,
+    "raw_stream": 1534,
+    "test_count": 500,
+    "removed": {
+      "question_equal": 13,
+      "sql_equal": 17,
+      "question_jaccard": 1,
+      "sql_jaccard": 6
+    },
+    "remaining": 1497,
+    "eligible_per_db": {
+      "california_schools": 85,
+      "financial": 102,
+      "toxicology": 142,
+      "card_games": 184,
+      "codebase_community": 183,
+      "superhero": 127,
+      "formula_1": 171,
+      "european_football_2": 126,
+      "thrombosis_prediction": 160,
+      "student_club": 153,
+      "debit_card_specializing": 64
+    },
+    "stream_per_db": {
+      "california_schools": 80,
+      "card_games": 80,
+      "codebase_community": 80,
+      "debit_card_specializing": 64,
+      "european_football_2": 80,
+      "financial": 80,
+      "formula_1": 80,
+      "student_club": 80,
+      "superhero": 80,
+      "thrombosis_prediction": 80,
+      "toxicology": 80
+    },
+    "tokenization": "lowercase Unicode word tokens; each removal attributed to the first matching rule"
+  },
+  "expected_test_count": 500,
+  "systems": {
+    "floor": [
+      {
+        "checkpoint": 0,
+        "questions_seen": 0,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 231,
+        "accuracy": 46.2,
+        "ci95": [
+          41.875629515879304,
+          50.582315471628505
+        ],
+        "mean_prompt_tokens": 4478.242,
+        "mean_block_chars": 0.0
+      }
+    ],
+    "ceiling": [
+      {
+        "checkpoint": 0,
+        "questions_seen": 0,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 261,
+        "accuracy": 52.2,
+        "ci95": [
+          47.82154894135676,
+          56.54490396061242
+        ],
+        "mean_prompt_tokens": 4508.82,
+        "mean_block_chars": 0.0
+      }
+    ],
+    "lore": [
+      {
+        "checkpoint": 0.25,
+        "questions_seen": 216,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 247,
+        "accuracy": 49.4,
+        "ci95": [
+          45.039013091903215,
+          53.770136116650654
+        ],
+        "mean_prompt_tokens": 5024.224,
+        "mean_block_chars": 2102.098
+      },
+      {
+        "checkpoint": 0.5,
+        "questions_seen": 432,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 256,
+        "accuracy": 51.2,
+        "ci95": [
+          46.82622528498707,
+          55.555476297905216
+        ],
+        "mean_prompt_tokens": 5036.792,
+        "mean_block_chars": 2154.82
+      },
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 864,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 271,
+        "accuracy": 54.2,
+        "ci95": [
+          49.817416517608066,
+          58.5185390225149
+        ],
+        "mean_prompt_tokens": 5100.556,
+        "mean_block_chars": 2247.006
+      }
+    ],
+    "vector": [
+      {
+        "checkpoint": 0.25,
+        "questions_seen": 216,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 224,
+        "accuracy": 44.8,
+        "ci95": [
+          40.497266941861746,
+          49.18202619893841
+        ],
+        "mean_prompt_tokens": 4663.254,
+        "mean_block_chars": 956.2
+      },
+      {
+        "checkpoint": 0.5,
+        "questions_seen": 432,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 245,
+        "accuracy": 49.0,
+        "ci95": [
+          44.642617474030935,
+          53.37263120689219
+        ],
+        "mean_prompt_tokens": 4668.888,
+        "mean_block_chars": 961.944
+      },
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 864,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 243,
+        "accuracy": 48.6,
+        "ci95": [
+          44.24649931129956,
+          52.974848841992795
+        ],
+        "mean_prompt_tokens": 4687.938,
+        "mean_block_chars": 951.95
+      }
+    ],
+    "flat": [
+      {
+        "checkpoint": 1.0,
+        "questions_seen": 864,
+        "n": 500,
+        "expected": 500,
+        "complete": true,
+        "correct": 266,
+        "accuracy": 53.2,
+        "ci95": [
+          48.818610813244,
+          57.53259340780207
+        ],
+        "mean_prompt_tokens": 5381.696,
+        "mean_block_chars": 3336.574
+      }
+    ]
+  },
+  "comparisons": {
+    "lore_minus_floor": {
+      "points": 8.000000000000002,
+      "ci95": [
+        3.0000000000000027,
+        12.999999999999995
+      ],
+      "n": 500
+    },
+    "lore_minus_vector": {
+      "points": 5.600000000000005,
+      "ci95": [
+        1.0000000000000009,
+        10.200000000000003
+      ],
+      "n": 500
+    },
+    "lore_minus_flat": {
+      "points": 1.0000000000000009,
+      "ci95": [
+        -3.7999999999999923,
+        5.600000000000005
+      ],
+      "n": 500
+    }
+  },
+  "gap_closed": 1.3333333333333333,
+  "per_db": [
+    {
+      "db_id": "california_schools",
+      "n": 49,
+      "floor": 30.612244897959183,
+      "ceiling": 40.816326530612244,
+      "vector": 38.775510204081634,
+      "flat": 42.857142857142854,
+      "lore": 38.775510204081634,
+      "rules": 89
+    },
+    {
+      "db_id": "card_games",
+      "n": 69,
+      "floor": 44.927536231884055,
+      "ceiling": 43.47826086956522,
+      "vector": 56.52173913043478,
+      "flat": 59.42028985507246,
+      "lore": 57.971014492753625,
+      "rules": 100
+    },
+    {
+      "db_id": "codebase_community",
+      "n": 31,
+      "floor": 32.25806451612903,
+      "ceiling": 32.25806451612903,
+      "vector": 32.25806451612903,
+      "flat": 29.032258064516128,
+      "lore": 32.25806451612903,
+      "rules": 90
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "n": 14,
+      "floor": 71.42857142857143,
+      "ceiling": 78.57142857142857,
+      "vector": 64.28571428571429,
+      "flat": 50.0,
+      "lore": 64.28571428571429,
+      "rules": 82
+    },
+    {
+      "db_id": "european_football_2",
+      "n": 31,
+      "floor": 45.16129032258065,
+      "ceiling": 51.61290322580645,
+      "vector": 58.064516129032256,
+      "flat": 54.83870967741935,
+      "lore": 58.064516129032256,
+      "rules": 78
+    },
+    {
+      "db_id": "financial",
+      "n": 46,
+      "floor": 50.0,
+      "ceiling": 63.04347826086956,
+      "vector": 52.17391304347826,
+      "flat": 58.69565217391305,
+      "lore": 41.30434782608695,
+      "rules": 78
+    },
+    {
+      "db_id": "formula_1",
+      "n": 55,
+      "floor": 61.81818181818182,
+      "ceiling": 58.18181818181818,
+      "vector": 45.45454545454545,
+      "flat": 49.09090909090909,
+      "lore": 65.45454545454545,
+      "rules": 95
+    },
+    {
+      "db_id": "student_club",
+      "n": 37,
+      "floor": 62.16216216216216,
+      "ceiling": 64.86486486486487,
+      "vector": 56.75675675675676,
+      "flat": 62.16216216216216,
+      "lore": 56.75675675675676,
+      "rules": 96
+    },
+    {
+      "db_id": "superhero",
+      "n": 50,
+      "floor": 40.0,
+      "ceiling": 46.0,
+      "vector": 56.0,
+      "flat": 72.0,
+      "lore": 60.0,
+      "rules": 49
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "n": 86,
+      "floor": 37.2093023255814,
+      "ceiling": 52.325581395348834,
+      "vector": 31.3953488372093,
+      "flat": 46.51162790697674,
+      "lore": 53.48837209302326,
+      "rules": 135
+    },
+    {
+      "db_id": "toxicology",
+      "n": 32,
+      "floor": 59.375,
+      "ceiling": 65.625,
+      "vector": 71.875,
+      "flat": 56.25,
+      "lore": 71.875,
+      "rules": 72
+    }
+  ],
+  "stream_accuracy": {
+    "first": {
+      "n": 281,
+      "accuracy": 55.51601423487544
+    },
+    "last": {
+      "n": 281,
+      "accuracy": 62.98932384341637
+    }
+  },
+  "missing": [],
+  "complete": true,
+  "metric": "set(predicted_rows) == set(gold_rows); errors/timeouts are incorrect",
+  "intervals": {
+    "accuracy": "Wilson 95%",
+    "differences": "paired bootstrap; 10000 samples; seed 0"
+  },
+  "mechanisms": {
+    "native_path_search": false,
+    "path_compression": false,
+    "fuzzy_merge": false,
+    "certification": "supported, not used in benchmark"
+  },
+  "run": "r4",
+  "generated_at": "2026-11-15T20:01:38.631036+00:00",
+  "counts": {
+    "per_db": {
+      "california_schools": {
+        "entities": 243,
+        "relations": 576,
+        "rules": 89,
+        "rules_hidden": 10,
+        "joins_learned": 3,
+        "columns_profiled": 39,
+        "examples": 80,
+        "merges": 5
+      },
+      "card_games": {
+        "entities": 280,
+        "relations": 540,
+        "rules": 100,
+        "rules_hidden": 6,
+        "joins_learned": 6,
+        "columns_profiled": 32,
+        "examples": 80,
+        "merges": 3
+      },
+      "codebase_community": {
+        "entities": 224,
+        "relations": 493,
+        "rules": 90,
+        "rules_hidden": 3,
+        "joins_learned": 14,
+        "columns_profiled": 21,
+        "examples": 80,
+        "merges": 6
+      },
+      "debit_card_specializing": {
+        "entities": 154,
+        "relations": 394,
+        "rules": 82,
+        "rules_hidden": 0,
+        "joins_learned": 5,
+        "columns_profiled": 12,
+        "examples": 64,
+        "merges": 4
+      },
+      "european_football_2": {
+        "entities": 348,
+        "relations": 651,
+        "rules": 78,
+        "rules_hidden": 0,
+        "joins_learned": 12,
+        "columns_profiled": 23,
+        "examples": 80,
+        "merges": 0
+      },
+      "financial": {
+        "entities": 206,
+        "relations": 580,
+        "rules": 78,
+        "rules_hidden": 0,
+        "joins_learned": 10,
+        "columns_profiled": 18,
+        "examples": 80,
+        "merges": 6
+      },
+      "formula_1": {
+        "entities": 263,
+        "relations": 665,
+        "rules": 95,
+        "rules_hidden": 4,
+        "joins_learned": 15,
+        "columns_profiled": 18,
+        "examples": 80,
+        "merges": 4
+      },
+      "student_club": {
+        "entities": 201,
+        "relations": 554,
+        "rules": 96,
+        "rules_hidden": 1,
+        "joins_learned": 8,
+        "columns_profiled": 21,
+        "examples": 80,
+        "merges": 2
+      },
+      "superhero": {
+        "entities": 157,
+        "relations": 481,
+        "rules": 49,
+        "rules_hidden": 1,
+        "joins_learned": 11,
+        "columns_profiled": 11,
+        "examples": 80,
+        "merges": 2
+      },
+      "thrombosis_prediction": {
+        "entities": 265,
+        "relations": 545,
+        "rules": 135,
+        "rules_hidden": 30,
+        "joins_learned": 3,
+        "columns_profiled": 46,
+        "examples": 80,
+        "merges": 6
+      },
+      "toxicology": {
+        "entities": 142,
+        "relations": 412,
+        "rules": 72,
+        "rules_hidden": 0,
+        "joins_learned": 6,
+        "columns_profiled": 11,
+        "examples": 80,
+        "merges": 5
+      }
+    },
+    "total": {
+      "entities": 2483,
+      "relations": 5891,
+      "rules": 964,
+      "rules_hidden": 55,
+      "joins_learned": 93,
+      "columns_profiled": 252,
+      "examples": 864,
+      "merges": 43
+    }
+  },
+  "usage": {
+    "input_tokens": 29099485,
+    "output_tokens": 4287245,
+    "calls": 6299
+  }
+}

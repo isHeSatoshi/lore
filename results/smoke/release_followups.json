@@ -1,0 +1,23 @@
+{
+  "base_full_suite": "release_tests.final.json",
+  "base_full_passed": 142,
+  "followups": [
+    {
+      "scope": "publisher/artifact inclusion/native cold-proof helpers",
+      "passed": 52,
+      "seconds": 3.09
+    },
+    {
+      "scope": "demo short hints, diversity, proven-teacher priority and private-cache regression",
+      "passed": 9,
+      "seconds": 2.27
+    }
+  ],
+  "application_runtime_changed": false,
+  "benchmark_changed": false,
+  "source_sha256": {
+    "deploy/hf/prepare.py": "7fd18d26e2523761bcf20c4e6971d1d3e392a2cc4f899b04f1cec0cc2bb219f6",
+    "lore/bench/replay_demo.py": "0be8d790327e4225963553dcfe015d5f3dce0b36caa639ebf322fe76284b043d"
+  },
+  "at": "2026-11-15T20:23:00.049007+00:00"
+}

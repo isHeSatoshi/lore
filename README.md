@@ -17,26 +17,52 @@ the same model again does not retain that correction.
 Lore stores those meanings as inspectable graph facts and retrieves a small
 knowledge block for the next question. It does not fine-tune the model.
 
-## Results, still in progress
+## Full benchmark results
 
-No full-test learned-system improvement claim is established yet. A fresh
-Factory-only run, **`r4`**, is running every matching baseline, learning
-checkpoint and ablation with **MiniMax M3.1 Flash, medium effort**.
-Its [frozen protocol](results/r4/learning_configuration.json) records the SDK,
-CLI, system prompt, zero-tool policy and source hashes.
+**Lore scores 54.2%, versus 46.2% for schema-only prompting and 48.6% for
+nearest-example vector memory.** Its advantage over flat retrieval of the
+same learned facts is **inconclusive**, not a proven graph-specific accuracy gain.
 
-The matching SDK baselines are complete:
+Factory-only **`r4`**, **MiniMax M3.1 Flash, medium effort**, 500 held-out BIRD
+Mini-Dev questions at every point, with an 864-question verified learning stream:
 
-| System | Strict execution accuracy | Evaluated |
+| System | Strict execution accuracy | 95% Wilson interval | Mean prompt tokens |
+|---|---:|---:|---:|
+| Floor, schema and question only | 46.2% (231/500) | 41.9–50.6% | 4,478 |
+| Ceiling, supplied per-question evidence | 52.2% (261/500) | 47.8–56.5% | 4,509 |
+| Lore, learned graph | **54.2% (271/500)** | 49.8–58.5% | 5,101 |
+| Vector, three nearest verified examples | 48.6% (243/500) | 44.2–53.0% | 4,688 |
+| Flat, retrieval from the same learned facts | 53.2% (266/500) | 48.8–57.5% | 5,382 |
+
+Paired bootstrap differences, 10,000 resamples, seed 0:
+
+| Comparison | Lore gain | 95% paired interval |
 |---|---:|---:|
-| Floor, schema and question only | 46.2% | 500/500 |
-| Ceiling, supplied per-question evidence | 52.2% | 500/500 |
-| Lore, vector and flat | Pending | Not complete |
+| Lore minus floor | +8.0 points | +3.0 to +13.0 |
+| Lore minus vector | +5.6 points | +1.0 to +10.2 |
+| Lore minus flat | +1.0 point | −3.8 to +5.6 |
 
-Source: [`results/r4/baseline.json`](results/r4/baseline.json).
-The 6.0-point headroom passes the baseline gate. It measures supplied evidence,
-not a Lore improvement. The [manual ceiling review](results/r4/ceiling_review.md)
-found no extraction or execution fault in its ten reviewed mistakes.
+Lore's checkpoints are **49.4% → 51.2% → 54.2%**. Vector's are
+**44.8% → 49.0% → 48.6%**; learning is not guaranteed to help every question.
+Lore loses to the floor on financial, debit-card and student-club questions.
+Its final knowledge block averages 2,247 characters, versus flat's 3,337.
+
+Sources: [complete results and metering](results/r4/summary.json),
+[per-database results](results/r4/per_db.md), [graph counts](results/r4/counts.json)
+and [frozen protocol](results/r4/learning_configuration.json).
+All five systems and all six learned checkpoints are complete.
+The run records **29.10M input tokens, 4.29M output tokens and 6,299 model calls**,
+below the 80M recorded benchmark-input budget. SDK-internal/cancelled usage may
+be unreported; demo discovery is separate from this benchmark total.
+The [first 48 teaching trials](results/r4/demo_replay_round1.json) did not retain
+per-trial metering before private cache deletion; later trials do. All failed
+teaching outcomes are preserved and are not benchmark accuracy estimates.
+The 6.0-point evidence headroom passes the baseline gate. “Ceiling” names that
+reference condition, not a mathematical upper bound. The
+[manual ceiling review](results/r4/ceiling_review.md) found no extraction or
+execution fault in its ten reviewed mistakes.
+
+![Full Factory learning curve](results/r4/curve.png)
 
 <details>
 <summary>Preserved raw-provider run and exploratory validation</summary>
@@ -104,9 +130,9 @@ rewritten. Learning is isolated from frozen test evaluation.
 
 The graph exposes rule provenance, revisions, certification and structural
 connections, rather than only retrieving similar question text.
-Whether that improves accuracy over flat retrieval remains **unmeasured**.
-The flat ablation uses the same finished Lore facts and must be reported,
-including if it performs better.
+The same-facts flat ablation scores 53.2% against Lore's 54.2%; the paired
+interval includes zero. This experiment does **not** establish an accuracy
+advantage from graph structure over those flat facts.
 Identical rendered facts share one retrieval slot, so a meaning attached to
 multiple columns does not crowd other facts out of the flat comparison.
 
@@ -162,18 +188,22 @@ The final test exercises `ground()` without an LLM, with unfrozen readers so
 requests actually read HydraDB. It reports latency percentiles, throughput,
 errors and graph size in `results/r4/load.json`.
 
-## Run locally with the raw MiniMax transport
+## Run locally with the measured Factory transport
 
-Requires Python 3.11+, Node 24, Docker with Compose, and MiniMax credentials.
+Requires Python 3.11+, Node 24, Docker with Compose, and a Factory API key.
 Run these from the repository root. After command 2, edit the private `.env`:
-set `HYDRA_TOKEN` to a fresh secret, add the model API key, and set
-`LORE_LLM_EFFORT=medium`. Never commit `.env`.
+set `HYDRA_TOKEN` to a fresh secret and add `FACTORY_API_KEY`. Never commit `.env`.
+These startup commands are for a fresh environment, not an active benchmark host.
 
 ```sh
-python3 -m venv .venv && .venv/bin/pip install -e '.[bench,dev]'
+python3 -m venv .venv && .venv/bin/pip install -e '.[bench,dev,factory]'
 cp .env.example .env
 docker compose up -d hydradb && .venv/bin/python -m lore.bench.download
 (cd web && npm ci && npm run build)
+export PATH="$(.venv/bin/python -c 'from pathlib import Path; from deploy.hf.droid_runtime import provision_droid; print(provision_droid(Path.home()/".cache/lore-cli").parent)'):$PATH"
+export LORE_LLM_TRANSPORT=factory LORE_LLM_MODEL=minimax-m3.1-flash
+export LORE_LLM_EFFORT=medium LORE_LLM_MAX_TOKENS=0 LORE_RESULTS_RUN=r4
+export LORE_STATE_DIR="$PWD/data/app-state"
 LORE_LLM_CONCURRENCY=2 LORE_LLM_MIN_INTERVAL_S=2 .venv/bin/uvicorn lore.api:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
@@ -259,8 +289,8 @@ export LORE_LLM_CONCURRENCY=4
 
 Run `.venv/bin/pytest -q` for local tests. For real HydraDB integration checks,
 run `LORE_INTEGRATION=1 .venv/bin/pytest -q`.
-The latest [integration-enabled release check](results/smoke/release_tests.json)
-passes all 120 tests.
+The latest [integration-enabled release check](results/smoke/release_tests.final.json)
+passes all **142 tests**, plus Ruff and the typed frontend build.
 Use an unused validation run ID. The recorded `s1`–`s3` runs are historical
 calibrations, not results to overwrite with the final code.
 
@@ -268,12 +298,13 @@ calibrations, not results to overwrite with the final code.
 
 The sandbox UI, correction confirmation, rule certification, seed round-trip,
 vector and flat implementations, paired reporting and deployment image exist.
-Their unit/integration checks are not substitutes for the unfinished accuracy,
-trained-load and final live-demo gates.
+Full accuracy comparisons and a real four-database seeded cold start are now
+complete. Independent teaching discovery, trained load and public-host checks
+remain separate gates; tests are not substitutes for them.
 
 VM deployment instructions are in [`deploy/README.md`](deploy/README.md);
 the approved free-hosting route is in [`deploy/hf/README.md`](deploy/hf/README.md).
-Hosting access and deployment remain pending. Public repository publication is
+Hosting access is verified; free deployment remains pending. Public repository publication is
 approved only after final checks; nothing has been published yet.
 The [submission handoff](SUBMISSION.md) tracks owner actions and outstanding gates.
 

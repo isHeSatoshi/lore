@@ -2,10 +2,10 @@
 
 ## Readiness
 
-**Not ready to submit yet.** Full learned comparisons, the measured teaching
-demo, trained load and the final local image check remain unfinished.
-Fresh Factory-only `r4` measurements are running with MiniMax M3.1 Flash at
-medium effort. Raw-provider `r2` remains paused on quota, with saved progress.
+**Not ready to submit yet.** Full comparisons, final-source validation and
+the seeded native cold start pass. Teaching discovery, trained load and the
+public hosted checks remain open. Factory-only `r4` is complete with MiniMax
+M3.1 Flash at medium effort. Raw-provider `r2` remains paused on quota.
 SDK and raw-provider answers are not combined; failed `r3` preflight answers
 are excluded.
 
@@ -24,27 +24,45 @@ Public repository creation and push are approved after final checks.
 | Loom | Owner recording and link still needed |
 | Social posts | Drafts only; not authorized to send |
 
-## Historical measured summary, not the pending r4 headline
+## Final measured summary
 
-On the full BIRD Mini-Dev test set, MiniMax-M3.1-Flash at medium effort scored
-227/500 (45.4%) without evidence and 258/500 (51.6%) with supplied evidence.
-The 6.2-point gap is a baseline headroom measurement, **not a Lore gain**.
+On all 500 BIRD Mini-Dev questions, MiniMax M3.1 Flash at medium effort scores:
 
-Sources: [`results/r2/baseline.json`](results/r2/baseline.json) and
-[`results/r2/summary.json`](results/r2/summary.json).
+| System | Strict EX | Mean prompt tokens |
+|---|---:|---:|
+| Floor | 46.2% | 4,478 |
+| Supplied-evidence ceiling | 52.2% | 4,509 |
+| Lore | 54.2% | 5,101 |
+| Vector | 48.6% | 4,688 |
+| Flat, same learned facts | 53.2% | 5,382 |
+
+Paired Lore gains: **+8.0 pp [3.0,13.0]** versus floor,
+**+5.6 pp [1.0,10.2]** versus vector, and
+**+1.0 pp [−3.8,5.6]** versus flat. The flat comparison is **inconclusive**.
+Do not claim a proven graph-specific accuracy advantage over flat facts.
+All learned checkpoints cover 500 questions. Recorded benchmark usage is
+29,099,485 input tokens, 4,287,245 output tokens and 6,299 calls.
+SDK-internal/cancelled usage may be unreported; demo discovery is separate.
+
+Source: [`results/r4/summary.json`](results/r4/summary.json).
 
 The separate SDK protocol is recorded in
 [`results/r4/learning_configuration.json`](results/r4/learning_configuration.json).
-The latest full integration run passed 120 tests. Tests do not substitute for
+The latest full integration run passed **142 tests**, with Ruff and the typed
+frontend build passing. The real native cold start restores all 345 stored
+rules across the four measured databases: 41.65 seconds fresh, 5.42 seconds
+on restart, zero model calls. [Proof](results/r4/hosting_cold.json).
+These are local observations, not hosted guarantees. Tests do not substitute for
 the accuracy, independent teaching-replay, trained-load or hosted-app gates.
 
 Do not use the exploratory small-run scores as the final headline. All three
 audits, including failures and remaining noisy rules, are preserved in
 `results/s1/`, `results/s2/` and `results/s3/`.
 
-Before submission, replace this provisional summary with the final Lore,
-vector and flat results, their paired intervals, prompt-token counts and
-trained-load measurements. Report a losing or inconclusive comparison plainly.
+Trained-load measurements and public URLs must still be added before submission.
+All first-round teaching outcomes are retained: four passes across 48 attempts
+did not meet the three-per-database release gate. Bounded further discovery
+uses the existing rule explanation and more diverse follow-ups.
 
 ## Recording outline
 
@@ -76,9 +94,10 @@ teaching demonstration.
 > We compare schema-only prompting, supplied evidence, graph grounding, vector
 > memory and flat retrieval on the same held-out questions.
 >
-> Final measured results and links will be added after validation. This is one
-> model, one seed and a simulated analyst-feedback stream, not a production
-> performance claim.
+> On 500 held-out questions, Lore scores 54.2%, versus 46.2% for schema-only
+> prompting and 48.6% for vector examples. Its 1-point lead over same-facts flat
+> retrieval is inconclusive. This is one model, one seed and simulated feedback,
+> not a production performance claim. Public links follow after live validation.
 
 The original social drafts are in
 [`ABOUT_PROJECT.md`](ABOUT_PROJECT.md#13-draft-posts). Update every placeholder
@@ -86,11 +105,12 @@ from generated results and real links. The owner must approve any posting.
 
 ## Final checks
 
-- [ ] Full floor, ceiling, Lore, vector and flat results cover all test questions.
-- [ ] Report paired intervals, per-database scores, tokens and the flat ablation.
-- [ ] Export finished seeds and select the measured demo databases.
+- [x] Full floor, ceiling, Lore, vector and flat results cover all test questions.
+- [x] Report paired intervals, per-database scores, tokens and the flat ablation.
+- [x] Export finished seeds and select the measured demo databases.
 - [ ] Complete the real teaching replays and browser walkthrough.
-- [ ] Run trained grounding load and the final local deployment image check.
+- [x] Run the real seeded native launcher cold-start and restoration check.
+- [ ] Run trained grounding load.
 - [ ] Recheck clean-source reproduction, secrets, Git history and staged scope.
 - [ ] Update the README and this handoff with final results and limitations.
 - [ ] Create and push the public repository using the owner's approval.

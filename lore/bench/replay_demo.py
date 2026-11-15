@@ -25,17 +25,32 @@ class SandboxReplay(Service):
         pass
 
 
-def diverse_pairs(pairs):
-    """Try different follow-ups before exhausting one question's possible teachers."""
+def diverse_pairs(pairs, records=()):
+    """Prefer demonstrated teachable A/hints, then spread trials over different B."""
+    taught = [
+        record for record in records
+        if record["passed"] or record.get("reason") in ("followup_still_wrong", "new_rule_not_used")
+    ]
+    teachers = {record["a"] for record in taught}
+    proven = {
+        (record["a"], record.get("hint_sha256") or hashlib.sha256(
+            record.get("suggestion", {}).get("hint", "").encode()
+        ).hexdigest())
+        for record in taught
+    }
     groups = {}
     for pair in pairs:
         groups.setdefault(pair["b"], []).append(pair)
-    return [
+    diverse = [
         group[index]
         for index in range(max(map(len, groups.values()), default=0))
         for group in groups.values()
         if index < len(group)
     ]
+    return sorted(diverse, key=lambda pair: (
+        0 if (pair["a"], hashlib.sha256(pair.get("hint", "").encode()).hexdigest()) in proven
+        else 1 if pair["a"] in teachers else 2
+    ))
 
 
 async def matches_answer(answer, question, gold):
@@ -136,7 +151,7 @@ async def run(run, attempts_per_db):
     attempted = {(r["db"], r["a"], r["b"]) for r in records}
     gold = GoldCache()
     for db, pairs in candidates.items():
-        for pair in diverse_pairs(pairs):
+        for pair in diverse_pairs(pairs, [r for r in records if r["db"] == db]):
             existing = [r for r in records if r["db"] == db]
             if sum(r["passed"] for r in existing) >= 3 or len(existing) >= attempts_per_db:
                 break
@@ -169,6 +184,7 @@ async def run(run, attempts_per_db):
                 model=settings.model, effort=settings.effort, at=datetime.now(UTC).isoformat(),
                 hint_protocol=pair.get("hint_protocol", "rule-fragment-v1"),
                 hint_sha256=hashlib.sha256(pair.get("hint", "").encode()).hexdigest(),
+                search_strategy="teachable A/hint first; diverse B; never repeat a tried pair",
             )
             records.append(record)
             attempted.add((db, pair["a"], pair["b"]))

@@ -64,6 +64,8 @@ def release(tmp_path, monkeypatch):
     write_json(results / "summary.json", {
         "model": "minimax-m3.1-flash", "effort": "medium", "complete": True, "systems": systems,
     })
+    (results / "per_db.md").write_text("All databases, including regressions")
+    write_json(results / "demo_replay_round1.json", {"passed_per_db": {}, "usage_limitation": "fixture"})
     write_json(results / "learning_configuration.json", {
         "protocol": "factory-sdk-v2", "model": "minimax-m3.1-flash", "effort": "medium",
         "max_tokens_metadata_sentinel": 0, "sdk_version": "0.5.0", "droid_version": "1.12.1",
@@ -182,6 +184,8 @@ def test_explicit_publish_creates_only_free_new_space_and_uploads_snapshot(relea
     assert "HF_TOKEN" not in str(create)
     assert "publisher-requirements.txt" not in api.uploaded and "publish.py" not in api.uploaded
     assert "results/r4/seeds.json" in api.uploaded
+    assert "results/r4/per_db.md" in api.uploaded
+    assert "results/r4/demo_replay_round1.json" in api.uploaded
     assert not any(b"offline-hosting-credential" in value or b"offline-factory-credential" in value for value in api.uploaded.values())
 
 

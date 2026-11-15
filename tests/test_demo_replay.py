@@ -20,6 +20,20 @@ def test_replay_explores_different_followups_without_dropping_pairs():
     assert diverse_pairs([]) == []
 
 
+def test_replay_prefers_a_hint_that_already_taught_a_without_teaching_b():
+    pairs = [
+        {"a": "s1", "b": "t1", "hint": "unproven"},
+        {"a": "s2", "b": "t2", "hint": "another rule"},
+        {"a": "s2", "b": "t3", "hint": "known reusable definition"},
+    ]
+    records = [{
+        "a": "s2", "b": "t0", "passed": True,
+        "suggestion": {"hint": "known reusable definition"},
+    }]
+    assert [p["b"] for p in diverse_pairs(pairs, records)] == ["t3", "t2", "t1"]
+    assert len(diverse_pairs(pairs, records)) == len(pairs)
+
+
 @pytest.mark.asyncio
 async def test_replay_verifies_full_sql_not_display_capped_rows(tmp_path):
     path = tmp_path / "values.sqlite"
