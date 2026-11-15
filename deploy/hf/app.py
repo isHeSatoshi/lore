@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import platform
+import re
 import secrets
 import subprocess
 import tempfile
@@ -18,6 +19,22 @@ except ImportError:
 
 IMAGE = "ghcr.io/hydra-db/hydradb@sha256:ab71d651fefee13ebb23eb56d72316065bdca563ff7587442e07be663f2bf880"
 BINARY_SHA256 = "821533e10c13228809ca62e16cc6f9c791f2c94a3a7f155394c002080a6cc979"
+
+
+async def hosting_redirect():
+    from starlette.responses import RedirectResponse
+
+    return RedirectResponse("/hosting/", status_code=307)
+
+
+def hosting_root():
+    """Use HF's server-owned hostname, never caller-supplied proxy headers."""
+    host = os.getenv("SPACE_HOST")
+    if not host:
+        return None
+    if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\.hf\.space", host):
+        raise RuntimeError("Space hostname is invalid")
+    return f"https://{host}/hosting"
 
 
 def image_path(root, name):
@@ -243,10 +260,12 @@ async def main():
             )
         api = create_app()
         api.add_middleware(PublicDeadline)
+        api.add_api_route("/hosting", hosting_redirect, include_in_schema=False)
         app = gr.mount_gradio_app(
             api,
             panel,
             path="/hosting",
+            root_path=hosting_root(),
             show_error=False,
             ssr_mode=False,
             mcp_server=False,

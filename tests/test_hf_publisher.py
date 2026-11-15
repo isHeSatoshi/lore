@@ -164,7 +164,11 @@ class FakeApi:
         assert endpoint == "https://huggingface.co"
         assert token == "offline-hosting-credential"
         self.writes = []
-        self.owner, self.exists, self.zero_count = "isHeSatoshi", False, 0
+        self.owner, self.exists = "isHeSatoshi", True
+        self.hardware, self.requested = None, "cpu-basic"
+        self.private, self.sdk = False, "gradio"
+        self.sha = "f" * 40
+        self.files, self.configured = [".gitattributes", "README.md"], False
         self.writable = True
         self.failure = None
 
@@ -177,16 +181,28 @@ class FakeApi:
     def repo_exists(self, **kwargs):
         return self.exists
 
-    def list_spaces(self, **kwargs):
-        return [SimpleNamespace(id=f"existing{i}") for i in range(self.zero_count)]
+    def space_info(self, repo):
+        return SimpleNamespace(private=self.private, sdk=self.sdk, sha=self.sha)
 
     def get_space_runtime(self, repo):
-        return SimpleNamespace(hardware=None, requested_hardware="zero-a10g")
+        return SimpleNamespace(hardware=self.hardware, requested_hardware=self.requested)
 
-    def create_repo(self, **kwargs):
-        self.writes.append(("create", kwargs))
-        if self.failure == "create":
+    def list_repo_files(self, *args, **kwargs):
+        return self.files
+
+    def get_space_secrets(self, repo):
+        return {"existing": object()} if self.configured else {}
+
+    def get_space_variables(self, repo):
+        return {}
+
+    def add_space_secret(self, repo, **kwargs):
+        self.writes.append(("secret", kwargs))
+        if self.failure == "secret":
             raise RuntimeError("offline-hosting-credential offline-factory-credential")
+
+    def add_space_variable(self, repo, **kwargs):
+        self.writes.append(("variable", kwargs))
 
     def create_commit(self, **kwargs):
         self.writes.append(("upload", kwargs))
@@ -205,20 +221,16 @@ def api():
     return FakeApi(endpoint="https://huggingface.co", token="offline-hosting-credential")
 
 
-def test_explicit_publish_creates_only_free_new_space_and_uploads_snapshot(release, api):
+def test_explicit_publish_only_configures_empty_free_cpu_space_and_uploads_snapshot(release, api):
     assert invoke(release, api) == "Published https://huggingface.co/spaces/isHeSatoshi/lore"
-    assert [name for name, _ in api.writes] == ["create", "upload"]
-    create = api.writes[0][1]
-    assert create["space_hardware"] == "zero-a10g"
-    assert create["space_storage"] is None
-    assert create["space_sdk"] == "gradio"
-    assert create["private"] is False and create["exist_ok"] is False
-    protected = {s["key"]: s["value"] for s in create["space_secrets"]}
+    assert [name for name, _ in api.writes] == ["secret"] * 2 + ["variable"] * len(VARIABLES) + ["upload"]
+    protected = {v["key"]: v["value"] for action, v in api.writes if action == "secret"}
     assert set(protected) == {"FACTORY_API_KEY", "SPACE_SIGNING_SECRET"}
     assert protected["FACTORY_API_KEY"] == "offline-factory-credential"
     assert len(protected["SPACE_SIGNING_SECRET"]) >= 48
-    assert {s["key"]: s["value"] for s in create["space_variables"]} == VARIABLES
-    assert "HF_TOKEN" not in str(create)
+    assert {v["key"]: v["value"] for action, v in api.writes if action == "variable"} == VARIABLES
+    assert "HF_TOKEN" not in str(api.writes)
+    assert api.writes[-1][1]["parent_commit"] == "f" * 40
     assert "publisher-requirements.txt" not in api.uploaded and "publish.py" not in api.uploaded
     assert "results/r4/seeds.json" in api.uploaded
     assert "results/r4/per_db.md" in api.uploaded
@@ -240,7 +252,11 @@ def test_cold_proof_pins_api_in_source_and_package_before_api_construction(relea
 
 
 @pytest.mark.parametrize("attribute,value", [
-    ("owner", "another-owner"), ("exists", True), ("writable", False), ("zero_count", 2),
+    ("owner", "another-owner"), ("exists", False), ("writable", False),
+    ("requested", "zero-a10g"), ("requested", "cpu-upgrade"), ("hardware", "t4-small"),
+    ("private", True), ("sdk", "docker"), ("files", ["README.md", "app.py"]),
+    ("configured", True),
+    ("sha", None),
 ])
 def test_access_or_capacity_failure_never_writes(release, api, attribute, value):
     setattr(api, attribute, value)
@@ -308,13 +324,13 @@ def test_every_measurement_gate_precedes_api_construction(release, filename, mut
         invoke(release, None)
 
 
-@pytest.mark.parametrize("phase", ["create", "upload"])
+@pytest.mark.parametrize("phase", ["secret", "upload"])
 def test_sdk_failures_are_sanitized_and_never_fall_back(release, api, phase):
     api.failure = phase
     with pytest.raises(Blocked) as caught:
         invoke(release, api)
     assert "offline-" not in str(caught.value)
-    assert len(api.writes) == (1 if phase == "create" else 2)
+    assert len(api.writes) == (1 if phase == "secret" else 3 + len(VARIABLES))
     assert "no paid fallback" in str(caught.value)
 
 
@@ -349,13 +365,13 @@ def test_source_and_seed_integrity_fail_closed(release, api, target):
 def test_upload_uses_private_validated_snapshot_not_later_package_changes(release, api):
     _, package = release
     expected = (package / "README.md").read_bytes()
-    original_create = api.create_repo
+    original_secret = api.add_space_secret
 
-    def create_and_modify_original(**kwargs):
-        original_create(**kwargs)
+    def configure_and_modify_original(*args, **kwargs):
+        original_secret(*args, **kwargs)
         (package / "README.md").write_text("offline-hosting-credential")
 
-    api.create_repo = create_and_modify_original
+    api.add_space_secret = configure_and_modify_original
     invoke(release, api)
     assert api.uploaded["README.md"] == expected
 
@@ -379,14 +395,14 @@ def test_fine_grained_token_must_write_correct_owner(release, api, scope_owner):
     assert not api.writes
 
 
-def test_free_creation_rejection_reports_only_safe_http_code(release, api):
-    def rejected(**kwargs):
+def test_configuration_rejection_reports_only_safe_http_code(release, api):
+    def rejected(*args, **kwargs):
         error = RuntimeError("offline-hosting-credential")
         error.response = SimpleNamespace(status_code=403)
         raise error
 
-    api.create_repo = rejected
-    with pytest.raises(Blocked, match="free-create HTTP 403") as caught:
+    api.add_space_secret = rejected
+    with pytest.raises(Blocked, match="runtime-secrets HTTP 403") as caught:
         invoke(release, api)
     assert "offline-" not in str(caught.value)
     assert not api.writes

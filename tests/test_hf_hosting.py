@@ -9,8 +9,37 @@ from types import SimpleNamespace
 import pytest
 
 from deploy.hf import droid_runtime
-from deploy.hf.app import PublicDeadline, configure, image_path
+from deploy.hf.app import PublicDeadline, configure, hosting_redirect, hosting_root, image_path
 from deploy.hf.prepare import ROOT, prepare, release_databases
+
+
+@pytest.mark.asyncio
+async def test_hosting_redirect_stays_relative_behind_untrusted_proxy():
+    import httpx
+    from fastapi import FastAPI
+
+    app = FastAPI()
+    app.add_api_route("/hosting", hosting_redirect)
+    async with httpx.AsyncClient(transport=httpx.ASGITransport(app), base_url="http://internal:7860") as client:
+        response = await client.get(
+            "/hosting", headers={"x-forwarded-proto": "https", "x-forwarded-host": "untrusted.example"}
+        )
+    assert response.status_code == 307
+    assert response.headers["location"] == "/hosting/"
+
+
+def test_hosting_root_uses_platform_host_not_request_headers(monkeypatch):
+    monkeypatch.delenv("SPACE_HOST", raising=False)
+    assert hosting_root() is None
+    monkeypatch.setenv("SPACE_HOST", "ishesatoshi-lore.hf.space")
+    assert hosting_root() == "https://ishesatoshi-lore.hf.space/hosting"
+
+
+@pytest.mark.parametrize("host", ["https://evil.example", "x.hf.space/path", "x.hf.space@evil.example", "x.hf.space\n"])
+def test_hosting_root_rejects_invalid_platform_host(monkeypatch, host):
+    monkeypatch.setenv("SPACE_HOST", host)
+    with pytest.raises(RuntimeError, match="hostname"):
+        hosting_root()
 
 
 def test_image_absolute_links_stay_inside_the_image(tmp_path):

@@ -46,6 +46,7 @@ button:focus-visible,
 a:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
+.knowledge:focus-visible,
 .table-scroll:focus-visible {
   outline: 3px solid #4c663c;
   outline-offset: 3px;

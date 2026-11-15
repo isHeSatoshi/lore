@@ -1,4 +1,4 @@
-"""Validate a private release snapshot; publish a NEW free Space only with --publish."""
+"""Validate a release; upload to an existing empty public free CPU Space with --publish."""
 
 import argparse
 import hashlib
@@ -288,33 +288,39 @@ def publish(package, repo, *, root=ROOT, execute=False, api_factory=None):
                 for s in fine.get("scoped", [])
             )
             require(writable, "token-write-scope")
-            require(not api.repo_exists(repo_id=repo, repo_type="space"), "repo-already-exists-no-clobber")
-            zero_spaces = 0
-            for space in api.list_spaces(author=OWNER):
-                runtime = api.get_space_runtime(space.id)
-                zero_spaces += any(
-                    hardware == SpaceHardware.ZERO_A10G
-                    for hardware in (runtime.hardware, runtime.requested_hardware)
-                )
-            require(zero_spaces < 2, "no-free-zerogpu-slot")
+            # This CPU-only application cannot meet ZeroGPU's real GPU-function
+            # requirement. Reuse only an already-free, empty public allocation;
+            # never create compute, change visibility/hardware, or clobber code.
+            require(api.repo_exists(repo_id=repo, repo_type="space"), "existing-free-cpu-space-required")
+            info = api.space_info(repo)
+            runtime = api.get_space_runtime(repo)
+            require(info.private is False and info.sdk == "gradio", "public-gradio-space-required")
+            require(isinstance(info.sha, str) and re.fullmatch(r"[a-f0-9]{40}", info.sha), "space-parent-revision-required")
+            require(
+                runtime.requested_hardware == SpaceHardware.CPU_BASIC
+                and runtime.hardware in (None, SpaceHardware.CPU_BASIC),
+                "existing-free-cpu-hardware-required",
+            )
+            require(
+                set(api.list_repo_files(repo, repo_type="space")) <= {".gitattributes", "README.md"},
+                "space-not-empty-no-clobber",
+            )
+            require(not api.get_space_secrets(repo) and not api.get_space_variables(repo), "space-already-configured")
             if not execute:
                 return "Validated locally and read-only; no remote writes"
-            stage = "free-create"
-            api.create_repo(
-                repo_id=repo, repo_type="space", private=False, exist_ok=False,
-                space_sdk="gradio", space_hardware=SpaceHardware.ZERO_A10G, space_storage=None,
-                space_secrets=[
-                    {"key": "FACTORY_API_KEY", "value": factory},
-                    {"key": "SPACE_SIGNING_SECRET", "value": signing},
-                ],
-                space_variables=[{"key": key, "value": value} for key, value in VARIABLES.items()],
-            )
-            stage = "upload-new-space"
+            stage = "runtime-secrets"
+            api.add_space_secret(repo, key="FACTORY_API_KEY", value=factory)
+            api.add_space_secret(repo, key="SPACE_SIGNING_SECRET", value=signing)
+            stage = "runtime-variables"
+            for key, value in VARIABLES.items():
+                api.add_space_variable(repo, key=key, value=value)
+            stage = "upload-empty-free-cpu-space"
             api.create_commit(
                 repo_id=repo, repo_type="space",
                 operations=[CommitOperationAdd(path_in_repo=p, path_or_fileobj=snapshot / p) for p in files],
                 commit_message="Publish reviewed Lore r4 free Space release",
                 num_threads=2,
+                parent_commit=info.sha,
             )
             return f"Published https://huggingface.co/spaces/{repo}"
     except Blocked:
@@ -323,14 +329,14 @@ def publish(package, repo, *, root=ROOT, execute=False, api_factory=None):
         # Never include raw SDK exceptions, response bodies, filenames or tokens.
         status = getattr(getattr(exc, "response", None), "status_code", None)
         code = f" HTTP {status}" if type(status) is int and 400 <= status <= 599 else ""
-        raise Blocked(f"{stage}{code}; no paid fallback; a newly created empty Space may remain if upload failed") from None
+        raise Blocked(f"{stage}{code}; no paid fallback; the existing empty Space may now have runtime configuration") from None
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", required=True)
     parser.add_argument("--package", type=Path, required=True)
-    parser.add_argument("--publish", action="store_true", help="Explicitly enable creation/upload")
+    parser.add_argument("--publish", action="store_true", help="Enable upload/configuration of an existing empty free CPU Space")
     args = parser.parse_args(argv)
     try:
         print(publish(args.package.resolve(), args.repo, execute=args.publish))

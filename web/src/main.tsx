@@ -1088,7 +1088,14 @@ function App() {
                       for this question.
                     </p>
                     {shown?.block ? (
-                      <pre className="knowledge">{shown.block}</pre>
+                      <pre
+                        className="knowledge"
+                        tabIndex={0}
+                        role="region"
+                        aria-label="Retrieved knowledge block"
+                      >
+                        {shown.block}
+                      </pre>
                     ) : (
                       <div className="empty context-empty">
                         <p>

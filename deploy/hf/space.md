@@ -13,9 +13,11 @@ license: mit
 Text-to-SQL meanings learned from verified corrections, on HydraDB and SelfGraph.
 The main application is at `/`; `/hosting` is the Gradio hosting information page.
 
-This deployment is intended for eligible free Gradio/ZeroGPU hosting. It does
-not request GPU work. CPU Basic Docker Space creation is not available to a
-free account under the current hosting rules.
+This CPU-only deployment reuses the owner's existing public Gradio Space on
+free CPU Basic, originally created on 8 August 2025. No paid plan, upgraded
+hardware, GPU work, or persistent storage is requested. New compute Space
+creation has different eligibility rules. An earlier ZeroGPU attempt failed
+because a real GPU function is required; no dummy GPU function was added.
 
 The intended r4 release uses the owner's Factory Droid SDK access to
 `minimax-m3.1-flash`, reasoning effort `medium`, matching its measured results.
