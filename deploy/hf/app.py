@@ -11,6 +11,7 @@ import subprocess
 import tempfile
 from importlib.metadata import version
 from pathlib import Path
+from urllib.parse import urlsplit
 
 try:  # Uploaded release is flat; repository imports use the namespace package.
     from .droid_runtime import SDK_VERSION, provision_droid
@@ -178,6 +179,29 @@ def configure(state):
     }
 
 
+class SpaceOrigin:
+    """Restore HF's known HTTPS origin without trusting forwarded headers or IPs."""
+
+    def __init__(self, app):
+        self.app = app
+        root = hosting_root()
+        self.host = urlsplit(root).netloc if root else None
+
+    async def __call__(self, scope, receive, send):
+        if self.host and scope["type"] in ("http", "websocket"):
+            scope = {
+                **scope,
+                "scheme": "https" if scope["type"] == "http" else "wss",
+                "server": (self.host, 443),
+                "headers": [
+                    (name, value) for name, value in scope["headers"]
+                    if name.lower() not in (b"host", b"forwarded")
+                    and not name.lower().startswith(b"x-forwarded-")
+                ] + [(b"host", self.host.encode("ascii"))],
+            }
+        await self.app(scope, receive, send)
+
+
 class PublicDeadline:
     """Bound model-facing requests; cancellation reaches SDK session cleanup."""
 
@@ -260,12 +284,12 @@ async def main():
             )
         api = create_app()
         api.add_middleware(PublicDeadline)
+        api.add_middleware(SpaceOrigin)
         api.add_api_route("/hosting", hosting_redirect, include_in_schema=False)
         app = gr.mount_gradio_app(
             api,
             panel,
             path="/hosting",
-            root_path=hosting_root(),
             show_error=False,
             ssr_mode=False,
             mcp_server=False,

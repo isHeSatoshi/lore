@@ -80,6 +80,7 @@ def check(args):
         "LORE_HOST_STATE": str(args.state),
         "FACTORY_API_KEY": "cold-check-no-model",
         "SPACE_SIGNING_SECRET": secrets.token_hex(32),
+        "SPACE_HOST": "lore-validation.hf.space",
     }
     durations, snapshots = [], []
     with httpx.Client(base_url="http://127.0.0.1:7860", timeout=60, trust_env=False) as client:
@@ -116,7 +117,15 @@ def check(args):
                         asset = client.get(path)
                         assert asset.status_code == 200
                         assert "javascript" in asset.headers.get("content-type", "")
-                    assert client.get("/hosting/").status_code == 200
+                    redirect = client.get("/hosting", follow_redirects=False)
+                    assert redirect.status_code == 307
+                    assert redirect.headers["location"] == "/hosting/"
+                    panel = client.get("/hosting/")
+                    assert panel.status_code == 200
+                    assert re.search(
+                        r'"root"\s*:\s*"https://lore-validation\.hf\.space/hosting"',
+                        panel.text,
+                    ), "Gradio configuration must use the canonical HTTPS origin"
                     current = {}
                     for db in sorted(expected):
                         scope = {"db": db, "mode": "trained", "session": "0" * 32}
@@ -169,6 +178,8 @@ def check(args):
         "real_launcher": True,
         "frontend_javascript_served": True,
         "gradio_mount": True,
+        "hosting_relative_redirect": True,
+        "hosting_https_origin": True,
         "trained_certification_forbidden": True,
         "trained_graph_unchanged_after_forbidden_write": True,
         "private_file_requests_denied": True,

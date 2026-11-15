@@ -9,7 +9,14 @@ from types import SimpleNamespace
 import pytest
 
 from deploy.hf import droid_runtime
-from deploy.hf.app import PublicDeadline, configure, hosting_redirect, hosting_root, image_path
+from deploy.hf.app import (
+    PublicDeadline,
+    SpaceOrigin,
+    configure,
+    hosting_redirect,
+    hosting_root,
+    image_path,
+)
 from deploy.hf.prepare import ROOT, prepare, release_databases
 
 
@@ -40,6 +47,48 @@ def test_hosting_root_rejects_invalid_platform_host(monkeypatch, host):
     monkeypatch.setenv("SPACE_HOST", host)
     with pytest.raises(RuntimeError, match="hostname"):
         hosting_root()
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("kind", ["http", "websocket"])
+async def test_space_origin_changes_only_origin_not_path_or_client(monkeypatch, kind):
+    monkeypatch.setenv("SPACE_HOST", "ishesatoshi-lore.hf.space")
+    received = []
+
+    async def downstream(scope, receive, send):
+        received.append(scope)
+
+    scope = {
+        "type": kind, "scheme": "http" if kind == "http" else "ws",
+        "path": "/hosting/", "raw_path": b"/hosting/", "root_path": "",
+        "client": ("192.0.2.1", 1234), "server": ("internal", 7860),
+        "headers": [(b"host", b"evil.example"), (b"x-forwarded-proto", b"http"),
+                    (b"forwarded", b"host=evil.example"), (b"x-forwarded-for", b"127.0.0.1"),
+                    (b"accept", b"text/html")],
+    }
+    await SpaceOrigin(downstream)(scope, None, None)
+    result = received[0]
+    assert result["scheme"] == ("https" if kind == "http" else "wss")
+    assert result["server"] == ("ishesatoshi-lore.hf.space", 443)
+    assert dict(result["headers"]) == {
+        b"host": b"ishesatoshi-lore.hf.space", b"accept": b"text/html",
+    }
+    for key in ("path", "raw_path", "root_path", "client"):
+        assert result[key] == scope[key]
+    assert scope["scheme"] in ("http", "ws")
+
+
+@pytest.mark.asyncio
+async def test_space_origin_without_platform_environment_is_unchanged(monkeypatch):
+    monkeypatch.delenv("SPACE_HOST", raising=False)
+    received = []
+
+    async def downstream(scope, receive, send):
+        received.append(scope)
+
+    scope = {"type": "http", "path": "/hosting/"}
+    await SpaceOrigin(downstream)(scope, None, None)
+    assert received[0] is scope
 
 
 def test_image_absolute_links_stay_inside_the_image(tmp_path):

@@ -32,7 +32,8 @@ COLD_SOURCES = {
 }
 COLD_FLAGS = (
     "passed", "read_only_root", "real_launcher", "frontend_javascript_served",
-    "gradio_mount", "trained_certification_forbidden",
+    "gradio_mount", "hosting_relative_redirect", "hosting_https_origin",
+    "trained_certification_forbidden",
     "trained_graph_unchanged_after_forbidden_write", "private_file_requests_denied",
     "engine_restart_restored_identical_graphs",
 )
