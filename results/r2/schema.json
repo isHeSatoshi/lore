@@ -1,0 +1,79 @@
+{
+  "codebase_community": {
+    "tables": 8,
+    "columns": 71,
+    "entities": 79,
+    "has_column": 71,
+    "declared_joins": 13
+  },
+  "california_schools": {
+    "tables": 3,
+    "columns": 89,
+    "entities": 92,
+    "has_column": 89,
+    "declared_joins": 2
+  },
+  "card_games": {
+    "tables": 6,
+    "columns": 115,
+    "entities": 121,
+    "has_column": 115,
+    "declared_joins": 4
+  },
+  "debit_card_specializing": {
+    "tables": 5,
+    "columns": 21,
+    "entities": 26,
+    "has_column": 21,
+    "declared_joins": 1
+  },
+  "financial": {
+    "tables": 8,
+    "columns": 55,
+    "entities": 63,
+    "has_column": 55,
+    "declared_joins": 8
+  },
+  "formula_1": {
+    "tables": 13,
+    "columns": 94,
+    "entities": 107,
+    "has_column": 94,
+    "declared_joins": 19
+  },
+  "student_club": {
+    "tables": 8,
+    "columns": 48,
+    "entities": 56,
+    "has_column": 48,
+    "declared_joins": 8
+  },
+  "superhero": {
+    "tables": 10,
+    "columns": 31,
+    "entities": 41,
+    "has_column": 31,
+    "declared_joins": 11
+  },
+  "european_football_2": {
+    "tables": 7,
+    "columns": 199,
+    "entities": 206,
+    "has_column": 199,
+    "declared_joins": 31
+  },
+  "toxicology": {
+    "tables": 4,
+    "columns": 11,
+    "entities": 15,
+    "has_column": 11,
+    "declared_joins": 5
+  },
+  "thrombosis_prediction": {
+    "tables": 3,
+    "columns": 64,
+    "entities": 67,
+    "has_column": 64,
+    "declared_joins": 2
+  }
+}
