@@ -1,56 +1,42 @@
 # Free Hugging Face hosting
 
-Status: **free Space created and rebuilding, public verification pending**.
-[Space](https://huggingface.co/spaces/isHeSatoshi/lore). The first build exposed
-HF's dependency-before-source ordering; explicit equivalent runtime requirements
-replace `.[factory]`, without changing the model or runtime code. This is separate from
-the Docker/VM deployment. No paid plan or hardware is authorized.
+Status: **public app running on free CPU Basic; scoped public release checks pass**.
+[App](https://ishesatoshi-lore.hf.space) ·
+[Space source](https://huggingface.co/spaces/isHeSatoshi/lore).
+All four trained databases restore 345 MEANS relations. A strict public-browser
+teaching loop passes; its failed school trial is retained alongside the passing
+toxicology trial in [`hosting_browser.json`](../../results/r4/hosting_browser.json).
+HTTPS hosting-info, keyboard scrolling, desktop/mobile UI and trained graph
+restoration pass on the public deployment. See
+[`hosting_public.json`](../../results/r4/hosting_public.json) for exact scope,
+retained failures and limits.
 
 ## Access gate
 
-Current [Spaces rules](https://huggingface.co/docs/hub/spaces-overview) require
-PRO/Team for new Docker compute Spaces, even when CPU Basic costs zero hourly.
-The [free Gradio/ZeroGPU exception](https://huggingface.co/docs/hub/spaces-zerogpu)
-allows up to two Spaces for eligible verified personal accounts older than
-30 days.
+Current [Spaces rules](https://huggingface.co/docs/hub/spaces-overview) distinguish
+new compute-Space eligibility from CPU Basic's zero hourly price. The free
+[ZeroGPU exception](https://huggingface.co/docs/hub/spaces-zerogpu) requires a real
+GPU function and is **not suitable for this CPU-only application**.
 
-Authenticated read-only recheck: owner **`isHeSatoshi`**, personal account,
-not PRO, older than 30 days. The fine-grained token has owner-scoped
-`repo.write` and repository-read permissions. All 13 owned Space runtimes
-were readable; none has current or requested ZeroGPU hardware, so the
-documented two free ZeroGPU slots appear unused. Email verification and
-good-standing eligibility are not exposed by the account metadata checked;
-actual creation acceptance remains unproven. The candidate
-`isHeSatoshi/lore` returned 404 and is not currently allocated.
-[`evidence/hf_access.json`](evidence/hf_access.json) contains only sanitized
-access/capacity findings, not the token, raw account metadata or PII.
+The first authorized new ZeroGPU attempt failed twice: dependency installation
+preceded source copying, then the platform rejected the absence of a GPU
+function. Explicit equivalent requirements fixed the first problem. No dummy
+GPU function, paid plan, hardware upgrade, or ZeroGPU-to-CPU workaround was used.
+Only that failed, agent-created allocation was deleted.
 
-**Only after all r4 measurement/seeds/replay/load/package gates pass**, use the
-official Hub SDK with the token held only in memory:
+With the owner's permission to reuse obsolete Spaces, the existing public
+`chaos-to-care` allocation, created **8 August 2025**, was renamed to `lore`.
+It already requested **CPU Basic** and contained only `README.md` and
+`.gitattributes`, with no Secrets or variables. Its original creation date and
+free hardware were preserved. The guarded publisher then configured only the
+two runtime Secrets and fixed nonsecret settings before uploading the reviewed
+snapshot. The other twelve existing Spaces, including paused paid allocations,
+were left untouched.
 
-```python
-api.create_repo(
-    repo_id="isHeSatoshi/lore",
-    repo_type="space",
-    space_sdk="gradio",
-    space_hardware=SpaceHardware.ZERO_A10G,  # official value: "zero-a10g"
-    private=False,
-    space_storage=None,
-    exist_ok=False,
-)
-```
-
-Here `api` is an authenticated `HfApi` instance and `SpaceHardware` comes from
-`huggingface_hub`. Explicit ZeroGPU selection is essential: do not accept the
-default CPU Basic creation path. No paid storage or hardware is requested.
-The initial access check made no writes. The subsequent authorized publication
-created only the new public free ZeroGPU Space; no existing Space was changed.
-Existing paused upgraded-hardware configurations were left untouched; do not
-resume/reuse them. Keep the deployment token out of app runtime Secrets, chat,
-Git and argv. Do not restart the benchmark computer.
-
-Do not create CPU Basic by default, upgrade the account, accept paid hardware,
-or switch providers. If free creation is rejected, stop and report the reason.
+[`evidence/hf_access.json`](evidence/hf_access.json) is the historical initial
+read-only access check, not the current allocation state. Keep the deployment
+token out of app runtime Secrets, chat, Git and argv. Never upgrade, resume paid
+hardware, switch providers, or restart the benchmark Hydra.
 
 ## Runtime
 
@@ -92,6 +78,10 @@ or switch providers. If free creation is rejected, stop and report the reason.
 - Gradio analytics, MCP and monitoring are disabled. Private state/data paths
   are blocked from Gradio's file route. Caller-provided proxy headers are not
   trusted; the hosting proxy can make visitors share the stricter hourly limit.
+  `/hosting` redirects relatively to `/hosting/`. A narrow ASGI origin wrapper
+  uses validated, server-owned `SPACE_HOST` to restore HTTPS without changing
+  route paths or client addresses. Forwarded-origin overrides are discarded.
+  A full-URL Gradio `root_path` caused a real mounted-route 404 and was removed.
 - Free storage is ephemeral. Seeds restore on startup; visitor graphs,
   answer caches and counters can reset on replacement. No durable storage is
   claimed or purchased.
@@ -105,19 +95,25 @@ the frozen r2 results, silently use the direct MiniMax transport, or use `auto`.
 The protocol is **factory-sdk-v2**, with a separate cache. r3 is retained as a
 failed tool-policy preflight, not a valid comparison or release. The isolated
 v2 tool-policy smoke and the completed four-database local trained cold start
-passed. Actual HF creation, public teaching and hosted restoration remain unproven.
+passed. The existing free CPU allocation is running, and strict public teaching
+passes. All four public trained graph projections match their pre-rebuild
+hashes after actual hosted replacement; visitor state reset as expected.
 
 ### Seeded local cold-start proof
 
 [`hosting_cold.json`](../../results/r4/hosting_cold.json) records the real launcher,
 not a fixture: non-root uid 1002, read-only root, no Docker socket or published
 port, and zero model-consuming routes or metered model calls. Fresh setup
-(including pinned binary provisioning and seed import) took **38.80 seconds**;
-restart took **6.03 seconds**. All **345 MEANS rules** across the measured four
+(including pinned binary provisioning and seed import) took **22.32 seconds**;
+restart took **5.03 seconds**. All **345 MEANS rules** across the measured four
 databases were restored, and exact node/edge records survived restart. Trained
 certification returned 403 without modifying the graph; private Gradio file
 requests were denied and the React JavaScript and Gradio mount were served.
 These are local observations, not an HF startup-time guarantee.
+The checker now supplies `SPACE_HOST=lore-validation.hf.space` and verifies the
+relative redirect and the actual mounted Gradio configuration's HTTPS origin.
+The earlier check without that environment missed a platform-only 404; its
+proof and the failed hosted observation are retained, not silently overwritten.
 
 The first two check-harness attempts stopped before engine startup because of
 private mount uid mismatch and a missing copied attribution notice. Both
@@ -153,8 +149,9 @@ The official [Python SDK](https://docs.factory.com/sdk/python.md), found via
 `droid-sdk` Python package, **a separate local `droid` executable**, and an
 authenticated CLI or `FACTORY_API_KEY`. Python 3.12 already meets the version
 requirement, but installing the SDK alone is insufficient. Space requirements
-now install `.[factory]` (which pins **droid-sdk==0.5.0**) and
-**gradio==6.32.0**. The CLI's
+now explicitly install the same project runtime dependencies plus
+**droid-sdk==0.5.0** and **gradio==6.32.0**. HF installs requirements before
+copying source, so `.[factory]` cannot be used at that stage. The CLI's
 [documented direct-download contract and auto-update control](https://docs.factory.com/droid-cli/cli-reference)
 and [official installer](https://app.factory.ai/cli) were reviewed without
 executing the installer. The x64 hash also matches the trusted local 1.12.1
@@ -205,17 +202,17 @@ listed above. Verify them against the release summary; preparation does not
 configure remote Secrets or prove transport/model consistency by itself.
 
 After final source, secret and trained-cold-start checks, use the authorized
-Hub client to verify identity and free eligibility. Create only a Gradio Space
-on free ZeroGPU hardware, add protected runtime Secrets, and upload only the
-reviewed folder. Never pass any of the hosting-token aliases to the app as
-runtime Secrets.
+Hub client to verify identity and the existing empty public Gradio allocation's
+CPU Basic hardware. The CPU-only publisher never creates compute or changes
+hardware/visibility. Add protected runtime Secrets and upload only the reviewed
+folder. Never pass hosting-token aliases to the app as runtime Secrets.
 Check the actual public health, UI, trained graphs, sandbox teaching/reuse,
 budget/error states and restart restoration before claiming a live demo.
 
 ## Gated release publisher
 
 `publish.py` defaults to **validation plus read-only access checks**. It does
-not create/upload unless `--publish` is explicitly supplied. Install the
+not configure/upload unless `--publish` is explicitly supplied. Install the
 separate pinned publisher requirements; no app/root dependency change is needed:
 
 ```sh
@@ -250,23 +247,26 @@ the current source results and the snapshot **before any remote write**:
   packages are rejected. Known credential byte values are scanned in every
   package file (including binary data and chunk boundaries) and path.
 
-The helper then rechecks authenticated owner `isHeSatoshi`, write scope,
-absence of the target Space, and apparent free ZeroGPU capacity. It refuses
-**every** existing target, including one left by an interrupted previous run.
-Creation uses only Gradio, `zero-a10g`, no paid storage, `exist_ok=False`, and
-sets protected `FACTORY_API_KEY` plus a fresh generated `SPACE_SIGNING_SECRET`.
+The helper then rechecks authenticated owner `isHeSatoshi`, write scope, an
+existing **public Gradio** target, requested CPU Basic hardware and no current
+upgraded hardware. Only `README.md` and `.gitattributes` may exist; existing
+Secrets, variables, code or missing parent revision block publication.
+It creates no repository and changes no hardware, visibility or storage.
+It sets protected `FACTORY_API_KEY` plus a fresh generated `SPACE_SIGNING_SECRET`.
 Only nonsecret fixed r4/model/effort/transport/max-token settings are variables;
 the HF deployment token is never an app Secret or uploaded file.
 
 The upload is a single SDK commit containing only the validated snapshot's
-explicit file list, with two transfer threads. Diagnostics are sanitized and
-SDK debug/progress output is disabled. Free-creation rejection stops without
-fallback, upgrades, resuming another Space, deletion or automatic recovery.
-If upload fails after creation, a new configured empty Space may remain:
-inspect it before any separately authorized recovery. A successful upload
-reports the public repository URL, **not** a healthy/live application claim.
-No real remote publication has been performed while developing this helper;
-publisher tests use fake SDK APIs exclusively.
+explicit file list, two transfer threads and the checked parent commit.
+Diagnostics are sanitized and SDK debug/progress output is disabled. Rejection
+stops without fallback, upgrades, deletion or automatic recovery. A failed
+upload can leave the existing empty allocation configured; inspect it before
+separately authorized recovery. A successful upload is not a health claim.
+This guarded path performed the real approved initial CPU upload. Unit tests
+use fake APIs; public health, model and teaching checks use the actual Space.
+Do not rerun it against the live nonempty release: it deliberately refuses.
+Updates require a freshly reconstructed and scanned allowlist, explicit
+comparison with the prior reviewed release, and a parent-pinned SDK commit.
 
 ## Local evidence and limits
 
@@ -293,6 +293,22 @@ with no external networking and zero model calls.
 No Hydra was started or restarted, no ports were published, and the existing
 `/usr/local/bin/droid` remained unchanged. This is not a trained-app or hosted
 cold-start claim.
+
+### Public validation limits
+
+The current public release passes seven desktop/mobile/error axe audits with
+zero reported violations, real keyboard scrolling and a fresh trained-mode
+model query checked by full SQL re-execution. The chart retains an automated
+contrast check marked incomplete; its 16 rendered SVG/legend colors were
+checked separately against their computed white background, with a worst
+ratio of 5.68:1. This is not a complete WCAG audit.
+
+The public seed comparison covers the API's graph projection, normalizing UI
+flags and regenerated edge IDs. It is not a private Hydra record audit.
+Trained certification returns 403 without changing that projection; private
+file routes are denied. No CSP, Referrer-Policy, X-Content-Type-Options or
+X-Frame-Options header was observed. These scoped checks are not a complete
+security audit, hosted load test or uptime guarantee.
 
 [`results/smoke/hf_native.json`](../../results/smoke/hf_native.json) records a
 tiny graph's insert/read and engine-child restart, lifecycle preservation,

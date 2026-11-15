@@ -2,9 +2,11 @@
 
 A text-to-SQL semantic layer that learns reusable database knowledge from verified corrections, built on HydraDB and SelfGraph.
 
-**Hosting:** the [free HF Space](https://huggingface.co/spaces/isHeSatoshi/lore)
-has been created on ZeroGPU. Its first dependency-order build failure is
-repaired; the rebuild and public-app verification are in progress.
+**Live demo:** [Lore](https://ishesatoshi-lore.hf.space), running on an existing
+free CPU Basic [HF Space](https://huggingface.co/spaces/isHeSatoshi/lore).
+A strict public-browser correction-and-reuse loop, scoped access-control checks,
+keyboard/mobile checks and hosted seed restoration pass.
+See the [public validation evidence](results/r4/hosting_public.json).
 See [hosting status and release steps](deploy/hf/README.md).
 
 ## The problem
@@ -307,24 +309,42 @@ export LORE_LLM_CONCURRENCY=4
 
 Run `.venv/bin/pytest -q` for local tests. For real HydraDB integration checks,
 run `LORE_INTEGRATION=1 .venv/bin/pytest -q`.
-The latest [integration-enabled release check](results/smoke/release_tests.live.json)
-passes all **155 tests**, plus Ruff and the typed frontend build. Subsequent
-packaging-only fixes pass 69 focused checks.
+The latest [integration-enabled release check](results/smoke/release_tests.hosted.json)
+passes all **171 tests**, with zero skips and all six runtime source hashes
+unchanged during the run. Ruff and the typed frontend build also pass.
+The [fresh-clone check](results/smoke/clean_clone.hosted.json) separately passed
+new Python/npm installs, 165 nonintegration tests and the real local HTTP
+entrypoint, reusing downloaded BIRD data and the existing Hydra without restart.
 Use an unused validation run ID. The recorded `s1`–`s3` runs are historical
 calibrations, not results to overwrite with the final code.
 
-## Built but not established by reported numbers
+## Interactive validation and deployment limits
 
 The sandbox UI, correction confirmation, rule certification, seed round-trip,
 vector and flat implementations, paired reporting and deployment image exist.
 Full accuracy comparisons and a real four-database seeded cold start are now
 complete. All twelve teaching pairs and all 3,000 trained-load requests pass.
-Public-host checks remain a separate gate; tests are not substitutes for them.
+The [public browser trial](results/r4/hosting_browser.json) independently
+re-executes SQL and confirms correction-to-transfer on toxicology. Its failed
+school trial is retained. This is selected demo evidence, not a future-success
+guarantee.
 
 VM deployment instructions are in [`deploy/README.md`](deploy/README.md);
 the approved free-hosting route is in [`deploy/hf/README.md`](deploy/hf/README.md).
-The free Space is published and rebuilding; public verification remains pending.
-Public repository publication is approved after final checks.
+The existing free CPU Space is running and the strict public-browser teaching
+loop passes. All four trained public graph projections match their pre-rebuild
+hashes, with 345 MEANS rules restored. The visitor sandbox reset, as expected.
+Seven desktop/mobile/error accessibility audits report zero violations.
+The chart's incomplete automated contrast check has a separate rendered-color
+check; this is not full WCAG certification.
+The [native proof](results/r4/hosting_cold.json) exercises HF's hostname and
+HTTPS routing: 22.32 seconds fresh, 5.03 seconds on restart, zero model calls.
+These local startup times are not hosted latency guarantees.
+No CSP, Referrer-Policy, X-Content-Type-Options or X-Frame-Options response header
+was observed. Scoped access-control checks are not a complete security audit.
+Free hosting can sleep and lose visitor state; model quotas still apply.
+New public GitHub repository creation is blocked by the integration's HTTP 403;
+no existing private repository was made public.
 The [submission handoff](SUBMISSION.md) tracks owner actions and outstanding gates.
 
 ## Data attribution

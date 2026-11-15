@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-15T22:43:43.363759+00:00",
+  "passed": true,
+  "command": "LORE_INTEGRATION=1 .venv/bin/pytest -q",
+  "source_commit": "4a98d64939baced770ad99aba2ee1172c7a06f52",
+  "source_sha256": {
+    "lore/api.py": "07d3b2c6c1eaa6f84f8d0903290202a4535abe3e90aae8dd7004ebf8681f0537",
+    "lore/connection_pool.py": "171e352941015148d08183261c08662e775e979e3acdf6229e1958c319347735",
+    "lore/live_reader.py": "f9bf16ecc572bb5495b7c2709073a3e3446995bea790fe8b485fe6c70dbb7bdd",
+    "deploy/hf/app.py": "7c468f34cdcf4f5862439ce3c75064d333ba5f38143beb4adaf846c7c1970c42",
+    "deploy/hf/droid_runtime.py": "3e19b7d41d89f6ac574e6a572ef3313c73caf365c049983d7f809416c1bc227a",
+    "deploy/hf/FACTORY_NOTICE.md": "439e746d435366851887de25ac46cfae4760f8ce2ee632dce57cd11d56d12fb2"
+  },
+  "runtime_sources_unchanged_during_run": true,
+  "tests_passed": 168,
+  "skipped": 0,
+  "exit_code": 0,
+  "elapsed_seconds": 518.3414145999996,
+  "output": "........................................................................ [ 42%]\n........................................................................ [ 85%]\n........................                                                 [100%]\n168 passed in 516.82s (0:08:36)"
+}

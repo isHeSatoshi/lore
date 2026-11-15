@@ -1,0 +1,348 @@
+{
+  "passed": true,
+  "scope": "Specific public runtime, restoration, file-access, read-only, browser, keyboard and accessibility checks; not a comprehensive security or WCAG certification.",
+  "at": "2026-11-15T23:14:48.303343+00:00",
+  "app_url": "https://ishesatoshi-lore.hf.space",
+  "allocation": {
+    "revision": "2463232b44060e8f502591b21d07894dd1d76f8b",
+    "public": true,
+    "stage": "RUNNING",
+    "current_hardware": "cpu-basic",
+    "requested_hardware": "cpu-basic"
+  },
+  "runtime_source_commit": "41bdcf1bd834d81dfaeacbf07511c95f2eef21e0",
+  "runtime_source_sha256": {
+    "lore/api.py": "07d3b2c6c1eaa6f84f8d0903290202a4535abe3e90aae8dd7004ebf8681f0537",
+    "lore/connection_pool.py": "171e352941015148d08183261c08662e775e979e3acdf6229e1958c319347735",
+    "lore/live_reader.py": "f9bf16ecc572bb5495b7c2709073a3e3446995bea790fe8b485fe6c70dbb7bdd",
+    "deploy/hf/app.py": "ff34d1d7b103184f597a3d4069bf6d1d6615d1607a40396dda774b0f48476680",
+    "deploy/hf/droid_runtime.py": "3e19b7d41d89f6ac574e6a572ef3313c73caf365c049983d7f809416c1bc227a",
+    "deploy/hf/FACTORY_NOTICE.md": "439e746d435366851887de25ac46cfae4760f8ce2ee632dce57cd11d56d12fb2"
+  },
+  "runtime_revision": "0281ca5454bbaddd2a0cd2deb0eccb0c81212908",
+  "frontend_source_commit": "749a7cc604f833bca2a82f93e26f5020c96cbb4e",
+  "frontend_revision": "2463232b44060e8f502591b21d07894dd1d76f8b",
+  "baseline_at": "2026-11-15T22:37:49.221Z",
+  "all_trained_semantic_projections_restored": true,
+  "graph_comparison": "Public API projection only. Recursively sort object keys; remove node used/new and edge id/used; sort records by canonical JSON using browser localeCompare. Edge IDs regenerate on seed import. Full private Hydra records are not audited here; native proof separately compares complete returned node/edge record multisets across restart.",
+  "runtime_checks": {
+    "at": "2026-11-15T23:14:05.265Z",
+    "current_script_paths": [
+      "/assets/index-AosEvqhi.js"
+    ],
+    "graphs": {
+      "california_schools": {
+        "edges": 138,
+        "means": 89,
+        "nodes": 123,
+        "semantic_sha256": "759b912321ca679dfcfd0fa99595eadf3c1f946beac08485877435e64b9c2490"
+      },
+      "superhero": {
+        "edges": 71,
+        "means": 49,
+        "nodes": 67,
+        "semantic_sha256": "297b27e2a4ae4f8c39f0a11d3c549a22c2ff28d931d370d5e1dc400a09a34247"
+      },
+      "thrombosis_prediction": {
+        "edges": 184,
+        "means": 135,
+        "nodes": 170,
+        "semantic_sha256": "66b2915d7ee93e835db110c8ab62dcc110f11b449a342b1ea7396ad3d1ba177d"
+      },
+      "toxicology": {
+        "edges": 83,
+        "means": 72,
+        "nodes": 62,
+        "semantic_sha256": "fd1ad21e31a24bab3aa5487d8f3963464b59b237abe4929d18e2b0da558f50ee"
+      }
+    },
+    "headers": {
+      "content-security-policy": null,
+      "referrer-policy": null,
+      "x-content-type-options": null,
+      "x-frame-options": null
+    },
+    "hosting_fetch_final_url": "https://ishesatoshi-lore.hf.space/hosting/",
+    "hosting_fetch_status": 200,
+    "hosting_gradio_roots": [
+      "https://ishesatoshi-lore.hf.space/hosting"
+    ],
+    "own_visitor_sandbox_after_rebuild": {
+      "edges": 0,
+      "nodes": 0
+    },
+    "paths": {
+      "/.env": {
+        "content_type": "application/json",
+        "status": 404
+      },
+      "/hosting/gradio_api/file=/home/user/.cache/lore-space/auth-token": {
+        "content_type": "application/json",
+        "status": 403
+      },
+      "/hosting/gradio_api/file=/home/user/app/data/bird/superhero.sqlite": {
+        "content_type": "application/json",
+        "status": 403
+      }
+    },
+    "root_status": 200,
+    "trained_certification_statuses": [
+      403,
+      403,
+      403,
+      403
+    ],
+    "trained_public_projection_unchanged": true
+  },
+  "strict_public_teaching": "hosting_browser.json, includes failed school trial and passing toxicology transfer; API/model/learning sources unchanged by origin/presentation fixes.",
+  "post_origin_fix_trained_query": {
+    "key": "s298",
+    "db": "toxicology",
+    "correct": true,
+    "full_reexecution": true,
+    "api_rows_agree": true,
+    "predicted_rows": 1,
+    "gold_rows": 1,
+    "sql": "SELECT CAST(COUNT(CASE WHEN T1.element = 'h' AND T2.label = '+' THEN T2.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id",
+    "rows": [
+      [
+        17.22094171880145
+      ]
+    ],
+    "prompt_tokens": 2041,
+    "block_characters": 2677,
+    "ui_requests_with_model_work": 1,
+    "provider_usage_audit": false,
+    "note": "Fresh post-origin-fix trained-mode query, not another sandbox teaching trial."
+  },
+  "ui": {
+    "audits": {
+      "results/ui/hf-current-ask-desktop-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 42,
+        "incomplete": 0,
+        "passes": 47,
+        "violations": 0
+      },
+      "results/ui/hf-current-ask-mobile-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 42,
+        "incomplete": 0,
+        "passes": 47,
+        "violations": 0
+      },
+      "results/ui/hf-current-graph-desktop-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 45,
+        "incomplete": 0,
+        "passes": 44,
+        "violations": 0
+      },
+      "results/ui/hf-current-graph-mobile-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 44,
+        "incomplete": 0,
+        "passes": 45,
+        "violations": 0
+      },
+      "results/ui/hf-current-error-mobile-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 49,
+        "incomplete": 0,
+        "passes": 40,
+        "violations": 0
+      },
+      "results/ui/hf-final-proof-desktop-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 48,
+        "incomplete": 1,
+        "passes": 41,
+        "violations": 0
+      },
+      "results/ui/hf-final-proof-mobile-a11y.json": {
+        "axe_version": "4.12.1",
+        "inapplicable": 47,
+        "incomplete": 1,
+        "passes": 42,
+        "violations": 0
+      }
+    },
+    "knowledge_keyboard_scroll": {
+      "after": 31,
+      "before": 0,
+      "focused": true,
+      "outline": "rgb(76, 102, 60) solid 3px"
+    },
+    "mobile_proof_keyboard_scroll": {
+      "focused": "System comparison table",
+      "page": 390,
+      "proofTableScrollLeft": 30,
+      "viewport": 390
+    },
+    "simulated_error_recovery": {
+      "askEnabled": true,
+      "model_requests": 0,
+      "page": 390,
+      "staleAnswerRemoved": true,
+      "synthetic": true,
+      "viewport": 390,
+      "visibleError": "Simulated temporary service issue. Please retry."
+    },
+    "manual_chart_contrast": {
+      "minimum_required": 4.5,
+      "minimum_observed": 5.680892953588579,
+      "observations": [
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(41, 95, 77)",
+          "text": "Lore",
+          "contrast_ratio": 7.398713363053667
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(103, 98, 139)",
+          "text": "Vector memory",
+          "contrast_ratio": 5.680892953588579
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "0",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "250",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "500",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "750",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "864",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "Stream questions seen",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "0%",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "25%",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "50%",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "75%",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "100%",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "floor",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "ceiling",
+          "contrast_ratio": 6.676609625094115
+        },
+        {
+          "background": "rgb(255, 255, 255)",
+          "color": "rgb(83, 96, 76)",
+          "text": "Flat",
+          "contrast_ratio": 6.676609625094115
+        }
+      ],
+      "prior_failure": "../ui/hf-chart-contrast.before.json"
+    },
+    "limitation": "Proof chart triggers an incomplete automated color-contrast check; rendered SVG/legend colors on their computed white background were separately checked with the WCAG relative-luminance formula. No full manual accessibility certification."
+  },
+  "failed_hosted_attempts": [
+    {
+      "all_trained_semantic_projections_restored": true,
+      "at": "2026-11-15T22:52:12.710Z",
+      "current_script_paths": [
+        "/assets/index-Dbg-P8sf.js"
+      ],
+      "graphs": {
+        "california_schools": {
+          "edges": 138,
+          "means": 89,
+          "nodes": 123,
+          "semantic_sha256": "759b912321ca679dfcfd0fa99595eadf3c1f946beac08485877435e64b9c2490"
+        },
+        "superhero": {
+          "edges": 71,
+          "means": 49,
+          "nodes": 67,
+          "semantic_sha256": "297b27e2a4ae4f8c39f0a11d3c549a22c2ff28d931d370d5e1dc400a09a34247"
+        },
+        "thrombosis_prediction": {
+          "edges": 184,
+          "means": 135,
+          "nodes": 170,
+          "semantic_sha256": "66b2915d7ee93e835db110c8ab62dcc110f11b449a342b1ea7396ad3d1ba177d"
+        },
+        "toxicology": {
+          "edges": 83,
+          "means": 72,
+          "nodes": 62,
+          "semantic_sha256": "fd1ad21e31a24bab3aa5487d8f3963464b59b237abe4929d18e2b0da558f50ee"
+        }
+      },
+      "hosting_config_uses_https": false,
+      "hosting_fetch_final_url": "https://ishesatoshi-lore.hf.space/hosting/",
+      "hosting_fetch_status": 404,
+      "own_visitor_sandbox_after_rebuild": {
+        "edges": 0,
+        "nodes": 0,
+        "status": 200
+      },
+      "passed": false,
+      "revision": "4298813254b579d27fc56825a987744e002f059d",
+      "failure": "Full-URL Gradio root_path returned 404 in HF HTTPS environment; main React/API remained healthy. Local validator had not set SPACE_HOST."
+    }
+  ],
+  "limitations": [
+    "No CSP, Referrer-Policy, X-Content-Type-Options or X-Frame-Options header was observed. The verified access controls are not a complete security audit.",
+    "Free CPU hosting/storage can sleep/reset; visitor sandbox loss was observed and is expected.",
+    "Model request limits can be shared behind the hosting proxy; this is not a hosted load or uptime guarantee.",
+    "Strict public teaching is selected demonstration evidence, not a future-success guarantee or full provider-usage audit."
+  ]
+}

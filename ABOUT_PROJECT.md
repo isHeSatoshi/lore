@@ -20,12 +20,14 @@ This is the original proposal, not a list of proven capabilities. The
 - Corrections require explicit confirmation before learning. Rule confidence is
   feedback history, not proof that a meaning is correct.
 - The owner approved free Hugging Face hosting, superseding local-only hosting.
-  The native/Gradio adapter and pinned SDK runtime pass local checks. A hosting
-  credential is supplied; free eligibility and public deployment remain pending.
+  The [public app](https://ishesatoshi-lore.hf.space) runs on an existing free
+  CPU Basic allocation. The strict public toxicology teaching loop passes;
+  scoped access-control, keyboard/mobile and restoration checks also pass.
+  See [public validation evidence](results/r4/hosting_public.json).
   No paid plan or other provider is approved.
   Public repository creation and push are approved only after final checks.
-- The current working target is 01:00 IST if feasible, with 03:00 IST the latest
-  target. The event cutoff remains 09:00 IST.
+- The earlier 01:00/03:00 IST working targets were missed. The event cutoff
+  remains 16 November 2026, 09:00 IST.
 
 ## 1. Lore in one paragraph
 
@@ -253,7 +255,8 @@ Each visitor gets a private cold-start copy, so they watch it learn from nothing
 
 ## 13. Draft posts
 
-Fill the blanks from `results/<run>/summary.json`. Do not post numbers that are not in that file. HydraDB's handle on X is `@hydra_db`.
+Drafts only, not sent or authorized to post. Numbers below are the completed
+`r4` measurements. HydraDB's handle on X is `@hydra_db`.
 
 **Post 1, send today (building in public)**
 
@@ -263,7 +266,8 @@ Fill the blanks from `results/<run>/summary.json`. Do not post numbers that are 
 >
 > Lore learns those rules from every query and every correction, keeps them in a graph on HydraDB + SelfGraph, and hands the agent only what each question needs.
 >
-> Results on a public benchmark by morning.
+> On 500 held-out BIRD Mini-Dev questions: 46.2% schema-only, 54.2% Lore.
+> Same-facts flat retrieval scores 53.2%; Lore's lead over it is inconclusive.
 
 **Post 2, send with the submission (X)**
 
@@ -274,7 +278,10 @@ Fill the blanks from `results/<run>/summary.json`. Do not post numbers that are 
 > vector memory with the same feedback: 48.6%
 > same facts without the graph: 53.2%; the 1-point Lore lead is inconclusive
 >
-> MiniMax M3.1 Flash, medium effort, one seed. Live demo and code: see the verified links in README. Walkthrough: owner recording still needed. Draft only, not posted.
+> MiniMax M3.1 Flash, medium effort, one seed. Try [Lore](https://ishesatoshi-lore.hf.space).
+> Public [Space source](https://huggingface.co/spaces/isHeSatoshi/lore).
+> GitHub publication is blocked by repository-creation permissions; owner
+> walkthrough still needed. Draft only, not posted.
 
 **Post 3, LinkedIn**
 
@@ -288,7 +295,9 @@ Fill the blanks from `results/<run>/summary.json`. Do not post numbers that are 
 > - Flat retrieval of the same learned facts gave 53.2%. That comparison is inconclusive.
 > - This is one model, one seed and public benchmark data, not production accuracy or proof of demand.
 >
-> It is open source and built on HydraDB and SelfGraph. Demo, code and a short walkthrough are in the comments.
+> Try [Lore](https://ishesatoshi-lore.hf.space), built on HydraDB and SelfGraph.
+> MIT-licensed app source is public in the [HF Space](https://huggingface.co/spaces/isHeSatoshi/lore).
+> GitHub publication and the owner-recorded walkthrough remain outstanding.
 >
 > If you run a data team, I would like to know: would you let something like this write your semantic layer?
 
@@ -318,7 +327,8 @@ for the current release checklist.
 - **SelfGraph is days old and HydraDB 0.4.0 is a day old.** Bugs are likely. The plan has fallbacks.
 - **One model, one seed** unless time allows more.
 - **Stream labels are noisy.** The stream uses original BIRD dev labels, which have known errors. Lore may learn a few wrong rules. That is realistic.
-- **Hosting is not arranged yet.**
+- **Free hosting is ephemeral.** The public CPU Basic app can sleep, visitor
+  state can reset, and model calls remain quota-limited.
 
 ## 16. Sources
 

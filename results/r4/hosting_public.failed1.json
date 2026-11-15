@@ -1,0 +1,44 @@
+{
+  "all_trained_semantic_projections_restored": true,
+  "at": "2026-11-15T22:52:12.710Z",
+  "current_script_paths": [
+    "/assets/index-Dbg-P8sf.js"
+  ],
+  "graphs": {
+    "california_schools": {
+      "edges": 138,
+      "means": 89,
+      "nodes": 123,
+      "semantic_sha256": "759b912321ca679dfcfd0fa99595eadf3c1f946beac08485877435e64b9c2490"
+    },
+    "superhero": {
+      "edges": 71,
+      "means": 49,
+      "nodes": 67,
+      "semantic_sha256": "297b27e2a4ae4f8c39f0a11d3c549a22c2ff28d931d370d5e1dc400a09a34247"
+    },
+    "thrombosis_prediction": {
+      "edges": 184,
+      "means": 135,
+      "nodes": 170,
+      "semantic_sha256": "66b2915d7ee93e835db110c8ab62dcc110f11b449a342b1ea7396ad3d1ba177d"
+    },
+    "toxicology": {
+      "edges": 83,
+      "means": 72,
+      "nodes": 62,
+      "semantic_sha256": "fd1ad21e31a24bab3aa5487d8f3963464b59b237abe4929d18e2b0da558f50ee"
+    }
+  },
+  "hosting_config_uses_https": false,
+  "hosting_fetch_final_url": "https://ishesatoshi-lore.hf.space/hosting/",
+  "hosting_fetch_status": 404,
+  "own_visitor_sandbox_after_rebuild": {
+    "edges": 0,
+    "nodes": 0,
+    "status": 200
+  },
+  "passed": false,
+  "revision": "4298813254b579d27fc56825a987744e002f059d",
+  "failure": "Full-URL Gradio root_path returned 404 in HF HTTPS environment; main React/API remained healthy. Local validator had not set SPACE_HOST."
+}

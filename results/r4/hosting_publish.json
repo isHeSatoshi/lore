@@ -1,14 +1,74 @@
 {
+  "at": "2026-11-15T23:14:48.303343+00:00",
   "space_url": "https://huggingface.co/spaces/isHeSatoshi/lore",
   "app_url": "https://ishesatoshi-lore.hf.space",
   "public": true,
   "sdk": "gradio",
-  "requested_hardware": "zero-a10g",
-  "paid_plan_or_hardware_requested": false,
-  "existing_spaces_modified_or_deleted": false,
-  "initial_upload_succeeded": true,
-  "initial_build_error": "HF installs requirements before project source; .[factory] could not find pyproject.toml",
-  "repair": "Same runtime dependencies listed explicitly; only requirements.txt updated on the new Space",
-  "state": "rebuild pending public checks",
-  "at": "2026-11-15T21:56:07.476004+00:00"
+  "state": "RUNNING",
+  "current_hardware": "cpu-basic",
+  "requested_hardware": "cpu-basic",
+  "repo_created_at": "2025-08-08 18:50:52+00:00",
+  "initial_cpu_upload_revision": "bfc083e75b4f965b43093c8338c213bb603efece",
+  "legacy_reuse": {
+    "previous_id": "isHeSatoshi/chaos-to-care",
+    "previous_files": [
+      ".gitattributes",
+      "README.md"
+    ],
+    "previous_secret_count": 0,
+    "previous_variable_count": 0,
+    "already_public": true,
+    "already_requested_cpu_basic": true,
+    "renamed_existing_resource": true,
+    "original_creation_date_preserved": true,
+    "owner_authorized_obsolete_space_reuse": true
+  },
+  "initial_failed_zero_gpu_record": {
+    "space_url": "https://huggingface.co/spaces/isHeSatoshi/lore",
+    "app_url": "https://ishesatoshi-lore.hf.space",
+    "public": true,
+    "sdk": "gradio",
+    "requested_hardware": "zero-a10g",
+    "paid_plan_or_hardware_requested": false,
+    "existing_spaces_modified_or_deleted": false,
+    "initial_upload_succeeded": true,
+    "initial_build_error": "HF installs requirements before project source; .[factory] could not find pyproject.toml",
+    "repair": "Same runtime dependencies listed explicitly; only requirements.txt updated on the new Space",
+    "state": "rebuild pending public checks",
+    "at": "2026-11-15T21:56:07.476004+00:00"
+  },
+  "runtime_rejection": "No @spaces.GPU function detected during startup",
+  "failed_agent_created_zero_gpu_allocation_deleted": true,
+  "dummy_gpu_function_added": false,
+  "zero_gpu_to_cpu_hardware_switch_used": false,
+  "protected_runtime_secret_names": [
+    "FACTORY_API_KEY",
+    "SPACE_SIGNING_SECRET"
+  ],
+  "nonsecret_runtime_variables": {
+    "LORE_LLM_TRANSPORT": "factory",
+    "LORE_LLM_MODEL": "minimax-m3.1-flash",
+    "LORE_LLM_EFFORT": "medium",
+    "LORE_LLM_MAX_TOKENS": "0",
+    "LORE_RUN": "r4",
+    "LORE_RESULTS_RUN": "r4",
+    "FACTORY_DROID_AUTO_UPDATE_ENABLED": "false"
+  },
+  "hosting_token_in_runtime": false,
+  "paid_plan_or_hardware_or_storage_requested": false,
+  "other_existing_spaces_changed": 0,
+  "public_health_verified": true,
+  "strict_public_teaching_evidence": "hosting_browser.json",
+  "initial_cpu_snapshot": "lore-space-s9csvf9v",
+  "github_publication": {
+    "new_public_repo_created": false,
+    "creation_error": "HTTP 403 Resource not accessible by integration",
+    "graphql_and_rest_both_denied": true,
+    "existing_private_repo_visibility_changed": false
+  },
+  "verified_runtime_revision": "0281ca5454bbaddd2a0cd2deb0eccb0c81212908",
+  "verified_frontend_revision": "2463232b44060e8f502591b21d07894dd1d76f8b",
+  "final_public_checks": "hosting_public.json",
+  "public_checks_passed": true,
+  "latest_reviewed_snapshot": "lore-space-114bym2a"
 }

@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-15T23:13:34.895664+00:00",
+  "commit": "749a7cc604f833bca2a82f93e26f5020c96cbb4e",
+  "fresh_clone": true,
+  "fresh_virtualenv_and_dependency_install": true,
+  "python_venv_and_pip_readme_commands_passed": true,
+  "fresh_npm_ci_and_production_build": true,
+  "nonintegration_tests_passed": 165,
+  "integration_tests_deselected": 6,
+  "ruff_passed": true,
+  "actual_loopback_uvicorn_entrypoint": true,
+  "frontend_javascript_served": true,
+  "demo_manifest_databases": 4,
+  "demo_manifest_rules": 345,
+  "pinned_cli_provisioning_passed": true,
+  "model_consuming_routes_called": 0,
+  "metered_model_calls": 0,
+  "bird_data_reused": true,
+  "existing_hydradb_reused_without_restart": true,
+  "local_server_stopped_after_check": true,
+  "earlier_harness_attempts": [
+    {
+      "passed": false,
+      "reason": "Missing existing Hydra credential; startup correctly rejected it. Supplied only local Hydra settings privately."
+    },
+    {
+      "passed": false,
+      "reason": "Local metadata request exceeded the initial five-second HTTP probe; shutdown exceeded its initial twenty-second grace. Native-equivalent sixty-second HTTP deadline used for functional check; no latency guarantee claimed."
+    }
+  ],
+  "scope": "Clean current-source installation, 165 nonintegration tests, Ruff, frontend build and real local HTTP entrypoint. Existing BIRD data/Hydra reused; Docker startup/download and model query not repeated. Six real integrations pass separately in the 171-test release suite; seed restoration has a separate source-pinned native proof."
+}

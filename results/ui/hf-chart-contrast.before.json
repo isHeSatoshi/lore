@@ -1,0 +1,168 @@
+{
+  "observed_public_styles": [
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "10px",
+      "text": "Lore",
+      "textColor": "rgb(41, 95, 77)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(0, 0, 0)",
+      "fontSize": "10px",
+      "text": "Vector memory",
+      "textColor": "rgb(103, 98, 139)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "0",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "250",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "500",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "750",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "864",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(128, 128, 128)",
+      "fontSize": "10px",
+      "text": "Stream questions seen",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "0%",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "25%",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "50%",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "75%",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(102, 102, 102)",
+      "fontSize": "10px",
+      "text": "100%",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(128, 128, 128)",
+      "fontSize": "10px",
+      "text": "floor",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(128, 128, 128)",
+      "fontSize": "10px",
+      "text": "ceiling",
+      "textColor": "rgb(36, 59, 49)"
+    },
+    {
+      "backgrounds": [
+        "rgb(255, 255, 255)",
+        "rgb(245, 245, 239)"
+      ],
+      "color": "rgb(128, 128, 128)",
+      "fontSize": "10px",
+      "text": "Flat",
+      "textColor": "rgb(36, 59, 49)"
+    }
+  ],
+  "minimum_small_text_ratio": 4.5,
+  "default_label_ratio": 3.9494396480491147,
+  "passed": false,
+  "repair": "Explicit .chart .recharts-text fill #53604c; public verification follows."
+}

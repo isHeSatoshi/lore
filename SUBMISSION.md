@@ -2,26 +2,30 @@
 
 ## Readiness
 
-**Not ready to submit yet.** Full comparisons, final-source validation and
+**App verified; submission still needs a public GitHub repository and Loom.**
+Full comparisons, current-runtime validation and
 the seeded native cold start pass. All twelve teaching pairs and all 3,000
 trained-load requests now pass. The live-reader cold/integration refresh also
-passes; public hosted checks remain open. Factory-only `r4` is complete with MiniMax
+passes; scoped public hosted checks also pass. Factory-only `r4` is complete with MiniMax
 M3.1 Flash at medium effort. Raw-provider `r2` remains paused on quota.
 SDK and raw-provider answers are not combined; failed `r3` preflight answers
 are excluded.
 
 The owner approved free Hugging Face hosting, superseding the local-only
 preference. The native/Gradio and pinned SDK prototypes pass. Hosting account
-access and write scope are verified; the public free ZeroGPU Space is created
-and rebuilding after a dependency-order repair. Public app checks remain pending. No paid plan, other
-provider or tunnel is approved. A loopback address is not a hosted judge link.
+access and write scope are verified. The public app runs on an existing free
+CPU Basic allocation; strict public-browser teaching, HTTPS routing,
+keyboard/mobile and graph-restoration checks pass. ZeroGPU rejected this
+CPU-only app and was not bypassed.
+No paid plan, other provider or tunnel is approved.
+A loopback address is not a hosted judge link.
 Public repository creation and push are approved after final checks.
 
 | Deliverable | Current state |
 |---|---|
-| Local app | `http://127.0.0.1:8000`, development preview |
-| Public repository | Not created or pushed yet |
-| Hosted judge link | [HF Space](https://huggingface.co/spaces/isHeSatoshi/lore), building; not yet verified |
+| Local app | Clean-installed loopback entrypoint verified; temporary preview stopped after checks |
+| Public repository | Creation blocked by the GitHub integration's HTTP 403; existing private visibility unchanged |
+| Hosted judge link | [Lore](https://ishesatoshi-lore.hf.space), verified on free CPU Basic |
 | Loom | Owner recording and link still needed |
 | Social posts | Drafts only; not authorized to send |
 
@@ -49,18 +53,28 @@ Source: [`results/r4/summary.json`](results/r4/summary.json).
 
 The separate SDK protocol is recorded in
 [`results/r4/learning_configuration.json`](results/r4/learning_configuration.json).
-The latest full integration run passed **155 tests**, with Ruff and the typed
+The latest full integration run passed **171 tests** with zero skips, with Ruff and the typed
 frontend build passing. The real native cold start restores all 345 stored
-rules across the four measured databases: 38.80 seconds fresh, 6.03 seconds
+rules across the four measured databases: 22.32 seconds fresh, 5.03 seconds
 on restart, zero model calls. [Proof](results/r4/hosting_cold.json).
 These are local observations, not hosted guarantees. Tests do not substitute for
 the accuracy, independent teaching-replay, trained-load or hosted-app gates.
+The [public check report](results/r4/hosting_public.json) records exact scope and
+limits, including missing hardening headers and expected free-host visitor-state
+loss. The [clean-install check](results/smoke/clean_clone.hosted.json) passed
+165 nonintegration tests and the actual loopback entrypoint after fresh installs.
 
 Do not use the exploratory small-run scores as the final headline. All three
 audits, including failures and remaining noisy rules, are preserved in
 `results/s1/`, `results/s2/` and `results/s3/`.
 
-Public UI/teaching verification and the repository URL are still needed before submission.
+The public repository URL and owner-recorded Loom are still needed before submission.
+GitHub repository creation was denied by both GraphQL and REST with HTTP 403.
+The existing private repository was not exposed. The owner must create a new
+public repository and grant write access, or supply credentials with repository
+creation permission, before an authorized push can happen.
+The public toxicology browser trial now passes the full strict loop. The first
+school trial did not pass and is retained, not counted as a success.
 All first-round teaching outcomes are retained: four passes across 48 attempts
 did not meet the three-per-database release gate. Bounded further discovery
 uses the existing rule explanation and more diverse follow-ups.
@@ -117,12 +131,12 @@ from generated results and real links. The owner must approve any posting.
 - [x] Full floor, ceiling, Lore, vector and flat results cover all test questions.
 - [x] Report paired intervals, per-database scores, tokens and the flat ablation.
 - [x] Export finished seeds and select the measured demo databases.
-- [ ] Complete the real teaching replays and browser walkthrough.
+- [x] Complete the real teaching replays and browser walkthrough.
 - [x] Run the real seeded native launcher cold-start and restoration check.
 - [x] Run trained grounding load.
-- [ ] Recheck clean-source reproduction, secrets, Git history and staged scope.
-- [ ] Update the README and this handoff with final results and limitations.
+- [x] Recheck clean-source reproduction, secrets, Git history and staged scope.
+- [x] Update the README and this handoff with final results and limitations.
 - [ ] Create and push the public repository using the owner's approval.
 - [ ] Owner records Loom and supplies its link.
-- [ ] Verify eligible free Hugging Face access, deploy and test the real judge link.
+- [x] Verify eligible free Hugging Face access, deploy and test the real judge link.
 - [ ] Owner approves and sends any launch posts, then submits the real links.
