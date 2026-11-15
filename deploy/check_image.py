@@ -3,11 +3,13 @@
 import asyncio
 import importlib.util
 import json
+import logging
 import os
+from types import SimpleNamespace
 
 import httpx
 
-from lore.api import app
+from lore.api import app, create_app
 from lore.config import ROOT
 
 
@@ -34,6 +36,37 @@ async def main():
                 headers={"Content-Type": "application/json"},
             )
             assert invalid.status_code == 422
+
+    async def noop():
+        pass
+
+    async def fail(*_args):
+        raise RuntimeError("private image-check request detail")
+
+    boundary = create_app(SimpleNamespace(startup=noop, close=noop, answer=fail))
+    records = []
+
+    class Capture(logging.Handler):
+        def emit(self, record):
+            records.append(record.getMessage())
+
+    logger = logging.getLogger("lore.api")
+    capture = Capture()
+    logger.addHandler(capture)
+    try:
+        async with boundary.router.lifespan_context(boundary):
+            async with httpx.AsyncClient(
+                transport=httpx.ASGITransport(app=boundary), base_url="http://image-check"
+            ) as client:
+                response = await client.post(
+                    "/api/ask", json={"db": "fixture", "question": "A question"}
+                )
+                assert response.status_code == 503
+                assert "private image-check" not in response.text
+                assert all("private image-check" not in line for line in records)
+                assert any("RuntimeError" in line for line in records)
+    finally:
+        logger.removeHandler(capture)
     print(
         json.dumps(
             {
@@ -44,7 +77,9 @@ async def main():
                 "database_listing": True,
                 "frontend": True,
                 "invalid_unicode_rejected": True,
+                "unexpected_service_error_sanitized": True,
                 "bench_dependencies_absent": True,
+                "trained_databases": sum(db["trained"] for db in databases.json()["databases"]),
                 "model_calls": 0,
                 "public_ports": 0,
             },

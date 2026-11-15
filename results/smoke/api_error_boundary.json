@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-15T14:47:48.580462+00:00",
+  "regressions": 2,
+  "reproduced_before_fix": true,
+  "status_after_fix": 503,
+  "request_details_in_response_or_captured_logs": false,
+  "asgi_exception_escape": false,
+  "same_action_recovers": true,
+  "request_guard_restored": true,
+  "full_integration_tests": 62,
+  "ruff": "passed",
+  "benchmark_source_hashes": "unchanged"
+}

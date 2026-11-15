@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-15T14:45:10.247840+00:00",
+  "commit": "5f3c000786b0d476f6a5e0f9f529ed4ec1279385",
+  "fresh_clone": true,
+  "fresh_virtualenv_and_dependency_install": true,
+  "integration_tests_passed": true,
+  "external_model_network_blocked_in_tests": true,
+  "ruff_passed": true,
+  "fresh_npm_ci_and_production_build": true,
+  "bird_data_reused": true,
+  "existing_hydradb_reused_without_restart": true,
+  "scope": "Isolated clean-source/install check, not the final cold Docker/seed demo reproduction"
+}

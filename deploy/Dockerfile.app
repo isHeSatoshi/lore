@@ -8,7 +8,7 @@ RUN npm run build
 FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 LORE_ROOT=/app
 WORKDIR /app
-COPY pyproject.toml LICENSE ./
+COPY pyproject.toml LICENSE DATA_LICENSE.md ./
 COPY lore/ ./lore/
 RUN pip install --no-cache-dir . \
     && useradd --uid 10002 --create-home app \

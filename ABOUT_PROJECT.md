@@ -4,6 +4,24 @@
 > Written 15 Nov 2026, about 3 PM IST. Submission cutoff: **16 Nov 2026, 9:00 AM IST**.
 > This file explains what we are building and why. The step-by-step build instructions are in `spec-plan.md`.
 
+## Current implementation status
+
+This is the original proposal, not a list of proven capabilities. The
+[README](README.md) describes the delivered implementation and measured results;
+[SUBMISSION.md](SUBMISSION.md) tracks the remaining handoff work.
+
+- Full `r2` floor and ceiling are complete. Learned comparisons are still running.
+- Grounding uses stored direct joins. Native path search, path compression and
+  synonym merging are not implemented.
+- Corrections require explicit confirmation before learning. Rule confidence is
+  feedback history, not proof that a meaning is correct.
+- The owner approved free Hugging Face hosting, superseding local-only hosting.
+  The native/Gradio adapter passes local checks; account eligibility and public
+  deployment remain pending. No paid plan or other provider is approved.
+  Public repository creation and push are approved only after final checks.
+- The current working target is 01:00 IST if feasible, with 03:00 IST the latest
+  target. The event cutoff remains 09:00 IST.
+
 ## 1. Lore in one paragraph
 
 Every data team has unwritten rules. "Status 2, 3 and 4 count as revenue." "School-level rows are `rtype = 'S'`." "Join orders to customers through accounts." Text-to-SQL agents fail without these rules, and today people write them down by hand in a semantic layer. Lore learns them instead. Each time the agent answers a question, Lore looks at what happened: did the SQL run, was it right, and if not, what did the analyst change. It turns that into small facts in a versioned graph stored in HydraDB. For the next question it walks the graph and gives the agent only the rules, joins and examples that question needs. The more it is used, the more accurate it gets.

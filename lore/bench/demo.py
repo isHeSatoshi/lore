@@ -119,6 +119,7 @@ def bundle(run, parent):
     target = Path(tempfile.mkdtemp(prefix=f"{run}-demo-", dir=parent))
     bird = target / "data/bird"
     bird.mkdir(parents=True)
+    shutil.copy2(ROOT / "DATA_LICENSE.md", bird / "DATA_LICENSE.md")
     layout = {"databases": {}, "descriptions": {}}
     for entry in manifest["databases"]:
         db = entry["id"]

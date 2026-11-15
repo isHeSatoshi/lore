@@ -1,0 +1,22 @@
+{
+  "status": "local_compatibility_pass",
+  "image": "ghcr.io/hydra-db/hydradb@sha256:ab71d651fefee13ebb23eb56d72316065bdca563ff7587442e07be663f2bf880",
+  "binary_sha256": "821533e10c13228809ca62e16cc6f9c791f2c94a3a7f155394c002080a6cc979",
+  "gradio": "6.32.0",
+  "fastapi": "0.163.1",
+  "selfgraph": "0.2.1",
+  "non_root_uid": 1000,
+  "read_only_root": true,
+  "docker_socket_mounted": false,
+  "native_graph_schema": {"entities": 3, "HAS_COLUMN": 2},
+  "engine_child_restart_restored_graph": true,
+  "gradio_mount_preserved_api_lifecycle": true,
+  "real_launcher_health_react_gradio": true,
+  "model_calls": 0,
+  "public_ports": 0,
+  "integration_validation": {"passed": 67, "elapsed_s": 110.77, "ruff": "pass", "diff_check": "pass"},
+  "copied_binary_test_network": "none",
+  "oci_installer_test_network": "public registry download; no model requests",
+  "diagnostic": "Docker's default tmpfs was noexec; retested with an executable tmpfs. Production state defaults to the home cache.",
+  "not_established": ["free account eligibility", "HF deployment", "trained cold start", "hosted performance", "durable state", "public uptime"]
+}

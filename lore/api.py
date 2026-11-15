@@ -608,6 +608,18 @@ def create_app(service=None):
         finally:
             request_guard.reset(token)
 
+    @app.middleware("http")
+    async def service_errors(request: Request, call_next):
+        try:
+            return await call_next(request)
+        except Exception as exc:
+            # Catch before ServerErrorMiddleware re-raises and logs request details.
+            logging.getLogger(__name__).warning("Service request failed (%s)", type(exc).__name__)
+            return JSONResponse(
+                {"detail": "The service is temporarily unavailable. Please retry shortly."},
+                status_code=503,
+            )
+
     @app.get("/healthz")
     async def health():
         return {"status": "ok"}

@@ -2,7 +2,10 @@
 
 A text-to-SQL semantic layer that learns reusable database knowledge from verified corrections, built on HydraDB and SelfGraph.
 
-**Live demo:** local only. The owner has deferred public hosting.
+**Live demo:** local preview only so far. Free Hugging Face hosting is approved;
+the native Gradio adapter passes local compatibility checks, but account access
+and free-tier eligibility are still unverified. No public app exists yet.
+See [hosting status and release steps](deploy/hf/README.md).
 
 ## The problem
 
@@ -44,6 +47,8 @@ validation (`s3`) scored 34/95 for floor and 49/95 for Lore. All 87 MEANS
 relations were inspected and both leak checks passed. The
 [review](results/s3/rule_review.md) records final validator repairs and remaining
 noisy meanings/aliases. These exploratory results are not a full-test gain.
+The recorded `s3` score predates its final post-review validator guards and was
+not rescored afterward.
 
 ![Current, incomplete benchmark snapshot](results/r2/curve.png)
 
@@ -101,6 +106,8 @@ does not pretend these mechanisms are enabled.
   Execution failures are not treated as empty results.
 - Model/network failures retry or stop the run rather than silently becoming
   wrong answers. SQL timeouts remain execution failures.
+- Frozen learning sources and runtime adjustments are recorded in
+  [`learning_configuration.json`](results/r2/learning_configuration.json).
 - Wilson intervals describe accuracy; paired bootstrap intervals compare the
   same completed test questions. Partial runs are not evidence of a gain.
 
@@ -163,8 +170,9 @@ baseline gate. Then run and inspect the small learning validation before the
 full systems:
 
 ```sh
-.venv/bin/python -m lore.bench.run --run s3 --baseline-run r2 --systems floor,lore --dbs financial,california_schools --stream-cap 30 --checkpoints 1.0
-.venv/bin/python -m lore.bench.inspect_rules --run s3
+.venv/bin/python -m lore.bench.run --run validation --baseline-run r2 --systems floor,lore --dbs financial,california_schools --stream-cap 30 --checkpoints 1.0
+.venv/bin/python -m lore.bench.inspect_rules --run validation
+export LORE_LLM_CONCURRENCY=4
 .venv/bin/python -m lore.bench.run --run r2 --systems lore --stream-cap 80 --checkpoints 0.25,0.5,1.0
 .venv/bin/python -m lore.bench.run --run r2 --systems vector --stream-cap 80 --checkpoints 0.25,0.5,1.0
 .venv/bin/python -m lore.bench.run --run r2 --systems flat --from-run r2
@@ -175,6 +183,8 @@ full systems:
 
 Run `.venv/bin/pytest -q` for local tests. For real HydraDB integration checks,
 run `LORE_INTEGRATION=1 .venv/bin/pytest -q`.
+Use an unused validation run ID. The recorded `s1`–`s3` runs are historical
+calibrations, not results to overwrite with the final code.
 
 ## Built but not established by reported numbers
 
@@ -183,9 +193,11 @@ vector and flat implementations, paired reporting and deployment image exist.
 Their unit/integration checks are not substitutes for the unfinished accuracy,
 trained-load and final live-demo gates.
 
-Deployment instructions are in [`deploy/README.md`](deploy/README.md).
-Hosting remains local by owner choice. Public repository publication is
+VM deployment instructions are in [`deploy/README.md`](deploy/README.md);
+the approved free-hosting route is in [`deploy/hf/README.md`](deploy/hf/README.md).
+Hosting access and deployment remain pending. Public repository publication is
 approved only after final checks; nothing has been published yet.
+The [submission handoff](SUBMISSION.md) tracks owner actions and outstanding gates.
 
 ## Data attribution
 
@@ -195,6 +207,7 @@ Source URLs and hashes are recorded in
 [`results/data/sources.json`](results/data/sources.json).
 BIRD data and derived benchmark/seed data retain **CC BY-SA 4.0** terms.
 Downloaded databases are not included in this repository.
+See [data attribution and modification notices](DATA_LICENSE.md).
 
 ## License
 

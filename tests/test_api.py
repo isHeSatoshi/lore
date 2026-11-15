@@ -14,6 +14,43 @@ from lore.api import AppState, Service, create_app, validate_sql
 from lore.llm import request_guard
 
 
+@pytest.mark.parametrize("path", ["/api/ask", "/api/graph?db=fixture&mode=sandbox"])
+async def test_unexpected_service_errors_do_not_escape_or_disclose_details(path, caplog):
+    private = "private-request-detail-" + uuid4().hex
+
+    async def noop():
+        pass
+
+    async def fail(*_args, **_kwargs):
+        assert request_guard.get() is not None
+        raise RuntimeError(private)
+
+    service = SimpleNamespace(startup=noop, close=noop, answer=fail, context=fail)
+    app = create_app(service)
+    async with (
+        app.router.lifespan_context(app),
+        httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://test") as client,
+    ):
+        body = {"db": "fixture", "question": "A question"}
+        response = (
+            await client.post(path, json=body) if path == "/api/ask" else await client.get(path)
+        )
+        assert response.status_code == 503
+        assert "temporarily unavailable" in response.json()["detail"]
+        assert private not in response.text and private not in caplog.text
+        assert "RuntimeError" in caplog.text
+        assert request_guard.get() is None
+
+        async def recovered(*_args, **_kwargs):
+            return {"ok": True} if path == "/api/ask" else None
+
+        service.answer = service.context = recovered
+        response = (
+            await client.post(path, json=body) if path == "/api/ask" else await client.get(path)
+        )
+        assert response.status_code == 200
+
+
 @pytest.mark.parametrize(
     "sql",
     [
