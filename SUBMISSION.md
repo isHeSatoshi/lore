@@ -4,16 +4,16 @@
 
 **Not ready to submit yet.** Full comparisons, final-source validation and
 the seeded native cold start pass. All twelve teaching pairs and all 3,000
-trained-load requests now pass; final live-reader cold/integration refresh and
-public hosted checks remain open. Factory-only `r4` is complete with MiniMax
+trained-load requests now pass. The live-reader cold/integration refresh also
+passes; public hosted checks remain open. Factory-only `r4` is complete with MiniMax
 M3.1 Flash at medium effort. Raw-provider `r2` remains paused on quota.
 SDK and raw-provider answers are not combined; failed `r3` preflight answers
 are excluded.
 
 The owner approved free Hugging Face hosting, superseding the local-only
 preference. The native/Gradio and pinned SDK prototypes pass. Hosting account
-access and write scope are verified; eligible free Space creation and the real
-deployment remain pending. No paid plan, other
+access and write scope are verified; the public free ZeroGPU Space is created
+and rebuilding after a dependency-order repair. Public app checks remain pending. No paid plan, other
 provider or tunnel is approved. A loopback address is not a hosted judge link.
 Public repository creation and push are approved after final checks.
 
@@ -21,7 +21,7 @@ Public repository creation and push are approved after final checks.
 |---|---|
 | Local app | `http://127.0.0.1:8000`, development preview |
 | Public repository | Not created or pushed yet |
-| Hosted judge link | Free Hugging Face approved; access verified, deployment pending |
+| Hosted judge link | [HF Space](https://huggingface.co/spaces/isHeSatoshi/lore), building; not yet verified |
 | Loom | Owner recording and link still needed |
 | Social posts | Drafts only; not authorized to send |
 
@@ -49,9 +49,9 @@ Source: [`results/r4/summary.json`](results/r4/summary.json).
 
 The separate SDK protocol is recorded in
 [`results/r4/learning_configuration.json`](results/r4/learning_configuration.json).
-The latest full integration run passed **142 tests**, with Ruff and the typed
+The latest full integration run passed **155 tests**, with Ruff and the typed
 frontend build passing. The real native cold start restores all 345 stored
-rules across the four measured databases: 41.65 seconds fresh, 5.42 seconds
+rules across the four measured databases: 38.80 seconds fresh, 6.03 seconds
 on restart, zero model calls. [Proof](results/r4/hosting_cold.json).
 These are local observations, not hosted guarantees. Tests do not substitute for
 the accuracy, independent teaching-replay, trained-load or hosted-app gates.
@@ -60,7 +60,7 @@ Do not use the exploratory small-run scores as the final headline. All three
 audits, including failures and remaining noisy rules, are preserved in
 `results/s1/`, `results/s2/` and `results/s3/`.
 
-Public URLs and final live-reader validation must still be added before submission.
+Public UI/teaching verification and the repository URL are still needed before submission.
 All first-round teaching outcomes are retained: four passes across 48 attempts
 did not meet the three-per-database release gate. Bounded further discovery
 uses the existing rule explanation and more diverse follow-ups.

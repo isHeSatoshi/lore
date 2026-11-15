@@ -207,7 +207,11 @@ def validate_snapshot(package, root, temporary, credentials):
     require(read_json(bird / "paths.json") == expected_layout, "data-layout")
     data_files = ["minidev/sqlite.json", "minidev/prompt_template.txt", *expected_layout["databases"].values()]
     for relative in expected_layout["descriptions"].values():
-        data_files.extend(p.relative_to(original).as_posix() for p in (original / relative).rglob("*") if p.is_file())
+        data_files.extend(
+            p.relative_to(original).as_posix()
+            for p in (original / relative).rglob("*")
+            if p.is_file() and p.name != ".DS_Store"
+        )
     require(
         {p.relative_to(bird).as_posix() for p in bird.rglob("*") if p.is_file()}
         == {"paths.json", "DATA_LICENSE.md", *data_files},

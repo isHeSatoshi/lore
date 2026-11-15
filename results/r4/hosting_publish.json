@@ -1,0 +1,14 @@
+{
+  "space_url": "https://huggingface.co/spaces/isHeSatoshi/lore",
+  "app_url": "https://ishesatoshi-lore.hf.space",
+  "public": true,
+  "sdk": "gradio",
+  "requested_hardware": "zero-a10g",
+  "paid_plan_or_hardware_requested": false,
+  "existing_spaces_modified_or_deleted": false,
+  "initial_upload_succeeded": true,
+  "initial_build_error": "HF installs requirements before project source; .[factory] could not find pyproject.toml",
+  "repair": "Same runtime dependencies listed explicitly; only requirements.txt updated on the new Space",
+  "state": "rebuild pending public checks",
+  "at": "2026-11-15T21:56:07.476004+00:00"
+}

@@ -127,7 +127,7 @@ def prepare(root, run, data_bundle, parent):
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(bird / relative, dest)
     for relative in layout["descriptions"].values():
-        shutil.copytree(bird / relative, destination / relative)
+        shutil.copytree(bird / relative, destination / relative, ignore=shutil.ignore_patterns(".DS_Store"))
     (target / "seeds").mkdir()
     for db in databases:
         shutil.copy2(root / "seeds" / f"{db}.json", target / "seeds" / f"{db}.json")

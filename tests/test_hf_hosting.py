@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 import shutil
+import tomllib
 from types import SimpleNamespace
 
 import pytest
@@ -159,7 +160,11 @@ def test_finished_release_is_allowlisted_and_rejects_smoke_load(tmp_path):
     assert (target / "data/bird/DATA_LICENSE.md").read_text() == "data notice"
     assert (target / "droid_runtime.py").exists()
     assert (target / "FACTORY_NOTICE.md").exists()
-    assert (target / "requirements.txt").read_text().splitlines()[0] == ".[factory]"
+    requirements = set((target / "requirements.txt").read_text().splitlines())
+    project = tomllib.loads((ROOT / "pyproject.toml").read_text())["project"]
+    assert set(project["dependencies"] + project["optional-dependencies"]["factory"]) <= requirements
+    assert "gradio==6.32.0" in requirements
+    assert not any(line.startswith((".", "-e", "file:")) for line in requirements)
 
 
 def test_droid_download_is_verified_atomic_and_cached(tmp_path, monkeypatch):

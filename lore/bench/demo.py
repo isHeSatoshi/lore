@@ -150,7 +150,10 @@ def bundle(run, parent):
             desc_relative = Path(paths()["descriptions"][db])
             if desc_relative.is_absolute() or ".." in desc_relative.parts:
                 raise ValueError("Description paths must be portable")
-            shutil.copytree(description_dir(db), bird / desc_relative)
+            shutil.copytree(
+                description_dir(db), bird / desc_relative,
+                ignore=shutil.ignore_patterns(".DS_Store"),
+            )
             layout["descriptions"][db] = str(desc_relative)
     (bird / "minidev").mkdir()
     for file in ("sqlite.json", "prompt_template.txt"):

@@ -1,6 +1,9 @@
 # Free Hugging Face hosting
 
-Status: **local compatibility passed, not deployed**. This is separate from
+Status: **free Space created and rebuilding, public verification pending**.
+[Space](https://huggingface.co/spaces/isHeSatoshi/lore). The first build exposed
+HF's dependency-before-source ordering; explicit equivalent runtime requirements
+replace `.[factory]`, without changing the model or runtime code. This is separate from
 the Docker/VM deployment. No paid plan or hardware is authorized.
 
 ## Access gate
@@ -40,7 +43,8 @@ api.create_repo(
 Here `api` is an authenticated `HfApi` instance and `SpaceHardware` comes from
 `huggingface_hub`. Explicit ZeroGPU selection is essential: do not accept the
 default CPU Basic creation path. No paid storage or hardware is requested.
-No creation, upload, billing mutation or existing-Space restart was performed.
+The initial access check made no writes. The subsequent authorized publication
+created only the new public free ZeroGPU Space; no existing Space was changed.
 Existing paused upgraded-hardware configurations were left untouched; do not
 resume/reuse them. Keep the deployment token out of app runtime Secrets, chat,
 Git and argv. Do not restart the benchmark computer.
@@ -108,8 +112,8 @@ passed. Actual HF creation, public teaching and hosted restoration remain unprov
 [`hosting_cold.json`](../../results/r4/hosting_cold.json) records the real launcher,
 not a fixture: non-root uid 1002, read-only root, no Docker socket or published
 port, and zero model-consuming routes or metered model calls. Fresh setup
-(including pinned binary provisioning and seed import) took **41.65 seconds**;
-restart took **5.42 seconds**. All **345 MEANS rules** across the measured four
+(including pinned binary provisioning and seed import) took **38.80 seconds**;
+restart took **6.03 seconds**. All **345 MEANS rules** across the measured four
 databases were restored, and exact node/edge records survived restart. Trained
 certification returned 403 without modifying the graph; private Gradio file
 requests were denied and the React JavaScript and Gradio mount were served.

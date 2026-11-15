@@ -2,10 +2,9 @@
 
 A text-to-SQL semantic layer that learns reusable database knowledge from verified corrections, built on HydraDB and SelfGraph.
 
-**Live demo:** local preview only so far. Free Hugging Face hosting is approved;
-the native Gradio and pinned SDK adapters pass local compatibility checks.
-Hosting account access and write scope are verified; actual free Space
-creation and public checks remain pending. No public app exists yet.
+**Hosting:** the [free HF Space](https://huggingface.co/spaces/isHeSatoshi/lore)
+has been created on ZeroGPU. Its first dependency-order build failure is
+repaired; the rebuild and public-app verification are in progress.
 See [hosting status and release steps](deploy/hf/README.md).
 
 ## The problem
@@ -308,8 +307,9 @@ export LORE_LLM_CONCURRENCY=4
 
 Run `.venv/bin/pytest -q` for local tests. For real HydraDB integration checks,
 run `LORE_INTEGRATION=1 .venv/bin/pytest -q`.
-The latest [integration-enabled release check](results/smoke/release_tests.final.json)
-passes all **142 tests**, plus Ruff and the typed frontend build.
+The latest [integration-enabled release check](results/smoke/release_tests.live.json)
+passes all **155 tests**, plus Ruff and the typed frontend build. Subsequent
+packaging-only fixes pass 69 focused checks.
 Use an unused validation run ID. The recorded `s1`–`s3` runs are historical
 calibrations, not results to overwrite with the final code.
 
@@ -318,13 +318,13 @@ calibrations, not results to overwrite with the final code.
 The sandbox UI, correction confirmation, rule certification, seed round-trip,
 vector and flat implementations, paired reporting and deployment image exist.
 Full accuracy comparisons and a real four-database seeded cold start are now
-complete. Independent teaching discovery, trained load and public-host checks
-remain separate gates; tests are not substitutes for them.
+complete. All twelve teaching pairs and all 3,000 trained-load requests pass.
+Public-host checks remain a separate gate; tests are not substitutes for them.
 
 VM deployment instructions are in [`deploy/README.md`](deploy/README.md);
 the approved free-hosting route is in [`deploy/hf/README.md`](deploy/hf/README.md).
-Hosting access is verified; free deployment remains pending. Public repository publication is
-approved only after final checks; nothing has been published yet.
+The free Space is published and rebuilding; public verification remains pending.
+Public repository publication is approved after final checks.
 The [submission handoff](SUBMISSION.md) tracks owner actions and outstanding gates.
 
 ## Data attribution

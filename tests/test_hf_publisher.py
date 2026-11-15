@@ -130,6 +130,7 @@ def release(tmp_path, monkeypatch):
         desc = bird / db / "database_description"
         desc.mkdir(parents=True)
         (desc / "table.csv").write_text("column,description\nid,identifier\n")
+        (desc / ".DS_Store").write_bytes(b"irrelevant archive metadata, never publish")
         (bird / f"{db}.sqlite").write_bytes(b"fixture database")
     write_json(results / "demo.json", {"run": "r4", "databases": databases})
     write_json(results / "hosting_cold.json", {
@@ -222,6 +223,7 @@ def test_explicit_publish_creates_only_free_new_space_and_uploads_snapshot(relea
     assert "results/r4/seeds.json" in api.uploaded
     assert "results/r4/per_db.md" in api.uploaded
     assert "results/r4/demo_replay_round1.json" in api.uploaded
+    assert not any(Path(p).name == ".DS_Store" for p in api.uploaded)
     assert not any(b"offline-hosting-credential" in value or b"offline-factory-credential" in value for value in api.uploaded.values())
 
 
