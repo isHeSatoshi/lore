@@ -1,0 +1,37 @@
+{
+  "run": "r2",
+  "recorded_at": "2026-11-15T16:39:42.296563+00:00",
+  "previous_interruption": "interruption.json",
+  "provider_error": {
+    "http_status": 429,
+    "code": 2056,
+    "message": "Token Plan usage limit reached",
+    "quota_window": "Not identified by the API response"
+  },
+  "failed_operation": "Lore learning reflection; database/key not identified in the traceback",
+  "retries_exhausted": true,
+  "provider_failure_scored_wrong": false,
+  "completed_provider_usage": {
+    "input_tokens": 9145137,
+    "output_tokens": 2592176,
+    "calls": 3217
+  },
+  "usage_caveat": "Interrupted in-flight provider usage may not have been recorded",
+  "below_code_input_budget": true,
+  "lore_stream_answers": 843,
+  "stream_total": 864,
+  "lore_checkpoint_coverage": {"0.25": 500, "0.5": 500, "1.0": 258},
+  "completed_lore_databases": 7,
+  "vector_started": false,
+  "flat_started": false,
+  "full_gain_established": false,
+  "resume": "After restored provider access, reuse the same r2 journal and graph states with unchanged model, effort, prompts, split and checkpoints",
+  "offline_report": {
+    "status": "refreshed_successfully",
+    "model_calls": 0,
+    "complete": false,
+    "comparisons": {},
+    "note": "Initial 180-second refresh timed out; the same count method completed with per-database progress and a longer finite limit"
+  },
+  "retry_state": "Paused pending confirmed restored provider access"
+}

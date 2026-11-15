@@ -4,6 +4,8 @@
 
 **Not ready to submit yet.** Full learned comparisons, the measured teaching
 demo, trained load and the final local image check remain unfinished.
+The benchmark is paused on MiniMax's 2056 usage quota. Saved progress is
+resumable; no model retry is running.
 
 The owner approved free Hugging Face hosting, superseding the local-only
 preference. The local native/Gradio prototype passes, but credentials and

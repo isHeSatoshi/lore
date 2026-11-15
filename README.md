@@ -20,6 +20,9 @@ knowledge block for the next question. It does not fine-tune the model.
 
 No learned-system improvement claim is established yet. Both baselines have
 completed; learning checkpoints and ablations must finish before conclusions.
+The run is paused on MiniMax's 2056 usage quota. Progress is saved: the first
+two Lore checkpoints cover 500/500 questions; the final checkpoint is 258/500.
+Vector and flat have not started. No automatic model retry is running.
 
 | System | Strict execution accuracy | 95% Wilson interval | Evaluated |
 |---|---:|---:|---:|

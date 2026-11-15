@@ -1,0 +1,31 @@
+{
+  "run": "r2",
+  "recorded_at": "2026-11-15T14:54:23.570914+00:00",
+  "provider_error": {
+    "http_status": 429,
+    "code": 2056,
+    "message": "Token Plan usage limit reached",
+    "quota_window": "Not identified by the API response"
+  },
+  "request": "lore/stream/0/superhero/s818",
+  "retries_exhausted": true,
+  "provider_failure_scored_wrong": false,
+  "completed_provider_usage": {
+    "input_tokens": 2775083,
+    "output_tokens": 1090870,
+    "calls": 1049
+  },
+  "below_code_input_budget": true,
+  "lore_checkpoint_coverage": {
+    "0.25": 95,
+    "0.5": 0,
+    "1.0": 0
+  },
+  "resume": "Same r2 journal and graph state, same model/effort/protocol; resumption launched after owner-confirmed reset",
+  "full_gain_established": false,
+  "recovery": {
+    "owner_confirmed_reset": true,
+    "confirmed_at": "2026-11-15T15:06:11.676599+00:00",
+    "action": "Resume same r2 journal at concurrency 4 and two-second pacing; notify after each complete system report"
+  }
+}

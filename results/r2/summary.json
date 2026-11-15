@@ -84,38 +84,47 @@
       {
         "checkpoint": 0.25,
         "questions_seen": 216,
-        "n": 0,
+        "n": 500,
         "expected": 500,
-        "complete": false,
-        "correct": 0,
-        "accuracy": null,
-        "ci95": null,
-        "mean_prompt_tokens": null,
-        "mean_block_chars": null
+        "complete": true,
+        "correct": 241,
+        "accuracy": 48.2,
+        "ci95": [
+          43.850658762453506,
+          52.576788863208094
+        ],
+        "mean_prompt_tokens": 3204.3,
+        "mean_block_chars": 2070.572
       },
       {
         "checkpoint": 0.5,
         "questions_seen": 432,
-        "n": 0,
+        "n": 500,
         "expected": 500,
-        "complete": false,
-        "correct": 0,
-        "accuracy": null,
-        "ci95": null,
-        "mean_prompt_tokens": null,
-        "mean_block_chars": null
+        "complete": true,
+        "correct": 249,
+        "accuracy": 49.8,
+        "ci95": [
+          45.43568605917084,
+          54.16736367701378
+        ],
+        "mean_prompt_tokens": 3209.458,
+        "mean_block_chars": 2106.218
       },
       {
         "checkpoint": 1.0,
         "questions_seen": 864,
-        "n": 0,
+        "n": 258,
         "expected": 500,
         "complete": false,
-        "correct": 0,
-        "accuracy": null,
-        "ci95": null,
-        "mean_prompt_tokens": null,
-        "mean_block_chars": null
+        "correct": 132,
+        "accuracy": 51.16279069767442,
+        "ci95": [
+          45.091163751526594,
+          57.2002991921277
+        ],
+        "mean_prompt_tokens": 3209.31007751938,
+        "mean_block_chars": 2334.937984496124
       }
     ],
     "vector": [
@@ -181,8 +190,8 @@
       "ceiling": 34.69387755102041,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 38.775510204081634,
+      "rules": 110
     },
     {
       "db_id": "card_games",
@@ -192,7 +201,7 @@
       "vector": null,
       "flat": null,
       "lore": null,
-      "rules": 0
+      "rules": 93
     },
     {
       "db_id": "codebase_community",
@@ -201,8 +210,8 @@
       "ceiling": 35.483870967741936,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 29.032258064516128,
+      "rules": 73
     },
     {
       "db_id": "debit_card_specializing",
@@ -211,8 +220,8 @@
       "ceiling": 57.142857142857146,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 71.42857142857143,
+      "rules": 73
     },
     {
       "db_id": "european_football_2",
@@ -221,8 +230,8 @@
       "ceiling": 61.29032258064516,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 58.064516129032256,
+      "rules": 61
     },
     {
       "db_id": "financial",
@@ -231,8 +240,8 @@
       "ceiling": 56.52173913043478,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 56.52173913043478,
+      "rules": 82
     },
     {
       "db_id": "formula_1",
@@ -242,7 +251,7 @@
       "vector": null,
       "flat": null,
       "lore": null,
-      "rules": 0
+      "rules": 102
     },
     {
       "db_id": "student_club",
@@ -251,8 +260,8 @@
       "ceiling": 59.45945945945946,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 54.054054054054056,
+      "rules": 79
     },
     {
       "db_id": "superhero",
@@ -261,8 +270,8 @@
       "ceiling": 40.0,
       "vector": null,
       "flat": null,
-      "lore": null,
-      "rules": 0
+      "lore": 60.0,
+      "rules": 42
     },
     {
       "db_id": "thrombosis_prediction",
@@ -272,7 +281,7 @@
       "vector": null,
       "flat": null,
       "lore": null,
-      "rules": 0
+      "rules": 106
     },
     {
       "db_id": "toxicology",
@@ -282,23 +291,21 @@
       "vector": null,
       "flat": null,
       "lore": null,
-      "rules": 0
+      "rules": 102
     }
   ],
   "stream_accuracy": {
     "first": {
-      "n": 0,
-      "accuracy": null
+      "n": 281,
+      "accuracy": 51.95729537366548
     },
     "last": {
-      "n": 0,
-      "accuracy": null
+      "n": 260,
+      "accuracy": 63.07692307692308
     }
   },
   "missing": [
-    "lore@0.25: 0/500",
-    "lore@0.5: 0/500",
-    "lore@1: 0/500",
+    "lore@1: 258/500",
     "vector@0.25: 0/500",
     "vector@0.5: 0/500",
     "vector@1: 0/500",
@@ -317,134 +324,134 @@
     "certification": "supported, not used in benchmark"
   },
   "run": "r2",
-  "generated_at": "2026-11-15T13:13:22.483751+00:00",
+  "generated_at": "2026-11-15T16:41:35.467669+00:00",
   "counts": {
     "per_db": {
       "california_schools": {
-        "entities": 92,
-        "relations": 91,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 249,
+        "relations": 593,
+        "rules": 110,
+        "rules_hidden": 10,
+        "joins_learned": 3,
+        "columns_profiled": 40,
+        "examples": 80,
+        "merges": 6
       },
       "card_games": {
-        "entities": 121,
-        "relations": 119,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 276,
+        "relations": 527,
+        "rules": 93,
+        "rules_hidden": 1,
+        "joins_learned": 6,
+        "columns_profiled": 32,
+        "examples": 80,
+        "merges": 3
       },
       "codebase_community": {
-        "entities": 79,
-        "relations": 84,
-        "rules": 0,
+        "entities": 212,
+        "relations": 470,
+        "rules": 73,
         "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "joins_learned": 14,
+        "columns_profiled": 21,
+        "examples": 80,
+        "merges": 1
       },
       "debit_card_specializing": {
-        "entities": 26,
-        "relations": 22,
-        "rules": 0,
+        "entities": 144,
+        "relations": 382,
+        "rules": 73,
         "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "joins_learned": 5,
+        "columns_profiled": 12,
+        "examples": 64,
+        "merges": 4
       },
       "european_football_2": {
-        "entities": 206,
-        "relations": 230,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
+        "entities": 337,
+        "relations": 658,
+        "rules": 61,
+        "rules_hidden": 4,
+        "joins_learned": 31,
+        "columns_profiled": 22,
+        "examples": 80,
         "merges": 0
       },
       "financial": {
-        "entities": 63,
-        "relations": 63,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 205,
+        "relations": 583,
+        "rules": 82,
+        "rules_hidden": 2,
+        "joins_learned": 11,
+        "columns_profiled": 17,
+        "examples": 80,
+        "merges": 2
       },
       "formula_1": {
-        "entities": 107,
-        "relations": 113,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 257,
+        "relations": 644,
+        "rules": 102,
+        "rules_hidden": 11,
+        "joins_learned": 15,
+        "columns_profiled": 20,
+        "examples": 76,
+        "merges": 2
       },
       "student_club": {
-        "entities": 56,
-        "relations": 56,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 186,
+        "relations": 548,
+        "rules": 79,
+        "rules_hidden": 1,
+        "joins_learned": 8,
+        "columns_profiled": 22,
+        "examples": 80,
+        "merges": 3
       },
       "superhero": {
-        "entities": 41,
-        "relations": 42,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 149,
+        "relations": 473,
+        "rules": 42,
+        "rules_hidden": 1,
+        "joins_learned": 11,
+        "columns_profiled": 9,
+        "examples": 80,
+        "merges": 2
       },
       "thrombosis_prediction": {
-        "entities": 67,
-        "relations": 66,
-        "rules": 0,
-        "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "entities": 221,
+        "relations": 450,
+        "rules": 106,
+        "rules_hidden": 31,
+        "joins_learned": 3,
+        "columns_profiled": 43,
+        "examples": 65,
+        "merges": 5
       },
       "toxicology": {
-        "entities": 15,
-        "relations": 16,
-        "rules": 0,
+        "entities": 158,
+        "relations": 426,
+        "rules": 102,
         "rules_hidden": 0,
-        "joins_learned": 0,
-        "columns_profiled": 0,
-        "examples": 0,
-        "merges": 0
+        "joins_learned": 6,
+        "columns_profiled": 11,
+        "examples": 78,
+        "merges": 2
       }
     },
     "total": {
-      "entities": 873,
-      "relations": 902,
-      "rules": 0,
-      "rules_hidden": 0,
-      "joins_learned": 0,
-      "columns_profiled": 0,
-      "examples": 0,
-      "merges": 0
+      "entities": 2394,
+      "relations": 5754,
+      "rules": 923,
+      "rules_hidden": 61,
+      "joins_learned": 113,
+      "columns_profiled": 249,
+      "examples": 843,
+      "merges": 30
     }
   },
   "usage": {
-    "input_tokens": 2275265,
-    "output_tokens": 924637,
-    "calls": 867
+    "input_tokens": 9145137,
+    "output_tokens": 2592176,
+    "calls": 3217
   }
 }

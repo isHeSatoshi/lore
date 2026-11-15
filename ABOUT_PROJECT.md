@@ -10,7 +10,8 @@ This is the original proposal, not a list of proven capabilities. The
 [README](README.md) describes the delivered implementation and measured results;
 [SUBMISSION.md](SUBMISSION.md) tracks the remaining handoff work.
 
-- Full `r2` floor and ceiling are complete. Learned comparisons are still running.
+- Full `r2` floor and ceiling are complete. Learned comparisons are paused on
+  MiniMax's 2056 usage quota, with resumable progress saved.
 - Grounding uses stored direct joins. Native path search, path compression and
   synonym merging are not implemented.
 - Corrections require explicit confirmation before learning. Rule confidence is
