@@ -1,0 +1,50 @@
+name: lore
+services:
+  hydradb-init:
+    image: ghcr.io/hydra-db/hydradb:0.4.0
+    user: "0:0"
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        mkdir -p /data/store /data/cache
+        printf '%s\n' "$$HYDRA_TOKEN" > /data/auth-token
+        chmod 600 /data/auth-token
+        chown -R 10001:10001 /data
+    environment:
+      HYDRA_TOKEN: ${HYDRA_TOKEN:?set HYDRA_TOKEN in .env}
+    volumes:
+      - hydra_data:/data
+  hydradb:
+    image: ghcr.io/hydra-db/hydradb:0.4.0
+    depends_on:
+      hydradb-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    environment:
+      CLOUD_PROVIDER: local
+      LOCAL_PATH: /data/store
+      GRAPH_NAMESPACE: local
+      GRAPH_ID: default
+      GRAPH_CELL_ID: cell-0
+      GRAPH_CELLS: cell-0
+      GRAPH_DATA_PATH: data
+      GRAPH_ALLOW_PLAINTEXT: "true"
+      GRAPH_AUTH_TOKEN_FILE: /data/auth-token
+      GRAPH_DATA_CACHE_BYTES: "268435456"
+      GRAPH_DATA_CACHE_DIR: /data/cache
+      GRAPH_NODE_ID: node-0
+      GRAPH_BOLT_ADDR: 0.0.0.0:7687
+      GRAPH_ADVERTISED_BOLT_ADDR: ${HYDRA_ADVERTISED:-127.0.0.1:17687}
+      GRAPH_BOLT_NODE_ADDRESSES: node-0=${HYDRA_ADVERTISED:-127.0.0.1:17687}
+      GRAPH_HTTP_ADDR: 0.0.0.0:8443
+      GRAPH_ADMIN_ADDR: 0.0.0.0:9090
+      RUST_MIN_STACK: "33554432"
+      RUST_LOG: info
+    ports:
+      - "127.0.0.1:17687:7687"
+      - "127.0.0.1:18443:8443"
+      - "127.0.0.1:19091:9090"
+    volumes:
+      - hydra_data:/data
+volumes:
+  hydra_data:

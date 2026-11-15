@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lore"
+version = "0.1.0"
+description = "A semantic layer learned from verified SQL feedback, on HydraDB and SelfGraph."
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+  "selfgraph==0.2.1", "anthropic", "sqlglot", "numpy", "fastapi",
+  "uvicorn[standard]", "python-dotenv", "httpx",
+]
+
+[project.optional-dependencies]
+bench = ["fastembed", "matplotlib"]
+dev = ["pytest", "pytest-asyncio", "ruff"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lore"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+markers = ["integration: requires a running HydraDB or downloaded BIRD data"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
