@@ -49,39 +49,48 @@ That is **40 additional correct answers over the structure-only baseline**, or 4
 
 The five-answer difference against simpler retrieval is inconclusive. Do not claim the experiment proves graphs are more accurate than other ways to store these facts. This is one model and one public benchmark, not a promise about every company's data.
 
+### Technical terms in the script
+
+- **Semantic layer:** the saved meanings and rules that help interpret the database.
+- **Prompt:** the instructions and context sent to the model.
+- **Knowledge block:** a small piece of that prompt containing relevant retrieved facts, rather than the whole chat history.
+- **Read-only SQL:** a database query that reads data without changing it.
+- **Execution accuracy:** how often the query's full result matches the reference result under the benchmark's comparison rules.
+- **Revision history:** a record of changes to saved knowledge.
+
 ## Read this aloud
 
-Imagine asking an AI, “How much revenue did we make last month?”
+Imagine asking an AI for last month's revenue. The SQL runs, but includes refunded orders.
 
-It gives a convincing number, but includes refunded orders.
+You correct it. Why should the next question need the same explanation?
 
-You explain that refunds should not count. If the correction stays in that chat, the next question can repeat the mistake.
+That's the problem Lore addresses: remembering database meaning, not just conversation history.
 
-Lore keeps the lesson, not just the conversation.
+Lore is a semantic layer between the language model and the database. It retrieves rules linked to relevant columns, builds a small knowledge block, and adds it to the prompt before the model generates read-only SQL.
 
-It sits between the AI and your database. After a person checks and confirms a correction, Lore stores a reusable rule, connected to the relevant data. For a later question, it finds useful rules and gives them to the AI before it writes the query.
+When someone checks and confirms a correction, Lore extracts reusable meanings. HydraDB stores them as a graph; SelfGraph manages the connections, sources, and revision history. A later question can retrieve the lesson without being taught separately.
 
-The model is not being retrained. It is getting a better instruction sheet.
+The model is not retrained. Its context changes.
 
-The revenue story is an illustration. The actual test used five hundred database questions held apart from teaching. The same AI answered two hundred thirty-one correctly with the database structure alone, and two hundred seventy-one with Lore. Forty additional correct answers.
+That revenue example is hypothetical. The actual evaluation used five hundred held-out BIRD questions with MiniMax M3.1 Flash at medium effort. Execution accuracy rose from forty-six point two percent with schema alone to fifty-four point two with Lore.
 
-The rules live in a graph on HydraDB, so people can inspect their connections and sources. But the test does not prove the graph beats simpler retrieval of the same facts.
+Simpler retrieval of the same facts scored fifty-three point two, so the test does not prove the graph itself is more accurate.
 
-That is Lore: helping the next question benefit from the last correction.
+The goal is a database assistant whose corrections become inspectable knowledge the next query can use.
 
 ## What to show while you read
 
-**Target: around 1:45–1:55.** Only read the section above aloud. Rehearse once with a timer. Leave the technical explainer and these directions out of the recording.
+**Target: around 1:50–1:55.** Only read the narration above aloud. Rehearse once with a timer. If needed, omit “The model is not retrained. Its context changes.” rather than rushing the results.
 
-This version works as a narrated overview, without a risky live demonstration or pretending you developed the project.
+This is a narrated overview. It does not require you to demonstrate a live correction or claim you developed the project.
 
 | Approximate time | Screen | What you are explaining |
 |---|---|---|
-| 0:00–0:27 | [Lore's Ask view](https://ishesatoshi-lore.hf.space). Do not type the revenue example into an unrelated database. | A plausible answer can still use the wrong definition. The revenue story is hypothetical. |
-| 0:27–0:58 | Ask view, then an existing trained rule in Graph. | Lore retrieves rules and learns only from a checked, confirmed correction. Do not click Confirm just for the video. |
-| 0:58–1:08 | Keep the saved rule visible. | The AI stays the same; the supplied knowledge changes. |
-| 1:08–1:35 | Proof view or the [README result table](https://github.com/isHeSatoshi/lore#the-result). | Point to 231 and 271. These are benchmark results, not the revenue example or a claim about the screen's current query. |
-| 1:35–1:53 | Graph, then README links to app and source. | Inspectable knowledge, the unresolved graph comparison, and the closing idea. |
+| 0:00–0:22 | [Lore's Ask view](https://ishesatoshi-lore.hf.space). Do not run the revenue example against an unrelated database. | The revenue story illustrates the problem; it is not an actual measured demo. |
+| 0:22–0:43 | The actual retrieved knowledge block and generated SQL from an existing answer. | Rules become model context before SQL generation. Do not label an empty block as successful retrieval. |
+| 0:43–1:09 | An existing trained rule in Graph, with its source and revision details. | Confirmed corrections become reusable, inspectable facts. Do not click Confirm merely for the recording. |
+| 1:09–1:35 | Proof view or the [README result table](https://github.com/isHeSatoshi/lore#the-result). | Point to 46.2% and 54.2%. These are held-out benchmark results, not the revenue example. |
+| 1:35–1:55 | Keep 53.2% visible, then return to the graph or README links. | The comparison with simpler retrieval is inconclusive; finish with the product goal. |
 
 You can say “the project” and “the test.” You do not need to say “I built” or “we developed.” Showing existing trained rules is not a live correction-to-reuse demonstration, and this script does not present it as one.
 
