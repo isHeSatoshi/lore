@@ -72,7 +72,13 @@ The public repository URL and owner-recorded Loom are still needed before submis
 GitHub repository creation was denied by both GraphQL and REST with HTTP 403.
 The existing private repository was not exposed. The owner must create a new
 public repository and grant write access, or supply credentials with repository
-creation permission, before an authorized push can happen.
+creation permission, before a push to that public repository can happen.
+The owner's replacement credential authenticated and successfully pushed `main`
+to the existing [private repository](https://github.com/isHeSatoshi/hydradb)
+on 16 November. Its visibility was not changed. The same credential still
+received HTTP 403 when creating the new public `lore` repository, so this
+private push does not satisfy the public-repository submission requirement.
+See [push verification](results/smoke/github_push.json).
 The public toxicology browser trial now passes the full strict loop. The first
 school trial did not pass and is retained, not counted as a success.
 All first-round teaching outcomes are retained: four passes across 48 attempts
