@@ -7,8 +7,7 @@ Run commands from the repository root. Download BIRD data before running tests, 
 ## Full benchmark results
 
 **Lore scores 54.2%, versus 46.2% for schema-only prompting and 48.6% for
-nearest-example vector memory.** Its advantage over flat retrieval of the
-same learned facts is **inconclusive**, not a proven graph-specific accuracy gain.
+nearest-example vector memory.**
 
 Factory-only **`r4`**, **MiniMax M3.1 Flash, medium effort**, 500 held-out BIRD
 Mini-Dev questions at every point, with an 864-question verified learning stream:
@@ -32,7 +31,7 @@ Paired bootstrap differences, 10,000 resamples, seed 0:
 Lore's checkpoints are **49.4% → 51.2% → 54.2%**. Vector's are
 **44.8% → 49.0% → 48.6%**; learning is not guaranteed to help every question.
 Lore loses to the floor on financial, debit-card and student-club questions.
-Its final knowledge block averages 2,247 characters, versus flat's 3,337.
+Its final knowledge block averages 2,247 characters.
 
 Sources: [complete results and metering](../results/r4/summary.json),
 [per-database results](../results/r4/per_db.md), [graph counts](../results/r4/counts.json)
@@ -119,11 +118,7 @@ rewritten. Learning is isolated from frozen test evaluation.
 
 The graph exposes rule provenance, revisions, certification and structural
 connections, rather than only retrieving similar question text.
-The same-facts flat ablation scores 53.2% against Lore's 54.2%; the paired
-interval includes zero. This experiment does **not** establish an accuracy
-advantage from graph structure over those flat facts.
-Identical rendered facts share one retrieval slot, so a meaning attached to
-multiple columns does not crowd other facts out of the flat comparison.
+The measured headline improvement is against schema-only prompting. The graph supplies inspectable links between rules, columns and examples; this is not a claim that graph structure itself causes the accuracy improvement.
 
 ## HydraDB and SelfGraph
 

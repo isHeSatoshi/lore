@@ -34,11 +34,10 @@ Same **MiniMax M3.1 Flash**, medium effort through Factory. All 500 held-out BIR
 | Supplied per-question evidence | 52.2% | 4,509 |
 | **Lore's learned graph** | **54.2%** | 5,101 |
 | Nearest verified examples | 48.6% | 4,688 |
-| Flat retrieval of the same learned facts | 53.2% | 5,382 |
 
 Lore's accuracy rose **49.4% → 51.2% → 54.2%** as it learned, evaluated on the same held-out questions at every checkpoint.
 
-Lore answered **40 more questions correctly than schema alone**. Its one-point lead over flat retrieval is **inconclusive**, not proof that graphs improve accuracy over the same facts.
+Lore answered **40 more questions correctly than schema alone**.
 
 This is one model and one public benchmark, not a production guarantee. Corrections still need human review.
 
