@@ -6,6 +6,8 @@ _Built for the [HydraDB Hackathon](https://luma.com/bqwllms4), Track 1: the self
 
 [Try Lore](https://ishesatoshi-lore.hf.space) · [Results](results/r4/summary.json) · [Run locally](docs/REPRODUCE.md#run-locally-with-the-measured-factory-transport) · [For judges](SUBMISSION.md)
 
+![Execution accuracy as Lore learns from more verified examples](results/r4/curve.png)
+
 ## The problem
 
 An AI can write SQL that runs perfectly and still answers the wrong question. A schema tells it which columns exist, not which orders count as revenue or what an analyst means by “active.”
@@ -26,13 +28,15 @@ HydraDB stores the graph; SelfGraph manages its facts, connections and history. 
 
 Same **MiniMax M3.1 Flash**, medium effort through Factory. All 500 held-out BIRD Mini-Dev questions; a separate 864-question learning stream.
 
-| What the model receives | Correct |
-|---|---:|
-| Schema and question | 46.2% |
-| Supplied per-question evidence | 52.2% |
-| **Lore's learned graph** | **54.2%** |
-| Nearest verified examples | 48.6% |
-| Flat retrieval of the same learned facts | 53.2% |
+| What the model receives | Correct | Mean prompt tokens |
+|---|---:|---:|
+| Schema and question | 46.2% | 4,478 |
+| Supplied per-question evidence | 52.2% | 4,509 |
+| **Lore's learned graph** | **54.2%** | 5,101 |
+| Nearest verified examples | 48.6% | 4,688 |
+| Flat retrieval of the same learned facts | 53.2% | 5,382 |
+
+Lore's accuracy rose **49.4% → 51.2% → 54.2%** as it learned, evaluated on the same held-out questions at every checkpoint.
 
 Lore answered **40 more questions correctly than schema alone**. Its one-point lead over flat retrieval is **inconclusive**, not proof that graphs improve accuracy over the same facts.
 
