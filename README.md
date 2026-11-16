@@ -4,7 +4,7 @@
 
 _Built for the [HydraDB Hackathon](https://luma.com/bqwllms4), Track 1: the self-improving graph._
 
-[Try Lore](https://ishesatoshi-lore.hf.space) · [Results](results/r4/summary.json) · [Run locally](docs/REPRODUCE.md#run-locally-with-the-measured-factory-transport) · [For judges](SUBMISSION.md)
+[Try Lore](https://ishesatoshi-lore.hf.space) · [Results](results/r4/summary.json) · [Run locally](docs/REPRODUCE.md#run-locally-with-the-measured-factory-transport) · [Validation](results/r4/hosting_public.json)
 
 ![Execution accuracy as Lore learns from more verified examples](results/r4/curve.png)
 
@@ -48,6 +48,6 @@ This is one model and one public benchmark, not a production guarantee. Correcti
 
 Open the [hosted app](https://ishesatoshi-lore.hf.space), explore the trained rules, or use a separate sandbox. Free hosting can sleep and lose visitor state.
 
-[Local setup](docs/REPRODUCE.md#run-locally-with-the-measured-factory-transport) · [Hosting guide](deploy/hf/README.md) · [Plain-English explanation and two-minute Loom script](LOOM_SCRIPT.md)
+[Local setup](docs/REPRODUCE.md#run-locally-with-the-measured-factory-transport) · [Hosting guide](deploy/hf/README.md) · [Tests and validation](docs/REPRODUCE.md#interactive-validation-and-deployment-limits)
 
 Code: [MIT](LICENSE). BIRD data and derived benchmark/seed data: [CC BY-SA 4.0](DATA_LICENSE.md). Third-party runtime notices are in the [hosting guide](deploy/hf/README.md).

@@ -11,3 +11,16 @@ web/dist/
 .ruff_cache/
 *.egg-info/
 *.log
+
+# Local working notes and submission preparation
+/ABOUT_PROJECT.md
+/spec-plan.md
+/PROGRESS.md
+/LOOM_SCRIPT.md
+/SUBMISSION.md
+
+# Local account-access and GitHub publication records
+/results/smoke/github_access.json
+/results/smoke/github_push.json
+/results/smoke/github_public_push.json
+/deploy/hf/evidence/hf_access.json

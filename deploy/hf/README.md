@@ -33,9 +33,8 @@ two runtime Secrets and fixed nonsecret settings before uploading the reviewed
 snapshot. The other twelve existing Spaces, including paused paid allocations,
 were left untouched.
 
-[`evidence/hf_access.json`](evidence/hf_access.json) is the historical initial
-read-only access check, not the current allocation state. Keep the deployment
-token out of app runtime Secrets, chat, Git and argv. Never upgrade, resume paid
+Keep the deployment token out of app runtime Secrets, chat, Git and argv.
+Never upgrade, resume paid
 hardware, switch providers, or restart the benchmark Hydra.
 
 ## Runtime

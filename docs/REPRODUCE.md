@@ -333,10 +333,7 @@ These local startup times are not hosted latency guarantees.
 No CSP, Referrer-Policy, X-Content-Type-Options or X-Frame-Options response header
 was observed. Scoped access-control checks are not a complete security audit.
 Free hosting can sleep and lose visitor state; model quotas still apply.
-The owner created the [public GitHub repository](https://github.com/isHeSatoshi/lore)
-after API creation was permission-blocked; the reviewed `main` branch is now
-published there. The existing private repository's visibility was not changed.
-The [submission handoff](../SUBMISSION.md) tracks owner actions and outstanding gates.
+Source code is available in the [public repository](https://github.com/isHeSatoshi/lore).
 
 ## Data attribution
 
