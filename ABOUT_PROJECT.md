@@ -25,7 +25,8 @@ This is the original proposal, not a list of proven capabilities. The
   scoped access-control, keyboard/mobile and restoration checks also pass.
   See [public validation evidence](results/r4/hosting_public.json).
   No paid plan or other provider is approved.
-  Public repository creation and push are approved only after final checks.
+  After final checks, the owner created the public
+  [Lore repository](https://github.com/isHeSatoshi/lore) and `main` was pushed.
 - The earlier 01:00/03:00 IST working targets were missed. The event cutoff
   remains 16 November 2026, 09:00 IST.
 
@@ -280,8 +281,8 @@ Drafts only, not sent or authorized to post. Numbers below are the completed
 >
 > MiniMax M3.1 Flash, medium effort, one seed. Try [Lore](https://ishesatoshi-lore.hf.space).
 > Public [Space source](https://huggingface.co/spaces/isHeSatoshi/lore).
-> GitHub publication is blocked by repository-creation permissions; owner
-> walkthrough still needed. Draft only, not posted.
+> [GitHub source](https://github.com/isHeSatoshi/lore). Owner walkthrough still
+> needed. Draft only, not posted.
 
 **Post 3, LinkedIn**
 
@@ -296,8 +297,8 @@ Drafts only, not sent or authorized to post. Numbers below are the completed
 > - This is one model, one seed and public benchmark data, not production accuracy or proof of demand.
 >
 > Try [Lore](https://ishesatoshi-lore.hf.space), built on HydraDB and SelfGraph.
-> MIT-licensed app source is public in the [HF Space](https://huggingface.co/spaces/isHeSatoshi/lore).
-> GitHub publication and the owner-recorded walkthrough remain outstanding.
+> MIT-licensed code and measured results are on [GitHub](https://github.com/isHeSatoshi/lore).
+> The owner-recorded walkthrough remains outstanding.
 >
 > If you run a data team, I would like to know: would you let something like this write your semantic layer?
 

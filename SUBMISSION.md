@@ -2,7 +2,7 @@
 
 ## Readiness
 
-**App verified; submission still needs a public GitHub repository and Loom.**
+**App and public repository verified; owner-recorded Loom still needed.**
 Full comparisons, current-runtime validation and
 the seeded native cold start pass. All twelve teaching pairs and all 3,000
 trained-load requests now pass. The live-reader cold/integration refresh also
@@ -24,9 +24,9 @@ Public repository creation and push are approved after final checks.
 | Deliverable | Current state |
 |---|---|
 | Local app | Clean-installed loopback entrypoint verified; temporary preview stopped after checks |
-| Public repository | Creation blocked by the GitHub integration's HTTP 403; existing private visibility unchanged |
+| Public repository | [isHeSatoshi/lore](https://github.com/isHeSatoshi/lore), public `main` pushed and verified |
 | Hosted judge link | [Lore](https://ishesatoshi-lore.hf.space), verified on free CPU Basic |
-| Loom | Owner recording and link still needed |
+| Loom | [Read-aloud script and screen cues ready](LOOM_SCRIPT.md); owner recording and link still needed |
 | Social posts | Drafts only; not authorized to send |
 
 ## Final measured summary
@@ -68,17 +68,15 @@ Do not use the exploratory small-run scores as the final headline. All three
 audits, including failures and remaining noisy rules, are preserved in
 `results/s1/`, `results/s2/` and `results/s3/`.
 
-The public repository URL and owner-recorded Loom are still needed before submission.
-GitHub repository creation was denied by both GraphQL and REST with HTTP 403.
-The existing private repository was not exposed. The owner must create a new
-public repository and grant write access, or supply credentials with repository
-creation permission, before a push to that public repository can happen.
-The owner's replacement credential authenticated and successfully pushed `main`
-to the existing [private repository](https://github.com/isHeSatoshi/hydradb)
-on 16 November. Its visibility was not changed. The same credential still
-received HTTP 403 when creating the new public `lore` repository, so this
-private push does not satisfy the public-repository submission requirement.
-See [push verification](results/smoke/github_push.json).
+The public code is now available at
+[isHeSatoshi/lore](https://github.com/isHeSatoshi/lore). API repository creation
+was denied with HTTP 403, so the owner created the empty public repository.
+The reviewed `main` branch was then pushed without force and its remote commit
+was verified. Credentials remain only in ignored configuration, not Git.
+See [public push verification](results/smoke/github_public_push.json).
+The earlier [private push](results/smoke/github_push.json) is retained as
+history; the original private repository's visibility was not changed.
+The owner-recorded Loom and final submission remain outstanding.
 The public toxicology browser trial now passes the full strict loop. The first
 school trial did not pass and is retained, not counted as a success.
 All first-round teaching outcomes are retained: four passes across 48 attempts
@@ -94,6 +92,10 @@ The anchored uncached live reader matches original full blocks and traces on
 all 500 held-out inputs. None of the frozen accuracy sources changed.
 
 ## Recording outline
+
+The [two-minute Loom script](LOOM_SCRIPT.md) supplies the exact narration and
+screen cues. Aim for about 1:50 and pause during model waits. The owner still
+needs to record, review and supply the actual Loom link.
 
 Use a fresh sandbox and a pair that passed the real API replay checks. Do not
 describe a synthetic graph fixture or a cached baseline answer as a successful
@@ -126,7 +128,9 @@ teaching demonstration.
 > On 500 held-out questions, Lore scores 54.2%, versus 46.2% for schema-only
 > prompting and 48.6% for vector examples. Its 1-point lead over same-facts flat
 > retrieval is inconclusive. This is one model, one seed and simulated feedback,
-> not a production performance claim. Public links follow after live validation.
+> not a production performance claim.
+> [Try Lore](https://ishesatoshi-lore.hf.space) ·
+> [Source](https://github.com/isHeSatoshi/lore).
 
 The original social drafts are in
 [`ABOUT_PROJECT.md`](ABOUT_PROJECT.md#13-draft-posts). Update every placeholder
@@ -142,7 +146,7 @@ from generated results and real links. The owner must approve any posting.
 - [x] Run trained grounding load.
 - [x] Recheck clean-source reproduction, secrets, Git history and staged scope.
 - [x] Update the README and this handoff with final results and limitations.
-- [ ] Create and push the public repository using the owner's approval.
+- [x] Create and push the public repository using the owner's approval.
 - [ ] Owner records Loom and supplies its link.
 - [x] Verify eligible free Hugging Face access, deploy and test the real judge link.
 - [ ] Owner approves and sends any launch posts, then submits the real links.
